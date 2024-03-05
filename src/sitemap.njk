@@ -1,0 +1,10 @@
+---
+layout: false
+permalink: sitemap.txt
+ignore: true
+---
+{%- for item in collections.all %}
+  {% if not item.data.ignore and not r/^\/admin\//i.test(item.url) %}
+    {{ env.site }}{{ item.url | replace('.html', '') }}
+  {% endif %}
+{%- endfor %}

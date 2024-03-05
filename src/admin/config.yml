@@ -1,0 +1,128 @@
+backend:
+  # Use netlify identity as backend
+  name: git-gateway
+  branch: main
+  ### enable below lines for github integration ###
+  # name: github
+  # repo: https://github.com/webdigga/ear-protectors
+media_folder: "src/static/img"
+public_folder: "/static/img"
+
+# Please run "npx netlify-cms-proxy-server" for local backend
+local_backend: true
+# publish_mode: editorial_workflow
+collections:
+  - label: "Article"
+    name: "article"
+    folder: "src/posts"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Type", name: "type", widget: "string", default: "Article" }
+      - { label: "Affiliate link", name: "affiliateLink", widget: "string", required: false }
+      - { 
+        label: "Is this an Amazon product?",
+        name: "isAmazon",
+        widget: "boolean",
+        required: false,
+        default: false
+      }
+      - { label: "Affiliate name", name: "affiliateName", widget: "string", required: false }
+      - { label: "Product rating", name: "productRating", widget: "string", required: false }
+      - { label: "Product reviews", name: "productReviews", widget: "string", required: false }
+      - widget: select
+        label: "tags"
+        name: "tags"
+        multiple: true
+        create: true
+        options: ["product, article"]
+      - label: "Right image"
+        name: "rightImage"
+        widget: "image"
+        choose_url: true
+        required: false
+        media_library:
+          config:
+            multiple: false
+      - { label: "Right image descriptive text", name: "rightImageAlt", widget: "string", required: false }
+  - label: "ProductCard"
+    name: "productCard"
+    folder: "src/productCards"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Article Link", name: "articleLink", widget: "string" }
+      - { label: "Affiliate Link", name: "affiliateLink", widget: "string" }
+      - { label: "Image Alt", name: "imageAlt", widget: "string" }
+      - { label: "Product rating", name: "productRating", widget: "string" }
+      - { label: "Product reviews", name: "productReviews", widget: "string" }
+      - label: "Image"
+        name: "image"
+        widget: "image"
+        choose_url: true
+        media_library:
+          config:
+            multiple: false
+  - label: "Hero"
+    name: "hero"
+    folder: "src/hero"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Button text", name: "buttonText", widget: "string" }
+      - { label: "Button URL", name: "buttonUrl", widget: "string" }
+      - label: "Image"
+        name: "image"
+        widget: "image"
+        choose_url: true
+        media_library:
+          config:
+            multiple: false
+  - label: "Settings"
+    name: "settings"
+    editor:
+      preview: false
+    files:
+      - label: "Navigation"
+        name: "items"
+        file: "src/_data/navigation.yaml"
+        fields:
+          - label: Nav Items
+            name: items
+            widget: list
+            allow_add: false
+            collapsed: false
+            fields:
+              - { label: Title, name: text, widget: string }
+              - { label: URL, name: url, widget: string }
+      - label: "Meta Settings"
+        name: "settings"
+        file: "src/_data/settings.yaml"
+        fields:
+          - { label: Site Name, name: siteName, widget: string }
+          - { label: Title, name: title, widget: string }
+          - { label: Author, name: author, widget: string }
+          - { label: URL, name: url, widget: string }
+          - { label: Powered by, name: poweredBy, widget: string }
+          - { label: Description, name: description, widget: string }
+          - { label: Type (type of template), name: type, widget: string }
+          - { label: Logo (Alt), name: logoAlt, widget: string }
+          - label: "Logo (URL)"
+            name: "logoUrl"
+            widget: "image"
+            choose_url: true
+            media_library:
+              config:
+                multiple: false
