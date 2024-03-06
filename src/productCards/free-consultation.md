@@ -4,5 +4,5 @@ description: On-line or face to face chat about the requirements for the micro-s
 articleLink: /posts/consultation/
 imageAlt: Notes being taken during consultation
 image: /static/img/consultation.jpg
-order: 2
+order: 1
 ---
