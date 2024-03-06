@@ -61,10 +61,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Article Link", name: "articleLink", widget: "string" }
-      - { label: "Affiliate Link", name: "affiliateLink", widget: "string" }
       - { label: "Image Alt", name: "imageAlt", widget: "string" }
-      - { label: "Product rating", name: "productRating", widget: "string" }
-      - { label: "Product reviews", name: "productReviews", widget: "string" }
       - label: "Image"
         name: "image"
         widget: "image"
@@ -72,6 +69,7 @@ collections:
         media_library:
           config:
             multiple: false
+      - { label: "Order", name: "order", widget: "number" }
   - label: "Hero"
     name: "hero"
     folder: "src/hero"
