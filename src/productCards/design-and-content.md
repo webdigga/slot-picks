@@ -4,5 +4,5 @@ description: Define how the site should look, and what kind of content there wil
 articleLink: /posts/design-and-content/
 imageAlt: Silver iMac
 image: /static/img/design.webp
-order: 2
+order: 1
 ---
