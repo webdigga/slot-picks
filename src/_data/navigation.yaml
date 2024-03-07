@@ -1,9 +1,13 @@
 items:
-  - text: Custom Fit Ear Plugs
-    url: /posts/custom-fit-earplugs/
-  - text: Hearing Protection For Bikers
-    url: /posts/hearing-protection-for-bikers/
-  - text: Shooting Ear Plugs
-    url: /posts/shooting-ear-plugs/
-  - text: All Products
-    url: /articles
+  - text: Consultation
+    url: /posts/consultation/
+  - text: Design
+    url: /posts/design-and-content/
+  - text: Development
+    url: /posts/development/
+  - text: Feedback
+    url: /posts/feedback-loop
+  - text: Launch
+    url: /posts/launch
+  - text: Support
+    url: /posts/support
