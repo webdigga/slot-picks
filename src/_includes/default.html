@@ -53,6 +53,22 @@
     {% if prism == true %}
       <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
     {% endif %}
+
+	{% if env.isProd %}
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('consent', 'default', {
+			'ad_user_data': 'denied',
+			'ad_personalization': 'denied',
+			'ad_storage': 'denied',
+			'analytics_storage': 'denied',
+			'wait_for_update': 500,
+			});
+			gtag('js', new Date());
+			gtag('config', 'G-EZ5CBY3TDR');
+		</script>
+	{% endif %}
   </head>
 
   <body class="bg-white">
@@ -69,5 +85,43 @@
       <!-- Needed only if you are using Netlify Identity feature -->
       <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     {% endif %}
+
+	{% if env.isProd %}
+
+		{% include "./partials/cookie-consent.html" %}
+
+		<script>
+			const grantConsentButton = document.getElementById('grant-consent');
+
+			grantConsentButton.addEventListener("click", function() {
+				localStorage.setItem("consentGranted", "true");
+
+				function gtag() { dataLayer.push(arguments); }
+
+				gtag('consent', 'update', {
+					ad_user_data: 'granted',
+					ad_personalization: 'granted',
+					ad_storage: 'granted',
+					analytics_storage: 'granted'
+				});
+
+				var gtagScript = document.createElement('script');
+				gtagScript.defer = true;
+				gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-EZ5CBY3TDR';
+
+				var firstScript = document.getElementsByTagName('script')[0];
+				firstScript.parentNode.insertBefore(gtagScript,firstScript);
+			});
+
+			if(localStorage.getItem("consentGranted")) {
+				var gtagScript = document.createElement('script');
+				gtagScript.defer = true;
+				gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-EZ5CBY3TDR';
+
+				var firstScript = document.getElementsByTagName('script')[0];
+				firstScript.parentNode.insertBefore(gtagScript,firstScript);
+			}
+		</script>
+	{% endif %}
   </body>
 </html>
