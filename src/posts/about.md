@@ -1,11 +1,8 @@
 ---
 title: About
-description: " Experience the difference with Auritech earplugs, featuring
-  patented Ceramic Filtration Technology for unparalleled protection and sound
-  quality. With precision noise filtration, you'll hear exactly what you want
-  without the unwanted distractions"
-author: Jonny Rowse
-date: 2024-02-26T16:00:11.986Z
+description: Freelance web developer based in Kingston Upon Thames
+author: David White
+date: 2024-03-07T16:27:32.906Z
 type: article
 isAmazon: false
 tags:
@@ -13,12 +10,18 @@ tags:
 rightImage: ""
 rightImageAlt: Recommended Ear Plugs
 ---
-Achieve the perfect balance between hearing what matters and blocking out unwanted noise with Auritech's innovative earplugs. Our patented precision-tuned ceramic filtration technology allows you to reduce undesirable noises while preserving essential sounds like conversations, a baby's cry, or a car horn.
+I have around 25 years working as a Web Developer / Software Engineer.  I have worked for companies such as the Telegraph newspaper and DAZN (Perform group).
 
-Forget the discomfort of traditional earplugs that leave your ears feeling blocked and unnatural. Auritech products are designed to eliminate the muffling effect, ensuring ultimate comfort and practicality even during extended wear or while sleeping. Our Universal Fit earplugs feature a unique thermoplastic construction for unparalleled softness and comfort, while our Custom Made earplugs guarantee fit and comfort for up to 2 years.
+Having worked on many content driven websites over the years I decided that now was the time for me to become a freelance Web Developer and start using my experience to create micro-sites focussing on local businesses.
 
-With over 20 years of experience, Auritech Hearing Protectors are the result of extensive research and development by leading European audiologists and hearing technicians. Rest assured, your valuable hearing is in safe hands with Auritech.
+Fundamentally I want the website to load quickly.. This is good for the user and also good for Search Engine Optimisation (getting your site to the top of the search results).
 
-Our commitment to quality is unmatched, exceeding European Standard EN352-2, with production independently certified to ISO9001:2008 standards. Additionally, Auritech earplugs are independently tested and approved in Germany, ensuring reliability and performance you can trust.
+I run a suite of performance tests to ensure that my high standards are being met during and after development has finished.
 
-![Recommended Ear Plugs](/static/img/recommended.webp "Recommended Ear Plugs")
+I charge a fee based on how big the project is, and a small retainer which helps me cover hosting and any other maintenance that needs to be done.
+
+Contact me for a consulation meeting to discuss your requirements.
+
+webdigga42@gmail.com
+
+07877 304672
