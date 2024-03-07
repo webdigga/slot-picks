@@ -1,13 +1,8 @@
 ---
-title: Concert & Festival Ear Plugs
-description: Experience precision noise filtration & protection tailored for
-  live music enthusiasts and musicians with Auritech Hearing Protectors. Enjoy
-  crystal-clear sound quality while safeguarding your hearing from harmful noise
-  levels. Our innovative technology enhances music enjoyment without muffling,
-  allowing seamless conversation. Ideal for music lovers, our earplugs provide
-  unmatched protection.
+title: Design and content
+description: How we will design the new micro-site and what content will power it
 author: David White
-date: 2024-02-26T12:02:31.175Z
+date: 2024-03-07T15:12:40.213Z
 type: article
 affiliateLink: https://www.amazon.co.uk/Auritech-Earplugs-Intelligent-Hearing-Protection/dp/B00DEJDAZQ?maas=maas_adg_B4BC438E3258C0E4687516CF93C21EE1_afap_abs&ref_=aa_maas&tag=maas
 isAmazon: true
@@ -19,14 +14,6 @@ tags:
 rightImage: /static/img/music.webp
 rightImageAlt: Auritech Concert Earplugs - Intelligent Hearing Protection for music lovers
 ---
-Unamplified instruments like drums and brass can produce noise levels up to 100dB, while amplified music at festivals, concerts, or clubs can reach a staggering 130dB. Permanent hearing damage can occur from just 85dB, making it essential to use hearing protection whether you're a musician on stage or an enthusiastic spectator.
+This is a chance for me to show you previous sites that I have built and for you to show me any sites you had in mind for what you expect from the look and feel.
 
-## Why Choose Auritech Hearing Protectors for Concerts & Festivals?
-
-* The ideal protection for your ears for Music, Concert & Festival lovers.
-* Enhanced music enjoyment with Auritech earplugs, providing crystal-clear sound quality for an immersive listening experience.
-* With  patented ceramic filtration technology, setting Auritech earplugs apart with unparalleled performance and protection.
-* No muffling effect
-* Built from silicone-free, hypoallergenic thermoplastic
-* Enjoy exceptional comfort and reusability with Auritech earplugs, ensuring a comfortable fit for extended wear and long-lasting use.
-* CE-approved
+Sites that I build will be driven from a content management system which you will have full control of.  I will just need to know up front what sort of content we are dealing with so I can shape the templates and pages.
