@@ -4,11 +4,11 @@ description: How we will design the new micro-site and what content will power i
 author: David White
 date: 2024-03-07T15:12:40.213Z
 type: article
-affiliateLink: https://www.amazon.co.uk/Auritech-Earplugs-Intelligent-Hearing-Protection/dp/B00DEJDAZQ?maas=maas_adg_B4BC438E3258C0E4687516CF93C21EE1_afap_abs&ref_=aa_maas&tag=maas
-isAmazon: true
-affiliateName: Amazon
-productRating: "4.2"
-productReviews: "41"
+affiliateLink: ""
+isAmazon: false
+affiliateName: ""
+productRating: ""
+productReviews: ""
 tags:
   - product
 rightImage: /static/img/music.webp
