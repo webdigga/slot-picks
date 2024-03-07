@@ -25,3 +25,5 @@ Contact me for a consulation meeting to discuss your requirements.
 webdigga42@gmail.com
 
 07877 304672
+
+[LinkedIn](https://www.linkedin.com/in/david-white-96a0878a/)
