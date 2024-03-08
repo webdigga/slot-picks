@@ -1,0 +1,7 @@
+{% set homepageSpiel = collections.homepageSpiel %}
+
+<div class="grid grid-cols-1 gap-3 px-4 mb-8" style="max-width: 1200px">
+	{{ homepageSpiel[0].data.description | safe }}
+
+	{{ content | safe }}
+</div>

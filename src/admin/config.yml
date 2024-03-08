@@ -84,7 +84,8 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Title", name: "title", widget: "string" },
+      - { label: "Body", name: "body", widget: "markdown" }
   - label: "Settings"
     name: "settings"
     editor:
