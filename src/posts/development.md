@@ -4,11 +4,6 @@ description: Development of the website
 author: David White
 date: 2024-03-07T15:16:06.797Z
 type: article
-affiliateLink: ""
-isAmazon: false
-affiliateName: ""
-productRating: ""
-productReviews: ""
 tags:
   - product
 rightImage: /static/img/travel.webp

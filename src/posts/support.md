@@ -8,11 +8,6 @@ description: Auritech Music Earplugs provide exceptional hearing protection
 author: David White
 date: 2024-03-07T16:21:35.762Z
 type: article
-affiliateLink: ""
-isAmazon: false
-affiliateName: ""
-productRating: ""
-productReviews: ""
 tags:
   - product
 rightImage: /static/img/music.webp

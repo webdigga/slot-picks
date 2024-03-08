@@ -25,17 +25,6 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Type", name: "type", widget: "string", default: "Article" }
-      - { label: "Affiliate link", name: "affiliateLink", widget: "string", required: false }
-      - { 
-        label: "Is this an Amazon product?",
-        name: "isAmazon",
-        widget: "boolean",
-        required: false,
-        default: false
-      }
-      - { label: "Affiliate name", name: "affiliateName", widget: "string", required: false }
-      - { label: "Product rating", name: "productRating", widget: "string", required: false }
-      - { label: "Product reviews", name: "productReviews", widget: "string", required: false }
       - widget: select
         label: "tags"
         name: "tags"
@@ -88,6 +77,15 @@ collections:
         media_library:
           config:
             multiple: false
+  - label: "Homepage spiel"
+    name: "homepageSpiel"
+    folder: "src/homepageSpiel"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
   - label: "Settings"
     name: "settings"
     editor:

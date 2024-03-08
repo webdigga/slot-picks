@@ -4,11 +4,6 @@ description: How we will design the new micro-site and what content will power i
 author: David White
 date: 2024-03-07T15:12:40.213Z
 type: article
-affiliateLink: ""
-isAmazon: false
-affiliateName: ""
-productRating: ""
-productReviews: ""
 tags:
   - product
 rightImage: /static/img/music.webp

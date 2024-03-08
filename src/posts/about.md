@@ -4,7 +4,6 @@ description: Freelance web developer based in Kingston Upon Thames
 author: David White
 date: 2024-03-07T16:27:32.906Z
 type: article
-isAmazon: false
 tags:
   - article
 rightImage: ""

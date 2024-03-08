@@ -4,9 +4,6 @@ description: Free consultation for micro-site development
 author: David White
 date: 2024-03-07T14:11:48.166Z
 type: article
-affiliateLink: ""
-isAmazon: false
-affiliateName: ""
 tags:
   - product
 rightImage: /static/img/custom_fit_review.webp
