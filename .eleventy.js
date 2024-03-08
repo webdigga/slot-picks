@@ -2,6 +2,8 @@ const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
+const markdownIt = require("markdown-it");
+
 require('dotenv').config();
 
 module.exports = function (eleventyConfig) {
@@ -20,6 +22,16 @@ module.exports = function (eleventyConfig) {
 
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight);
+
+  // Markdown rendering options
+  const md = new markdownIt({
+    html: true,
+  });
+
+  // Add the new markdown filter (use when components render markdown)
+  eleventyConfig.addFilter("markdown", (content) => {
+    return md.render(content);
+  });
 
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON
