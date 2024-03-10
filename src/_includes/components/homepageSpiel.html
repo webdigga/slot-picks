@@ -1,7 +1,12 @@
 {% set homepageSpiel = collections.homepageSpiel %}
 
 <div class="grid grid-cols-1 gap-3 px-4 mb-8" style="max-width: 1200px">
-	<h2 class="text-lg"><strong>{{ homepageSpiel[0].data.title }}</strong></h2>
 
-	<p>{{ homepageSpiel[0].data.description | markdown | safe }}</p>
+	{% if homepageSpiel[0].data.title %}
+		<h2 class="text-lg"><strong>{{ homepageSpiel[0].data.title }}</strong></h2>
+	{% endif %}
+
+	{% if homepageSpiel[0].data.description %}
+		<p>{{ homepageSpiel[0].data.description | markdown | safe }}</p>
+	{% endif %}
 </div>
