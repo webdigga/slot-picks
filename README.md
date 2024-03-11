@@ -1,4 +1,4 @@
-# Ear protectors affiliate site
+# Seven Kings Web Design
 
 ### Technologies used:
 
