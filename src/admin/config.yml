@@ -30,7 +30,7 @@ collections:
         name: "tags"
         multiple: true
         create: true
-        options: ["product, article"]
+        options: ["product", "article"]
       - label: "Right image"
         name: "rightImage"
         widget: "image"
