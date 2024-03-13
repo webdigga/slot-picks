@@ -1,18 +1,18 @@
 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow flex flex-col">
     
-	<a target="_blank" rel="noopener" href="{{ productCard.data.articleLink }}">
+	<a href="{{ productCard.data.articleLink }}">
 		<img
 			class="rounded-t-lg max-h-fit"
 			src="{{ productCard.data.image }}"
 			alt="{{ productCard.data.imageAlt }}"
-			width="600"
-			height="300"
+			width="640"
+			height="427"
 			loading="lazy"
 		/>
 	</a>
 	
 	<div class="p-5  flex flex-col grow">
-		<a target="_blank" rel="noopener" href="{{ productCard.data.articleLink }}">
+		<a href="{{ productCard.data.articleLink }}">
 			<h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{ productCard.data.title }}</h2>
 		</a>
 		<p class="mb-3 font-normal text-gray-700 grow">{{ productCard.data.description }}</p>
