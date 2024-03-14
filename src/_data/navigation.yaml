@@ -1,4 +1,6 @@
 items:
+  - text: Home
+    url: /
   - text: Consultation
     url: /posts/consultation/
   - text: Design
