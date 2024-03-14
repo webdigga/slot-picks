@@ -6,8 +6,7 @@ date: 2024-03-07T16:27:32.906Z
 type: article
 tags:
   - article
-rightImage: ""
-rightImageAlt: Recommended Ear Plugs
+heroImage: /static/img/about-large.webp
 ---
 I have around 25 years working as a Web Developer / Software Engineer.  I have worked for companies such as the Telegraph newspaper and DAZN (Perform group).
 

@@ -31,15 +31,14 @@ collections:
         multiple: true
         create: true
         options: ["product", "article"]
-      - label: "Right image"
-        name: "rightImage"
+      - label: "Hero image"
+        name: "heroImage"
         widget: "image"
         choose_url: true
         required: false
         media_library:
           config:
             multiple: false
-      - { label: "Right image descriptive text", name: "rightImageAlt", widget: "string", required: false }
   - label: "ProductCard"
     name: "productCard"
     folder: "src/productCards"

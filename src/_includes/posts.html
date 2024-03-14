@@ -3,18 +3,22 @@ layout: default
 prism: true
 ---
 
-<div class="container max-w-4xl mt-6  px-6">
-    <div class="pb-5 mb-5 border-b border-gray-100 flex flex-col md:flex-row md:justify-between">
-        <h1 class="font-bold text-5xl text-left inline-block max-w-lg mb-5 md:mb-0">{{title}}</h1>
-    </div>
+<div
+	class="w-full bg-cover bg-center py-56"
+	style="background-image: url('{{ heroImage }}');">
+</div>
 
-    <article class="prose my-4 max-w-none flex flex-col md:block">
+<div class="container 2xl:max-w-6xl mt-6 px-6 flex flex-col lg:flex-row">
 
-		{% if rightImage %}
-			<img src="{{ rightImage }}" alt="{{ rightImageAlt }}" class="ml-auto mr-auto md:ml-4 max-w-64 md:float-right" />
-		{% endif %}
+	<div class="lg:pr-8 article-content">
+		<div class="pb-5 mb-5 border-b border-gray-100 flex flex-col md:flex-row md:justify-between">
+			<h1 class="font-bold text-5xl text-left inline-block mb-5 md:mb-0">{{ title }}</h1>
+		</div>
+	
+		<article class="prose my-4 max-w-none flex flex-col md:block">
+	
+			{{ content | safe }}
 
-		{{ content | safe }}		
-
-	</article>
+		</article>
+	</div>
 </div>
