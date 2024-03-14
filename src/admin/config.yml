@@ -119,7 +119,7 @@ collections:
           - label: "Phone number"
             name: "phoneNumber"
             widget: "number"
-            value_type: "int"
+            value_type: "float"
           - label: "Logo (URL)"
             name: "logoUrl"
             widget: "image"
