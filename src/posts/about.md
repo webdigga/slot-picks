@@ -21,8 +21,8 @@ I charge a fee based on how big the project is, and a small retainer which helps
 
 Contact me for a consulation meeting to discuss your requirements.
 
-\[{{ settings.email }}](mailto:{{ settings.email }})
+[{{ settings.email }}](mailto:webdigga42@gmail.com)
 
-\[{{ settings.phoneNumber }}](tel:{{ settings.phoneNumber }})
+[{{ settings.phoneNumber }}](tel:07877304672)
 
 [LinkedIn](https://www.linkedin.com/in/david-white-96a0878a/)
