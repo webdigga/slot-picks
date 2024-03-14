@@ -7,8 +7,17 @@
 	>
 		<div class="container mx-auto text-center text-white">
 			<h1 class="text-5xl font-medium mb-6">{{ hero[0].data.title }}</h1>
-			<p class="text-xl mb-12">{{ hero[0].data.description }}</p>
-			<a href="{{ hero[0].data.buttonUrl }}" class="bg-[color:var(--primary-color)] text-white py-4 px-12 rounded-full hover:bg-[color:var(--primary-hover)]">{{ hero[0].data.buttonText }}</a>
+			<p class="text-xl mb-9">{{ hero[0].data.description }}</p>
+			<a href="{{ hero[0].data.buttonUrl }}" class="inline-block bg-[color:var(--primary-color)] text-white py-4 px-12 rounded-full hover:bg-[color:var(--primary-hover)]">{{ hero[0].data.buttonText }}</a>
+
+			<section class="container text-xs mt-2">
+				{% if settings.email %}
+					<a href="mailto:{{ settings.email }}" class="mr-2">Email me @ {{ settings.email }}</a>| 
+				{% endif %}
+				{% if settings.phoneNumber %}
+					<a href="tel:44{{ settings.phoneNumber }}" class="ml-2">Call me on {{ settings.phoneNumber }}</a>
+				{% endif %}
+			</section>
 		</div>
 	</section>
 </div>

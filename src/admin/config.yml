@@ -115,6 +115,8 @@ collections:
           - { label: Description, name: description, widget: string }
           - { label: Type (type of template), name: type, widget: string }
           - { label: Logo (Alt), name: logoAlt, widget: string }
+          - { label: Email, name: email, widget: string }
+          - { label: Phone number, name: phoneNumber, widget: number }
           - label: "Logo (URL)"
             name: "logoUrl"
             widget: "image"
