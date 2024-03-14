@@ -21,8 +21,8 @@ I charge a fee based on how big the project is, and a small retainer which helps
 
 Contact me for a consulation meeting to discuss your requirements.
 
-[{{ settings.email }}](mailto:{{ settings.email }})
+\[{{ settings.email }}](mailto:{{ settings.email }})
 
-[{{ settings.phoneNumber }}](tel:{{ settings.phoneNUmber }})
+\[{{ settings.phoneNumber }}](tel:{{ settings.phoneNumber }})
 
 [LinkedIn](https://www.linkedin.com/in/david-white-96a0878a/)
