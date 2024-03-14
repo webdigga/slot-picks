@@ -21,8 +21,8 @@ I charge a fee based on how big the project is, and a small retainer which helps
 
 Contact me for a consulation meeting to discuss your requirements.
 
-webdigga42@gmail.com
+[webdigga42@gmail.com](mailto:webdigga42@gmail.com)
 
-07877 304672
+[07877 304672](tel:07877304672)
 
 [LinkedIn](https://www.linkedin.com/in/david-white-96a0878a/)
