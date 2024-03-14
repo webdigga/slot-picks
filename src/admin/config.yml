@@ -117,6 +117,10 @@ collections:
           - { label: Logo (Alt), name: logoAlt, widget: string }
           - { label: Email, name: email, widget: string }
           - { label: Phone number, name: phoneNumber, widget: number }
+          - label: "Phone number"
+            name: "phoneNumber"
+            widget: "number"
+            value_type: "int"
           - label: "Logo (URL)"
             name: "logoUrl"
             widget: "image"
