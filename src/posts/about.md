@@ -18,7 +18,7 @@ I run a suite of performance tests to ensure that my high standards are being me
 
 I charge a fee based on how big the project is, and a small retainer which helps me cover hosting and any other maintenance that needs to be done.
 
-## Why choose?
+## Why choose Seven Kings Web Design?
 
 * Tailored Solutions: We recognize that every business is unique, which is why we take a personalized approach to every project, ensuring that your website reflects your brand identity and resonates with your target audience.
 * Expertise and Innovation: With years of industry experience and a passion for innovation, I stay abreast of the latest trends and technologies to deliver cutting-edge solutions that set you apart from the competition.
