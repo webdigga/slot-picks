@@ -2,7 +2,7 @@
     <small class="text-gray-500">Copyright © {{settings.poweredBy}} {{ helpers.currentYear() }}.</small>
 	<section class="container text-xs mt-2 text-gray-500">
 		{% if settings.email %}
-			<a href="mailto:{{ settings.email }}" class="mr-2">Email me @ {{ settings.email }}</a>| 
+			<a href="mailto:{{ settings.email }}" class="mr-2">Email me @ {{ settings.email }}</a>|
 		{% endif %}
 		{% if settings.phoneNumber %}
 			<a href="tel:{{ settings.phoneNumber }}" class="ml-2">Call me on {{ settings.phoneNumber }}</a>
