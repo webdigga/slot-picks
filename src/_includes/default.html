@@ -96,6 +96,14 @@
 			grantConsentButton.addEventListener("click", function() {
 				localStorage.setItem("consentGranted", "true");
 
+				loadGtagScript();
+			});
+
+			if(localStorage.getItem("consentGranted")) {
+				loadGtagScript();
+			}
+
+			function loadGtagScript() {
 				function gtag() { dataLayer.push(arguments); }
 
 				gtag('consent', 'update', {
@@ -105,15 +113,6 @@
 					analytics_storage: 'granted'
 				});
 
-				var gtagScript = document.createElement('script');
-				gtagScript.defer = true;
-				gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-EZ5CBY3TDR';
-
-				var firstScript = document.getElementsByTagName('script')[0];
-				firstScript.parentNode.insertBefore(gtagScript,firstScript);
-			});
-
-			if(localStorage.getItem("consentGranted")) {
 				var gtagScript = document.createElement('script');
 				gtagScript.defer = true;
 				gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-EZ5CBY3TDR';
