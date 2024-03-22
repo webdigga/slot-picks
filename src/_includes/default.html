@@ -50,11 +50,7 @@
 	<meta name="twitter:site" content="{{ settings.title }}">
     <meta name="og:locale" property="og:locale" content="en_GB">  
 
-    {% block head %}{% endblock %}
     <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
-    {% if prism == true %}
-      <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
-    {% endif %}
 
 	{% if env.isProd %}
 		<script>
