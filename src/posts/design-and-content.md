@@ -5,7 +5,7 @@ author: David White
 date: 2024-03-07T15:12:40.213Z
 type: article
 tags:
-  - product
+  - article
 heroImage: /static/img/design-large.webp
 ---
 This is a chance for me to show you previous sites that I have built and for you to show me any sites you had in mind for what you expect from the look and feel.

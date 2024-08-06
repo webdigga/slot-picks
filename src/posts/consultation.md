@@ -1,11 +1,11 @@
 ---
-title: Free consultation
+title: Consultation
 description: Free consultation for micro-site development
 author: David White
 date: 2024-03-07T14:11:48.166Z
 type: article
 tags:
-  - product
+  - article
 heroImage: /static/img/consultation-large.webp
 ---
 Our journey begins with a thorough understanding of your business, its objectives, and your target audience. During our discovery session, we'll delve deep into your brand identity, values, and the message you wish to convey through your website.

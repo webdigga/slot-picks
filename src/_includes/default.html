@@ -5,17 +5,17 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-	<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
 
-	{% if ignore %}
-	  <meta name="robots" content="noindex"/>
-	{% endif %}
+    {% if ignore %}
+      <meta name="robots" content="noindex"/>
+    {% endif %}
 
-	<meta name="google-site-verification" content="Xt0hhevRb23Ay-bJdloIsS5sD0jkOR1DLvacz1G2XT0" />
+    <meta name="google-site-verification" content="Xt0hhevRb23Ay-bJdloIsS5sD0jkOR1DLvacz1G2XT0" />
 
     <title>
       {% if title %}
@@ -25,27 +25,27 @@
       {% endif %}
     </title>
 
-	<!-- If we're an article page -->
+    <!-- If we're an article page -->
     {% if description %}
       <meta name="description" content="{{ description }}"/>
       <meta name="og:description" property="og:description" content="{{ description }}">
-	  <meta name="twitter:description" content="{{ description }}">
+      <meta name="twitter:description" content="{{ description }}">
     {% else %}
       <meta name="description" content="{{ settings.description }}"/>
       <meta name="og:description" property="og:description" content="{{ settings.description }}">
-	  <meta name="twitter:description" content="{{ settings.description }}">
+      <meta name="twitter:description" content="{{ settings.description }}">
     {% endif %}
 
-	<!-- If we're an article page -->
+    <!-- If we're an article page -->
     {% if title %}
       <meta name="og:title" property="og:title" content="{{ title }}">
-	  <meta name="twitter:title" content="{{ title }}">
+      <meta name="twitter:title" content="{{ title }}">
     {% else %}
       <meta name="og:title" property="og:title" content="{{ settings.title }}">
-	  <meta name="twitter:title" content="{{ settings.title }}">
+      <meta name="twitter:title" content="{{ settings.title }}">
     {% endif %}
 
-	<!-- If we're an article page -->
+    <!-- If we're an article page -->
     {% if type %}
       <meta name="og:type" property="og:type" content="{{ type }}">
     {% else %}
@@ -53,26 +53,67 @@
     {% endif %}
 
     <meta name="og:site_name" property="og:site_name" content="{{ settings.title }}">
-	<meta name="twitter:site" content="{{ settings.title }}">
-    <meta name="og:locale" property="og:locale" content="en_GB">  
+    <meta name="twitter:site" content="{{ settings.title }}">
+    <meta name="og:locale" property="og:locale" content="en_GB">
+
+    {% if title %}
+      <link rel="canonical" href="{{ env.site }}/{{ title | slugify }}/" />
+    {% endif %}
+
+    {% if type === 'home' %}
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "{{ settings.title }}",
+          "description": "{{ settings.description }}",
+          "image": "android-chrome-512x512.png",
+          "url": "{{ env.site }}"
+        }
+      </script>
+    {% endif %}
+
+    {% if type === 'article' %}
+      <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Article",
+          "headline": "{{ title }}",
+          "datePublished": "{{ date }}",
+          "url": "{{ env.site }}/{{ title | slugify }}/",
+          "description": "{{ description }}",
+          "image": "{{ heroImage }}",
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "{{ settings.title }}",
+            "url": "{{ env.site }}",
+            "publisher": {
+              "@type": "Organization",
+              "name": "{{ settings.title }}",
+              "url": "{{ env.site }}"
+            }
+          }
+        }
+      </script>
+    {% endif %}
 
     <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
 
-	{% if env.isProd %}
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() { dataLayer.push(arguments); }
-			gtag('consent', 'default', {
-			'ad_user_data': 'denied',
-			'ad_personalization': 'denied',
-			'ad_storage': 'denied',
-			'analytics_storage': 'denied',
-			'wait_for_update': 500,
-			});
-			gtag('js', new Date());
-			gtag('config', 'G-EZ5CBY3TDR');
-		</script>
-	{% endif %}
+    {% if env.isProd %}
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('consent', 'default', {
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied',
+        'wait_for_update': 500,
+        });
+        gtag('js', new Date());
+        gtag('config', 'G-EZ5CBY3TDR');
+      </script>
+    {% endif %}
   </head>
 
   <body class="bg-white">
@@ -84,41 +125,41 @@
 
     <script src="/static/js/alpine.js" defer></script>
 
-	{% if env.isProd %}
+	  {% if env.isProd %}
 
-		{% include "./partials/cookie-consent.html" %}
+      {% include "./partials/cookie-consent.html" %}
 
-		<script>
-			const grantConsentButton = document.getElementById('grant-consent');
+      <script>
+        const grantConsentButton = document.getElementById('grant-consent');
 
-			grantConsentButton.addEventListener("click", function() {
-				localStorage.setItem("consentGranted", "true");
+        grantConsentButton.addEventListener("click", function() {
+          localStorage.setItem("consentGranted", "true");
 
-				loadGtagScript();
-			});
+          loadGtagScript();
+        });
 
-			if(localStorage.getItem("consentGranted")) {
-				loadGtagScript();
-			}
+        if(localStorage.getItem("consentGranted")) {
+          loadGtagScript();
+        }
 
-			function loadGtagScript() {
-				function gtag() { dataLayer.push(arguments); }
+        function loadGtagScript() {
+          function gtag() { dataLayer.push(arguments); }
 
-				gtag('consent', 'update', {
-					ad_user_data: 'granted',
-					ad_personalization: 'granted',
-					ad_storage: 'granted',
-					analytics_storage: 'granted'
-				});
+          gtag('consent', 'update', {
+            ad_user_data: 'granted',
+            ad_personalization: 'granted',
+            ad_storage: 'granted',
+            analytics_storage: 'granted'
+          });
 
-				var gtagScript = document.createElement('script');
-				gtagScript.defer = true;
-				gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-EZ5CBY3TDR';
+          var gtagScript = document.createElement('script');
+          gtagScript.defer = true;
+          gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-EZ5CBY3TDR';
 
-				var firstScript = document.getElementsByTagName('script')[0];
-				firstScript.parentNode.insertBefore(gtagScript,firstScript);
-			}
-		</script>
-	{% endif %}
+          var firstScript = document.getElementsByTagName('script')[0];
+          firstScript.parentNode.insertBefore(gtagScript,firstScript);
+        }
+      </script>
+	  {% endif %}
   </body>
 </html>

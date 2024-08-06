@@ -24,13 +24,17 @@ collections:
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Type", name: "type", widget: "string", default: "Article" }
+      - widget: select
+        label: "type"
+        name: "type"
+        create: true
+        options: ["article", "privacy"]
       - widget: select
         label: "tags"
         name: "tags"
         multiple: true
         create: true
-        options: ["product", "article"]
+        options: ["article", "privacy"]
       - label: "Hero image"
         name: "heroImage"
         widget: "image"

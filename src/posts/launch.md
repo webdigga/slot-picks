@@ -5,7 +5,7 @@ author: David White
 date: 2024-03-07T16:17:14.646Z
 type: article
 tags:
-  - product
+  - article
 heroImage: /static/img/launch-large.webp
 ---
 Upon launch, we'll provide comprehensive support to ensure a smooth transition and address any post-launch concerns.

@@ -4,11 +4,19 @@
 
 /*Your Custom CSS Goes here*/
 
+@font-face {
+  font-family: skwdFont;
+  src: url(font.ttf);
+}
+
 :root {
-  --primary-color: #0b336f;
-  --primary-hover: #08224a;
-  --affiliate-color: #FFD814;
-  --affiliate-hover: #F7CA00;
+  --primary-color: #041f49;
+  --primary-hover: #364a6a;
+  --secondary-color: #dc23f0;
+}
+
+body {
+  font-family: skwdFont;
 }
 
 h1 {
@@ -17,6 +25,12 @@ h1 {
 
 h3 {
   @apply text-2xl font-bold mb-3;
+}
+
+@media (min-width: 1536px) {
+  .container {
+      max-width: 1400px !important;
+  }
 }
 
 /* Syntax Highlighting*/

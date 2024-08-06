@@ -2,14 +2,14 @@ items:
   - text: Home
     url: /
   - text: Consultation
-    url: /posts/consultation/
+    url: /consultation/
   - text: Design
-    url: /posts/design-and-content/
+    url: /design-and-content/
   - text: Development
-    url: /posts/development/
+    url: /development/
   - text: Feedback
-    url: /posts/feedback-loop/
+    url: /feedback-loop/
   - text: Launch
-    url: /posts/launch/
+    url: /launch/
   - text: Support
-    url: /posts/support/
+    url: /support/

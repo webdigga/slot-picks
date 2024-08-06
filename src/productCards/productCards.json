@@ -1,7 +1,7 @@
 {
-    "layout": "default",
-    "tags": [
-        "productCard"
-    ],
+  "layout": "default",
+  "tags": [
+      "productCard"
+  ],
 	"ignore": true
 }

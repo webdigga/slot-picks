@@ -2,18 +2,19 @@
 
 <div class="bg-gray-50 flex items-center mb-8">
 	<section
-		class="w-full bg-cover bg-center py-32"
+		class="w-full bg-cover bg-center py-32 bg-black"
 		style="background-image: url('{{ hero[0].data.image }}');"
 	>
 		<div class="container mx-auto text-center text-white px-4">
-			<h2 class="text-5xl font-medium mb-6">{{ hero[0].data.title }}</h2>
-			<h2 class="text-xl mb-9">{{ hero[0].data.description }}</h2>
+			<h1 class="text-5xl font-medium mb-6">{{ hero[0].data.title }}</h2>
+			<h2 class="text-xl mb-4">{{ hero[0].data.description }}</h2>
 			<a href="{{ hero[0].data.buttonUrl }}" class="inline-block bg-[color:var(--primary-color)] text-white py-4 px-12 rounded-full hover:bg-[color:var(--primary-hover)]">{{ hero[0].data.buttonText }}</a>
 
-			<section class="container text-s mt-2">
+			<section class="container text-s mt-4">
 				{% if settings.email %}
 					<a href="mailto:{{ settings.email }}" class="mr-2">Email me @ {{ settings.email }}</a>| 
 				{% endif %}
+
 				{% if settings.phoneNumber %}
 					<a href="tel:{{ settings.phoneNumber }}" class="ml-2">Call me on {{ settings.phoneNumber }}</a>
 				{% endif %}

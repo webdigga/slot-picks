@@ -10,7 +10,7 @@ author: David White
 date: 2024-03-07T16:21:35.762Z
 type: article
 tags:
-  - product
+  - article
 ---
 Our commitment to your success extends far beyond the completion of the project, as we offer ongoing maintenance, updates, and optimization services to keep your website running flawlessly.
 
