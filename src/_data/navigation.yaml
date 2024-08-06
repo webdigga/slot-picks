@@ -13,3 +13,5 @@ items:
     url: /launch/
   - text: Support
     url: /support/
+  - text: About and Contact
+    url: /about/
