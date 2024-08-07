@@ -1,6 +1,6 @@
 ---
 title: Design and content
-description: How we will design the new micro-site and what content will power it
+description: How we will design the new website and what content will power it
 author: David White
 date: 2024-03-07T15:12:40.213Z
 type: article
