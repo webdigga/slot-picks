@@ -1,6 +1,6 @@
 ---
 title: Consultation
-description: Free consultation for micro-site development
+description: Free consultation for website development
 author: David White
 date: 2024-03-07T14:11:48.166Z
 type: article
