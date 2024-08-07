@@ -1,6 +1,6 @@
 ---
 title: 1. Free consultation
-description: On-line or face to face chat about the requirements for the micro-site.
+description: On-line or face to face chat about the requirements for the website.
 articleLink: /consultation/
 imageAlt: Notes being taken during consultation
 image: /static/img/consultation.jpg
