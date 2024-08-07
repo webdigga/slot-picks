@@ -1,6 +1,6 @@
 ---
 title: Launch
-description: Launching the micro-site
+description: Launching the website
 author: David White
 date: 2024-03-07T16:17:14.646Z
 type: article
