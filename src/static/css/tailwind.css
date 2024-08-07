@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: skwdFont;
+  font-family: skwdFont, Helvetica, Arial, freesans, sans-serif;
 }
 
 h1 {
