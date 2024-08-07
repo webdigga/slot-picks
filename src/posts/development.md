@@ -16,26 +16,22 @@ I'll utilise cutting-edge technologies and adhere to industry best practices to 
 
 The development phase is where your website's design comes to life. During this stage, I'll start the work to create a fully functional, responsive, and user-friendly website. This phase involves meticulous coding, rigorous testing, and seamless integration of all necessary features to ensure your website performs optimally across all devices and browsers.
 
-**Steps in the Development Phase**
+## **Steps in the Development Phase**
 
 1. ### Setup & Environment Configuration
-
 
    Project Kickoff: Initializing the project.
    Development Environment Setup: Configuring development environments, version control systems, and continuous integration/continuous deployment (CI/CD) pipelines.
 2. ### Front-End Development
-
 
    HTML/CSS Coding: Translating design ideas into high-quality HTML and CSS code.
    JavaScript Integration: Implementing interactive elements and animations using JavaScript frameworks.
    Responsive Design: Ensuring the website is fully responsive and functions seamlessly on all devices and screen sizes.
 3. ### Content Management System (CMS) Implementation
 
-
    CMS Setup: Installing and configuring the CMS (Decap) for easy content updates.
    Plugin Configuration: Installing and configuring necessary plugins to extend CMS functionality.
 4. ### Quality Assurance & Testing
-
 
    Functional Testing: Verifying that all website features and functionalities work as intended.
    Cross-Browser Testing: Ensuring compatibility across different web browsers (e.g., Chrome, Firefox, Safari, Edge).
@@ -43,12 +39,10 @@ The development phase is where your website's design comes to life. During this 
    Security Testing: Conducting security audits to protect the website from vulnerabilities and attacks.
 5. ### Client Review & Revisions
 
-
    Staging Site Deployment: Deploying the website to a staging environment for client review.
    Client Feedback: Collecting and addressing feedback to make necessary adjustments and improvements.
    Final Revisions: Implementing final revisions based on client input before the official launch.
 6. ### Launch Preparation & Deployment
-
 
    Final Checks: Performing a comprehensive pre-launch checklist to ensure everything is in order.
    Live Deployment: Launching the website on the live server and ensuring a smooth transition.
