@@ -1,5 +1,5 @@
 ---
-title: Want a no fuss micro-site to get your business out to the world?
+title: Want a no fuss website to get your business out to the world?
 description: >-
   Nearly every business will need a website..  Not having one means falling
   behind the competition.
