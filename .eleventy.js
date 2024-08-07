@@ -4,9 +4,33 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 const markdownIt = require("markdown-it");
 
+const tailwind = require('tailwindcss');
+const postCss = require('postcss');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
+
 require('dotenv').config();
 
+const postcssFilter = (cssCode, done) => {
+  // we call PostCSS here.
+  postCss([tailwind(require('./tailwind.config')), autoprefixer(), cssnano({ preset: 'default' })])
+    .process(cssCode, {
+    // path to our CSS file
+    from: './src/static/css/tailwind.css'
+  })
+  .then(
+    (r) => done(null, r.css),
+    (e) => done(e, null)
+  );
+};
+
 module.exports = function (eleventyConfig) {
+  // Via addWatchTarget we tell Eleventy that changes to this file should trigger a rebuild
+  // if we are currently running the application locally with --serve.
+  // The asynchronous filter ensures that we can convert our CSS
+  eleventyConfig.addWatchTarget('./src/_includes/styles/tailwind.css');
+  eleventyConfig.addNunjucksAsyncFilter('postcss', postcssFilter);
+
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
 
@@ -40,15 +64,15 @@ module.exports = function (eleventyConfig) {
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
-    "./node_modules/alpinejs/dist/cdn.min.js": "./static/js/alpine.js",
-    "./node_modules/prismjs/themes/prism-tomorrow.css": "./static/css/prism-tomorrow.css",
+    "./node_modules/alpinejs/dist/cdn.min.js": "./_includes/static/js/alpine.js",
+    "./node_modules/prismjs/themes/prism-tomorrow.css": "./_includes/static/css/prism-tomorrow.css",
   });
 
   // Copy Image Folder to /_site
-  eleventyConfig.addPassthroughCopy("./src/static/img");
+  eleventyConfig.addPassthroughCopy("./src/_includes/static/img");
 
   // Copy Font to /_site
-  eleventyConfig.addPassthroughCopy("./src/static/css/font.ttf");
+  eleventyConfig.addPassthroughCopy("./src/_includesstatic/css/font.ttf");
 
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");

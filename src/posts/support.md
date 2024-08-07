@@ -1,5 +1,5 @@
 ---
-heroImage: /static/img/support-large.webp
+heroImage: /_includes/static/img/support-large.webp
 topImageAlt: ""
 topImage: ""
 title: Support

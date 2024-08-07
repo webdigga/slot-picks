@@ -6,7 +6,7 @@ date: 2024-03-07T14:11:48.166Z
 type: article
 tags:
   - article
-heroImage: /static/img/consultation-large.webp
+heroImage: /_includes/static/img/consultation-large.webp
 ---
 The consultation phase is the foundation of our web design process, where we get to know your business, understand your goals, and outline the project scope. This phase involves in-depth discussions, research, and strategic planning to ensure that the design and development of your website align perfectly with your vision and objectives.
 

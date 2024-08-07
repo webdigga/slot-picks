@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: skwdFont;
-  src: url(font.ttf);
+  src: url("/_includes/static/css/font.ttf");
   font-display: optional;
 }
 

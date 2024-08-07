@@ -6,7 +6,7 @@ date: 2024-03-07T16:17:14.646Z
 type: article
 tags:
   - article
-heroImage: /static/img/launch-large.webp
+heroImage: /_includes/static/img/launch-large.webp
 ---
 The launch phase is the final, exciting step in our web design process where your website goes live for the world to see. This phase is meticulously planned and executed to ensure a seamless transition from development to deployment. I'll handle everything from final testing to deployment and post-launch support, guaranteeing a smooth and successful launch of your website.
 

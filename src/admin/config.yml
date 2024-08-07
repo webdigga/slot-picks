@@ -5,8 +5,8 @@ backend:
   ### enable below lines for github integration ###
   # name: github
   # repo: https://github.com/webdigga/ear-protectors
-media_folder: "src/static/img"
-public_folder: "/static/img"
+media_folder: "src/_includes/static/img"
+public_folder: "/_includes/static/img"
 
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true

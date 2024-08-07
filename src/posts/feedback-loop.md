@@ -6,7 +6,7 @@ date: 2024-03-07T15:19:36.446Z
 type: article
 tags:
   - article
-heroImage: /static/img/feedback-large.webp
+heroImage: /_includes/static/img/feedback-large.webp
 ---
 The feedback phase is an integral part of the web design process, where I'll actively engage with you to refine and perfect your website. This phase ensures that every aspect of the website aligns with your vision and meets your expectations before the final launch. Through a collaborative approach, I'll gather your input, make necessary adjustments, and deliver a product that you are thoroughly satisfied with.
 

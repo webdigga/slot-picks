@@ -6,7 +6,7 @@ date: 2024-03-07T15:12:40.213Z
 type: article
 tags:
   - article
-heroImage: /static/img/design-large.webp
+heroImage: /_includes/static/img/design-large.webp
 ---
 The design phase is a crucial stage in the web design process. It is where ideas are transformed into visual representations that align with your brand identity and business goals. This phase involves several key steps, each designed to ensure that the final product not only meets but exceeds your expectations.
 
