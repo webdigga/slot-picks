@@ -15,27 +15,40 @@ During the development phase, the site will be available for you to look at (but
 At Seven Kings Web Design, we value your feedback immensely. Your insights help us ensure that we're meeting your needs and expectations. We've established this feedback loop to provide you with a seamless way to share your thoughts, suggestions, and concerns with us. Your feedback enables us to enhance our offerings and deliver an exceptional experience tailored to you.
 
 **Steps in the Feedback Phase**
-1. Presentation & Review
-Initial Presentation: Showcasing the developed website in a staging environment to give you a first-hand experience of its functionality and design.
-Detailed Walkthrough: Providing a comprehensive walkthrough of the website, highlighting key features, functionalities, and design elements.
-2. Feedback Collection
-Structured Feedback Sessions: Organizing feedback sessions to systematically gather your input and observations.
-Feedback Tools: Utilizing feedback tools and platforms (e.g., annotated screenshots, collaborative documents) to streamline the feedback process.
-3. Analysis & Prioritization
-Feedback Analysis: Reviewing all collected feedback to identify common themes, critical issues, and enhancement opportunities.
-Prioritization: Categorizing feedback into high, medium, and low priorities based on their impact and feasibility.
-4. Iterative Improvements
-Development Updates: Implementing necessary changes and improvements based on prioritized feedback.
-Design Tweaks: Making adjustments to design elements, ensuring they match your brand identity and preferences.
-Functionality Enhancements: Refining and enhancing website functionalities to improve user experience and performance.
-5. Ongoing Communication
-Progress Updates: Keeping you informed of the progress through regular updates and meetings.
-Feedback Verification: Verifying with you that all feedback has been addressed to your satisfaction.
-Additional Feedback: Allowing for additional rounds of feedback to ensure comprehensive coverage of all aspects.
-6. Final Approval
-Client Sign-Off: Obtaining your final approval on the refined website before proceeding to the launch phase.
 
-___
+1. ### Presentation & Review
+
+
+   Initial Presentation: Showcasing the developed website in a staging environment to give you a first-hand experience of its functionality and design.
+   Detailed Walkthrough: Providing a comprehensive walkthrough of the website, highlighting key features, functionalities, and design elements.
+2. ### Feedback Collection
+
+
+   Structured Feedback Sessions: Organizing feedback sessions to systematically gather your input and observations.
+   Feedback Tools: Utilizing feedback tools and platforms (e.g., annotated screenshots, collaborative documents) to streamline the feedback process.
+3. ### Analysis & Prioritization
+
+
+   Feedback Analysis: Reviewing all collected feedback to identify common themes, critical issues, and enhancement opportunities.
+   Prioritization: Categorizing feedback into high, medium, and low priorities based on their impact and feasibility.
+4. ### Iterative Improvements
+
+
+   Development Updates: Implementing necessary changes and improvements based on prioritized feedback.
+   Design Tweaks: Making adjustments to design elements, ensuring they match your brand identity and preferences.
+   Functionality Enhancements: Refining and enhancing website functionalities to improve user experience and performance.
+5. ### Ongoing Communication
+
+
+   Progress Updates: Keeping you informed of the progress through regular updates and meetings.
+   Feedback Verification: Verifying with you that all feedback has been addressed to your satisfaction.
+   Additional Feedback: Allowing for additional rounds of feedback to ensure comprehensive coverage of all aspects.
+6. ### Final Approval
+
+
+   Client Sign-Off: Obtaining your final approval on the refined website before proceeding to the launch phase.
+
+- - -
 
 **Get in touch!**
 
