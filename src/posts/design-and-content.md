@@ -16,9 +16,11 @@ Sites that I build will be driven from a content management system which you wil
 
 Armed with insights gathered during the discovery phase, we'll explore various design elements, color schemes, and layout options to ensure that your website not only captures attention but also aligns seamlessly with your brand identity.
 
+## Collaboration is key
+
 The design phase is built on a foundation of collaboration, creativity, and precision. By choosing Seven Kings Web Design, you'll benefit from a client-centric approach, and designs that are not only visually appealing but also functional and user-friendly.
 
-___
+- - -
 
 **Get in touch!**
 
