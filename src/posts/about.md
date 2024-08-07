@@ -10,7 +10,7 @@ heroImage: /static/img/about-large.webp
 ---
 I have around 25 years working as a Web Developer / Software Engineer.  I have worked for companies such as the Telegraph newspaper and DAZN (Perform group).
 
-Having worked on many content driven websites over the years I decided that now was the time for me to become a freelance Web Developer and start using my experience to create micro-sites focussing on local businesses.
+Having worked on many content driven websites over the years I decided that now was the time for me to become a freelance Web Developer and start using my experience to create websites focussing on local businesses.
 
 Fundamentally I want the website to load quickly.. This is good for the user and also good for Search Engine Optimisation (getting your site to the top of the search results).
 
