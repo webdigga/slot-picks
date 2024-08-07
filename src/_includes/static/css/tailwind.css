@@ -7,7 +7,7 @@
 @font-face {
   font-family: skwdFont;
   src: url("/_includes/static/css/font.ttf");
-  font-display: optional;
+  font-display: swap;
 }
 
 :root {
