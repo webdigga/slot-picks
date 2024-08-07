@@ -1,11 +1,11 @@
 {% set homepageSpiel = collections.homepageSpiel %}
 
 {% if homepageSpiel[0].data.title and homepageSpiel[0].data.description %}
-	<div class="prose grid grid-cols-1 gap-3 px-4 mb-8 2xl:px-0" style="max-width: 1200px">
+	<div class="prose prose-h3:mt-0 prose-hr:my-4 prose-p:mb-2 prose-p:mt-0 grid grid-cols-1 gap-3 px-4 mb-8 2xl:px-0" style="max-width: 1200px">
 
-		<h2 class="text-lg"><strong>{{ homepageSpiel[0].data.title }}</strong></h2>
+		<h2>{{ homepageSpiel[0].data.title }}</h2>
 
-		<p>{{ homepageSpiel[0].data.description | markdown | safe }}</p>
+		{{ homepageSpiel[0].data.description | markdown | safe }}
 
 	</div>
 {% endif %}
