@@ -10,13 +10,15 @@ description: >-
   ### Why Choose Us?
 
 
-  * *Creative Design*: Creating visually appealing and user-friendly websites tailored to your brand’s unique identity. 
+  * *Creative Design: Creating visually appealing and user-friendly websites tailored to your brand’s unique identity*
 
-  * *Responsive Layouts*: *We ensure your website looks and performs beautifully on all devices, from desktops to smartphones.*  
+  * *Responsive Layouts: We ensure your website looks and performs beautifully on all devices, from desktops to smartphones*  
 
-  * *SEO Optimisation*: Our websites are built with search engine optimization in mind, helping you rank higher and reach more customers. 
+  * *SEO Optimisation: Our websites are built with search engine optimization in mind, helping you rank higher and reach more customers*
 
-  * *Customized Solutions*: *We don’t believe in one-size-fits-all. Our designs are tailored to meet your specific needs and goals.*  Ongoing Support: From initial concept to launch and beyond, we provide continuous support to keep your website running smoothly.
+  * *Customized Solutions: We don’t believe in one-size-fits-all. Our designs are tailored to meet your specific needs and goals*
+  
+  * *Ongoing Support: From initial concept to launch and beyond, we provide continuous support to keep your website running smoothly*
 
 
   - - -
@@ -29,4 +31,6 @@ description: >-
 
 
   I am a Web Developer with 25 years of experience based in **Kingston Upon Thames**. You can find out more about me <a href="/about/" class="underline">here</a>, and take a look below at the steps needed to go from idea, to a fully deployed live website.
+
+  - - -
 ---
