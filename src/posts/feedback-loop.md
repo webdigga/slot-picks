@@ -14,7 +14,7 @@ During the development phase, the site will be available for you to look at (but
 
 At Seven Kings Web Design, we value your feedback immensely. Your insights help us ensure that we're meeting your needs and expectations. We've established this feedback loop to provide you with a seamless way to share your thoughts, suggestions, and concerns with us. Your feedback enables us to enhance our offerings and deliver an exceptional experience tailored to you.
 
-## **Steps in the Feedback Phase**
+## **Steps in the feedback phase**
 
 1. ### Presentation & Review
 
