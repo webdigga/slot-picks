@@ -16,7 +16,7 @@ I'll utilise cutting-edge technologies and adhere to industry best practices to 
 
 The development phase is where your website's design comes to life. During this stage, I'll start the work to create a fully functional, responsive, and user-friendly website. This phase involves meticulous coding, rigorous testing, and seamless integration of all necessary features to ensure your website performs optimally across all devices and browsers.
 
-## **Steps in the Development Phase**
+## **Steps in the development phase**
 
 1. ### Setup & Environment Configuration
 
