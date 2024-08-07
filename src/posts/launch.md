@@ -18,7 +18,7 @@ I will host the site for a fee (recurs annually) and you can choose to either us
 
 After that the site should be available on your new domain and the SEO magic will start happening to make your site reachable by search engines.
 
-**Steps in the launch phase**
+## **Steps in the launch phase**
 
 1. ### Final Testing & Quality Assurance
 
