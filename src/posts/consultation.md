@@ -14,7 +14,7 @@ Our journey begins with a thorough understanding of your business, its objective
 
 Very simply, this is to go over the basic requirements to make sure I can fulfil what you are asking for.  I'll show some examples of websites I have built previously and explain the content management system and how it all works.
 
-**Steps in the Consultation Phase**
+## **Steps in the Consultation Phase**
 
 1. ### Initial Contact
 
