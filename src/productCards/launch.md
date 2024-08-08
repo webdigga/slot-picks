@@ -1,5 +1,5 @@
 ---
-title: 5. Launch
+title: Launch
 description: "Time for go live!"
 articleLink: /launch/
 imageAlt: Rocket taking off

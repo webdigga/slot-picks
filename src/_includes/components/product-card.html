@@ -1,17 +1,28 @@
-<div class="bg-white border border-gray-200 flex flex-col md:flex-row">
+{% switch productCard.data.order %}
+  {% case 1 %}
+    {% set bgClass = 'bg-gray-300' %}
+  {% case 2 %}
+    {% set bgClass = 'bg-gray-400' %}
+  {% case 3 %}
+    {% set bgClass = 'bg-gray-500' %}
+  {% case 4 %}
+    {% set bgClass = 'bg-gray-600' %}
+  {% case 5 %}
+    {% set bgClass = 'bg-gray-700' %}
+  {% case 6 %}
+    {% set bgClass = 'bg-gray-800' %}
+  {% default %}
+    {% set bgClass = 'bg-gray-800' %}
+{% endswitch %}
+
+<div class="bg-white border border-gray-200 flex md:flex-row">
     
-	<a href="{{ productCard.data.articleLink }}">
-		<img
-			class="max-h-fit md:max-w-72"
-			src="{{ productCard.data.image }}"
-			alt="{{ productCard.data.imageAlt }}"
-			width="640"
-			height="427"
-			loading="lazy"
-		/>
+	<a href="{{ productCard.data.articleLink }}"
+    class="{{ bgClass }} text-white flex w-1/4 items-center justify-center text-7xl">    
+      {{ productCard.data.order }}
 	</a>
-	
-	<div class="p-5 flex flex-col grow">
+
+	<div class="p-5 flex flex-col w-3/4">
 		<a href="{{ productCard.data.articleLink }}">
 			<h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{ productCard.data.title }}</h2>
 		</a>

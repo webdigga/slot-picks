@@ -1,5 +1,5 @@
 ---
-title: 3. Development
+title: Development
 description: The part I enjoy the most, where the magic happens :)
 articleLink: /development/
 imageAlt: Colourful code

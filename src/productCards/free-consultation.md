@@ -1,5 +1,5 @@
 ---
-title: 1. Free consultation
+title: Free consultation
 description: On-line or face to face chat about the requirements for the website.
 articleLink: /consultation/
 imageAlt: Notes being taken during consultation

@@ -12,10 +12,14 @@
       {{ hero[0].data.buttonText }}
     </button>
 
-    <section class="container text-s mt-4">
+    <section class="container mt-4 flex flex-col md:flex-row md:justify-center">
       {% if settings.email %}
-        <a href="mailto:{{ settings.email }}" class="mr-2">Email me @ {{ settings.email }}</a>| 
+        <a href="mailto:{{ settings.email }}" class="md:mr-2 text-sm md:text-base mb-4 md:mb-0">
+          <span>Email me @</span> <span>{{ settings.email }}</span>
+        </a> 
       {% endif %}
+
+      {% if settings.email and settings.phoneNumber %}<span class="hidden md:block">|</span>{% endif %}
 
       {% if settings.phoneNumber %}
         <a href="tel:{{ settings.phoneNumber }}" class="ml-2">Call me on {{ settings.phoneNumber }}</a>
