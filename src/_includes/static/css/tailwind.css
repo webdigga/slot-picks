@@ -34,6 +34,11 @@ h3 {
   }
 }
 
+.iconColour {
+  --tw-text-opacity: 1;
+  stroke: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 /* Syntax Highlighting*/
 
 body :not(pre) > code[class*="language-"],
