@@ -1,6 +1,9 @@
 ---
 title: About
-description: Learn more about Seven Kings Web Design, a Kingston-Upon-Thames-based freelancer specialising in custom web development, SEO, and performance.
+seoTitle: This it the first SEO title
+description: Learn more about Seven Kings Web Design, a
+  Kingston-Upon-Thames-based freelancer specialising in custom web development,
+  SEO, and performance.
 author: David White
 date: 2024-03-07T16:27:32.906Z
 type: article
