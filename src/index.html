@@ -4,7 +4,7 @@ path: home
 type: home
 ---
 
-<section class="bg-white dark:bg-gray-900 h-[calc(100vh-132px)] flex items-center">
+<section class="bg-gray-900 h-[calc(100vh-132px)] flex items-center">
   <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
     {% include "./_includes/components/hero.html" %}
   </div>
@@ -25,4 +25,7 @@ type: home
       {% include "./_includes/components/product-card.html" %}
     {% endfor %}
   </div>
+
 </div>
+
+{% include "./_includes/components/testimonials.html" %}
