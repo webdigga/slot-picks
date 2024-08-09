@@ -1,6 +1,6 @@
 ---
 title: Feedback loop
-seoTitle: Feedback | Seven Kings Web Design - Optimise User Experience
+seoTitle: Feedback | Seven Kings Web Design - User Experience
 description: Enhance your website with Seven Kings Web Design's Feedback Loop service, ensuring continuous improvement and optimal user experience.
 author: David White
 date: 2024-03-07T15:19:36.446Z
