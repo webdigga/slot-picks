@@ -1,6 +1,6 @@
 ---
 title: Support
-seoTitle: Support Services | Seven Kings Web Design - Ongoing Maintenance & Website Assistance
+seoTitle: Support | Seven Kings Web Design - Maintenance & Assistance
 description: Seven Kings Web Design provides comprehensive support services, offering ongoing maintenance, and updates to ensure your site runs smoothly.
 author: David White
 date: 2024-03-07T16:21:35.762Z

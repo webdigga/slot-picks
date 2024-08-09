@@ -1,6 +1,6 @@
 ---
 title: Launch
-seoTitle: Launch Services | Seven Kings Web Design - Successful Website Launch & Expert Guidance
+seoTitle: Launch | Seven Kings Web Design - Website Launch & Guidance
 description: Seven Kings Web Design's Launch service,  ensuring a smooth and impactful online debut with expert guidance and support.
 author: David White
 date: 2024-03-07T16:17:14.646Z

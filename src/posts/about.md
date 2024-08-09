@@ -1,6 +1,6 @@
 ---
 title: About
-seoTitle: About Us | Seven Kings Web Design - Expert Web Development & Digital Solutions
+seoTitle: About Us | Seven Kings Web Design - Web Development & SEO
 description: Learn more about Seven Kings Web Design, a
   Kingston-Upon-Thames-based freelancer specialising in custom web development,
   SEO, and performance.
