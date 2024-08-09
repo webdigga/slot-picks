@@ -1,5 +1,6 @@
 ---
 title: Development
+seoTItle: Web Development Services | Seven Kings Web Design - Custom, Responsive Websites
 description: Seven Kings Web Design offers expert web development services, creating custom, responsive websites that enhance user experience and drive growth.
 author: David White
 date: 2024-03-07T15:16:06.797Z
@@ -20,7 +21,7 @@ The development phase is where your website's design comes to life. During this 
 
 1. ### Setup & Environment Configuration
 
-   Project Kickoff: Initializing the project.
+   Project Kickoff: Initialising the project.
    Development Environment Setup: Configuring development environments, version control systems, and continuous integration/continuous deployment (CI/CD) pipelines.
 2. ### Front-End Development
 
@@ -35,7 +36,7 @@ The development phase is where your website's design comes to life. During this 
 
    Functional Testing: Verifying that all website features and functionalities work as intended.
    Cross-Browser Testing: Ensuring compatibility across different web browsers (e.g., Chrome, Firefox, Safari, Edge).
-   Performance Testing: Optimizing website speed and performance through various testing tools and techniques.
+   Performance Testing: Optimising website speed and performance through various testing tools and techniques.
    Security Testing: Conducting security audits to protect the website from vulnerabilities and attacks.
 5. ### Client Review & Revisions
 

@@ -18,7 +18,9 @@
     <meta name="google-site-verification" content="Xt0hhevRb23Ay-bJdloIsS5sD0jkOR1DLvacz1G2XT0" />
 
     <title>
-      {% if title %}
+      {% if seoTitle %}
+        {{ seoTitle }}
+      {% elif title %}
         {{ title }}
       {% else %}
         {{ settings.title }}

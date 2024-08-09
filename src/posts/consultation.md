@@ -1,5 +1,6 @@
 ---
 title: Consultation
+seoTitle: Free Consultation | Seven Kings Web Design - Tailored Web Development & SEO Services
 description: Schedule a free consultation with Seven Kings Web Design to discuss your website needs. Personalised advice to help your business thrive online.
 author: David White
 date: 2024-03-07T14:11:48.166Z
@@ -28,7 +29,7 @@ Very simply, this is to go over the basic requirements to make sure I can fulfil
 3. ### Needs Assessment
 
    Current Website Analysis: Reviewing your existing website (if applicable) to identify strengths, weaknesses, and areas for improvement.
-   Competitor Analysis: Analyzing competitor websites to identify industry standards and opportunities for differentiation.
+   Competitor Analysis: Analysing competitor websites to identify industry standards and opportunities for differentiation.
    Technical Requirements: Determining technical requirements, such as CMS preferences, e-commerce capabilities, and third-party integrations.
 4. ### Strategy Development
 

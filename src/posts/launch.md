@@ -1,5 +1,6 @@
 ---
 title: Launch
+seoTitle: Launch Services | Seven Kings Web Design - Successful Website Launch & Expert Guidance
 description: Seven Kings Web Design's Launch service,  ensuring a smooth and impactful online debut with expert guidance and support.
 author: David White
 date: 2024-03-07T16:17:14.646Z
@@ -25,12 +26,12 @@ After that the site should be available on your new domain and the SEO magic wil
    Comprehensive Testing: Conducting a final round of testing to ensure all functionalities are working correctly.
    Cross-Browser Compatibility: Verifying that the website is compatible with all major browsers (Chrome, Firefox, Safari, Edge).
    Responsive Testing: Ensuring the website is fully responsive and performs well on all devices (desktop, tablet, mobile).
-   Performance Optimization: Finalizing performance tweaks to ensure fast loading times and optimal performance.
+   Performance Optimisation: Finalising performance tweaks to ensure fast loading times and optimal performance.
 2. ### Pre-Launch Review
 
    Client Walkthrough: Providing a final walkthrough of the website for client review and approval.
    Checklist Verification: Using a detailed pre-launch checklist to ensure every aspect of the website is ready.
-   Content Finalization: Ensuring all content is proofread, accurate, and properly formatted.
+   Content Finalisation: Ensuring all content is proofread, accurate, and properly formatted.
 3. ### Deployment
 
    Server Configuration: Setting up and configuring the live server environment.

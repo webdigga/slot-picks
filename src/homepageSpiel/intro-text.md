@@ -14,9 +14,9 @@ description: >-
 
   * *Responsive Layouts: We ensure your website looks and performs beautifully on all devices, from desktops to smartphones*  
 
-  * *SEO Optimisation: Our websites are built with search engine optimization in mind, helping you rank higher and reach more customers*
+  * *SEO Optimisation: Our websites are built with search engine optimisation in mind, helping you rank higher and reach more customers*
 
-  * *Customized Solutions: We don’t believe in one-size-fits-all. Our designs are tailored to meet your specific needs and goals*
+  * *Customised Solutions: We don’t believe in one-size-fits-all. Our designs are tailored to meet your specific needs and goals*
   
   * *Ongoing Support: From initial concept to launch and beyond, we provide continuous support to keep your website running smoothly*
 
