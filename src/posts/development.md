@@ -1,6 +1,6 @@
 ---
 title: Development
-seoTItle: Web Development Services | Seven Kings Web Design - Custom, Responsive Websites
+seoTitle: Web Development Services | Seven Kings Web Design - Custom, Responsive Websites
 description: Seven Kings Web Design offers expert web development services, creating custom, responsive websites that enhance user experience and drive growth.
 author: David White
 date: 2024-03-07T15:16:06.797Z
