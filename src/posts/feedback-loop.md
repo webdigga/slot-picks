@@ -1,6 +1,6 @@
 ---
 title: Feedback loop
-description: Enhance your website with Seven Kings Web Design's Feedback Loop service. I gather and analyse user feedback to refine your digital presence, ensuring continuous improvement and optimal user experience. Drive engagement and satisfaction with our expert insights.
+description: Enhance your website with Seven Kings Web Design's Feedback Loop service, ensuring continuous improvement and optimal user experience.
 author: David White
 date: 2024-03-07T15:19:36.446Z
 type: article

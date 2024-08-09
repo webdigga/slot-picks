@@ -1,6 +1,6 @@
 ---
 title: Consultation
-description: Schedule a free consultation with Seven Kings Web Design to discuss your website needs. I provide personalized advice to help your business thrive online. Start your journey to a successful online presence today.
+description: Schedule a free consultation with Seven Kings Web Design to discuss your website needs. Personalised advice to help your business thrive online.
 author: David White
 date: 2024-03-07T14:11:48.166Z
 type: article

@@ -1,6 +1,6 @@
 ---
 title: Design and content
-description: Seven Kings Web Design offers bespoke design and content services to create visually stunning websites that captivate your audience. Crafting engaging content and intuitive designs to boost your brand and drive online success.
+description: Seven Kings Web Design offers bespoke design and content services to create visually stunning websites that captivate your audience.
 author: David White
 date: 2024-03-07T15:12:40.213Z
 type: article
