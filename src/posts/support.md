@@ -1,16 +1,12 @@
 ---
-heroImage: /_includes/static/img/support-large.webp
-topImageAlt: ""
-topImage: ""
 title: Support
-description: Auritech Music Earplugs provide exceptional hearing protection
-  without compromising on sound quality, perfect for musicians and music lovers
-  alike.
+description: Seven Kings Web Design provides comprehensive support services, offering ongoing maintenance, updates, and troubleshooting to ensure your website runs smoothly. Rely on Seven Kings for reliable, responsive assistance to keep your online presence strong.
 author: David White
 date: 2024-03-07T16:21:35.762Z
 type: article
 tags:
   - article
+heroImage: /_includes/static/img/support-large.webp
 ---
 The support phase is a vital part of our web design process, ensuring that your website remains functional, secure, and up-to-date post-launch. Our dedicated support services include regular maintenance, updates, security monitoring, and technical assistance to guarantee the long-term success and performance of your website.
 

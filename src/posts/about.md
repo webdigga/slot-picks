@@ -1,6 +1,6 @@
 ---
 title: About
-description: Freelance web developer based in Kingston Upon Thames
+description: Learn more about Seven Kings Web Design, a Kingston-Upon-Thames-based freelancer specialising in custom web development, SEO, and performance. Discover my mission, values, and commitment to helping businesses grow through innovative online solutions.
 author: David White
 date: 2024-03-07T16:27:32.906Z
 type: article

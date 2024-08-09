@@ -1,6 +1,6 @@
 ---
 title: Launch
-description: Launching the website
+description: Seven Kings Web Design's Launch service helps you successfully introduce your website with tailored strategies, including design, development, and performance plan. Ensure a smooth and impactful online debut with our expert guidance and support.
 author: David White
 date: 2024-03-07T16:17:14.646Z
 type: article
