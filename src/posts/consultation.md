@@ -49,6 +49,7 @@ Very simply, this is to go over the basic requirements to make sure I can fulfil
    Detailed Proposal: Creating a comprehensive proposal outlining the project scope, timeline, budget, and deliverables.
 
    Solution Outline: Presenting our proposed solutions and strategies tailored to your business goals.
+
    Q&A Session: Addressing any questions or concerns you may have about the project and the proposed plan.
 6. ### Onboarding
 
