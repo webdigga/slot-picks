@@ -1,7 +1,8 @@
 ---
 title: Feedback loop
 seoTitle: Feedback | Seven Kings Web Design - User Experience
-description: Enhance your website with Seven Kings Web Design's Feedback Loop service, ensuring continuous improvement and optimal user experience.
+description: Enhance your website with Seven Kings Web Design's Feedback Loop
+  service, ensuring continuous improvement and optimal user experience.
 author: David White
 date: 2024-03-07T15:19:36.446Z
 type: article
@@ -20,24 +21,31 @@ At Seven Kings Web Design, we value your feedback immensely. Your insights help 
 1. ### Presentation & Review
 
    Initial Presentation: Showcasing the developed website in a staging environment to give you a first-hand experience of its functionality and design.
+
    Detailed Walkthrough: Providing a comprehensive walkthrough of the website, highlighting key features, functionalities, and design elements.
 2. ### Feedback Collection
 
    Structured Feedback Sessions: Organising feedback sessions to systematically gather your input and observations.
+
    Feedback Tools: Utilising feedback tools and platforms (e.g., annotated screenshots, collaborative documents) to streamline the feedback process.
 3. ### Analysis & Prioritisation
 
    Feedback Analysis: Reviewing all collected feedback to identify common themes, critical issues, and enhancement opportunities.
+
    Prioritisation: Categorising feedback into high, medium, and low priorities based on their impact and feasibility.
 4. ### Iterative Improvements
 
    Development Updates: Implementing necessary changes and improvements based on prioritised feedback.
+
    Design Tweaks: Making adjustments to design elements, ensuring they match your brand identity and preferences.
+
    Functionality Enhancements: Refining and enhancing website functionalities to improve user experience and performance.
 5. ### Ongoing Communication
 
    Progress Updates: Keeping you informed of the progress through regular updates and meetings.
+
    Feedback Verification: Verifying with you that all feedback has been addressed to your satisfaction.
+
    Additional Feedback: Allowing for additional rounds of feedback to ensure comprehensive coverage of all aspects.
 6. ### Final Approval
 
