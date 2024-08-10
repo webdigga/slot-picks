@@ -18,7 +18,7 @@ type: home
   {% include "./_includes/components/homepageSpiel.html" %}
 
   <!-- Product cards -->
-  <div class="grid grid-cols-1 xl:grid-cols-2 gap-3 px-4 lg:mx-0 2xl:px-0 md:max-w-4xl">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-3 px-4 lg:mx-0 2xl:px-0 md:max-w-4xl">
 	{% set productCardList = collections.productCard %}
 
     {% for productCard in productCardList | sort(false, true, 'data.order') %}
@@ -27,3 +27,5 @@ type: home
   </div>
 
 </div>
+
+{% include "./_includes/components/example-sites.html" %}
