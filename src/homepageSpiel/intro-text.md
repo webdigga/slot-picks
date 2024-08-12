@@ -1,14 +1,12 @@
 ---
 title: Welcome to Seven Kings Web Design
 description: >-
-  #### Transforming Ideas into Stunning Digital Experiences
+  #### <i class="rocketIcon"></i> Transforming Ideas into Stunning Digital Experiences
 
 
   At Seven Kings Web Design, we believe that your website is more than just an online presence. It’s a reflection of your brand, a tool for growth, and a platform for engaging your audience. With our innovative design solutions, we help businesses like yours stand out in the digital landscape.
 
-
-  #### Why Choose Us?
-
+  #### <i class="checkIcon"></i> Why Choose Us?
 
   * *Creative Design: Creating visually appealing and user-friendly websites tailored to your brand’s unique identity*
 
@@ -24,7 +22,10 @@ description: >-
   - - -
 
 
-  Nearly every business will need a website..  Not having one means falling behind the competition.
+  #### <i class="computerIcon"></i> Nearly every business will need a website..
+  
+  
+  Not having one means falling behind the competition.
 
 
   In the era of the automated website builder what I am offering is a more tailored approach with a focus on performance and search engine optimisation.

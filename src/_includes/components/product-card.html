@@ -1,18 +1,18 @@
 {% switch productCard.data.order %}
   {% case 1 %}
-    {% set imageName = '../static/img/svgIcons/consultation.svg' %}
+    {% set imageName = '../static/img/svgIcons/chat.svg' %}
   {% case 2 %}
-    {% set imageName = '../static/img/svgIcons/design.svg' %}
+    {% set imageName = '../static/img/svgIcons/paintBrush.svg' %}
   {% case 3 %}
-    {% set imageName = '../static/img/svgIcons/development.svg' %}
+    {% set imageName = '../static/img/svgIcons/code.svg' %}
   {% case 4 %}
-    {% set imageName = '../static/img/svgIcons/feedback.svg' %}
+    {% set imageName = '../static/img/svgIcons/arrowPath.svg' %}
   {% case 5 %}
-    {% set imageName = '../static/img/svgIcons/launch.svg' %}
+    {% set imageName = '../static/img/svgIcons/rocket.svg' %}
   {% case 6 %}
-    {% set imageName = '../static/img/svgIcons/support.svg' %}
+    {% set imageName = '../static/img/svgIcons/telephone.svg' %}
   {% default %}
-    {% set imageName = '../static/img/svgIcons/development.svg' %}
+    {% set imageName = '../static/img/svgIcons/code.svg' %}
 {% endswitch %}
 
 <div class="bg-white border border-gray-200 flex md:flex-row rounded-tr-lg">
