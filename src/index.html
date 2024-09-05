@@ -4,28 +4,10 @@ path: home
 type: home
 ---
 
-<section class="bg-gray-900 h-[calc(100vh-132px)] flex items-center">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+<section class="h-screen flex flex-col bg-[color:var(--background-color)]">
+  {% include "./_includes/partials/navbar.html" %}
+
+  <div class="py-8 px-4 mx-auto lg:py-16 lg:px-12 flex">
     {% include "./_includes/components/hero.html" %}
   </div>
 </section>
-
-<div
-  class="container mx-auto flex flex-col justify-center pt-8 items-center"
-  id="findOutMore"
->
-
-  {% include "./_includes/components/homepageSpiel.html" %}
-
-  <!-- Product cards -->
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-3 px-4 lg:mx-0 2xl:px-0 md:max-w-4xl">
-	{% set productCardList = collections.productCard %}
-
-    {% for productCard in productCardList | sort(false, true, 'data.order') %}
-      {% include "./_includes/components/product-card.html" %}
-    {% endfor %}
-  </div>
-
-</div>
-
-{% include "./_includes/components/example-sites.html" %}

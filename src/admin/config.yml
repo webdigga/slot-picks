@@ -54,25 +54,6 @@ collections:
         media_library:
           config:
             multiple: false
-  - label: "ProductCard"
-    name: "productCard"
-    folder: "src/productCards"
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Article Link", name: "articleLink", widget: "string" }
-      - { label: "Image Alt", name: "imageAlt", widget: "string" }
-      - label: "Image"
-        name: "image"
-        widget: "image"
-        choose_url: true
-        media_library:
-          config:
-            multiple: false
-      - { label: "Order", name: "order", widget: "number" }
   - label: "Hero"
     name: "hero"
     folder: "src/hero"
@@ -91,15 +72,6 @@ collections:
         media_library:
           config:
             multiple: false
-  - label: "Homepage spiel"
-    name: "homepageSpiel"
-    folder: "src/homepageSpiel"
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "markdown" }
   - label: "Settings"
     name: "settings"
     editor:

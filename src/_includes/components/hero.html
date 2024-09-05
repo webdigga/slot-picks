@@ -1,30 +1,43 @@
 {% set hero = collections.hero %}
 
-<div class="flex items-center mb-8">
+<div class="md:flex items-center mb-8">
 	
-  <div class="container mx-auto text-center text-white px-4" x-data="">
-    <h1 class="text-5xl font-medium mb-6">{{ hero[0].data.title }}</h2>
+  <div class="mx-auto text-white px-4" x-data="">
+    <h1 class="text-5xl font-medium mb-6 text-left">{{ hero[0].data.title }}</h2>
     <h2 class="text-xl mb-4">{{ hero[0].data.description }}</h2>
-    <button
-      @click="document.getElementById('findOutMore').scrollIntoView({ behavior: 'smooth' })"
-      class="rounded-3xl cursor-pointer inline-block bg-[color:var(--primary-color)] text-white py-4 px-12 hover:bg-[color:var(--primary-hover)] border border-solid border-gray-500"
+    <a
+      href="{{ hero[0].data.buttonOneUrl }}"  
+      class="rounded-md cursor-pointer inline-block bg-[color:var(--accent-color-highlight)] text-[color:var(--background-color)] py-4 px-6 hover:opacity-90"
     >
-      {{ hero[0].data.buttonText }}
-    </button>
 
-    <section class="container mt-4 flex flex-col md:flex-row md:justify-center">
-      {% if settings.email %}
-        <a href="mailto:{{ settings.email }}" class="md:mr-2 text-sm md:text-base mb-4 md:mb-0">
-          <span>Email me @</span> <span>{{ settings.email }}</span>
-        </a> 
-      {% endif %}
+      <div class="flex">
+        {{ hero[0].data.buttonOneText }}
 
-      {% if settings.email and settings.phoneNumber %}<span class="hidden md:block">|</span>{% endif %}
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="pl-1 size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+        </svg>
+      </div>
+      
+    </a>
 
-      {% if settings.phoneNumber %}
-        <a href="tel:{{ settings.phoneNumber }}" class="ml-2">Call me on {{ settings.phoneNumber }}</a>
-      {% endif %}
-    </section>
+    <a
+      href="tel:{{ settings.phoneNumber }}"  
+      class="ml-3 rounded-md cursor-pointer inline-block bg-[color:var(--background-color)] text-white py-4 px-6 hover:bg-[color:var(--accent-color-pop)] border border-solid border-white"
+    >
+
+      <div class="flex">
+        {{ hero[0].data.buttonTwoText }}
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="pl-1 size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+        </svg>
+      </div>     
+      
+    </a>
+  </div>
+
+  <div>
+    <img src="./_includes/static/img/svgIcons/rocket-background.png" width="300px" height="300px">
   </div>
 
 </div>

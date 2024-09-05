@@ -15,7 +15,7 @@
       <meta name="robots" content="noindex"/>
     {% endif %}
 
-    <meta name="google-site-verification" content="Xt0hhevRb23Ay-bJdloIsS5sD0jkOR1DLvacz1G2XT0" />
+    <meta name="google-site-verification" content="VERIFICATION-ID" />
 
     <title>
       {% if seoTitle %}
@@ -113,14 +113,14 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('consent', 'default', {
-        'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'ad_storage': 'denied',
-        'analytics_storage': 'denied',
-        'wait_for_update': 500,
+          'ad_user_data': 'denied',
+          'ad_personalization': 'denied',
+          'ad_storage': 'denied',
+          'analytics_storage': 'denied',
+          'wait_for_update': 500,
         });
         gtag('js', new Date());
-        gtag('config', 'G-EZ5CBY3TDR');
+        gtag('config', 'GTAG_ID');
       </script>
     {% endif %}
 
@@ -129,8 +129,6 @@
   </head>
 
   <body class="bg-white">
-    {% include "./partials/navbar.html" %}
-
     {{ content | safe }}
 
     {% include "./partials/footer.html" %}
@@ -166,7 +164,7 @@
 
           var gtagScript = document.createElement('script');
           gtagScript.defer = true;
-          gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-EZ5CBY3TDR';
+          gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=GTAG_ID';
 
           var firstScript = document.getElementsByTagName('script')[0];
           firstScript.parentNode.insertBefore(gtagScript,firstScript);

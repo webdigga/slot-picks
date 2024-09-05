@@ -1,17 +1,7 @@
 items:
   - text: Home
     url: /
-  - text: Consultation
-    url: /consultation/
-  - text: Design
-    url: /design-and-content/
-  - text: Development
-    url: /development/
-  - text: Feedback
-    url: /feedback-loop/
-  - text: Launch
-    url: /launch/
-  - text: Support
-    url: /support/
-  - text: About and Contact
-    url: /about/
+  - text: How it works?
+    url: /how-it-works/
+  - text: Pricing
+    url: /pricing/

@@ -1,7 +1,8 @@
 ---
-title: Seven Kings Web Design, Kingston Upon Thames
-description: Freelance Web Developer, building performant, SEO optimised websites
-buttonText: Find out more
-buttonUrl: /about/
+title: Pay Monthly Managed Websites
+description: For your Local Business, Small Business, Personal Brand or Start-up...
+buttonOneText: Buy a website
+buttonOneUrl: /pricing/
+buttonTwoText: Call me
 image: /_includes/static/img/hero.webp
 ---

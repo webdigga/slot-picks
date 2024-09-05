@@ -3,21 +3,40 @@
 @tailwind utilities;
 
 /*Your Custom CSS Goes here*/
-
-@font-face {
-  font-family: skwdFont;
-  src: url("/_includes/static/css/font.ttf");
-  font-display: swap;
-}
-
 :root {
-  --primary-color: #041f49;
-  --primary-hover: #364a6a;
-  --secondary-color: #dc23f0;
+  /*
+    This bright, vibrant blue evokes technology, trust, and creativity.
+    It’s ideal for call-to-action buttons or key visual elements.
+  */
+  --primary-color: #007BFF;
+
+  /*
+    A fresh, playful color that pairs well with electric blue.
+    Use it sparingly for highlights, icons, or hover effects to add a lively feel.
+  */
+  --accent-color-neutral: #F0F0F0;
+
+  /*
+    This dark gray offers a professional and modern backdrop for text and subtle design elements.
+    It balances the vibrancy of the primary colors without overpowering them.
+  */
+  --accent-color-highlight: #FFD700;
+
+  /*
+    A warm, contrasting color to use sparingly for important elements like buttons,
+    notifications, or key sections. It adds energy and a dynamic look.
+  */
+  --accent-color-pop: #FF6F3C;
+
+  /*
+    A soft off-white or very light gray can be used for the background,
+    creating a clean and modern canvas for the more vibrant elements to pop.
+  */
+  --background-color: #1d4ed8;
 }
 
 body {
-  font-family: skwdFont, Helvetica, Arial, freesans, sans-serif;
+  font-family: Helvetica, Arial, freesans, sans-serif;
 }
 
 h1 {
