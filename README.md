@@ -1,4 +1,4 @@
-# Seven Kings Web Design
+# Kabooly
 
 ### Technologies used:
 
