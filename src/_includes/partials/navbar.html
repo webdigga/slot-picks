@@ -1,10 +1,8 @@
 <div class="w-full">
-  <nav class="flex items-center justify-center lg:justify-between flex-wrap p-4 lg:px-0 container mx-auto" x-data="{ isOpen: false }" @keydown.escape="isOpen = false"  @click.away="isOpen = false">
+  <nav class="flex items-center justify-center lg:justify-between flex-wrap" x-data="{ isOpen: false }" @keydown.escape="isOpen = false"  @click.away="isOpen = false">
     <!--Logo etc-->
-    <div class="flex items-center">
-      <a href="/" class="text-indigo-500 font-bold text-lg">
-        <img src="{{ settings.logoUrl }}" alt="{{ settings.logoAlt }}" width="100px" height="100px" class="max-h-26" />
-      </a>
+    <div class="underline lowercase font-bold text-5xl tracking-tighter lg:text-8xl">
+      {{ settings.siteName }}
     </div>
 
     <!--Toggle button (hidden on large screens)-->
@@ -13,9 +11,9 @@
       type="button"
       class="ml-auto lg:hidden px-2 focus:outline-none" :class="{ 'transition transform-180': isOpen }"
       aria-label="Menu">
-      
+
       <span>Menu</span>
-      
+
       <svg class="h-6 w-6 fill-current inline-block" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
         <path x-show="isOpen" fill-rule="evenodd" clip-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/>
         <path x-show="!isOpen" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>

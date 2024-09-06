@@ -1,13 +1,13 @@
 {% set hero = collections.hero %}
 
-<div class="md:flex items-center py-8 mx-auto lg:py-16">
+<div class="flex flex-col md:flex-row items-center py-8 lg:py-16">
 	
   <div x-data="">
     <h1>{{ hero[0].data.title }}</h2>
     <h2>{{ hero[0].data.description }}</h2>
     <a
       href="{{ hero[0].data.buttonOneUrl }}"  
-      class="rounded-md cursor-pointer inline-block bg-[color:var(--accent-color-highlight)] text-[color:var(--background-color)] py-4 px-6 hover:opacity-90"
+      class="mr-3 mb-3 rounded-md cursor-pointer inline-block bg-[color:var(--accent-color-highlight)] text-[color:var(--background-color)] py-4 px-6 hover:opacity-90"
     >
 
       <div class="flex">
@@ -22,7 +22,7 @@
 
     <a
       href="tel:{{ settings.phoneNumber }}"  
-      class="ml-3 rounded-md cursor-pointer inline-block bg-[color:var(--background-color)] text-white py-4 px-6 hover:bg-[color:var(--accent-color-pop)] border border-solid border-white"
+      class="mb-3 rounded-md cursor-pointer inline-block bg-[color:var(--background-color)] text-white py-4 px-6 hover:bg-[color:var(--accent-color-pop)] border border-solid border-white"
     >
 
       <div class="flex">
@@ -36,6 +36,6 @@
     </a>
   </div>
   
-  <img src="./_includes/static/img/svgIcons/rocket-background.png" width="300px" height="300px">
+  <img class="mt-3" src="./_includes/static/img/svgIcons/rocket-background.png" width="300px" height="300px">
 
 </div>
