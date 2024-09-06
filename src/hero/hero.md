@@ -5,7 +5,12 @@ buttonOneText: Buy a website
 buttonOneUrl: /pricing/
 buttonTwoText: Call me
 tickList:
-  - title: Website fully build and managed by me
+  - title: SEO baked in
+  - title: Google Analytics
+  - title: Content Delivery Network
   - title: Simple pricing structure
-  - title: Simple pricing structure
+  - title: Fully built and managed by me
+  - title: Top Google Core Web Vital scores
+  - title: Performance at the heart
+  - title: Domain name
 ---
