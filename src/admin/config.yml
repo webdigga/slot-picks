@@ -29,9 +29,14 @@ collections:
         label: "SEO Title",
         name: "seoTitle",
         widget: "string",
-        hint: "*This title will be used in the title tag for search engines*"
+        hint: "*This title will be used in the title tag for search engines (less than 60 characters)*"
       }
-      - { label: "Description", name: "description", widget: "string" }
+      - {
+        label: "Description",
+        name: "description",
+        widget: "string",
+        hint: "*Used in search engines (more than 70 characters and less than 155 characters)*"
+      }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -65,13 +70,11 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Button text", name: "buttonText", widget: "string" }
       - { label: "Button URL", name: "buttonUrl", widget: "string" }
-      - label: "Image"
-        name: "image"
-        widget: "image"
-        choose_url: true
-        media_library:
-          config:
-            multiple: false
+      - label: "Tick list"
+        name: "tickList"
+        widget: "list"
+        fields:
+          - { label: Title, name: title, widget: string }
   - label: "Settings"
     name: "settings"
     editor:

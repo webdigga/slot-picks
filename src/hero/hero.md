@@ -1,8 +1,11 @@
 ---
-title: Pay Monthly Managed Websites
-description: For your Local Business, Small Business, Personal Brand or Start-up...
+title: Managed Websites, Paid Monthly 
+description: Whether you're a Local Business, Small Enterprise, Personal Brand, or Startup...
 buttonOneText: Buy a website
 buttonOneUrl: /pricing/
 buttonTwoText: Call me
-image: /_includes/static/img/hero.webp
+tickList:
+  - title: Website fully build and managed by me
+  - title: Simple pricing structure
+  - title: Simple pricing structure
 ---

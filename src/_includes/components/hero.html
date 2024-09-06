@@ -1,13 +1,13 @@
 {% set hero = collections.hero %}
 
-<div class="flex flex-col md:flex-row items-center py-8 lg:py-16 -mt-36">
+<div class="flex flex-col md:flex-row items-center py-8 lg:py-16 md:-mt-36">
 	
   <div x-data="">
     <h1>{{ hero[0].data.title }}</h2>
     <h2>{{ hero[0].data.description }}</h2>
     <a
       href="{{ hero[0].data.buttonOneUrl }}"  
-      class="mr-3 mb-3 rounded-md cursor-pointer inline-block bg-[color:var(--accent-color-highlight)] text-[color:var(--background-color)] py-4 px-6 hover:opacity-90"
+      class="mr-3 mb-4 rounded-md cursor-pointer inline-block bg-[color:var(--accent-color-highlight)] text-[color:var(--background-color)] py-4 px-6 hover:opacity-90"
     >
 
       <div class="flex">
@@ -34,8 +34,21 @@
       </div>     
       
     </a>
+
+    {% if hero[0].data.tickList %}
+      <ul class="flex flex-col sm:flex-row">
+        {% for tickListItem in hero[0].data.tickList %}
+          <li class="mb-1 flex w-full sm:w-1/2 sm:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="var(--accent-color-highlight)" class="size-6">
+              <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+            </svg>
+            <span class="ml-1">{{ tickListItem.title }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
   </div>
   
-  <img class="mt-3" src="./_includes/static/img/svgIcons/rocket-background.png" width="300px" height="300px">
+  <img class="mt-4" src="./_includes/static/img/rocket-background.png" width="300px" height="300px">
 
 </div>
