@@ -36,57 +36,37 @@
 }
 
 body {
-  font-family: Helvetica, Arial, freesans, sans-serif;
+  @apply text-white;
+
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 
 h1 {
-  @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl;
+  @apply text-4xl tracking-tighter lg:text-7xl mb-5;
+
+  font-weight: 700;
+}
+
+h2, h3, h4 {
+  font-weight: 500;
+}
+
+h2 {
+  @apply text-xl font-bold mb-4;
 }
 
 h3 {
-  @apply text-2xl font-bold mb-3;
-}
-
-@media (min-width: 1536px) {
-  .container {
-      max-width: 1400px !important;
-  }
-}
-
-.iconColour {
-  --tw-text-opacity: 1;
-  stroke: rgb(107 114 128 / var(--tw-text-opacity));
-}
-
-.checkIcon {
-  background-image:url('/_includes/static/img/svgIcons/check.svg');
-  height: 24px;
-  width: 24px;
-  display: inline-flex;
-  vertical-align: text-bottom;
-  margin-right: 4px;
-}
-
-.rocketIcon {
-  background-image:url('/_includes/static/img/svgIcons/rocket2.svg');
-  height: 24px;
-  width: 24px;
-  display: inline-flex;
-  vertical-align: text-bottom;
-  margin-right: 4px;
-}
-
-.computerIcon {
-  background-image:url('/_includes/static/img/svgIcons/computerDesktop.svg');
-  height: 24px;
-  width: 24px;
-  display: inline-flex;
-  vertical-align: text-bottom;
-  margin-right: 4px;
+  @apply text-2xl scroll-mb-3;
 }
 
 /* Syntax Highlighting*/
-
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
   @apply bg-gray-800;

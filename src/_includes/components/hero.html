@@ -1,10 +1,10 @@
 {% set hero = collections.hero %}
 
-<div class="md:flex items-center mb-8">
+<div class="md:flex items-center py-8 mx-auto lg:py-16">
 	
-  <div class="mx-auto text-white px-4" x-data="">
-    <h1 class="text-5xl font-medium mb-6 text-left">{{ hero[0].data.title }}</h2>
-    <h2 class="text-xl mb-4">{{ hero[0].data.description }}</h2>
+  <div x-data="">
+    <h1>{{ hero[0].data.title }}</h2>
+    <h2>{{ hero[0].data.description }}</h2>
     <a
       href="{{ hero[0].data.buttonOneUrl }}"  
       class="rounded-md cursor-pointer inline-block bg-[color:var(--accent-color-highlight)] text-[color:var(--background-color)] py-4 px-6 hover:opacity-90"
@@ -35,9 +35,7 @@
       
     </a>
   </div>
-
-  <div>
-    <img src="./_includes/static/img/svgIcons/rocket-background.png" width="300px" height="300px">
-  </div>
+  
+  <img src="./_includes/static/img/svgIcons/rocket-background.png" width="300px" height="300px">
 
 </div>

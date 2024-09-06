@@ -5,9 +5,11 @@ type: home
 ---
 
 <section class="h-screen flex flex-col bg-[color:var(--background-color)]">
-  {% include "./_includes/partials/navbar.html" %}
-
-  <div class="py-8 px-4 mx-auto lg:py-16 lg:px-12 flex">
+  <div class="container">
+    {% include "./_includes/partials/navbar.html" %}
+  </div>
+  
+  <div class="container">
     {% include "./_includes/components/hero.html" %}
   </div>
 </section>
