@@ -138,8 +138,6 @@
 
     {% include "./partials/footer.html" %}
 
-    <script src="/_includes/static/js/alpine.js" defer></script>
-
 	  {% if env.isProd %}
 
       {% include "./partials/cookie-consent.html" %}
@@ -176,5 +174,7 @@
         }
       </script>
 	  {% endif %}
+
+    <script defer src="/_includes/static/js/script.js"></script>
   </body>
 </html>

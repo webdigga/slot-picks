@@ -1,5 +1,6 @@
 ---
-title: Managed Websites, Paid Monthly 
+titlePartOne: Managed Websites, 
+titlePartTwo: Paid Monthly
 description: Whether you're a Local Business, Small Enterprise, Personal Brand, or Startup...
 buttonOneText: Buy a website
 buttonOneUrl: /pricing/

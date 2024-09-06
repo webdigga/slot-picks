@@ -4,7 +4,6 @@
 
 - [Decap CMS](https://decapcms.org/)
 - [Eleventy](https://www.11ty.dev/)
-- [Alpine.js](https://github.com/alpinejs/alpine)
 - [Tailwind CSS](https://tailwindcss.com/)
 
 ### Setup blog reference:

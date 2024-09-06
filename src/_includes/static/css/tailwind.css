@@ -26,7 +26,7 @@
     A warm, contrasting color to use sparingly for important elements like buttons,
     notifications, or key sections. It adds energy and a dynamic look.
   */
-  --accent-color-pop: #A855F7;
+  --accent-color-pop: #C084FC;
 
   /*
     A soft off-white or very light gray can be used for the background,
@@ -66,11 +66,12 @@ h3, h4 {
   @apply text-2xl scroll-mb-3;
 }
 
+.menuStyles {
+  @apply absolute left-0 top-24 border-b border-b-white pb-6 bg-[color:var(--background-color)] shadow-xl;
+}
+
 /* Syntax Highlighting*/
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
   @apply bg-gray-800;
 }
-
-/* To stop flicker after deferring Alpine JS */
-[x-cloak] { display: none !important; }
