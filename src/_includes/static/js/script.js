@@ -19,8 +19,6 @@ const cross = document.querySelector('[data-test="cross"]');
 
 if(menuButton) {
   menuButton.addEventListener('click', () => {
-
-
     const menu = document.querySelector('[data-test="menu"]');
 
     if(menu) {
@@ -36,8 +34,5 @@ if(menuButton) {
       cross.classList.toggle("block");
       cross.classList.toggle("hidden");
     }
-
-    
-    
   });
 }
