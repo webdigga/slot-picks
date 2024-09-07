@@ -14,7 +14,7 @@ local_backend: true
 collections:
   - label: "Article"
     name: "article"
-    folder: "src/posts"
+    folder: "src/articles"
     create: true
     editor:
       preview: false
