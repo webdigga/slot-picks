@@ -32,7 +32,12 @@
     A soft off-white or very light gray can be used for the background,
     creating a clean and modern canvas for the more vibrant elements to pop.
   */
-  --background-color: #1d4ed8;
+  --background-color: #1D4ED8;
+
+  /*
+    Dark copy text on light background
+  */
+  --dark-copy: #333333;
 }
 
 body {
@@ -59,15 +64,31 @@ h2, h3, h4 {
 }
 
 h2 {
-  @apply text-xl font-bold mb-4;
+  @apply text-2xl font-bold mb-4;
 }
 
 h3, h4 {
-  @apply text-2xl scroll-mb-3;
+  @apply text-xl scroll-mb-3;
 }
 
 .menuStyles {
   @apply absolute left-0 top-24 border-b border-b-white pb-6 bg-[color:var(--background-color)] shadow-xl;
+}
+
+.dark-copy {
+  color: var(--dark-copy);
+}
+
+.subtle-text-on-dark-background {
+  @apply text-gray-400;
+}
+
+.subtle-text-on-light-background {
+  @apply text-gray-500;
+}
+
+.container {
+  @apply p-4 sm:p-5 md:p-6 lg:px-0;
 }
 
 /* Syntax Highlighting*/
