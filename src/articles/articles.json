@@ -1,7 +1,7 @@
 {
-    "layout": "posts",
+    "layout": "article",
     "tags": [
-        "post"
+        "article"
     ],
     "permalink": "/{{ title | slugify }}/"
 }

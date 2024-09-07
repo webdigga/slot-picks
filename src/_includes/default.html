@@ -175,6 +175,11 @@
       </script>
 	  {% endif %}
 
-    <script defer src="/_includes/static/js/script.js"></script>
+    {% set myScript %} 
+      {% include "static/js/script.js" %}
+    {% endset %}
+    <script>
+      {{ myScript | jsmin | safe }}
+    </script>
   </body>
 </html>

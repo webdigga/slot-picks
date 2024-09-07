@@ -64,7 +64,6 @@ module.exports = function (eleventyConfig) {
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
-    "./src/_includes/static/js": "./_includes/static/js",
     "./src/site.manifest": "./site.manifest"
   });
 
@@ -98,8 +97,16 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
-  eleventyConfig.addCollection("productPosts", function(collectionApi) {
-    return collectionApi.getFilteredByTags("product");
+  const { minify } = require("terser");
+  eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (code, callback) {
+    try {
+      const minified = await minify(code);
+      callback(null, minified.code);
+    } catch (err) {
+      console.error("Terser error: ", err);
+      // Fail gracefully.
+      callback(null, code);
+    }
   });
 
   // Let Eleventy transform HTML files as nunjucks
