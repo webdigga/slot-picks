@@ -68,7 +68,7 @@ h2 {
 }
 
 h3, h4 {
-  @apply text-xl scroll-mb-3;
+  @apply text-xl mb-4;
 }
 
 .menuStyles {
@@ -89,6 +89,29 @@ h3, h4 {
 
 .container {
   @apply p-4 sm:p-5 md:p-6 lg:px-0;
+}
+
+.container--large {
+  @apply py-9 sm:py-10 md:py-28;
+}
+
+.anchor-pop {
+  @apply underline-offset-4 decoration-2 underline decoration-[color:var(--accent-color-pop)];
+}
+
+.anchor-highlight {
+  @apply underline-offset-4 decoration-2 underline decoration-[color:var(--accent-color-highlight)];
+}
+
+/*
+  https://css-generators.com/wavy-shapes/
+*/
+.section-divider-top {
+  --mask:
+  radial-gradient(13.79px at 50% 19.5px,#000 99%,#0000 101%) calc(50% - 20px) 0/40px 100%,
+  radial-gradient(13.79px at 50% -9.5px,#0000 99%,#000 101%) 50% 10px/40px 100% repeat-x;
+-webkit-mask: var(--mask);
+        mask: var(--mask);
 }
 
 /* Syntax Highlighting*/

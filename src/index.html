@@ -4,11 +4,11 @@ path: home
 type: home
 ---
 
-<section class="min-h-screen flex flex-col bg-[color:var(--background-color)] justify-between">
+<section class="min-h-screen flex flex-col bg-[color:var(--background-color)] justify-between border-b-4 border-b-[color:var(--accent-color-pop)] border-solid">
   
   {% include "./_includes/partials/navbar.html" %}
   
-  <div class="container  content-center">
+  <div class="container content-center">
     {% include "./_includes/components/hero.html" %}
   </div>
 
@@ -22,8 +22,30 @@ type: home
   </div>  
 </section>
 
-<section data-test="reasons" class="h-96">
-  <div>
-    blah blah blah
+<section data-test="pricing">
+  <div class="container container--large dark-copy">
+    <h3 class="inline-block">Pricing.</h3> 
+    <span class="ml-2">See more <a href="/pricing/" class="anchor-pop ">about pricing</a>.</span>
+
+    <div class="md:flex">
+      {% include "./_includes/components/standard-pricing.html" %}
+
+      {% include "./_includes/components/pro-pricing.html" %}
+    </div>
   </div>
+  
 </section>
+
+<!-- <section data-test="reasons" class="h-96">
+  <div class="container dark-copy">
+    <h3>What you get.</h3>
+    <ul>
+      <li class="mb-2 flex w-full sm:w-1/2 pr-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="var(--accent-color-highlight)" class="size-6 min-w-6">
+          <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+        </svg>
+        <span class="ml-1">something</span>
+      </li>
+    </ul>
+  </div>
+</section> -->
