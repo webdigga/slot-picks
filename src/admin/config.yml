@@ -2,9 +2,6 @@ backend:
   # Use netlify identity as backend
   name: git-gateway
   branch: main
-  ### enable below lines for github integration ###
-  # name: github
-  # repo: https://github.com/webdigga/ear-protectors
 media_folder: "src/_includes/static/img"
 public_folder: "/_includes/static/img"
 
