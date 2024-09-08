@@ -2,11 +2,11 @@
   Click event that scrolls the user to see more reasons why Kaboola is the best option
 */
 const moreButton = document.querySelector('[data-test="moreButton"]');
-const pricing = document.querySelector('[data-test="pricing"]');
+const howItWorks = document.querySelector('[data-test="howItWorks"]');
 
 if(moreButton) {
   moreButton.addEventListener('click', () => {
-    if(pricing) pricing.scrollIntoView({ behavior: "smooth", block: "start" });
+    if(howItWorks) howItWorks.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 }
 

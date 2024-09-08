@@ -38,6 +38,18 @@
     Dark copy text on light background
   */
   --dark-copy: #333333;
+
+  /*
+    Subtle text on dark background
+  */
+  --subtle-text-on-dark-background: #9CA3AF;
+
+  /*
+    Dark copy text on light background
+  */
+  --subtle-text-on-light-background: #6B7280;
+
+  
 }
 
 body {
@@ -55,20 +67,20 @@ h1, h2, h3, h4 {
 
 h1 {
   @apply text-4xl tracking-tighter lg:text-7xl mb-5;
+}
+
+h1, h2, h3, h4 {
+  @apply tracking-tighter;
 
   font-weight: 700;
 }
 
-h2, h3, h4 {
-  font-weight: 500;
-}
-
 h2 {
-  @apply text-2xl font-bold mb-4;
+  @apply text-2xl lg:text-4xl mb-4;
 }
 
 h3, h4 {
-  @apply text-xl mb-4;
+  @apply text-xl lg:text-3xl mb-4;
 }
 
 .menuStyles {
@@ -80,11 +92,11 @@ h3, h4 {
 }
 
 .subtle-text-on-dark-background {
-  @apply text-gray-400;
+  color: var(--subtle-text-on-dark-background);
 }
 
 .subtle-text-on-light-background {
-  @apply text-gray-500;
+  color: var(--subtle-text-on-light-background);
 }
 
 .container {
