@@ -22,20 +22,36 @@ type: home
   </div>  
 </section>
 
-<section data-test="howItWorks" class="border-b-8 border-double border-b-[color:var(--subtle-text-on-dark-background)]">
+<section data-test="howItWorks">
   <div class="container container--large dark-copy">
-    <h2 class="inline-block mb-0">How it works.</h2>
-    <span class="ml-2">See more <a href="/how-it-works/" class="anchor-pop ">about how it works</a>. Launch your site in 4 easy steps.</span>
+    <div class="mb-4">
+      <h2 class="inline-block mb-0">How it works.</h2>
+      <span class="ml-2">See more <a href="/how-it-works/" class="anchor-pop ">about how it works</a>. Launch your site in 4 easy steps.</span>
+    </div>
 
     {% include "./_includes/components/how-it-works.html" %}
     
   </div>
 </section>
 
+<section data-test="aboutMe" class="bg-[color:var(--accent-color-pop)]">
+  <div class="container container--large">
+    <div class="mb-4">
+      <h2 class="inline-block mb-0">About me.</h2>
+      <span class="ml-2">Click here to <a href="/contact/" class="anchor-highlight ">contact me</a></span>
+    </div>    
+
+    {% include "./_includes/components/about-me.html" %}
+    
+  </div>
+</section>
+
 <section data-test="pricing">
   <div class="container container--large dark-copy">
-    <h2 class="inline-block">Pricing.</h2> 
-    <span class="ml-2">See more <a href="/pricing/" class="anchor-pop ">about pricing</a>.</span>
+    <div class="mb-4">
+      <h2 class="inline-block">Pricing.</h2> 
+      <span class="ml-2">See more <a href="/pricing/" class="anchor-pop ">about pricing</a>.</span>
+    </div>
 
     <div class="md:flex">
       {% include "./_includes/components/standard-pricing.html" %}
