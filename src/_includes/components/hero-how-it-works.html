@@ -1,17 +1,15 @@
-{% set hero = collections.hero %}
-
 <div class="flex flex-col md:flex-row items-center py-8 lg:py-16 md:-mt-36">
 	
   <div>
-    <h1>{{ hero[0].data.titlePartOne }} <span class="text-[color:var(--foreground-yellow)]">{{ hero[0].data.titlePartTwo }}</span></h2>
-    <h2>{{ hero[0].data.description }}</h2>
+    <h1>Managed Websites, <span class="text-[color:var(--light-yellow)]">Paid Monthly</span></h2>
+    <h2>Whether you're a Local Business, Small Enterprise, Personal Brand, or Startup...</h2>
     <a
-      href="{{ hero[0].data.buttonOneUrl }}"  
-      class="mr-3 mb-4 rounded-md cursor-pointer inline-block bg-[color:var(--background-yellow)] text-[color:var(--dark-copy)] py-4 px-6 hover:opacity-90"
+      href="/pricing/"  
+      class="mr-3 mb-4 rounded-md cursor-pointer inline-block bg-[color:var(--dark-yellow)] text-[color:var(--dark-copy)] py-4 px-6 hover:opacity-90"
     >
 
       <div class="flex items-center">
-        {{ hero[0].data.buttonOneText }}
+        Buy a website
 
         <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="pl-1 size-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
@@ -26,7 +24,7 @@
     >
 
       <div class="flex items-center">
-        {{ hero[0].data.buttonTwoText }}
+        Call me
 
         <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor" class="pl-1 size-5">
           <path fill-rule="evenodd" d="M15 3.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0V5.56l-4.72 4.72a.75.75 0 1 1-1.06-1.06l4.72-4.72h-2.69a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
@@ -35,19 +33,65 @@
       </div>     
       
     </a>
+    
+    <ul class="flex flex-col sm:flex-row flex-wrap max-w-screen-md">
+      <li class="mb-2 flex w-full sm:w-1/2 pr-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="var(--dark-yellow)" class="size-6 min-w-6">
+          <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+        </svg>
+        <span class="ml-1">SEO baked in</span>
+      </li>
 
-    {% if hero[0].data.tickList %}
-      <ul class="flex flex-col sm:flex-row flex-wrap max-w-screen-md">
-        {% for tickListItem in hero[0].data.tickList %}
-          <li class="mb-2 flex w-full sm:w-1/2 pr-1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="var(--background-yellow)" class="size-6 min-w-6">
-              <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
-            </svg>
-            <span class="ml-1">{{ tickListItem.title }}</span>
-          </li>
-        {% endfor %}
-      </ul>
-    {% endif %}
+      <li class="mb-2 flex w-full sm:w-1/2 pr-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="var(--dark-yellow)" class="size-6 min-w-6">
+          <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+        </svg>
+        <span class="ml-1">Google Analytics</span>
+      </li>
+
+      <li class="mb-2 flex w-full sm:w-1/2 pr-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="var(--dark-yellow)" class="size-6 min-w-6">
+          <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+        </svg>
+        <span class="ml-1">Content Delivery Network</span>
+      </li>
+
+      <li class="mb-2 flex w-full sm:w-1/2 pr-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="var(--dark-yellow)" class="size-6 min-w-6">
+          <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+        </svg>
+        <span class="ml-1">Simple pricing structure</span>
+      </li>
+
+      <li class="mb-2 flex w-full sm:w-1/2 pr-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="var(--dark-yellow)" class="size-6 min-w-6">
+          <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+        </svg>
+        <span class="ml-1">Fully built and managed by me</span>
+      </li>
+
+      <li class="mb-2 flex w-full sm:w-1/2 pr-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="var(--dark-yellow)" class="size-6 min-w-6">
+          <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+        </svg>
+        <span class="ml-1">Top Google Core Web Vital scores</span>
+      </li>
+
+      <li class="mb-2 flex w-full sm:w-1/2 pr-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="var(--dark-yellow)" class="size-6 min-w-6">
+          <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+        </svg>
+        <span class="ml-1">Performance at the heart</span>
+      </li>
+
+      <li class="mb-2 flex w-full sm:w-1/2 pr-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="var(--dark-yellow)" class="size-6 min-w-6">
+          <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+        </svg>
+        <span class="ml-1">Domain name</span>
+      </li>
+    </ul>
+   
   </div>
   
   <img
