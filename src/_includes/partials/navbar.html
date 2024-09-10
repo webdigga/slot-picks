@@ -1,8 +1,14 @@
 <div class="w-full container">
 
+  {% if pageType == 'pricing' %}
+    {% set menuClass = 'menu-styles--pricing' %}
+  {% elif pageType == 'howItWorks' %}
+    {% set menuClass = 'menu-styles--how-it-works' %}
+  {% endif %}  
+
   <nav class="flex items-center justify-center lg:justify-between flex-wrap">
     <!--Logo etc-->
-    <div class="underline lowercase font-bold text-5xl tracking-tighter lg:text-8xl">
+    <div class="underline lowercase font-bold text-5xl tracking-tighter lg:text-8xl pr-4">
       <a href="/">
         {{ settings.siteName }}
       </a>
@@ -37,7 +43,7 @@
     <!--Menu-->
     <div
       data-test="menu"
-      class="w-full flex-grow lg:flex lg:items-center lg:w-auto text-center hidden"
+      class="w-full flex-grow lg:flex lg:items-center lg:w-auto text-center {{ menuClass }} hidden"
     >
 
       {% if navigation.items %}

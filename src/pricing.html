@@ -1,0 +1,40 @@
+---
+layout: default
+path: home
+type: pricing
+---
+
+<section class="min-h-screen flex flex-col bg-[color:var(--dark-green)] justify-between border-b-4 border-b-[color:var(--light-yellow)] border-solid">
+
+  {% set pageType = 'pricing' %}
+
+  {% include "./_includes/partials/navbar.html" %}
+  
+  <div class="container content-center">
+    {% include "./_includes/components/hero-pricing.html" %}
+  </div>
+
+  <div class="text-center lg:block">
+    <button
+      data-test="moreButton"
+      class="animate-bounce p-4 shadow-sm bg-[color:var(--light-yellow)] text-[color:var(--dark-copy)] w-16 h-16 rounded-full mb-6 border border-solid border-[color:var(--light-yellow)] hover:border hover:border-solid hover:border-white">
+      <span class="text-xs">More</span>
+      <span class="text-lg">&caron;</span>
+    </button>
+  </div>  
+</section>
+
+<section data-test="pricing">
+  <div class="container container--large dark-copy">
+    <div class="mb-4">
+      <h2 class="inline-block">Pricing.</h2>
+    </div>
+
+    <div class="md:flex">
+      {% include "./_includes/components/standard-pricing.html" %}
+
+      {% include "./_includes/components/pro-pricing.html" %}
+    </div>
+  </div>
+  
+</section>

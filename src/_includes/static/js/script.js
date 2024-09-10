@@ -23,7 +23,7 @@ if(menuButton) {
 
     if(menu) {
       menu.classList.toggle("hidden");
-      menu.classList.toggle("menuStyles");
+      menu.classList.toggle("menu-styles");
 
       menuButton.classList.toggle("transition");
       menuButton.classList.toggle("transform-180");

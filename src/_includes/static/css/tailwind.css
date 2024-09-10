@@ -3,50 +3,17 @@
 @tailwind utilities;
 
 /*Your Custom CSS Goes here*/
-:root {
-  /*
-    This dark gray offers a professional and modern backdrop for text and subtle design elements.
-    It balances the vibrancy of the primary colors without overpowering them.
-  */
+:root { 
   --light-yellow: #fde350;
-
-  /*
-    This dark gray offers a professional and modern backdrop for text and subtle design elements.
-    It balances the vibrancy of the primary colors without overpowering them.
-  */
   --dark-yellow: #FFD700;
-
-  /*
-    A warm, contrasting color to use sparingly for important elements like buttons,
-    notifications, or key sections. It adds energy and a dynamic look.
-  */
   --light-purple: #cd9bff;
-
-  /*
-    A warm, contrasting color to use sparingly for important elements like buttons,
-    notifications, or key sections. It adds energy and a dynamic look.
-  */
   --dark-purple: #9357cf;
-
-  /*
-    A soft off-white or very light gray can be used for the background,
-    creating a clean and modern canvas for the more vibrant elements to pop.
-  */
+  --light-green: #71c09c;
+  --dark-green: #3e7f52;
+  --light-blue: #b7c4e6;
   --dark-blue: #1D4ED8;
-
-  /*
-    Subtle text on dark background
-  */
   --light-gray: #9CA3AF;
-
-  /*
-    Subtle text on light background
-  */
-  --dark-gray: #6B7280;
-
-  /*
-    Dark copy text on light background
-  */
+  --dark-gray: #5f6571;
   --dark-copy: #333333;
 }
 
@@ -81,8 +48,16 @@ h3, h4 {
   @apply text-xl lg:text-3xl mb-4;
 }
 
-.menuStyles {
+.menu-styles {
   @apply absolute left-0 top-24 border-b border-b-white pb-6 bg-[color:var(--dark-blue)] shadow-xl;
+}
+
+.menu-styles--how-it-works {
+  @apply bg-[color:var(--dark-purple)];
+}
+
+.menu-styles--pricing {
+  @apply bg-[color:var(--dark-green)];
 }
 
 .dark-copy {
