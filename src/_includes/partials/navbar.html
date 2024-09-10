@@ -46,7 +46,7 @@
           {% for item in navigation.items %}
             <li class="nav__item">
               <a                
-                class="text-ml inline-block py-2 px-4 hover:underline-offset-4 hover:decoration-1 hover:underline hover:decoration-[color:var(--accent-color-highlight)] {% if item.url == page.url %}underline-offset-4 decoration-2 underline decoration-[color:var(--accent-color-highlight)] {% else %} no-underline {% endif %}"                
+                class="text-ml inline-block py-2 px-4 hover:underline-offset-4 hover:decoration-1 hover:underline hover:decoration-[color:var(--background-yellow)] {% if item.url == page.url %}underline-offset-4 decoration-2 underline decoration-[color:var(--background-yellow)] {% else %} no-underline {% endif %}"                
                 href="{{ item.url }}">
                 {{ item.text }}
               </a>

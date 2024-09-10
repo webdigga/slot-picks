@@ -2,12 +2,12 @@
 
 <div class="flex flex-col md:flex-row items-center py-8 lg:py-16 md:-mt-36">
 	
-  <div x-data="">
-    <h1>{{ hero[0].data.titlePartOne }} <span class="text-[color:var(--foreground-purple)]">{{ hero[0].data.titlePartTwo }}</span></h2>
+  <div>
+    <h1>{{ hero[0].data.titlePartOne }} <span class="text-[color:var(--foreground-yellow)]">{{ hero[0].data.titlePartTwo }}</span></h2>
     <h2>{{ hero[0].data.description }}</h2>
     <a
       href="{{ hero[0].data.buttonOneUrl }}"  
-      class="mr-3 mb-4 rounded-md cursor-pointer inline-block bg-[color:var(--background-yellow)] text-[color:var(--background-blue)] py-4 px-6 hover:opacity-90"
+      class="mr-3 mb-4 rounded-md cursor-pointer inline-block bg-[color:var(--background-yellow)] text-[color:var(--dark-copy)] py-4 px-6 hover:opacity-90"
     >
 
       <div class="flex items-center">
@@ -22,7 +22,7 @@
 
     <a
       href="tel:{{ settings.phoneNumber }}"  
-      class="mb-3 rounded-md cursor-pointer inline-block bg-[color:var(--background-blue)] text-white py-4 px-6 hover:bg-[color:var(--background-purple)] border border-solid border-white"
+      class="mb-3 rounded-md cursor-pointer inline-block text-white py-4 px-6 hover:bg-[color:var(--dark-gray)] border border-solid border-white"
     >
 
       <div class="flex items-center">

@@ -5,34 +5,34 @@
 /*Your Custom CSS Goes here*/
 :root {
   /*
-    This bright, vibrant blue evokes technology, trust, and creativity.
-    It’s ideal for call-to-action buttons or key visual elements.
+    This dark gray offers a professional and modern backdrop for text and subtle design elements.
+    It balances the vibrancy of the primary colors without overpowering them.
   */
-  --primary-color: #007BFF;
-
-  /*
-    A fresh, playful color that pairs well with electric blue.
-    Use it sparingly for highlights, icons, or hover effects to add a lively feel.
-  */
-  --accent-color-neutral: #F0F0F0;
+  --foreground-yellow: #fde350;
 
   /*
     This dark gray offers a professional and modern backdrop for text and subtle design elements.
     It balances the vibrancy of the primary colors without overpowering them.
   */
-  --accent-color-highlight: #FFD700;
+  --background-yellow: #FFD700;
 
   /*
     A warm, contrasting color to use sparingly for important elements like buttons,
     notifications, or key sections. It adds energy and a dynamic look.
   */
-  --accent-color-pop: #C084FC;
+  --foreground-purple: #cd9bff;
+
+  /*
+    A warm, contrasting color to use sparingly for important elements like buttons,
+    notifications, or key sections. It adds energy and a dynamic look.
+  */
+  --background-purple: #9357cf;
 
   /*
     A soft off-white or very light gray can be used for the background,
     creating a clean and modern canvas for the more vibrant elements to pop.
   */
-  --background-color: #1D4ED8;
+  --background-blue: #1D4ED8;
 
   /*
     Dark copy text on light background
@@ -42,14 +42,12 @@
   /*
     Subtle text on dark background
   */
-  --subtle-text-on-dark-background: #9CA3AF;
+  --light-gray: #9CA3AF;
 
   /*
-    Dark copy text on light background
+    Subtle text on light background
   */
-  --subtle-text-on-light-background: #6B7280;
-
-  
+  --dark-gray: #6B7280;
 }
 
 body {
@@ -84,7 +82,7 @@ h3, h4 {
 }
 
 .menuStyles {
-  @apply absolute left-0 top-24 border-b border-b-white pb-6 bg-[color:var(--background-color)] shadow-xl;
+  @apply absolute left-0 top-24 border-b border-b-white pb-6 bg-[color:var(--background-blue)] shadow-xl;
 }
 
 .dark-copy {
@@ -92,11 +90,11 @@ h3, h4 {
 }
 
 .subtle-text-on-dark-background {
-  color: var(--subtle-text-on-dark-background);
+  color: var(--light-gray);
 }
 
 .subtle-text-on-light-background {
-  color: var(--subtle-text-on-light-background);
+  color: var(--dark-gray);
 }
 
 .container {
@@ -108,11 +106,11 @@ h3, h4 {
 }
 
 .anchor-pop {
-  @apply underline-offset-4 decoration-2 underline decoration-[color:var(--accent-color-pop)];
+  @apply underline-offset-4 decoration-2 underline decoration-[color:var(--background-purple)];
 }
 
 .anchor-highlight {
-  @apply underline-offset-4 decoration-2 underline decoration-[color:var(--accent-color-highlight)];
+  @apply underline-offset-4 decoration-2 underline decoration-[color:var(--background-yellow)];
 }
 
 /*
