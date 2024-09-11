@@ -1,0 +1,37 @@
+---
+layout: default
+path: home
+type: contact
+---
+
+<section class="min-h-screen flex flex-col bg-[color:var(--dark-gray)] justify-between border-b-4 border-b-[color:var(--light-yellow)] border-solid">
+
+  {% set pageType = 'contact' %}
+
+  {% include "./_includes/partials/navbar.html" %}
+  
+  <div class="container content-center">
+    {% include "./_includes/components/hero-contact.html" %}
+  </div>
+
+  <div class="text-center lg:block">
+    <button
+      data-test="moreButton"
+      class="animate-bounce p-4 shadow-sm bg-[color:var(--light-yellow)] text-[color:var(--dark-copy)] w-16 h-16 rounded-full mb-6 border border-solid border-[color:var(--light-yellow)] hover:border hover:border-solid hover:border-white">
+      <span class="text-xs">More</span>
+      <span class="text-lg">&caron;</span>
+    </button>
+  </div>  
+</section>
+
+<section data-test="aboutMe" class="bg-[color:var(--dark-purple)]">
+  <div class="container container--large">
+    <div class="mb-4">
+      <h2 class="inline-block mb-0">About me.</h2>
+      <span class="ml-2">Click here to <a href="/contact/" class="anchor-highlight ">contact me</a></span>
+    </div>    
+
+    {% include "./_includes/components/about-me.html" %}
+    
+  </div>
+</section>
