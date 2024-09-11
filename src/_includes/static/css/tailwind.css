@@ -60,6 +60,10 @@ h3, h4 {
   @apply bg-[color:var(--dark-green)];
 }
 
+.menu-styles--contact {
+  @apply bg-[color:var(--dark-gray)];
+}
+
 .dark-copy {
   color: var(--dark-copy);
 }
