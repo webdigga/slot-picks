@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* .myClass {
+  height: 100lvh;
+} */
+
+html, body {
+  zoom: 96.03%;
+}
+
 /*Your Custom CSS Goes here*/
 :root { 
   --light-yellow: #fde350;
