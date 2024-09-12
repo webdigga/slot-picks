@@ -25,11 +25,16 @@ seoTitle: Contact | Kabooly
   </div>  
 </section>
 
-<section data-test="moreButtonLocation" class="bg-[color:var(--dark-purple)]">
+<section data-test="moreButtonLocation">
+  <div class="container container--large">
+    {% include "./_includes/components/contact-form.html" %}
+  </div>
+</section>
+
+<section class="bg-[color:var(--dark-purple)]">
   <div class="container container--large">
     <div class="mb-4">
       <h2 class="inline-block mb-0">About me.</h2>
-      <span class="ml-2">Click here to <a href="/contact/" class="anchor-highlight ">contact me</a></span>
     </div>    
 
     {% include "./_includes/components/about-me.html" %}
