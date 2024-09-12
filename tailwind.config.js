@@ -1,11 +1,10 @@
 module.exports = {
   content: [
-    './src/**/*.html',
-    './src/**/*.njk',
-    './contact.html',
-    './howItWorks.html',
-    './pricing.html',
-    './index.html',
+    './src/**/*.{html,njk}',
+    './src/contact.html',
+    './src/how-it-works.html',
+    './src/pricing.html',
+    './src/index.html',
   ],
   theme: {
     container: {
