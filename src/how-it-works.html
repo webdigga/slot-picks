@@ -6,6 +6,7 @@ seoTitle: How it works | Kabooly
 ---
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
+{% import "./_includes/components/more-button.html" as moreButton with context %}
 
 <section class="min-h-screen flex flex-col bg-[color:var(--dark-purple)] justify-between border-b-4 border-b-[color:var(--dark-yellow)] border-solid">
 
@@ -15,14 +16,7 @@ seoTitle: How it works | Kabooly
     {% include "./_includes/components/hero-how-it-works.html" %}
   </div>
 
-  <div class="text-center lg:block">
-    <button
-      data-test="moreButton"
-      class="animate-bounce p-4 shadow-sm bg-[color:var(--dark-gray)] w-16 h-16 rounded-full mb-6 border border-solid border-[color:var(--dark-gray)] hover:border hover:border-solid hover:border-white">
-      <span class="text-xs">More</span>
-      <span class="text-lg">&caron;</span>
-    </button>
-  </div>  
+  {{ moreButton.button('bg-[color:var(--dark-gray)]', 'border-[color:var(--dark-gray)]') }}
 </section>
 
 <section data-test="moreButtonLocation">

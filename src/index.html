@@ -5,6 +5,7 @@ type: home
 ---
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
+{% import "./_includes/components/more-button.html" as moreButton with context %}
 
 <section class="min-h-screen flex flex-col bg-[color:var(--dark-blue)] justify-between border-b-4 border-b-[color:var(--dark-purple)] border-solid">
 
@@ -13,15 +14,8 @@ type: home
   <div class="container content-center">
     {% include "./_includes/components/hero.html" %}
   </div>
-
-  <div class="text-center  lg:block">
-    <button
-      data-test="moreButton"
-      class="animate-bounce p-4 shadow-sm bg-[color:var(--dark-purple)] w-16 h-16 rounded-full mb-6 border border-solid border-[color:var(--dark-purple)] hover:border hover:border-solid hover:border-white">
-      <span class="text-xs">More</span>
-      <span class="text-lg">&caron;</span>
-    </button>
-  </div>  
+  
+  {{ moreButton.button('bg-[color:var(--dark-purple)]', 'border-[color:var(--dark-purple)]') }}
 </section>
 
 <section data-test="moreButtonLocation">

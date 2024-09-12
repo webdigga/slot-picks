@@ -1,0 +1,10 @@
+{% macro button(bgColour, borderColour, textColour) %}
+  <div class="text-center lg:block">
+    <button
+      data-test="moreButton"
+      class="animate-bounce p-4 shadow-sm w-16 h-16 {{ bgColour | safe }} {{ textColour | safe }} rounded-full mb-6 border border-solid {{ borderColour | safe }} hover:border hover:border-solid hover:border-white">
+      <span class="text-xs">More</span>
+      <span class="text-lg">&caron;</span>
+    </button>
+  </div>
+  {% endmacro %}
