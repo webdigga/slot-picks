@@ -50,7 +50,7 @@ h3, h4 {
 }
 
 .menu-styles {
-  @apply absolute left-0 top-24 border-b border-b-white pb-6 bg-[color:var(--dark-blue)] shadow-xl;
+  @apply absolute left-0 top-24 border-b border-b-white pb-6 shadow-xl;
 }
 
 .dark-copy {
