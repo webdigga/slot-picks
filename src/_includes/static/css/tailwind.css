@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .myClass {
-  height: 100dvh;
+  min-height: 100dvh;
 }
 /* 
 html, body {
