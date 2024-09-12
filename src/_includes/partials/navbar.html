@@ -1,68 +1,62 @@
-<div class="w-full container">
+{% macro nav(bgColour) %}
+  <div class="w-full container">
 
-  {% if pageType == 'pricing' %}
-    {% set menuClass = 'menu-styles--pricing' %}
-  {% elif pageType == 'howItWorks' %}
-    {% set menuClass = 'menu-styles--how-it-works' %}
-  {% elif pageType == 'contact' %}
-    {% set menuClass = 'menu-styles--contact' %}
-  {% endif %}  
+    <nav class="flex items-center justify-center lg:justify-between flex-wrap">
+      <!--Logo etc-->
+      <div class="underline lowercase font-bold text-5xl tracking-tighter lg:text-8xl pr-4">
+        <a href="/">
+          {{ settings.siteName }}
+        </a>
+      </div>
 
-  <nav class="flex items-center justify-center lg:justify-between flex-wrap">
-    <!--Logo etc-->
-    <div class="underline lowercase font-bold text-5xl tracking-tighter lg:text-8xl pr-4">
-      <a href="/">
-        {{ settings.siteName }}
-      </a>
-    </div>
+      <!--Toggle button (hidden on large screens)-->
+      <button
+        data-test="menuButton"
+        type="button"
+        class="ml-auto lg:hidden px-2 focus:outline-none"
+        aria-label="Menu">
 
-    <!--Toggle button (hidden on large screens)-->
-    <button
-      data-test="menuButton"
-      type="button"
-      class="ml-auto lg:hidden px-2 focus:outline-none"
-      aria-label="Menu">
+        <span>Menu</span>
 
-      <span>Menu</span>
+        <svg class="h-6 w-6 fill-current inline-block" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+          <path
+            data-test="cross"
+            class="hidden"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+          />
+          <path
+            data-test="burger"
+            class="block"
+            fill-rule="evenodd"
+            d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+          />
+        </svg>
+      </button>
 
-      <svg class="h-6 w-6 fill-current inline-block" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-        <path
-          data-test="cross"
-          class="hidden"
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
-        />
-        <path
-          data-test="burger"
-          class="block"
-          fill-rule="evenodd"
-          d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-        />
-      </svg>
-    </button>
+      <!--Menu-->
+      <div
+        data-test="menu"
+        class="w-full flex-grow lg:flex lg:items-center lg:w-auto text-center {{ bgColour }} hidden"
+      >
 
-    <!--Menu-->
-    <div
-      data-test="menu"
-      class="w-full flex-grow lg:flex lg:items-center lg:w-auto text-center {{ menuClass }} hidden"
-    >
+        {% if navigation.items %}
 
-      {% if navigation.items %}
+          <ul class="pt-6 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center">
+            {% for item in navigation.items %}
+              <li class="nav__item">
+                <a                
+                  class="text-ml inline-block py-2 px-4 hover:underline-offset-4 hover:decoration-1 hover:underline hover:decoration-[color:var(--dark-yellow)] {% if item.url == page.url %}underline-offset-4 decoration-2 underline decoration-[color:var(--dark-yellow)] {% else %} no-underline {% endif %}"                
+                  href="{{ item.url }}">
+                  {{ item.text }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
 
-        <ul class="pt-6 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center">
-          {% for item in navigation.items %}
-            <li class="nav__item">
-              <a                
-                class="text-ml inline-block py-2 px-4 hover:underline-offset-4 hover:decoration-1 hover:underline hover:decoration-[color:var(--dark-yellow)] {% if item.url == page.url %}underline-offset-4 decoration-2 underline decoration-[color:var(--dark-yellow)] {% else %} no-underline {% endif %}"                
-                href="{{ item.url }}">
-                {{ item.text }}
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-
-      {% endif %}
-    </div>
-  </nav>	
-</div>
+        {% endif %}
+      </div>
+    </nav>	
+  </div>
+{% endmacro %}

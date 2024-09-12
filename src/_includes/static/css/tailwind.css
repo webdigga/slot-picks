@@ -52,18 +52,6 @@ h3, h4 {
   @apply absolute left-0 top-24 border-b border-b-white pb-6 bg-[color:var(--dark-blue)] shadow-xl;
 }
 
-.menu-styles--how-it-works {
-  @apply bg-[color:var(--dark-purple)];
-}
-
-.menu-styles--pricing {
-  @apply bg-[color:var(--dark-green)];
-}
-
-.menu-styles--contact {
-  @apply bg-[color:var(--dark-gray)];
-}
-
 .dark-copy {
   color: var(--dark-copy);
 }

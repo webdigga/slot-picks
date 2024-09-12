@@ -2,8 +2,10 @@
 layout: default
 ---
 
+{% import "./partials/navbar.html" as navBar with context %}
+
 <div class="bg-[color:var(--dark-blue)]">
-  {% include "./partials/navbar.html" %}
+  {{ navBar.nav() }}
 </div>
 
 <div class="container container--large">

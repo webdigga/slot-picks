@@ -5,11 +5,11 @@ type: pricing
 seoTitle: Pricing | Kabooly
 ---
 
+{% import "./_includes/partials/navbar.html" as navBar with context %}
+
 <section class="min-h-screen flex flex-col bg-[color:var(--dark-green)] justify-between border-b-4 border-b-[color:var(--light-yellow)] border-solid">
 
-  {% set pageType = 'pricing' %}
-
-  {% include "./_includes/partials/navbar.html" %}
+  {{ navBar.nav('bg-[color:var(--dark-green)]') }}
   
   <div class="container content-center">
     {% include "./_includes/components/hero-pricing.html" %}

@@ -5,11 +5,11 @@ type: contact
 seoTitle: Contact | Kabooly
 ---
 
+{% import "./_includes/partials/navbar.html" as navBar with context %}
+
 <section class="min-h-screen flex flex-col bg-[color:var(--dark-gray)] justify-between border-b-4 border-b-[color:var(--light-yellow)] border-solid">
 
-  {% set pageType = 'contact' %}
-
-  {% include "./_includes/partials/navbar.html" %}
+  {{ navBar.nav('bg-[color:var(--dark-gray)]') }}
   
   <div class="container content-center">
     {% include "./_includes/components/hero-contact.html" %}
