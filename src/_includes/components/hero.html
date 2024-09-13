@@ -1,4 +1,4 @@
-{% import "./hero-checklist-item.html" as checkList with context %}
+{% import "./checklist-item.html" as checkList with context %}
 {% import "./buttons/buy-a-website.html" as buyButton with context %}
 {% import "./buttons/call-me.html" as callButton with context %}
 
@@ -13,12 +13,12 @@
     {{ callButton.button('Call me', 'bg-[color:var(--dark-blue)]', 'hover:bg-[color:var(--dark-purple)]') }}
     
     <ul class="flex flex-col sm:flex-row flex-wrap max-w-screen-md">
-      {{ checkList.checkListItem('SEO baked in') }}
-      {{ checkList.checkListItem('Google Analytics') }}
-      {{ checkList.checkListItem('Simple pricing structure') }}
-      {{ checkList.checkListItem('Fully built and managed by me') }}
-      {{ checkList.checkListItem('Top Google Core Web Vital scores') }}
-      {{ checkList.checkListItem('Domain name') }}
+      {{ checkList.checkListItem('SEO baked in', 'text-white sm:w-1/2 mb-2') }}
+      {{ checkList.checkListItem('Google Analytics', 'text-white sm:w-1/2 mb-2') }}
+      {{ checkList.checkListItem('Simple pricing structure', 'text-white sm:w-1/2 mb-2') }}
+      {{ checkList.checkListItem('Fully built and managed by me', 'text-white sm:w-1/2 mb-2') }}
+      {{ checkList.checkListItem('Top Google Core Web Vital scores', 'text-white sm:w-1/2 mb-2') }}
+      {{ checkList.checkListItem('Domain name', 'text-white sm:w-1/2 mb-2') }}
     </ul>
    
   </div>

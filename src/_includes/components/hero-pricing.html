@@ -1,4 +1,4 @@
-{% import "./hero-checklist-item.html" as checkList with context %}
+{% import "./checklist-item.html" as checkList with context %}
 {% import "./buttons/buy-a-website.html" as buyButton with context %}
 {% import "./buttons/call-me.html" as callButton with context %}
 
@@ -13,12 +13,12 @@
     {{ callButton.button('Call me', 'bg-[color:var(--dark-green)]', 'hover:bg-[color:var(--dark-gray)]') }}
    
     <ul class="flex flex-col sm:flex-row flex-wrap max-w-screen-md">
-      {{ checkList.checkListItem('Value for money') }}
-      {{ checkList.checkListItem('Predictable payments') }}
-      {{ checkList.checkListItem('Peace of mind') }}
-      {{ checkList.checkListItem('Ongoing support') }}
-      {{ checkList.checkListItem('Value for money') }}
-      {{ checkList.checkListItem('Value for money') }}
+      {{ checkList.checkListItem('Value for money', 'text-white sm:w-1/2 mb-2') }}
+      {{ checkList.checkListItem('Predictable payments', 'text-white sm:w-1/2 mb-2') }}
+      {{ checkList.checkListItem('Peace of mind', 'text-white sm:w-1/2 mb-2') }}
+      {{ checkList.checkListItem('Ongoing support', 'text-white sm:w-1/2 mb-2') }}
+      {{ checkList.checkListItem('Value for money', 'text-white sm:w-1/2 mb-2') }}
+      {{ checkList.checkListItem('Value for money', 'text-white sm:w-1/2 mb-2') }}
     </ul>
    
   </div>

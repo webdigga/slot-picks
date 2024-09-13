@@ -9,7 +9,7 @@ seoTitle: How it works | Kabooly
 {% import "./_includes/components/buttons/more-button.html" as moreButton with context %}
 {% import "./_includes/components/faqs.html" as faqs with context %}
 
-<section class="min-h-dvh flex flex-col bg-[color:var(--dark-purple)] justify-between border-b-4 border-b-[color:var(--dark-yellow)] border-solid">
+<section class="min-h-dvh flex flex-col bg-[color:var(--dark-purple)] justify-between border-b-4 border-b-[color:var(--dark-gray)] border-solid">
 
   {{ navBar.nav('bg-[color:var(--dark-purple)]') }}
   
@@ -27,6 +27,18 @@ seoTitle: How it works | Kabooly
     </div>
 
     {% include "./_includes/components/how-it-works.html" %}
+    
+  </div>
+</section>
+
+<section class="bg-[color:var(--dark-gray)]">
+
+  <div class="container container--large">
+    <div class="mb-4">
+      <h2 class="inline-block mb-0">What you get.</h2>
+    </div>
+
+    {% include "./_includes/components/what-you-get.html" %}
     
   </div>
 </section>
