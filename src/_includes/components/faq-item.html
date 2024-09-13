@@ -1,0 +1,9 @@
+
+{% macro faq(question, answer) %}
+  <dl>
+    <dt class="font-bold leading-6 text-lg mt-4">{{ question | safe }}</dt>
+    <dd class="mt-4">
+      <p class="leading-6 text-base">{{ answer | safe }}</p>
+    </dd>
+  </dl>
+{% endmacro %}
