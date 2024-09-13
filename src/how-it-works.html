@@ -7,6 +7,7 @@ seoTitle: How it works | Kabooly
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
 {% import "./_includes/components/buttons/more-button.html" as moreButton with context %}
+{% import "./_includes/components/faqs.html" as faqs with context %}
 
 <section class="min-h-dvh flex flex-col bg-[color:var(--dark-purple)] justify-between border-b-4 border-b-[color:var(--dark-yellow)] border-solid">
 
@@ -30,11 +31,11 @@ seoTitle: How it works | Kabooly
   </div>
 </section>
 
-<section class="bg-[color:var(--dark-gray)]">
+<section>
   <div class="container container--large">
-    <h2 class="mb-4">FAQs.</h2>
+    <h2 class="mb-4 dark-copy">FAQs.</h2>
 
-    {% include "./_includes/components/faqs.html" %}
+    {{ faqs.faqComponent('dark-copy') }}
     
   </div>
 </section>
