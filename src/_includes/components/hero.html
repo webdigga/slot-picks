@@ -2,7 +2,7 @@
 {% import "./buttons/buy-a-website.html" as buyButton with context %}
 {% import "./buttons/call-me.html" as callButton with context %}
 
-<div class="flex flex-col md:flex-row items-center py-8 lg:py-16 md:-mt-36">
+<div class="flex flex-col md:flex-row items-center py-8 lg:py-16">
 	
   <div x-data="">
     <h1>Managed Websites, <span class="text-[color:var(--light-purple)]">Paid Monthly</span></h2>
@@ -15,11 +15,9 @@
     <ul class="flex flex-col sm:flex-row flex-wrap max-w-screen-md">
       {{ checkList.checkListItem('SEO baked in') }}
       {{ checkList.checkListItem('Google Analytics') }}
-      {{ checkList.checkListItem('Content Delivery Network') }}
       {{ checkList.checkListItem('Simple pricing structure') }}
       {{ checkList.checkListItem('Fully built and managed by me') }}
       {{ checkList.checkListItem('Top Google Core Web Vital scores') }}
-      {{ checkList.checkListItem('Performance at the heart') }}
       {{ checkList.checkListItem('Domain name') }}
     </ul>
    
