@@ -1,3 +1,5 @@
+{% import "./buttons/buy-a-website.html" as buyButton with context %}
+
 <div class="mb-4 md:mb-0 md:basis-1/2 rounded-md p-4 border-4 border-[color:var(--dark-copy)] md:mr-2 md:flex md:flex-col md:items-start">
   <span class="mb-4 inline-block bg-[color:var(--dark-blue)] text-white text-sm px-2 py-1 rounded-md uppercase">Standard</span>
 
@@ -64,4 +66,6 @@
       <span class="ml-1">Free SSL certificate</span>
     </li>
   </ul>
+
+  {{ buyButton.button('Buy the Standard package', 'text-[color:var(--dark-copy)] !mb-0 !mr-0 w-full mt-3 md:self-end md:w-auto') }}
 </div>
