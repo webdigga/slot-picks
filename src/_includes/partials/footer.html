@@ -9,27 +9,19 @@
     <small class="subtle-text-on-light-background">{{ settings.poweredBy }} is a trading name of Seven Kings Web Design</small>
   </p>
 
-  {% if settings.email %}
-    <p class="pb-1">
-      <small class="subtle-text-on-light-background">
-        <a href="mailto:{{ settings.email }}" class="break-all">Email me @ {{ settings.email }}</a>
-      </small>
-    </p>
-  {% endif %}
-
-  {% if settings.phoneNumber %}
-    <p class="pb-1">
-      <small class="subtle-text-on-light-background">
-        <a href="tel:{{ settings.phoneNumber }}">Call me on {{ settings.phoneNumber }}</a>
-      </small>
-    </p>
-  {% endif %}
-
   {% if settings.companyNumber %}
     <p class="pb-1">
       <small class="subtle-text-on-light-background">Company number: {{ settings.companyNumber }}</small>
     </p>
-	{% endif %}  
+	{% endif %}
+
+  {% if settings.email and settings.phoneNumber %}
+    <p class="pb-1">
+      <small class="subtle-text-on-light-background">
+        <a href="mailto:{{ settings.email }}" class="break-all py-4 pl-4 pr-2">Email me @ {{ settings.email }}</a> | <a href="tel:{{ settings.phoneNumber }}" class="py-4 pr-4 pl-2">Call me on {{ settings.phoneNumber }}</a>
+      </small>
+    </p>
+  {% endif %}
 
   <p class="flex items-center">
     <span class="[&>svg]:h-5 [&>svg]:w-5">
