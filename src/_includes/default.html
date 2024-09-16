@@ -133,48 +133,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
 
-  <body>   
+  <body class="{{ "prod" if env.isProd }}">   
 
     {{ content | safe }}
 
     {% include "./partials/footer.html" %}
 
-	  {% if env.isProd %}
-
+    {% if env.isProd %}
       {% include "./partials/cookie-consent.html" %}
-
-      <script>
-        const grantConsentButton = document.getElementById('grant-consent');
-
-        grantConsentButton.addEventListener("click", function() {
-          localStorage.setItem("consentGranted", "true");
-
-          loadGtagScript();
-        });
-
-        if(localStorage.getItem("consentGranted")) {
-          loadGtagScript();
-        }
-
-        function loadGtagScript() {
-          function gtag() { dataLayer.push(arguments); }
-
-          gtag('consent', 'update', {
-            ad_user_data: 'granted',
-            ad_personalization: 'granted',
-            ad_storage: 'granted',
-            analytics_storage: 'granted'
-          });
-
-          var gtagScript = document.createElement('script');
-          gtagScript.defer = true;
-          gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=GTAG_ID';
-
-          var firstScript = document.getElementsByTagName('script')[0];
-          firstScript.parentNode.insertBefore(gtagScript,firstScript);
-        }
-      </script>
-	  {% endif %}
+    {% endif %}
 
     {% set myScript %}
       {% include "static/js/script.js" %}
