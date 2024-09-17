@@ -7,6 +7,7 @@ seoTitle: Contact | Kabooly
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
 {% import "./_includes/components/buttons/more-button.html" as moreButton with context %}
+{% import "./_includes/components/faqs.html" as faqs with context %}
 
 <section class="min-h-dvh flex flex-col bg-[color:var(--dark-gray)] justify-between border-b-4 border-b-[color:var(--light-yellow)] border-solid">
 
@@ -32,6 +33,15 @@ seoTitle: Contact | Kabooly
     </div>    
 
     {% include "./_includes/components/about-me.html" %}
+    
+  </div>
+</section>
+
+<section>
+  <div class="container container--large">
+    <h2 class="mb-4 dark-copy">FAQs.</h2>
+
+    {{ faqs.faqComponent('dark-copy') }}
     
   </div>
 </section>

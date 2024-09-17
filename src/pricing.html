@@ -7,10 +7,13 @@ seoTitle: Pricing | Kabooly
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
 {% import "./_includes/components/buttons/more-button.html" as moreButton with context %}
+{% import "./_includes/components/faqs.html" as faqs with context %}
 
-<section class="min-h-dvh flex flex-col bg-[color:var(--dark-green)] justify-between border-b-4 border-b-[color:var(--light-yellow)] border-solid">
+<!-- #3e627f -->
 
-  {{ navBar.nav('bg-[color:var(--dark-green)]') }}
+<section class="min-h-dvh flex flex-col bg-[color:var(--dark-copy)] justify-between border-b-4 border-b-[color:var(--light-yellow)] border-solid">
+
+  {{ navBar.nav('bg-[color:var(--dark-copy)]') }}
   
   <div class="container content-center">
     {% include "./_includes/components/hero-pricing.html" %}
@@ -32,4 +35,24 @@ seoTitle: Pricing | Kabooly
     </div>
   </div>
   
+</section>
+
+<section class="bg-[color:var(--dark-purple)]">
+  <div class="container container--large">
+    <div class="mb-4">
+      <h2 class="inline-block">Something.</h2>
+    </div>
+
+    <div class="md:flex">
+      bah blah
+    </div>
+</section>
+
+<section>
+  <div class="container container--large">
+    <h2 class="mb-4 dark-copy">FAQs.</h2>
+
+    {{ faqs.faqComponent('dark-copy') }}
+    
+  </div>
 </section>
