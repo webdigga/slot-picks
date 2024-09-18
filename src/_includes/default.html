@@ -77,6 +77,51 @@
       </script>
     {% endif %}
 
+    {% if type === 'howItWorks' %}
+      <link rel="canonical" href="{{ env.site }}/how-it-works/" />
+
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "{{ settings.title }}",
+          "description": "{{ settings.description }}",
+          "image": "android-chrome-512x512.png",
+          "url": "{{ env.site }}"
+        }
+      </script>
+    {% endif %}
+
+    {% if type === 'pricing' %}
+      <link rel="canonical" href="{{ env.site }}/pricing/" />
+
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "{{ settings.title }}",
+          "description": "{{ settings.description }}",
+          "image": "android-chrome-512x512.png",
+          "url": "{{ env.site }}"
+        }
+      </script>
+    {% endif %}
+
+    {% if type === 'contact' %}
+      <link rel="canonical" href="{{ env.site }}/contact/" />
+
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "{{ settings.title }}",
+          "description": "{{ settings.description }}",
+          "image": "android-chrome-512x512.png",
+          "url": "{{ env.site }}"
+        }
+      </script>
+    {% endif %}
+
     {% if type === 'article' %}
       <script type="application/ld+json">
         {
