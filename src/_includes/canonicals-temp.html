@@ -1,0 +1,87 @@
+{% if title %}
+  <link rel="canonical" href="{{ env.site }}/{{ title | slugify }}/" />
+{% endif %}
+
+{% if type === 'home' %}
+  <link rel="canonical" href="{{ env.site }}/" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "{{ settings.title }}",
+      "description": "{{ settings.description }}",
+      "image": "android-chrome-512x512.png",
+      "url": "{{ env.site }}"
+    }
+  </script>
+{% endif %}
+
+{% if type === 'howItWorks' %}
+  <link rel="canonical" href="{{ env.site }}/how-it-works/" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "{{ settings.title }}",
+      "description": "{{ settings.description }}",
+      "image": "android-chrome-512x512.png",
+      "url": "{{ env.site }}"
+    }
+  </script>
+{% endif %}
+
+{% if type === 'pricing' %}
+  <link rel="canonical" href="{{ env.site }}/pricing/" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "{{ settings.title }}",
+      "description": "{{ settings.description }}",
+      "image": "android-chrome-512x512.png",
+      "url": "{{ env.site }}"
+    }
+  </script>
+{% endif %}
+
+{% if type === 'contact' %}
+  <link rel="canonical" href="{{ env.site }}/contact/" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "{{ settings.title }}",
+      "description": "{{ settings.description }}",
+      "image": "android-chrome-512x512.png",
+      "url": "{{ env.site }}"
+    }
+  </script>
+{% endif %}
+
+{% if type === 'article' %}
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "headline": "{{ title }}",
+      "datePublished": "{{ date }}",
+      "url": "{{ env.site }}/{{ title | slugify }}/",
+      "description": "{{ description }}",
+      "image": "{{ heroImage }}",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "{{ settings.title }}",
+        "url": "{{ env.site }}",
+        "publisher": {
+          "@type": "Organization",
+          "name": "{{ settings.title }}",
+          "url": "{{ env.site }}"
+        }
+      }
+    }
+  </script>
+{% endif %}
