@@ -1,0 +1,37 @@
+{% import "./checklist-item.html" as checkList with context %}
+
+<div class="md:grid md:grid-cols-12 md:gap-8 mt-8">
+  
+  <div class="md:col-span-8">
+    <h3>Why Small Businesses Need Managed Website Services</h3>
+
+    <p class="mb-4">Running a small business requires wearing many hats, and managing a website shouldn't have to be one of them. As a small business owner, your time is valuable, and focusing on core aspects like customer relationships and product development should be your priority. That's where my managed website service comes in. I provide all-in-one website management, ensuring your site stays up-to-date, secure, and optimised without you having to lift a finger. With a paid monthly plan, you can rest assured knowing your website is always in professional hands, freeing you to focus on growing your business.</p>
+        
+    <h3>Consistent Website Performance and Maintenance</h3>
+    <p class="mb-4">One of the biggest challenges for small businesses is keeping their websites running smoothly. A slow, outdated, or unsecure website can lead to lost sales and damage your reputation. With my managed service, I monitor your website's performance, perform regular updates, and ensure it's optimised for search engines. Monthly maintenance includes everything from fixing bugs to updating plugins and content. This proactive approach means your website remains reliable and competitive in today's digital marketplace.</p>
+
+    <h3>Cost-Effective Solution for Growing Businesses</h3>
+    <p class="mb-4">Hiring an in-house team or freelancers for website management can be costly and inconsistent. My managed website service offers a cost-effective alternative with predictable, affordable monthly payments. You’ll have access to expert support and comprehensive care without the overhead of managing a separate team. Whether you’re a startup or a growing business, my service scales with your needs, allowing you to invest in your business while ensuring your online presence is taken care of.</p>
+
+  </div>
+  
+  <div class="md:col-span-4">
+    <ul class="grid grid-cols-2 md:block">
+      {{ checkList.checkListItem('Yoga Teacher', 'text-[color:var(--dark-purple)] mb-3', 'dark-copy') }}
+      {{ checkList.checkListItem('Chiropractor', 'text-[color:var(--dark-purple)] mb-3', 'dark-copy') }}
+      {{ checkList.checkListItem('Handyman', 'text-[color:var(--dark-purple)] mb-3', 'dark-copy') }}
+      {{ checkList.checkListItem('Landscape Gardener', 'text-[color:var(--dark-purple)] mb-3', 'dark-copy') }}
+      {{ checkList.checkListItem('Wedding Planner', 'text-[color:var(--dark-purple)] mb-3', 'dark-copy') }}
+      {{ checkList.checkListItem('Personal Trainer', 'text-[color:var(--dark-purple)] mb-3', 'dark-copy') }}
+      {{ checkList.checkListItem('Nursery', 'text-[color:var(--dark-purple)] mb-3', 'dark-copy') }}
+      {{ checkList.checkListItem('Personal Tutor', 'text-[color:var(--dark-purple)] mb-3', 'dark-copy') }}
+      {{ checkList.checkListItem('Coaches', 'text-[color:var(--dark-purple)] mb-3', 'dark-copy') }}
+      {{ checkList.checkListItem('Dentist', 'text-[color:var(--dark-purple)] mb-3', 'dark-copy') }}
+      {{ checkList.checkListItem('And many many more!!', 'text-[color:var(--dark-purple)] mb-3', 'dark-copy') }}
+    </ul>
+
+  </div>
+
+  
+</div>
+

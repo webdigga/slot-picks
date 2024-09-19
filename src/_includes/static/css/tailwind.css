@@ -45,7 +45,7 @@ h2 {
 }
 
 h3, h4 {
-  @apply text-xl lg:text-3xl mb-4;
+  @apply text-xl lg:text-2xl mb-4;
 }
 
 .menu-styles {
