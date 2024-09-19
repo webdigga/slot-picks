@@ -21,10 +21,8 @@ type: home
 
 <section data-test="moreButtonLocation">
   <div class="container container--large dark-copy">
-    <div class="mb-4">
-      <h2 class="inline-block mb-0">How it works.</h2>
-      <span class="ml-2">See more <a href="/how-it-works/" class="anchor-pop ">about how it works</a>. Launch your site in 4 easy steps.</span>
-    </div>
+    <h2 class="mb-4">How The Managed Website Service Works.</h2>    
+    <div>See more <a href="/how-it-works/" class="anchor-pop ">about how it works</a>. Launch your site in 4 easy steps.</div>
 
     {% include "./_includes/components/how-it-works.html" %}
     
@@ -33,10 +31,8 @@ type: home
 
 <section class="bg-[color:var(--dark-purple)]">
   <div class="container container--large">
-    <div class="mb-4">
-      <h2 class="inline-block mb-0">About me.</h2>
-      <span class="ml-2">Click <a href="/contact/" class="anchor-highlight">here to contact me</a></span>
-    </div>    
+    <h2 class="mb-4">About me.</h2>
+    <div><a href="/contact/" class="anchor-highlight">Click here to contact me</a></div>
 
     {% include "./_includes/components/about-me.html" %}
     
@@ -45,7 +41,7 @@ type: home
 
 <section>
   <div class="container container--large">
-    <h2 class="dark-copy mb-4">Free website audit.</h2>
+    <h2 class="dark-copy mb-4">Get Your Free Website Audit.</h2>
 
     {% include "./_includes/components/website-audit.html" %}
     
@@ -54,7 +50,7 @@ type: home
 
 <section class="bg-[color:var(--dark-gray)]">
   <div class="container container--large">
-    <h2 class="mb-4">FAQs.</h2>
+    <h2 class="mb-4">Frequently Asked Questions.</h2>
 
     {{ faqs.faqComponent() }}
     
@@ -63,12 +59,10 @@ type: home
 
 <section>
   <div class="container container--large dark-copy">
-    <div class="mb-4">
-      <h2 class="inline-block">Pricing.</h2> 
-      <span class="ml-2">See more <a href="/pricing/" class="anchor-pop ">about pricing</a>.</span>
-    </div>
+    <h2 class="mb-4">My Pricing Plans.</h2>
+    <div>See more <a href="/pricing/" class="anchor-pop ">about pricing</a>.</div>
 
-    <div class="md:flex">
+    <div class="md:flex mt-8 sm:mt-12 lg:mt-16">
       {% include "./_includes/components/standard-pricing.html" %}
 
       {% include "./_includes/components/pro-pricing.html" %}
