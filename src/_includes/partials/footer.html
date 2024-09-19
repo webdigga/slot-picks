@@ -18,7 +18,7 @@
   {% if settings.email and settings.phoneNumber %}
     <p class="pb-1">
       <small class="subtle-text-on-light-background">
-        <a href="mailto:{{ settings.email }}" class="break-all py-4 pl-4 pr-2">Email me @ {{ settings.email }}</a> | <a href="tel:{{ settings.phoneNumber }}" class="py-4 pr-4 pl-2">Call me on {{ settings.phoneNumber }}</a>
+        <a href="mailto:{{ settings.email }}" class="break-all py-4 pl-4 pr-4">Email me @ {{ settings.email }}</a> | <a href="tel:{{ settings.phoneNumber }}" class="py-4 pr-4 pl-4">Call me on {{ settings.phoneNumber }}</a>
       </small>
     </p>
   {% endif %}
@@ -28,7 +28,8 @@
       <a
         href="https://www.linkedin.com/in/david-white-96a0878a/"
         target="_blank"
-        rel="noopener">
+        rel="noopener"
+        class="block p-3">
         <svg
           width="20px"
           height="20px"
@@ -47,7 +48,8 @@
       <a
         href="https://x.com/webdigga"
         target="_blank"
-        rel="noopener">
+        rel="noopener"
+        class="block p-3">
         <svg
           width="25px"
           height="20px"
