@@ -1,3 +1,5 @@
+{% import "./buttons/secondary-button.html" as secondaryButton with context %}
+
 <ul class="mt-8 grid grid-cols-1 gap-10 sm:mt-12 lg:mt-16 lg:grid-cols-4">
   <li class="flex-start group relative flex lg:flex-col">
     <span
@@ -57,7 +59,7 @@
     <div class="ml-6 lg:ml-0 lg:mt-10">
       <h3
         class="dark-copy">
-        Development
+        Design and Development
       </h3>
       <p class="mt-2 text-base dark-copy">I aim to complete development within 10 days of us agreeing on the scope and requirements of the website. If there are any delays then I will be sure to let you know as soon as possible.</p>
     </div>
@@ -122,4 +124,8 @@
       <p class="mt-2 text-base dark-copy">Regular check-in's to make sure everything is on track. I'll make any necassary amends until you are ready to sign it off.</p>
     </div>
   </li>
-</ul>  
+</ul>
+
+<div class="mt-10 flex justify-end md:justify-center">
+  {{ secondaryButton.button('See my pricing', '/pricing/#pricing') }}
+</div>

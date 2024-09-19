@@ -1,0 +1,23 @@
+{% macro button(text, destination) %}
+  <a
+    href="{{ destination | safe }}"  
+    class="self-end mb-3 rounded-md cursor-pointer inline-block bg-[color:var(--dark-purple)] text-white py-4 px-6 hover:opacity-90 border border-solid border-white"
+  >
+    <div class="flex items-center">{{ text | safe }}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24px"
+        height="24px"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="pl-1 size-6">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+        />
+      </svg>
+    </div>
+  </a>
+{% endmacro %}
