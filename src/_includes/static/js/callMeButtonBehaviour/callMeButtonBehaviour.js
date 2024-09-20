@@ -11,7 +11,7 @@ function callMeButtonBehaviour() {
 
   button.addEventListener("click", (event) => {
     event.preventDefault();
-    window.location.href = /Mobi|Android|iPhone/i.test(navigator.userAgent) ? event.target.href : '/contact/#contact';
+    window.location.href = /Mobi|Android/i.test(navigator.userAgent) ? event.target.href : '/contact/#contact';
   });
 }
 
