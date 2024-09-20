@@ -1,5 +1,6 @@
 {% macro button(title, bgColour, hoverBgColour) %}
   <a
+    data-test="callMeButton"
     href="tel:{{ settings.phoneNumber }}"  
     class="mb-3 rounded-md cursor-pointer inline-block {{ bgColour | safe }} text-white py-4 px-6 {{ hoverBgColour | safe }} border border-solid border-white"
   >

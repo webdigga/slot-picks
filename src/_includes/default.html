@@ -114,10 +114,15 @@
       {% include "static/js/moreButtonScroll/moreButtonScroll.js" %}
     {% endset %}
 
+    {% set callMeButtonBehaviour %}
+      {% include "static/js/callMeButtonBehaviour/callMeButtonBehaviour.js" %}
+    {% endset %}
+
     <script type="module">
       {{ cookieConsent | jsmin | safe }}
       {{ menuToggle | jsmin | safe }}
       {{ moreButtonScroll | jsmin | safe }}
+      {{ callMeButtonBehaviour | jsmin | safe }}
     </script>
   </body>
 </html>
