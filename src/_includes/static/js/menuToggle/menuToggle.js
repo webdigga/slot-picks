@@ -6,7 +6,6 @@ function menuToggle() {
   const burger = document.querySelector('[data-test="burger"]');
   const cross = document.querySelector('[data-test="cross"]');
 
-  
   if(menuButton) {
     menuButton.addEventListener('click', () => {
       const menu = document.querySelector('[data-test="menu"]');

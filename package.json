@@ -38,9 +38,6 @@
     }
   },
   "lint-staged": {
-    "*.{js,html}": [
-      "jest",
-      "git add"
-    ]
+    "*": "jest"
   }
 }
