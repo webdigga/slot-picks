@@ -102,11 +102,22 @@
       {% include "./partials/cookie-consent.html" %}
     {% endif %}
 
-    {% set myScript %}
-      {% include "static/js/script.js" %}
+    {% set cookieConsent %}
+      {% include "static/js/cookieConsent/cookieConsent.js" %}
     {% endset %}
-    <script>
-      {{ myScript | jsmin | safe }}
+
+    {% set menuToggle %}
+      {% include "static/js/menuToggle/menuToggle.js" %}
+    {% endset %}
+
+    {% set moreButtonScroll %}
+      {% include "static/js/moreButtonScroll/moreButtonScroll.js" %}
+    {% endset %}
+
+    <script type="module">
+      {{ cookieConsent | jsmin | safe }}
+      {{ menuToggle | jsmin | safe }}
+      {{ moreButtonScroll | jsmin | safe }}
     </script>
   </body>
 </html>
