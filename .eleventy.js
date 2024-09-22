@@ -83,19 +83,19 @@ module.exports = function (eleventyConfig) {
   
 
   // // Minify HTML
-  // eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-  //   // Eleventy 1.0+: use this.inputPath and this.outputPath instead
-  //   if (outputPath.endsWith(".html")) {
-  //     let minified = htmlmin.minify(content, {
-  //       useShortDoctype: true,
-  //       removeComments: true,
-  //       collapseWhitespace: true,
-  //     });
-  //     return minified;
-  //   }
+  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+    // Eleventy 1.0+: use this.inputPath and this.outputPath instead
+    if (outputPath.endsWith(".html")) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true,
+      });
+      return minified;
+    }
 
-  //   return content;
-  // });
+    return content;
+  });
 
   const { minify } = require("terser");
   eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (code, callback) {
