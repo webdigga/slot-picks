@@ -4,7 +4,7 @@ title2: Yoga Teachers,
 title3: paid Monthly
 h2Tag: Professional Website Management for Yoga Teachers
 seoTitle: Managed Websites for Yoga Teachers, paid Monthly
-description: Get a fully managed, professional website designed specifically for yoga teachers. Enjoy affordable monthly plans that take the hassle out of website management, so you can focus on teaching
+description: Get a fully managed website for yoga teachers with affordable monthly plans. Let us handle the hassle of management, so you can focus on teaching.
 bullets:
   - Custom website tailored to yoga teachers
   - Maintenance and updates included
