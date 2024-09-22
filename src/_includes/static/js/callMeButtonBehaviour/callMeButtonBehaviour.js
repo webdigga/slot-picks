@@ -4,7 +4,6 @@
 function callMeButtonBehaviour() {
   document.querySelector('[data-test="callMeButton"]').addEventListener("click", (event) => {
 
-    console.log(event);
     event.preventDefault();
     window.location.href = /Mobi|Android|iPhone/i.test(navigator.userAgent) ? event.target.href : '/contact/#contact';
   });
