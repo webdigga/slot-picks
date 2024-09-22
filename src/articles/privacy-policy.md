@@ -8,6 +8,6 @@ tags:
   - privacy
 ignore: true
 ---
-## How we collect information
+## How I collect information
 
 Visits to the site are tracked via Google Analytics to let me see what pages on my site people are visiting. Although this uses cookies to remember visitors between visits, I do not collect any personal data via Google Analytics, and your IP address is anonymised.
