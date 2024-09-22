@@ -33,7 +33,7 @@ function cookieConsent() {
 
       const gtagScript = document.createElement('script');
       gtagScript.defer = true;
-      gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=GTAG_ID';
+      gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-X217WEE009';
 
       const firstScript = document.getElementsByTagName('script')[0];
       firstScript.parentNode.insertBefore(gtagScript,firstScript);
