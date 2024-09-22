@@ -1,0 +1,30 @@
+{% import "./checklist-item.html" as checkList with context %}
+{% import "./buttons/buy-a-website.html" as buyButton with context %}
+{% import "./buttons/call-me.html" as callButton with context %}
+
+{% macro smallBusiness(title, title2, title3, h2Tag, bullet1, bullet2, bullet3, bullet4, bullet5, bullet6) %}
+  <div class="flex flex-col md:flex-row items-center py-8 lg:py-16">
+    
+    <div>
+      <h1>{{ title | safe }} <span class="text-[color:var(--light-yellow)]">{{ title2 | safe }}</span> {{ title3 | safe }}</h1>
+      <h2>{{ h2Tag | safe }}</h2>
+
+      {{ buyButton.button('Buy a website', 'text-[color:var(--dark-copy)]') }}
+
+      {{ callButton.button('Call me', 'bg-[color:var(--dark-gray)]', 'hover:bg-[color:var(--dark-purple)]') }}
+      
+      <ul class="flex flex-col sm:flex-row flex-wrap max-w-screen-md">
+        {{ checkList.checkListItem(bullet1, 'text-white sm:w-1/2 mb-2', 'text-white') }}
+        {{ checkList.checkListItem(bullet2, 'text-white sm:w-1/2 mb-2', 'text-white') }}
+        {{ checkList.checkListItem(bullet3, 'text-white sm:w-1/2 mb-2', 'text-white') }}
+        {{ checkList.checkListItem(bullet4, 'text-white sm:w-1/2 mb-2', 'text-white') }}
+        {{ checkList.checkListItem(bullet5, 'text-white sm:w-1/2 mb-2', 'text-white') }}
+        {{ checkList.checkListItem(bullet6, 'text-white sm:w-1/2 mb-2', 'text-white') }}
+      </ul>
+    
+    </div>
+    
+    {% include "./rocket.html" %}
+
+  </div>
+{% endmacro %}

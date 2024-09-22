@@ -1,0 +1,8 @@
+{
+    "layout": "business",
+    "tags": [
+        "business"
+    ],
+    "type": "business",
+    "permalink": "/{{ seoTitle | slugify }}/"
+}

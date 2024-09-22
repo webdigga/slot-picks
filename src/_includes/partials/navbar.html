@@ -38,7 +38,7 @@
       <!--Menu-->
       <div
         data-test="menu"
-        class="w-full flex-grow lg:flex lg:items-center lg:w-auto text-center {{ bgColour }} hidden"
+        class="w-full flex-grow lg:flex lg:items-center lg:w-auto text-center {{ bgColour | safe }} hidden"
       >
 
         {% if navigation.items %}
