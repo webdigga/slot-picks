@@ -17,48 +17,121 @@
 
     <meta name="google-site-verification" content="VERIFICATION-ID" />
 
-    <title>
-      {% if seoTitle %}
-        {{ seoTitle }}
-      {% elif title %}
-        {{ title }}
-      {% else %}
-        {{ settings.title }}
-      {% endif %}
-    </title>
-
-    <!-- If we're an article page -->
-    {% if description %}
-      <meta name="description" content="{{ description }}"/>
-      <meta name="og:description" property="og:description" content="{{ description }}">
-      <meta name="twitter:description" content="{{ description }}">
-    {% else %}
-      <meta name="description" content="{{ settings.description }}"/>
-      <meta name="og:description" property="og:description" content="{{ settings.description }}">
-      <meta name="twitter:description" content="{{ settings.description }}">
-    {% endif %}
-
-    <!-- If we're an article page -->
-    {% if title %}
-      <meta name="og:title" property="og:title" content="{{ title }}">
-      <meta name="twitter:title" content="{{ title }}">
-    {% else %}
-      <meta name="og:title" property="og:title" content="{{ settings.title }}">
-      <meta name="twitter:title" content="{{ settings.title }}">
-    {% endif %}
-
-    <!-- If we're an article page -->
-    {% if type %}
-      <meta name="og:type" property="og:type" content="{{ type }}">
-    {% else %}
-      <meta name="og:type" property="og:type" content="{{ settings.type }}">
-    {% endif %}
-
-    <meta name="og:site_name" property="og:site_name" content="{{ settings.title }}">
-    <meta name="twitter:site" content="{{ settings.title }}">
-    <meta name="og:locale" property="og:locale" content="en_GB">
-
+    <title>{{ seoTitle }}</title>
     
+    <meta name="description" content="{{ description }}"/>
+
+    <meta name="og:description" property="og:description" content="{{ description }}">
+    <meta name="og:site_name" property="og:site_name" content="{{ settings.siteName }}">
+    <meta name="og:title" property="og:title" content="{{ seoTitle }}">
+    <meta name="og:type" property="og:type" content="{{ ogType }}">
+    <meta name="og:locale" property="og:locale" content="en_GB">
+    
+    <meta name="twitter:site" content="@webdigga">
+    <meta name="twitter:title" content="{{ seoTitle }}">
+    <meta name="twitter:description" content="{{ description }}">
+
+
+    {% if type === 'home' %}
+      <link rel="canonical" href="{{ env.site }}/" />
+
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "{{ seoTitle }}",
+          "description": "{{ description }}",
+          "image": "android-chrome-512x512.png",
+          "url": "{{ env.site }}"
+        }
+      </script>
+    {% endif %}
+
+    {% if type === 'howItWorks' %}
+      <link rel="canonical" href="{{ env.site }}/how-it-works/" />
+
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "{{ seoTitle }}",
+          "description": "{{ description }}",
+          "image": "android-chrome-512x512.png",
+          "url": "{{ env.site }}"
+        }
+      </script>
+    {% endif %}
+
+    {% if type === 'pricing' %}
+      <link rel="canonical" href="{{ env.site }}/pricing/" />
+
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "{{ seoTitle }}",
+          "description": "{{ description }}",
+          "image": "android-chrome-512x512.png",
+          "url": "{{ env.site }}"
+        }
+      </script>
+    {% endif %}
+
+    {% if type === 'contact' %}
+      <link rel="canonical" href="{{ env.site }}/contact/" />
+
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "{{ seoTitle }}",
+          "description": "{{ description }}",
+          "image": "android-chrome-512x512.png",
+          "url": "{{ env.site }}",
+          "email": "{{ settings.email }}",
+          "telephone": "{{ settings.phoneNumber }}"
+        }
+      </script>
+    {% endif %}
+
+    {% if type === 'business' %}
+      <link rel="canonical" href="{{ env.site }}/{{ seoTitle | slugify }}/" />
+
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "{{ seoTitle }}",
+          "description": "{{ description }}",
+          "image": "android-chrome-512x512.png",
+          "url": "{{ env.site }}"
+        }
+      </script>
+    {% endif %}
+
+    {% if type === 'article' %}
+      <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Article",
+          "headline": "{{ title }}",
+          "datePublished": "{{ date }}",
+          "url": "{{ env.site }}/{{ title | slugify }}/",
+          "description": "{{ description }}",
+          "image": "{{ heroImage }}",
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "{{ settings.title }}",
+            "url": "{{ env.site }}",
+            "publisher": {
+              "@type": "Organization",
+              "name": "{{ settings.title }}",
+              "url": "{{ env.site }}"
+            }
+          }
+        }
+      </script>
+    {% endif %}
 
     {% set css %}
       {% include "static/css/tailwind.css" %}

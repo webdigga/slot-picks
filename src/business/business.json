@@ -4,5 +4,6 @@
         "business"
     ],
     "type": "business",
+    "ogType": "website",
     "permalink": "/{{ seoTitle | slugify }}/"
 }

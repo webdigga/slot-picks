@@ -31,7 +31,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  @apply text-4xl tracking-tighter lg:text-7xl mb-5;
+  @apply text-4xl tracking-tighter lg:text-5xl xl:text-6xl mb-5;
 }
 
 h1, h2, h3, h4 {
