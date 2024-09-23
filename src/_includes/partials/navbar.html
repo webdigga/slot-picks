@@ -31,7 +31,7 @@
       <!--Menu-->
       <div
         data-test="menu"
-        class="w-full flex-grow lg:flex lg:items-center lg:w-auto lg:min-w-[400px] text-center hidden bg-[color:var(--white)] main-background lg:order-1"
+        class="w-full flex-grow lg:flex lg:items-center lg:w-auto lg:min-w-[450px] text-center hidden bg-[color:var(--white)] main-background lg:order-1"
       >
   
         {% if navigation.items %}
@@ -40,20 +40,38 @@
             {% for item in navigation.items %}
               <li class="nav__item lg:relative group">
                 <a                
-                  class="dark-copy inline-block py-3 px-4 hover:underline-offset-4 hover:decoration-1 hover:underline hover:decoration-[color:var(--dark-purple)] {% if item.url == page.url %}underline-offset-4 decoration-2 underline decoration-[color:var(--dark-purple)] {% else %} no-underline {% endif %}"                
+                  class="lg:flex lg:items-center dark-copy font-medium inline-block py-3 px-4 hover:underline-offset-4 hover:decoration-1 hover:underline hover:decoration-[color:var(--dark-purple)] {% if item.url == page.url %}underline-offset-4 decoration-2 underline decoration-[color:var(--dark-purple)] {% else %} no-underline {% endif %}"                
                   href="{{ item.url }}">
-                  {{ item.text }}                  
+                  <span class="pr-1">{{ item.text }}</span> 
+                  {% if item.items %}
+                    <svg
+                      width="12px"
+                      height="12px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="hidden size-3 lg:block">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>                  
+                  {% endif %}                
                 </a>
 
                 {% if item.items %}
-                  <ul class="dark-copy lg:absolute lg:hidden lg:z-10 bg-grey-200 lg:group-hover:block">
+                  <ul class="dark-copy lg:absolute lg:hidden lg:z-10 lg:bg-[color:var(--white)] lg:group-hover:block lg:text-left lg:px-4 lg:w-44 lg:border lg:border-solid lg:border-[color:var(--very-light-gray)]">
                   
                     {% for subItem in item.items %}
-                      <li>
+                      <li class="lg:flex lg:items-center">
+                        <span class="inline-block mr-2">-</span>
                         <a
                           href="{{ subItem.url }}"
-                          class="text-sm">
-                          - {{ subItem.text }}                  
+                          class="lg:w-full text-sm py-2 lg:py-4 inline-block lg:hover:underline-offset-4 lg:hover:decoration-1 lg:hover:underline lg:hover:decoration-[color:var(--dark-purple)]">
+                          {{ subItem.text }}                  
                         </a>
                       </li>
                     {% endfor %}

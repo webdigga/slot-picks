@@ -33,14 +33,13 @@ function cookieConsent() {
 
       const gtagScript = document.createElement('script');
       gtagScript.defer = true;
-      gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-X217WEE009';
+      gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=INSERT_ID_HERE';
 
       const firstScript = document.getElementsByTagName('script')[0];
       firstScript.parentNode.insertBefore(gtagScript,firstScript);
     }
   }
 }
-
 
 cookieConsent();
 

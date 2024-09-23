@@ -10,15 +10,16 @@
   --light-blue: #b7c4e6;
   --dark-blue: #1D4ED8;
   --teal: #018579;
-  --light-gray: #9CA3AF;
-  --very-light-gray: #f0f2f2;
+  --light-gray: #9CA3AF;  
   --dark-gray: #5f6571;
   --dark-copy: #333333;
   --white: #FFFFFF;
+  --dark-gray: #5f6571;
 
   /* New colours - to replace above */
   --dark-purple: #7f0ea5;
-  --light-green: #35b914;
+  --light-green: #35b914;  
+  --very-light-gray: #dcdcdc;
 }
 
 body {
@@ -53,7 +54,7 @@ h3, h4 {
 }
 
 .menu-styles {
-  @apply absolute left-0 top-12 md:top-16 border-b border-b-white pb-6 shadow-xl;
+  @apply absolute left-0 top-12 sm:top-14 md:top-16 border-b border-b-white pb-6 shadow-xl;
 }
 
 .dark-copy {
