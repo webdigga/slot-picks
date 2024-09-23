@@ -1,5 +1,5 @@
 /*
-  Click event that scrolls the user to see more reasons why Kaboola is the best option
+  Click event that scrolls the user to the next section down
 */
 function moreButtonScroll() {
   const moreButton = document.querySelector('[data-test="moreButton"]');
