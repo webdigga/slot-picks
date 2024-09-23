@@ -11,42 +11,19 @@ seoTitle: Managed Websites, Paid Monthly | Kabooly
 {% import "./_includes/components/buttons/more-button.html" as moreButton with context %}
 {% import "./_includes/components/faqs.html" as faqs with context %}
 
-<section class="min-h-dvh flex flex-col bg-[color:var(--dark-blue)] justify-between border-b-4 border-b-[color:var(--dark-yellow)] border-solid">
+<section class="min-h-dvh flex flex-col justify-between border-b-4 border-b-[color:var(--dark-purple)] border-solid">
 
-  {{ navBar.nav('bg-[color:var(--dark-blue)]') }}
-  
+  {{ navBar.nav('bg-[color:var(--dark-purple)]') }}
+
   <div class="container content-center">
     {% include "./_includes/components/hero.html" %}
   </div>
-  
-  {{ moreButton.button('bg-[color:var(--dark-yellow)]', 'border-[color:var(--dark-yellow)]', 'text-[color:var(--dark-copy)]') }}
+
+  {{ moreButton.button('bg-[color:var(--dark-purple)]', 'border-[color:var(--dark-purple)]', 'text-[color:var(--white)]') }}
 </section>
 
 <section data-test="moreButtonLocation">
-  <div class="container container--large dark-copy">
-    <h2 class="mb-4">Helping Small Businesses with Managed Website Solutions.</h2>
-    
-    {% include "./_includes/components/small-business.html" %}    
-  </div>
-</section>
-
-<section class="bg-[color:var(--dark-purple)]">
-  <div class="container container--large">
-    <h2 class="mb-4">About me.</h2>
-    <div class="mb-4"><a href="/contact/" class="anchor-highlight">Click here to contact me</a></div>
-
-    {% include "./_includes/components/about-me.html" %}
-    
-  </div>
-</section>
-
-<section>
-  <div class="container container--large">
-    <h2 class="dark-copy mb-4">Get Your Free Website Audit.</h2>
-
-    {% include "./_includes/components/website-audit.html" %}
-    
-  </div>
+  Blah blah
 </section>
 
 <section class="bg-[color:var(--dark-gray)]">
@@ -56,18 +33,4 @@ seoTitle: Managed Websites, Paid Monthly | Kabooly
     {{ faqs.faqComponent() }}
     
   </div>
-</section>
-
-<section>
-  <div class="container container--large dark-copy">
-    <h2 class="mb-4">My Pricing Plans.</h2>
-    <div class="mb-4">See more <a href="/pricing/" class="anchor-pop ">about pricing</a>.</div>
-
-    <div class="md:flex mt-8 sm:mt-12 lg:mt-16">
-      {% include "./_includes/components/standard-pricing.html" %}
-
-      {% include "./_includes/components/pro-pricing.html" %}
-    </div>
-  </div>
-  
 </section>

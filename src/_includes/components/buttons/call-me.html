@@ -1,8 +1,8 @@
-{% macro button(title, bgColour, hoverBgColour) %}
+{% macro button(title, classes) %}
   <a
     data-test="callMeButton"
     href="tel:{{ settings.phoneNumber }}"  
-    class="mb-3 rounded-md cursor-pointer inline-block {{ bgColour | safe }} text-white py-4 px-6 {{ hoverBgColour | safe }} border border-solid border-white"
+    class="mb-3 rounded-md cursor-pointer inline-block {{ classes | safe }} text-white py-4 px-6 border border-solid border-white"
   >
     <div class="flex items-center pointer-events-none">Call me
       <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor" class="pl-1 size-5 pointer-events-none">

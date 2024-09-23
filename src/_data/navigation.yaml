@@ -1,9 +1,36 @@
 items:
   - text: Home
     url: /
-  - text: How it works?
-    url: /how-it-works/
-  - text: Pricing
-    url: /pricing/
-  - text: Contact
-    url: /contact/
+  - text: About
+    url: /about/
+    items:
+      - text: Why Anttz
+        url: /why-anttz/
+      - text: Dr Hannah
+        url: /dr-hannah/
+      - text: FAQs
+        url: /frequently-asked-questions/
+  - text: Services
+    url: /services/
+    items:
+      - text: What is Chiropractic
+        url: /what-is-chiropractic/
+      - text: What is Network Spinal
+        url: /what-is-network-spinal/
+      - text: Pregnancy and Paeds
+        url: /pregnancy-and-paeds/
+      - text: Spinal screening
+        url: /spinal-screening/
+      - text: SRI
+        url: /sri/
+  - text: Free Reports
+    url: /free-reports/
+    items:
+      - text: End back pain
+        url: /end-back-pain/
+      - text: Pregnancy
+        url: /pregnancy/
+      - text: Headaches
+        url: /headaches/
+      - text: Pain to Progress
+        url: /pain-to-progress/

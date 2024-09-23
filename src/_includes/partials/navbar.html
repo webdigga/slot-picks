@@ -1,23 +1,16 @@
 {% macro nav(bgColour) %}
   <div class="w-full container">
-
-    <nav class="flex items-center justify-center lg:justify-between flex-wrap">
-      <!--Logo etc-->
-      <div class="underline lowercase font-bold text-5xl tracking-tighter lg:text-8xl pr-4">
-        <a href="/">
-          {{ settings.siteName }}
-        </a>
-      </div>
-
+    <nav class="flex lg:justify-between flex-col sm:flex-row">
+      
       <!--Toggle button (hidden on large screens)-->
       <button
         data-test="menuButton"
         type="button"
-        class="ml-auto lg:hidden px-2 focus:outline-none"
+        class="ml-auto lg:hidden focus:outline-none dark-copy mb-4 sm:mb-0 sm:order-1"
         aria-label="Menu">
-
+  
         <span>Menu</span>
-
+  
         <svg class="h-6 w-6 fill-current inline-block" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
           <path
             data-test="cross"
@@ -34,29 +27,50 @@
           />
         </svg>
       </button>
-
+  
       <!--Menu-->
       <div
         data-test="menu"
-        class="w-full flex-grow lg:flex lg:items-center lg:w-auto text-center {{ bgColour | safe }} hidden"
+        class="w-full flex-grow lg:flex lg:items-center lg:w-auto lg:min-w-[400px] text-center hidden bg-[color:var(--white)] main-background lg:order-1"
       >
-
+  
         {% if navigation.items %}
-
-          <ul class="pt-6 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center">
+  
+          <ul class="pt-3 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center">
             {% for item in navigation.items %}
-              <li class="nav__item">
+              <li class="nav__item lg:relative group">
                 <a                
-                  class="text-ml inline-block py-3 px-4 hover:underline-offset-4 hover:decoration-1 hover:underline hover:decoration-[color:var(--dark-yellow)] {% if item.url == page.url %}underline-offset-4 decoration-2 underline decoration-[color:var(--dark-yellow)] {% else %} no-underline {% endif %}"                
+                  class="dark-copy inline-block py-3 px-4 hover:underline-offset-4 hover:decoration-1 hover:underline hover:decoration-[color:var(--dark-purple)] {% if item.url == page.url %}underline-offset-4 decoration-2 underline decoration-[color:var(--dark-purple)] {% else %} no-underline {% endif %}"                
                   href="{{ item.url }}">
-                  {{ item.text }}
+                  {{ item.text }}                  
                 </a>
+
+                {% if item.items %}
+                  <ul class="dark-copy lg:absolute lg:hidden lg:z-10 bg-grey-200 lg:group-hover:block">
+                  
+                    {% for subItem in item.items %}
+                      <li>
+                        <a
+                          href="{{ subItem.url }}"
+                          class="text-sm">
+                          - {{ subItem.text }}                  
+                        </a>
+                      </li>
+                    {% endfor %}
+                {% endif %}                
               </li>
             {% endfor %}
           </ul>
-
+  
         {% endif %}
       </div>
-    </nav>	
+
+      <div class="font-bold text-3xl tracking-tighter lg:text-6xl dark-copy">
+        <a href="/">
+          {{ settings.siteName }}
+        </a>
+      </div>
+    </nav>   
+    	
   </div>
 {% endmacro %}

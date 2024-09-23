@@ -7,7 +7,6 @@
   --light-yellow: #fde350;
   --dark-yellow: #FFD700;
   --light-purple: #cd9bff;
-  --dark-purple: #9357cf;
   --light-blue: #b7c4e6;
   --dark-blue: #1D4ED8;
   --teal: #018579;
@@ -16,6 +15,10 @@
   --dark-gray: #5f6571;
   --dark-copy: #333333;
   --white: #FFFFFF;
+
+  /* New colours - to replace above */
+  --dark-purple: #7f0ea5;
+  --light-green: #35b914;
 }
 
 body {
@@ -32,7 +35,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  @apply text-4xl tracking-tighter lg:text-5xl xl:text-6xl mb-5;
+  @apply text-3xl sm:text-4xl tracking-tighter lg:text-5xl mb-5;
 }
 
 h1, h2, h3, h4 {
@@ -42,15 +45,15 @@ h1, h2, h3, h4 {
 }
 
 h2 {
-  @apply text-2xl lg:text-4xl mb-4;
+  @apply text-2xl sm:text-3xl lg:text-4xl mb-4;
 }
 
 h3, h4 {
-  @apply text-xl lg:text-2xl mb-4;
+  @apply text-xl sm:text-2xl lg:text-3xl mb-4;
 }
 
 .menu-styles {
-  @apply absolute left-0 top-20 border-b border-b-white pb-6 shadow-xl;
+  @apply absolute left-0 top-12 md:top-16 border-b border-b-white pb-6 shadow-xl;
 }
 
 .dark-copy {
@@ -79,6 +82,19 @@ h3, h4 {
 
 .anchor-highlight {
   @apply underline-offset-4 decoration-2 underline decoration-[color:var(--dark-yellow)];
+}
+
+.main-background {
+  background-image: url('/_includes/static/img/pattern-randomized.svg');
+  background-size: cover;
+  background-color: #ffffff;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+#sortbox:checked ~ #sortboxmenu {
+  opacity: 1;
 }
 
 /*

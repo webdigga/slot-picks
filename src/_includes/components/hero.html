@@ -1,28 +1,21 @@
 {% import "./checklist-item.html" as checkList with context %}
-{% import "./buttons/buy-a-website.html" as buyButton with context %}
+{% import "./buttons/book-an-appointment.html" as bookButton with context %}
 {% import "./buttons/call-me.html" as callButton with context %}
 
 <div class="flex flex-col md:flex-row items-center py-8 lg:py-16">
 	
-  <div x-data="">
-    <h1>Managed Websites, <span class="text-[color:var(--dark-yellow)]">Paid Monthly</span></h1>
-    <h2>Local Business, Small Enterprise, Personal Brand, or Startup...</h2>
+  <div class="max-w-6xl">
+    <h1 class="dark-copy">Welcomes you to your Chiropratic <span class="text-[color:var(--dark-purple)]">care journey....</span></h1>
+    <h2 class="dark-copy">Experience Optimal Health with Natural Chiropractic Care</h2>
+    <p class="dark-copy mb-3">Congratulations! You join millions of families around the world who are interested in improving their health and wellbeing with natural, gentle, Chiropractic care.</p>
+    <p class="dark-copy mb-6">At Anttz Family Chiropractic, our goal is to help you and your family to experience the freedom of optimal health. Please feel free to roam around our website and discover and learn more about Chiropractic Welness.</p>
 
-    {{ buyButton.button('Buy a website', 'text-[color:var(--dark-copy)]') }}
+    {{ bookButton.button(title='Book an appointment', classes='bg-[color:var(--dark-purple)] text-[color:var(--white)]') }}
 
-    {{ callButton.button('Call me', 'bg-[color:var(--dark-blue)]', 'hover:bg-[color:var(--dark-purple)]') }}
-    
-    <ul class="flex flex-col sm:flex-row flex-wrap max-w-screen-md">
-      {{ checkList.checkListItem(title='SEO baked in', classes='text-white sm:w-1/2 mb-2', textColour='text-white') }}
-      {{ checkList.checkListItem(title='Google Analytics', classes='text-white sm:w-1/2 mb-2', textColour='text-white') }}
-      {{ checkList.checkListItem(title='Simple pricing structure', classes='text-white sm:w-1/2 mb-2', textColour='text-white') }}
-      {{ checkList.checkListItem(title='Fully built and managed by me', classes='text-white sm:w-1/2 mb-2', textColour='text-white') }}
-      {{ checkList.checkListItem(title='Top Google Core Web Vital scores', classes='text-white sm:w-1/2 mb-2', textColour='text-white') }}
-      {{ checkList.checkListItem(title='Domain name', classes='text-white sm:w-1/2 mb-2', textColour='text-white') }}
-    </ul>
+    {{ callButton.button(title='Call me', classes='bg-[color:var(--light-green)] hover:opacity-90') }}
    
   </div>
-  
-  {% include "./rocket.html" %}
+
+
 
 </div>
