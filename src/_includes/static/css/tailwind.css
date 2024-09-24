@@ -11,15 +11,14 @@
   --dark-blue: #1D4ED8;
   --teal: #018579;
   --light-gray: #9CA3AF;  
-  --dark-gray: #5f6571;
-  --dark-copy: #333333;
-  --white: #FFFFFF;
-  --dark-gray: #5f6571;
 
   /* New colours - to replace above */
   --dark-purple: #7f0ea5;
   --light-green: #35b914;  
   --very-light-gray: #dcdcdc;
+  --dark-gray: #5f6571;
+  --dark-copy: #333333;
+  --white: #FFFFFF;
 }
 
 body {

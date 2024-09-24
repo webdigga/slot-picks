@@ -69,6 +69,7 @@ collections:
             name: firstLevelItems
             widget: list
             collapsed: false
+            allow_add: false
             fields:
               - { label: Title, name: text, widget: string }
               - { label: URL, name: url, widget: string }

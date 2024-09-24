@@ -1,6 +1,7 @@
 {% import "./checklist-item.html" as checkList with context %}
 {% import "./buttons/book-an-appointment.html" as bookButton with context %}
 {% import "./buttons/call-me.html" as callButton with context %}
+{% import "./logo.html" as antLogo with context %}
 
 <div class="flex flex-col lg:flex-row items-center py-8 lg:py-16">
 	
@@ -10,20 +11,12 @@
     <p class="dark-copy mb-3">Congratulations! You join millions of families around the world who are interested in improving their health and wellbeing with natural, gentle, Chiropractic care.</p>
     <p class="dark-copy mb-6">At Anttz Family Chiropractic, our goal is to help you and your family to experience the freedom of optimal health. Please feel free to roam around our website and discover and learn more about Chiropractic Welness.</p>
 
-    {{ bookButton.button(title='Book an appointment', classes='bg-[color:var(--dark-purple)] text-[color:var(--white)]') }}
+    {{ bookButton.button(title='Book an appointment', classes='bg-[color:var(--dark-purple)] text-[color:var(--white)] mr-3') }}
 
     {{ callButton.button(title='Call me', classes='bg-[color:var(--light-green)] hover:opacity-90') }}
    
   </div>
 
-  <img
-    class="mt-5 block max-w-52 md:max-w-80 lg:mt-0 lg:ml-5 xl:max-w-96"
-    src="/_includes/static/img/anttz-final.webp"
-    
-    alt="Anttz family Chiropractic logo of Ant carrying spinal column"
-    loading="lazy"
-  />
-
-
+  {{ antLogo.logo(width='528px', height='282px', maxWidthClasses='max-w-52 md:max-w-80 xl:max-w-[33rem]', classes='mt-5 block lg:mt-0 lg:ml-5') }}
 
 </div>

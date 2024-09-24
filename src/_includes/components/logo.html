@@ -1,0 +1,10 @@
+{% macro logo(width, height, maxWidthClasses, classes) %} 
+  <img
+    class="{{ classes | safe }} {{ maxWidthClasses | safe }}"
+    src="/_includes/static/img/anttz-logo.webp"
+    width="{{ width | safe }}"
+    height="{{ height | safe }}"
+    alt="Anttz family Chiropractic logo of Ant carrying spinal column"
+    loading="lazy"
+  />
+{% endmacro %} 
