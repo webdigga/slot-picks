@@ -34,16 +34,16 @@
         class="w-full flex-grow lg:flex lg:items-center lg:w-auto lg:min-w-[450px] text-center hidden bg-[color:var(--white)] main-background lg:order-1"
       >
   
-        {% if navigation.items %}
+        {% if navigation.firstLevelItems %}
   
           <ul class="pt-3 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center">
-            {% for item in navigation.items %}
+            {% for item in navigation.firstLevelItems %}
               <li class="nav__item lg:relative group">
                 <a                
                   class="lg:flex lg:items-center dark-copy font-medium inline-block py-3 px-4 hover:underline-offset-4 hover:decoration-1 hover:underline hover:decoration-[color:var(--dark-purple)] {% if item.url == page.url %}underline-offset-4 decoration-2 underline decoration-[color:var(--dark-purple)] {% else %} no-underline {% endif %}"                
                   href="{{ item.url }}">
                   <span class="pr-1">{{ item.text }}</span> 
-                  {% if item.items %}
+                  {% if item.secondLevelItems %}
                     <svg
                       width="12px"
                       height="12px"
@@ -62,10 +62,10 @@
                   {% endif %}                
                 </a>
 
-                {% if item.items %}
+                {% if item.secondLevelItems %}
                   <ul class="dark-copy lg:absolute lg:hidden lg:z-10 lg:bg-[color:var(--white)] lg:group-hover:block lg:text-left lg:px-4 lg:w-44 lg:border lg:border-solid lg:border-[color:var(--very-light-gray)]">
                   
-                    {% for subItem in item.items %}
+                    {% for subItem in item.secondLevelItems %}
                       <li class="lg:flex lg:items-center">
                         <span class="inline-block mr-2">-</span>
                         <a
