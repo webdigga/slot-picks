@@ -1,7 +1,6 @@
 firstLevelItems:
   - text: Home
     url: /
-    secondLevelItems: []
   - text: About
     url: /about/
     secondLevelItems:

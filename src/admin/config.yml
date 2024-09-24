@@ -94,3 +94,24 @@ collections:
           - { label: Email, name: email, widget: string }
           - { label: Phone number, name: phoneNumber, widget: string }
           - { label: Company number, name: companyNumber, widget: string }
+  - label: "Components"
+    name: "components"
+    editor:
+      preview: false
+    files:
+      - label: "Why Anttz"
+        name: "whyAnttz"
+        file: "src/_data/whyAnttz.yaml"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Content, name: content, widget: text }
+          - label: "Image"
+            name: "image"
+            widget: "image"
+            choose_url: true
+            required: true
+            media_library:
+              config:
+                multiple: false
+            
+         

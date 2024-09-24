@@ -1,6 +1,7 @@
 {% import "./faq-item.html" as faqItem with context %}
 
 {% macro faqComponent(textColour) %}
+  <h2 class="mb-4">Frequently Asked Questions.</h2>
   <div class="mt-6 border-t-4 border-[color:var(--light-gray)] pt-10">
     <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-8 md:gap-y-12">
       {{ faqItem.faq('Is there a contract?', 'Yes there is a contract. I will prepare this after the agreed purchase and can go over any of the details you are unsure of.', textColour) }}

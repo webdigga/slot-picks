@@ -10,7 +10,7 @@ title: Lorem Ipsum
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
 {% import "./_includes/components/buttons/more-button.html" as moreButton with context %}
-{% import "./_includes/components/faqs.html" as faqs with context %}
+{% import "./_includes/components/why-anttz.html" as whyAnttz with context %}
 
 <section class="min-h-dvh flex flex-col justify-between border-b-4 border-b-[color:var(--dark-purple)] border-solid">
 
@@ -24,14 +24,7 @@ title: Lorem Ipsum
 </section>
 
 <section data-test="moreButtonLocation">
-  Blah blah
-</section>
+  
+  {{ whyAnttz.whyAnttzComponent() }}
 
-<section class="bg-[color:var(--dark-gray)]">
-  <div class="container container--large">
-    <h2 class="mb-4">Frequently Asked Questions.</h2>
-
-    {{ faqs.faqComponent() }}
-    
-  </div>
 </section>
