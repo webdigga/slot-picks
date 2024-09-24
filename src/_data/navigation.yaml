@@ -1,11 +1,9 @@
 firstLevelItems:
   - text: Home
     url: /
-    secondLevelItems:
-      - text: test home nav
-        url: /blah/
-  - text: Abouty
-    url: /abouty/
+    secondLevelItems: []
+  - text: About
+    url: /about/
     secondLevelItems:
       - text: Why Anttz
         url: /why-anttz/
@@ -26,8 +24,6 @@ firstLevelItems:
         url: /spinal-screening/
       - text: SRI
         url: /sri/
-      - text: New item
-        url: /new-item
   - text: Free Reports
     url: /free-reports/
     secondLevelItems:
