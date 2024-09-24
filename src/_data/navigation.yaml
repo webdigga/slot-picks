@@ -1,9 +1,9 @@
-items:
+firstLevelItems:
   - text: Home
     url: /
   - text: About
     url: /about/
-    items:
+    secondLevelItems:
       - text: Why Anttz
         url: /why-anttz/
       - text: Dr Hannah
@@ -12,7 +12,7 @@ items:
         url: /frequently-asked-questions/
   - text: Services
     url: /services/
-    items:
+    secondLevelItems:
       - text: What is Chiropractic
         url: /what-is-chiropractic/
       - text: What is Network Spinal
@@ -25,7 +25,7 @@ items:
         url: /sri/
   - text: Free Reports
     url: /free-reports/
-    items:
+    secondLevelItems:
       - text: End back pain
         url: /end-back-pain/
       - text: Pregnancy
