@@ -4,8 +4,6 @@ firstLevelItems:
   - text: About
     url: /about/
     secondLevelItems:
-      - text: Why Anttz
-        url: /why-anttz/
       - text: Dr Hannah
         url: /dr-hannah/
       - text: FAQs

@@ -42,7 +42,7 @@
                 <a                
                   class="lg:flex lg:items-center dark-copy font-medium inline-block py-3 px-4 hover:underline-offset-4 hover:decoration-1 hover:underline hover:decoration-[color:var(--dark-purple)] {% if item.url == page.url %}underline-offset-4 decoration-2 underline decoration-[color:var(--dark-purple)] {% else %} no-underline {% endif %}"                
                   href="{{ item.url }}">
-                  <span class="pr-1">{{ item.text }}</span> 
+                  <span class="lg:pr-1">{{ item.text }}</span> 
                   {% if item.secondLevelItems %}
                     <svg
                       width="12px"
@@ -67,7 +67,7 @@
                   
                     {% for subItem in item.secondLevelItems %}
                       <li class="lg:flex lg:items-center">
-                        <span class="inline-block mr-2">-</span>
+                        <span class="inline-block mr-1">-</span>
                         <a
                           href="{{ subItem.url }}"
                           class="lg:w-full text-sm py-2 lg:py-4 inline-block lg:hover:underline-offset-4 lg:hover:decoration-1 lg:hover:underline lg:hover:decoration-[color:var(--dark-purple)]">

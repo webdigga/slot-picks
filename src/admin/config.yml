@@ -88,10 +88,8 @@ collections:
           - { label: Site Name, name: siteName, widget: string }
           - { label: Title, name: title, widget: string }
           - { label: Author, name: author, widget: string }
-          - { label: URL, name: url, widget: string }
           - { label: Powered by, name: poweredBy, widget: string }
           - { label: Description, name: description, widget: string }
-          - { label: Type (type of template), name: type, widget: string }
           - { label: Email, name: email, widget: string }
           - { label: Phone number, name: phoneNumber, widget: string }
           - { label: Company number, name: companyNumber, widget: string }
@@ -115,5 +113,12 @@ collections:
               config:
                 multiple: false
           - { label: Image alternative text, name: imageAlt, widget: string }
-            
-         
+      - label: "Hero"
+        name: "hero"
+        file: "src/_data/hero.yaml"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Title accent text, name: titleAccentText, widget: string }
+          - { label: Sub title, name: subTitle, widget: string }
+          - { label: Paragraph 1, name: paragraphOne, widget: text }
+          - { label: Paragraph 2, name: paragraphTwo, widget: text }
