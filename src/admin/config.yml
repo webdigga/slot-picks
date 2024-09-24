@@ -113,5 +113,6 @@ collections:
             media_library:
               config:
                 multiple: false
+          - { label: Image alternative text, name: imageAlt, widget: string }
             
          
