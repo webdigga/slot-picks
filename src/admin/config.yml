@@ -9,8 +9,8 @@ public_folder: "/_includes/static/img"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
-  - label: "Article"
-    name: "article"
+  - label: "Articles"
+    name: "articles"
     folder: "src/articles"
     create: true
     editor:
