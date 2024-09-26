@@ -73,6 +73,10 @@ h3, h4 {
   @apply p-4 sm:p-5 md:p-6;
 }
 
+.container--medium {
+  @apply py-6 sm:py-7 md:py-14;
+}
+
 .container--large {
   @apply py-9 sm:py-10 md:py-28;
 }

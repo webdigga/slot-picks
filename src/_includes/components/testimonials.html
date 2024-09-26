@@ -1,17 +1,17 @@
 {% macro testimonialComponent() %}  
-  <div class="py-8 px-4 mx-auto text-center lg:py-16 lg:px-6 container">
+  <div class="container container--medium text-center">
     <div class="mx-auto max-w-screen-sm">
       <h2 class="mb-4 dark-copy">{{ testimonials.title | safe }}</h2>
-      <p class="mb-8 font-light text-[color:var(--dark-gray)] lg:mb-16 sm:text-xl">{{ testimonials.subTitle | safe }}</p>
-    </div> 
-    <div class="grid mb-8 lg:mb-12 lg:grid-cols-2">
+      <p class="mb-4 font-light text-[color:var(--dark-gray)]">{{ testimonials.subTitle | safe }}</p>
+    </div>
+    <div class="grid lg:grid-cols-2">
       
       
-      {% if testimonials.testimonialItem %}
+      {% if testimonials.testimonialItems %}
 
         {% set borderClasses = '' %}
   
-        {% for item in testimonials.testimonialItem %}
+        {% for item in testimonials.testimonialItems %}
 
           {% if (loop.index == 1) %}
             {% set borderClasses = 'border-b lg:border-r' %}
@@ -25,12 +25,12 @@
 
           <figure class="{{ borderClasses }} border-[color:var(--very-light-gray)] flex flex-col justify-center items-center p-8 text-center bg-[color:var(--lightest-gray)]  md:p-12">
             <blockquote class="mx-auto mb-8 max-w-2xl text-[color:var(--dark-gray)]">
-              <h3 class="dark-copy italic">{{ item.title | safe  }}</h3>
-              <p class="my-4 italic">{{ item.quote | safe  }}</p>
+              <h3 class="text-xl dark-copy">{{ item.title | safe  }}</h3>
+              <p class="my-4 italic">"{{ item.quote | safe  }}"</p>
             </blockquote>
             <figcaption class="flex justify-center items-center space-x-3">
               <div class="space-y-0.5 font-medium text-left">
-                <div class="dark-copy">{{ item.name | safe  }}</div>
+                <div class="dark-copy">~ {{ item.name | safe  }}</div>
               </div>
             </figcaption>
           </figure>

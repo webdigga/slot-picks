@@ -3,18 +3,22 @@ layout: default
 ---
 
 {% import "./partials/navbar.html" as navBar with context %}
-{% import "./components/faqs.html" as faqs with context %}
+{% import "./components/testimonials.html" as testimonials with context %}
+{% import "./components/logo.html" as antLogo with context %}
 
-
-<div>
-  {{ navBar.nav() }}
-</div>
+<div class="bg-[color:var(--lightest-gray)] border-b border-solid border-b-[color:var(--very-light-gray)]">
+  {{ navBar.nav('bg-[color:var(--lightest-gray)]') }}
+</div> 
 
 <section class="container">
 
-  <article class="my-6 flex flex-col md:block dark-copy prose max-w-5xl prose-h2:mt-4">
+  <article class="my-6 flex flex-col md:block prose max-w-5xl mx-auto">
 
-    <h1 class="dark-copy">{{ title }}</h1>
+    <div class="flex items-center">
+
+      <h1 class="dark-copy">{{ title }}</h1>{{ antLogo.logo(width='100px', height='54px', maxWidthClasses='max-w-28', classes='mt-0 mb-8 pl-2') }}
+    </div>
+    
 
     {{ content | safe }}
 
@@ -22,11 +26,8 @@ layout: default
 	
 </section>
 
-<section class="bg-[color:var(--dark-gray)]">
-  <div class="container container--large">
-    <h2 class="mb-4">Frequently Asked Questions.</h2>
-
-    {{ faqs.faqComponent() }}
+<section class="bg-[color:var(--white)] border-t border-solid border-t-[color:var(--very-light-gray)]">
     
-  </div>
+  {{ testimonials.testimonialComponent() }}
+
 </section>
