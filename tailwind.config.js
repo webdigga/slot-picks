@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       colors: {},
       screens: {
+        'xs': '440px',
         '3xl': '1700px'
       },
       typography: (theme) => ({
