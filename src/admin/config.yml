@@ -122,3 +122,22 @@ collections:
           - { label: Sub title, name: subTitle, widget: string }
           - { label: Paragraph 1, name: paragraphOne, widget: text }
           - { label: Paragraph 2, name: paragraphTwo, widget: text }
+      - label: "Testimonials"
+        name: "testimonials"
+        file: "src/_data/testimonials.yaml"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Sub Title, name: subTitle, widget: text }
+          - label: Testimonial Items
+            name: testimonialItems
+            widget: list
+            collapsed: false
+            allow_add: false
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Quote, name: quote, widget: string }
+              - { label: Name, name: name, widget: string }
+
+          
+          
+      

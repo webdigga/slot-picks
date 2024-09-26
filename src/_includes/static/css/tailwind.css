@@ -10,15 +10,16 @@
   --light-blue: #b7c4e6;
   --dark-blue: #1D4ED8;
   --teal: #018579;
-  --light-gray: #9CA3AF;  
 
   /* New colours - to replace above */
   --dark-purple: #7f0ea5;
-  --light-green: #35b914;  
+  --light-green: #35b914;
+  --white: #FFFFFF;
+  --lightest-gray: #f9fafb;
   --very-light-gray: #dcdcdc;
+  --light-gray: #9CA3AF;  
   --dark-gray: #5f6571;
   --dark-copy: #333333;
-  --white: #FFFFFF;
 }
 
 body {

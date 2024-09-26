@@ -1,28 +1,43 @@
-<section class="bg-gray-900 section-divider-top">
-  <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-      <figure class="md:max-w-4xl mx-auto">
-          <svg class="h-12 mx-auto mb-3 subtle-text-on-dark-background" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
-          </svg> 
-          <blockquote>
-              <p class="text-lg lg:text-xl font-medium text-white">
-                "We are absolutely thrilled with the websites that David at Kabooly created for us! The entire process was seamless from start to finish. He took the time to understand our vision and translated it into performant, user-friendly sites that perfectly represents our brand. The site not only looks fantastic but also performs flawlessly. I highly recommend Kabooly for anyone looking to build or upgrade their website. He truly went above and beyond!"
-              </p>
-          </blockquote>
-          <figcaption class="flex items-center justify-center mt-6 space-x-3">
-              <img
-                class="w-6 h-6 rounded-full"
-                src="/_includes/static/img/jonny.webp"
-                alt="Jonny Rowse profile picture"
-                width="24px"
-                height="24px"
-                loading="lazy"
-              />
-              <div class="flex items-center divide-x-2 divide-gray-500">
-                  <div class="pr-3 font-medium text-white">Jonny Rowse</div>
-                  <div class="pl-3 text-sm font-light subtle-text-on-dark-background">Director at Arragon Digital</div>
+{% macro testimonialComponent() %}  
+  <div class="py-8 px-4 mx-auto text-center lg:py-16 lg:px-6 container">
+    <div class="mx-auto max-w-screen-sm">
+      <h2 class="mb-4 dark-copy">{{ testimonials.title | safe }}</h2>
+      <p class="mb-8 font-light text-[color:var(--dark-gray)] lg:mb-16 sm:text-xl">{{ testimonials.subTitle | safe }}</p>
+    </div> 
+    <div class="grid mb-8 lg:mb-12 lg:grid-cols-2">
+      
+      
+      {% if testimonials.testimonialItem %}
+
+        {% set borderClasses = '' %}
+  
+        {% for item in testimonials.testimonialItem %}
+
+          {% if (loop.index == 1) %}
+            {% set borderClasses = 'border-b lg:border-r' %}
+          {% elif (loop.index == 2) %}
+            {% set borderClasses = 'border-b' %}
+          {% elif (loop.index == 3) %}
+            {% set borderClasses = 'border-b lg:border-b-0 lg:border-r' %}
+          {% else %}
+            {% set borderClasses = '' %}
+          {% endif %}
+
+          <figure class="{{ borderClasses }} border-[color:var(--very-light-gray)] flex flex-col justify-center items-center p-8 text-center bg-[color:var(--lightest-gray)]  md:p-12">
+            <blockquote class="mx-auto mb-8 max-w-2xl text-[color:var(--dark-gray)]">
+              <h3 class="dark-copy italic">{{ item.title | safe  }}</h3>
+              <p class="my-4 italic">{{ item.quote | safe  }}</p>
+            </blockquote>
+            <figcaption class="flex justify-center items-center space-x-3">
+              <div class="space-y-0.5 font-medium text-left">
+                <div class="dark-copy">{{ item.name | safe  }}</div>
               </div>
-          </figcaption>
-      </figure>
+            </figcaption>
+          </figure>
+
+        {% endfor %}
+
+      {% endif %}
+    </div>
   </div>
-</section>
+{% endmacro %}
