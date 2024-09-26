@@ -1,9 +1,6 @@
 module.exports = {
   content: [
     './src/**/*.{html,njk}',
-    './src/contact.html',
-    './src/how-it-works.html',
-    './src/pricing.html',
     './src/index.html',
   ],
   theme: {
@@ -13,6 +10,11 @@ module.exports = {
     extend: {
       colors: {},
     },
+    extend: {
+      screens: {
+        '3xl': '1700px'
+      }
+    }
   },
   variants: {},
   plugins: [require("@tailwindcss/typography")],
