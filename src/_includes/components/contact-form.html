@@ -76,21 +76,29 @@
         <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-md border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Email">
         <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-md border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Phone">
         <div class="mb-10">
-          <h4 class="text-gray-500 text-lg font-normal leading-7 mb-4">Preferred method  of communication</h4>
-          <div class="flex">
-            <div class="flex items-center mr-11">
-              <input id="radio-group-1" type="radio" name="radio-group" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
-              <label for="radio-group-1" class="flex items-center cursor-pointer text-gray-500 text-base font-normal leading-6">
-                <span class="border border-gray-300 rounded-md mr-2 w-4 h-4  ml-2 "></span> Email 
-              </label>
+          
+          <fieldset>
+            <h4 class="text-gray-500 text-lg font-normal leading-7 mb-4"><legend>Preferred method of communication</legend></h4>
+            <div class="flex">
+              
+              <div class="flex items-center mr-11">
+                <label class="relative flex items-center cursor-pointer" for="phone">
+                  <input name="communication" type="radio" class="peer h-5 w-5 cursor-pointer appearance-none rounded-full border border-slate-300 checked:border-[color:var(--dark-purple)] transition-all" id="phone">
+                  <span class="absolute bg-[color:var(--dark-purple)] w-3 h-3 rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
+                </label>
+                <label class="ml-2 text-slate-600 cursor-pointer text-sm" for="phone">Phone</label>                
+              </div>
+
+              <div class="flex items-center">
+                <label class="relative flex items-center cursor-pointer" for="email">
+                  <input name="communication" type="radio" class="peer h-5 w-5 cursor-pointer appearance-none rounded-full border border-slate-300 checked:border-[color:var(--dark-purple)] transition-all" id="email">
+                  <span class="absolute bg-[color:var(--dark-purple)] w-3 h-3 rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
+                </label>
+                <label class="ml-2 text-slate-600 cursor-pointer text-sm" for="email">Email</label>
+              </div>
+              
             </div>
-            <div class="flex items-center">
-              <input id="radio-group-2" type="radio" name="radio-group" class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100">
-              <label for="radio-group-2" class="flex items-center cursor-pointer text-gray-500 text-base font-normal leading-6">
-                <span class="border border-gray-300  rounded-md mr-2 w-4 h-4  ml-2 "></span> Phone 
-              </label>
-            </div>
-          </div>
+          </fieldset>
         </div>
         <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-md border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Message">
         <button class="w-full h-12 text-white text-base font-semibold leading-6 rounded-md transition-all duration-700 hover:opacity-80 bg-[color:var(--dark-purple)] shadow-sm">Send</button>
