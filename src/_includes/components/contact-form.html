@@ -77,43 +77,23 @@
         <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-md border border-gray-200 focus:outline-none pl-4 mb-10" name="phone" placeholder="Phone">
         <div class="mb-10">
           
-          <!-- <fieldset>
-            <h4 class="text-gray-500 text-lg font-normal leading-7 mb-4"><legend>Preferred method of communication</legend></h4>
+          
+          <fieldset>
+            
+            <legend class="dark-copy mb-2">Preferred method of communication:</legend>           
+
             <div class="flex">
               
               <div class="flex items-center mr-11">
-                <label class="relative flex items-center cursor-pointer" for="communicationPhone">
-                  
-                  <span class="absolute bg-[color:var(--dark-purple)] w-3 h-3 rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
-                </label>
-                <label class="ml-2 text-slate-600 cursor-pointer text-sm" for="communicationPhone">Phone</label>                
+                <input type="radio" name="communication" value="Phone"><span class="dark-copy ml-2"> Phone</span>
               </div>
 
               <div class="flex items-center">
-                <label class="relative flex items-center cursor-pointer" for="communicationEmail">
-                  
-                  <span class="absolute bg-[color:var(--dark-purple)] w-3 h-3 rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
-                </label>
-                <label class="ml-2 text-slate-600 cursor-pointer text-sm" for="communicationEmail">Email</label>
+                <input type="radio" name="communication" value="Email"><span class="dark-copy ml-2"> Email</span>
               </div>
-              
-            </div>
-          </fieldset> -->
 
-          <fieldset>
-            <legend>Can you attend?</legend>
-            <p>
-              <label>
-                <input name="communication" type="radio" class="peer h-5 w-5 cursor-pointer appearance-none rounded-full border border-slate-300 checked:border-[color:var(--dark-purple)] transition-all" id="communicationPhone"><span class="hidden">Communication by phone</span>
-                
-              </label>
-            </p>
-            <p>
-              <label>
-                <input name="communication" type="radio" class="peer h-5 w-5 cursor-pointer appearance-none rounded-full border border-slate-300 checked:border-[color:var(--dark-purple)] transition-all" id="communicationEmail"><span class="hidden">Communication by Email</span>
-                
-              </label>
-            </p>
+            </div>
+            
           </fieldset>
         </div>
         <input
