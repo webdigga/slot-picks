@@ -1,22 +1,33 @@
 ---
 title: What is Network Spinal
 seoTitle: What is Network Spinal | Anttz Chiropractic
-description: Discover Network Spinal, a gentle chiropractic technique that uses light touches to enhance spinal health, reduce stress, and improve overall well-being.
+description: Discover Network Spinal, a gentle chiropractic technique that uses
+  light touches to enhance spinal health, reduce stress, and improve overall
+  well-being.
 author: David White
 date: 2024-02-29T17:13:10.382Z
 type: article
 tags:
   - article
 ---
-## Lorem ipsum dolor sit amet?
+## What is Network Spinal Chiropractic?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis leo at lectus facilisis laoreet. Phasellus tellus erat, tristique et quam at, lacinia facilisis turpis. Duis pellentesque ipsum vel accumsan varius. In convallis pretium dui eget commodo. Phasellus dolor mi, ultricies eu augue et, dapibus venenatis nibh. Etiam at tincidunt neque, id pretium arcu. Duis faucibus tortor metus, id lobortis ante volutpat feugiat. Fusce sit amet erat sit amet neque gravida scelerisque. Curabitur semper, odio ac malesuada vestibulum, nulla nulla condimentum est, quis tempor diam odio sit amet est. Sed varius in massa in blandit. Duis pellentesque id lacus vitae sodales.
+Network Spinal (NS) is a nervous system focused Chiropractic technique that works directly with the parasympathetic nervous system. This is why the main areas of contact are the sacrum and neck area.
 
-## Lorem ipsum dolor sit amet?
+The parasympathetic nervous system is responsible for the body’s rest and digest response when the body is relaxed, resting or feeding. What I also call the “relax, feel and have fun nervous system. This is basically the undoing of the sympathetic nervous system - the fight, flight, freeze or fawn part. 
 
-Nullam ut congue sem, id semper enim. Duis felis magna, suscipit et tempus ut, iaculis sed purus. In sit amet feugiat diam. Nam neque metus, varius eu dui at, vehicula dictum ligula. Pellentesque tempus lectus sed purus aliquam, vel eleifend turpis eleifend. Maecenas et velit porttitor, maximus magna eu, congue mauris. Donec ullamcorper convallis blandit. Nunc venenatis urna tortor, eu sagittis leo sollicitudin eget. Donec sed ipsum ac sapien semper aliquam. Donec elementum condimentum ultricies. Nunc nec sagittis tortor. Integer in lectus dictum, porta nunc nec, faucibus odio. Morbi pharetra sodales molestie. Curabitur sit amet nibh pellentesque, pharetra erat quis, hendrerit risus. Ut non pulvinar lorem, bibendum finibus justo. Vivamus in justo ut dui luctus efficitur.
+Neurological focused chiropractors are assessing the neuro-system holistically - bones, muscles, nerves, patterns, and how they interact with each other.
 
-## Lorem ipsum dolor sit amet?
+NS being so unique and gentle is because we intervene at the level of the nerve. The specific areas where we contact is where the spinal cord is anchored. 
 
-Maecenas fringilla diam et arcu egestas dapibus. Etiam eleifend arcu pharetra leo imperdiet gravida. Mauris non ultrices magna. In tempus massa justo. Donec a lobortis sem, eu consequat diam. Integer commodo vitae elit vel lacinia. Etiam euismod a metus a vestibulum. Mauris ac turpis a massa semper rutrum sed quis risus. Phasellus sodales dictum lectus in cursus. Sed feugiat ut risus sit amet vulputate. Nulla id purus vehicula leo feugiat condimentum eu sed quam. Donec fermentum tortor luctus interdum ultrices.
+Accumulated stress and trauma causes the body to shift into the defense postures creating tension and patterns to form and build at these anchors. Each contact works to relieve the tension slowly over time and create a wave/flow like movement.
 
+### What you don't see....
+
+The assessment, we do not just place our hands on the body and contact points. WE assess the nervous system, spine, muscles and connective tissue before and after each and every contact.
+
+So on the table before each contact we assess: Defense postures, areas of tension, areas of breathing dysfunction, imbalances, pelvis dysfunction and adverse mechanical cord tension. Often the analysis takes longer than the actual contact. 
+
+So, the contact points are very strategically and systematically with several perspectives/outcomes and lots of presence before we actually make any contact.
+
+Some practitioners may also measure heart rate variability (HRV), surface electromyography, thermography, or other tools to check the state of the body and nervous system
