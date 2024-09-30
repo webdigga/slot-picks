@@ -20,19 +20,19 @@ collections:
         label: "Title",
         name: "title",
         widget: "string",
-        hint: "*This title will be used in the page's H1 tag, and also it determines the URL (between 20 and 70 characters)*"
+        hint: "*This title will be used in the page's H1 tag, and also it determines the URL (between 20 and 70 characters)*. If you want to make changes to this section after the page has been published then it's best to chat to David first."
       }
       - { 
         label: "SEO Title",
         name: "seoTitle",
         widget: "string",
-        hint: "*This title will be used in the title tag for search engines (between 50 and 60 characters)*"
+        hint: "*This title will be used in the title tag for search engines (between 50 and 60 characters)*. If you want to make changes to this section after the page has been published then it's best to chat to David first."
       }
       - {
         label: "Description",
         name: "description",
         widget: "string",
-        hint: "*Used in search engines (between 70 and 155 characters)*"
+        hint: "*Used in search engines (between 70 and 155 characters)*. If you want to make changes to this section after the page has been published then it's best to chat to David first."
       }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
@@ -48,14 +48,6 @@ collections:
         multiple: true
         create: true
         options: ["article", "privacy"]
-      - label: "Hero image"
-        name: "heroImage"
-        widget: "image"
-        choose_url: true
-        required: false
-        media_library:
-          config:
-            multiple: false
   - label: "Settings"
     name: "settings"
     editor:
