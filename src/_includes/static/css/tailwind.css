@@ -7,11 +7,11 @@
   --light-yellow: #fde350;
   --dark-yellow: #FFD700;
   --light-purple: #cd9bff;
-  --light-blue: #b7c4e6;
   --dark-blue: #1D4ED8;
   --teal: #018579;
 
   /* New colours - to replace above */
+  --light-blue: #f5fbff;
   --dark-purple: #7f0ea5;
   --light-green: #35b914;
   --white: #FFFFFF;
@@ -54,7 +54,7 @@ h3, h4 {
 }
 
 .menu-styles {
-  @apply absolute left-0 top-12 sm:top-14 md:top-16 border-b border-b-white pb-6 shadow-xl;
+  @apply absolute left-0 border-b border-b-white pb-6 shadow-xl top-12 xs:top-24 sm:top-20;
 }
 
 .dark-copy {
@@ -87,15 +87,6 @@ h3, h4 {
 
 .anchor-highlight {
   @apply underline-offset-4 decoration-2 underline decoration-[color:var(--dark-yellow)];
-}
-
-.main-background {
-  background-image: url('/_includes/static/img/pattern-randomized.svg');
-  background-size: cover;
-  background-color: #ffffff;
-  background-position: center;
-  background-repeat: repeat;
-  background-attachment: fixed;
 }
 
 #sortbox:checked ~ #sortboxmenu {

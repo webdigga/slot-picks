@@ -4,7 +4,6 @@ layout: default
 
 {% import "./partials/navbar.html" as navBar with context %}
 {% import "./components/testimonials.html" as testimonials with context %}
-{% import "./components/logo.html" as antLogo with context %}
 
 <div class="bg-[color:var(--lightest-gray)] border-b border-solid border-b-[color:var(--very-light-gray)]">
   {{ navBar.nav('bg-[color:var(--lightest-gray)]') }}
@@ -16,7 +15,7 @@ layout: default
 
     <div class="flex items-center">
 
-      <h1 class="dark-copy">{{ title }}</h1>{{ antLogo.logo(width='100px', height='54px', maxWidthClasses='max-w-28', classes='mt-0 mb-8 pl-2') }}
+      <h1 class="dark-copy">{{ title }}</h1>
     </div>
     
 

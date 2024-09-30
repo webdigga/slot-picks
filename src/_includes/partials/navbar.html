@@ -1,3 +1,5 @@
+{% import "../components/logo.html" as antLogo with context %}
+
 {% macro nav(bgColour, background) %}
   <div class="w-full container">
     <nav class="flex lg:justify-between flex-col xs:flex-row">
@@ -96,13 +98,13 @@
 
 
                   {% if item.secondLevelItems %}
-                    <ul class="flex flex-col items-left lg:items-center dark-copy lg:absolute lg:hidden lg:z-10 lg:bg-[color:var(--white)] lg:group-hover:block lg:text-left lg:px-4 lg:w-44 lg:border lg:border-solid lg:border-[color:var(--very-light-gray)]">
+                    <ul class="flex flex-col items-left lg:items-center dark-copy lg:absolute lg:hidden lg:z-10 lg:bg-[color:var(--white)] lg:group-hover:block lg:text-left lg:px-4 lg:w-40 lg:border lg:border-solid lg:border-[color:var(--very-light-gray)]">
                     
                       {% for subItem in item.secondLevelItems %}
                         <li class="lg:flex items-center inline-flex text-left">                        
                           <a
                             href="{{ subItem.url }}"
-                            class="pr-1 lg:pr-0 lg:w-full text-sm py-2 lg:py-4 inline-block lg:hover:underline-offset-4 lg:hover:decoration-1 lg:hover:underline lg:hover:decoration-[color:var(--dark-purple)]">
+                            class="pr-1 lg:pr-0 lg:w-full text-sm py-2 lg:py-4 inline-block lg:hover:underline-offset-4 lg:hover:decoration-1 lg:hover:underline lg:hover:decoration-[color:var(--dark-purple)] {% if subItem.url == page.url %}underline-offset-4 decoration-2 underline decoration-[color:var(--dark-purple)] {% else %} no-underline {% endif %}">
                             {{ subItem.text }}
                           </a>
 
@@ -132,10 +134,12 @@
         </div>
       </div>
 
-      <div class="font-bold text-3xl tracking-tighter lg:text-6xl dark-copy">
+      <div class="font-bold text-3xl tracking-tighter lg:text-6xl dark-copy flex items-center xs:max-w-64 sm:max-w-none lg:max-w-[440px] xl:max-w-none">
         <a href="/">
           {{ settings.siteName }}
         </a>
+
+        {{ antLogo.logo(width='100px', height='54px', maxWidthClasses='max-w-28', classes='mt-0 pl-2 h-fit') }}
       </div>
     </nav>   
     	
