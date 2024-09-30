@@ -1,0 +1,32 @@
+---
+layout: default
+path: home
+type: home
+ogType: website
+description: Discover expert chiropractic care at Anttz Family Chiropractic. We offer personalised treatment for back pain and overall wellness.
+seoTitle: Comprehensive Care for Your Spine & Health | Anttz Family Chiropractic
+title: Comprehensive Care for Your Spine & Health | Anttz Family Chiropractic
+---
+
+{% import "./_includes/partials/navbar.html" as navBar with context %}
+{% import "./_includes/components/why-anttz.html" as whyAnttz with context %}
+{% import "./_includes/components/testimonials.html" as testimonials with context %}
+
+<div class="">
+  
+  <div class="bg-[color:var(--lightest-gray)] border-b border-solid border-b-[color:var(--very-light-gray)]">
+    {{ navBar.nav('bg-[color:var(--lightest-gray)]') }}
+  </div>
+
+  <section class="container container--large">
+    {% include "./_includes/components/contact-form.html" %}
+  </section>
+  
+  <section>
+    {{ whyAnttz.whyAnttzComponent() }}  
+  </section>
+  
+  <section class="bg-[color:var(--white)]">    
+    {{ testimonials.testimonialComponent() }}  
+  </section>
+</div>

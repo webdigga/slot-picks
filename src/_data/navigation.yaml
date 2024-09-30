@@ -8,6 +8,8 @@ firstLevelItems:
         url: /dr-hannah/
       - text: FAQs
         url: /frequently-asked-questions/
+      - text: Contact
+        url: /contact/
   - text: Services
     url: /services/
     secondLevelItems:
