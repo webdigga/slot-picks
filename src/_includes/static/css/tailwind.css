@@ -94,6 +94,21 @@ h3, h4 {
 }
 
 /*
+  Article image component
+*/
+img.Center {
+  @apply m-0;
+}
+
+img.Left {
+  @apply m-0 md:float-left md:pr-12 md:pb-8 md:max-w-[50%];
+}
+
+img.Right {
+  @apply m-0 md:float-right md:pl-12 md:pb-8 md:max-w-[50%];
+}
+
+/*
   https://css-generators.com/wavy-shapes/
 */
 .section-divider-top {

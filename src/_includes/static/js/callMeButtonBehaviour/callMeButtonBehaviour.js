@@ -2,11 +2,14 @@
   Changing behaviour of call me button depending on if mobile or not
 */
 function callMeButtonBehaviour() {
-  document.querySelector('[data-test="callMeButton"]').addEventListener("click", (event) => {
+  const callMeButton = document.querySelector('[data-test="callMeButton"]');
 
-    event.preventDefault();
-    window.location.href = /Mobi|Android|iPhone/i.test(navigator.userAgent) ? event.target.href : '/contact/#contact';
-  });
+  if(callMeButton) {
+    callMeButton.addEventListener("click", (event) => {
+      event.preventDefault();
+      window.location.href = /Mobi|Android|iPhone/i.test(navigator.userAgent) ? event.target.href : '/contact/#contact';
+    });
+  }
 }
 
 callMeButtonBehaviour();
