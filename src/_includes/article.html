@@ -4,6 +4,7 @@ layout: default
 
 {% import "./partials/navbar.html" as navBar with context %}
 {% import "./components/testimonials.html" as testimonials with context %}
+{% import "./components/disclaimer.html" as disclaimer with context %}
 
 <div class="bg-[color:var(--lightest-gray)] border-b border-solid border-b-[color:var(--very-light-gray)]">
   {{ navBar.nav('bg-[color:var(--lightest-gray)]') }}
@@ -20,6 +21,16 @@ layout: default
   </article>
 	
 </section>
+
+{%if 'report' in tags %}
+  <section class="bg-[color:var(--dark-purple)]">
+    <div class="container">
+      <div class="my-6 flex flex-col md:block prose max-w-5xl mx-auto prose-h2:text-white prose-p:text-white">
+        {{ disclaimer.report() }}
+      </div>
+    </div>  
+  </section>  
+{% endif %}
 
 <section class="bg-[color:var(--white)] border-t border-solid border-t-[color:var(--very-light-gray)]">
     
