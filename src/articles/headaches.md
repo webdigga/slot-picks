@@ -17,6 +17,9 @@ tags:
    Make sure when you are sitting or standing you relax your shoulders back and down, stretching your head to the top of the ceiling. Tuck your chin in slightly and see if you can get your ear lobe in line with the tip of your shoulder. To encourage this type of posture, try this exercise: tuck your chin into your neck, keeping it parallel with the floor, and make a double chin (fun exercise at work while others are watching!) - hold this for 5 seconds and repeat 10 times. That activates those postural muscles at the back of your neck, so they can do the right job properly again!
 2. ## Check your Tech
 
+   <img src="/_includes/static/img/man-computer.webp" alt="Man sitting in front of computer" title="Man sitting in front of computer" class="Left" width="600px" height="450px" loading="lazy"/>
+
+   \
    Did you know that technology is one of the principle causes of the modern-day posture epidemic? Hours spent in front of a computer, slouched on a couch, looking down at your iPad or iPhone - all of these contribute to increased stress on your neck, possibly leading to you headaches and migraines.\
    When using your phone or tablet, try bringing it up to eye level to reduce the force going through your neck. Make sure you are holding your phone to your ear correctly when making phone calls, and not bending your neck to the side to hold it there between your ear and shoulder - better yet, use a headset. And lastly, when using your computer screen up to eye level. You can do this by buying a laptop/computer lifter to adjust the screen or simply place some books underneath it.
 3. ## Eat the Right Treat!
@@ -33,6 +36,9 @@ tags:
    If sleeping has always been troublesome for you, try these tips: lower the lights before bed and avoid looking at a screen (TV, laptop, phone) - this artificial light tricks the body into thinking it’s still day time, and so doesn’t “switch off”. Try some soothing music, or a bedtime meditation, as well as soothing smells (lavender is great!) and tea (chamomile!).
 6. ## Get Less Bag Drag
 
+   <img src="/_includes/static/img/man-with-bag.webp" alt="Man carrying bag on shoulder" title="Man carrying bag on shoulder" class="Left" width="600px" height="450px" loading="lazy"/>
+
+   \
    Humans are creatures of habit - so most of us, when carrying our bags or cases, are always carrying them over the same shoulder, creating repetitive stress to the neck and shoulder. Your back should not exceed more than 10% of your body weight. When it goes over this weight it places stresses and strain through your head, neck and shoulders- leading to pain and headaches.\
    Check the weight of your bag before leaving the house and remove any unnecessary items. When carrying a bag with short straps, sling it over your shoulder and tuck your purse under your arm close to your body. When carrying a bag with long straps, sling it over the opposite shoulder to help the shoulders relax. This way your shoulders won’t contract to prevent the bag from falling. Try and switch shoulders every so often to prevent repetitive strain.
 7. ## Stress Less
@@ -43,7 +49,7 @@ tags:
 
    Now all you should do is go and see your local chiropractor for a check-up! Chiropractors look at the alignment of the spine to make sure your nervous system is functioning optimally. There is no better way than to get a hands-on chiropractic assessment to see what the underlying cause of those headaches is, and how to get rid of them.
 
----
+- - -
 
 ## Conclusion
 
