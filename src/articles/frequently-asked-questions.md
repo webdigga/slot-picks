@@ -1,22 +1,48 @@
 ---
-title: Frequently Asked Questions
-seoTitle: Frequently Asked Questions | Anttz Chiropractic
-description: Find answers to common questions about our chiropractic services, treatments, and how we help improve your health and mobility.
+title: Frequently Asked Questions (FAQs)
+seoTitle: Frequently Asked Questions (FAQs) | Anttz Chiropractic
+description: Find answers to common questions about our chiropractic services,
+  treatments, and how we help improve your health and mobility.
 author: David White
-date: 2024-02-29T17:13:10.382Z
+date: 2024-10-03T17:20:00.000Z
 type: article
 tags:
   - article
 ---
-## Lorem ipsum dolor sit amet?
+## Can I book a one off adjustment?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis leo at lectus facilisis laoreet. Phasellus tellus erat, tristique et quam at, lacinia facilisis turpis. Duis pellentesque ipsum vel accumsan varius. In convallis pretium dui eget commodo. Phasellus dolor mi, ultricies eu augue et, dapibus venenatis nibh. Etiam at tincidunt neque, id pretium arcu. Duis faucibus tortor metus, id lobortis ante volutpat feugiat. Fusce sit amet erat sit amet neque gravida scelerisque. Curabitur semper, odio ac malesuada vestibulum, nulla nulla condimentum est, quis tempor diam odio sit amet est. Sed varius in massa in blandit. Duis pellentesque id lacus vitae sodales.
+You can, but only if you've had an initial consultation first, within a certain time frame. This is because we need to do a thorough examination to see what's is actually going on in your body and with your nervous system. We can not only listen to where you feel the symptoms are as that can be very misleading. This is to protect you so that we don't do anything to cause you more pain and or damage.
 
-## Lorem ipsum dolor sit amet?
+## What is an initial Consultation?
 
-Nullam ut congue sem, id semper enim. Duis felis magna, suscipit et tempus ut, iaculis sed purus. In sit amet feugiat diam. Nam neque metus, varius eu dui at, vehicula dictum ligula. Pellentesque tempus lectus sed purus aliquam, vel eleifend turpis eleifend. Maecenas et velit porttitor, maximus magna eu, congue mauris. Donec ullamcorper convallis blandit. Nunc venenatis urna tortor, eu sagittis leo sollicitudin eget. Donec sed ipsum ac sapien semper aliquam. Donec elementum condimentum ultricies. Nunc nec sagittis tortor. Integer in lectus dictum, porta nunc nec, faucibus odio. Morbi pharetra sodales molestie. Curabitur sit amet nibh pellentesque, pharetra erat quis, hendrerit risus. Ut non pulvinar lorem, bibendum finibus justo. Vivamus in justo ut dui luctus efficitur.
+Our initial consultation contains of two appointments, day 1 and Day 2. Day 1 involves going through your history, followed by an in-depth digital posture picture, joint testing, muscle testing, balance testing and any other orthopaedic testing that may be required.
 
-## Lorem ipsum dolor sit amet?
+## Why do I have to have an initial consultation?
 
-Maecenas fringilla diam et arcu egestas dapibus. Etiam eleifend arcu pharetra leo imperdiet gravida. Mauris non ultrices magna. In tempus massa justo. Donec a lobortis sem, eu consequat diam. Integer commodo vitae elit vel lacinia. Etiam euismod a metus a vestibulum. Mauris ac turpis a massa semper rutrum sed quis risus. Phasellus sodales dictum lectus in cursus. Sed feugiat ut risus sit amet vulputate. Nulla id purus vehicula leo feugiat condimentum eu sed quam. Donec fermentum tortor luctus interdum ultrices.
+First, it's important to know what is going on in your nervous system and body. Second, we need to understand why your symptoms are there and to see if chiropractic and Anttz Family Chiropractic health are the right fit for you.
 
+## How often do I need a review?
+
+We do a review around every 12th visit to measure improvements and to see if we need to adjust the schedule to get you the best results.
+
+## Will I be treated in a private room?
+
+Chiropractors treat patients in many different settings, including private, group or multi- disciplinary clinics and practices.
+
+Here at Anttz Family chiropractic we opt for an open-plan space where several practice members are treated at the same time.
+
+## Will the adjustment hurt?
+
+Treatment is usually painless unless an area is swollen. If this is the case, your chiropractor will alter the care that you receive. You may also hear a clicking or popping noise. This is perfectly normal and commonplace with chiropractic treatment. It is just a gas bubble bursting.
+
+Some patients also report temporary aches and pains during and after care. Again, this is nothing to worry about and is perfectly normal.
+
+If you are uncomfortable with the techniques being used during your treatment, you should talk to your chiropractor.
+
+## How do Chiropractic techniques differ?
+
+There are many different chiropractic techniques. Some chiropractors perform joint manipulation using only their hands while others use various instruments. Additionally, some chiropractors treat using quick but firm manipulation while others have a lighter touch. Chiropractic treatment is largely driven by the individual preferences of both the chiropractor
+
+and the patient, but adjustment choices are made for clinical reasons.
+
+Dr Hannah is on of 35 practitioners in the UK that also practices Network Spinal.
