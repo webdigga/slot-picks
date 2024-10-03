@@ -50,6 +50,8 @@ There are many ways to help yourself on a daily basis when you have back or pelv
 
    It is also worth avoiding bright screens, food and stimulants 2-3 hours before you go to bed, keep your bedroom cool and dark and follow a consistent sleep schedule.
 
-### Conclusion
+---
+
+## Conclusion
 
 So there you have it, some fundamental top tips to help you get back on track with any discomfort you may have during pregnancy. To get the best results you will want to do a combination of all things discussed, however most importantly you must stay active and see professional advice if any of your symptoms worsen or you are unsure where to start.
