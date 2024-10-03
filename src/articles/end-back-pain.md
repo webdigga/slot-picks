@@ -41,6 +41,9 @@ tags:
    There isn’t a more effective, faster route to self-inflicted damage to your spine/lower back. Avoid this position like the plague. Every part of your spine is twisted and in the wrong position and if you sleep like this, it’s no wonder you are suffering from back pain.
 7. ## Change your mattress every 5 years
 
+   <img src="/_includes/static/img/mattress.webp" alt="Woman inspecting mattress" title="Woman inspecting mattress" class="Right" width="600px" height="450px" loading="lazy"/>
+
+   \
    This is the bedroom question that I get asked every day. People want to know about their mattress and what type they should sleep on. Almost impossible to answer as the question is too generic. But what I can say is that if you haven’t changed your mattress in the last five years then it’s time that you did!\
    And invest as much as you can in finding the most comfortable one that works for you. After all, if you’re going to spend a third of your life on it, you might as well get the best one that you can.\
    And the key isn’t to find a firm one or a hard one, but finding the right mattress is about finding the one that works best for you and your spine.
@@ -71,6 +74,9 @@ tags:
    And this would cause tension and pain, not to mention a funny and unhealthy looking posture.
 3. ## Regular Pilates
 
+   <img src="/_includes/static/img/pilates.webp" alt="Group Pilates" title="Group Pilates" class="Right" width="600px" height="450px" loading="lazy"/>
+
+   \
    This is the 100 year old tradition that if you do regularly can really transform your health. Pilates is joint number one on my list (with yoga!) of the most important things that anyone can do to prevent back pain.\
    If you are wondering, Pilates is a series of exercises designed to improve muscle tone and control. Understand that it’s the latter (control) that is often missing from lower back muscles and the root cause of people’s back pain and stiffness..\
    So by joining a class, or doing these exercises every day on your own at home, you’ll steadily improve your muscle control, and with it, slowly decrease your muscle tension and pain. We recommend all our private clients to do these exercises and go so far as to create personal plans for each of them.
@@ -78,7 +84,7 @@ tags:
 
    Another daily ritual that will transform your health. Along with Pilates Yoga is a must! Now that you're in the 40-60 age bracket, everyday.
 
----
+- - -
 
 ## Conclusion
 
