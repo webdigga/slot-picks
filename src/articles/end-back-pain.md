@@ -23,11 +23,11 @@ tags:
    This causes inevitable aches, pains and stiffness
 3. ## Use Ice (Not Heat)
 
-   Ice is by far the best way to ease back pain. My tip, use ice whenever you’re feeling achy or painful, such as at the end of a very busy day. Apply an ice pack for 10mins or so, little but very often (every hour).\
-   And when to use heat - my tip would be to apply a hot water bottle on a morning when your back is likely to be feeling mor stiff than painful. Again, 10 minutes should do it.
+   Ice is by far the best way to ease back pain. My tip, use ice whenever you’re feeling achy or painful, such as at the end of a very busy day. Apply an ice pack for 10 mins or so, little but very often (every hour).\
+   And when to use heat - my tip would be to apply a hot water bottle on a morning when your back is likely to be feeling more stiff than painful. Again, 10 minutes should do it.
 4. ## Avoid sitting Crossed Legged
 
-   Your spine isn’t designed to twist or turn. And sitting in a cross-legged pstion is doing just that. Your joints are twisted, muscles stretched and in this position your spine/lower back s weak and you’re vulnerable to injury.\
+   Your spine isn’t designed to twist or turn. And sitting in a cross-legged position is doing just that. Your joints are twisted, muscles stretched and in this position your spine/lower back is weak and you’re vulnerable to injury.\
    Spending an excess time in this position will catch up on you - usually aged 40 -60 years.
 5. ## Sleep with a Pillow between Your Knees
 
@@ -39,17 +39,17 @@ tags:
 7. ## Change your mattress every 5 years
 
    This is the bedroom question that I get asked every day. People want to know about their mattress and what type they should sleep on. Almost impossible to answer as the question is too generic. But what I can say is that if you haven’t changed your mattress in the last five years then it’s time that you did!\
-   And invest as much as you can in finding the most comfortable one that works for you. After all, it you’re going to spend a third of your life on it, you might as well get the best one that you can.\
-   And the key isn’t to finding a firm one or a hard one- but finding the right mattress is about finding the one that works best for you and your spine.
+   And invest as much as you can in finding the most comfortable one that works for you. After all, if you’re going to spend a third of your life on it, you might as well get the best one that you can.\
+   And the key isn’t to find a firm one or a hard one, but finding the right mattress is about finding the one that works best for you and your spine.
 8. ## Choose Sensible Footwear
 
    Bizarre choices of footwear include high heels, sandals, flip-flops and plimsoll style trainers or shoes. Why bizarre? Because they’re all proved to ADD to your back pain.\
-   It’s because there’s a lack of cushioning to absorb shock with these types, so your lower back must take all the impact every time your foot lands on the floor (not good for you knees and hips either).\
-   If you can absorb some of the shock by wearing nice soft, well fitted and cushioned shoes/trainers, then you could reduce your back pain bby as much as 20-25%.
+   It’s because there’s a lack of cushioning to absorb shock with these types, so your lower back must take all the impact every time your foot lands on the floor (not good for your knees and hips either).\
+   If you can absorb some of the shock by wearing nice soft, well fitted and cushioned shoes/trainers, then you could reduce your back pain by as much as 20-25%.
 9. ## Get Healthy with Chiropractic
 
    There isn’t a faster way to END back pain than by going to see a chiropractor. Getting to see a hands-on specialist means you’re going to get very fast access to care that will soothe and relax those tight aching muscles, loosen and lubricate stuck and painful joints, and strengthen your body so you can go back to doing the things that you love.\
-   Combine all the “tips” in this special report with a trip to a see a hands on private chiropractor and you will see a dramatic drop in the back pain and stiffness you are currently suffering from.\
+   Combine all the “tips” in this special report with a trip to see a hands on private chiropractor and you will see a dramatic drop in the back pain and stiffness you are currently suffering from.\
    Specialist chiropractors look to the root cause of the mobility and pain problems, providing natural solutions to produce the fastest results possible, without the use of drugs and surgery.
 
 ## Bonus Information
@@ -60,11 +60,11 @@ tags:
    If you can get into the routine or good habit of doing simple stretches and strengthening of your lower back muscles, you will benefit right through your 40's, 50's, 60's and beyond.\
    In the same way you brush your teeth twice per day to keep them clean and avoid pain, and you need to look at working or our back in a similar way.\
    Particularly as you’re now in the 40-60 age bracket where your muscles lose strength and flexibility.
-2. ## Avoid Carrying your back pack or bag or bag on one arm, or in one hand
+2. ## Avoid Carrying your backpack or bag or bag on one arm, or in one hand
 
    For this, you’re going to completely ‘flip’ everything you’ve likely done for yours when it comes to carrying bags.\
-   This one is a very common mistake. Carrying a workbag or even shopping bag over one shoulder, means that the wieght is not even distributed. And the results is one side of your spine is under more presure that the other. Guess what happens to the side of your body carrying the extra weight all these years? (Likely to be the side you’re feeling the pain most).\
-   More, if you carry the bag over left shoulder all the time, you could end up with a curvature of your spine and it would mean that your left side is working too hard taking the weight of the bag, every day, and certainly much harder than your right side.\
+   This one is a very common mistake. Carrying a work bag or even shopping bag over one shoulder, means that the weight is not evenly distributed. And the result is one side of your spine is under more pressure than the other. Guess what happens to the side of your body carrying the extra weight all these years? (Likely to be the side you’re feeling the pain most).\
+   Moreover, if you carry the bag over your left shoulder all the time, you could end up with a curvature of your spine and it would mean that your left side is working too hard taking the weight of the bag, every day, and certainly much harder than your right side.\
    And this would cause tension and pain, not to mention a funny and unhealthy looking posture.
 3. ## Regular Pilates
 
@@ -77,4 +77,4 @@ tags:
 
 ## Conclusion
 
-So there you it! 8 top tips on how to manager your headaches and migraines safely and effectively. Today! Not only this, but these tips will have a positive benefit on your neck and shoulder discomfort and overall energy and vitality! I could go into much more detail, but for now, if you apply these basics diligently every day, you will see changes to the quality of your life!
+So there you are! 8 top tips on how to manage your headaches and migraines safely and effectively. Today! Not only this, but these tips will have a positive benefit on your neck and shoulder discomfort and overall energy and vitality! I could go into much more detail, but for now, if you apply these basics diligently every day, you will see changes to the quality of your life!
