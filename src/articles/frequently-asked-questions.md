@@ -11,11 +11,11 @@ tags:
 ---
 ## Can I book a one off adjustment?
 
-You can, but only if you've had an initial consultation first, within a certain time frame. This is because we need to do a thorough examination to see what's is actually going on in your body and with your nervous system. We can not only listen to where you feel the symptoms are as that can be very misleading. This is to protect you so that we don't do anything to cause you more pain and or damage.
+You can, but only if you've had an initial consultation first, within a certain time frame. This is because we need to do a thorough examination to see what's actually going on in your body and with your nervous system. We can not only listen to where you feel the symptoms are as that can be very misleading. This is to protect you so that we don't do anything to cause you more pain and or damage.
 
 ## What is an initial Consultation?
 
-Our initial consultation contains of two appointments, day 1 and Day 2. Day 1 involves going through your history, followed by an in-depth digital posture picture, joint testing, muscle testing, balance testing and any other orthopaedic testing that may be required.
+Our initial consultation contains two appointments, day 1 and Day 2. Day 1 involves going through your history, followed by an in-depth digital posture picture, joint testing, muscle testing, balance testing and any other orthopaedic testing that may be required.
 
 ## Why do I have to have an initial consultation?
 
@@ -45,4 +45,4 @@ There are many different chiropractic techniques. Some chiropractors perform joi
 
 and the patient, but adjustment choices are made for clinical reasons.
 
-Dr Hannah is on of 35 practitioners in the UK that also practices Network Spinal.
+Dr Hannah is one of 35 practitioners in the UK that also practises Network Spinal.
