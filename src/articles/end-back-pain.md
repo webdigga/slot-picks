@@ -74,7 +74,7 @@ tags:
    And this would cause tension and pain, not to mention a funny and unhealthy looking posture.
 3. ## Regular Pilates
 
-   <img src="/_includes/static/img/pilates.webp" alt="Group Pilates" title="Group Pilates" class="Right" width="600px" height="450px" loading="lazy"/>
+   <img src="/_includes/static/img/pilates.webp" alt="Group Pilates" title="Group Pilates" class="Left" width="600px" height="450px" loading="lazy"/>
 
    \
    This is the 100 year old tradition that if you do regularly can really transform your health. Pilates is joint number one on my list (with yoga!) of the most important things that anyone can do to prevent back pain.\
