@@ -78,6 +78,8 @@ tags:
 
    Another daily ritual that will transform your health. Along with Pilates Yoga is a must! Now that you're in the 40-60 age bracket, everyday.
 
+---
+
 ## Conclusion
 
 So there you are! 8 top tips on how to manage your headaches and migraines safely and effectively. Today! Not only this, but these tips will have a positive benefit on your neck and shoulder discomfort and overall energy and vitality! I could go into much more detail, but for now, if you apply these basics diligently every day, you will see changes to the quality of your life!
