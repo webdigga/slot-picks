@@ -18,6 +18,9 @@ tags:
    But understand that it’s cumulative effect, This pressure builds up from wearing the wrong footwear over a period of weeks and years and results in a weak and stiff back somewhere around the age of 40.
 2. ## Avoid sitting for more than 20 mins at a Time
 
+   <img src="/_includes/static/img/woman-slouching.webp" alt="Woman slouching" title="Woman slouching" class="Right" width="600px" height="450px" loading="lazy"/>
+
+   \
    There’s so much ‘gossip’ that surrounds back pain. but this is FACT...you and I were not designed to sit. It goes against every basic, fundamental rule of the way we originally evolved as humans. When you sit there is approximately 10x more pressure pushing down on your spine than when you stand tall.\
    And it’s because most of us slouch, or flop when we do sit, meaning that the muscles in your spine (called your core muscle group) that are designed to protect you, just don’t work.\
    This causes inevitable aches, pains and stiffness
