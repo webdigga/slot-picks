@@ -22,7 +22,7 @@ Holistic tools, like SRI breathing exercises, are irreplaceable at times when yo
 
 SRI is grounded in Reorganisational Healing and to put it simply, it's a powerful series of exercises using breath, awareness, touch and movement developed to help you connect your body and mind, and deal with life more efficiently and positively.
 
-Through working with thousands of patients over many decades, NetworkSpinai® founder, Dr. Donald Epstein, noticed predictable patterns in the way people move and breathe when they experience both negative and positive life events.
+Through working with thousands of patients over many decades, NetworkSpinal® founder, Dr. Donald Epstein, noticed predictable patterns in the way people move and breathe when they experience both negative and positive life events.
 
 ## The Twelve Stages
 
