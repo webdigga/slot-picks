@@ -18,7 +18,7 @@ Somato Respiratory Integration (SRI) is a set of breathing exercises that involv
 
 Holistic tools, like SRI breathing exercises, are irreplaceable at times when you need them! Have you ever been in so much emotional pain, and someone tells you to just get over it? That's the last thing you want to hear. Somato Respiratory Integration allows us to be ok with wherever we're at, without judgement. Only when we're able to work THROUGH that state, are we able to move forward.
 
-## SOMATO RESPIRATORY INTEGRATION (SRI)
+## Somato Respiratory Integration (SRI)
 
 SRI is grounded in Reorganisational Healing and to put it simply, it's a powerful series of exercises using breath, awareness, touch and movement developed to help you connect your body and mind, and deal with life more efficiently and positively.
 
@@ -39,7 +39,7 @@ He categorised a dozen unique rhythms, which he identified as **The Twelve Stage
 
 **The last five stages** represent a more awakened consciousness. Having dealt with and resolved suffering, the individual is left with an enlightened and deeper sense of wellbeing. They are ready to participate in life in a more profound and satisfying way.
 
-## THE BENEFITS - SRI will help you:
+## The Benefits - SRI will help you:
 
 *Reconnect you to your body and begin feeling great again with SRI*
 
