@@ -22,7 +22,7 @@ firstLevelItems:
       - text: Spinal screening
         url: /chiropractic-spinal-screening/
       - text: SRI
-        url: /sri/
+        url: /somato-respiratory-integration-sri/
   - text: Free Reports
     url: /free-reports/
     secondLevelItems:
