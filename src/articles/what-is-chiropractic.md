@@ -10,6 +10,8 @@ type: article
 tags:
   - article
 ---
+<img src="/_includes/static/img/touching-patient-back.webp" alt="Touching patients back" title="Touching patients back" class="Left" width="600px" height="450px" loading="lazy"/>
+
 With continued research during the last 20-30 years, a more complete explanation of what happens when spinal bones lose their normal motion or position has become known as the vertebral subluxation complex.
 
 The five components of the vertebral subluxation complex explain some of the implications, both local and peripheral to the spine, when spinal bones misalign and interfere with proper nerve conduction.
