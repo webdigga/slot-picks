@@ -10,6 +10,8 @@ type: article
 tags:
   - article
 ---
+<img src="/_includes/static/img/pregnant.webp" alt="Pregnant woman holding her back" title="Pregnant woman holding her back" class="Right" width="600px" height="450px" loading="lazy"/>
+
 Do you think of pain as something that all pregnant women experience? Though it's common, it is not normal. There may be another choice than trying to cope as best you can with aches and pains. If your nervous system functions correctly, you won't have symptoms such as discomfort. Our pregnant clients report benefits such as:
 
 * Better sleep
