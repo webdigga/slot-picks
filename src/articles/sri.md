@@ -10,6 +10,8 @@ type: article
 tags:
   - article
 ---
+<img src="/_includes/static/img/breathing.webp" alt="Elderly couple doing breathwork" title="Elderly couple doing breathwork" class="Right" width="600px" height="450px" loading="lazy"/>
+
 Breathing exercises help calm down anxiety, keep us grounded, and recenter our souls. There is strength in breath! Somato Respiratory Integration, also known as SRI, is a powerful tool that you can use to recenter your heart, mind, and soul. SRI exercises are based on the 12 Stages of Healing, created by Dr. Donald Epstein. Donny discovered that people go through these 12 Stages throughout their journeys of healing and transformation. "stage" correlates with a specific SRI exercise, starting with Stage 1, which we call suffering, all the way to stage 12, which we call community.
 
 Somato Respiratory Integration (SRI) is a set of breathing exercises that involves the breath and body. Soma, meaning body, and respiration, meaning breath. These SRI exercises allow you to connect with the natural rhythms of your body through energy, touch, and Movement.
