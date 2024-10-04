@@ -10,6 +10,8 @@ type: article
 tags:
   - article
 ---
+<img src="/_includes/static/img/network-spinal.webp" alt="Pressing thumbs into spine" title="Pressing thumbs into spine" class="Right" width="600px" height="450px" loading="lazy"/>
+
 ## Introduction to Network Spinal (NS)
 
 Network Spinal (NS) is a nervous system focused Chiropractic technique that works directly with the parasympathetic nervous system. This is why the main areas of contact are the sacrum and neck area.
