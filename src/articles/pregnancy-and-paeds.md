@@ -40,6 +40,8 @@ Chiropractic has the ability to make a difference in the lives of babies and chi
 
 Sometimes, if the child is the only client, parents will begin to ask questions and often, as a result, seek chiropractic care for themselves. More often than not, it is a family affair.
 
+<img src="/_includes/static/img/child.webp" alt="Child smiling and looking into the distance" title="Child smiling and looking into the distance" class="Left" width="600px" height="450px" loading="lazy"/>
+
 ## Helping Your Child Be Well
 
 It's important to know that chiropractors do not treat any certain conditions. Instead, we make sure the nervous system is working at its best, which allows the body to be in a state of health. Most people,
