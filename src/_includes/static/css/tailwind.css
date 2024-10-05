@@ -4,13 +4,6 @@
 
 /*Your Custom CSS Goes here*/
 :root { 
-  --light-yellow: #fde350;
-  --dark-yellow: #FFD700;
-  --light-purple: #cd9bff;
-  --dark-blue: #1D4ED8;
-  --teal: #018579;
-
-  /* New colours - to replace above */
   --light-blue: #f5fbff;
   --dark-purple: #7f0ea5;
   --light-green: #35b914;
@@ -86,7 +79,7 @@ h3, h4 {
 }
 
 .anchor-highlight {
-  @apply underline-offset-4 decoration-2 underline decoration-[color:var(--dark-yellow)];
+  @apply underline-offset-4 decoration-2 underline decoration-[color:var(--light-green)];
 }
 
 #sortbox:checked ~ #sortboxmenu {
