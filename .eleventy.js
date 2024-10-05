@@ -65,6 +65,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
     "./src/admin/imageComponent.js": "./admin/imageComponent.js",
+    "./src/admin/buttonComponent.js": "./admin/buttonComponent.js",
     "./src/site.manifest": "./site.manifest"
   });
 

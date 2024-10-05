@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+{% import "./partials/navbar.html" as navBar with context %}
+{% import "./components/testimonials.html" as testimonials with context %}
+{% import "./components/landing-page-form.html" as landingPageForm with context %}
+
+
+<div class="bg-[color:var(--lightest-gray)] border-b border-solid border-b-[color:var(--very-light-gray)]">
+  {{ navBar.nav('bg-[color:var(--lightest-gray)]') }}
+</div> 
+
+<section class="container">
+
+  <article class="my-6 flex flex-col md:block prose max-w-5xl mx-auto">
+
+    <h1 class="dark-copy">{{ title }}</h1>
+
+    {{ content | safe }}
+
+    <section>
+      {{ landingPageForm.form(title='Spinal Screening') }}
+    </section>
+
+  </article>
+
+</section>
+
+<section class="bg-[color:var(--white)] border-t border-solid border-t-[color:var(--very-light-gray)]">
+    
+  {{ testimonials.testimonialComponent() }}
+
+</section>

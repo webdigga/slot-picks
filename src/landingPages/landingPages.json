@@ -1,0 +1,9 @@
+{
+    "layout": "landing",
+    "tags": [
+        "landing"
+    ],
+    "type": "landing",
+    "ogType": "website",
+    "permalink": "/{{ title | slugify }}/"
+}
