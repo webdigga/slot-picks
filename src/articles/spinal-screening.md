@@ -10,6 +10,8 @@ type: article
 tags:
   - article
 ---
+<img src="/_includes/static/img/screening.webp" alt="Woman having her back assessed" title="Woman having her back assessed" class="Right" width="600px" height="450px" loading="lazy"/>
+
 Spinal Screenings are for everyone, but specifically for anyone who experiences these 7 underlying issues:
 
 * Back Pain that doesn't go away
@@ -22,5 +24,7 @@ Spinal Screenings are for everyone, but specifically for anyone who experiences 
 
 
 <a href="/sign-up-for-a-spinal-screening/" class="no-underline self-end mb-3 rounded-md cursor-pointer inline-block bg-[color:var(--light-green)] text-white py-4 px-6 hover:opacity-80 border border-solid border-white">
+  
   Sign up now!
+
 </a>
