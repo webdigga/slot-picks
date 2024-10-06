@@ -74,37 +74,16 @@
         method="POST"
         action="/thank-you/"
         netlify>
-        <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-md border border-gray-200 focus:outline-none pl-4 mb-10" name="name" placeholder="Name">
-        <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-md border border-gray-200 focus:outline-none pl-4 mb-10" name="email" placeholder="Email">
-        <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-md border border-gray-200 focus:outline-none pl-4 mb-10" name="phone" placeholder="Phone">
+        <input type="text" required class="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-md border border-gray-200 focus:outline-none pl-4 mb-10" name="name" placeholder="Name">
+        <input type="email" required class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-md border border-gray-200 focus:outline-none pl-4 mb-10" name="email" placeholder="Email">
+        <input type="number" required class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-md border border-gray-200 focus:outline-none pl-4 mb-10" name="phone" placeholder="Phone">
         
-        <div class="mb-10">
-          
-          
-          <fieldset>
-            
-            <legend class="dark-copy mb-2">Preferred method of communication:</legend>           
-
-            <div class="flex">
-              
-              <div class="flex items-center mr-11">
-                <input type="radio" name="communication" value="Phone"><span class="dark-copy ml-2"> Phone</span>
-              </div>
-
-              <div class="flex items-center">
-                <input type="radio" name="communication" value="Email"><span class="dark-copy ml-2"> Email</span>
-              </div>
-
-            </div>
-            
-          </fieldset>
-        </div>
-        <input
-          type="text"
-          class="w-full h-12 text-gray-600 placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-md border border-gray-200 focus:outline-none pl-4 mb-10"
-          placeholder="Message"
+        <textarea
+          rows="5"
+          class="pt-2 w-full text-gray-600 placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-md border border-gray-200 focus:outline-none pl-4 mb-10"
           name="message"
-        />
+          placeholder="Message"
+          required></textarea>
 
         {{ button.button(
             type='primary',
