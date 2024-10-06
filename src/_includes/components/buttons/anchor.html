@@ -1,4 +1,4 @@
-{% macro anchor(type, anchorText, destination, iconType, isExternal, classes, isPhone, dataTest) %}
+{% macro anchor(type, anchorText, destination, iconType, isExternal, classes, isPhone, dataTest, pointerEvents) %}
 
   {# Set primary as the default #}
   {% set typeClasses = 'bg-[color:var(--dark-purple)] text-[color:var(--white)]' %}
@@ -59,7 +59,7 @@
     {% if dataTest %}data-test="{{ dataTest }}"{% endif %}
     class="mb-4 rounded-md cursor-pointer inline-block py-4 px-6 hover:opacity-80 {{ typeClasses | safe }} {{ classes | safe }}"
   >
-    <div class="flex items-center">{{ anchorText | safe }}
+    <div class="flex items-center {{ pointerEvents | safe }} ">{{ anchorText | safe }}
       {{ icon | safe }}
     </div>
   </a>
