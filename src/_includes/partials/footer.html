@@ -1,5 +1,5 @@
 {% import "../components/logo.html" as antLogo with context %}
-{% import "../components/buttons/book-an-appointment.html" as bookButton with context %}
+{% import "../components/buttons/anchor.html" as anchor with context %}
 
 <footer class="w-full bg-[color:var(--light-blue)] border-t border-solid border-t-[color:var(--very-light-gray)]">
   <div class="container container-large">
@@ -35,9 +35,18 @@
               <a href="tel:{{ settings.phoneNumber }}" class="py-2">Call me on {{ settings.phoneNumber }}</a>
             </small>
           </p>
-        {% endif %}              
+        {% endif %}
 
-        {{ bookButton.button(title='Book an appointment', classes='bg-[color:var(--dark-purple)] text-[color:var(--white)]') }}              
+        {{ anchor.anchor(
+            type='primary',
+            anchorText='Book an appointment',
+            destination='https://anttzchiro.neptune.practicehub.io/p/booking',
+            iconType='arrow',
+            isExternal=true,
+            classes='mr-3',
+            isPhone=false
+          )
+        }}            
           
       </div>
 

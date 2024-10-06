@@ -1,0 +1,17 @@
+{% macro button(type, buttonText, classes, dataTest, id) %}
+
+  {# Set primary as the default #}
+  {% set typeClasses = 'bg-[color:var(--dark-purple)] text-[color:var(--white)]' %}
+
+  {% if type == 'secondary' %}
+    {% set typeClasses = 'bg-[color:var(--light-green)] text-[color:var(--white)]' %}
+  {% endif %}
+
+  <button
+    class="mb-4 rounded-md cursor-pointer inline-block py-4 px-6 hover:opacity-80 {{ typeClasses | safe }} {{ classes | safe }}"
+    {% if dataTest %}data-test="{{ dataTest }}"{% endif %}
+    {% if id %}id="{{ id }}"{% endif %}>
+    {{ buttonText | safe }}
+  </button>
+
+{% endmacro %}

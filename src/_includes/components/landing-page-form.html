@@ -1,3 +1,5 @@
+{% import "./buttons/button.html" as button with context %}
+
 {% macro form(title) %}
   <div class="grid lg:grid-cols-2 grid-cols-1">
     <div class="lg:mb-0 mb-10">
@@ -103,9 +105,13 @@
           placeholder="Message"
           name="message"
         />
-        <button class="w-full h-12 text-white text-base font-semibold leading-6 rounded-md transition-all duration-700 hover:opacity-80 bg-[color:var(--dark-purple)] shadow-sm">
-          {{ buttonText | safe }}
-        </button>
+
+        {{ button.button(
+            type='primary',
+            buttonText=buttonText,
+            classes='w-full'
+          )
+        }}
       </form>
     </div>   
   </div>

@@ -1,3 +1,5 @@
+{% import "./buttons/button.html" as button with context %}
+
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" id="contact">
   <div class="grid lg:grid-cols-2 grid-cols-1">
     <div class="lg:mb-0 mb-10">
@@ -102,7 +104,14 @@
           placeholder="Message"
           name="message"
         />
-        <button class="w-full h-12 text-white text-base font-semibold leading-6 rounded-md transition-all duration-700 hover:opacity-80 bg-[color:var(--dark-purple)] shadow-sm">Send</button>
+
+        {{ button.button(
+            type='primary',
+            buttonText='Send',
+            classes='w-full'
+          )
+        }}
+      
       </form>
     </div>   
   </div>

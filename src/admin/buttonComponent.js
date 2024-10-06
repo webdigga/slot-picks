@@ -22,11 +22,11 @@ CMS.registerEditorComponent({
       options: [
         {
           label: "Primary",
-          value: "no-underline self-end mb-3 rounded-md cursor-pointer inline-block bg-[color:var(--dark-purple)] text-white py-4 px-6 hover:opacity-80 border border-solid border-white"
+          value: "no-underline bg-[color:var(--dark-purple)] text-white mb-4 rounded-md cursor-pointer inline-block py-4 px-6 hover:opacity-80"
         },
         {
           label: "Secondary",
-          value: "no-underline self-end mb-3 rounded-md cursor-pointer inline-block bg-[color:var(--light-green)] text-white py-4 px-6 hover:opacity-80 border border-solid border-white"
+          value: "no-underline bg-[color:var(--light-green)] text-white mb-4 rounded-md cursor-pointer inline-block py-4 px-6 hover:opacity-80"
         }
       ]
     },

@@ -1,3 +1,5 @@
+{% import "../components/buttons/button.html" as button with context %}
+
 <div
   class="hidden"
   data-test="cookieBanner">
@@ -13,12 +15,16 @@
         </a>
       </div>
       <div class="flex gap-4 items-center flex-shrink-0">
-        <button
-          id="grant-consent"
-          data-test="consentButton"
-          class="bg-[color:var(--light-green)] rounded-md px-5 py-2 hover:opacity-80 focus:outline-none dark-copy">
-          Allow essential cookies
-        </button>
+
+        {{ button.button(
+            type='secondary',
+            buttonText='Allow essential cookies',
+            dataTest='consentButton',
+            id='grant-consent',
+            classes='mb-0'
+          )
+        }}
+
       </div>
     </div>
   </div>

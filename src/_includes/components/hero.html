@@ -1,7 +1,6 @@
 {% import "./checklist-item.html" as checkList with context %}
-{% import "./buttons/book-an-appointment.html" as bookButton with context %}
-{% import "./buttons/call-me.html" as callButton with context %}
 {% import "./logo.html" as antLogo with context %}
+{% import "./buttons/anchor.html" as anchor with context %}
 
 <div class="flex flex-col lg:flex-row items-center py-8 lg:py-16">
 	
@@ -11,9 +10,27 @@
     <p class="dark-copy mb-3">{{ hero.paragraphOne | safe }}</p>
     <p class="dark-copy mb-6">{{ hero.paragraphTwo | safe }}</p>
 
-    {{ bookButton.button(title='Book an appointment', classes='bg-[color:var(--dark-purple)] text-[color:var(--white)] mr-3') }}
+    {{ anchor.anchor(
+        type='primary',
+        anchorText='Book an appointment',
+        destination='https://anttzchiro.neptune.practicehub.io/p/booking',
+        iconType='arrow',
+        isExternal=true,
+        classes='mr-3',
+        isPhone=false
+      )
+    }}
 
-    {{ callButton.button(title='Call me', classes='bg-[color:var(--light-green)] hover:opacity-80') }}
+    {{ anchor.anchor(
+        type='secondary',
+        anchorText='Call me',
+        destination=settings.phoneNumber,
+        iconType='phone',
+        isExternal=false,
+        isPhone=true,
+        dataTest='callMeAnchor'
+      )
+    }}
    
   </div>
 

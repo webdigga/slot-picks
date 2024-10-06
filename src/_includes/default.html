@@ -159,15 +159,15 @@
       {% include "static/js/moreButtonScroll/moreButtonScroll.js" %}
     {% endset %}
 
-    {% set callMeButtonBehaviour %}
-      {% include "static/js/callMeButtonBehaviour/callMeButtonBehaviour.js" %}
+    {% set callMeAnchorBehaviour %}
+      {% include "static/js/callMeAnchorBehaviour/callMeAnchorBehaviour.js" %}
     {% endset %}
 
     <script type="module">
       {{ cookieConsent | jsmin | safe }}
       {{ menuToggle | jsmin | safe }}
       {{ moreButtonScroll | jsmin | safe }}
-      {{ callMeButtonBehaviour | jsmin | safe }}
+      {{ callMeAnchorBehaviour | jsmin | safe }}
     </script>
   </body>
 </html>
