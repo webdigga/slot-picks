@@ -1,37 +1,58 @@
-{% macro map(contactLink, classes) %}
-  <div class="relative w-full overflow-hidden {{ classes | safe }}">
+{% macro map(classes) %}
+  <a
+    href="http://maps.apple.com/?daddr={{ settings.locationLatLong | safe }}"
+    target="_blank"
+    rel="nofollow noopener">
+    <div class="relative w-full overflow-hidden {{ classes | safe }}">
 
-    <h2 class="z-10 absolute top-2 xs:top-6 left-4 sm:left-5 md:left-6 lg:left-auto lg:right-[10%] bg-[color:var(--dark-purple)] py-2 px-4">Where you can find us</h2>
+      <div class="flex items-center bg-[color:var(--dark-purple)] py-2 px-4 z-10 absolute top-2 xs:top-6 left-4 sm:left-5 md:left-6 lg:left-auto lg:right-[10%]">
 
-    {% if contactLink %}
-      {{ contactLink | safe }}
-    {% endif %}
+        <h2 class="mb-0 mr-2">Where you can find us</h2>
 
-    <picture>
-      <source
-        media="(max-width: 1024px)" 
-        srcset="/_includes/static/img/map-4x3-max-1023.webp"
-        width="1023"
-        height="767"
-        class="object-cover object-center w-full max-h-[767px]"
-      />
-      <source
-        media="(min-width: 1024px)"
-        srcset="/_includes/static/img/map-landscape-max-1600.webp"
-        width="1600"
-        height="543px"
-        class="object-cover object-center w-full max-h-[543px]"
-      />
-      <img
-        src="/_includes/static/img/map-landscape-max-1600.webp"
-        alt="Map showing location of Anttz Chiropractic in Kingston Upon Thames"
-        width="1600"
-        height="543px"
-        class="object-cover object-center w-full max-h-[543px]"
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24px"
+          height="24px"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+          />
+        </svg>
         
-      />
-    </picture>
+      </div>      
 
-    <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[color:var(--dark-purple)] bg-fixed opacity-15"></div>
-  </div>
+      <picture>
+        <source
+          media="(max-width: 1024px)" 
+          srcset="/_includes/static/img/map-4x3-max-1023.webp"
+          width="1023"
+          height="767"
+          class="object-cover object-center w-full max-h-[767px]"
+        />
+        <source
+          media="(min-width: 1024px)"
+          srcset="/_includes/static/img/map-landscape-max-1600.webp"
+          width="1600"
+          height="543px"
+          class="object-cover object-center w-full max-h-[543px]"
+        />
+        <img
+          src="/_includes/static/img/map-landscape-max-1600.webp"
+          alt="Map showing location of Anttz Chiropractic in Kingston Upon Thames"
+          width="1600"
+          height="543px"
+          class="object-cover object-center w-full max-h-[543px]"
+          
+        />
+      </picture>
+
+      <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[color:var(--dark-purple)] bg-fixed opacity-10"></div>
+    </div>
+  </a>
 {% endmacro %}
