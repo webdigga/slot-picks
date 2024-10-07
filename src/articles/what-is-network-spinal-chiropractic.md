@@ -1,7 +1,7 @@
 ---
 title: What is Network Spinal Chiropractic
 seoTitle: What is Network Spinal Chiropractic | Anttz Chiropractic
-description: Discover Network Spinal, a gentle chiropractic technique that uses
+description: Discover Network Spinal, a gentle Chiropractic technique that uses
   light touches to enhance spinal health, reduce stress, and improve overall
   well-being.
 author: David White
@@ -16,9 +16,9 @@ tags:
 
 Network Spinal (NS) is a nervous system focused Chiropractic technique that works directly with the parasympathetic nervous system. This is why the main areas of contact are the sacrum and neck area.
 
-If you are looking for a holistic approach involving chiropractic, bodywork, and energy work, then Network Spinal (formerly known as Network Spinal Analysis or NSA) could be exactly what you're looking for. This unique modality uses a "whole" person approach, helping you to feel better in your body and therefore your life.
+If you are looking for a holistic approach involving Chiropractic, bodywork, and energy work, then Network Spinal (formerly known as Network Spinal Analysis or NSA) could be exactly what you're looking for. This unique modality uses a "whole" person approach, helping you to feel better in your body and therefore your life.
 
-Network Spinal is a chiropractic technique that is very gentle, organised, and specific. Instead of manual adjustments to the spine, which can involve "cracking" and "popping," Network Spinal utilises light touches to the spine, mostly in the neck and sacral (lower) regions. These light touches, known as contacts, help to unwind stored tension and trauma within the spine and nervous system.
+Network Spinal is a Chiropractic technique that is very gentle, organised, and specific. Instead of manual adjustments to the spine, which can involve "cracking" and "popping," Network Spinal utilises light touches to the spine, mostly in the neck and sacral (lower) regions. These light touches, known as contacts, help to unwind stored tension and trauma within the spine and nervous system.
 
 ## The Role of the Parasympathetic Nervous System
 

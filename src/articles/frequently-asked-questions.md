@@ -1,7 +1,7 @@
 ---
 title: Frequently Asked Questions (FAQs)
 seoTitle: Frequently Asked Questions (FAQs) | Anttz Chiropractic
-description: Find answers to common questions about our chiropractic services,
+description: Find answers to common questions about our Chiropractic services,
   treatments, and how we help improve your health and mobility.
 author: David White
 date: 2024-10-03T17:20:00.000Z
@@ -19,7 +19,7 @@ Our initial consultation contains two appointments, day 1 and Day 2. Day 1 invol
 
 ## Why do I have to have an initial consultation?
 
-First, it's important to know what is going on in your nervous system and body. Second, we need to understand why your symptoms are there and to see if chiropractic and Anttz Family Chiropractic health are the right fit for you.
+First, it's important to know what is going on in your nervous system and body. Second, we need to understand why your symptoms are there and to see if Chiropractic and Anttz Family Chiropractic health are the right fit for you.
 
 ## How often do I need a review?
 
@@ -29,11 +29,11 @@ We do a review around every 12th visit to measure improvements and to see if we 
 
 Chiropractors treat patients in many different settings, including private, group or multi- disciplinary clinics and practices.
 
-Here at Anttz Family chiropractic we opt for an open-plan space where several practice members are treated at the same time.
+Here at Anttz Family Chiropractic we opt for an open-plan space where several practice members are treated at the same time.
 
 ## Will the adjustment hurt?
 
-Treatment is usually painless unless an area is swollen. If this is the case, your chiropractor will alter the care that you receive. You may also hear a clicking or popping noise. This is perfectly normal and commonplace with chiropractic treatment. It is just a gas bubble bursting.
+Treatment is usually painless unless an area is swollen. If this is the case, your chiropractor will alter the care that you receive. You may also hear a clicking or popping noise. This is perfectly normal and commonplace with Chiropractic treatment. It is just a gas bubble bursting.
 
 Some patients also report temporary aches and pains during and after care. Again, this is nothing to worry about and is perfectly normal.
 
@@ -41,7 +41,7 @@ If you are uncomfortable with the techniques being used during your treatment, y
 
 ## How do Chiropractic techniques differ?
 
-There are many different chiropractic techniques. Some chiropractors perform joint manipulation using only their hands while others use various instruments. Additionally, some chiropractors treat using quick but firm manipulation while others have a lighter touch. Chiropractic treatment is largely driven by the individual preferences of both the chiropractor
+There are many different Chiropractic techniques. Some chiropractors perform joint manipulation using only their hands while others use various instruments. Additionally, some chiropractors treat using quick but firm manipulation while others have a lighter touch. Chiropractic treatment is largely driven by the individual preferences of both the chiropractor
 
 and the patient, but adjustment choices are made for clinical reasons.
 

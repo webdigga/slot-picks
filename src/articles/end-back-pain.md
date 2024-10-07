@@ -2,7 +2,7 @@
 title: The 9 Quick Easy ways to End Back Pain
 seoTitle: The 9 Quick Easy ways to End Back Pain | Anttz Chiropractic
 description: Access our comprehensive report on ending back pain with
-  chiropractic care, featuring techniques, benefits, and patient success stories
+  Chiropractic care, featuring techniques, benefits, and patient success stories
   for lasting relief.
 author: David White
 date: 2024-10-03T15:57:00.000Z

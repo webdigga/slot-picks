@@ -1,7 +1,7 @@
 ---
 title: Somato-Respiratory Integration (SRI)
 seoTitle: Somato-Respiratory Integration (SRI) | Anttz Chiropractic
-description: Explore SRI (Somato-Respiratory Integration), a chiropractic
+description: Explore SRI (Somato-Respiratory Integration), a Chiropractic
   approach that enhances awareness and promotes healing through breath and body
   connection.
 author: David White

@@ -1,7 +1,7 @@
 ---
 title: 5 Top Tips to Help Manage Back Pain and Pelvic Pain during Pregnancy
 seoTitle: Top 5 Tips for Back & Pelvic Pain | Anttz Chiropractic
-description: Read our report on chiropractic care during pregnancy, highlighting
+description: Read our report on Chiropractic care during pregnancy, highlighting
   benefits, safety, and techniques to support comfort and wellness for expectant
   mothers.
 author: David White

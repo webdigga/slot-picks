@@ -1,7 +1,7 @@
 ---
 title: Chiropractic Spinal Screening
 seoTitle: Chiropractic Spinal Screening | Anttz Chiropractic
-description: Learn how chiropractic spinal screenings can detect misalignments
+description: Learn how Chiropractic spinal screenings can detect misalignments
   early, helping to prevent pain, improve posture, and support overall spinal
   health.
 author: David White

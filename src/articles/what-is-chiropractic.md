@@ -1,7 +1,7 @@
 ---
 title: What is Chiropractic Treatment
 seoTitle: What is Chiropractic Treatment | Anttz Chiropractic
-description: Learn about chiropractic care, a hands-on approach to diagnosing
+description: Learn about Chiropractic care, a hands-on approach to diagnosing
   and treating spine and musculoskeletal issues for pain relief and improved
   mobility.
 author: David White
@@ -18,15 +18,15 @@ The five components of the vertebral subluxation complex explain some of the imp
 
 ## Subluxation and Chiropractic Treatment
 
-Chiropractic is different from medicine in many ways. Most profoundly, chiropractic care does NOT treat disease, conditions or symptoms. That's the practice of medicine.
+Chiropractic is different from medicine in many ways. Most profoundly, Chiropractic care does NOT treat disease, conditions or symptoms. That's the practice of medicine.
 
-Instead, the intent of chiropractic care is to revive an individual's self-healing ability by locating and reducing vertebral subluxation. This unique approach to better health has been helping millions of people for more than a century, without the use of drugs or surgery.
+Instead, the intent of Chiropractic care is to revive an individual's self-healing ability by locating and reducing vertebral subluxation. This unique approach to better health has been helping millions of people for more than a century, without the use of drugs or surgery.
 
 ## Chiropractic Care
 
 **Our chiropractors** focus on your nervous system. This system controls everything in the body. When there is no interference with the nervous system, you will work at your highest level. Though most people come in for problems such as pain, we improve your nervous system so that your symptoms can clear up.
 
-The benefits you can experience from chiropractic include more energy, improved balance, better sleep, increased concentration and reduced stiffness, amongst others. The sky's the limit when your body has a better overall function!
+The benefits you can experience from Chiropractic include more energy, improved balance, better sleep, increased concentration and reduced stiffness, amongst others. The sky's the limit when your body has a better overall function!
 
 ## Our Holistic Philosophy
 
@@ -34,7 +34,7 @@ There are three phases of care in our clinic. The first is called relief care, w
 
 ## About
 
-The third largest healthcare profession in the world- Chiropractic is a safe and effective affordable approach to treatment that utilises the body's innate ability to heal itself. A primary approach of chiropractic care includes specific spinal adjustments that have a direct impact on the nervous system, improving overall health and performance.
+The third largest healthcare profession in the world- Chiropractic is a safe and effective affordable approach to treatment that utilises the body's innate ability to heal itself. A primary approach of Chiropractic care includes specific spinal adjustments that have a direct impact on the nervous system, improving overall health and performance.
 
 The causes of spinal subluxations include accidents, injuries, as well as common daily tasks such as sitting at a desk or repetitive bending and lifting with poor posture. Stress and chemical stress is also a cause or contributing factor.
 
@@ -46,7 +46,7 @@ Across the US and Canada, Chiropractors are commonly established in hospitals. S
 
 Chiropractors must complete a five-year university degree and as such, are primary health care providers. This means that like your general practitioner (G.P.) they have comprehensive knowledge of all systems of the body and diagnostic procedures. This enables your chiropractor to thoroughly evaluate a patient and address disorders relating to the spine and nervous system. This includes back pain, neck pain, headaches, migraines, whiplash, concussion, dizziness, vertigo to name a few.
 
-Dr DD Palmer began the chiropractic profession in 1895 when he delivered the first chiropractic adjustment to a man who had been deaf for 17 years after a back injury. The man's hearing was restored and chiropractic was born.
+Dr DD Palmer began the Chiropractic profession in 1895 when he delivered the first Chiropractic adjustment to a man who had been deaf for 17 years after a back injury. The man's hearing was restored and Chiropractic was born.
 
 How did correcting a man's back problem correct his hearing? To answer that question, let's take a brief look at how the body works.
 
@@ -62,21 +62,21 @@ Sometimes subluxation might be caused by poor posture, bad sleeping habits, slip
 
 Chiropractors are the only doctors trained to find and correct subluxation. By correcting subluxations and removing nerve interference, chiropractors give your body a better chance at normal health and function.
 
-Chiropractic treatments, called spinal adjustments, are gentle, comfortable and highly effective. People of all ages can receive chiropractic care to get healthy and stay healthy. Chiropractors are highly educated, caring professionals sensitive to the natural health care needs of you and your family.
+Chiropractic treatments, called spinal adjustments, are gentle, comfortable and highly effective. People of all ages can receive Chiropractic care to get healthy and stay healthy. Chiropractors are highly educated, caring professionals sensitive to the natural health care needs of you and your family.
 
 ## What Is Subluxation?
 
-Subluxation is probably a term you've never heard before, especially if you're new to chiropractic.
+Subluxation is probably a term you've never heard before, especially if you're new to Chiropractic.
 
 The most fundamental definition of a subluxation, or more accurately a "vertebral" subluxation, is a spinal bone that is partially dislocated or out of alignment in relation to the spinal bone above or below it.
 
-Chiropractors use the term subluxation a bit differently than medical practitioners. Not only do chiropractors recognize more subtle nuances of dislocation, but they also acknowledge the neurological impact that is associated with the loss of normal motion or position of spinal bones. Here's a more complete subluxation definition.
+Chiropractors use the term subluxation a bit differently than medical practitioners. Not only do chiropractors recognise more subtle nuances of dislocation, but they also acknowledge the neurological impact that is associated with the loss of normal motion or position of spinal bones. Here's a more complete subluxation definition.
 
 ## Subluxation: A Response to Stress
 
 What causes spinal bones to become misaligned and lose their normal position?
 
-Chiropractors recognize three general types of stress that cause subluxation.
+Chiropractors recognise three general types of stress that cause subluxation.
 
 **Physical stress** is the most easily understood. Whiplash injuries due to a car accident are common occurrences. The whipping action of the head can produce profound changes to the neck and its graceful forward curve.
 
