@@ -12,6 +12,7 @@ title: Contact
 {% import "./_includes/components/why-anttz.html" as whyAnttz with context %}
 {% import "./_includes/components/testimonials.html" as testimonials with context %}
 {% import "./_includes/components/map.html" as map with context %}
+{% import "./_includes/components/location-details.html" as locationDetails with context %}
 
 <div class="">
   
@@ -24,13 +25,15 @@ title: Contact
   </section>
 
   <section>
-    
-    {{ map.map() }}
-  
+    {{ locationDetails.locationDetails() }}
+  </section>
+
+  <section>
+    {{ map.map(classes='border-t-4 border-t-[color:var(--dark-purple)]') }}
   </section>
   
   <section>
-    {{ whyAnttz.whyAnttzComponent() }}  
+    {{ whyAnttz.whyAnttzComponent(classes='border-t-4 border-t-[color:var(--dark-purple)] border-solid') }}  
   </section>
   
   <section class="bg-[color:var(--white)]">    

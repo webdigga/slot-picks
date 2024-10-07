@@ -1,5 +1,5 @@
-{% macro whyAnttzComponent() %}
-  <div class="relative bg-[color:var(--dark-purple)] overflow-hidden border-b-4 border-b-[color:var(--dark-purple)] border-solid">
+{% macro whyAnttzComponent(classes) %}
+  <div class="relative bg-[color:var(--dark-purple)] overflow-hidden border-b-4 border-b-[color:var(--dark-purple)] border-solid {{ classes | safe }}">
     <div class="max-w-7xl mx-auto">
       <div class="relative z-10 pb-8 bg-[color:var(--dark-purple)] sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
         <svg
