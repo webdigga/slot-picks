@@ -13,6 +13,7 @@ title: Comprehensive Care for Your Spine & Health | Anttz Family Chiropractic
 {% import "./_includes/components/why-anttz.html" as whyAnttz with context %}
 {% import "./_includes/components/testimonials.html" as testimonials with context %}
 {% import "./_includes/components/map.html" as map with context %}
+{% import "./_includes/components/services.html" as services with context %}
 
 <div class="bg-[color:var(--light-blue)]">
 
@@ -30,6 +31,10 @@ title: Comprehensive Care for Your Spine & Health | Anttz Family Chiropractic
 
   <section data-test="moreButtonLocation">  
     {{ map.map() }}
+  </section>
+
+  <section>
+    {{ services.servicesFeature() }}
   </section>
   
   <section data-test="moreButtonLocation">

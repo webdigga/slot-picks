@@ -1,0 +1,13 @@
+title: Services
+subTitle: Tailored Chiropractic Solutions for Every Need
+introText: At Anttz Chiropractic, we offer a range of personalised Chiropractic services designed to address your unique needs. Whether you're seeking relief from chronic pain, recovering from an injury, or looking to enhance your overall wellness, our expert team is here to help you every step of the way.
+serviceItems:
+  - title: Network Spinal
+    introText: Network Spinal (NS) is a nervous system focused Chiropractic technique that works directly with the parasympathetic nervous system.
+    destination: /what-is-network-spinal-chiropractic/
+  - title: Spinal Screening
+    introText: Spinal screenings are an essential part of maintaining a healthy spine and overall well-being.
+    destination: /chiropractic-spinal-screening/
+  - title: SRI
+    introText: Somato Respiratory Integration, also known as SRI, is a powerful tool that you can use to recenter your heart, mind, and soul.
+    destination: /somato-respiratory-integration-sri/
