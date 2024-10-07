@@ -195,4 +195,29 @@ collections:
         file: "src/_data/offices.yaml"
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Intro text, name: introText, widget: text } 
+          - { label: Intro text, name: introText, widget: text }
+      - label: "Services"
+        name: "services"
+        file: "src/_data/services.yaml"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Sub Title, name: subTitle, widget: string }
+          - { label: Intro Text, name: introText, widget: string }
+          - label: Service Items
+            name: serviceItems
+            widget: list
+            collapsed: false
+            allow_add: true
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Intro Text, name: introText, widget: text }
+              - { label: Destination, name: destination, widget: string }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                choose_url: true
+                required: false
+                media_library:
+                  config:
+                    multiple: false
+              - { label: Image alternative text, name: imageAlt, widget: string, required: false }
