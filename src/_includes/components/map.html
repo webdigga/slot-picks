@@ -1,10 +1,12 @@
-{% macro map() %}
+{% macro map(contactLink) %}
   <div
     class="relative w-full overflow-hidden">
 
     <h2 class="z-10 absolute top-2 xs:top-6 left-4 sm:left-5 md:left-6 lg:left-auto lg:right-[10%] bg-[color:var(--dark-purple)] py-2 px-4">Where you can find us</h2>
 
-    <p class="z-10 text-xs absolute top-16 xs:top-20 sm:text-base sm:top-24 left-4 sm:left-5 md:left-6 lg:left-auto lg:right-[10%] bg-[color:var(--dark-purple)] py-2 px-4">To find out more, <a href="/contact/" class="anchor-white">visit the contact page here</a></p>
+    {% if contactLink %}
+      {{ contactLink | safe }}
+    {% endif %}
 
     <picture>
       <source

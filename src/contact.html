@@ -11,6 +11,7 @@ title: Contact
 {% import "./_includes/partials/navbar.html" as navBar with context %}
 {% import "./_includes/components/why-anttz.html" as whyAnttz with context %}
 {% import "./_includes/components/testimonials.html" as testimonials with context %}
+{% import "./_includes/components/map.html" as map with context %}
 
 <div class="">
   
@@ -20,6 +21,12 @@ title: Contact
 
   <section class="container container--large">
     {% include "./_includes/components/contact-form.html" %}
+  </section>
+
+  <section>
+    
+    {{ map.map() }}
+  
   </section>
   
   <section>
