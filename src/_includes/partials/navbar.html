@@ -40,7 +40,7 @@
   
           {% if navigation.firstLevelItems %}
     
-            <ul class="max-w-[250px] lg:max-w-full pt-3 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center">
+            <ul class="max-w-[280px] lg:max-w-full pt-3 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center">
               {% for item in navigation.firstLevelItems %}
                 <li class="nav__item lg:relative group text-left">
                   
@@ -73,7 +73,7 @@
                   {% else %}
 
                     <span
-                      class="mt-4 mb-2 lg:mb-0 lg:mt-0 lg:flex lg:items-center dark-copy font-medium inline-block lg:py-3 lg:px-4 hover:underline-offset-4 hover:decoration-1 hover:underline hover:decoration-[color:var(--dark-purple)] {% if item.url == page.url %}underline-offset-4 decoration-2 underline decoration-[color:var(--dark-purple)] {% else %} no-underline {% endif %}">
+                      class="mt-4 mb-2 lg:mb-0 lg:mt-0 lg:flex lg:items-center dark-copy font-medium inline-block lg:py-3 lg:px-4 lg:hover:underline-offset-4 lg:hover:decoration-1 lg:hover:underline lg:hover:decoration-[color:var(--dark-purple)] {% if item.url == page.url %}underline-offset-4 decoration-2 underline decoration-[color:var(--dark-purple)] {% else %} no-underline {% endif %}">
                       <span class="lg:pr-1">{{ item.text }}</span> 
                       {% if item.secondLevelItems %}
                         <svg
@@ -98,31 +98,32 @@
 
 
                   {% if item.secondLevelItems %}
-                    <ul class="flex flex-col items-left lg:items-center dark-copy lg:absolute lg:hidden lg:z-10 lg:bg-[color:var(--white)] lg:group-hover:block lg:text-left lg:px-4 lg:w-40 lg:border lg:border-solid lg:border-[color:var(--very-light-gray)]">
+                    <ul class="ml-3 lg:ml-0 flex flex-col items-left lg:items-center dark-copy lg:absolute lg:hidden lg:z-10 lg:bg-[color:var(--white)] lg:group-hover:block lg:text-left lg:px-4 lg:w-40 lg:border lg:border-solid lg:border-[color:var(--very-light-gray)]">
                     
                       {% for subItem in item.secondLevelItems %}
                         <li class="lg:flex items-center inline-flex text-left">                        
                           <a
                             href="{{ subItem.url }}"
-                            class="pr-1 lg:pr-0 lg:w-full text-sm py-2 lg:py-4 inline-block lg:hover:underline-offset-4 lg:hover:decoration-1 lg:hover:underline lg:hover:decoration-[color:var(--dark-purple)] {% if subItem.url == page.url %}underline-offset-4 decoration-2 underline decoration-[color:var(--dark-purple)] {% else %} no-underline {% endif %}">
+                            class="pr-1 lg:pr-0 lg:w-full text-sm py-2 lg:py-4 inline-flex items-center lg:hover:underline-offset-4 lg:hover:decoration-1 lg:hover:underline lg:hover:decoration-[color:var(--dark-purple)] {% if subItem.url == page.url %}underline-offset-4 decoration-2 underline decoration-[color:var(--dark-purple)] {% else %} no-underline {% endif %}">
                             {{ subItem.text }}
-                          </a>
 
-                          <svg
-                            width="16px"
-                            height="16px"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="1.5"
-                            stroke="currentColor"
-                            class="size-4 lg:hidden">
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                            />
+                            <svg
+                              width="16px"
+                              height="16px"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="size-4 lg:hidden ml-1">
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                              />
                           </svg>
+                          </a>
+                          
                         </li>
                       {% endfor %}
                   {% endif %}                

@@ -27,14 +27,8 @@ title: Comprehensive Care for Your Spine & Health | Anttz Family Chiropractic
   
     {{ moreButton.button('bg-[color:var(--dark-purple)]', 'border-[color:var(--dark-purple)]', 'text-[color:var(--white)]') }}
   </section>
-  
-  <section data-test="moreButtonLocation">
-    
-    {{ whyAnttz.whyAnttzComponent() }}
-  
-  </section>
 
-  <section>
+  <section data-test="moreButtonLocation">
 
     {% set contactLink %}
       <p class="z-10 text-xs absolute top-16 xs:top-20 sm:text-base sm:top-24 left-4 sm:left-5 md:left-6 lg:left-auto lg:right-[10%] bg-[color:var(--dark-purple)] py-2 px-4">To find out more, <a href="/contact/" class="anchor-white">visit the contact page here</a></p>
@@ -43,6 +37,14 @@ title: Comprehensive Care for Your Spine & Health | Anttz Family Chiropractic
     {{ map.map(contactLink=contactLink, classes='border-b-4 border-b-[color:var(--dark-purple)]') }}
   
   </section>
+  
+  <section data-test="moreButtonLocation">
+    
+    {{ whyAnttz.whyAnttzComponent() }}
+  
+  </section>
+
+  
   
   <section class="bg-[color:var(--white)]">
     

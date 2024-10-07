@@ -10,19 +10,27 @@
         {{ antLogo.logo(width='100px', height='54px', maxWidthClasses='max-w-28') }}
 
         {% if settings.siteName %}
-          <p class="py-1">
+          <p class="py-1 text-center lg:text-left">
             <small class="subtle-text-on-light-background">{{ settings.siteName }}</small>
           </p>
         {% endif %}
 
+        {% if settings.address %}
+          <p class="py-1 text-center lg:text-left">
+            <small class="subtle-text-on-light-background">        
+              {{ settings.address | safe }}
+            </small>
+          </p>
+        {% endif %}
+
         {% if settings.companyNumber %}
-          <p class="py-1">
+          <p class="py-1 text-center lg:text-left">
             <small class="subtle-text-on-light-background">Company number: {{ settings.companyNumber }}</small>
           </p>
         {% endif %}
 
         {% if settings.email %}
-          <p class="py-1">
+          <p class="py-1 text-center lg:text-left">
             <small class="subtle-text-on-light-background">
               <a href="mailto:{{ settings.email }}" class="py-2 break-all">Email me @ {{ settings.email }}</a>
             </small>
@@ -30,7 +38,7 @@
         {% endif %}
 
         {% if settings.phoneNumber %}
-          <p class="py-1 mb-2">
+          <p class="py-1 mb-2 text-center lg:text-left">
             <small class="subtle-text-on-light-background">        
               <a href="tel:{{ settings.phoneNumber }}" class="py-2">Call me on {{ settings.phoneNumber }}</a>
             </small>
