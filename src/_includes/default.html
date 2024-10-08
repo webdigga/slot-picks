@@ -32,7 +32,7 @@
     <meta name="twitter:description" content="{{ description }}">
 
     {% if type === 'home' %}
-      <link rel="canonical" href="{{ env.site }}/" />
+      
 
       <script type="application/ld+json">
         {
@@ -47,7 +47,7 @@
     {% endif %} 
 
     {% if type === 'contact' %}
-      <link rel="canonical" href="{{ env.site }}/contact/" />
+      
 
       <script type="application/ld+json">
         {
@@ -64,7 +64,7 @@
     {% endif %}
 
     {% if type === 'article' %}
-      <link rel="canonical" href="{{ env.site }}/{{ title | slugify }}/" />
+      
 
       <script type="application/ld+json">
         {
@@ -88,6 +88,21 @@
         }
       </script>
     {% endif %}
+
+    {% if type === 'landing' %}
+      
+
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "{{ title }}",
+          "description": "{{ description }}",
+          "image": "android-chrome-512x512.png",
+          "url": "{{ env.site }}"
+        }
+      </script>
+    {% endif %} 
 
     {% set css %}
       {% include "static/css/tailwind.css" %}

@@ -34,8 +34,8 @@ collections:
         label: "Description",
         name: "description",
         widget: "string",
-        hint: "*Used in search engines (between 50 and 160 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
-        pattern: ['^.{50,160}$', "Must be between 50 and 160 characters"]
+        hint: "*Used in search engines (between 50 and 155 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
+        pattern: ['^.{50,155}$', "Must be between 50 and 155 characters"]
       }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
@@ -78,8 +78,8 @@ collections:
         label: "Description",
         name: "description",
         widget: "string",
-        hint: "*Used in search engines (between 50 and 160 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
-        pattern: ['^.{50,160}$', "Must be between 50 and 160 characters"]
+        hint: "*Used in search engines (between 50 and 155 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
+        pattern: ['^.{50,155}$', "Must be between 50 and 155 characters"]
       }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }

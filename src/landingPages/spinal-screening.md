@@ -1,9 +1,7 @@
 ---
 title: Sign up for a Spinal Screening
 seoTitle: Sign up for a Spinal Screening | Anttz Chiropractic
-description: Sign up for a Chiropractic spinal screening to improve posture,
-  relieve back pain, and boost wellness. Schedule your screening with Anttz
-  Chiropractic today!
+description: Sign up for a Chiropractic spinal screening to improve posture, relieve back pain, and boost wellness. Book your screening with Anttz Chiropractic today!
 author: David White
 date: 2024-11-05T17:13:10.382Z
 signUpText: Sign Up For Spinal Screening
