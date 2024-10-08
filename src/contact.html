@@ -3,9 +3,9 @@ layout: default
 path: contact
 type: contact
 ogType: website
-description: Get in touch with our Chiropractic clinic for expert care, personalised treatments, and pain relief solutions. Contact us today to book an appointment!
-seoTitle: Contact | Anttz Family Chiropractic
-title: Contact
+eleventyComputed:
+  description: "{{ contact.description }}"
+  seoTitle: "{{ contact.seoTitle }}"
 ---
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
@@ -13,6 +13,7 @@ title: Contact
 {% import "./_includes/components/testimonials.html" as testimonials with context %}
 {% import "./_includes/components/map.html" as map with context %}
 {% import "./_includes/components/location-details.html" as locationDetails with context %}
+{% import "./_includes/components/contact-form.html" as contactForm with context %}
 
 <div class="">
   
@@ -21,7 +22,7 @@ title: Contact
   </div>
 
   <section class="container container--large">
-    {% include "./_includes/components/contact-form.html" %}
+    {{ contactForm.contactForm(title=contact.title) }}
   </section>
 
   <section>
