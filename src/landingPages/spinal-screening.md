@@ -6,6 +6,7 @@ author: David White
 date: 2024-11-05T17:13:10.382Z
 signUpText: Sign Up For Spinal Screening
 buttonText: Sign up
+formImageTitle: Spinal Screening
 formImage: /_includes/static/img/spinal-screening.webp
 imageAlt: Woman having Spinal Screening
 ---

@@ -13,14 +13,14 @@ layout: default
 
 <section class="container">
 
-  <article class="my-6 flex flex-col md:block prose max-w-5xl mx-auto">
+  <article class="my-6 flex flex-col md:block prose max-w-5xl mx-auto prose-img:mt-0">
 
     <h1 class="dark-copy">{{ title }}</h1>
 
     {{ content | safe }}
 
-    <section>
-      {{ landingPageForm.form(title='Spinal Screening') }}
+    <section class="mt-10">
+      {{ landingPageForm.form(title=formImageTitle) }}
     </section>
 
   </article>

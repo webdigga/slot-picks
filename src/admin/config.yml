@@ -91,6 +91,7 @@ collections:
         hint: "*Text that appears at the top of the form*",
       }
       - { label: "Button text", name: "buttonText", widget: "string" }
+      - { label: "Form Image Title", name: "formImageTitle", widget: "string" }
       - label: "Form image"
         name: "formImage"
         widget: "image"
