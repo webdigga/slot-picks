@@ -19,6 +19,7 @@
 @font-face {
   font-family: "Roboto";
   src: url("/_includes/static/fonts/Roboto-Regular.ttf");
+  font-display: swap;
 }
 
 body {
