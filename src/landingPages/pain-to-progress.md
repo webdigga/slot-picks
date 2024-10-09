@@ -9,7 +9,7 @@ date: 2024-11-05T17:13:10.382Z
 signUpText: Sign Up For Pain to Progress Report
 buttonText: Free report
 formImageTitle: Pain to Progress
-formImage: /_includes/static/img/spinal-screening.webp
-imageAlt: Woman having Spinal Screening
+formImage: /_includes/static/img/pain-to-progress-form.webp
+imageAlt: Woman with neck and back pain
 ---
 At Anttz Chiropractic, we are committed to helping you move forward on your wellness journey. Our Pain to Progress report provides valuable insights and practical steps to overcome discomfort and enhance your overall well-being. Fill out the form below to receive your free copy and start making progress today!
