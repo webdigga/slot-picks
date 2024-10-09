@@ -1,9 +1,9 @@
 {% macro servicesFeature(classes) %}
   <section
     id="features"
-    class="relative block px-6 py-10 md:py-20 md:px-10 border-t border-b border-neutral-90 bg-white">
+    class="block px-6 py-10 md:py-20 md:px-10 border-t border-b border-neutral-90 bg-white">
 
-    <div class="relative mx-auto max-w-5xl text-center">
+    <div class="mx-auto max-w-5xl text-center">
       <span class="dark-copy my-3 flex items-center justify-center font-medium uppercase tracking-wider">{{ services.title | safe }}</span>
       <h2 class="block w-full bg-clip-text font-bold text-3xl sm:text-4xl dark-copy">{{ services.subTitle | safe }}</h2>
       <p class="mx-auto my-4 w-full max-w-xl text-center font-medium leading-relaxed tracking-wide dark-copy">
@@ -11,7 +11,7 @@
       </p>
     </div>
 
-    <div class="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="mx-auto max-w-7xl grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3">
         
       {% if services.serviceItems %}        
   

@@ -24,14 +24,9 @@
 body {
   @apply text-white;
 
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
-}
-
-h1, h2, h3, h4 {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
 }
 
 h1 {
