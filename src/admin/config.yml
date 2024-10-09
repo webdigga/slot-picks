@@ -267,5 +267,5 @@ collections:
                 media_library:
                   config:
                     multiple: false
+                hint: "*Should be 1:1 ratio. Renders at 46px x 46px*"
               - { label: Image alternative text, name: imageAlt, widget: string, required: false }
-              hint: "*Should be 1:1 ratio. Renders at 46px x 46px*",
