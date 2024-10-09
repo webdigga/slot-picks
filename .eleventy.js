@@ -73,7 +73,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/_includes/static/img");
 
   // Copy Font to /_site
-  eleventyConfig.addPassthroughCopy("./src/_includes/static/css/font.ttf");
+  eleventyConfig.addPassthroughCopy("./src/_includes/static/fonts/Roboto-Regular.ttf");
 
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
