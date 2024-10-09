@@ -13,16 +13,16 @@ firstLevelItems:
   - text: Services
     url: /services/
     secondLevelItems:
-      - text: What is Chiropractic
-        url: /what-is-chiropractic-treatment/
       - text: What is Network Spinal Chiropractic
         url: /what-is-network-spinal-chiropractic/
+      - text: What is Chiropractic
+        url: /what-is-chiropractic-treatment/
       - text: Pregnancy and Paediatric
         url: /pregnancy-and-paediatric-chiropractic/
-      - text: Spinal screening
-        url: /chiropractic-spinal-screening/
       - text: SRI
         url: /somato-respiratory-integration-sri/
+      - text: Spinal screening
+        url: /chiropractic-spinal-screening/
   - text: Free Reports
     url: /free-reports/
     secondLevelItems:
