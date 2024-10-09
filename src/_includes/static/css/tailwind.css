@@ -16,26 +16,25 @@
   --dark-copy: #333333;
 }
 
-@font-face {
-  font-family: "Roboto";
-  src: url("/_includes/static/fonts/Roboto-Regular.ttf");
-  font-display: swap;
-}
-
 body {
   @apply text-white;
 
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 
+h1, h2, h3, h4 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
 h1 {
-  @apply text-3xl sm:text-4xl tracking-tight lg:text-5xl mb-5;
+  @apply text-3xl sm:text-4xl tracking-tighter lg:text-5xl mb-5;
 }
 
 h1, h2, h3, h4 {
-  @apply tracking-tight;
+  @apply tracking-tighter;
 
   font-weight: 700;
 }
