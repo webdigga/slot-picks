@@ -20,7 +20,12 @@
             <div class="rounded-md border border-[color:var(--very-light-gray)] p-8 text-center h-full">
               {% if item.image %}
                 <div class="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border">
-                  <img src="{{ item.image | safe }}" alt="{{ item.imageAlt | safe }}" />
+                  <img
+                    width="46px"
+                    height="46px"
+                    src="{{ item.image | safe }}"
+                    alt="{{ item.imageAlt | safe }}"
+                  />
                 </div>
               {% endif %}
 
