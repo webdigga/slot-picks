@@ -34,3 +34,18 @@ firstLevelItems:
         url: /get-your-free-headaches-report/
       - text: Pain to Progress
         url: /get-your-free-pain-to-progress-report/
+  - text: Resources
+    url: /resources/
+    secondLevelItems:
+      - text: Face Cloths
+        url: /fill-me-in/
+      - text: Newsletter
+        url: /fill-me-in/
+      - text: Videos
+        url: /fill-me-in/
+      - text: Demartini Process
+        url: /fill-me-in/
+      - text: Supplements
+        url: /fill-me-in/
+      - text: Events
+        url: /fill-me-in/
