@@ -12,4 +12,4 @@ formImageTitle: Headaches
 formImage: /_includes/static/img/headache-form.webp
 imageAlt: Girl with headache
 ---
-At Anttz Chiropractic, we know how debilitating frequent headaches can be. Our Headaches and Chiropractic Care report provides expert advice on identifying triggers and relieving headache pain through natural, non-invasive chiropractic solutions. Fill out the form below to receive your free copy and take the first step toward a clearer, pain-free life.
+At Anttz Chiropractic, we know how debilitating frequent headaches can be. Our Headaches and Chiropractic Care report provides expert advice on identifying triggers and relieving headache pain through natural, non-invasive Chiropractic solutions. Fill out the form below to receive your free copy and take the first step toward a clearer, pain-free life.

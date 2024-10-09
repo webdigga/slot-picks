@@ -269,3 +269,11 @@ collections:
                     multiple: false
                 hint: "*Should be 1:1 ratio. Renders at 46px x 46px*"
               - { label: Image alternative text, name: imageAlt, widget: string, required: false }
+      - label: "Banner"
+        name: "banner"
+        file: "src/_data/banner.yaml"
+        fields:
+          - { label: Offer Text Part 1, name: offerTextPart1, widget: string }
+          - { label: Offer Text Part 2, name: offerTextPart2, widget: string }
+          - { label: Anchor Text, name: anchorText, widget: string }
+          - { label: Anchor Destination, name: anchorDestination, widget: string }

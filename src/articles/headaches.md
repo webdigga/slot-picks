@@ -10,6 +10,7 @@ type: article
 tags:
   - article
   - report
+ignore: true
 ---
 1. ## Enhance your Stance
 

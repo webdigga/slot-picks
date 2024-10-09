@@ -10,6 +10,7 @@ type: article
 tags:
   - article
   - report
+ignore: true
 ---
 There are many ways to help yourself on a daily basis when you have back or pelvic pain during pregnancy. I am going to share with you my top tips in this report, to enable you to have a happy, healthy, and comfortable pregnancy. Combining these tips into your daily life will also hopefully allow the birthing process to be less painful, shorter in length and easier overall.
 

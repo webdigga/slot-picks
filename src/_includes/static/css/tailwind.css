@@ -14,6 +14,7 @@
   --light-gray: #9CA3AF;  
   --dark-gray: #5f6571;
   --dark-copy: #333333;
+  --banner-height: '40px';
 }
 
 body {
@@ -48,7 +49,7 @@ h3, h4 {
 }
 
 .menu-styles {
-  @apply absolute left-0 border-b border-b-white pb-6 shadow-xl top-12 xs:top-24 sm:top-20;
+  @apply absolute left-0 border-b border-b-white pb-6 shadow-[rgba(0,0,0,0.1)_0px_5px_0px_0px] top-[127px] xs:top-[95px] sm:top-[70px];
 }
 
 .dark-copy {

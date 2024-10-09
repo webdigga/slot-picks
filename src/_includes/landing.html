@@ -5,10 +5,12 @@ layout: default
 {% import "./partials/navbar.html" as navBar with context %}
 {% import "./components/testimonials.html" as testimonials with context %}
 {% import "./components/landing-page-form.html" as landingPageForm with context %}
+{% import "./components/banner.html" as banner with context %}
 
+{{ banner.bannerMacro() }}
 
-<div class="bg-[color:var(--lightest-gray)] border-b border-solid border-b-[color:var(--very-light-gray)]">
-  {{ navBar.nav('bg-[color:var(--lightest-gray)]') }}
+<div class="border-b border-solid border-b-[color:var(--very-light-gray)]">
+  {{ navBar.nav(bgColour='bg-white') }}
 </div> 
 
 <section class="container">
