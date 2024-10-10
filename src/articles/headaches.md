@@ -48,7 +48,7 @@ ignore: true
    There are many meditations and mindfulness apps to download nowadays, from a 2 min guided meditations for the newbie’s, to an hour long for the more experiences. Many successful business people and athletes have found the benefit of mediation and mindfulness.
 8. ## Done and Dusted - Now Get Adjusted!
 
-   Now all you should do is go and see your local chiropractor for a check-up! Chiropractors look at the alignment of the spine to make sure your nervous system is functioning optimally. There is no better way than to get a hands-on Chiropractic assessment to see what the underlying cause of those headaches is, and how to get rid of them.
+   Now all you should do is go and see your local Chiropractor for a check-up! Chiropractors look at the alignment of the spine to make sure your nervous system is functioning optimally. There is no better way than to get a hands-on Chiropractic assessment to see what the underlying cause of those headaches is, and how to get rid of them.
 
 - - -
 

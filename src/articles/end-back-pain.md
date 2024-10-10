@@ -55,9 +55,9 @@ ignore: true
    If you can absorb some of the shock by wearing nice soft, well fitted and cushioned shoes/trainers, then you could reduce your back pain by as much as 20-25%.
 9. ## Get Healthy with Chiropractic
 
-   There isn’t a faster way to END back pain than by going to see a chiropractor. Getting to see a hands-on specialist means you’re going to get very fast access to care that will soothe and relax those tight aching muscles, loosen and lubricate stuck and painful joints, and strengthen your body so you can go back to doing the things that you love.\
-   Combine all the “tips” in this special report with a trip to see a hands on private chiropractor and you will see a dramatic drop in the back pain and stiffness you are currently suffering from.\
-   Specialist chiropractors look to the root cause of the mobility and pain problems, providing natural solutions to produce the fastest results possible, without the use of drugs and surgery.
+   There isn’t a faster way to END back pain than by going to see a Chiropractor. Getting to see a hands-on specialist means you’re going to get very fast access to care that will soothe and relax those tight aching muscles, loosen and lubricate stuck and painful joints, and strengthen your body so you can go back to doing the things that you love.\
+   Combine all the “tips” in this special report with a trip to see a hands on private Chiropractor and you will see a dramatic drop in the back pain and stiffness you are currently suffering from.\
+   Specialist Chiropractors look to the root cause of the mobility and pain problems, providing natural solutions to produce the fastest results possible, without the use of drugs and surgery.
 
 ## Bonus Information
 

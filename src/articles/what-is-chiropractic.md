@@ -24,7 +24,7 @@ Instead, the intent of Chiropractic care is to revive an individual's self-heali
 
 ## Chiropractic Care
 
-**Our chiropractors** focus on your nervous system. This system controls everything in the body. When there is no interference with the nervous system, you will work at your highest level. Though most people come in for problems such as pain, we improve your nervous system so that your symptoms can clear up.
+**Our Chiropractors** focus on your nervous system. This system controls everything in the body. When there is no interference with the nervous system, you will work at your highest level. Though most people come in for problems such as pain, we improve your nervous system so that your symptoms can clear up.
 
 The benefits you can experience from Chiropractic include more energy, improved balance, better sleep, increased concentration and reduced stiffness, amongst others. The sky's the limit when your body has a better overall function!
 
@@ -38,13 +38,13 @@ The third largest healthcare profession in the world- Chiropractic is a safe and
 
 The causes of spinal subluxations include accidents, injuries, as well as common daily tasks such as sitting at a desk or repetitive bending and lifting with poor posture. Stress and chemical stress is also a cause or contributing factor.
 
-Subluxation has a detrimental effect on muscle and brain function and human health. Having your spine adjusted by a chiropractor will improve these.
+Subluxation has a detrimental effect on muscle and brain function and human health. Having your spine adjusted by a Chiropractor will improve these.
 
-Across the US and Canada, Chiropractors are commonly established in hospitals. Successful organisations such as Facebook and Google retain chiropractors on staff for the benefit of their employees.
+Across the US and Canada, Chiropractors are commonly established in hospitals. Successful organisations such as Facebook and Google retain Chiropractors on staff for the benefit of their employees.
 
 ## Benefits
 
-Chiropractors must complete a five-year university degree and as such, are primary health care providers. This means that like your general practitioner (G.P.) they have comprehensive knowledge of all systems of the body and diagnostic procedures. This enables your chiropractor to thoroughly evaluate a patient and address disorders relating to the spine and nervous system. This includes back pain, neck pain, headaches, migraines, whiplash, concussion, dizziness, vertigo to name a few.
+Chiropractors must complete a five-year university degree and as such, are primary health care providers. This means that like your general practitioner (G.P.) they have comprehensive knowledge of all systems of the body and diagnostic procedures. This enables your Chiropractor to thoroughly evaluate a patient and address disorders relating to the spine and nervous system. This includes back pain, neck pain, headaches, migraines, whiplash, concussion, dizziness, vertigo to name a few.
 
 Dr DD Palmer began the Chiropractic profession in 1895 when he delivered the first Chiropractic adjustment to a man who had been deaf for 17 years after a back injury. The man's hearing was restored and Chiropractic was born.
 
@@ -60,7 +60,7 @@ A subluxation is a complex of joint changes that comprises nervous system integr
 
 Sometimes subluxation might be caused by poor posture, bad sleeping habits, slips and falls, car accidents, or too much coffee or alcohol sports impacts, strenuous exercise, work injuries, childhood falls. Even the birth process can cause subluxation for both mother and child. Chemical stress - such as dehydration - may cause subluxation. Emotional tension may also lead to subluxation, a fact to which you may be able to relate if you've ever had a headache at the end of a busy day.
 
-Chiropractors are the only doctors trained to find and correct subluxation. By correcting subluxations and removing nerve interference, chiropractors give your body a better chance at normal health and function.
+Chiropractors are the only doctors trained to find and correct subluxation. By correcting subluxations and removing nerve interference, Chiropractors give your body a better chance at normal health and function.
 
 Chiropractic treatments, called spinal adjustments, are gentle, comfortable and highly effective. People of all ages can receive Chiropractic care to get healthy and stay healthy. Chiropractors are highly educated, caring professionals sensitive to the natural health care needs of you and your family.
 
@@ -70,7 +70,7 @@ Subluxation is probably a term you've never heard before, especially if you're n
 
 The most fundamental definition of a subluxation, or more accurately a "vertebral" subluxation, is a spinal bone that is partially dislocated or out of alignment in relation to the spinal bone above or below it.
 
-Chiropractors use the term subluxation a bit differently than medical practitioners. Not only do chiropractors recognise more subtle nuances of dislocation, but they also acknowledge the neurological impact that is associated with the loss of normal motion or position of spinal bones. Here's a more complete subluxation definition.
+Chiropractors use the term subluxation a bit differently than medical practitioners. Not only do Chiropractors recognise more subtle nuances of dislocation, but they also acknowledge the neurological impact that is associated with the loss of normal motion or position of spinal bones. Here's a more complete subluxation definition.
 
 ## Subluxation: A Response to Stress
 

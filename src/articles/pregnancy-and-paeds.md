@@ -44,7 +44,7 @@ Sometimes, if the child is the only client, parents will begin to ask questions 
 
 ## Helping Your Child Be Well
 
-It's important to know that chiropractors do not treat any certain conditions. Instead, we make sure the nervous system is working at its best, which allows the body to be in a state of health. Most people,
+It's important to know that Chiropractors do not treat any certain conditions. Instead, we make sure the nervous system is working at its best, which allows the body to be in a state of health. Most people,
 
 however, seek our help because they're experiencing certain concerns. Some of the conditions we see most commonly in children include
 

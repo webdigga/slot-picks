@@ -33,15 +33,15 @@ Here at Anttz Family Chiropractic we opt for an open-plan space where several pr
 
 ## Will the adjustment hurt?
 
-Treatment is usually painless unless an area is swollen. If this is the case, your chiropractor will alter the care that you receive. You may also hear a clicking or popping noise. This is perfectly normal and commonplace with Chiropractic treatment. It is just a gas bubble bursting.
+Treatment is usually painless unless an area is swollen. If this is the case, your Chiropractor will alter the care that you receive. You may also hear a clicking or popping noise. This is perfectly normal and commonplace with Chiropractic treatment. It is just a gas bubble bursting.
 
 Some patients also report temporary aches and pains during and after care. Again, this is nothing to worry about and is perfectly normal.
 
-If you are uncomfortable with the techniques being used during your treatment, you should talk to your chiropractor.
+If you are uncomfortable with the techniques being used during your treatment, you should talk to your Chiropractor.
 
 ## How do Chiropractic techniques differ?
 
-There are many different Chiropractic techniques. Some chiropractors perform joint manipulation using only their hands while others use various instruments. Additionally, some chiropractors treat using quick but firm manipulation while others have a lighter touch. Chiropractic treatment is largely driven by the individual preferences of both the chiropractor
+There are many different Chiropractic techniques. Some Chiropractors perform joint manipulation using only their hands while others use various instruments. Additionally, some Chiropractors treat using quick but firm manipulation while others have a lighter touch. Chiropractic treatment is largely driven by the individual preferences of both the Chiropractor
 
 and the patient, but adjustment choices are made for clinical reasons.
 

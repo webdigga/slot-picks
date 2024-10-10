@@ -1,7 +1,7 @@
 ---
 title: Get your Free Headaches Report
 seoTitle: Get your Free Headaches Report | Anttz Chiropractic
-description: Sign up for our report on headaches and chiropractic care,
+description: Sign up for our report on headaches and Chiropractic care,
   detailing effective treatments, prevention strategies, and experiences for
   lasting relief.
 author: David White

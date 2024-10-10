@@ -1,7 +1,7 @@
 ---
 title: Get your Free Pregnancy Report
 seoTitle: Get your Free Pregnancy Report | Anttz Chiropractic
-description: Sign up for our report on chiropractic care during pregnancy,
+description: Sign up for our report on Chiropractic care during pregnancy,
   highlighting benefits, safety, and techniques to support comfort and wellness
   for mothers.
 author: David White

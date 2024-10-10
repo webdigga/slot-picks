@@ -38,7 +38,7 @@ There are many ways to help yourself on a daily basis when you have back or pelv
 
    There are many manual therapies that can aid you during pregnancy. You don’t have to have pain to benefit from them either.
 
-   Chiropractic Care helps to restore proper function in the spine and pelvis, which will in turn reduce inflammation and pain as well as relax the surrounding musculature. Most chiropractors will work with the pregnant women to create the best environment possible for the baby to grow and develop, this involves gentle specific adjustments and muscle and ligament releases to the lower back and pelvic area.
+   Chiropractic Care helps to restore proper function in the spine and pelvis, which will in turn reduce inflammation and pain as well as relax the surrounding musculature. Most Chiropractors will work with the pregnant women to create the best environment possible for the baby to grow and develop, this involves gentle specific adjustments and muscle and ligament releases to the lower back and pelvic area.
 5. ## Sleep Support
 
    <img src="/_includes/static/img/pregnant-sleep-support.webp" alt="Pregnant woman sleeping" title="Pregnant woman sleeping" class="Left" width="600px" height="450px" loading="lazy"/>

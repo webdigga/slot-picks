@@ -26,7 +26,7 @@ The parasympathetic nervous system is responsible for the body’s rest and dige
 
 ## Holistic Assessment in Neurological Focused Chiropractic
 
-Neurological focused chiropractors are assessing the neuro-system holistically - bones, muscles, nerves, patterns, and how they interact with each other.
+Neurological focused Chiropractors are assessing the neuro-system holistically - bones, muscles, nerves, patterns, and how they interact with each other.
 
 ## Why Network Spinal is Unique and Gentle
 
