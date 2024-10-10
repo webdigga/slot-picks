@@ -107,6 +107,20 @@ img.Right {
   @apply m-0 md:float-right md:pl-12 md:pb-8 md:max-w-[50%];
 }
 
+.youtube-embed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.youtube-embed.Left {
+  @apply m-0 lg:float-left lg:pr-12 lg:pb-8;
+}
+
+.youtube-embed.Right {
+  @apply m-0 lg:float-right lg:pl-12 lg:pb-8;
+}
+
 /* Syntax Highlighting*/
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
