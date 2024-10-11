@@ -20,7 +20,9 @@ eleventyComputed:
 
   <section class="min-h-dvh flex flex-col border-b-4 border-b-[color:var(--dark-purple)] border-solid">
     
-    {{ banner.bannerMacro() }}
+    <section>
+      {{ banner.bannerMacro() }}
+    </section>
     
     <div>
       {{ navBar.nav(bgColour='bg-white') }}
