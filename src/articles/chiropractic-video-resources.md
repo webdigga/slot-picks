@@ -14,7 +14,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce justo neque, ultr
 
 <div class="youtube-embed Right">
   <h5 class="text-lg mb-4 font-bold">Chiropractic adjustment</h5>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/rtkv8Lm3luI" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/rtkv8Lm3luI" frameborder="0" allowfullscreen class="max-w-full"></iframe>
 </div>
 
 Aenean metus neque, tincidunt ut interdum id, sagittis ut velit. Vivamus congue ligula magna, in facilisis eros faucibus vitae. Fusce faucibus felis fringilla, rhoncus tellus nec, euismod nibh. Donec eu elit tellus. In ultricies est in aliquet cursus. Proin faucibus mauris vel eros mollis dictum vel non felis.
@@ -26,7 +26,7 @@ In in lacus eu nisl malesuada ultricies. Duis vel porttitor ipsum. Mauris euismo
 
 <div class="youtube-embed Left">
   <h5 class="text-lg mb-4 font-bold">Chiropractic adjustment</h5>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/tYGJZiW5Df8" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/tYGJZiW5Df8" frameborder="0" allowfullscreen class="max-w-full"></iframe>
 </div>
 
 Maecenas interdum arcu quis lobortis imperdiet. Quisque non imperdiet erat. Quisque a nibh tincidunt, fringilla justo nec, mattis dui. Fusce tincidunt nisl ac scelerisque porta. Donec id justo ut leo lobortis efficitur. Quisque quis elit quis augue vulputate volutpat. In sed quam nibh. Donec lobortis orci in urna lobortis, eu scelerisque odio dictum. Maecenas aliquet varius risus, vitae tempus nisl volutpat ut. Suspendisse potenti. Maecenas auctor turpis eget nulla imperdiet interdum. Donec pretium, enim eget elementum congue, enim neque viverra nisl, id efficitur purus dolor at velit. Praesent cursus ligula eget efficitur egestas. Integer massa leo, ornare non commodo eu, vestibulum vel massa. Suspendisse ac ligula a est finibus pulvinar vel ac diam. Nulla ac metus ac lacus tempus tincidunt.
@@ -36,7 +36,7 @@ In in lacus eu nisl malesuada ultricies. Duis vel porttitor ipsum. Mauris euismo
 
 <div class="youtube-embed ">
   <h5 class="text-lg mb-4 font-bold">Chiropractic adjustment</h5>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/s5iDJc9k9SA" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/s5iDJc9k9SA" frameborder="0" allowfullscreen class="max-w-full"></iframe>
 </div>
 
 Maecenas inrdum arcu quis lobortis imperdiet. Quisque non imperdiet erat. Quisque a nibh tincidunt, fringilla justo nec, mattis dui. Fusce tincidunt nisl ac scelerisque porta. Donec id justo ut leo lobortis efficitur. Quisque quis elit quis augue vulputate volutpat. In sed quam nibh. Donec lobortis orci in urna lobortis, eu scelerisque odio dictum. Maecenas aliquet varius risus, vitae tempus nisl volutpat ut. Suspendisse potenti. Maecenas auctor turpis eget nulla imperdiet interdum. Donec pretium, enim eget elementum congue, enim neque viverra nisl, id efficitur purus dolor at velit. Praesent cursus ligula eget efficitur egestas. Integer massa leo, ornare non commodo eu, vestibulum vel massa. Suspendisse ac ligula a est finibus pulvinar vel ac diam. Nulla ac metus ac lacus tempus tincidunt.

@@ -6,7 +6,8 @@
     "build": "rm -rf _site/ && cross-env NODE_ENV=production eleventy",
     "browsersync": "browser-sync start --server _site --files _site --port 8080 --no-notify --no-open",
     "test": "jest",
-    "prepare": "husky"
+    "prepare": "husky",
+    "cms": "npx netlify-cms-proxy-server"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",

@@ -45,7 +45,7 @@ CMS.registerEditorComponent({
     return `
 <div class="youtube-embed ${floatClass}">
   ${captionHtml}
-  <iframe width="560" height="315" src="${videoUrl}" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="${videoUrl}" frameborder="0" allowfullscreen class="max-w-full"></iframe>
 </div>`;
   },
   toPreview: function(obj) {
@@ -54,7 +54,7 @@ CMS.registerEditorComponent({
 
     return `
 ${captionMarkdown}
-<iframe width="560" height="315" src="${videoUrl}" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="${videoUrl}" frameborder="0" allowfullscreen class="max-w-full"></iframe>
     `;
   }
 });
