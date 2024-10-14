@@ -9,6 +9,7 @@ date: 2024-10-10T18:04:00.000Z
 type: article
 tags:
   - article
+ignore: true
 ---
 **Welcome to Clear Days Chiropractic Events!** Here, we believe in the power of community and education in promoting health and wellness. Join us for a variety of events designed to empower you with knowledge about Chiropractic care, wellness practices, and holistic living. From workshops and seminars to community gatherings, there’s something for everyone. Check our schedule regularly to stay updated and be a part of our journey toward better health together!
 

@@ -94,8 +94,8 @@ h3, h4 {
 /*
   Article image component
 */
-img.Center {
-  @apply m-0;
+img.Centre {
+  @apply mx-auto;
 }
 
 img.Left {
@@ -107,17 +107,15 @@ img.Right {
 }
 
 .youtube-embed {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @apply flex flex-col items-center mt-7
 }
 
 .youtube-embed.Left {
-  @apply m-0 lg:float-left lg:pr-12 lg:pb-8;
+  @apply m-0 lg:float-left lg:pr-12 lg:pb-8 mt-0;
 }
 
 .youtube-embed.Right {
-  @apply m-0 lg:float-right lg:pl-12 lg:pb-8;
+  @apply m-0 lg:float-right lg:pl-12 lg:pb-8 mt-0;
 }
 
 /* Syntax Highlighting*/

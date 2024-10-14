@@ -42,7 +42,7 @@ CMS.registerEditorComponent({
       label: 'Position',
       name: 'position',
       widget: 'select',
-      options: ['Left', 'Right']
+      options: ['Left', 'Right', 'Centre']
     },
     {
       label: 'Width',
