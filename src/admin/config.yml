@@ -244,6 +244,18 @@ collections:
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Intro text, name: introText, widget: text }
+          - { label: Monday Office Hours, name: mondayOfficeHours, widget: string }
+          - { label: Tuesday Office Hours, name: tuesdayOfficeHours, widget: string }
+          - { label: Wednesday Office Hours, name: wednesdayOfficeHours, widget: string }
+          - { label: Thursday Office Hours, name: thursdayOfficeHours, widget: string }
+          - { label: Friday Office Hours, name: fridayOfficeHours, widget: string }
+          - { label: Saturday Office Hours, name: saturdayOfficeHours, widget: string }
+          - { label: Monday Phone Hours, name: mondayPhoneHours, widget: string }
+          - { label: Tuesday Phone Hours, name: tuesdayPhoneHours, widget: string }
+          - { label: Wednesday Phone Hours, name: wednesdayPhoneHours, widget: string }
+          - { label: Thursday Phone Hours, name: thursdayPhoneHours, widget: string }
+          - { label: Friday Phone Hours, name: fridayPhoneHours, widget: string }
+          - { label: Saturday Phone Hours, name: saturdayPhoneHours, widget: string }
       - label: "Services"
         name: "services"
         file: "src/_data/services.yaml"
