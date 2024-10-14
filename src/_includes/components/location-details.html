@@ -30,11 +30,12 @@
             <dt class="mt-4 font-semibold text-white">Kingston Office</dt>
             <dd class="mt-2 leading-7 text-gray-400">
               <address>
-                Unit 11,<br>
-                Canbury Business Park,<br>
-                Elm Crescent,<br>
-                Kingston Upon Thames<br>
-                KT2 6HL
+                {{ settings.addressLineOne | safe }},<br>
+                {{ settings.addressLineTwo | safe }},<br>
+                {{ settings.addressLineThree | safe }},<br>
+                {{ settings.townCity | safe }},<br>
+                {{ settings.postCode | safe }},<br>
+                {{ settings.phoneNumber | safe }}
               </address>
             </dd>           
 

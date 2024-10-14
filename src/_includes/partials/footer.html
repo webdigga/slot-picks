@@ -15,13 +15,17 @@
           </p>
         {% endif %}
 
-        {% if settings.address %}
-          <p class="py-1 text-center lg:text-left">
-            <small class="subtle-text-on-light-background">        
-              {{ settings.address | safe }}
-            </small>
-          </p>
-        {% endif %}
+        
+        <p class="py-1 text-center lg:text-left">
+          <small class="subtle-text-on-light-background">        
+            {{ settings.addressLineOne | safe }},
+            {{ settings.addressLineTwo | safe }},
+            {{ settings.addressLineThree | safe }},
+            {{ settings.townCity | safe }},
+            {{ settings.postCode | safe }}
+          </small>
+        </p>
+        
 
         {% if settings.companyNumber %}
           <p class="py-1 text-center lg:text-left">

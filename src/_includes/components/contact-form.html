@@ -60,7 +60,13 @@
                       stroke-width="2"
                     />
                   </svg>
-                  <div class="dark-copy text-base font-normal leading-6 ml-5">{{ settings.address | safe }}</div>
+                  <div class="dark-copy text-base font-normal leading-6 ml-5">
+                    {{ settings.addressLineOne | safe }},
+                    {{ settings.addressLineTwo | safe }},
+                    {{ settings.addressLineThree | safe }},
+                    {{ settings.townCity | safe }},
+                    {{ settings.postCode | safe }}
+                  </div>
                 </a>
               </div>
             </div>
