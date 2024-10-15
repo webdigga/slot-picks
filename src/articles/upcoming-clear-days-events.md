@@ -1,7 +1,6 @@
 ---
 author: David White
 date: 2024-10-10T18:04:00.000Z
-ignore: true
 title: Upcoming Clear Days Events
 seoTitle: Upcoming Clear Days Events | Anntz Family Chiropractic
 description: Join us for upcoming events at Clear Days Chiropractic! Stay
