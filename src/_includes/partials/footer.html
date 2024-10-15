@@ -7,7 +7,7 @@
     <div class="grid grid-cols-2 lg:grid-cols-6 gap-3 md:gap-8 py-10 sm:max-w-sm sm:mx-auto md:max-w-md lg:max-w-full gap-y-8 sm:justify-items-center lg:justify-items-start">
       <div class="col-span-full lg:col-span-2 lg:mb-0 flex flex-col items-center lg:items-start">
 
-        {{ antLogo.logo(width='100px', height='54px', maxWidthClasses='max-w-28') }}
+        {{ antLogo.logo(width='100px', height='54px', maxWidthClasses='max-w-28', lazy='loading="lazy"') }}
 
         {% if settings.siteName %}
           <p class="py-1 text-center lg:text-left">

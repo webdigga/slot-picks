@@ -26,7 +26,7 @@
                     stroke-linejoin="round"
                   />
                 </svg>
-                <h5 class="dark-copy text-base font-normal leading-6 ml-5">{{ settings.phoneNumber | safe }}</h5>
+                <div class="dark-copy text-base font-normal leading-6 ml-5">{{ settings.phoneNumber | safe }}</div>
               </div>
               
               <a href="mailto:{{ settings.email | safe }}" class="flex items-center mb-6">
@@ -38,7 +38,7 @@
                     stroke-linecap="round"
                   />
                 </svg>
-                <h5 class="dark-copy text-base font-normal leading-6 ml-5">{{ settings.email | safe }}</h5>
+                <div class="dark-copy text-base font-normal leading-6 ml-5">{{ settings.email | safe }}</div>
               </a>
 
               <a
@@ -59,13 +59,13 @@
                     stroke-width="2"
                   />
                 </svg>
-                <h5 class="dark-copy text-base font-normal leading-6 ml-5">
+                <address class="not-italic dark-copy text-base font-normal leading-6 ml-5">
                   {{ settings.addressLineOne | safe }},
                   {{ settings.addressLineTwo | safe }},
                   {{ settings.addressLineThree | safe }},
                   {{ settings.townCity | safe }},
                   {{ settings.postCode | safe }}
-                </h5>
+                </address>
               </a>
             </div>
           </div>
