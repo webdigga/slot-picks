@@ -1,9 +1,8 @@
 ---
 title: Claim 50% off visits 1 & 2 offer
 seoTitle: Claim 50% off visits 1 & 2 offer | Anttz Chiropractic
-description: Sign up for our 'Pain to Progress' report on Chiropractic care,
-  showcasing how targeted treatments can transform pain into improved health and
-  mobility.
+description: Claim 50% off your first two chiropractic visits at Anttz
+  Chiropractic. Get expert care and start your journey to better health today!
 author: David White
 date: 2024-11-05T17:13:10.382Z
 signUpText: Fill out the form below
