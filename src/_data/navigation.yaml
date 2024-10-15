@@ -39,13 +39,13 @@ firstLevelItems:
     secondLevelItems:
       - text: Face Cloths
         url: /discover-premium-face-cloths/
-      # - text: Newsletter
-      #   url: /chiropractic-insights-newsletter/
+      - text: Newsletter
+        url: /chiropractic-insights-newsletter/
       - text: Videos
         url: /chiropractic-video-resources/
       - text: Demartini Process
         url: /the-demartini-healing-process/
       # - text: Supplements
       #   url: /essential-health-supplements/
-      # - text: Events
-      #   url: /upcoming-clear-days-events/
+      - text: Events
+        url: /upcoming-clear-days-events/
