@@ -1,11 +1,11 @@
 ---
-author: David White
-date: 2024-10-10T18:04:00.000Z
 title: Upcoming Clear Days Events
 seoTitle: Upcoming Clear Days Events | Anntz Family Chiropractic
 description: Join us for upcoming events at Clear Days Chiropractic! Stay
   informed about workshops, seminars, and community gatherings focused on
   wellness and health.
+author: David White
+date: 2024-10-10T18:04:00.000Z
 type: article
 tags:
   - article
@@ -57,4 +57,4 @@ The day involves:
 
 ***The cost for this webinar is £97***
 
-For more information please contact Dr Hannah - info@anttzchiro.com
+For more information please contact Dr Hannah - [info@anttzchiro.com](mailto:info@anttzchiro.com)
