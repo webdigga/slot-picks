@@ -49,7 +49,7 @@
           </p>
         {% endif %}
 
-        {# anchor.anchor(
+        {{ anchor.anchor(
             type='primary',
             anchorText='Book an appointment',
             destination='https://anttzchiro.neptune.practicehub.io/p/booking',
@@ -57,7 +57,7 @@
             isExternal=true,
             isPhone=false
           )
-        #}            
+        }}            
           
       </div>
 
@@ -101,8 +101,6 @@
           </p>
         {% endif %}
         </div>
-
-        <!--  -->
 
         <div class="flex mt-4 space-x-4 sm:justify-center lg:mt-0 ">
           <a

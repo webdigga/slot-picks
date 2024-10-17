@@ -2,7 +2,7 @@
 {% import "./logo.html" as antLogo with context %}
 {% import "./buttons/anchor.html" as anchor with context %}
 
-<div class="flex flex-col lg:flex-row items-center py-8 lg:py-16">
+<div class="flex flex-col lg:flex-row items-center">
 	
   <div class="max-w-6xl">
     <h1 class="dark-copy">{{ hero.title | safe }} <span class="text-[color:var(--light-purple)]">{{ hero.titleAccentText | safe }}</span></h1>
@@ -10,7 +10,7 @@
     <p class="dark-copy mb-3">{{ hero.paragraphOne | safe }}</p>
     <p class="dark-copy mb-6">{{ hero.paragraphTwo | safe }}</p>
 
-    {# anchor.anchor(
+    {{ anchor.anchor(
         type='primary',
         anchorText='Book an appointment',
         destination='https://anttzchiro.neptune.practicehub.io/p/booking',
@@ -19,7 +19,7 @@
         classes='mr-3',
         isPhone=false
       )
-    #}
+    }}
 
     {{ anchor.anchor(
         type='secondary',
