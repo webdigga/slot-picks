@@ -11,11 +11,11 @@ CMS.registerEditorComponent({
       height: match[6],
       loading: match[7]
     },
-  toBlock: function({ image, alt, title, position, width, height }, getAsset, fields) {
-    return `<img src="${image || ''}" alt="${alt || ''}" title="${title || ''}" class="${position || ''}" width="${width || '600px'}" height="${height || '450px'}" loading="lazy"/>`
+  toBlock: function({ image, alt, position, width, height }, getAsset, fields) {
+    return `<img src="${image || ''}" alt="${alt || ''}" title="${alt || ''}" class="${position || ''}" width="${width || '600px'}" height="${height || '450px'}" loading="lazy"/>`
   },
-  toPreview: ({ image, alt, title, position, width, height }, getAsset, fields) => {
-    return `<img src="${image}" alt="${alt}" title="${title}" class="${position}" width="${width || '600px'}" height="${height || '450px'}" loading="lazy"/>`;
+  toPreview: ({ image, alt, position, width, height }, getAsset, fields) => {
+    return `<img src="${image}" alt="${alt}" title="${alt}" class="${position}" width="${width || '600px'}" height="${height || '450px'}" loading="lazy"/>`;
   },
   pattern:  /^<img src="(.*?)" alt="(.*?)" title="(.*?)" class="(.*?)" width="(.*?)" height="(.*?)" loading="(.*?)"\/>$/s,
   fields: [
@@ -31,11 +31,6 @@ CMS.registerEditorComponent({
     {
       label: 'Alt Text',
       name: 'alt',
-      widget: 'string'
-    },
-    {
-      label: 'Title',
-      name: 'title',
       widget: 'string'
     },
     {
