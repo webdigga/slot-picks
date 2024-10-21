@@ -89,14 +89,24 @@
     <div class="py-7 border-t border-solid border-t-[color:var(--very-light-gray)]">
       <div class="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
         <div class="text-center lg:text-left">
-          <p class="subtle-text-on-light-background">
+          <p class="subtle-text-on-light-background py-1">
             <small>© {{ settings.siteName }} {{ helpers.currentYear() }}, All rights reserved.</small>
+          </p>
+
+          <p class="subtle-text-on-light-background py-1">
+            <small>
+              <a
+                class="hover:opacity-70"
+                href="/privacy-policy/">
+                Privacy Policy
+              </a>
+            </small>
           </p>
           
           {% if settings.poweredBy %}
           <p class="py-1">
             <small class="subtle-text-on-light-background">
-              Website by <a href="{{ settings.poweredByUrl }}" target="_blank" rel="noopener">{{ settings.poweredBy }}</a>
+              Website by <a href="{{ settings.poweredByUrl }}" class="hover:opacity-70" target="_blank" rel="noopener">{{ settings.poweredBy }}</a>
             </small>
           </p>
         {% endif %}
