@@ -37,12 +37,19 @@ module.exports = function (eleventyConfig) {
   // Merge data instead of overriding
   eleventyConfig.setDataDeepMerge(true);
 
-  // human readable date
+  // Human readable date
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
       "dd LLL yyyy"
     );
   });
+
+  // Make a ISO 8601 date here for the schema data
+  eleventyConfig.addFilter("iso8601", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toISO(
+      "yyyy-MM-dd"
+    );
+  }); 
 
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight);

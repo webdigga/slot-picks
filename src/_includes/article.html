@@ -1,11 +1,15 @@
 ---
 layout: default
+seoSchemaPageType: Article
+eleventyComputed:
+  canonical: "{{ env.site }}/{{ title | slugify }}/"
 ---
 
 {% import "./partials/navbar.html" as navBar with context %}
 {% import "./components/testimonials.html" as testimonials with context %}
 {% import "./components/disclaimer.html" as disclaimer with context %}
 {% import "./components/banner.html" as banner with context %}
+{% import "./components/faqs.html" as faqs with context %}
 
 <section>
   {{ banner.bannerMacro() }}
@@ -26,6 +30,12 @@ layout: default
     {% endif %}
 
     {{ content | safe }}
+
+    {% if 'faq' in tags %}
+          
+      {{ faqs.faqs() }}
+
+    {% endif %}
 
   </article>
 	

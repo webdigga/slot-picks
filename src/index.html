@@ -3,9 +3,11 @@ layout: default
 path: home
 type: home
 ogType: website
+seoSchemaPageType: Organization
 eleventyComputed:
   description: "{{ homepage.description }}"
   seoTitle: "{{ homepage.seoTitle }}"
+  canonical: "{{ env.site }}/"
 ---
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}

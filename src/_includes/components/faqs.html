@@ -1,15 +1,12 @@
-{% import "./faq-item.html" as faqItem with context %}
+{% macro faqs() %}
 
-{% macro faqComponent(textColour) %}
-  <h2 class="mb-4">Frequently Asked Questions.</h2>
-  <div class="mt-6 border-t-4 border-[color:var(--light-gray)] pt-10">
-    <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-8 md:gap-y-12">
-      {{ faqItem.faq('Is there a contract?', 'Yes there is a contract. I will prepare this after the agreed purchase and can go over any of the details you are unsure of.', textColour) }}
-      {{ faqItem.faq('Are there any upfont costs?', 'Absolutely none. Once the contract is signed I will begin working to build the site. Once it\'s live I will invoice for the first month\'s payment.', textColour) }}
-      {{ faqItem.faq('Will I own the website?', 'After the first 12 months you are free to take the website files and host these wherever you choose.', textColour) }}
-      {{ faqItem.faq('Will I need to buy or renew a domain?', 'If you have your domain already then I will handle the DNS changes. If you do not then I will buy the domain for you and manage the renewal myself.', textColour) }}
-      {{ faqItem.faq('If I want a new feature, how does this get implemented?', 'After we\'ve agreed sign off on the initial site build, any future feature requests will be handled on an ad-hoc basis.', textColour) }}
-      {{ faqItem.faq('Can I stop paying whenever I want?', 'There is a 30 day notice period to cancel the contract. If this should happen in the first 12 months then the website files will not be handed over as part of the termination.', textColour) }}
-    </div>
-  </div>
+  {% if faqsData.faqs %}
+    <dl>
+      {% for faqsDataItem in faqsData.faqs %}
+        <dt><h2>{{ faqsDataItem.question }}</h2></dt>
+        <dd class="pl-0">{{ faqsDataItem.answer }}</dd>
+      {% endfor %}
+    </dl>
+  {% endif %}
+
 {% endmacro %}

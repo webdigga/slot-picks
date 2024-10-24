@@ -9,5 +9,7 @@ addressLineOne: Unit 11
 addressLineTwo: Canbury Business Park
 addressLineThree: Elm Crescent
 townCity: Kingston Upon Thames
+region: London
 postCode: KT2 6HJ
 locationLatLong: Unit+11,+Canbury+Business+Park,+Elm+Crescent,+Kingston+Upon+Thames,+KT2+6HL
+country: "GB"
