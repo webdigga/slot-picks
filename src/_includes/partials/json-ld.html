@@ -8,7 +8,7 @@
       
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
+      "@type": "MedicalBusiness",
       "image": "android-chrome-512x512.png",
       "url": "{{ env.site }}",
       "logo": "android-chrome-512x512.png",
@@ -23,7 +23,34 @@
         "addressCountry": "{{ settings.country | safe }}",
         "addressRegion": "{{ settings.region | safe }}",
         "postalCode": "{{ settings.postCode | safe }}"
-      }
+      },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Thursday"
+        ],
+        "opens": "{{ settings.googleOpeningMonday | safe }}",
+        "closes": "{{ settings.googleClosingMonday | safe }}"
+      },{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Tuesday",
+          "Wednesday"
+        ],
+        "opens": "{{ settings.googleOpeningTuesday | safe }}",
+        "closes": "{{ settings.googleClosingTuesday | safe }}"
+      },{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Friday",
+        "opens": "{{ settings.googleOpeningFriday | safe }}",
+        "closes": "{{ settings.googleClosingFriday | safe }}"
+      },{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "{{ settings.googleOpeningSaturday | safe }}",
+        "closes": "{{ settings.googleClosingSaturday | safe }}"
+      }]
     }
 
   {% elseif seoSchemaPageType == 'ContactPage' %}
@@ -38,7 +65,7 @@
         "@id": "{{ env.site }}/contact/"
       },
       "publisher": {
-        "@type": "Organization",
+        "@type": "MedicalBusiness",
         "@id": "{{ env.site }}",
         "name": "{{ settings.siteName }}",
         "logo": "android-chrome-512x512.png",
@@ -54,7 +81,34 @@
           "addressCountry": "{{ settings.country | safe }}",
           "addressRegion": "{{ settings.region | safe }}",
           "postalCode": "{{ settings.postCode | safe }}"
-        }
+        },
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Thursday"
+          ],
+          "opens": "{{ settings.googleOpeningMonday | safe }}",
+          "closes": "{{ settings.googleClosingMonday | safe }}"
+        },{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Tuesday",
+            "Wednesday"
+          ],
+          "opens": "{{ settings.googleOpeningTuesday | safe }}",
+          "closes": "{{ settings.googleClosingTuesday | safe }}"
+        },{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday",
+          "opens": "{{ settings.googleOpeningFriday | safe }}",
+          "closes": "{{ settings.googleClosingFriday | safe }}"
+        },{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "{{ settings.googleOpeningSaturday | safe }}",
+          "closes": "{{ settings.googleClosingSaturday | safe }}"
+        }]
       }
     }
 
@@ -76,7 +130,7 @@
         }{{ "" if loop.last else "," }}{% endfor %}{% endif %}
       ],
       "publisher": {
-        "@type": "Organization",
+        "@type": "MedicalBusiness",
         "@id": "{{ env.site }}",
         "name": "{{ settings.siteName }}",
         "logo": "android-chrome-512x512.png",
@@ -92,7 +146,34 @@
           "addressCountry": "{{ settings.country | safe }}",
           "addressRegion": "{{ settings.region | safe }}",
           "postalCode": "{{ settings.postCode | safe }}"
-        }
+        },
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Thursday"
+          ],
+          "opens": "{{ settings.googleOpeningMonday | safe }}",
+          "closes": "{{ settings.googleClosingMonday | safe }}"
+        },{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Tuesday",
+            "Wednesday"
+          ],
+          "opens": "{{ settings.googleOpeningTuesday | safe }}",
+          "closes": "{{ settings.googleClosingTuesday | safe }}"
+        },{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday",
+          "opens": "{{ settings.googleOpeningFriday | safe }}",
+          "closes": "{{ settings.googleClosingFriday | safe }}"
+        },{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "{{ settings.googleOpeningSaturday | safe }}",
+          "closes": "{{ settings.googleClosingSaturday | safe }}"
+        }]
       }
     }
 
@@ -106,7 +187,7 @@
       "headline": "{{ seoTitle | safe}}",
       "image": "android-chrome-512x512.png",  
       "publisher": {
-        "@type": "Organization",
+        "@type": "MedicalBusiness",
         "@id": "{{ env.site }}",
         "name": "{{ settings.siteName }}",
         "logo": "android-chrome-512x512.png",
@@ -122,7 +203,34 @@
           "addressCountry": "{{ settings.country | safe }}",
           "addressRegion": "{{ settings.region | safe }}",
           "postalCode": "{{ settings.postCode | safe }}"
-        }
+        },
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Thursday"
+          ],
+          "opens": "{{ settings.googleOpeningMonday | safe }}",
+          "closes": "{{ settings.googleClosingMonday | safe }}"
+        },{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Tuesday",
+            "Wednesday"
+          ],
+          "opens": "{{ settings.googleOpeningTuesday | safe }}",
+          "closes": "{{ settings.googleClosingTuesday | safe }}"
+        },{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday",
+          "opens": "{{ settings.googleOpeningFriday | safe }}",
+          "closes": "{{ settings.googleClosingFriday | safe }}"
+        },{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "{{ settings.googleOpeningSaturday | safe }}",
+          "closes": "{{ settings.googleClosingSaturday | safe }}"
+        }]
       }
       "datePublished": "{{ date | iso8601 | safe }}"
     }
@@ -139,7 +247,7 @@
       "image": "android-chrome-512x512.png",
       "url": "{{ env.site }}",
       "publisher": {
-        "@type": "Organization",
+        "@type": "MedicalBusiness",
         "@id": "{{ env.site }}",
         "name": "{{ settings.siteName }}",
         "logo": "android-chrome-512x512.png",
@@ -155,7 +263,34 @@
           "addressCountry": "{{ settings.country | safe }}",
           "addressRegion": "{{ settings.region | safe }}",
           "postalCode": "{{ settings.postCode | safe }}"
-        }
+        },
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Thursday"
+          ],
+          "opens": "{{ settings.googleOpeningMonday | safe }}",
+          "closes": "{{ settings.googleClosingMonday | safe }}"
+        },{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Tuesday",
+            "Wednesday"
+          ],
+          "opens": "{{ settings.googleOpeningTuesday | safe }}",
+          "closes": "{{ settings.googleClosingTuesday | safe }}"
+        },{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday",
+          "opens": "{{ settings.googleOpeningFriday | safe }}",
+          "closes": "{{ settings.googleClosingFriday | safe }}"
+        },{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "{{ settings.googleOpeningSaturday | safe }}",
+          "closes": "{{ settings.googleClosingSaturday | safe }}"
+        }]
       }
     }
 

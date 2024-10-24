@@ -13,3 +13,15 @@ region: London
 postCode: KT2 6HJ
 locationLatLong: Unit+11,+Canbury+Business+Park,+Elm+Crescent,+Kingston+Upon+Thames,+KT2+6HL
 country: "GB"
+googleOpeningMonday: "14:00"
+googleClosingMonday: "19:30"
+googleOpeningTuesday: "08:00"
+googleClosingTuesday: "13:00"
+googleOpeningWednesday: "08:00"
+googleClosingWednesday: "13:00"
+googleOpeningThursday: "14:00"
+googleClosingThursday: "19:30"
+googleOpeningFriday: "08:00"
+googleClosingFriday: "11:00"
+googleOpeningSaturday: "09:00"
+googleClosingSaturday: "12:00"

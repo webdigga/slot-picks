@@ -144,6 +144,18 @@ collections:
           - { label: Region, name: region, widget: string }
           - { label: Post Code, name: postCode, widget: string }
           - { label: Country, name: country, widget: string }
+          - { label: Google Opening Monday, name: googleOpeningMonday, widget: string }
+          - { label: Google Closing Monday, name: googleClosingMonday, widget: string }
+          - { label: Google Opening Tuesday, name: googleOpeningTuesday, widget: string }
+          - { label: Google Closing Tuesday, name: googleClosingTuesday, widget: string }
+          - { label: Google Opening Wednesday, name: googleOpeningWednesday, widget: string }
+          - { label: Google Closing Wednesday, name: googleClosingWednesday, widget: string }
+          - { label: Google Opening Thursday, name: googleOpeningThursday, widget: string }
+          - { label: Google Closing Thursday, name: googleClosingThursday, widget: string }
+          - { label: Google Opening Friday, name: googleOpeningFriday, widget: string }
+          - { label: Google Closing Friday, name: googleClosingFriday, widget: string }
+          - { label: Google Opening Saturday, name: googleOpeningSaturday, widget: string }
+          - { label: Google Closing Saturday, name: googleClosingSaturday, widget: string }
   - label: "Pages"
     name: "pages"
     editor:
