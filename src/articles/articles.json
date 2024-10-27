@@ -3,5 +3,6 @@
     "tags": [
         "article"
     ],
+    "ogType": "article",
     "permalink": "/{{ title | slugify }}/"
 }
