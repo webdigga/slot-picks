@@ -2,26 +2,25 @@ siteName: Perennial Weaver
 author: David White
 poweredBy: Kabooly
 poweredByUrl: https://kabooly.com
-email: lorem@perennialweaver.co.uk
-phoneNumber: "0208 016 9375"
-companyNumber: "12134174"
-addressLineOne: Unit 11
-addressLineTwo: Canbury Business Park
-addressLineThree: Elm Crescent
-townCity: Kingston Upon Thames
+email: perennialweaver@btinternet.com
+phoneNumber: "07950172499"
+addressLineOne: Flat 4
+addressLineTwo: Simba Court
+addressLineThree: 71 Lion Road
+townCity: Twickenham
 region: London
-postCode: KT2 6HJ
-locationLatLong: Unit+11,+Canbury+Business+Park,+Elm+Crescent,+Kingston+Upon+Thames,+KT2+6HL
+postCode: TW1 4HT
+locationLatLong: 51.447192891989765, -0.3377632367984757
 country: "GB"
-googleOpeningMonday: "14:00"
-googleClosingMonday: "19:30"
-googleOpeningTuesday: "08:00"
-googleClosingTuesday: "13:00"
-googleOpeningWednesday: "08:00"
-googleClosingWednesday: "13:00"
-googleOpeningThursday: "14:00"
-googleClosingThursday: "19:30"
-googleOpeningFriday: "08:00"
-googleClosingFriday: "11:00"
+googleOpeningMonday: "09:00"
+googleClosingMonday: "17:00"
+googleOpeningTuesday: "09:00"
+googleClosingTuesday: "17:00"
+googleOpeningWednesday: "09:00"
+googleClosingWednesday: "17:00"
+googleOpeningThursday: "09:00"
+googleClosingThursday: "17:00"
+googleOpeningFriday: "09:00"
+googleClosingFriday: "17:00"
 googleOpeningSaturday: "09:00"
-googleClosingSaturday: "12:00"
+googleClosingSaturday: "17:00"
