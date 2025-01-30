@@ -1,0 +1,35 @@
+---
+layout: default
+seoSchemaPageType: Product
+eleventyComputed:
+  canonical: "{{ env.site }}/{{ title | slugify }}/"
+---
+
+{% import "./partials/navbar.html" as navBar with context %}
+{% import "./components/testimonials.html" as testimonials with context %}
+{% import "./components/disclaimer.html" as disclaimer with context %}
+{% import "./components/banner.html" as banner with context %}
+
+<section>
+  {{ banner.bannerMacro() }}
+</section>
+
+<div class="border-b border-solid border-b-[color:var(--very-light-gray)]">
+  {{ navBar.nav(bgColour='bg-white') }}
+</div>
+
+<section class="container">
+
+  <article class="my-6 flex flex-col md:block prose max-w-5xl mx-auto">
+
+    <h1 class="dark-copy">{{ title }}</h1>
+
+    <img src="{{ image }}" alt="{{ imageAlt }}">
+
+    <p>{{ price }}</p>
+
+    {{ content | safe }}
+
+  </article>
+	
+</section>

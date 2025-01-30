@@ -235,6 +235,30 @@
       "datePublished": "{{ date | iso8601 | safe }}"
     }
 
+  {% elseif seoSchemaPageType == 'Product' %}
+
+    {# Product JSON ld #}
+
+    {
+      "@context": "https://schema.org/", 
+      "@type": "Product", 
+      "name": "{{ title }}",
+      "image": "{{ env.site }}{{ image }}",
+      "description": "{{ description}}",
+      "brand": {
+        "@type": "Brand",
+        "name": "Custom"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://perennialweaver.com/product1",
+        "priceCurrency": "GBP",
+        "price": "{{ price }}",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      }
+    }
+
   {% else %}
 
     {# WebSite JSON ld #}

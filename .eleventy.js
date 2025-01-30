@@ -116,6 +116,23 @@ module.exports = function (eleventyConfig) {
     }
   });
 
+  // Return a list of tags in a given collection
+  function getTagList(collection) {
+    let tagSet = new Set();
+    collection.forEach((item) => {
+      (item.data.tags || []).forEach((tag) => tagSet.add(tag));
+    });
+    return [...tagSet];
+  }  
+
+  // Create the posts object that contains post and tag information
+  eleventyConfig.addCollection("products", function (collectionAPI) {
+    let PRODUCTS = collectionAPI.getFilteredByGlob("./src/products/*.md");
+    let collection = {};
+    collection.tags = getTagList(PRODUCTS);
+    return collection;
+  });
+
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
   return {

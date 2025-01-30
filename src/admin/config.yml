@@ -75,6 +75,15 @@ collections:
         hint: "*This title will be used in the title tag for search engines (between 50 and 60 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
         pattern: ['^.{50,60}$', "Must be between 50 and 60 characters"]
       }
+      - label: "Image"
+        name: "image"
+        widget: "image"
+        choose_url: true
+        required: true
+        media_library:
+          config:
+            multiple: true
+      - { label: Image alternative text, name: imageAlt, widget: string }
       - {
         label: "Description",
         name: "description",
@@ -83,11 +92,22 @@ collections:
         pattern: ['^.{70,155}$', "Must be between 70 and 155 characters"]
       }
       - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Price"
+        name: "price"
+        widget: "number"
+        default: 0
+        value_type: "int"
       - widget: select
         label: "tags"
         name: "tags"
         create: true
-        options: ["scarves", "cushions", "table matts", "table runners", "glasses cases", "bags", "key rings", "lavender bags", "bespoke orders"]
+        options: ["Scarves", "Cushions", "Table Matts", "Table Runners", "Glasses Cases", "Bags", "Key Rings", "Lavender Bags", "Bespoke Orders"]
+      - widget: select
+        label: "type"
+        name: "type"
+        create: false
+        options: ["product"]
+        default: "product"
   - label: "Landing page"
     name: "landingPages"
     folder: "src/landingPages"

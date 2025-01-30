@@ -37,8 +37,13 @@ eleventyComputed:
     {{ moreButton.button('bg-[color:var(--dark-purple)]', 'border-[color:var(--dark-purple)]', 'text-[color:var(--white)]') }}
   </section>
 
-  <section data-test="moreButtonLocation">  
-    {{ map.map() }}
+  <section class="dark-copy">
+    <ol>
+      {% set taglist = collections.products.tags %}
+      {% for tag in taglist | reverse %}
+        <li><a href="/products/{{ tag | slugify }}">{{ tag }}</a></li>
+      {% endfor %}
+      </ol>
   </section>
 
   <section>

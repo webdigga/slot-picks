@@ -1,0 +1,38 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /products/{{ tag | slugify }}/index.html
+layout: default
+ogType: website
+eleventyComputed:
+  description: "Discover top-quality {{ tag }} for sale. Perfect for weaving enthusiasts, our {{ tag }} offers durability and precision. Shop online today!"
+  seoTitle: "Buy {{ tag }} Online | High-Quality {{ tag }} for Sale"
+  canonical: "{{ env.site }}/products/{{ tag | slugify }}/"
+---
+
+{% import "./_includes/partials/navbar.html" as navBar with context %}
+{% import "./_includes/components/banner.html" as banner with context %}
+
+<div>
+
+  <section>
+    {{ banner.bannerMacro() }}
+  </section>
+  
+  <div class="border-b border-solid border-b-[color:var(--very-light-gray)]">
+    {{ navBar.nav('bg-[color:var(--white)]') }}
+  </div>
+
+  <div class="container container--medium dark-copy">
+    <h1>Tagged “{{ tag }}”</h1>
+
+    <ol>
+    {% set taglist = collections[ tag ] %}
+    {% for post in taglist | reverse %}
+      <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+    {% endfor %}
+    </ol>
+  </div>
+</div>

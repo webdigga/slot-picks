@@ -1,0 +1,5 @@
+{
+    "layout": "product",
+    "ogType": "website",
+    "permalink": "/{{ title | slugify }}/"
+}
