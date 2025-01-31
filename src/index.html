@@ -12,10 +12,7 @@ eleventyComputed:
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
 {% import "./_includes/components/buttons/more-button.html" as moreButton with context %}
-{% import "./_includes/components/why-anttz.html" as whyAnttz with context %}
 {% import "./_includes/components/testimonials.html" as testimonials with context %}
-{% import "./_includes/components/map.html" as map with context %}
-{% import "./_includes/components/services.html" as services with context %}
 {% import "./_includes/components/banner.html" as banner with context %}
 
 <div>
@@ -44,14 +41,6 @@ eleventyComputed:
         <li><a href="/products/{{ tag | slugify }}">{{ tag }}</a></li>
       {% endfor %}
       </ol>
-  </section>
-
-  <section>
-    {{ services.servicesFeature() }}
-  </section>
-  
-  <section data-test="moreButtonLocation">
-    {{ whyAnttz.whyAnttzComponent(classes='border-t-4 border-t-[color:var(--dark-purple)] border-solid') }}
   </section>
 
   <section class="bg-[color:var(--white)]">
