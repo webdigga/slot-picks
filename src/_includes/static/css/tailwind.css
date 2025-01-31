@@ -48,7 +48,7 @@ h3, h4 {
 }
 
 .menu-styles {
-  @apply absolute left-0 border-b border-b-white pb-6 shadow-[rgba(0,0,0,0.1)_0px_5px_0px_0px] top-[127px] xs:top-[95px] sm:top-[70px];
+  @apply fixed left-0 border-b border-b-white pb-6 top-0 h-screen pt-16;
 }
 
 .dark-copy {
@@ -116,6 +116,11 @@ img.Right {
 
 .youtube-embed.Right {
   @apply m-0 lg:float-right lg:pl-12 lg:pb-8 mt-0;
+}
+
+.background-image-class {
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('/_includes/static/img/pexels-juliasakelli-1342492.avif');
+  background-size: cover;
 }
 
 /* Syntax Highlighting*/

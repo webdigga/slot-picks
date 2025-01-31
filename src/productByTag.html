@@ -13,13 +13,8 @@ eleventyComputed:
 ---
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
-{% import "./_includes/components/banner.html" as banner with context %}
 
 <div>
-
-  <section>
-    {{ banner.bannerMacro() }}
-  </section>
   
   <div class="border-b border-solid border-b-[color:var(--very-light-gray)]">
     {{ navBar.nav('bg-[color:var(--white)]') }}

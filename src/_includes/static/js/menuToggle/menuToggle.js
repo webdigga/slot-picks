@@ -6,12 +6,11 @@ function menuToggle() {
   const burger = document.querySelector('[data-test="burger"]');
   const cross = document.querySelector('[data-test="cross"]');
 
-
-
-  
   if(menuButton) {
     menuButton.addEventListener('click', () => {
       const menu = document.querySelector('[data-test="menu"]');
+      const menuContainer = document.querySelector('[data-test="menuContainer"]');
+      const menuWrapper = document.querySelector('[data-test="menuWrapper"]');
 
       if(menu) {
         menu.classList.toggle("hidden");
@@ -19,6 +18,17 @@ function menuToggle() {
 
         menuButton.classList.toggle("transition");
         menuButton.classList.toggle("transform-180");
+
+        menuContainer.classList.toggle("fixed");
+        menuContainer.classList.toggle("z-30");
+
+        menuContainer.classList.toggle("left-[50%]");
+        menuContainer.classList.toggle("translate-x-[-50%]");
+
+        menuWrapper.classList.toggle("fixed");
+        menuWrapper.classList.toggle("z-40");
+        menuWrapper.classList.toggle("bg-white");
+        menuWrapper.classList.toggle("h-screen");
 
         burger.classList.toggle("block");
         burger.classList.toggle("hidden");

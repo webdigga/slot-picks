@@ -108,54 +108,6 @@ collections:
         create: false
         options: ["product"]
         default: "product"
-  - label: "Landing page"
-    name: "landingPages"
-    folder: "src/landingPages"
-    create: true
-    editor:
-      preview: false
-    fields:
-      - {
-        label: "Title",
-        name: "title",
-        widget: "string",
-        hint: "*This title will be used in the page's H1 tag, and also determines the URL (between 20 and 70 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
-        pattern: ['^.{20,70}$', "Must be between 20 and 70 characters"]
-      }
-      - { 
-        label: "SEO Title",
-        name: "seoTitle",
-        widget: "string",
-        hint: "*This title will be used in the title tag for search engines (between 50 and 60 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
-        pattern: ['^.{50,60}$', "Must be between 50 and 60 characters"]
-      }
-      - {
-        label: "Description",
-        name: "description",
-        widget: "string",
-        hint: "*Used in search engines (between 70 and 155 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
-        pattern: ['^.{70,155}$', "Must be between 70 and 155 characters"]
-      }
-      - { label: "Author", name: "author", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { 
-        label: "Sign up text",
-        name: "signUpText",
-        widget: "string",
-        hint: "*Text that appears at the top of the form*",
-      }
-      - { label: "Button text", name: "buttonText", widget: "string" }
-      - { label: "Form Image Title", name: "formImageTitle", widget: "string" }
-      - label: "Form image"
-        name: "formImage"
-        widget: "image"
-        choose_url: true
-        media_library:
-          config:
-            multiple: false
-        hint: "*624px x 716px*"
-      - { label: Form Image alternative text, name: imageAlt, widget: string }
   - label: "Settings"
     name: "settings"
     editor:
@@ -268,10 +220,7 @@ collections:
         file: "src/_data/hero.yaml"
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Title accent text, name: titleAccentText, widget: string }
           - { label: Sub title, name: subTitle, widget: string }
-          - { label: Paragraph 1, name: paragraphOne, widget: text }
-          - { label: Paragraph 2, name: paragraphTwo, widget: text }
       - label: "Testimonials"
         name: "testimonials"
         file: "src/_data/testimonials.yaml"
@@ -340,14 +289,6 @@ collections:
                     multiple: false
                 hint: "*Should be 1:1 ratio. Renders at 46px x 46px*"
               - { label: Image alternative text, name: imageAlt, widget: string, required: false }
-      - label: "Banner"
-        name: "banner"
-        file: "src/_data/banner.yaml"
-        fields:
-          - { label: Offer Text Part 1, name: offerTextPart1, widget: string }
-          - { label: Offer Text Part 2, name: offerTextPart2, widget: string }
-          - { label: Anchor Text, name: anchorText, widget: string }
-          - { label: Anchor Destination, name: anchorDestination, widget: string }
       - label: "FAQs"
         name: "faqs"
         file: "src/_data/faqsData.yaml"

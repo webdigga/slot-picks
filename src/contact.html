@@ -14,13 +14,8 @@ eleventyComputed:
 {% import "./_includes/components/testimonials.html" as testimonials with context %}
 {% import "./_includes/components/location-details.html" as locationDetails with context %}
 {% import "./_includes/components/contact-form.html" as contactForm with context %}
-{% import "./_includes/components/banner.html" as banner with context %}
 
 <div class="">
-
-  <section>
-    {{ banner.bannerMacro() }}
-  </section>
   
   <div class="border-b border-solid border-b-[color:var(--very-light-gray)]">
     {{ navBar.nav('bg-[color:var(--white)]') }}

@@ -1,51 +1,14 @@
 firstLevelItems:
   - text: Home
     url: /
-  - text: About
-    url: /about/
+  - text: Shop
+    url: /shop/
+  - text: Products
+    url: /products/
     secondLevelItems:
-      - text: Dr Hannah
-        url: /hannah-emmett-trusted-chiropractor/
-      - text: FAQs
-        url: /frequently-asked-questions-faqs/
-      - text: Contact
-        url: /contact/
-  - text: Services
-    url: /services/
-    secondLevelItems:
-      - text: What is Network Spinal Chiropractic
-        url: /what-is-network-spinal-chiropractic/
-      - text: What is Chiropractic
-        url: /what-is-chiropractic-treatment/
-      - text: Pregnancy and Paediatric
-        url: /pregnancy-and-paediatric-chiropractic/
-      - text: SRI
-        url: /somato-respiratory-integration-sri/
-      - text: Spinal screening
-        url: /chiropractic-spinal-screening/
-  - text: Free Reports
-    url: /free-reports/
-    secondLevelItems:
-      - text: End back pain
-        url: /get-your-free-end-back-pain-report/
-      - text: Pregnancy
-        url: /get-your-free-pregnancy-report/
-      - text: Headaches
-        url: /get-your-free-headaches-report/
-      - text: Pain to Progress
-        url: /get-your-free-pain-to-progress-report/
-  - text: Resources
-    url: /resources/
-    secondLevelItems:
-      - text: Face Cloths
-        url: /discover-premium-face-cloths/
-      - text: Newsletter
-        url: /chiropractic-insights-newsletter/
-      - text: Videos
-        url: /chiropractic-video-resources/
-      - text: Demartini Process
-        url: /the-demartini-healing-process/
-      # - text: Supplements
-      #   url: /essential-health-supplements/
-      - text: Events
-        url: /upcoming-clear-days-events/
+      - text: Scarves
+        url: /products/scarves/
+  - text: Contact
+    url: /contact/
+  - text: FAQs
+    url: /frequently-asked-questions-faqs/
