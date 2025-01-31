@@ -16,7 +16,7 @@ eleventyComputed:
 
 <div>
 
-  <section class="min-h-dvh flex flex-col border-b-4 border-b-[color:var(--dark-purple)] border-solid background-image-class">
+  <section class="min-h-dvh flex flex-col border-b-4 border-b-[color:var(--deep-teal)] border-solid background-image-class">
     
     <div>
       {{ navBar.nav(bgColour='bg-white') }}
@@ -26,10 +26,10 @@ eleventyComputed:
       {% include "./_includes/components/hero.html" %}
     </div>
   
-    {{ moreButton.button('bg-[color:var(--dark-purple)]', 'border-[color:var(--dark-purple)]', 'text-[color:var(--white)]') }}
+    {{ moreButton.button() }}
   </section>
 
-  <section class="dark-copy">
+  <section class="dark-copy" data-test="moreButtonLocation">
     <ol>
       {% set taglist = collections.products.tags %}
       {% for tag in taglist | reverse %}

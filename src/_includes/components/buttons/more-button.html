@@ -1,10 +1,25 @@
-{% macro button(bgColour, borderColour, textColour) %}
-  <div class="text-center lg:block mb-4">
+{% macro button() %}
+
+  <div class="text-right lg:block mb-4">
     <button
       data-test="moreButton"
-      class="animate-bounce p-4 shadow-sm w-16 h-16 {{ bgColour | safe }} {{ textColour | safe }} rounded-full border border-solid {{ borderColour | safe }} hover:border hover:border-solid hover:border-white">
-      <span class="text-xs">More</span>
-      <span class="text-lg">&caron;</span>
+      class="animate-bounce">
+      <svg
+        width="48px"
+        height="48px"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-12">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
+        />
+      </svg>
     </button>
   </div>
+  
 {% endmacro %}

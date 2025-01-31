@@ -2,18 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 1. Earthy Beige (#D8C3A5) – A warm, neutral tone representing natural fibres and timeless craftsmanship. /*
+/* 2. Deep Teal (#3A6B75) – A rich, calming accent colour that adds depth and sophistication. /*
+/* 3. Soft Clay (#B26A5A) – A muted, earthy red that evokes warmth and handmade artistry. /*
+
 /*Your Custom CSS Goes here*/
 :root { 
-  --light-blue: #f5fbff;
   --dark-purple: #3F0961;
-  --light-purple: #7f0ea5;
   --light-green: #006A4E;
   --white: #FFFFFF;
   --lightest-gray: #f9fafb;
   --very-light-gray: #dcdcdc;
-  --light-gray: #9CA3AF;  
   --dark-gray: #5f6571;
   --dark-copy: #333333;
+
+  /* New colours below (old ones need removing if brand specific) */
+  --earthy-beige-light: #ebe2d6;
+  --earthy-beige: #D8C3A5;
+  --deep-teal: #3A6B75;
+  --soft-clay: #B26A5A;
 }
 
 body {
@@ -53,10 +60,6 @@ h3, h4 {
 
 .dark-copy {
   color: var(--dark-copy);
-}
-
-.subtle-text-on-dark-background {
-  color: var(--light-gray);
 }
 
 .subtle-text-on-light-background {
