@@ -125,12 +125,37 @@ module.exports = function (eleventyConfig) {
     return [...tagSet];
   }  
 
-  // Create the posts object that contains post and tag information
-  eleventyConfig.addCollection("products", function (collectionAPI) {
+  // Create the posts object that contains tag information
+  eleventyConfig.addCollection("productTags", function (collectionAPI) {
     let PRODUCTS = collectionAPI.getFilteredByGlob("./src/products/*.md");
     let collection = {};
     collection.tags = getTagList(PRODUCTS);
     return collection;
+  });
+
+  // Create a collection that returns all products
+  eleventyConfig.addCollection("allProducts", function (collectionAPI) {
+    return collectionAPI.getFilteredByGlob("./src/products/*.md");
+  });
+
+  // Filter collection by tag
+
+  // TODO - need to get this filter working so we can display the image from the first item in each tag collection
+
+
+  eleventyConfig.addFilter("filterby", (collection, tag) => {
+
+    console.log(collection)
+
+    if (!Array.isArray(collection)) {
+      return [];
+    }
+    return collection.filter((item) => {
+
+      console.log(item.data.tags)
+
+      return (item.data.tags || []).includes(tag);
+    });
   });
 
   // Let Eleventy transform HTML files as nunjucks

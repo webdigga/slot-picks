@@ -1,0 +1,42 @@
+{% set taglist = collections.productTags.tags %}
+{% set allProducts = collections.allProducts %}
+
+
+{% macro listOfCategories() %}
+
+  <div class="container">
+    <h2>Product Categories</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {% for tag in taglist | reverse %}
+        <div class="p-4 border rounded">
+          <a href="/products/{{ tag | slugify }}">{{ tag }}</a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  {% for tag in taglist %}
+
+  
+  
+    {% set products = allProducts | filterby(allProducts, tag) %}
+
+    products: {{ products | length }}
+    
+    {% if products | length > 0 %}
+      <div class="container">
+        <h2>{{ tag }}</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {% for product in products %}
+            <div class="p-4 border rounded">
+              <a href="{{ product.url }}">{{ product.data.title }}</a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
+    
+  {% endfor %}
+
+{% endmacro %}
