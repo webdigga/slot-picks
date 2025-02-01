@@ -6,8 +6,12 @@ firstLevelItems:
   - text: Products
     url: /products/
     secondLevelItems:
+      - text: Cushions
+        url: /products/cushions/
       - text: Scarves
         url: /products/scarves/
+      - text: Bags
+        url: /products/bags/
   - text: Contact
     url: /contact/
   - text: FAQs
