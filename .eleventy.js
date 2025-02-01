@@ -133,31 +133,6 @@ module.exports = function (eleventyConfig) {
     return collection;
   });
 
-  // Create a collection that returns all products
-  eleventyConfig.addCollection("allProducts", function (collectionAPI) {
-    return collectionAPI.getFilteredByGlob("./src/products/*.md");
-  });
-
-  // Filter collection by tag
-
-  // TODO - need to get this filter working so we can display the image from the first item in each tag collection
-
-
-  eleventyConfig.addFilter("filterby", (collection, tag) => {
-
-    console.log(collection)
-
-    if (!Array.isArray(collection)) {
-      return [];
-    }
-    return collection.filter((item) => {
-
-      console.log(item.data.tags)
-
-      return (item.data.tags || []).includes(tag);
-    });
-  });
-
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
   return {

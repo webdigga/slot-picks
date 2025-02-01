@@ -1,9 +1,11 @@
 ---
 title: Lorem ipsum Lorem ipsum
 seoTitle: Lorem ipsum Lorem ipsum Lorem ipsum | Perennial Weaver
-image:
-  - /_includes/static/img/pastalplain.webp
-imageAlt: Lorem ipsum
+images:
+  - path: /_includes/static/img/pexels-designecologist-1239298.avif
+    alt: Cushion 1
+  - path: /_includes/static/img/pexels-designecologist-1248583.avif
+    alt: Cushion 2
 description: Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
   ipsum Lorem ipsum
 price: 30

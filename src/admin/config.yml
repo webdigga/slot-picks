@@ -75,15 +75,12 @@ collections:
         hint: "*This title will be used in the title tag for search engines (between 50 and 60 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
         pattern: ['^.{50,60}$', "Must be between 50 and 60 characters"]
       }
-      - label: "Image"
-        name: "image"
-        widget: "image"
-        choose_url: true
-        required: true
-        media_library:
-          config:
-            multiple: true
-      - { label: Image alternative text, name: imageAlt, widget: string }
+      - label: Images
+        name: images
+        widget: list
+        fields:
+        - {name: path, label: Image, widget: image}
+        - {name: alt, label: Alt, widget: string}
       - {
         label: "Description",
         name: "description",

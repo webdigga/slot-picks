@@ -19,7 +19,9 @@ eleventyComputed:
 
     <h1 class="dark-copy">{{ title }}</h1>
 
-    <img src="{{ image }}" alt="{{ imageAlt }}">
+    {% for image in images | reverse %}
+      <img src="{{ image.path }}" alt="{{ image.alt }}" class="w-full h-auto mb-4">
+    {% endfor %}
 
     <p>{{ price }}</p>
 
