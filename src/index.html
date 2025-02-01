@@ -30,8 +30,8 @@ eleventyComputed:
     {{ moreButton.button() }}
   </section>
 
-  <section class="dark-copy" data-test="moreButtonLocation">
-    {{ categoryList.listOfCategories() }}
+  <section class="dark-copy container container--medium" data-test="moreButtonLocation">
+    {{ categoryList.listOfCategories(title="Product Categories") }}
   </section>
 
   <section class="bg-[color:var(--white)]">
