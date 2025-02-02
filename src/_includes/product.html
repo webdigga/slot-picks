@@ -7,7 +7,6 @@ eleventyComputed:
 
 {% import "./partials/navbar.html" as navBar with context %}
 {% import "./components/testimonials.html" as testimonials with context %}
-{% import "./components/disclaimer.html" as disclaimer with context %}
 
 <div class="border-b border-solid border-b-[color:var(--very-light-gray)]">
   {{ navBar.nav(bgColour='bg-white') }}
@@ -15,17 +14,74 @@ eleventyComputed:
 
 <section class="container">
 
-  <article class="my-6 flex flex-col md:block prose max-w-5xl mx-auto">
+  <article class="dark-copy">
 
-    <h1 class="dark-copy">{{ title }}</h1>
+    <div class="grid lg:grid-cols-2 gap-8">
+      <div class="glide multi">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            {% for image in images | reverse %}
+              
+              <li class="glide__slide">
+                
+                <img src="{{ image.path }}" alt="{{ image.alt }}" class="w-full h-auto" />
+                
+              </li>
+                  
+            {% endfor %}
+          </ul>
+        </div>
 
-    {% for image in images | reverse %}
-      <img src="{{ image.path }}" alt="{{ image.alt }}" class="w-full h-auto mb-4">
-    {% endfor %}
+        {% if images | length > 1 %}
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--prev absolute top-[calc(50%-20px)] left-0 text-white" data-glide-dir="<">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-10 hover:opacity-70"
+                width="40px"
+                height="40px">
+                <title>Previous Testimonial</title>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>            
+            </button>
 
-    <p>{{ price }}</p>
+            <button class="glide__arrow glide__arrow--next absolute top-[calc(50%-20px)] right-0 text-white" data-glide-dir=">">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-10 hover:opacity-70"
+                width="40px"
+                height="40px">
+                <title>Next Testimonial</title>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+          </div>
+        {% endif %}
+        
+      </div>
 
-    {{ content | safe }}
+      <div>
+        <h1>{{ title }}</h1>
+        <p>{{ description }}</p>
+        <p>{{ price }}</p>
+      </div>
+    </div>
 
   </article>
 	
