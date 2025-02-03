@@ -23,6 +23,8 @@ eleventyComputed:
   <div class="container container--medium dark-copy">
     <h1>Check out our range of {{ tag }}</h1>
 
+    <p class="text-sm mb-8">At Perennial Weaver, we take pride in creating beautifully handcrafted {{ tag }} that blend timeless design with exceptional quality. Each piece is made with care, using carefully selected materials to ensure durability, comfort, and style. Whether you're looking for a statement piece or an everyday essential, our {{ tag }} are designed to stand the test of time. With a focus on craftsmanship and attention to detail, we create products that celebrate tradition while embracing modern aesthetics. Explore our collection and find the perfect {{ tag }} to complement your home or lifestyle.</p>
+
     {% set taglist = collections[ tag ] %}
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-8">
@@ -35,6 +37,8 @@ eleventyComputed:
             src="{{ post.data.images[0].path }}"
             alt="{{ post.data.images[0].alt }}"
             class="w-full h-auto mb-4"
+            width="600px"
+            height="600px"
           />
 
           {{ post.data.title }} / <span class="text-[color:var(--dark-gray)]">&pound;{{ post.data.price }}</span>

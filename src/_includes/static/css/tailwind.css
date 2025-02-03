@@ -54,6 +54,10 @@ h3, h4 {
   @apply text-xl sm:text-2xl lg:text-3xl mb-4;
 }
 
+p {
+  @apply mb-4;
+}
+
 .menu-styles {
   @apply fixed left-0 border-b border-b-white pb-6 top-0 h-screen pt-16;
 }

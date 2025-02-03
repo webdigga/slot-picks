@@ -17,14 +17,20 @@ eleventyComputed:
   <article class="dark-copy">
 
     <div class="grid lg:grid-cols-2 gap-8">
-      <div class="glide multi">
+      <div class="glide multi min-w-0">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
             {% for image in images | reverse %}
               
               <li class="glide__slide">
                 
-                <img src="{{ image.path }}" alt="{{ image.alt }}" class="w-full h-auto" />
+                <img
+                  src="{{ image.path }}"
+                  alt="{{ image.alt }}" 
+                  class="w-full h-auto"
+                  width="600px"
+                  height="600px"
+                />
                 
               </li>
                   
@@ -44,7 +50,7 @@ eleventyComputed:
                 class="size-10 hover:opacity-70"
                 width="40px"
                 height="40px">
-                <title>Previous Testimonial</title>
+                <title>Previous Product Image</title>
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -63,7 +69,7 @@ eleventyComputed:
                 class="size-10 hover:opacity-70"
                 width="40px"
                 height="40px">
-                <title>Next Testimonial</title>
+                <title>Next Product Image</title>
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -78,8 +84,10 @@ eleventyComputed:
 
       <div>
         <h1>{{ title }}</h1>
-        <p>{{ description }}</p>
-        <p>{{ price }}</p>
+        <p class="text-sm">&pound;{{ price }}</p>
+        <div class="text-sm">
+          <p>{{ content | safe }}</p>
+        </div>
       </div>
     </div>
 
