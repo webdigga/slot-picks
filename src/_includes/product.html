@@ -92,9 +92,11 @@ eleventyComputed:
           <p>{{ content | safe }}</p>
         </div>
 
+        {% set destination %}/contact/?product={{ title }}{% endset %}
+
         <div class="mt-8 flex lg:justify-self-end">
           {{ anchor.anchor(
-            destination='/contact/',
+            destination=destination,
             anchorText='Contact Us',
             type='primary',
             iconType='shopping-bag',

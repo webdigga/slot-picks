@@ -75,15 +75,17 @@
       </div>
       
       <div class="bg-gray-50 p-5 lg:p-11">
-        <h2 class="text-[color:var(--deep-teal)] mb-11">Send Us A Message</h2>
+        <h2 class="text-[color:var(--deep-teal)] mb-4">Send Us A Message</h2>
         <form
+          data-test="contact-form"
           name="contact"
           method="POST"
           action="/thank-you/"
           netlify>
-          <input type="text" required class="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7  border border-gray-200 focus:outline-none pl-4 mb-10" name="name" placeholder="Name">
-          <input type="email" required class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7  border border-gray-200 focus:outline-none pl-4 mb-10" name="email" placeholder="Email">
-          <input type="number" required class="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7  border border-gray-200 focus:outline-none pl-4 mb-10" name="phone" placeholder="Phone">
+          <input type="text" required class="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7  border border-gray-200 focus:outline-none pl-4 mb-5" name="name" placeholder="Your name">
+          <input type="email" required class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7  border border-gray-200 focus:outline-none pl-4 mb-5" name="email" placeholder="Your email">
+          <input type="number" required class="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7  border border-gray-200 focus:outline-none pl-4 mb-5" name="phone" placeholder="Your phone number">
+          <input type="text" data-test="product" class="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7  border border-gray-200 focus:outline-none pl-4 mb-5" name="product" placeholder="Product">
 
           <textarea
             rows="5"

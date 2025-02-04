@@ -97,6 +97,10 @@
       {% include "static/js/menuToggle/menuToggle.js" %}
     {% endset %}
 
+    {% set getProductFromURL %}
+      {% include "static/js/getProductFromURL/getProductFromURL.js" %}
+    {% endset %}
+
     {% set moreButtonScroll %}
       {% include "static/js/moreButtonScroll/moreButtonScroll.js" %}
     {% endset %}
@@ -110,18 +114,21 @@
       {{ menuToggle | jsmin | safe }}
       {{ moreButtonScroll | jsmin | safe }}
       {{ callMeAnchorBehaviour | jsmin | safe }}
+      {{ getProductFromURL | jsmin | safe }}
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 
     <script>
-      const glideMulti = new Glide('.multi', {
-        type: 'slider',
-        focusAt: 'center',
-        perView: 1
-      });
+      if(document.querySelector('.multi')) {
+        const glideMulti = new Glide('.multi', {
+          type: 'slider',
+          focusAt: 'center',
+          perView: 1
+        });
 
-      glideMulti.mount();
+        glideMulti.mount();
+      }
     </script>
   </body>
 </html>
