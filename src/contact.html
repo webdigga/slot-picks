@@ -12,7 +12,6 @@ eleventyComputed:
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
 {% import "./_includes/components/testimonials.html" as testimonials with context %}
-{% import "./_includes/components/location-details.html" as locationDetails with context %}
 {% import "./_includes/components/contact-form.html" as contactForm with context %}
 
 <div class="">
@@ -23,10 +22,6 @@ eleventyComputed:
 
   <section class="container container--large">
     {{ contactForm.contactForm(title=contact.title) }}
-  </section>
-
-  <section>
-    {{ locationDetails.locationDetails() }}
   </section>
   
   <section class="bg-[color:var(--white)]">    
