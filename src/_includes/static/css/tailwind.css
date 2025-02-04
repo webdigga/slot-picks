@@ -82,12 +82,8 @@ p {
   @apply py-9 sm:py-10 md:py-28;
 }
 
-.anchor-pop {
-  @apply underline-offset-4 decoration-2 underline decoration-[color:var(--dark-purple)];
-}
-
 .anchor-highlight {
-  @apply underline-offset-4 decoration-2 underline decoration-[color:var(--light-green)];
+  @apply underline-offset-4 decoration-2 underline decoration-[color:var(--deep-teal)];
 }
 
 .anchor-white {

@@ -1,10 +1,10 @@
 {% macro anchor(type, anchorText, destination, iconType, iconWidthHeight, iconSize, isExternal, classes, isPhone, dataTest, pointerEvents) %}
 
   {# Set primary as the default #}
-  {% set typeClasses = 'bg-[color:var(--dark-purple)] text-[color:var(--white)]' %}
+  {% set typeClasses = 'bg-[color:var(--deep-teal)] text-[color:var(--white)]' %}
 
   {% if type == 'secondary' %}
-    {% set typeClasses = 'bg-[color:var(--light-green)] text-[color:var(--white)]' %}
+    {% set typeClasses = 'bg-[color:var(--soft-clay)] text-[color:var(--white)]' %}
   {% endif %}
 
   {% set icon %}
@@ -42,7 +42,23 @@
           clip-rule="evenodd"
         />
       </svg>
-    {% else %}
+    {% elif iconType == 'shopping-bag' %}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="{{ iconWidthHeight if iconWidthHeight else "24" }}px"
+        height="{{ iconWidthHeight if iconWidthHeight else "24" }}px"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="pl-1 {{ iconSize if iconSize else "size-6" }}">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+        />
+      </svg>
+    {% else %}    
       
     {% endif %}
   {% endset %}
@@ -57,7 +73,7 @@
     {% if isExternal %}target="_blank"{% endif %}
     {% if isExternal %}rel="nofollow"{% endif %}
     {% if dataTest %}data-test="{{ dataTest }}"{% endif %}
-    class="mb-4 rounded-md cursor-pointer inline-block py-4 px-6 hover:opacity-80 {{ typeClasses | safe }} {{ classes | safe }}"
+    class="mb-4 rounded-full cursor-pointer inline-block py-4 px-6 hover:opacity-80 {{ typeClasses | safe }} {{ classes | safe }}"
   >
     <div class="flex items-center {{ pointerEvents | safe }} ">{{ anchorText | safe }}
       {{ icon | safe }}

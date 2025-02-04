@@ -7,6 +7,7 @@ eleventyComputed:
 
 {% import "./partials/navbar.html" as navBar with context %}
 {% import "./components/testimonials.html" as testimonials with context %}
+{% import "./components/buttons/anchor.html" as anchor with context %}
 
 <div class="border-b border-solid border-b-[color:var(--very-light-gray)]">
   {{ navBar.nav(bgColour='bg-white') }}
@@ -84,9 +85,19 @@ eleventyComputed:
 
       <div>
         <h1>{{ title }}</h1>
-        <p class="text-sm">&pound;{{ price }}</p>
+        <p>&pound;{{ price }}</p>
         <div class="text-sm">
           <p>{{ content | safe }}</p>
+        </div>
+
+        <div class="mt-8 flex lg:justify-self-end">
+          {{ anchor.anchor(
+            destination='/contact/',
+            anchorText='Contact Us',
+            type='primary',
+            iconType='shopping-bag',
+            classes='w-full inline-flex items-center justify-center lg:min-w-[400px] mx-auto'
+          ) }}
         </div>
       </div>
     </div>
