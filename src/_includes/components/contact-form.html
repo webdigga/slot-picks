@@ -9,13 +9,13 @@
             <img
               src="/_includes/static/img/pexels-pedrofurtadoo-30471948.avif"
               alt="Perennial Weaver contact"
-              class="w-full h-full lg:rounded-l-md rounded-lg bg-blend-multiply bg-[color:var(--deep-teal)] object-cover brightness-[0.75]"
+              class="w-full h-full bg-blend-multiply bg-[color:var(--deep-teal)] object-cover brightness-[0.75]"
               width="624px"
               height="716px"
             />
             <h1 class="text-[white] absolute top-11 left-11">{{ title | safe }}</h1>
             <div class="absolute bottom-0 w-full lg:p-11 p-5">
-              <div class="bg-white rounded-lg p-6 block">
+              <div class="bg-white  p-6 block">
               
                 <div class="flex items-center mb-6">
                   <svg class="size-8" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,20 +74,20 @@
         </div>
       </div>
       
-      <div class="bg-gray-50 p-5 lg:p-11 lg:rounded-r-md rounded-lg">
+      <div class="bg-gray-50 p-5 lg:p-11">
         <h2 class="text-[color:var(--deep-teal)] mb-11">Send Us A Message</h2>
         <form
           name="contact"
           method="POST"
           action="/thank-you/"
           netlify>
-          <input type="text" required class="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 mb-10" name="name" placeholder="Name">
-          <input type="email" required class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 mb-10" name="email" placeholder="Email">
-          <input type="number" required class="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 mb-10" name="phone" placeholder="Phone">
+          <input type="text" required class="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7  border border-gray-200 focus:outline-none pl-4 mb-10" name="name" placeholder="Name">
+          <input type="email" required class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7  border border-gray-200 focus:outline-none pl-4 mb-10" name="email" placeholder="Email">
+          <input type="number" required class="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7  border border-gray-200 focus:outline-none pl-4 mb-10" name="phone" placeholder="Phone">
 
           <textarea
             rows="5"
-            class="pt-2 w-full text-gray-600 placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 mb-10"
+            class="pt-2 w-full text-gray-600 placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7  border border-gray-200 focus:outline-none pl-4 mb-10"
             name="message"
             placeholder="Message"
             required></textarea>

@@ -10,6 +10,7 @@ addressLineThree: 71 Lion Road
 townCity: Twickenham
 region: London
 postCode: TW1 4HT
+locationLatLong: "51.4483,-0.3347"
 country: "GB"
 googleOpeningMonday: "09:00"
 googleClosingMonday: "17:00"
