@@ -1,0 +1,35 @@
+---
+eleventyImport:
+  collections: ["products"]
+---
+
+{% macro youMightAlsoLike(tag, currentProductTitle) %}
+  {% set productList = collections[tag] %} 
+
+  {% if productList.length > 0 and productList[0].data.title != currentProductTitle %}
+
+    <h2>You might also like..</h2>
+
+    <div class="grid grid-cols-6">
+      {% for post in productList | reverse %}
+        {% if post.data.title != currentProductTitle %}
+          <a
+            href="{{ post.url }}"
+            class="text-center text-sm">          
+            <img
+              src="{{ post.data.images[0].path }}"
+              alt="{{ post.data.images[0].alt }}"
+              class="w-full h-auto mb-4"
+              width="600px"
+              height="600px"
+            />
+
+            {{ post.data.title }} / <span class="text-[color:var(--dark-gray)]">&pound;{{ post.data.price }}</span>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+  {% endif %}  
+
+{% endmacro %}
