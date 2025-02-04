@@ -4,9 +4,9 @@ eleventyImport:
 ---
 
 {% macro youMightAlsoLike(tag, currentProductTitle) %}
-  {% set productList = collections[tag] %} 
+  {% set productList = collections[tag] | itemFilter(currentProductTitle) %} 
 
-  {% if productList.length > 0 and productList[0].data.title != currentProductTitle %}
+  {% if productList.length > 0  %}
 
     <h2>You might also like..</h2>
 
@@ -24,7 +24,7 @@ eleventyImport:
               height="600px"
             />
 
-            {{ post.data.title }} / <span class="text-[color:var(--dark-gray)]">&pound;{{ post.data.price }}</span>
+            {{ post.data.title }} / <span><span class="text-xs font-bold">&pound;</span><span class="text-xl font-bold">{{ post.data.price }}</span></span>
           </a>
         {% endif %}
       {% endfor %}

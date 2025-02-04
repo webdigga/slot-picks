@@ -133,6 +133,14 @@ module.exports = function (eleventyConfig) {
     return collection;
   });
 
+  // Filter out specific item
+  eleventyConfig.addFilter('itemFilter', function(collection, title) {
+    if (!Array.isArray(collection)) return collection;
+    if (!title) return collection;
+    const filtered = collection.filter(item => item.data.title !== title);
+    return filtered;
+  });
+
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
   return {
