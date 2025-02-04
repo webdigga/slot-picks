@@ -8,19 +8,15 @@
 
 /*Your Custom CSS Goes here*/
 :root { 
-  --dark-purple: #3F0961;
-  --light-green: #006A4E;
+  --earthy-beige-light: #ebe2d6;
+  --earthy-beige: #D8C3A5;
+  --deep-teal: #3A6B75;
+  --soft-clay: #B26A5A;
   --white: #FFFFFF;
   --lightest-gray: #f9fafb;
   --very-light-gray: #dcdcdc;
   --dark-gray: #5f6571;
   --dark-copy: #333333;
-
-  /* New colours below (old ones need removing if brand specific) */
-  --earthy-beige-light: #ebe2d6;
-  --earthy-beige: #D8C3A5;
-  --deep-teal: #3A6B75;
-  --soft-clay: #B26A5A;
 }
 
 body {
