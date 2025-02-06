@@ -3,8 +3,6 @@ firstLevelItems:
     url: /
   - text: Shop
     url: /shop/
-  - text: Products
-    url: /products/
     secondLevelItems:
       - text: Cushions
         url: /products/cushions/
