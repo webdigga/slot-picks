@@ -10,6 +10,18 @@ firstLevelItems:
         url: /products/scarves/
       - text: Bags
         url: /products/bags/
+      - text: Table Matts
+        url: /products/table-matts/
+      - text: Table Runners
+        url: /products/table-runners/
+      - text: Glasses Cases
+        url: /products/glasses-cases/
+      - text: Key Rings
+        url: /products/key-rings/
+      - text: Lavender Bags
+        url: /products/lavender-bags/
+      - text: Bespoke Orders
+        url: /products/bespoke-orders/      
   - text: Contact
     url: /contact/
   - text: FAQs

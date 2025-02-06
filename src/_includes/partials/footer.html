@@ -1,283 +1,172 @@
 {% import "../components/buttons/anchor.html" as anchor with context %}
 
-<footer class="w-full border-t border-solid border-t-[color:var(--very-light-gray)]">
-  <div class="container container-large">
-      
-    <div class="grid grid-cols-1 lg:grid-cols-6 gap-3 md:gap-8 py-10 sm:max-w-sm sm:mx-auto md:max-w-md lg:max-w-full gap-y-8 sm:justify-items-center lg:justify-items-start">
-      <div class="col-span-full lg:col-span-2 lg:mb-0 flex flex-col items-center lg:items-start">
+<footer class="relative py-20 flex flex-col items-center bg-[color:var(--soft-clay)] overflow-hidden md:py-40">
+  <div class="relative z-[1] container m-auto px-6 md:px-12">
+    <div class="m-auto md:w-10/12 lg:w-8/12 xl:w-6/12">
+      <div class="flex flex-wrap items-center justify-between md:flex-nowrap">
+        <div class="w-full space-x-12 flex justify-center sm:w-7/12 md:justify-start">
+            
+          {% if navigation.firstLevelItems %}
+            <ul class="list-disc list-inside space-y-8">
+              {% for item in navigation.firstLevelItems %}
+                
+                  {% if item.text == 'Contact' or item.text == 'FAQs' or item.text == 'Shop' %}
 
-        {% if settings.siteName %}
-          <p class="py-1 text-center lg:text-left">
-            <small class="subtle-text-on-light-background">{{ settings.siteName }}</small>
-          </p>
-        {% endif %}
+                    <li>
+                      <a
+                        href="{{ item.url }}"
+                        class="hover:opacity-70 transition">
+                        {{ item.text }}
+                      </a>
+                    </li>
+                  
+                  {% endif %}
+                
+              {% endfor %}                    
+            </ul>
+          {% endif %}                  
 
-        
-        <p class="py-1 text-center lg:text-left">
-          <small class="subtle-text-on-light-background">        
-            {{ settings.addressLineOne | safe }},
-            {{ settings.addressLineTwo | safe }},
-            {{ settings.addressLineThree | safe }},
-            {{ settings.townCity | safe }},
-            {{ settings.postCode | safe }}
-          </small>
-        </p>
-
-        {% if settings.companyNumber %}
-          <p class="py-1 text-center lg:text-left">
-            <small class="subtle-text-on-light-background">Company number: {{ settings.companyNumber }}</small>
-          </p>
-        {% endif %}
-
-        {% if settings.email %}
-          <p class="py-1 text-center lg:text-left">
-            <small class="subtle-text-on-light-background">
-              <a href="mailto:{{ settings.email }}" class="py-2 break-all">Email me @ {{ settings.email }}</a>
-            </small>
-          </p>
-        {% endif %}
-
-        {% if settings.phoneNumber %}
-          <p class="py-1 mb-2 text-center lg:text-left">
-            <small class="subtle-text-on-light-background">        
-              <a href="tel:{{ settings.phoneNumber }}" class="py-2">Call me on {{ settings.phoneNumber }}</a>
-            </small>
-          </p>
-        {% endif %}       
-          
-      </div>
-
-      {% if navigation.firstLevelItems %}
-        <ul class="mx-auto text-left w-full lg:w-auto">
           {% for item in navigation.firstLevelItems %}
-            
-              {% if item.text == 'Contact' or item.text == 'FAQs' or item.text == 'Shop' %}
-              
-                <li>
-                  <a href="{{ item.url }}">
-                    <h4 class="mb-2 lg:mb-7 font-medium text-lg dark-copy">{{ item.text }}</h4>
-                  </a>                
-                </li>
-              
-              {% endif %}
-            
-          {% endfor %}
-        </ul>
-
-        {% for item in navigation.firstLevelItems %}
-          {% if item.text != 'Home' and item.text != 'Contact' and item.text != 'FAQs' %}
-            <div class="mx-auto text-left w-full lg:w-auto">              
+            {% if item.text != 'Home' and item.text != 'Contact' and item.text != 'FAQs' %}
+                        
 
               {% if item.secondLevelItems %}
-                <ul class="text-sm  transition-all duration-500 grid grid-cols-2 gap-x-8">
+                <ul role="list" class="space-y-8">
                   {% for subItem in item.secondLevelItems %}
-                    <li class="py-3">
+
+                    {% set icon %}
+                      {% if subItem.text == 'Scarves' %}
+                        <img src="/_includes/static/img/scarf.svg" width="16px" height="16px" />
+                      {% elseif  subItem.text == 'Bags' %}
+                        <img src="/_includes/static/img/bag.svg" width="16px" height="16px" />
+                      {% elseif  subItem.text == 'Cushions' %}
+                        <img src="/_includes/static/img/cushion.svg" width="16px" height="16px" />
+                      {% elseif  subItem.text == 'Table Matts' %}
+                        <img src="/_includes/static/img/table-matt.svg" width="16px" height="16px" />
+                      {% elseif  subItem.text == 'Table Runners' %}
+                        <img src="/_includes/static/img/table-runner.svg" width="16px" height="16px" />
+                      {% elseif  subItem.text == 'Glasses Cases' %}
+                        <img src="/_includes/static/img/glasses.svg" width="16px" height="16px" />
+                      {% elseif  subItem.text == 'Key Rings' %}
+                        <img src="/_includes/static/img/key-ring.svg" width="16px" height="16px" />
+                      {% elseif  subItem.text == 'Lavender Bags' %}
+                        <img src="/_includes/static/img/lavender-bag.svg" width="16px" height="16px" />
+                      {% elseif  subItem.text == 'Bespoke Orders' %}
+                        <img src="/_includes/static/img/bespoke-orders.svg" width="16px" height="16px" />
+                      {% endif %}
+                    {% endset %}
+
+                    <li>
                       <a
                         href="{{ subItem.url }}"
-                        class="text-[color:var(--dark-gray)] hover:text-[color:var(--dark-copy)]">
-                        {{ subItem.text }}
+                        class="flex items-center space-x-3 hover:opacity-70 transition">
+                          {{ icon | safe }}
+                          <span>{{ subItem.text }}</span>
                       </a>
                     </li>
                   {% endfor %}
                 </ul>
               {% endif %}
-            </div>
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-    </div>
-      
-    <div class="py-7 border-t border-solid border-t-[color:var(--very-light-gray)]">
-      <div class="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
-        <div class="text-center lg:text-left">
-          <p class="subtle-text-on-light-background py-1">
-            <small>© {{ settings.siteName }} {{ helpers.currentYear() }}, All rights reserved.</small>
-          </p>
-
-          <p class="subtle-text-on-light-background py-1">
-            <small>
-              <a
-                class="hover:opacity-70"
-                href="/privacy-policy/">
-                Privacy Policy
-              </a>
-            </small>
-          </p>
-          
-          {% if settings.poweredBy %}
-          <p class="py-1">
-            <small class="subtle-text-on-light-background">
-              Website by <a href="{{ settings.poweredByUrl }}" class="hover:opacity-70" target="_blank" rel="noopener">{{ settings.poweredBy }}</a>
-            </small>
-          </p>
-        {% endif %}
+              
+            {% endif %}
+          {% endfor %}
+                
+            
         </div>
+        <div class="w-10/12 m-auto  mt-16 space-y-6 text-center sm:text-left sm:w-5/12 sm:mt-auto">
 
-        
+            {% if settings.siteName %}
+              <span class="block">{{ settings.siteName }}</span>
+            {% endif %}
+
+            <span class="block">                      
+              {{ settings.addressLineOne | safe }},
+              {{ settings.addressLineTwo | safe }},
+              {{ settings.addressLineThree | safe }},
+              {{ settings.townCity | safe }},
+              {{ settings.postCode | safe }}                   
+            </span>
+
+            {% if settings.email %}
+              <span class="block">Email me @ <a href="mailto:{{ settings.email }}" target="_blank" rel="noopener noreferrer" class="hover:opacity-70 font-semibold">{{ settings.email }}</a></span>
+            {% endif %}
+
+            {% if settings.phoneNumber %}
+              <span class="block">Call me on {{ settings.phoneNumber }}</span>
+            {% endif %}                  
+
+            <span class="block">
+              <a href="/privacy-policy/" class="font-semibold text-white hover:opacity-70">Privacy Policy</a> 
+            </span>
+
+            <span class="block">
+              <small>© {{ settings.siteName }} {{ helpers.currentYear() }}, All rights reserved.</small>
+            </span> 
+            
+            <span class="block">
+              <small>Website by <a href="{{ settings.poweredByUrl }}" class="hover:opacity-70 font-semibold text-white" target="_blank" rel="noopener">{{ settings.poweredBy }}</a></small>
+            </span>
+
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener"
+                class="w-9 h-9 rounded-full bg-[color:var(--dark-gray)] flex justify-center items-center hover:bg-[color:var(--deep-teal)]">
+                <svg
+                  width="20px"
+                  height="20px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current text-white"
+                  viewBox="0 0 320 512">
+                  <title>Facebook</title>
+                  <path
+                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                  />
+                </svg> 
+              </a>
+    
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener"
+                class="w-9 h-9 rounded-full bg-[color:var(--dark-gray)] flex justify-center items-center hover:bg-[color:var(--deep-teal)]">
+                <svg
+                  width="20px"
+                  height="20px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current text-white"
+                  viewBox="0 0 448 512">
+                  <title>LinkedIn</title>
+                  <path
+                    d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                  />
+                </svg>
+              </a>
+    
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener"
+                class="w-9 h-9 rounded-full bg-[color:var(--dark-gray)] flex justify-center items-center hover:bg-[color:var(--deep-teal)]">
+                <svg
+                  width="20px"
+                  height="20px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current text-white"
+                  viewBox="0 0 512 512">
+                  <title>X</title>
+                  <path
+                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                  />
+                </svg>
+              </a>
+    
+            </div>
+
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-
-
-
-
-
-<footer class="relative py-20 flex flex-col items-center bg-[color:var(--soft-clay)] overflow-hidden md:py-40">
-  <div class="relative z-[1] container m-auto px-6 md:px-12">
-      <div class="m-auto md:w-10/12 lg:w-8/12 xl:w-6/12">
-          <div class="flex flex-wrap items-center justify-between md:flex-nowrap">
-              <div class="w-full space-x-12 flex justify-center sm:w-7/12 md:justify-start">
-                  
-                {% if navigation.firstLevelItems %}
-                  <ul class="list-disc list-inside space-y-8">
-                    {% for item in navigation.firstLevelItems %}
-                      
-                        {% if item.text == 'Contact' or item.text == 'FAQs' or item.text == 'Shop' %}
-
-                          <li>
-                            <a
-                              href="{{ item.url }}"
-                              class="hover:opacity-70 transition">
-                              {{ item.text }}
-                            </a>
-                          </li>
-                        
-                        {% endif %}
-                      
-                    {% endfor %}                    
-                  </ul>
-                {% endif %}                  
-
-                {% for item in navigation.firstLevelItems %}
-                  {% if item.text != 'Home' and item.text != 'Contact' and item.text != 'FAQs' %}
-                              
-
-                    {% if item.secondLevelItems %}
-                      <ul role="list" class="space-y-8">
-                        {% for subItem in item.secondLevelItems %}
-
-                          {% set icon %}
-                            {% if subItem.text == 'Scarves' %}
-                              <img src="/_includes/static/img/scarf.svg" width="16px" height="16px" />
-                            {% elseif  subItem.text == 'Bags' %}
-                              <img src="/_includes/static/img/bag.svg" width="16px" height="16px" />
-                            {% elseif  subItem.text == 'Cushions' %}
-                              <img src="/_includes/static/img/cushion.svg" width="16px" height="16px" />
-                            {% endif %}
-                          {% endset %}
-
-                          <li>
-                            <a
-                              href="{{ subItem.url }}"
-                              class="flex items-center space-x-3 hover:opacity-70 transition">
-                                {{ icon | safe }}
-                                <span>{{ subItem.text }}</span>
-                            </a>
-                          </li>
-                        {% endfor %}
-                      </ul>
-                    {% endif %}
-                    
-                  {% endif %}
-                {% endfor %}
-                      
-                  
-              </div>
-              <div class="w-10/12 m-auto  mt-16 space-y-6 text-center sm:text-left sm:w-5/12 sm:mt-auto">
-
-                  {% if settings.siteName %}
-                    <span class="block">{{ settings.siteName }}</span>
-                  {% endif %}
-
-                  <span class="block">                      
-                    {{ settings.addressLineOne | safe }},
-                    {{ settings.addressLineTwo | safe }},
-                    {{ settings.addressLineThree | safe }},
-                    {{ settings.townCity | safe }},
-                    {{ settings.postCode | safe }}                   
-                  </span>
-
-                  {% if settings.email %}
-                    <span class="block">Email me @ <a href="mailto:{{ settings.email }}" target="_blank" rel="noopener noreferrer" class="hover:opacity-70 font-semibold">{{ settings.email }}</a></span>
-                  {% endif %}
-
-                  {% if settings.phoneNumber %}
-                    <span class="block">Call me on {{ settings.phoneNumber }}</span>
-                  {% endif %}                  
-
-                  <span class="block">
-                    <a href="/privacy-policy/" class="font-semibold text-white hover:opacity-70">Privacy Policy</a> 
-                  </span>
-
-                  <span class="block">
-                    <small>© {{ settings.siteName }} {{ helpers.currentYear() }}, All rights reserved.</small>
-                  </span> 
-                  
-                  <span class="block">
-                    <small>Website by <a href="{{ settings.poweredByUrl }}" class="hover:opacity-70 font-semibold text-white" target="_blank" rel="noopener">{{ settings.poweredBy }}</a></small>
-                  </span>
-
-                  <div class="flex space-x-4">
-                    <a
-                      href="#"
-                      target="_blank"
-                      rel="noopener"
-                      class="w-9 h-9 rounded-full bg-[color:var(--dark-gray)] flex justify-center items-center hover:bg-[color:var(--deep-teal)]">
-                      <svg
-                        width="20px"
-                        height="20px"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="fill-current text-white"
-                        viewBox="0 0 320 512">
-                        <title>Facebook</title>
-                        <path
-                          d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
-                        />
-                      </svg> 
-                    </a>
-          
-                    <a
-                      href="#"
-                      target="_blank"
-                      rel="noopener"
-                      class="w-9 h-9 rounded-full bg-[color:var(--dark-gray)] flex justify-center items-center hover:bg-[color:var(--deep-teal)]">
-                      <svg
-                        width="20px"
-                        height="20px"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="fill-current text-white"
-                        viewBox="0 0 448 512">
-                        <title>LinkedIn</title>
-                        <path
-                          d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
-                        />
-                      </svg>
-                    </a>
-          
-                    <a
-                      href="#"
-                      target="_blank"
-                      rel="noopener"
-                      class="w-9 h-9 rounded-full bg-[color:var(--dark-gray)] flex justify-center items-center hover:bg-[color:var(--deep-teal)]">
-                      <svg
-                        width="20px"
-                        height="20px"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="fill-current text-white"
-                        viewBox="0 0 512 512">
-                        <title>X</title>
-                        <path
-                          d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
-                        />
-                      </svg>
-                    </a>
-          
-                  </div>
-
-              </div>
-          </div>
-      </div>
   </div>
 
 </footer>
