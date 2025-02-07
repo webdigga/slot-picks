@@ -32,7 +32,12 @@ eleventyComputed:
 
         <a
           href="{{ post.url }}"
-          class="text-center text-sm">          
+          class="text-center text-sm relative group">
+          
+          <span class="opacity-0 group-hover:opacity-100 hover:animate-spin absolute rounded-full transition-all duration-300 ease-in-out border-white w-[37px] h-[37px] border bg-[color:var(--white)] text-3xl top-[calc(50%-30px)] left-[calc(50%-20px)]">
+            &#x2b;
+          </span>
+
           <img
             src="{{ post.data.images[0].path }}"
             alt="{{ post.data.images[0].alt }}"
