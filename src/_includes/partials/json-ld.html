@@ -65,6 +65,7 @@
         "@type": "WebPage",
         "@id": "{{ env.site }}/contact/"
       },
+      "url": "{{ env.site }}/contact/",
       "publisher": {
         "@type": ["LocalBusiness", "ArtisanBusiness"],
         "@id": "{{ env.site }}",
@@ -73,7 +74,6 @@
         "telephone": "{{ settings.phoneNumber }}",
         "priceRange": "££",
         "email": "{{ settings.email }}",
-        "url": "{{ env.site }}",
         "image": "{{ env.site }}/android-chrome-512x512.png",
         "description": "{{ description }}",
         "address": {
@@ -131,6 +131,7 @@
           }
         }{{ "" if loop.last else "," }}{% endfor %}{% endif %}
       ],
+      "url": "{{ env.site }}/frequently-asked-questions-faqs/",
       "publisher": {
         "@type": ["LocalBusiness", "ArtisanBusiness"],
         "@id": "{{ env.site }}",
@@ -138,8 +139,7 @@
         "logo": "{{ env.site }}/android-chrome-512x512.png",
         "telephone": "{{ settings.phoneNumber }}",
         "priceRange": "££",
-        "email": "{{ settings.email }}",
-        "url": "{{ env.site }}",
+        "email": "{{ settings.email }}",        
         "image": "{{ env.site }}/android-chrome-512x512.png",
         "description": "{{ description }}",
         "address": {
@@ -187,8 +187,9 @@
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "{{ seoTitle | safe}}",
-      "image": "{{ env.site }}/android-chrome-512x512.png",  
+      "headline": "{{ seoTitle | safe }}",
+      "image": "{{ env.site }}/android-chrome-512x512.png",
+      "url": "{{ env.site }}/{{ title | slugify }}/",
       "publisher": {
         "@type": ["LocalBusiness", "ArtisanBusiness"],
         "@id": "{{ env.site }}",
@@ -196,8 +197,7 @@
         "logo": "{{ env.site }}/android-chrome-512x512.png",
         "telephone": "{{ settings.phoneNumber }}",
         "priceRange": "££",
-        "email": "{{ settings.email }}",
-        "url": "{{ env.site }}",
+        "email": "{{ settings.email }}",        
         "image": "{{ env.site }}/android-chrome-512x512.png",
         "description": "{{ description }}",
         "address": {
@@ -282,7 +282,6 @@
         "telephone": "{{ settings.phoneNumber }}",
         "priceRange": "££",
         "email": "{{ settings.email }}",
-        "url": "{{ env.site }}",
         "image": "{{ env.site }}/android-chrome-512x512.png",
         "description": "{{ description }}",
         "address": {
