@@ -8,7 +8,7 @@
       
     {
       "@context": "https://schema.org",
-      "@type": "MedicalBusiness",
+      "@type": ["LocalBusiness", "ArtisanBusiness"]
       "image": "{{ env.site }}/android-chrome-512x512.png",
       "url": "{{ env.site }}",
       "logo": "{{ env.site }}/android-chrome-512x512.png",
@@ -65,7 +65,7 @@
         "@id": "{{ env.site }}/contact/"
       },
       "publisher": {
-        "@type": "MedicalBusiness",
+        "@type": ["LocalBusiness", "ArtisanBusiness"],
         "@id": "{{ env.site }}",
         "name": "{{ settings.siteName }}",
         "logo": "{{ env.site }}/android-chrome-512x512.png",
@@ -130,7 +130,7 @@
         }{{ "" if loop.last else "," }}{% endfor %}{% endif %}
       ],
       "publisher": {
-        "@type": "MedicalBusiness",
+        "@type": ["LocalBusiness", "ArtisanBusiness"],
         "@id": "{{ env.site }}",
         "name": "{{ settings.siteName }}",
         "logo": "{{ env.site }}/android-chrome-512x512.png",
@@ -187,7 +187,7 @@
       "headline": "{{ seoTitle | safe}}",
       "image": "{{ env.site }}/android-chrome-512x512.png",  
       "publisher": {
-        "@type": "MedicalBusiness",
+        "@type": ["LocalBusiness", "ArtisanBusiness"],
         "@id": "{{ env.site }}",
         "name": "{{ settings.siteName }}",
         "logo": "{{ env.site }}/android-chrome-512x512.png",
@@ -243,7 +243,7 @@
       "@context": "https://schema.org/", 
       "@type": "Product", 
       "name": "{{ title }}",
-      "image": "{{ env.site }}{{ image }}",
+      "image": "{{ env.site }}{{ images[0].path }}",
       "description": "{{ description}}",
       "brand": {
         "@type": "Brand",
@@ -251,7 +251,7 @@
       },
       "offers": {
         "@type": "Offer",
-        "url": "https://perennialweaver.com/product1",
+        "url": "{{ env.site }}/{{ title | slugify}}",
         "priceCurrency": "GBP",
         "price": "{{ price }}",
         "availability": "https://schema.org/InStock",
@@ -271,7 +271,7 @@
       "image": "{{ env.site }}/android-chrome-512x512.png",
       "url": "{{ env.site }}",
       "publisher": {
-        "@type": "MedicalBusiness",
+        "@type": ["LocalBusiness", "ArtisanBusiness"],
         "@id": "{{ env.site }}",
         "name": "{{ settings.siteName }}",
         "logo": "{{ env.site }}/android-chrome-512x512.png",
