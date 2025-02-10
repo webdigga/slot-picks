@@ -1,6 +1,6 @@
 {% import "./buttons/button.html" as button with context %}
 
-{% macro contactForm(title, type, message, ctaText, destination) %}
+{% macro contactForm(title, type, message, ctaText, destination, formName) %}
   <div class="mx-auto max-w-7xl" id="contact">
     <div class="grid lg:grid-cols-2 grid-cols-1">
       <div class="lg:mb-0 mb-10">
@@ -78,7 +78,7 @@
         <h2 class="text-[color:var(--deep-teal)] mb-4">{{ message }}</h2>
         <form
           data-test="contact-form"
-          name="contact"
+          name="{{ formName}}"
           method="POST"
           action="{{ destination }}"
           netlify>
