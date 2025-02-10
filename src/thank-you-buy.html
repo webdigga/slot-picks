@@ -1,0 +1,38 @@
+---
+layout: default
+path: contact
+type: contact
+ignore: true
+permalink: thank-you-buy/index.html
+---
+
+{% import "./_includes/partials/navbar.html" as navBar with context %}
+{% import "./_includes/components/testimonials.html" as testimonials with context %}
+
+<div class="">
+  
+  <div class="border-b border-solid border-b-[color:var(--very-light-gray)]">
+    {{ navBar.nav('bg-[color:var(--white)]') }}
+  </div>
+
+  <section class="container container--large dark-copy">
+    <h1>Thank You for Your Pre-Order!</h1>
+    <p>I truly appreciate your support and patience as we craft your unique piece. At Perennial Weaver, every item is made to order with care, ensuring the highest quality and attention to detail.</p>
+    <p>I will be in touch as soon as possible to confirm your order details and arrange payment. Once payment is received, we will begin the making process.</p>
+
+    <h2>What Happens Next?</h2>
+    <ul class="list-disc ml-4">
+      <li class="mb-2">Order Confirmation: You'll receive an email/phone call shortly to confirm the details</li>
+      <li class="mb-2">Payment Process: We will contact you to arrange payment securely</li>
+      <li class="mb-2">Crafting Time: As each item is made to order, I will provide an estimated timeframe for production. This can vary depending on the complexity of your chosen piece, but I will keep you updated every step of the way</li>
+      <li class="mb-2">Delivery: Once your item is completed, I will carefully package and ship it to you. I'll send tracking details so you know exactly when to expect your order</li>
+      <li class="mb-2">If you have any questions in the meantime, feel free to get in touch with me at {{ settings.email }} / {{ settings.phoneNumber }}</li>
+    </ul>
+
+    <p class="mt-4">Thank you again for choosing Perennial Weaver - I can't wait to create something special for you!</p>
+  </section>
+  
+  <section class="bg-[color:var(--white)]">    
+    {{ testimonials.testimonialComponent() }}  
+  </section>
+</div>

@@ -1,6 +1,6 @@
 {% import "./buttons/button.html" as button with context %}
 
-{% macro contactForm(title, type, message, ctaText) %}
+{% macro contactForm(title, type, message, ctaText, destination) %}
   <div class="mx-auto max-w-7xl" id="contact">
     <div class="grid lg:grid-cols-2 grid-cols-1">
       <div class="lg:mb-0 mb-10">
@@ -80,7 +80,7 @@
           data-test="contact-form"
           name="contact"
           method="POST"
-          action="/thank-you/"
+          action="{{ destination }}"
           netlify>
           <input type="text" required class="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7  border border-gray-200 focus:outline-none pl-4 mb-5" name="name" placeholder="Your name">
           <input type="email" required class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7  border border-gray-200 focus:outline-none pl-4 mb-5" name="email" placeholder="Your email">
