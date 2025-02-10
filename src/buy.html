@@ -1,13 +1,13 @@
 ---
 layout: default
-path: contact
-type: contact
+path: buy
+type: buy
 ogType: website
 seoSchemaPageType: ContactPage
 eleventyComputed:
-  description: "{{ contact.description }}"
-  seoTitle: "{{ contact.seoTitle }}"
-  canonical: "{{ env.site }}/contact/"
+  description: "{{ buy.description }}"
+  seoTitle: "{{ buy.seoTitle }}"
+  canonical: "{{ env.site }}/buy/"
 ---
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
@@ -21,7 +21,7 @@ eleventyComputed:
   </div>
 
   <section class="container container--large">
-    {{ contactForm.contactForm(title=contact.title, type="contact", message="Send Us A Message", ctaText="Send") }}
+    {{ contactForm.contactForm(title=buy.title, type="buy", message="Place your pre-order and I will be in touch as soon as possible", ctaText="Pre-Order Now") }}
   </section>
   
   <section class="bg-[color:var(--white)]">    

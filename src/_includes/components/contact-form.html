@@ -1,6 +1,6 @@
 {% import "./buttons/button.html" as button with context %}
 
-{% macro contactForm(title) %}
+{% macro contactForm(title, type, message, ctaText) %}
   <div class="mx-auto max-w-7xl" id="contact">
     <div class="grid lg:grid-cols-2 grid-cols-1">
       <div class="lg:mb-0 mb-10">
@@ -75,7 +75,7 @@
       </div>
       
       <div class="bg-gray-50 p-5 lg:p-11">
-        <h2 class="text-[color:var(--deep-teal)] mb-4">Send Us A Message</h2>
+        <h2 class="text-[color:var(--deep-teal)] mb-4">{{ message }}</h2>
         <form
           data-test="contact-form"
           name="contact"
@@ -85,18 +85,21 @@
           <input type="text" required class="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7  border border-gray-200 focus:outline-none pl-4 mb-5" name="name" placeholder="Your name">
           <input type="email" required class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7  border border-gray-200 focus:outline-none pl-4 mb-5" name="email" placeholder="Your email">
           <input type="number" required class="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7  border border-gray-200 focus:outline-none pl-4 mb-5" name="phone" placeholder="Your phone number">
-          <input type="text" data-test="product" class="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7  border border-gray-200 focus:outline-none pl-4 mb-5" name="product" placeholder="Product">
+          
+          {% if type == 'buy' %}
+            <input type="text" data-test="product" class="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7  border border-gray-200 focus:outline-none pl-4 mb-5" name="product" placeholder="Product">
+          {% endif %}
 
           <textarea
             rows="5"
             class="pt-2 w-full text-gray-600 placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7  border border-gray-200 focus:outline-none pl-4 mb-10"
             name="message"
             placeholder="Message"
-            required></textarea>
+            {% if type == "contact" %}required{% endif %}></textarea>
 
           {{ button.button(
               type='primary',
-              buttonText='Send',
+              buttonText=ctaText,
               classes='w-full'
             )
           }}
