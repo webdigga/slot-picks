@@ -75,7 +75,8 @@
     {% if dataTest %}data-test="{{ dataTest }}"{% endif %}
     class="mb-4 rounded-full cursor-pointer inline-block py-4 px-6 hover:opacity-80 {{ typeClasses | safe }} {{ classes | safe }}"
   >
-    <div class="flex items-center {{ pointerEvents | safe }} ">{{ anchorText | safe }}
+    <div class="flex items-center {{ pointerEvents | safe }} ">
+      <span class="pt-1">{{ anchorText | safe }}</span>
       {{ icon | safe }}
     </div>
   </a>
