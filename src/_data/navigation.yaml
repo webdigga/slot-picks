@@ -21,7 +21,9 @@ firstLevelItems:
       - text: Lavender Bags
         url: /products/lavender-bags/
       - text: Bespoke Orders
-        url: /products/bespoke-orders/      
+        url: /products/bespoke-orders/ 
+  - text: About Me
+    url: /woven-with-passion-my-weaving-journey/     
   - text: Contact
     url: /contact/
   - text: FAQs
