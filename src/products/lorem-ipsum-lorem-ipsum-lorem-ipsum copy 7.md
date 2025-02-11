@@ -6,7 +6,7 @@ images:
     alt: Cushion 1
 description: Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
   ipsum Lorem ipsum
-price: 30
+price: 999
 tags: Key Rings
 type: product
 ---

@@ -39,6 +39,8 @@ tags:
 
 *The summer scarves are made from Linen, bamboo yarn and mercerised cotton. The winter scarves are made from thick yarn and Alpaca wool.*
 
+<img src="/_includes/static/img/the-hair-and-the-moon.avif" alt="The Hair and the Moon craft fair" title="The Hair and the Moon craft fair" class="Right" width="600px" height="450px" loading="lazy"/>
+
 ## Seamless shopping experience
 
 *My vision is a seamless shopping experience, making items to bring comfort, pleasure, smile to people while creating and practicing my own mindfulness therapy, allowing me to create even more beautifully crafted pieces.*

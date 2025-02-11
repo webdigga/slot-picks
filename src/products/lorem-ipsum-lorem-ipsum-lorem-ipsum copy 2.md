@@ -8,7 +8,7 @@ images:
     alt: Cushion 2
 description: Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
   ipsum Lorem ipsum
-price: 30
+price: 999
 tags: Cushions
 type: product
 ---
