@@ -9,5 +9,8 @@ description: Elevate your look with the Diamond Pattern Scarf from Perennial
 price: 999
 tags: Scarves
 type: product
+material: Wool
+dimensions: 20cm x 16cm
+catalogueNumber: 2024-9
 ---
 Add a touch of sophistication with the Diamond Pattern Scarf from Perennial Weaver. Featuring an elegant diamond design, this scarf is crafted for both style and comfort, perfect for any occasion.

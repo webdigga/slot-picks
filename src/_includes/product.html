@@ -90,6 +90,9 @@ eleventyComputed:
         <p><span class="text-sm font-bold">&pound;</span><span class="text-2xl font-bold">{{ price }}</span></p>
         <div class="text-sm">
           <p>{{ content | safe }}</p>
+          <p>Material - <strong>{{ material | safe }}</strong></p>
+          <p>Dimensions - <strong>{{ dimensions | safe }}</strong></p>
+          <p>Catalogue Number - <strong>{{ catalogueNumber | safe }}</strong></p>
         </div>
 
         {% set destination %}/buy/?product={{ title }}{% endset %}

@@ -87,6 +87,24 @@ collections:
         pattern: ['^.{70,155}$', "Must be between 70 and 155 characters"]
       }
       - { label: "Body", name: "body", widget: "markdown" }
+      - {
+        label: "Material",
+        name: "material",
+        widget: "string",
+        hint: "*Wool, Cotton etc*",
+      }
+      - {
+        label: "Dimensions",
+        name: "dimensions",
+        widget: "string",
+        hint: "*20cm x 16cm*",
+      }
+      - {
+        label: "Catalogue Number",
+        name: "catalogueNumber",
+        widget: "string",
+        hint: "*2025-1*",
+      }      
       - label: "Price"
         name: "price"
         widget: "number"

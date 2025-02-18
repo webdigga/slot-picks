@@ -10,5 +10,8 @@ description: Keep your needles organised in style with the Needles Holder Bag
 price: 999
 tags: Bags
 type: product
+material: Wool
+dimensions: 20cm x 16cm
+catalogueNumber: 2024-9
 ---
 Stay organised and stylish with the Needles Holder Bag from Perennial Weaver. Designed for crafters, this bag keeps your needles safe and easily accessible. With a sleek, compact design, it's perfect for carrying your essentials wherever you go.

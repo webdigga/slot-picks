@@ -9,5 +9,8 @@ description: Experience luxury with the Merino Silk Scarf from Perennial Weaver.
 price: 999
 tags: Scarves
 type: product
+material: Wool
+dimensions: 20cm x 16cm
+catalogueNumber: 2024-9
 ---
 Indulge in the luxurious feel of the Merino Silk Scarf from Perennial Weaver. Made from a blend of soft merino wool and silk, this scarf offers a smooth, lightweight texture that drapes beautifully. Its timeless elegance makes it the perfect accessory for any occasion, whether you're dressing up or down.

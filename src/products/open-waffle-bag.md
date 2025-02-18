@@ -10,5 +10,8 @@ description: Add texture and style with the Open Waffle Bag from Perennial
 price: 999
 tags: Bags
 type: product
+material: Wool
+dimensions: 20cm x 16cm
+catalogueNumber: 2024-9
 ---
 Embrace unique style with the Open Waffle Bag from Perennial Weaver. Featuring a distinct waffle pattern, this bag offers both practicality and elegance. Perfect for daily use, it adds texture and flair to any outfit.
