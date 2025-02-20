@@ -22,7 +22,7 @@ CMS.registerEditorComponent({
       options: [
         {
           label: "Primary",
-          value: "no-underline bg-[color:var(--deep-teal)] text-white mb-4 rounded-full cursor-pointer inline-block py-4 px-6 hover:opacity-80"
+          value: "no-underline bg-[color:var(--royal-purple)] text-white mb-4 rounded-full cursor-pointer inline-block py-4 px-6 hover:opacity-80"
         },
         {
           label: "Secondary",

@@ -114,7 +114,7 @@ collections:
         label: "tags"
         name: "tags"
         create: true
-        options: ["Scarves", "Cushions", "Table Matts", "Table Runners", "Glasses Cases", "Bags", "Key Rings", "Lavender Bags", "Bespoke Orders"]
+        options: ["Scarves", "Cushions", "Table Matts", "Table Runners", "Glasses Cases", "Bags", "Key Rings", "Lavender Bags", "Bespoke Orders", "Collections"]
       - widget: select
         label: "type"
         name: "type"
@@ -156,12 +156,8 @@ collections:
           - { label: Email, name: email, widget: string }
           - { label: Phone number, name: phoneNumber, widget: string }
           - { label: Company number, name: companyNumber, widget: string }
-          - { label: Address Line 1, name: addressLineOne, widget: string }
-          - { label: Address Line 2, name: addressLineTwo, widget: string }
-          - { label: Address Line 3, name: addressLineThree, widget: string }
           - { label: Town/City, name: townCity, widget: string }
           - { label: Region, name: region, widget: string }
-          - { label: Post Code, name: postCode, widget: string }
           - { label: Country, name: country, widget: string }
           - { label: Google Opening Monday, name: googleOpeningMonday, widget: string }
           - { label: Google Closing Monday, name: googleClosingMonday, widget: string }

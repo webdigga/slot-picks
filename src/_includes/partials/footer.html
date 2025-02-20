@@ -79,12 +79,8 @@
               <span class="block">{{ settings.siteName }}</span>
             {% endif %}
 
-            <span class="block">                      
-              {{ settings.addressLineOne | safe }},
-              {{ settings.addressLineTwo | safe }},
-              {{ settings.addressLineThree | safe }},
-              {{ settings.townCity | safe }},
-              {{ settings.postCode | safe }}                   
+            <span class="block">
+              {{ settings.townCity | safe }}
             </span>
 
             {% if settings.email %}

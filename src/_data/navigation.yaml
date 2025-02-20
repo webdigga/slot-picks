@@ -10,6 +10,8 @@ firstLevelItems:
         url: /products/scarves/
       - text: Bags
         url: /products/bags/
+      - text: Collections
+        url: /products/collections/
       - text: Table Matts
         url: /products/table-matts/
       - text: Table Runners

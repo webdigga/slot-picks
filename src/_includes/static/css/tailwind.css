@@ -10,7 +10,8 @@
 :root { 
   --earthy-beige-light: #ebe2d6;
   --earthy-beige: #D8C3A5;
-  --deep-teal: #3A6B75;
+  --royal-purple: #3A6B75;
+  --royal-purple: #694894;
   --soft-clay: #B26A5A;
   --white: #FFFFFF;
   --lightest-gray: #f9fafb;
@@ -79,7 +80,7 @@ p {
 }
 
 .anchor-highlight {
-  @apply underline-offset-4 decoration-2 underline decoration-[color:var(--deep-teal)];
+  @apply underline-offset-4 decoration-2 underline decoration-[color:var(--royal-purple)];
 }
 
 .anchor-white {
