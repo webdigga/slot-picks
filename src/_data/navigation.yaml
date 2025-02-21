@@ -12,18 +12,6 @@ firstLevelItems:
         url: /products/bags/
       - text: Collections
         url: /products/collections/
-      - text: Table Matts
-        url: /products/table-matts/
-      - text: Table Runners
-        url: /products/table-runners/
-      - text: Glasses Cases
-        url: /products/glasses-cases/
-      - text: Key Rings
-        url: /products/key-rings/
-      - text: Lavender Bags
-        url: /products/lavender-bags/
-      - text: Bespoke Orders
-        url: /products/bespoke-orders/ 
   - text: About Me
     url: /woven-with-passion-my-weaving-journey/     
   - text: Contact
