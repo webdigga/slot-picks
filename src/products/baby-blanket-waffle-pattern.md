@@ -9,7 +9,7 @@ description: Discover the Baby Blanket Waffle Pattern by Perennial Weaver – a
   little one.
 material: Lambswool
 dimensions: 71cm x 55cm / Fringes 5cm
-catalogueNumber: Lorem ipsum
+catalogueNumber: 2025-20
 price: 50
 tags: Collections
 type: product

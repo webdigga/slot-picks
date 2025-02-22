@@ -104,7 +104,7 @@ collections:
         name: "catalogueNumber",
         widget: "string",
         hint: "*2025-1*",
-      }      
+      }
       - label: "Price"
         name: "price"
         widget: "number"
@@ -121,6 +121,12 @@ collections:
         create: false
         options: ["product"]
         default: "product"
+      - {
+        label: "Sold?",
+        name: "isSold",
+        widget: "boolean",
+        default: false,
+      }
   - label: "Settings"
     name: "settings"
     editor:

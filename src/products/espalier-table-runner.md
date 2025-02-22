@@ -9,7 +9,7 @@ description: Espalier Table Runner by Perennial Weaver – expertly woven for
 material: Cotton
 dimensions: 86cm x 20cm
 catalogueNumber: 2025-18
-price: 40
+price: 50
 tags: Collections
 type: product
 ---

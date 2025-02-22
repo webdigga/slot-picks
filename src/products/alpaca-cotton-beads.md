@@ -1,5 +1,5 @@
 ---
-title: Alpaca Cotton Beads
+title: Alpaca
 seoTitle: Alpaca Cotton Beads Cushion | Perennial Weaver
 images:
   - path: /_includes/static/img/example.avif
@@ -7,7 +7,7 @@ images:
 description: Shop the Alpaca Cotton Beads Cushion by Perennial Weaver – soft
   alpaca cotton with beaded accents, adding texture, charm, and elegance to your
   space.
-material: Lorem ipsum
+material: Alpaca Wool
 dimensions: 38cm x 25cm
 catalogueNumber: 2025-14
 price: 40

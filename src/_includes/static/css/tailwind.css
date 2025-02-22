@@ -18,6 +18,7 @@
   --very-light-gray: #dcdcdc;
   --dark-gray: #5f6571;
   --dark-copy: #333333;
+  --sold: var(--soft-clay);
 }
 
 body {

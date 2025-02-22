@@ -25,7 +25,7 @@ eleventyComputed:
           <ul class="glide__slides">
             {% for image in images | reverse %}
               
-              <li class="glide__slide">
+              <li class="glide__slide relative">
                 
                 <img
                   src="{{ image.path }}"
@@ -34,6 +34,12 @@ eleventyComputed:
                   width="600px"
                   height="600px"
                 />
+
+                {% if isSold %}
+                  <div class="absolute top-2 right-2 bg-[color:var(--sold)] text-white text-xs font-bold px-2 py-1 rounded-full">
+                    Sold
+                  </div>
+                {% endif %}
                 
               </li>
                   
@@ -97,15 +103,30 @@ eleventyComputed:
 
         {% set destination %}/buy/?product={{ title }}{% endset %}
 
-        <div class="mt-8 flex lg:justify-self-end">
-          {{ anchor.anchor(
-            destination=destination,
-            anchorText='Pre-Order Now',
-            type='primary',
-            iconType='shopping-bag',
-            classes='w-full inline-flex items-center justify-center lg:min-w-[400px] mx-auto'
-          ) }}
-        </div>
+        {% if isSold %}
+
+          <div class="mt-8 flex lg:justify-self-end">
+            {{ anchor.anchor(
+              destination=destination,
+              anchorText='Sold',
+              type='disabled',
+              classes='w-full inline-flex items-center justify-center lg:min-w-[400px] mx-auto'
+            ) }}
+          </div>
+
+        {% else %}
+
+          <div class="mt-8 flex lg:justify-self-end">
+            {{ anchor.anchor(
+              destination=destination,
+              anchorText='Pre-Order Now',
+              type='primary',
+              iconType='shopping-bag',
+              classes='w-full inline-flex items-center justify-center lg:min-w-[400px] mx-auto'
+            ) }}
+          </div>
+
+        {% endif %}
       </div>
     </div>
 

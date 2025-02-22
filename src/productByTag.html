@@ -46,6 +46,12 @@ eleventyComputed:
             height="600px"
           />
 
+          {% if post.data.isSold %}
+            <div class="absolute top-2 right-2 bg-[color:var(--sold)] text-white text-xs font-bold px-2 py-1 rounded-full">
+              Sold
+            </div>
+          {% endif %}
+
           {{ post.data.title }} / <span><span class="text-xs font-bold">&pound;</span><span class="text-xl font-bold">{{ post.data.price }}</span></span>
         </a>
 

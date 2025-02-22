@@ -11,7 +11,7 @@ description: Set of pink table mats and coasters – beautifully woven for style
 material: Rug yarn
 dimensions: 35cm x 28cm / 10cm x 10cm
 catalogueNumber: 2025-8
-price: 34
+price: 50
 tags: Collections
 type: product
 ---

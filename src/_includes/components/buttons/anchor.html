@@ -1,11 +1,24 @@
 {% macro anchor(type, anchorText, destination, iconType, iconWidthHeight, iconSize, isExternal, classes, isPhone, dataTest, pointerEvents) %}
 
-  {# Set primary as the default #}
+  {# Set defaults #}
   {% set typeClasses = 'bg-[color:var(--royal-purple)] text-[color:var(--white)]' %}
+  {% set disabled = false %}
+
+  {# Set type classes #}
 
   {% if type == 'secondary' %}
     {% set typeClasses = 'bg-[color:var(--soft-clay)] text-[color:var(--white)]' %}
   {% endif %}
+
+  {% if type == 'disabled' %}
+    {% set typeClasses = 'bg-[color:var(--sold)] text-[color:var(--white)]' %}
+  {% endif %}
+
+  {% if type == 'disabled' %}
+    {% set disabled = true %}
+  {% endif %}
+
+
 
   {% set icon %}
     {% if iconType == 'arrow' %}
@@ -69,11 +82,11 @@
   {% endif %}
 
   <a
-    href="{{ phonePrefix | safe }}{{ destination | safe }}" 
+    {% if not disabled %}href="{{ phonePrefix | safe }}{{ destination | safe }}"{% endif %}
     {% if isExternal %}target="_blank"{% endif %}
     {% if isExternal %}rel="nofollow"{% endif %}
     {% if dataTest %}data-test="{{ dataTest }}"{% endif %}
-    class="mb-4 rounded-full cursor-pointer inline-block py-4 px-6 hover:opacity-80 {{ typeClasses | safe }} {{ classes | safe }}"
+    class="mb-4 rounded-full inline-block py-4 px-6 {% if not disabled %}cursor-pointer hover:opacity-80{% endif %} {{ typeClasses | safe }} {{ classes | safe }}"
   >
     <div class="flex items-center {{ pointerEvents | safe }} ">
       <span class="pt-1">{{ anchorText | safe }}</span>
