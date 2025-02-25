@@ -11,7 +11,7 @@ description: Diamond Pattern Scarf by Perennial Weaver – a lightweight, stylis
   outfit.
 material: Variegated Hand Dyed Merino Wool
 dimensions: 141cm x 21cm
-catalogueNumber: 2023-17
+catalogueNumber: 2025-17
 price: 70
 tags: Scarves
 type: product

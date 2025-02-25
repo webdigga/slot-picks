@@ -9,9 +9,10 @@ description: Discover our beautifully woven novelty purse – a unique blend of
   charm.
 material: Wool and Feathery Wool
 dimensions: 23cm x 16cm
-catalogueNumber: 2025-17
+catalogueNumber: 2025-3
 price: 20
 tags: Bags
 type: product
+isSold: false
 ---
 Add a touch of charm to your everyday essentials with this beautifully woven novelty purse. Crafted with care, it’s perfect for carrying small items while showcasing unique design and timeless craftsmanship. Ideal for daily use or as a thoughtful gift.

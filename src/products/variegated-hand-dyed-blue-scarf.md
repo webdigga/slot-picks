@@ -10,8 +10,8 @@ description: Add elegance to your wardrobe with the Variegated Hand Dyed Blue
 price: 999
 tags: Scarves
 type: product
-material: Wool
-dimensions: 20cm x 16cm
-catalogueNumber: 2024-9
+material: Lorem ipsum
+dimensions: Lorem ipsum
+catalogueNumber: Lorem ipsum
 ---
 Experience the beauty of the Variegated Hand Dyed Blue Scarf from Perennial Weaver. Crafted from soft, luxurious fabric, this scarf features a stunning hand-dyed design that blends various shades of blue for a unique, eye-catching effect. Perfect for adding a touch of elegance and warmth to any outfit, it’s an accessory that effortlessly complements both casual and formal looks. Light yet cozy, this scarf is perfect for all seasons, making it a versatile and stylish addition to your wardrobe.

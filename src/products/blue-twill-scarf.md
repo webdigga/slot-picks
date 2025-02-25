@@ -9,7 +9,7 @@ description: Elevate your style with the Blue Scarf from Perennial Weaver. Soft,
   today!
 material: Wool
 dimensions: 20cm x 16cm
-catalogueNumber: 2024-9
+catalogueNumber: Lorem ipsum
 price: 70
 tags: Scarves
 type: product

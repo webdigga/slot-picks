@@ -10,8 +10,8 @@ description: Stay cozy with the Warm and Wintery Scarf from Perennial Weaver.
 price: 70
 tags: Scarves
 type: product
-material: Wool
-dimensions: 20cm x 16cm
-catalogueNumber: 2024-9
+material: Lorem ipsum
+dimensions: Lorem ipsum
+catalogueNumber: Lorem ipsum
 ---
 Keep warm in style with the Warm and Wintery Scarf from Perennial Weaver. Made from soft, high-quality fabric, this scarf provides the perfect balance of warmth and comfort on chilly days. Its cozy texture and classic design make it a versatile addition to any winter wardrobe. Whether you're layering up for a brisk walk or adding a stylish touch to your outfit, this scarf is the perfect cold-weather companion.

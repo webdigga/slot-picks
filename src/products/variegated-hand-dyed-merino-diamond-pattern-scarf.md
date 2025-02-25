@@ -6,9 +6,9 @@ images:
     alt: Variegated Hand Dyed Merino Diamond Pattern Scarf
 description: Enhance your style with the Variegated Hand Dyed Merino Diamond
   Pattern Scarf. Soft, luxurious, and perfect for adding colour to any outfit.
-material: Wool
+material: Lorem ipsum
 dimensions: 20cm x 16cm
-catalogueNumber: 2024-9
+catalogueNumber: Lorem ipsum
 price: 70
 tags: Scarves
 type: product
