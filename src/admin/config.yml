@@ -9,6 +9,22 @@ public_folder: "/_includes/static/img"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
+  - name: "homepage"
+    label: "Homepage"
+    files:
+      - label: "Homepage Content"
+        name: "homepage"
+        file: "src/_data/seoIntroText.yaml"  # Path to the YAML file
+        fields:
+          - label: "SEO Intro Text"
+            name: "seoIntroText"
+            widget: "list"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraph", name: "paragraph", widget: "text" }
   - label: "Article"
     name: "articles"
     folder: "src/articles"

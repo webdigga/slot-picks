@@ -1,0 +1,20 @@
+{% macro seoIntroTextComponent() %} 
+
+  <div class="container container--medium text-center">
+    <div class="max-w-7xl mx-auto">
+      {% if seoIntroText.seoIntroText %}
+        {% for section in seoIntroText.seoIntroText %}
+          <div class="section">
+            <h2>{{ section.heading }}</h2>
+            {% for paragraph in section.paragraphs %}
+              <p>{{ paragraph }}</p>
+            {% endfor %}
+          </div>
+        {% endfor %}
+      {% else %}
+        <p>No content available.</p>
+      {% endif %}
+    </div>
+  </div>  
+
+{% endmacro %}

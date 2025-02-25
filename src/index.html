@@ -14,6 +14,7 @@ eleventyComputed:
 {% import "./_includes/components/buttons/more-button.html" as moreButton with context %}
 {% import "./_includes/components/testimonials.html" as testimonials with context %}
 {% import "./_includes/components/categoryList.html" as categoryList with context %}
+{% import "./_includes/components/seoIntroText.html" as seoIntroText with context %}
 
 <div>
 
@@ -28,10 +29,14 @@ eleventyComputed:
     </div>
   
     {{ moreButton.button() }}
-  </section>
+  </section>  
 
   <section class="dark-copy container container--medium" data-test="moreButtonLocation">
     {{ categoryList.listOfCategories(title="See my products") }}
+  </section>
+
+  <section class="!pb-0 bg-[color:var(--royal-purple)]">
+    {{ seoIntroText.seoIntroTextComponent() }}
   </section>
 
   <section class="bg-[color:var(--white)]">
