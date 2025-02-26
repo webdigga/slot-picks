@@ -7,8 +7,8 @@ images:
 description: Enhance your style with the Brooks Bouquet Scarf from Perennial
   Weaver. A luxurious, versatile accessory with a stunning blue floral design.
   Shop now!
-material: Lorem ipsum
-dimensions: Lorem ipsum
+material: 75% Merino Silk and 25% Polyamid
+dimensions: 180cm x 24cm / 71" x 9.5" | Fringes 14cm / 5"
 catalogueNumber: 2023-3
 price: 70
 tags: Scarves

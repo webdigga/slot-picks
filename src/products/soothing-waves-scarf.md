@@ -10,7 +10,7 @@ description: Soothing Waves Scarf by Perennial Weaver – a lightweight, flowing
 material: Wool and Cotton
 dimensions: 239cm x 32cm
 catalogueNumber: 2023-14
-price: 47
+price: 50
 tags: Scarves
 type: product
 isSold: false
