@@ -2,10 +2,8 @@
 title: Square Novelty Bag
 seoTitle: Square Novelty Bag | Perennial Weaver
 images:
-  - path: /_includes/static/img/novelty-square-bag-2025-19.avif
-    alt: Square Novelty Bag
-  - path: /_includes/static/img/2025-4-square-novelty-bag.avif
-    alt: Square Novelty Bag hanging from bench
+  - path: /_includes/static/img/2025-4-square-novelty-bag-back-.avif
+    alt: Square Novelty Bag (back)
   - path: /_includes/static/img/2025-4-square-novelty-bag-£20.avif
     alt: Square Novelty Bag hanging from bridge
   - path: /_includes/static/img/square-novelty-bag-2025-4-£20.avif
