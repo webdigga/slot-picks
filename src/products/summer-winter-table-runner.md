@@ -9,7 +9,7 @@ images:
 description: Summer Winter Table Runner by Perennial Weaver – a beautifully
   woven design that adds elegance and versatility to your table for any season.
 material: Linen
-dimensions: 195cm x 29cm
+dimensions: 195cm x 29cm / 77" x 11"
 catalogueNumber: 2025-10
 price: 50
 tags: Collections

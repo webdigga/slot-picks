@@ -2,15 +2,15 @@
 title: Espalier Tea Set And 4 Matching Table Matts
 seoTitle: Espalier Tea Set And 4 Matching Table Matts | Perennial Weaver
 images:
-  - path: /_includes/static/img/example.avif
-    alt: Lorem ipsum
+  - path: /_includes/static/img/espalier-table-runner-2025-18.avif
+    alt: Espalier Table Runner On Table
 description: Enhance tea time with the Espalier Tea Set and 4 matching table
   mats from Perennial Weaver. Stylish, functional, and perfect for any dining
   occasion.
 material: Cotton
-dimensions: Tea Set (86cm x 20cm / 34" x 8") | Table Matts (31cm x 20cm - 12" x 8")
+dimensions: 86cm x 20cm / 34" x 8" (Tea Set) | 31cm x 20cm / 12" x 8" (Table Matts)
 catalogueNumber: 2025-18
-price: 40
+price: 80
 tags: Collections
 type: product
 isSold: false

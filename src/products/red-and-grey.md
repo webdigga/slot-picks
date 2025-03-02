@@ -8,7 +8,7 @@ description: Shop the Red and Grey Cushion by Perennial Weaver – a beautifully
   woven design that combines bold colours with comfort, adding elegance to any
   space.
 material: Bamboo Yarn
-dimensions: 45cm x 30cm / Fringes 12cm
+dimensions: 45cm x 30cm / 18" x 12" | Fringes 12cm / 5"
 catalogueNumber: 2022-5
 price: 40
 tags: Cushions

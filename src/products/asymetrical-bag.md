@@ -10,7 +10,7 @@ description: Handcrafted asymmetrical bag, custom-made with care. Unique design,
   woven with quality materials for style and durability. Order your bespoke
   piece today!
 material: Felt and Ribbons
-dimensions: 20cm x 16cm
+dimensions: 20cm x 16cm / 8" x 6"
 catalogueNumber: 2025-5
 price: 20
 tags: Bags

@@ -8,7 +8,7 @@ description: Add a splash of colour with the Clapsed Pattern Scarf from
   Perennial Weaver. Soft, vibrant, and perfect for any season. Brighten up your
   wardrobe today!
 material: Plain and Variegated Hand Dyed Wool
-dimensions: 231cm x 22cm
+dimensions: 231cm x 22cm / 91" x 9"
 catalogueNumber: 2023-18
 price: 70
 tags: Scarves

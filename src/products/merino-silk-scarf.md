@@ -8,7 +8,7 @@ description: Experience luxury with the Pearl Pattern Scarf from Perennial
   Weaver. Soft, elegant, and perfect for adding a touch of sophistication to any
   outfit.
 material: Merino, Cotton, Silk
-dimensions: 275cm x 18cm
+dimensions: 275cm x 18cm / 108" x 7"
 catalogueNumber: 2022-30
 price: 80
 tags: Scarves

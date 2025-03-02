@@ -11,7 +11,7 @@ images:
 description: Discover the Round Inkle Bag from Perennial Weaver. A stylish,
   handwoven design with a unique shape, perfect for everyday use. Shop now!
 material: Rug Yarn
-dimensions: 30cm Diameter
+dimensions: Diameter 30cm / 12"
 catalogueNumber: 2024-9
 price: 30
 tags: Bags

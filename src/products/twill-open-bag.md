@@ -12,7 +12,7 @@ description: Discover the Twill Open Bag from Perennial Weaver. Stylish,
   durable, and spacious, this bag is perfect for everyday use. A chic accessory
   for any occasion.
 material: Wool and Cotton
-dimensions: 27cm x 20cm
+dimensions: 27cm x 20cm / 11" x 8"
 catalogueNumber: 2025-18
 price: 20
 tags: Bags

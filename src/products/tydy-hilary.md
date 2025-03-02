@@ -8,7 +8,7 @@ description: Discover the Tydy Hilary Cushion by Perennial Weaver – a
   beautifully woven design that adds comfort, style, and elegance to any living
   space.
 material: Cotton, Muxed Polyester Filling
-dimensions: 41cm x 32cm
+dimensions: 41cm x 32cm / 16" x 13"
 catalogueNumber: 2021-18
 price: 40
 tags: Cushions

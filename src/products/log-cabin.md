@@ -8,7 +8,7 @@ description: Discover the Log Cabin Cushion by Perennial Weaver – a beautifull
   woven design that brings rustic charm, comfort, and elegance to your home
   décor.
 material: Bamboo Yarn
-dimensions: 197cm x 22cm / Fringes 12cm
+dimensions: 197cm x 22cm / 78" x 9" | Fringes 12cm / 5"
 catalogueNumber: 2022-11
 price: 50
 tags: Cushions

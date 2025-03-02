@@ -8,7 +8,7 @@ description: Discover the Undulated Twill Scarf by Perennial Weaver – a
   beautifully textured, flowing weave that adds elegance and warmth to any
   outfit.
 material: Cotton and Silk
-dimensions: 170cm x 19cm
+dimensions: 170cm x 19cm / 67" x 7"
 catalogueNumber: 2024-27
 price: 70
 tags: Scarves

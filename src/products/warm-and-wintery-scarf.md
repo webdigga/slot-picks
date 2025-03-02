@@ -8,7 +8,7 @@ description: Stay cozy with the Warm and Wintery Scarf from Perennial Weaver.
   Soft, stylish, and perfect for chilly days. A must-have winter accessory. Shop
   now!
 material: Extra Fine Merino
-dimensions: 155cm x 32cm
+dimensions: 155cm x 32cm / 61" x 13"
 catalogueNumber: 2022-31
 price: 80
 tags: Scarves

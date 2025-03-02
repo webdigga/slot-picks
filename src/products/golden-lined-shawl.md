@@ -7,7 +7,7 @@ images:
 description: Wrap yourself in elegance with the Caramel Shawl from Perennial
   Weaver. Soft, luxurious, and beautifully detailed for any occasion. Shop now!
 material: Pure Egyptian Cotton
-dimensions: 143cm x 36cm / 56" X1 4" | Fringes 8CM / 3"
+dimensions: 143cm x 36cm / 56" x 14" | Fringes 8cm / 3"
 catalogueNumber: 2023-1
 price: 50
 tags: Scarves

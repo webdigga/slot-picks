@@ -9,7 +9,7 @@ images:
 description: Set of pink table mats and coasters – beautifully woven for style
   and durability. Add elegance to your table with this timeless handcrafted set.
 material: Rug yarn
-dimensions: 35cm x 28cm / 10cm x 10cm
+dimensions: 35cm x 28cm / 14" x 11" (Matts) | 10cm x 10cm / 4" x 4" (Coasters)
 catalogueNumber: 2025-8
 price: 50
 tags: Collections

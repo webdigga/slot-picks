@@ -8,7 +8,7 @@ description: Elevate your style with the Blue Scarf from Perennial Weaver. Soft,
   versatile, and perfect for any season. Add a pop of colour to your wardrobe
   today!
 material: Wool and Cotton
-dimensions: 198 x 16cm / 75" x 6"
+dimensions: 198cm x 16cm / 75" x 6"
 catalogueNumber: 2023-9
 price: 70
 tags: Scarves

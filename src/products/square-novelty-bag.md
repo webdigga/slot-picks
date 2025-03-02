@@ -11,7 +11,7 @@ images:
 description: Shop the Square Novelty Bag by Perennial Weaver – a beautifully
   woven, practical accessory that combines style and charm for everyday use.
 material: Wool and Feathery Wool
-dimensions: 23cm x 23cm
+dimensions: 23cm x 23cm / 9" x 9"
 catalogueNumber: 2025-4
 price: 30
 tags: Bags

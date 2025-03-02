@@ -10,7 +10,7 @@ description: Green and Grey Summer Scarf by Perennial Weaver – a lightweight,
   breathable accessory with a stylish blend of soft green and grey tones for any
   occasion.
 material: Cotton
-dimensions: 182cm x 10cm
+dimensions: 182cm x 10cm / 72" x 4"
 catalogueNumber: 2025-11
 price: 40
 tags: Scarves

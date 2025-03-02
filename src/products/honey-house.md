@@ -7,7 +7,7 @@ images:
 description: Shop the Honey House Cushion by Perennial Weaver – a beautifully
   woven design that brings warmth, comfort, and charm to your home décor.
 material: Mixed Wool and Cotton
-dimensions: 33cm x 24cm x 10cm
+dimensions: 33cm x 24cm x 10cm / 13" x 9" x 4"
 catalogueNumber: 2021-22
 price: 35
 tags: Cushions

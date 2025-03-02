@@ -10,7 +10,7 @@ description: Set of 6 blue table mats by Perennial Weaver—expertly woven for
   style and durability. Perfect for any table setting. Shop now for timeless
   quality.
 material: Wool and Cotton
-dimensions: 39cm x 29cm
+dimensions: 39cm x 29cm / 15" x 11"
 catalogueNumber: 2025-9
 price: 50
 tags: Collections

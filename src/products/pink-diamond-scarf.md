@@ -8,7 +8,7 @@ description: Pink Diamond Scarf by Perennial Weaver – a luxurious, lightweight
   scarf with a soft pink diamond pattern, adding elegant style and comfort to
   any outfit.
 material: Multi Coloured Wool
-dimensions: 254cm x 17cm
+dimensions: 254cm x 17cm / 100" x 7"
 catalogueNumber: 2025-12
 price: 50
 tags: Scarves
