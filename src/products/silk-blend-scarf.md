@@ -2,14 +2,14 @@
 title: Silk Blend Scarf
 seoTitle: Silk Blend Scarf | Perennial Weaver
 images:
-  - path: /_includes/static/img/example.avif
-    alt: Lorem ipsum
+  - path: /_includes/static/img/2023-4-merino-silk.avif
+    alt: Model with Silk Blend Scarf
 description: Elevate your style with the Silk Blend Scarf from Perennial Weaver.
   Soft, lightweight, and beautifully woven for a touch of elegance in any
   season.
 material: 70% Merino Extra Fine and 30% Silk
-dimensions: "180cm x 28cm / "
-catalogueNumber: 71" x 11"
+dimensions: 180cm x 28cm / 71" x 11"
+catalogueNumber: 2023-4
 price: 80
 tags: Scarves
 type: product
