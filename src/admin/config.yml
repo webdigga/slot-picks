@@ -29,8 +29,6 @@ collections:
     name: "articles"
     folder: "src/articles"
     create: true
-    editor:
-      preview: false
     fields:
       - {
         label: "Title",
@@ -68,14 +66,12 @@ collections:
         name: "tags"
         multiple: true
         create: true
-        options: ["article", "privacy", "report", "faq"]
+        options: ["article", "privacy", "faq"]
         default: ["article"]
-  - label: "Product"
-    name: "products"
-    folder: "src/products"
+  - label: "Slots"
+    name: "slots"
+    folder: "src/slots"
     create: true
-    editor:
-      preview: false
     fields:
       - {
         label: "Title",
@@ -145,8 +141,6 @@ collections:
       }
   - label: "Settings"
     name: "settings"
-    editor:
-      preview: false
     files:
       - label: "Navigation"
         name: "items"
@@ -180,8 +174,6 @@ collections:
           - { label: Company number, name: companyNumber, widget: string }
   - label: "Pages"
     name: "pages"
-    editor:
-      preview: false
     files:
       - label: "Homepage"
         name: "homepage"
@@ -201,34 +193,9 @@ collections:
             hint: "*Used in search engines (between 70 and 155 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
             pattern: ['^.{70,155}$', "Must be between 70 and 155 characters"]
           }
-      - label: "Contact"
-        name: "contact"
-        file: "src/_data/contact.yaml"
-        fields:
-          - {
-            label: "Title",
-            name: "title",
-            widget: "string",
-            hint: "*This title will be used in the page's H1 tag, and also determines the URL (between 20 and 70 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
-            pattern: ['^.{20,70}$', "Must be between 20 and 70 characters"]
-          }
-          - { 
-            label: "SEO Title",
-            name: "seoTitle",
-            widget: "string",
-            hint: "*This title will be used in the title tag for search engines (between 50 and 60 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
-            pattern: ['^.{50,60}$', "Must be between 50 and 60 characters"]
-          }
-          - {
-            label: "Description",
-            name: "description",
-            widget: "string",
-            hint: "*Used in search engines (between 70 and 155 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
-            pattern: ['^.{70,155}$', "Must be between 70 and 155 characters"]
-          }
-      - label: "Shop"
-        name: "shop"
-        file: "src/_data/shop.yaml"
+      - label: "Slot"
+        name: "slot"
+        file: "src/_data/slot.yaml"
         fields:
           - {
             label: "Title",
@@ -253,8 +220,6 @@ collections:
           }
   - label: "Components"
     name: "components"
-    editor:
-      preview: false
     files:
       - label: "Hero"
         name: "hero"
@@ -262,47 +227,6 @@ collections:
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Sub title, name: subTitle, widget: string }
-      - label: "Testimonials"
-        name: "testimonials"
-        file: "src/_data/testimonials.yaml"
-        fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Sub Title, name: subTitle, widget: text }
-          - label: Testimonial Items
-            name: testimonialItems
-            widget: list
-            collapsed: false
-            allow_add: false
-            fields:
-              - { label: Title, name: title, widget: string }
-              - { label: Quote, name: quote, widget: string }
-              - { label: Name, name: name, widget: string }
-      - label: "Services"
-        name: "services"
-        file: "src/_data/services.yaml"
-        fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Sub Title, name: subTitle, widget: string }
-          - { label: Intro Text, name: introText, widget: string }
-          - label: Service Items
-            name: serviceItems
-            widget: list
-            collapsed: false
-            allow_add: true
-            fields:
-              - { label: Title, name: title, widget: string }
-              - { label: Intro Text, name: introText, widget: text }
-              - { label: Destination, name: destination, widget: string }
-              - label: "Image"
-                name: "image"
-                widget: "image"
-                choose_url: true
-                required: false
-                media_library:
-                  config:
-                    multiple: false
-                hint: "*Should be 1:1 ratio. Renders at 46px x 46px*"
-              - { label: Image alternative text, name: imageAlt, widget: string, required: false }
       - label: "FAQs"
         name: "faqs"
         file: "src/_data/faqsData.yaml"

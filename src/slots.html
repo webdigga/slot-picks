@@ -10,7 +10,6 @@ eleventyComputed:
 ---
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
-{% import "./_includes/components/testimonials.html" as testimonials with context %}
 {% import "./_includes/components/categoryList.html" as categoryList with context %}
 
 <div class="dark-copy">  
@@ -31,8 +30,5 @@ eleventyComputed:
 
     {{ categoryList.listOfCategories() }}
   </section>
-  
-  <section>
-    {{ testimonials.testimonialComponent() }}  
-  </section>
+
 </div>

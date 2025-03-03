@@ -6,7 +6,6 @@ eleventyComputed:
 ---
 
 {% import "./partials/navbar.html" as navBar with context %}
-{% import "./components/testimonials.html" as testimonials with context %}
 {% import "./components/faqs.html" as faqs with context %}
 
 <div class="border-b border-solid border-b-[color:var(--very-light-gray)]">
@@ -33,10 +32,4 @@ eleventyComputed:
 
   </article>
 	
-</section>
-
-<section class="bg-[color:var(--white)] border-t border-solid border-t-[color:var(--very-light-gray)] clear-both">
-    
-  {{ testimonials.testimonialComponent() }}
-
 </section>

@@ -12,7 +12,6 @@ eleventyComputed:
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
 {% import "./_includes/components/buttons/more-button.html" as moreButton with context %}
-{% import "./_includes/components/testimonials.html" as testimonials with context %}
 {% import "./_includes/components/categoryList.html" as categoryList with context %}
 {% import "./_includes/components/seoIntroText.html" as seoIntroText with context %}
 
@@ -39,7 +38,4 @@ eleventyComputed:
     {{ seoIntroText.seoIntroTextComponent() }}
   </section>
 
-  <section class="bg-[color:var(--white)]">
-    {{ testimonials.testimonialComponent() }}
-  </section>
 </div>
