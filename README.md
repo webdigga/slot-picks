@@ -1,4 +1,4 @@
-# Perennial Weaver
+# Slot Picks
 
 ### Technologies used:
 
