@@ -10,7 +10,7 @@ eleventyComputed:
 ---
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
-{% import "./_includes/components/categoryList.html" as categoryList with context %}
+{% import "./_includes/components/slotsList.html" as slotsList with context %}
 
 <div class="dark-copy">  
   
@@ -28,7 +28,7 @@ eleventyComputed:
       Every item is crafted to celebrate tradition, craftsmanship, and individuality—find something special today.
     </p>
 
-    {{ categoryList.listOfCategories() }}
+    {{ slotsList.listOfSlots() }}
   </section>
 
 </div>

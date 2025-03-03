@@ -17,12 +17,6 @@
   --sold: var(--soft-clay);
 }
 
-.meow-script-regular {
-  font-family: "Meow Script", serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
 body {
   @apply text-white;
 

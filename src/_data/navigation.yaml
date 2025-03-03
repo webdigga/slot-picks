@@ -1,20 +1,16 @@
 firstLevelItems:
   - text: Home
     url: /
-  - text: Shop
-    url: /shop/
+  - text: Slots
+    url: /slots/
     secondLevelItems:
-      - text: Cushions
-        url: /products/cushions/
-      - text: Scarves
-        url: /products/scarves/
-      - text: Bags
-        url: /products/bags/
-      - text: Collections
-        url: /products/collections/
-  - text: About Me
-    url: /woven-with-passion-my-weaving-journey/     
-  - text: Contact
-    url: /contact/
+      - text: Best for number of slots
+        url: /lorem-ipsum/
+      - text: Best for payout speed
+        url: /lorem-ipsum/
+      - text: Best for win rate
+        url: /lorem-ipsum/
+      - text: Best for review score
+        url: /lorem-ipsum/
   - text: FAQs
     url: /frequently-asked-questions-faqs/
