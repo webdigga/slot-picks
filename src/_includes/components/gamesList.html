@@ -1,0 +1,49 @@
+{% import "./buttons/button.html" as button with context %}
+
+{% macro listOfGames(title, gameType) %}
+
+  <div>
+    {% if title %}
+      <h2>{{ title }}</h2>
+    {% endif %}
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 gap-y-8">
+
+      {% for game in collections[gameType] %}
+        <a
+          href="{{ game.data.externalUrl }}"
+          class="text-center text-sm relative group"> 
+          
+          <span class="opacity-0 group-hover:opacity-100 hover:animate-spin absolute rounded-full transition-all duration-300 ease-in-out border-white w-[37px] h-[37px] border bg-[color:var(--white)] text-3xl top-[calc(50%-30px)] left-[calc(50%-20px)]">
+            &#x2b;
+          </span>
+
+          <!-- TODO - what image width and height should be here? -->
+          <img
+            src="{{ game.data.brand }}"
+            alt="{{ game.data.imageAlt }}"
+            class="w-full h-auto mb-4"
+            width="600px"
+            height="600px"
+          />
+
+          <div>{{ game.data.score }}</div>
+
+          <ul>
+            {% for highlight in game.data.highlights %}
+              <li>{{ highlight.text }}</li>
+            {% endfor %}
+          </ul>
+
+          <p>{{ game.data.welcomeOffer }}</p>
+
+          {{ button.button(buttonText='Claim Bonus') }}
+          
+          
+        </a>
+      {% endfor %}
+
+    </div>
+  </div>  
+
+{% endmacro %}

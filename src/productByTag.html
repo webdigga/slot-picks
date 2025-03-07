@@ -3,13 +3,13 @@ pagination:
   data: collections
   size: 1
   alias: tag
-permalink: /products/{{ tag | slugify }}/index.html
+permalink: /games/{{ tag | slugify }}/index.html
 layout: default
 ogType: website
 eleventyComputed:
   description: "Discover top-quality {{ tag }} for sale. Perfect for weaving enthusiasts, my {{ tag }} offers durability and precision. Shop online today!"
   seoTitle: "Buy {{ tag }} Online | High-Quality {{ tag }} for Sale"
-  canonical: "{{ env.site }}/products/{{ tag | slugify }}/"
+  canonical: "{{ env.site }}/games/{{ tag | slugify }}/"
 ---
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}

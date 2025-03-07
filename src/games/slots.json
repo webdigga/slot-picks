@@ -1,5 +1,5 @@
 {
-    "layout": "slot",
+    "layout": "game",
     "ogType": "website",
     "permalink": "/{{ title | slugify }}/"
 }

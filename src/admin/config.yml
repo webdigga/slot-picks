@@ -68,77 +68,55 @@ collections:
         create: true
         options: ["article", "privacy", "faq"]
         default: ["article"]
-  - label: "Slots"
-    name: "slots"
-    folder: "src/slots"
+  - label: "Games"
+    name: "games"
+    folder: "src/games"
     create: true
     fields:
       - {
+        label: "Brand",
+        name: "brand",
+        widget: "image"
+      }
+      - {
+        label: "Image Alt",
+        name: "imageAlt",
+        widget: "string"
+      }
+      - {
         label: "Title",
         name: "title",
-        widget: "string",
-        hint: "*This title will be used in the page's H1 tag, and also determines the URL (between 20 and 70 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
-      }
-      - { 
-        label: "SEO Title",
-        name: "seoTitle",
-        widget: "string",
-        hint: "*This title will be used in the title tag for search engines (between 50 and 60 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
-      }
-      - label: Images
-        name: images
-        widget: list
-        fields:
-        - {name: path, label: Image, widget: image}
-        - {name: alt, label: Alt, widget: string}
-      - {
-        label: "Description",
-        name: "description",
-        widget: "string",
-        hint: "*Used in search engines (between 70 and 155 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
-        pattern: ['^.{70,155}$', "Must be between 70 and 155 characters"]
-      }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - {
-        label: "Material",
-        name: "material",
-        widget: "string",
-        hint: "*Wool, Cotton etc*",
+        widget: "string"
       }
       - {
-        label: "Dimensions",
-        name: "dimensions",
-        widget: "string",
-        hint: "*20cm x 16cm*",
-      }
-      - {
-        label: "Catalogue Number",
-        name: "catalogueNumber",
-        widget: "string",
-        hint: "*2025-1*",
-      }
-      - label: "Price"
-        name: "price"
+        label: "Score",
+        name: "score",
         widget: "number"
-        default: 0
-        value_type: "int"
+      }
+      - label: Highlights
+        name: highlights
+        widget: list
+        collapsed: false
+        fields:
+          - { label: Title, name: text, widget: string }
+      - {
+        label: "Welcome Offer",
+        name: "welcomeOffer",
+        widget: "string"
+      }
       - widget: select
         label: "tags"
         name: "tags"
         create: true
-        options: ["Scarves", "Cushions", "Table Matts", "Table Runners", "Glasses Cases", "Bags", "Key Rings", "Lavender Bags", "Bespoke Orders", "Collections"]
+        options: ["slot"]
       - widget: select
         label: "type"
         name: "type"
         create: false
-        options: ["product"]
-        default: "product"
-      - {
-        label: "Sold?",
-        name: "isSold",
-        widget: "boolean",
-        default: false,
-      }
+        options: ["game"]
+        default: "game"
+      - { label: External URL, name: externalUrl, widget: string }
+      
   - label: "Settings"
     name: "settings"
     files:
