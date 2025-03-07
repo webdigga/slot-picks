@@ -7,12 +7,12 @@
       <h2>{{ title }}</h2>
     {% endif %}
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 gap-y-8">
+    <div class="grid grid-cols-1 gap-4 gap-y-8">
 
       {% for game in collections[gameType] %}
         <a
           href="{{ game.data.externalUrl }}"
-          class="text-center text-sm relative group"> 
+          class="text-center text-sm relative group grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 p-4 border border-[color:var(--dark-copy)] rounded-md hover:shadow-lg transition-all duration-300 ease-in-out"> 
           
           <span class="opacity-0 group-hover:opacity-100 hover:animate-spin absolute rounded-full transition-all duration-300 ease-in-out border-white w-[37px] h-[37px] border bg-[color:var(--white)] text-3xl top-[calc(50%-30px)] left-[calc(50%-20px)]">
             &#x2b;
@@ -37,7 +37,10 @@
 
           <p>{{ game.data.welcomeOffer }}</p>
 
-          {{ button.button(buttonText='Claim Bonus') }}
+          <div class="sm:col-span-2 lg:col-span-1">
+            {{ button.button(buttonText='Claim Bonus') }}
+          </div>  
+          
           
           
         </a>
