@@ -2,29 +2,9 @@
 
 <footer class="relative py-20 flex flex-col items-center bg-[color:var(--soft-clay)] overflow-hidden md:py-40">
   <div class="relative z-[1] container m-auto px-6 md:px-12">
-    <div class="m-auto md:w-10/12 lg:w-8/12 xl:w-6/12">
+    <div class="m-auto md:w-10/12 xl:w-6/12">
       <div class="flex flex-wrap items-center justify-between md:flex-nowrap">
         <div class="w-full space-x-12 flex justify-center sm:w-7/12 md:justify-start">
-            
-          {% if navigation.firstLevelItems %}
-            <ul class="list-disc list-inside space-y-8">
-              {% for item in navigation.firstLevelItems %}
-                
-                  {% if item.text == 'FAQs' or item.text == 'Slots' %}
-
-                    <li>
-                      <a
-                        href="{{ item.url }}"
-                        class="hover:opacity-70 transition">
-                        {{ item.text }}
-                      </a>
-                    </li>
-                  
-                  {% endif %}
-                
-              {% endfor %}                    
-            </ul>
-          {% endif %}                  
 
           {% for item in navigation.firstLevelItems %}
             {% if item.text != 'Home' and item.text != 'FAQs' %}
@@ -33,36 +13,10 @@
               {% if item.secondLevelItems %}
                 <ul role="list" class="space-y-8">
                   {% for subItem in item.secondLevelItems %}
-
-                    {% set icon %}
-                      {% if subItem.text == 'Scarves' %}
-                        <img src="/_includes/static/img/scarf.svg" width="16px" height="16px" />
-                      {% elseif  subItem.text == 'Bags' %}
-                        <img src="/_includes/static/img/bag.svg" width="16px" height="16px" />
-                      {% elseif  subItem.text == 'Cushions' %}
-                        <img src="/_includes/static/img/cushion.svg" width="16px" height="16px" />
-                      {% elseif  subItem.text == 'Table Matts' %}
-                        <img src="/_includes/static/img/table-matt.svg" width="16px" height="16px" />
-                      {% elseif  subItem.text == 'Table Runners' %}
-                        <img src="/_includes/static/img/table-runner.svg" width="16px" height="16px" />
-                      {% elseif  subItem.text == 'Glasses Cases' %}
-                        <img src="/_includes/static/img/glasses.svg" width="16px" height="16px" />
-                      {% elseif  subItem.text == 'Key Rings' %}
-                        <img src="/_includes/static/img/key-ring.svg" width="16px" height="16px" />
-                      {% elseif  subItem.text == 'Lavender Bags' %}
-                        <img src="/_includes/static/img/lavender-bag.svg" width="16px" height="16px" />
-                      {% elseif  subItem.text == 'Bespoke Orders' %}
-                        <img src="/_includes/static/img/bespoke-orders.svg" width="16px" height="16px" />
-                        {% elseif  subItem.text == 'Collections' %}
-                        <img src="/_includes/static/img/collections.svg" width="16px" height="16px" />
-                      {% endif %}
-                    {% endset %}
-
                     <li>
                       <a
                         href="{{ subItem.url }}"
                         class="flex items-center space-x-3 hover:opacity-70 transition">
-                          {{ icon | safe }}
                           <span>{{ subItem.text }}</span>
                       </a>
                     </li>
@@ -71,79 +25,21 @@
               {% endif %}
               
             {% endif %}
-          {% endfor %}
-                
+          {% endfor %}                
             
         </div>
-        <div class="w-10/12 m-auto  mt-16 space-y-6 text-center sm:text-left sm:w-5/12 sm:mt-0">
+        <div class="w-10/12 m-auto  mt-16 text-center sm:text-left sm:w-5/12 sm:mt-0">
+          {% if settings.siteName %}
+            <span class="block">{{ settings.siteName }}</span>
+          {% endif %}
 
-            {% if settings.siteName %}
-              <span class="block">{{ settings.siteName }}</span>
-            {% endif %}
+          <span class="block py-3">
+            <a href="/privacy-policy/" class="font-semibold text-white hover:opacity-70">Privacy Policy</a> 
+          </span>
 
-            <span class="block">
-              {{ settings.townCity | safe }}
-            </span>
-
-            {% if settings.email %}
-              <span class="block">Email me @ <a href="mailto:{{ settings.email }}" target="_blank" rel="noopener noreferrer" class="hover:opacity-70 font-semibold">{{ settings.email }}</a></span>
-            {% endif %}
-
-            {% if settings.phoneNumber %}
-              <span class="block">Call me on {{ settings.phoneNumber }}</span>
-            {% endif %}                  
-
-            <span class="block">
-              <a href="/privacy-policy/" class="font-semibold text-white hover:opacity-70">Privacy Policy</a> 
-            </span>
-
-            <span class="block">
-              <small>© {{ settings.siteName }} {{ helpers.currentYear() }}, All rights reserved.</small>
-            </span> 
-            
-            <span class="block">
-              <small>Website by <a href="{{ settings.poweredByUrl }}" class="hover:opacity-70 font-semibold text-white" target="_blank" rel="noopener">{{ settings.poweredBy }}</a></small>
-            </span>
-
-            <span class="flex justify-center sm:justify-start">
-              <a
-                href="https://www.instagram.com/perennialweaver?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                target="_blank"
-                rel="noopener"
-                class="w-9 h-9 rounded-full bg-[color:var(--very-light-gray)] flex justify-center items-center hover:opacity-70">
-
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  width="20px"
-                  height="20px"
-                  viewBox="0,0,256,256">
-                  <title>Instagram</title>
-                  <g
-                    fill="var(--dark-copy)"
-                    fill-rule="nonzero"
-                    stroke="none"
-                    stroke-width="1"
-                    stroke-linecap="butt"
-                    stroke-linejoin="miter"
-                    stroke-miterlimit="10"
-                    stroke-dasharray=""
-                    stroke-dashoffset="0"
-                    font-family="none"
-                    font-weight="none"
-                    font-size="none"
-                    text-anchor="none"
-                    style="mix-blend-mode: normal">
-                    <g transform="scale(5.12,5.12)">
-                      <path
-                          d="M16,3c-7.16752,0 -13,5.83248 -13,13v18c0,7.16752 5.83248,13 13,13h18c7.16752,0 13,-5.83248 13,-13v-18c0,-7.16752 -5.83248,-13 -13,-13zM16,5h18c6.08648,0 11,4.91352 11,11v18c0,6.08648 -4.91352,11 -11,11h-18c-6.08648,0 -11,-4.91352 -11,-11v-18c0,-6.08648 4.91352,-11 11,-11zM37,11c-1.10457,0 -2,0.89543 -2,2c0,1.10457 0.89543,2 2,2c1.10457,0 2,-0.89543 2,-2c0,-1.10457 -0.89543,-2 -2,-2zM25,14c-6.06329,0 -11,4.93671 -11,11c0,6.06329 4.93671,11 11,11c6.06329,0 11,-4.93671 11,-11c0,-6.06329 -4.93671,-11 -11,-11zM25,16c4.98241,0 9,4.01759 9,9c0,4.98241 -4.01759,9 -9,9c-4.98241,0 -9,-4.01759 -9,-9c0,-4.98241 4.01759,-9 9,-9z">
-                      </path>
-                    </g>
-                  </g>
-                </svg>
-              </a>
-            </div>
+          <small class="text-white">
+            © {{ helpers.currentYear() }} <a href="{{ settings.poweredByOneUrl }}" target="_blank" rel="noopener" class="underline">{{ settings.poweredByOne }}</a> & <a href="{{ settings.poweredByTwoUrl }}" target="_blank" rel="noopener" class="underline">{{ settings.poweredByTwo }}</a>. All rights reserved.
+          </small>
         </div>
       </div>
     </div>

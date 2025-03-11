@@ -107,8 +107,9 @@ collections:
       - widget: select
         label: "tags"
         name: "tags"
+        multiple: true
         create: true
-        options: ["slot"]
+        options: ["slots", "top rated slots", "new slots", "slot games", "free slots", "video slots", "rms"]
       - widget: select
         label: "type"
         name: "type"
@@ -146,7 +147,10 @@ collections:
         fields:
           - { label: Site Name, name: siteName, widget: string }
           - { label: Author, name: author, widget: string }
-          - { label: Powered by, name: poweredBy, widget: string }
+          - { label: Powered by 1, name: poweredByOne, widget: string }
+          - { label: Powered by 2, name: poweredByTwo, widget: string }
+          - { label: Powered by 1 URL, name: poweredByOneUrl, widget: string }
+          - { label: Powered by 2 URL, name: poweredByTwoUrl, widget: string }
           - { label: Email, name: email, widget: string }
           - { label: Phone number, name: phoneNumber, widget: string }
           - { label: Company number, name: companyNumber, widget: string }

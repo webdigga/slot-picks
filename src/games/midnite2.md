@@ -7,7 +7,7 @@ highlights:
   - text: Highlight 2
 welcomeOffer: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
   tempor purus nec leo volutpat lacinia eget ultricies ex.
-tags: slot
+tags: slots
 type: game
 externalUrl: https://www.google.co.uk/
 imageAlt: Google!!!

@@ -1,5 +1,6 @@
 ---
 brand: /_includes/static/img/screenshot-2025-03-07-14.47.43.png
+imageAlt: Google!!!
 title: Midnite
 score: 7
 highlights:
@@ -7,8 +8,9 @@ highlights:
   - text: Highlight 2
 welcomeOffer: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
   tempor purus nec leo volutpat lacinia eget ultricies ex.
-tags: slot
+tags:
+  - slots
+  - top rated slots
 type: game
 externalUrl: https://www.google.co.uk/
-imageAlt: Google!!!
 ---

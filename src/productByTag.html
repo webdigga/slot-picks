@@ -13,49 +13,24 @@ eleventyComputed:
 ---
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
+{% import "./_includes/components/buttons/button.html" as button with context %}
+{% import "./_includes/components/game.html" as gameMacro with context %}
 
-<div>
-  
-  <div class="border-b border-solid border-b-[color:var(--very-light-gray)]">
-    {{ navBar.nav('bg-[color:var(--white)]') }}
-  </div>
-
-  <div class="container container--medium dark-copy">
-    <h1>Check out my range of {{ tag }}</h1>
-
-    <p class="text-sm mb-8 max-w-screen-lg">At Perennial Weaver, I take pride in creating beautifully handcrafted {{ tag }} that blend timeless design with exceptional quality. Each piece is made with care, using carefully selected materials to ensure durability, comfort, and style. Whether you're looking for a statement piece or an everyday essential, my {{ tag }} are designed to stand the test of time. With a focus on craftsmanship and attention to detail, I create products that celebrate tradition while embracing modern aesthetics. Explore my collection and find the perfect {{ tag }} to complement your home or lifestyle.</p>
-
-    {% set productList = collections[ tag ] %}
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-8">
-      {% for post in productList | reverse %}
-
-        <a
-          href="{{ post.url }}"
-          class="text-center text-sm relative group">
-          
-          <span class="opacity-0 group-hover:opacity-100 hover:animate-spin absolute rounded-full transition-all duration-300 ease-in-out border-white w-[37px] h-[37px] border bg-[color:var(--white)] text-3xl top-[calc(50%-30px)] left-[calc(50%-20px)]">
-            &#x2b;
-          </span>
-
-          <img
-            src="{{ post.data.images[0].path }}"
-            alt="{{ post.data.images[0].alt }}"
-            class="w-full h-auto mb-4"
-            width="600px"
-            height="600px"
-          />
-
-          {% if post.data.isSold %}
-            <div class="absolute top-2 right-2 bg-[color:var(--sold)] text-white text-xs font-bold px-2 py-1 rounded-full">
-              Sold
-            </div>
-          {% endif %}
-
-          {{ post.data.title }} / <span><span class="text-xs font-bold">&pound;</span><span class="text-xl font-bold">{{ post.data.price }}</span></span>
-        </a>
-
-      {% endfor %}
-    </div>
-  </div>  
+<div class="border-b border-solid border-b-[color:var(--very-light-gray)]">
+  {{ navBar.nav('bg-[color:var(--white)]') }}
 </div>
+
+<section class="container container--medium dark-copy">
+
+  {% if tag %}
+    <h2 class="capitalize">{{ tag }}</h2>
+  {% endif %}
+
+  <div class="grid grid-cols-1 gap-4 gap-y-8">
+
+    {% for game in collections[tag] %}
+      {{ gameMacro.game(game) }}
+    {% endfor %}
+
+  </div>
+</section>  
