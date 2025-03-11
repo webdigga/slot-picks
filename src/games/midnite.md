@@ -2,7 +2,8 @@
 brand: /_includes/static/img/screenshot-2025-03-07-14.47.43.png
 imageAlt: Google!!!
 title: Midnite
-score: 7
+score: 70
+rating: 4
 highlights:
   - text: Highlight 1
   - text: Highlight 2

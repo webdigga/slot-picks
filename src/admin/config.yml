@@ -91,7 +91,16 @@ collections:
       - {
         label: "Score",
         name: "score",
-        widget: "number"
+        widget: "number",
+        min: 1,
+        max: 100
+      }
+      - {
+        label: "Rating",
+        name: "rating",
+        widget: "number",
+        min: 1,
+        max: 5
       }
       - label: Highlights
         name: highlights

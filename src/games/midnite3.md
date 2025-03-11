@@ -1,7 +1,8 @@
 ---
 brand: /_includes/static/img/screenshot-2025-03-07-14.47.43.png
 title: Midnite3
-score: 6
+score: 60
+rating: 3
 highlights:
   - text: Highlight 1
   - text: Highlight 2
