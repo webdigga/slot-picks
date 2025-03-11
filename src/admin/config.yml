@@ -109,7 +109,7 @@ collections:
         name: "tags"
         multiple: true
         create: true
-        options: ["slots", "top rated slots", "new slots", "slot games", "free slots", "video slots", "rms"]
+        options: ["slots", "top rated slots", "new slots", "slot games", "free slots", "video slots", "casinos", "top rated casinos", "new casinos", "casino games", "free casinos", "video casinos"]
       - widget: select
         label: "type"
         name: "type"

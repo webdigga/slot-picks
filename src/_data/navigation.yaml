@@ -16,13 +16,13 @@ firstLevelItems:
         url: /lorem-ipsum/
       - text: Video Slots
         url: /lorem-ipsum/
-  - text: Casino
-    url: /lorem-ipsum/
+  - text: Casinos
+    url: /casinos/
     secondLevelItems:
-      - text: Casino
-        url: /lorem-ipsum/
-      - text: Top Rated Casino
-        url: /lorem-ipsum/
+      - text: Casinos
+        url: /games/casinos/
+      - text: Top Rated Casinos
+        url: /games/top-rated-casinos/
       - text: New Casino
         url: /lorem-ipsum/
       - text: Casino Games
