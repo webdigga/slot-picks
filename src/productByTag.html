@@ -13,12 +13,9 @@ eleventyComputed:
 ---
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
-{% import "./_includes/components/buttons/button.html" as button with context %}
 {% import "./_includes/components/game.html" as gameMacro with context %}
 
-<div class="border-b border-solid border-b-[color:var(--very-light-gray)]">
-  {{ navBar.nav('bg-[color:var(--white)]') }}
-</div>
+{{ navBar.nav('bg-[color:var(--white)]') }}
 
 <section class="container container--medium dark-copy">
 
