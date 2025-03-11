@@ -4,13 +4,40 @@ firstLevelItems:
   - text: Slots
     url: /slots/
     secondLevelItems:
-      - text: Best for number of slots
+      - text: Slots
+        url: /slots/
+      - text: Top Rated Slots
         url: /lorem-ipsum/
-      - text: Best for payout speed
+      - text: New Slots
         url: /lorem-ipsum/
-      - text: Best for win rate
+      - text: Slot Games
         url: /lorem-ipsum/
-      - text: Best for review score
+      - text: Free Slots
         url: /lorem-ipsum/
+      - text: Video Slots
+        url: /lorem-ipsum/
+      - text: RMS
+        url: /lorem-ipsum/
+  - text: Casino
+    url: /lorem-ipsum/
+    secondLevelItems:
+      - text: Casino
+        url: /lorem-ipsum/
+      - text: Top Rated Casino
+        url: /lorem-ipsum/
+      - text: New Casino
+        url: /lorem-ipsum/
+      - text: Casino Games
+        url: /lorem-ipsum/
+      - text: Free Casino
+        url: /lorem-ipsum/
+      - text: Video Casino
+        url: /lorem-ipsum/
+      - text: RMS
+        url: /lorem-ipsum/
+  - text: Articles
+    url: /lorem-ipsum/
+  - text: News
+    url: /lorem-ipsum/
   - text: FAQs
     url: /frequently-asked-questions-faqs/

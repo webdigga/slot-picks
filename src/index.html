@@ -11,24 +11,12 @@ eleventyComputed:
 ---
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
-{% import "./_includes/components/buttons/more-button.html" as moreButton with context %}
 {% import "./_includes/components/gamesList.html" as gamesList with context %}
 {% import "./_includes/components/seoIntroText.html" as seoIntroText with context %}
 
 <div>
 
-  <section class="min-h-dvh flex flex-col border-b-4 border-b-[color:var(--royal-purple)] border-solid background-image-class">
-    
-    <div>
-      {{ navBar.nav(bgColour='bg-white') }}
-    </div>
-  
-    <div class="container content-center grow">
-      {% include "./_includes/components/hero.html" %}
-    </div>
-  
-    {{ moreButton.button() }}
-  </section>  
+  {{ navBar.nav(bgColour='bg-white') }}
 
   <section class="dark-copy container container--medium" data-test="moreButtonLocation">
     {{ gamesList.listOfGames(title="See my slots", gameType='slot') }}

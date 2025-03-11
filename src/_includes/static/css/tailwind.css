@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 
+Gold – #FFD700: Symbolizing luck, wealth, and excitement, gold works well for a slots game, creating a sense of high stakes and prestige.
+
+Electric Blue – #1E90FF: A bright, eye-catching blue that adds energy and a modern feel to the site, perfect for capturing attention.
+
+Neon Green – #32CD32: This colour gives off a fun and lively vibe, often associated with neon lights and the thrill of a casino environment.
+*/
+
 /*Your Custom CSS Goes here*/
 :root { 
   --earthy-beige-light: #ebe2d6;
@@ -65,7 +73,7 @@ p {
 }
 
 .container {
-  @apply p-4 sm:p-5 md:p-6 !max-w-screen-lg;
+  @apply p-4 sm:p-5 md:p-6 !max-w-[1100px];
 }
 
 .container--medium {

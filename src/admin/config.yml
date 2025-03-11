@@ -199,12 +199,6 @@ collections:
   - label: "Components"
     name: "components"
     files:
-      - label: "Hero"
-        name: "hero"
-        file: "src/_data/hero.yaml"
-        fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Sub title, name: subTitle, widget: string }
       - label: "FAQs"
         name: "faqs"
         file: "src/_data/faqsData.yaml"
