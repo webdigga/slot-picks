@@ -18,12 +18,12 @@ eleventyComputed:
 
   {{ navBar.nav(bgColour='bg-white') }}
 
-  <section class="dark-copy container container--medium" data-test="moreButtonLocation">
-    {{ gamesList.listOfGames(title="Slots", gameType='slots') }}
+  <section class="dark-copy">
+    {{ seoIntroText.seoIntroTextComponent() }}
   </section>
 
-  <section class="!pb-0 bg-[color:var(--royal-purple)]">
-    {{ seoIntroText.seoIntroTextComponent() }}
+  <section class="dark-copy container container--medium !pt-0" data-test="moreButtonLocation">
+    {{ gamesList.listOfGames(title="Slots", gameType='slots') }}
   </section>
 
 </div>

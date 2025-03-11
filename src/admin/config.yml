@@ -20,7 +20,7 @@ collections:
             name: "seoIntroText"
             widget: "list"
             fields:
-              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string", required: false }
               - label: "Paragraphs"
                 name: "paragraphs"
                 widget: "list"
