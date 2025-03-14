@@ -163,30 +163,12 @@ collections:
           - { label: Email, name: email, widget: string }
           - { label: Phone number, name: phoneNumber, widget: string }
           - { label: Company number, name: companyNumber, widget: string }
-  - label: "Pages"
-    name: "pages"
+  - label: "SEO"
+    name: "seo"
     files:
       - label: "Homepage"
         name: "homepage"
         file: "src/_data/homepage.yaml"
-        fields:
-          - { 
-            label: "SEO Title",
-            name: "seoTitle",
-            widget: "string",
-            hint: "*This title will be used in the title tag for search engines (between 50 and 60 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
-            pattern: ['^.{50,60}$', "Must be between 50 and 60 characters"]
-          }
-          - {
-            label: "Description",
-            name: "description",
-            widget: "string",
-            hint: "*Used in search engines (between 70 and 155 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
-            pattern: ['^.{70,155}$', "Must be between 70 and 155 characters"]
-          }
-      - label: "Slot"
-        name: "slot"
-        file: "src/_data/slot.yaml"
         fields:
           - {
             label: "Title",
@@ -209,6 +191,32 @@ collections:
             hint: "*Used in search engines (between 70 and 155 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
             pattern: ['^.{70,155}$', "Must be between 70 and 155 characters"]
           }
+      - label: "Slots"
+        name: "slots"
+        file: "src/_data/slots.yaml"
+        fields:
+          - {
+            label: "Title",
+            name: "title",
+            widget: "string",
+            hint: "*This title will be used in the page's H1 tag, and also determines the URL (between 20 and 70 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
+            pattern: ['^.{20,70}$', "Must be between 20 and 70 characters"]
+          }
+          - { 
+            label: "SEO Title",
+            name: "seoTitle",
+            widget: "string",
+            hint: "*This title will be used in the title tag for search engines (between 50 and 60 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
+            pattern: ['^.{50,60}$', "Must be between 50 and 60 characters"]
+          }
+          - {
+            label: "Description",
+            name: "description",
+            widget: "string",
+            hint: "*Used in search engines (between 70 and 155 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
+            pattern: ['^.{70,155}$', "Must be between 70 and 155 characters"]
+          }
+          - { label: 'Content', name: 'content', widget: 'markdown' }
   - label: "Components"
     name: "components"
     files:

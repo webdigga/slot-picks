@@ -123,8 +123,6 @@ img.Right {
   @apply m-0 lg:float-right lg:pl-12 lg:pb-8 mt-0;
 }
 
-
-
 /* Syntax Highlighting*/
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {

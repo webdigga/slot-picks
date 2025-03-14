@@ -7,8 +7,8 @@ permalink: /games/{{ tag | slugify }}/index.html
 layout: default
 ogType: website
 eleventyComputed:
-  description: "Discover top-quality {{ tag }} for sale. Perfect for weaving enthusiasts, my {{ tag }} offers durability and precision. Shop online today!"
-  seoTitle: "Buy {{ tag }} Online | High-Quality {{ tag }} for Sale"
+  seoTitle: "{% if tag and tagData[tag] %}{{ tagData[tag].seoTitle }}{% endif %}"
+  description: "{% if tag and tagData[tag] %}{{ tagData[tag].description }}{% endif %}"
   canonical: "{{ env.site }}/games/{{ tag | slugify }}/"
 ---
 
@@ -19,9 +19,7 @@ eleventyComputed:
 
 <section class="container container--medium dark-copy">
 
-  {% if tag %}
-    <h2 class="capitalize">{{ tag }}</h2>
-  {% endif %}
+  <h1 class="mb-8">{{ tagData[tag].title }}</h1>
 
   <div class="grid grid-cols-1 gap-4 gap-y-8">
 
@@ -29,5 +27,9 @@ eleventyComputed:
       {{ gameMacro.game(game) }}
     {% endfor %}
 
+    <div class="prose !max-w-none prose-h2:mt-4">
+      {{ tagData[tag].content | default("") | toString | markdownify | safe }}
+    </div>
+
   </div>
-</section>  
+</section>

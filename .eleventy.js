@@ -3,7 +3,8 @@ const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 const markdownIt = require("markdown-it");
-
+const path = require("path");
+const fs = require("fs");
 const tailwind = require('tailwindcss');
 const postCss = require('postcss');
 const autoprefixer = require('autoprefixer');
@@ -59,9 +60,9 @@ module.exports = function (eleventyConfig) {
     html: true,
   });
 
-  // Add the new markdown filter (use when components render markdown)
-  eleventyConfig.addFilter("markdown", (content) => {
-    return md.render(content);
+  // Add a filter to convert markdown string to HTML
+  eleventyConfig.addFilter("markdownify", (markdownString) => {
+    return md.render(markdownString);
   });
 
   // To Support .yaml Extension in _data
@@ -116,22 +117,58 @@ module.exports = function (eleventyConfig) {
     }
   });
 
-  // Return a list of tags in a given collection
-  function getTagList(collection) {
-    let tagSet = new Set();
-    collection.forEach((item) => {
-      (item.data.tags || []).forEach((tag) => tagSet.add(tag));
-    });
-    return [...tagSet];
-  }  
+  // Add the tag data as a global data object
+  eleventyConfig.addGlobalData("tagData", function() {
+    const tagData = {};
+    const dataDir = path.join(__dirname, 'src/_data');
+    
+    try {
+      // Read all YAML files in the data directory
+      fs.readdirSync(dataDir).forEach(file => {
+        if (file.endsWith('.yaml') || file.endsWith('.yml')) {
+          const tagName = path.basename(file, path.extname(file));
+          try {
+            const fileContents = fs.readFileSync(path.join(dataDir, file), 'utf8');
+            const data = yaml.load(fileContents);
+            tagData[tagName] = data;
+          } catch (e) {
+            console.error(`Error loading YAML file ${file}:`, e);
+          }
+        }
+      });
+    } catch (e) {
+      console.error('Error reading data directory:', e);
+    }
 
-  // Create the posts object that contains tag information
-  eleventyConfig.addCollection("productTags", function (collectionAPI) {
-    let PRODUCTS = collectionAPI.getFilteredByGlob("./src/products/*.md");
-    let collection = {};
-    collection.tags = getTagList(PRODUCTS);
-    return collection;
+    return tagData;
   });
+
+  eleventyConfig.addFilter("toString", function (value) {
+    if (typeof value === "string") {
+      return value; // It's already a string
+    }
+    if (typeof value === "object" && value !== null) {
+      return JSON.stringify(value); // Convert objects to string
+    }
+    return String(value || ""); // Convert anything else safely
+  });
+
+  // // Return a list of tags in a given collection
+  // function getTagList(collection) {
+  //   let tagSet = new Set();
+  //   collection.forEach((item) => {
+  //     (item.data.tags || []).forEach((tag) => tagSet.add(tag));
+  //   });
+  //   return [...tagSet];
+  // }  
+
+  // // Create the posts object that contains tag information
+  // eleventyConfig.addCollection("productTags", function (collectionAPI) {
+  //   let PRODUCTS = collectionAPI.getFilteredByGlob("./src/products/*.md");
+  //   let collection = {};
+  //   collection.tags = getTagList(PRODUCTS);
+  //   return collection;
+  // });
 
   // Filter out specific item
   eleventyConfig.addFilter('itemFilter', function(collection, title) {
