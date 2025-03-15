@@ -1,4 +1,5 @@
 {% import "./buttons/button.html" as button with context %}
+{% import "./checklist-item.html" as checkListItemMacro with context %}
 
 {% macro game(game) %}
   <a
@@ -49,14 +50,14 @@
 
     <ul>
       {% for highlight in game.data.highlights %}
-        <li>{{ highlight.text }}</li>
+        {{ checkListItemMacro.checkListItem(title=highlight.text, textColour='dark-copy', classes='text-[color:var(--primary-colour)]') }}
       {% endfor %}
     </ul>
 
-    <p>{{ game.data.welcomeOffer }}</p>
+    <p class="text-sm">{{ game.data.welcomeOffer }}</p>
 
     <div class="sm:col-span-2 lg:col-span-1">
-      {{ button.button(buttonText='Claim Bonus', classes='w-full') }}
+      {{ button.button(buttonText='Claim Bonus', classes='w-full font-bold') }}
     </div>
 
   </a>
