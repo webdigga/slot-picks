@@ -164,6 +164,7 @@ collections:
           - { label: Email, name: email, widget: string }
           - { label: Phone number, name: phoneNumber, widget: string }
           - { label: Company number, name: companyNumber, widget: string }
+          - { label: Strapline, name: strapLine, widget: string }
   - label: "SEO"
     name: "seo"
     files:
