@@ -76,7 +76,8 @@ collections:
       - {
         label: "Brand",
         name: "brand",
-        widget: "image"
+        widget: "image",
+        hint: "*Should be 250px x 65px"
       }
       - {
         label: "Image Alt",

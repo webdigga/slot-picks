@@ -13,8 +13,8 @@
         src="{{ game.data.brand }}"
         alt="{{ game.data.imageAlt }}"
         class="w-full h-auto mb-4"
-        width="259px"
-        height="67px"
+        width="250px"
+        height="65px"
       />     
 
       <div class="flex items-center">
@@ -45,7 +45,7 @@
     {% endset %}    
 
     <div>    
-      <span class="bg-blue-100 text-text-[color:var(--primary-colour)] text-sm font-semibold inline-flex items-center p-1.5 rounded-sm">{{ game.data.score }}</span><span class="ms-2 font-medium text-gray-900">{{ scoreText }}</span>
+      <span class="bg-blue-100 text-text-[color:var(--primary-colour)] text-sm font-semibold inline-flex items-center py-1.5 px-2 rounded-sm">{{ game.data.score }}</span><span class="ms-2 font-medium text-gray-900">{{ scoreText }}</span>
     </div>
 
     <ul>
@@ -54,7 +54,7 @@
       {% endfor %}
     </ul>
 
-    <p class="text-sm">{{ game.data.welcomeOffer }}</p>
+    <p class="text-sm mb-0">{{ game.data.welcomeOffer }}</p>
 
     <div class="sm:col-span-2 lg:col-span-1">
       {{ button.button(buttonText='Claim Bonus', classes='w-full font-bold') }}

@@ -1,5 +1,5 @@
 ---
-brand: /_includes/static/img/screenshot-2025-03-07-14.47.43.png
+brand: /_includes/static/img/sun.png
 imageAlt: Google!!!
 title: Midnite
 score: 92
