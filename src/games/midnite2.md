@@ -1,15 +1,14 @@
 ---
 brand: /_includes/static/img/coral.png
-title: Midnite2
+title: Coral
 score: 80
 rating: 5
 highlights:
-  - text: Highlight 1
-  - text: Highlight 2
-welcomeOffer: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-  tempor purus nec leo volutpat lacinia eget ultricies ex.
+  - text: PayPal Casino
+  - text: Trusted Brand
+welcomeOffer: Play £10 on Any Slot, get 100 Free Spins!
 tags: slots
 type: game
 externalUrl: https://www.google.co.uk/
-imageAlt: Google!!!
+imageAlt: Coral
 ---

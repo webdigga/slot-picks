@@ -1,14 +1,13 @@
 ---
 brand: /_includes/static/img/sun.png
-imageAlt: Google!!!
-title: Midnite
+imageAlt: Sun Play
+title: Sun Play
 score: 92
 rating: 4
 highlights:
-  - text: Highlight 1
-  - text: Highlight 2
-welcomeOffer: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-  tempor purus nec leo volutpat lacinia eget ultricies ex.
+  - text: Top Class Slot Games
+  - text: Biggest Slot Providers
+welcomeOffer: 100% Welcome Bonus Up To £200 + 25 Wager-Free Spins.
 tags:
   - slots
   - top rated slots
