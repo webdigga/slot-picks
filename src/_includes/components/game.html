@@ -3,7 +3,7 @@
 {% macro game(game) %}
   <a
     href="{{ game.data.externalUrl }}"
-    class="text-center text-sm relative group grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 p-4 border border-[color:var(--very-light-gray)] rounded-md hover:shadow-lg transition-all duration-300 ease-in-out"> 
+    class="text-sm relative group grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 p-4 border border-[color:var(--very-light-gray)] rounded-md hover:shadow-lg transition-all duration-300 ease-in-out"> 
 
     <!-- TODO - what image width and height should be here? -->
     <div class="flex flex-col">      
@@ -32,9 +32,20 @@
       </div>
 
     </div>
-    
 
-    <div>{{ game.data.score }}</div>
+    {% set scoreText %}
+      {% if game.data.score >= 90 %}
+        Excellent
+      {% elif game.data.score >= 80 %}
+        Superb
+      {% elif game.data.score < 80 %}
+        Good
+      {% endif %}
+    {% endset %}    
+
+    <div>    
+      <span class="bg-blue-100 text-text-[color:var(--primary-colour)] text-sm font-semibold inline-flex items-center p-1.5 rounded-sm">{{ game.data.score }}</span><span class="ms-2 font-medium text-gray-900">{{ scoreText }}</span>
+    </div>
 
     <ul>
       {% for highlight in game.data.highlights %}
@@ -45,7 +56,7 @@
     <p>{{ game.data.welcomeOffer }}</p>
 
     <div class="sm:col-span-2 lg:col-span-1">
-      {{ button.button(buttonText='Claim Bonus') }}
+      {{ button.button(buttonText='Claim Bonus', classes='w-full') }}
     </div>
 
   </a>

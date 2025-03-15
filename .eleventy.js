@@ -153,31 +153,6 @@ module.exports = function (eleventyConfig) {
     return String(value || ""); // Convert anything else safely
   });
 
-  // // Return a list of tags in a given collection
-  // function getTagList(collection) {
-  //   let tagSet = new Set();
-  //   collection.forEach((item) => {
-  //     (item.data.tags || []).forEach((tag) => tagSet.add(tag));
-  //   });
-  //   return [...tagSet];
-  // }  
-
-  // // Create the posts object that contains tag information
-  // eleventyConfig.addCollection("productTags", function (collectionAPI) {
-  //   let PRODUCTS = collectionAPI.getFilteredByGlob("./src/products/*.md");
-  //   let collection = {};
-  //   collection.tags = getTagList(PRODUCTS);
-  //   return collection;
-  // });
-
-  // Filter out specific item
-  eleventyConfig.addFilter('itemFilter', function(collection, title) {
-    if (!Array.isArray(collection)) return collection;
-    if (!title) return collection;
-    const filtered = collection.filter(item => item.data.title !== title);
-    return filtered;
-  });
-
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
   return {
