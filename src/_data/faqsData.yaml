@@ -1,23 +1,46 @@
 faqs:
-  - question: Can I place an order for an item that is shown as sold-out?
-    answer: Yes. It won't be exactly the same item as I don't make the same item twice, but it can be very similar.  Please get in contact to discuss.
-  - question: Where do you ship and what is the cost?
-    answer: I ship to the UK and Worldwide. All prices shown on the website include postage and packaging to the UK. If you are an international customer, please contact me before placing an order to find out the shipping cost.
-  - question: Do you provide a gift note?
-    answer: Yes, I can provide a gift note. Please let me know what you would like to say in the note when you place your order.
-  - question: Do you accept debit and credit cards?
-    answer: I accept Visa, Mastercard and credit and debit cards.
-  - question: When will my item be delivered?
-    answer: Most items are shipped within a week. If you have not received your package or correspondence from us within this time frame, please contact me.
-  - question: Do you accept custom orders?
-    answer: Yes! I love working on custom requests or collaborations, big and small. Get in touch with your ideas.
-  - question: Are there any care recomendations for the pieces I have just purchased?
-    answer: To preserve their full beauty and extend longevity, my pieces should be washed on delicates.
-  - question: Do you accept returns?
-    answer: Please note that I do not offer refunds for 'change of mind' so please consider your purchases carefully.
-  - question: What if my item arrives damaged?
-    answer: All of my products are prepared and packed with extreme care. As they are not breakable, they should arrive intact.
-  - question: How do I get in touch with you?
-    answer: You can contact me via email at perennialweaver@btinternet.com or by phone on 07950172499.
-  - question: Is my information held in confidence?
-    answer: All confidential information, including credit card details, are held securely. Customer details are not passed on to third parties and are used only in accordance with the Data Protection Act.
+  - question: "What is Slot Picks?"
+    answer: "Slot Picks is an independent affiliate website that provides honest reviews, ratings, and recommendations for online slot games and casino sites. We aim to help players make informed decisions about where to play and which games offer the best experience."
+  - question: "How do you choose which casinos and slot games to review?"
+    answer: "We select casinos and games based on reputation, player feedback, licensing, game variety, bonus offers, and overall user experience. We prioritise sites that offer fair gaming, reliable payouts, and excellent customer service."
+  - question: "Are your reviews biased?"
+    answer: "We strive to provide unbiased, honest reviews. Whilst we do earn affiliate commissions when players sign up through our links, this never influences our ratings or recommendations. Our primary goal is to build trust with our readers by offering transparent and accurate information."
+  - question: "What are online slots?"
+    answer: "Online slots are digital versions of traditional slot machines found in physical casinos. They feature various themes, paylines, and bonus features, with outcomes determined by Random Number Generators (RNGs) to ensure fair play."
+  - question: "Are online slots fair?"
+    answer: "Reputable online casinos use certified Random Number Generators that are regularly tested by independent auditors like eCOGRA or iTech Labs. All casinos we recommend are licensed and regulated by recognised gambling authorities."
+  - question: "What's the difference between RTP and volatility?"
+    answer: "Return to Player (RTP) is the percentage of wagered money that a slot will pay back to players over time. For example, a 96% RTP means the game returns £96 for every £100 wagered long-term. Volatility (or variance) refers to the risk level and payout pattern. Low volatility slots offer frequent but smaller wins, while high volatility slots provide less frequent but potentially larger payouts."
+  - question: "What are progressive jackpot slots?"
+    answer: "Progressive jackpot slots feature a prize pool that increases each time the game is played but the jackpot isn't won. These jackpots can grow to substantial amounts, sometimes reaching millions of pounds."
+  - question: "How do I know if an online casino is safe?"
+    answer: "Look for these indicators of a safe online casino: valid gambling licence from a reputable authority, secure website (HTTPS), transparent terms and conditions, fair game certification, positive player reviews and reputation, and responsible gambling tools."
+  - question: "What payment methods are typically available?"
+    answer: "Most online casinos accept: credit/debit cards, e-wallets (PayPal, Skrill, Neteller), bank transfers, cryptocurrency, and prepaid cards."
+  - question: "Are online casinos legal in my area?"
+    answer: "Legal status varies by location. It's your responsibility to verify the legality of online gambling in your jurisdiction before playing. We provide general information but cannot offer legal advice."
+  - question: "What is a welcome bonus?"
+    answer: "A welcome bonus is an incentive offered to new players when they sign up and make their first deposit at an online casino. These can include match deposit bonuses, free spins, or a combination of both."
+  - question: "What are wagering requirements?"
+    answer: "Wagering requirements specify how many times you must play through a bonus before you can withdraw any winnings. For example, a 30x wagering requirement on a £10 bonus means you must place bets totalling £300 before cashing out."
+  - question: "What is a no-deposit bonus?"
+    answer: "A no-deposit bonus is free credit or free spins offered without requiring a deposit. These bonuses allow you to try games with real money potential without risking your own funds."
+  - question: "How can I gamble responsibly?"
+    answer: "Set time and money limits before playing, never chase losses, don't gamble when upset or depressed, balance gambling with other activities, and utilise responsible gambling tools provided by casinos."
+  - question: "What tools do casinos offer for responsible gambling?"
+    answer: "Reputable casinos offer: deposit limits, loss limits, session time limits, self-exclusion options, reality checks, and self-assessment tests."
+  - question: "Where can I get help for gambling problems?"
+    answer: "If you or someone you know is struggling with gambling issues, contact organisations like GamCare, BeGambleAware, or Gamblers Anonymous UK."
+  - question: "Do I need to download software to play online slots?"
+    answer: "Most modern online casinos offer instant-play games that run directly in your web browser without downloading software. Mobile apps are also available for iOS and Android devices."
+  - question: "What devices can I use to play online slots?"
+    answer: "You can play on desktop computers, laptops, tablets, and smartphones. Most casinos offer mobile-optimised websites or dedicated apps."
+  - question: "What if I have technical issues while playing?"
+    answer: "If you encounter technical problems, try: refreshing your browser, clearing your cache and cookies, ensuring your internet connection is stable, or contacting the casino's customer support."
+  - question: "How do your affiliate links work?"
+    answer: "When you click on our links to casinos and sign up, we may earn a commission. This comes at no extra cost to you—the casinos pay us directly for referring new players."
+  - question: "Do I have to use your links?"
+    answer: "No, you're welcome to visit casino sites directly. However, using our links helps support our work and allows us to continue providing free reviews and information."
+  - question: "Do affiliate links affect the casino bonuses I receive?"
+    answer: "In most cases, no. Sometimes we can even negotiate exclusive bonuses that are better than what you'd get by visiting the casino directly."
+    
