@@ -31,9 +31,7 @@ firstLevelItems:
         url: /lorem-ipsum/
       - text: Video Casino
         url: /lorem-ipsum/
-  - text: Articles
-    url: /lorem-ipsum/
   - text: News
-    url: /lorem-ipsum/
+    url: /news/
   - text: FAQs
     url: /frequently-asked-questions-faqs/

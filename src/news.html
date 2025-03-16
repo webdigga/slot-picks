@@ -1,0 +1,46 @@
+---
+layout: newsWrapper
+title: Divorce
+seoTitle: Latest Divorce Articles | Resources for Navigating Divorce
+description: Stay updated with the latest divorce news, expert insights, and resources to help you navigate divorce with confidence and clarity.
+introText: Navigating divorce can be challenging, but staying informed can make all the difference. Here, you'll find the latest divorce news, legal updates, and expert insights to help you make informed decisions. Whether you're looking for practical advice, emotional support, or guidance on financial matters, our resources are designed to support you every step of the way.
+subTitle: Stay Informed with the Latest Divorce News & Resources
+---
+
+<section class="mt-15">
+  {% set divorceNews = collections.divorce %}
+
+  {% for news in divorceNews | reverse %}
+    <article class="pt-6 mt-6 border-t border-gray-200">
+      <a
+        href="{{ news.url | url }}"
+        class="text-xl text-gray-900 mb-3 block no-underline hover:underline lg:pr-24">
+          
+          <span class="font-bold">
+            {% if news.data.title %}
+              {{ news.data.title }}
+            {% else %}
+              Untitled
+            {% endif %}
+          </span>
+      
+      
+        {% if news.data.description %}
+          <p class="text-base text-gray-500 mb-3">
+            {{ news.data.description }}
+          </p>
+        {% endif %}
+
+        <time class="text-gray-500 mb-3 text-sm italic inline-block w-full no-underline">{{ news.data.date | readableDate }}</time>
+
+        <p class="text-right sm:text-left mt-2 mb-0">
+          <span
+            class="text-[color:var(--primary-color)] hover:opacity-70 font-bold text-lg">
+            Read more →
+          </span>
+        </p>
+      </a>
+
+    </article>
+  {% endfor %}
+</section>
