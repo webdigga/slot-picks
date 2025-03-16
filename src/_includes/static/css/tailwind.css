@@ -86,7 +86,7 @@ p {
 }
 
 .anchor-highlight {
-  @apply underline-offset-4 decoration-2 underline decoration-[color:var(--royal-purple)];
+  @apply underline-offset-4 decoration-2 underline decoration-[color:var(--primary-colour)];
 }
 
 .anchor-white {
