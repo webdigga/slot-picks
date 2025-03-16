@@ -1,0 +1,6 @@
+{
+    "layout": "default",
+    "ogType": "website",
+    "permalink": "/{{ title | slugify }}/",
+    "ignore": true
+}
