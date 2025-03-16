@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{% import "./partials/navbar.html" as navBar with context %}
+
+{{ navBar.nav(bgColour='bg-white') }}
+
+<div class="container max-w-screen-lg mt-6 dark-copy">
+
+    <h1 class="text-left font-bold text-5xl">{{ title | safe }}</h1>
+
+    <h2 class="font-bold text-3xl">{{ subTitle | safe }}</h2>
+
+    <p class="mb-8">
+      {{ introText | safe }}
+    </p>
+
+    {{ content | safe }}
+
+</div>

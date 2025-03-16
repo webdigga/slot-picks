@@ -16,6 +16,10 @@ eleventyComputed:
 
     <h1 class="dark-copy">{{ title }}</h1>
 
+    {% if showDate and date %}
+      <time class="text-[color:var(--dark-gray)] text-sm italic block">{{ date | readableDate }}</time>
+    {% endif %}
+
     {{ content | safe }}
 
     {% if 'faq' in tags %}
