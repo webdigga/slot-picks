@@ -3,6 +3,13 @@ pagination:
   data: collections
   size: 1
   alias: tag
+  filter:
+    - article
+    - faq
+    - privacy
+    - all
+    - news
+  addAllPagesToCollections: true
 permalink: /games/{{ tag | slugify }}/index.html
 layout: default
 ogType: website
