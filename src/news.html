@@ -14,7 +14,7 @@ eleventyComputed:
 
   {% set newsList = collections.news %}
 
-  <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+  <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
 
     {% for newsItem in newsList | reverse %}
       <article class="w-full max-w-full flex flex-col">
@@ -34,9 +34,6 @@ eleventyComputed:
               <div>
                 <span class="inline-block mb-4 text-xs font-bold capitalize border-b-2 border-[color:var(--primary-colour)] hover:text-[color:var(--primary-colour)]">News</span>
                 <span class="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-[color:var(--primary-colour)]">{{ newsItem.data.title }}</span>
-                <p class="mb-4">
-                  {{ newsItem.data.description }}
-                </p>
               </div>
               <div>
                 <span class="inline-block pb-1 mt-2 text-base font-black text-[color:var(--primary-colour)] uppercase border-b border-transparent hover:border-[color:var(--primary-colour)]">Read More -></span>

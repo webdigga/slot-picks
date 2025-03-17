@@ -30,4 +30,45 @@ eleventyComputed:
     {{ gamesList.listOfGames(title="Casinos", gameType='casinos') }}
   </section>
 
+  <section class="dark-copy container flex flex-col justify-center mx-auto">
+
+    <h2>Latest News</h2>
+
+    {% set newsList = collections.news %}
+  
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+  
+      {% for newsItem in newsList | reverse %}
+        {% if loop.index0 < 4 %}
+          <article class="w-full max-w-full flex flex-col">
+            <a
+              href="{{ newsItem.url | url }}"
+              class="text-xl text-gray-900 mb-3 no-underline hover:underline flex flex-col h-full">
+              <img
+                src="{{ newsItem.data.imageForSeo }}"
+                alt="{{ newsItem.data.imageUrl }}"
+                class="w-full"
+                width="600px"
+                height="450px"
+              />
+              <div class="flex flex-grow">
+                <div class="triangle"></div>
+                <div class="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 text">
+                  <div>
+                    <span class="inline-block mb-4 text-xs font-bold capitalize border-b-2 border-[color:var(--primary-colour)] hover:text-[color:var(--primary-colour)]">News</span>
+                    <span class="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-[color:var(--primary-colour)]">{{ newsItem.data.title }}</span>
+                  </div>
+                  <div>
+                    <span class="inline-block pb-1 mt-2 text-base font-black text-[color:var(--primary-colour)] uppercase border-b border-transparent hover:border-[color:var(--primary-colour)]">Read More -></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+        {% endif %}
+      {% endfor %}
+  
+    </div>
+  </section>
+
 </div>
