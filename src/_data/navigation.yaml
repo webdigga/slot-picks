@@ -5,14 +5,14 @@ firstLevelItems:
     url: /slots/
     secondLevelItems:
       - text: Slots
-        url: /games/slots/
+        url: /sites/slots/
       - text: Top Rated Slots
-        url: /games/top-rated-slots/
+        url: /sites/top-rated-slots/
       - text: New Slots
         url: /lorem-ipsum/
-      - text: Slot Games
+      - text: Slot sites
         url: /lorem-ipsum/
-      - text: Free Slots
+      - text: Free Spins
         url: /lorem-ipsum/
       - text: Video Slots
         url: /lorem-ipsum/
@@ -20,16 +20,16 @@ firstLevelItems:
     url: /casinos/
     secondLevelItems:
       - text: Casinos
-        url: /games/casinos/
+        url: /sites/casinos/
       - text: Top Rated Casinos
-        url: /games/top-rated-casinos/
+        url: /sites/top-rated-casinos/
       - text: New Casino
         url: /lorem-ipsum/
-      - text: Casino Games
+      - text: Casino sites
         url: /lorem-ipsum/
       - text: Free Casino
         url: /lorem-ipsum/
-      - text: Video Casino
+      - text: Live Casino
         url: /lorem-ipsum/
   - text: News
     url: /news/

@@ -79,9 +79,9 @@ collections:
         create: true
         options: ["article", "privacy", "faq", "news"]
         default: ["article"]
-  - label: "Games"
-    name: "games"
-    folder: "src/games"
+  - label: "Sites"
+    name: "sites"
+    folder: "src/sites"
     create: true
     fields:
       - {
@@ -130,15 +130,19 @@ collections:
         name: "tags"
         multiple: true
         create: true
-        options: ["slots", "top rated slots", "new slots", "slot games", "free slots", "video slots", "casinos", "top rated casinos", "new casinos", "casino games", "free casinos", "video casinos"]
+        options: ["slots", "top rated slots", "new slots", "slot games", "free spins", "video slots", "casinos", "top rated casinos", "new casinos", "casino games", "free casinos", "live casinos"]
       - widget: select
         label: "type"
         name: "type"
         create: false
-        options: ["game"]
-        default: "game"
+        options: ["site"]
+        default: "site"
       - { label: External URL, name: externalUrl, widget: string }
-      
+      - {
+        label: "T&Cs",
+        name: "termsAndConditions",
+        widget: "string"
+      }
   - label: "Settings"
     name: "settings"
     files:

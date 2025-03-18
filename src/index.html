@@ -11,7 +11,7 @@ eleventyComputed:
 ---
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
-{% import "./_includes/components/gamesList.html" as gamesList with context %}
+{% import "./_includes/components/sitesList.html" as sitesList with context %}
 {% import "./_includes/components/seoIntroText.html" as seoIntroText with context %}
 
 <div>
@@ -23,11 +23,11 @@ eleventyComputed:
   </section>
 
   <section class="dark-copy container" data-test="moreButtonLocation">
-    {{ gamesList.listOfGames(title="Slots", gameType='slots') }}
+    {{ sitesList.listOfSites(title="Slots", siteType='slots') }}
   </section>
 
   <section class="dark-copy container" data-test="moreButtonLocation">
-    {{ gamesList.listOfGames(title="Casinos", gameType='casinos') }}
+    {{ sitesList.listOfSites(title="Casinos", siteType='casinos') }}
   </section>
 
   <section class="dark-copy container flex flex-col justify-center mx-auto">

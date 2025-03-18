@@ -1,17 +1,17 @@
 {% import "./buttons/button.html" as button with context %}
 {% import "./checklist-item.html" as checkListItemMacro with context %}
 
-{% macro game(game) %}
+{% macro site(site) %}
   <a
-    href="{{ game.data.externalUrl }}"
-    class="text-sm relative group grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 p-4 border border-[color:var(--very-light-gray)] rounded-md hover:shadow-lg transition-all duration-300 ease-in-out"> 
+    href="{{ site.data.externalUrl }}"
+    class="dark-copy text-sm relative group grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 p-4 border border-[color:var(--very-light-gray)] rounded-md hover:shadow-lg transition-all duration-300 ease-in-out"> 
 
     <!-- TODO - what image width and height should be here? -->
     <div class="flex flex-col">      
 
       <img
-        src="{{ game.data.brand }}"
-        alt="{{ game.data.imageAlt }}"
+        src="{{ site.data.brand }}"
+        alt="{{ site.data.imageAlt }}"
         class="w-full h-auto mb-4"
         width="250px"
         height="65px"
@@ -20,7 +20,7 @@
       <div class="flex items-center">
         {% set maxIterations = 5 %}
         {% for i in range(maxIterations) %}
-          {% if i < game.data.rating %}
+          {% if i < site.data.rating %}
             <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
               <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
             </svg>
@@ -35,29 +35,33 @@
     </div>
 
     {% set scoreText %}
-      {% if game.data.score >= 90 %}
+      {% if site.data.score >= 90 %}
         Excellent
-      {% elif game.data.score >= 80 %}
+      {% elif site.data.score >= 80 %}
         Superb
-      {% elif game.data.score < 80 %}
+      {% elif site.data.score < 80 %}
         Good
       {% endif %}
     {% endset %}    
 
     <div>    
-      <span class="bg-blue-100 text-text-[color:var(--primary-colour)] text-sm font-semibold inline-flex items-center py-1.5 px-2 rounded-sm">{{ game.data.score }}</span><span class="ms-2 font-medium text-gray-900">{{ scoreText }}</span>
+      <span class="bg-blue-100 text-text-[color:var(--primary-colour)] text-sm font-semibold inline-flex items-center py-1.5 px-2 rounded-sm">{{ site.data.score }}</span><span class="ms-2 font-medium text-gray-900">{{ scoreText }}</span>
     </div>
 
     <ul>
-      {% for highlight in game.data.highlights %}
+      {% for highlight in site.data.highlights %}
         {{ checkListItemMacro.checkListItem(title=highlight.text, textColour='dark-copy', classes='text-[color:var(--primary-colour)]') }}
       {% endfor %}
     </ul>
 
-    <p class="text-sm mb-0">{{ game.data.welcomeOffer }}</p>
+    <p class="text-sm mb-0">{{ site.data.welcomeOffer }}</p>
 
     <div class="sm:col-span-2 lg:col-span-1">
       {{ button.button(buttonText='Claim Bonus', classes='w-full font-bold') }}
+    </div>
+
+    <div class="col-span-full border-t pt-4 text-xs text-[color:var(--dark-gray)]">
+      {{ site.data.termsAndConditions }}
     </div>
 
   </a>

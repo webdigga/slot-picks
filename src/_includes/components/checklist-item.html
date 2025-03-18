@@ -1,5 +1,5 @@
 {% macro checkListItem(title, classes, textColour, destination) %}
-  <li class="flex w-full items-center {{ classes | safe }} pr-1 mb-1">
+  <li class="flex w-full items-center {{ classes | safe }} pr-1 mb-2">
     {% if destination %}
       <a href="{{ destination | safe }}" class="flex">
         <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor" class="size-6 min-w-6">

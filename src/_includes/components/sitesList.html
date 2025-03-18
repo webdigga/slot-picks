@@ -1,7 +1,7 @@
 {% import "./buttons/button.html" as button with context %}
-{% import "./game.html" as gameMacro with context %}
+{% import "./site.html" as siteMacro with context %}
 
-{% macro listOfGames(title, gameType) %}
+{% macro listOfSites(title, siteType) %}
 
   <div>
     {% if title %}
@@ -10,8 +10,8 @@
 
     <div class="grid grid-cols-1 gap-4 gap-y-8">
 
-      {% for game in collections[gameType] %}
-        {{ gameMacro.game(game) }}
+      {% for site in collections[siteType] %}
+        {{ siteMacro.site(site) }}
       {% endfor %}
 
     </div>

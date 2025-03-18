@@ -10,17 +10,17 @@ pagination:
     - all
     - news
   addAllPagesToCollections: true
-permalink: /games/{{ tag | slugify }}/index.html
+permalink: /sites/{{ tag | slugify }}/index.html
 layout: default
 ogType: website
 eleventyComputed:
   seoTitle: "{% if tag and tagData[tag] %}{{ tagData[tag].seoTitle }}{% endif %}"
   description: "{% if tag and tagData[tag] %}{{ tagData[tag].description }}{% endif %}"
-  canonical: "{{ env.site }}/games/{{ tag | slugify }}/"
+  canonical: "{{ env.site }}/sites/{{ tag | slugify }}/"
 ---
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
-{% import "./_includes/components/game.html" as gameMacro with context %}
+{% import "./_includes/components/site.html" as siteMacro with context %}
 
 {{ navBar.nav('bg-[color:var(--white)]') }}
 
@@ -30,8 +30,8 @@ eleventyComputed:
 
   <div class="grid grid-cols-1 gap-4 gap-y-8">
 
-    {% for game in collections[tag] %}
-      {{ gameMacro.game(game) }}
+    {% for site in collections[tag] %}
+      {{ siteMacro.site(site) }}
     {% endfor %}
 
     <div class="prose !max-w-none prose-h2:mt-4">
