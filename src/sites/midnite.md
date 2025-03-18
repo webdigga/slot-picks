@@ -1,6 +1,7 @@
 ---
 brand: /_includes/static/img/sun.png
 imageAlt: Sun Play
+imageColour: "#cd2e2c"
 title: Sun Play
 score: 92
 rating: 4
@@ -13,5 +14,7 @@ tags:
   - top rated slots
 type: site
 externalUrl: https://www.google.co.uk/
-termsAndConditions: New customers only. Deposit and wager £20 on Midnite Casino to get 100 Free Spins at 10p per spin, valid for 7 days on selected games. T&Cs apply. 18+ GambleAware.org
+termsAndConditions: New customers only. Deposit and wager £20 on Midnite Casino
+  to get 100 Free Spins at 10p per spin, valid for 7 days on selected games.
+  T&Cs apply. 18+ GambleAware.org
 ---

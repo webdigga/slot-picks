@@ -95,6 +95,7 @@ collections:
         name: "imageAlt",
         widget: "string"
       }
+      - { label: 'Image Colour', name: 'imageColour', widget: 'color' }
       - {
         label: "Title",
         name: "title",
