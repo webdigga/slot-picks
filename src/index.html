@@ -22,12 +22,18 @@ eleventyComputed:
     {{ seoIntroText.seoIntroTextComponent() }}
   </section>
 
-  <section class="dark-copy container" data-test="moreButtonLocation">
+  <section class="dark-copy container">
     {{ sitesList.listOfSites(title="Slots", siteType='slots') }}
   </section>
 
-  <section class="dark-copy container" data-test="moreButtonLocation">
+  <section class="dark-copy container">
     {{ sitesList.listOfSites(title="Casinos", siteType='casinos') }}
+  </section>
+
+  <section class="dark-copy container">
+    <div class="prose !max-w-none prose-h2:mt-4">
+      {{ homepage.content | default("") | toString | markdownify | safe }}
+    </div>
   </section>
 
   <section class="dark-copy container flex flex-col justify-center mx-auto">
