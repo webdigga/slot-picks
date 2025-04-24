@@ -10,6 +10,7 @@ highlights:
   - text: Popular Themed Slot Games
   - text: Bingo & Scratchcards
   - text: Pay By Mobile Option
+  - text: Daily Promotions Including Amazon Vouchers
 welcomeOffer: 500 Free Spins
 tags:
   - slots
