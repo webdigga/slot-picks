@@ -8,6 +8,10 @@ rating: 5
 highlights:
   - text: PayPal Casino
   - text: Trusted Brand
+  - text: Promotions & Loyalty Scheme
+  - text: Top Software Providers
+  - text: Dedicated Mobile App
+  - text: Excellent Banking Options
 welcomeOffer: Play £10 on Any Slot, get 100 Free Spins!
 tags: slots
 type: site
