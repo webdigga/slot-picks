@@ -10,6 +10,8 @@ highlights:
   - text: Great Selection of Casino Games
   - text: Sportsbook & E-Sports
   - text: Over 15+ Games Providers
+  - text: Mobile Optimised Site
+  - text: Flexible Payment Options
 welcomeOffer: "100% bonus up to £100! "
 tags:
   - casinos
