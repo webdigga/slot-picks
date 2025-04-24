@@ -3,11 +3,15 @@ brand: /_includes/static/img/bet365.png
 imageAlt: bet365
 imageColour: "#24906a"
 title: bet365
-score: 60
-rating: 3
+score: 95
+rating: 5
 highlights:
   - text: Huge Selection of Slot Games
-  - text: Instant Withdrawals & Dedicated Casino App
+  - text: Instant Withdrawals
+  - text: High-quality Live Dealer Games
+  - text: Dedicated Casino App
+  - text: Great Reputation & Licensing
+  - text: Excellent Customer Support
 welcomeOffer: Get up to 200 Free Spins
 tags:
   - casinos
