@@ -9,6 +9,9 @@ highlights:
   - text: Excellent 24hr Customer Support
   - text: Slot Games From All The Best Providers
   - text: 10% Cashback Ongoing
+  - text: Licensed & Trusted
+  - text: Quality Game Selection
+  - text: No Wagering on Cashback.
 welcomeOffer: Welcome Offer 100% Up To £100
 tags:
   - casinos
