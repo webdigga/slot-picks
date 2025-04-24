@@ -9,6 +9,9 @@ highlights:
   - text: Huge Selection of Slot Games
   - text: Good Choice of Live Casino Games
   - text: Free Spins & Bonus Offers
+  - text: Classic TV Themed Games
+  - text: Licensed and Trusted
+  - text: Progressive Jackpots
 welcomeOffer: 500 Free Spins
 tags:
   - slots
