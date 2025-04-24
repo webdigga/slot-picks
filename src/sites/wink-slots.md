@@ -9,6 +9,9 @@ highlights:
   - text: Great New Customer Offer
   - text: Slingo, Slots & Scratchcards
   - text: Great User Experience
+  - text: Daily Tasks & Challenges
+  - text: Cashback Offers
+  - text: Interactive Gameplay
 welcomeOffer: Deposit £10 & Get  200% BONUS  +30 FREE SPINS
 tags:
   - slots
