@@ -10,6 +10,8 @@ highlights:
   - text: Popular Lottery Site
   - text: Trusted Site
   - text: Huge Selection of Games
+  - text: Dedicated Mobile Apps
+  - text: Responsible Gambling Tools
 welcomeOffer: Upto 250 Free Spins
 tags:
   - casinos
