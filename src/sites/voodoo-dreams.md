@@ -9,6 +9,9 @@ highlights:
   - text: Real Money Free Spins
   - text: Live Casino & Tabel Games
   - text: Excellent Loyalty Scheme
+  - text: Extensive Game Selection
+  - text: Top Software Providers
+  - text: Mobile-Friendly Design
 welcomeOffer: 100% bonus up to £50 Plus 50 Real Money Free Spins on Book of Dead
 tags:
   - slots
