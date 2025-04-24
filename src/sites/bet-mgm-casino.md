@@ -10,6 +10,8 @@ highlights:
   - text: £2M In Prizes Every Month
   - text: Supersized Jackpots
   - text: Great Selection Of Games
+  - text: Fast & Flexible Payments
+  - text: " Mobile-First Design"
 welcomeOffer: 100% Bonus up to £200 + 100 Free Spins
 tags:
   - casinos
