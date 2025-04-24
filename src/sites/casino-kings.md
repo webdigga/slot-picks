@@ -10,6 +10,8 @@ highlights:
   - text: Online Scratchcards
   - text: Weekly & Monthly Promotions
   - text: Great Mobile Experience
+  - text: Generous Promotions
+  - text: Extensive Game Library
 welcomeOffer: 150% upto £150 Bonus + 75 Free Spins
 tags:
   - casinos
