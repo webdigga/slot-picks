@@ -10,6 +10,8 @@ highlights:
   - text: Reward Reels & Free Spins
   - text: Bingo & Casino Games
   - text: Cash Prizes
+  - text: 10+ Bingo Rooms
+  - text: Ongoing Promotions
 welcomeOffer: Upto 500 Free Spins
 tags:
   - slots
