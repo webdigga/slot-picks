@@ -8,6 +8,10 @@ rating: 4
 highlights:
   - text: Top Class Slot Games
   - text: Biggest Slot Providers
+  - text: Attractive Bonuses and Promotions
+  - text: User-Friendly Interface
+  - text: Great Payment Options & Security
+  - text: Licensed & Regulated
 welcomeOffer: 100% Welcome Bonus Up To £200 + 25 Wager-Free Spins.
 tags:
   - slots
