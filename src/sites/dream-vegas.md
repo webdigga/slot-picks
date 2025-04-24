@@ -10,6 +10,8 @@ highlights:
   - text: Great Selection of Slot Games
   - text: Vegas Loyalty Scheme
   - text: Mobile App
+  - text: Generous Welcome Bonus
+  - text: Cash Giveaways
 welcomeOffer: £300 Welcome Bonus + 150 Spins
 tags:
   - slots
