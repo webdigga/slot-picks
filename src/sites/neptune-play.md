@@ -10,6 +10,8 @@ highlights:
   - text: Fast & Easy Withdrawals
   - text: Excellent 24/7 Support
   - text: Best Live Casino Games
+  - text: 2300+ Games
+  - text: No Fees on Deposits & Withdrawals
 welcomeOffer: 100% Welcome Bonus Up To £200 + 25 Wager-Free Spins
 tags:
   - slots
