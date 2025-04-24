@@ -9,6 +9,9 @@ highlights:
   - text: Easy Sign Up & Deposit
   - text: Weekly Free Spins
   - text: Fast, Secure Payouts
+  - text: Slingo & Bingo Games
+  - text: Ongoing Promotions & Bonuses
+  - text: 24/7 Live Chat Support
 welcomeOffer: Bet £20 Get 100 Fee Spins
 tags:
   - casinos
