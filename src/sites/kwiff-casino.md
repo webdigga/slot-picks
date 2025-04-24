@@ -10,6 +10,8 @@ highlights:
   - text: Sportsbook Available
   - text: Trending Slot Games
   - text: Virual Sports
+  - text: Live Dealer Games
+  - text: Ongoing Promotions & Offers
 welcomeOffer: Upto 200 Free Spins
 tags:
   - casinos
