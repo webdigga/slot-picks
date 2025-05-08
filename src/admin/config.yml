@@ -132,7 +132,7 @@ collections:
         name: "tags"
         multiple: true
         create: true
-        options: ["slots", "top rated slots", "new slots", "slot games", "free spins", "video slots", "casinos", "top rated casinos", "new casinos", "casino games", "free casinos", "live casinos"]
+        options: ["slots", "topRatedSlots", "newSlots", "slotGames", "freeSpins", "videoSlots", "casinos", "topRatedCasinos", "newCasinos", "casinoGames", "freeCasinos", "liveCasinos"]
       - widget: select
         label: "type"
         name: "type"
@@ -239,7 +239,7 @@ collections:
           - { label: 'Content', name: 'content', widget: 'markdown' }
       - label: "Top Rated Slots"
         name: "top rated slots"
-        file: "src/_data/top%20rated%20slots.yaml"
+        file: "src/_data/topRatedSlots.yaml"
         fields:
           - {
             label: "Title",
@@ -291,7 +291,59 @@ collections:
           - { label: 'Content', name: 'content', widget: 'markdown' }
       - label: "Top Rated Casinos"
         name: "top rated casinos"
-        file: "src/_data/top%20rated%20casinos.yaml"
+        file: "src/_data/topRatedCasinos.yaml"
+        fields:
+          - {
+            label: "Title",
+            name: "title",
+            widget: "string",
+            hint: "*This title will be used in the page's H1 tag, and also determines the URL (between 20 and 70 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
+            pattern: ['^.{20,70}$', "Must be between 20 and 70 characters"]
+          }
+          - { 
+            label: "SEO Title",
+            name: "seoTitle",
+            widget: "string",
+            hint: "*This title will be used in the title tag for search engines (between 50 and 60 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
+            pattern: ['^.{50,60}$', "Must be between 50 and 60 characters"]
+          }
+          - {
+            label: "Description",
+            name: "description",
+            widget: "string",
+            hint: "*Used in search engines (between 70 and 155 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
+            pattern: ['^.{70,155}$', "Must be between 70 and 155 characters"]
+          }
+          - { label: 'Content', name: 'content', widget: 'markdown' }
+      - label: "New Slots"
+        name: "new slots"
+        file: "src/_data/newSlots.yaml"
+        fields:
+          - {
+            label: "Title",
+            name: "title",
+            widget: "string",
+            hint: "*This title will be used in the page's H1 tag, and also determines the URL (between 20 and 70 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
+            pattern: ['^.{20,70}$', "Must be between 20 and 70 characters"]
+          }
+          - { 
+            label: "SEO Title",
+            name: "seoTitle",
+            widget: "string",
+            hint: "*This title will be used in the title tag for search engines (between 50 and 60 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
+            pattern: ['^.{50,60}$', "Must be between 50 and 60 characters"]
+          }
+          - {
+            label: "Description",
+            name: "description",
+            widget: "string",
+            hint: "*Used in search engines (between 70 and 155 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
+            pattern: ['^.{70,155}$', "Must be between 70 and 155 characters"]
+          }
+          - { label: 'Content', name: 'content', widget: 'markdown' }
+      - label: "New Casinos"
+        name: "new casinos"
+        file: "src/_data/newCasinos.yaml"
         fields:
           - {
             label: "Title",

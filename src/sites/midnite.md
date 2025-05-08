@@ -16,7 +16,7 @@ highlights:
 welcomeOffer: 100% Welcome Bonus Up To £200 + 25 Wager-Free Spins.
 tags:
   - slots
-  - top rated slots
+  - topRatedSlots
 type: site
 externalUrl: https://www.google.co.uk/
 termsAndConditions: New customers only. Deposit and wager £20 on Midnite Casino

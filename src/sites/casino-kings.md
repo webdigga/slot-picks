@@ -16,7 +16,7 @@ highlights:
 welcomeOffer: 150% upto £150 Bonus + 75 Free Spins
 tags:
   - casinos
-  - new casinos
+  - newCasinos
 type: site
 externalUrl: https://lobby.casinokings.com/
 termsAndConditions: "Wager from real balance first. 50X wager the bonus.

@@ -16,7 +16,7 @@ highlights:
 welcomeOffer: Upto 200 Free Spins
 tags:
   - casinos
-  - top rated casinos
+  - topRatedCasinos
 type: site
 externalUrl: https://casino.kwiff.com/casino/featured/
 termsAndConditions: New customers only. 18+. Wager £20 on Slots

@@ -15,7 +15,7 @@ highlights:
   - text: Fast & Flexible Payments
 welcomeOffer: 100% up to £25 + 50 Chances To Become A Millionaire
 tags:
-  - new casinos
+  - newCasinos
   - casinos
 type: site
 externalUrl: https://www.megariches.com/

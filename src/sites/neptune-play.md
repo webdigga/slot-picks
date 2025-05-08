@@ -16,7 +16,7 @@ highlights:
 welcomeOffer: 100% Welcome Bonus Up To £200 + 25 Wager-Free Spins
 tags:
   - slots
-  - new slots
+  - newSlots
 type: site
 externalUrl: https://promo.neptuneplay.com/
 termsAndConditions: "New dcustomers only. Min. deposit: £10. Max. bonus: £200 +

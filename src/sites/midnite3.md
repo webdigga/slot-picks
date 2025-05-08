@@ -16,7 +16,7 @@ highlights:
 welcomeOffer: Get up to 200 Free Spins
 tags:
   - casinos
-  - top rated casinos
+  - topRatedCasinos
 type: site
 externalUrl: https://www.google.co.uk/1
 termsAndConditions: New customers only. Deposit and wager £20 on Midnite Casino

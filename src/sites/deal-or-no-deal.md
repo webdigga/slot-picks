@@ -4,7 +4,7 @@ imageAlt: deal or no deal slots
 imageColour: "#111111"
 borderColour: "#111111"
 title: Deal Or No Deal
-score: 7
+score: 75
 rating: 4
 highlights:
   - text: Huge Selection of Slot Games

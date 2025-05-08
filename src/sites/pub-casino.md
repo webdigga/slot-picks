@@ -16,7 +16,7 @@ highlights:
 welcomeOffer: "100% bonus up to £100! "
 tags:
   - casinos
-  - new casinos
+  - newCasinos
 type: site
 externalUrl: https://www.pubcasino.co.uk/
 termsAndConditions: New players only. Max. bonus is 100% up to £100.Min. deposit £10

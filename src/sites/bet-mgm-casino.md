@@ -16,8 +16,8 @@ highlights:
 welcomeOffer: 100% Bonus up to £200 + 100 Free Spins
 tags:
   - casinos
-  - top rated casinos
-  - new casinos
+  - topRatedCasinos
+  - newCasinos
 type: site
 externalUrl: https://www.betmgm.co.uk/casino
 termsAndConditions: New customers only. Opt-in required. Deposit £10 or more &

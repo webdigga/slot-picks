@@ -16,7 +16,7 @@ highlights:
 welcomeOffer: Upto 250 Free Spins
 tags:
   - casinos
-  - new casinos
+  - newCasinos
 type: site
 externalUrl: https://www.lottoland.co.uk/casino
 termsAndConditions: 18+. Sign up, deposit and stake on Big Bass Bonanza, and
