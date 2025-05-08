@@ -1,7 +1,8 @@
 ---
-brand: /_includes/static/img/kwiff-casino.webp
+brand: /_includes/static/img/kwiffcasino.avif
 imageAlt: Kwiff Casino
-imageColour: "#f4f2f2"
+imageColour: "#8225fa"
+borderColour: "#8225fa"
 title: Kwiff Casino
 score: 90
 rating: 5

@@ -1,7 +1,8 @@
 ---
-brand: /_includes/static/img/neptune-play.webp
+brand: /_includes/static/img/neptune-play.avif
 imageAlt: Neptune Play
 imageColour: "#121111"
+borderColour: "#121111"
 title: Neptune Play
 score: 90
 rating: 4

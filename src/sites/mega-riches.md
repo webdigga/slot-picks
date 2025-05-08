@@ -1,8 +1,9 @@
 ---
-brand: /_includes/static/img/mega-riches.webp
+brand: /_includes/static/img/megariches.avif
 imageAlt: Mega Riches
-imageColour: "#fdf9f9"
-title: "Mega Riches "
+imageColour: "#0c165b"
+borderColour: "#0c165b"
+title: Mega Riches
 score: 95
 rating: 5
 highlights:

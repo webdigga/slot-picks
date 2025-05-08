@@ -1,7 +1,8 @@
 ---
 brand: /_includes/static/img/dream-vegas-1-.webp
 imageAlt: dream vegas
-imageColour: "#282525"
+imageColour: "#000000"
+borderColour: "#000000"
 title: Dream Vegas
 score: 80
 rating: 4

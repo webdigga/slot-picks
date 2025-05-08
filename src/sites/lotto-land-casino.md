@@ -1,7 +1,8 @@
 ---
-brand: /_includes/static/img/lottoland-casino.webp
+brand: /_includes/static/img/lottoland.avif
 imageAlt: Lottoland Casino
-imageColour: "#f9f5f5"
+imageColour: "#ffffff"
+borderColour: "#69a507"
 title: Lottoland Casino
 score: 90
 rating: 4

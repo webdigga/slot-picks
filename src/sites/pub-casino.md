@@ -1,7 +1,8 @@
 ---
-brand: /_includes/static/img/pub-casino.webp
+brand: /_includes/static/img/pub.avif
 imageAlt: Pub Casino
-imageColour: "#100f0f"
+imageColour: "#0c0c0c"
+borderColour: "#0c0c0c"
 title: Pub Casino
 score: 75
 rating: 3

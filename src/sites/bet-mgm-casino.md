@@ -1,7 +1,8 @@
 ---
 brand: /_includes/static/img/bet-mgm.webp
 imageAlt: Bet MGM Casino
-imageColour: "#181818"
+imageColour: "#000000"
+borderColour: "#000000"
 title: Bet MGM Casino
 score: 95
 rating: 5

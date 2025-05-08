@@ -2,6 +2,7 @@
 brand: /_includes/static/img/dond_logo.webp
 imageAlt: deal or no deal slots
 imageColour: "#111111"
+borderColour: "#111111"
 title: Deal Or No Deal
 score: 7
 rating: 4

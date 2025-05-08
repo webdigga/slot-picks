@@ -1,7 +1,8 @@
 ---
-brand: /_includes/static/img/casino-kings.webp
+brand: /_includes/static/img/casino-kings.avif
 imageAlt: Casino Kings
-imageColour: "#100f0f"
+imageColour: "#282b30"
+borderColour: "#282b30"
 title: Casino Kings
 score: 85
 rating: 4

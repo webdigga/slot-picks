@@ -2,6 +2,7 @@
 brand: /_includes/static/img/sun.png
 imageAlt: Sun Play
 imageColour: "#cd2e2c"
+borderColour: "#cd2e2c"
 title: Sun Play
 score: 92
 rating: 4

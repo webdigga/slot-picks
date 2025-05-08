@@ -1,7 +1,8 @@
 ---
-brand: /_includes/static/img/all-britsish-casino.webp
+brand: /_includes/static/img/all-british-casino.avif
 imageAlt: All British Casino
-imageColour: "#f2f0f0"
+imageColour: "#010e2b"
+borderColour: "#010e2b"
 title: All British Casino
 score: 85
 rating: 4

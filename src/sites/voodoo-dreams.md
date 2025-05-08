@@ -1,7 +1,8 @@
 ---
-brand: /_includes/static/img/voodoo-dreams.webp
+brand: /_includes/static/img/voodoo-dreams.avif
 imageAlt: voodoo dreams
-imageColour: "#ffffff"
+imageColour: "#151615"
+borderColour: "#151615"
 title: Voodoo Dreams
 score: 90
 rating: 4

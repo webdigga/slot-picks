@@ -1,7 +1,8 @@
 ---
-brand: /_includes/static/img/slots-magic-logo.webp
+brand: /_includes/static/img/slot-magicss.avif
 imageAlt: slots magic
-imageColour: "#ece6e6"
+imageColour: "#000000"
+borderColour: "#000000"
 title: Slots Magic
 score: 95
 rating: 5

@@ -1,7 +1,8 @@
 ---
 brand: /_includes/static/img/amazon-slots-logo.webp
 imageAlt: amazon slots
-imageColour: "#201f1f"
+imageColour: "#000000"
+borderColour: "#000000"
 title: Amazon Slots
 score: 80
 rating: 4

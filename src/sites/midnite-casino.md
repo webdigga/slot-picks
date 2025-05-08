@@ -1,7 +1,8 @@
 ---
-brand: /_includes/static/img/download.webp
+brand: /_includes/static/img/midnight.avif
 imageAlt: midnite casino
-imageColour: "#e9e3e3"
+imageColour: "#73ff00"
+borderColour: "#73ff00"
 title: Midnite Casino
 score: 85
 rating: 4

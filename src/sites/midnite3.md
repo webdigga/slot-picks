@@ -1,7 +1,8 @@
 ---
-brand: /_includes/static/img/bet365.png
+brand: /_includes/static/img/bet365.avif
 imageAlt: bet365
-imageColour: "#24906a"
+imageColour: "#005440"
+borderColour: "#005440"
 title: bet365
 score: 95
 rating: 5

@@ -2,6 +2,7 @@
 brand: /_includes/static/img/mirror-bingo.png
 imageAlt: Mirror Bingo Slots
 imageColour: "#0e0d0d"
+borderColour: "#0e0d0d"
 title: Mirror Bingo Slots
 score: 90
 rating: 4

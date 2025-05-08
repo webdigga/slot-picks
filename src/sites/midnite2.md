@@ -2,6 +2,7 @@
 brand: /_includes/static/img/coral.png
 imageAlt: Coral
 imageColour: "#0119b3"
+borderColour: "#0119b3"
 title: Coral
 score: 80
 rating: 5

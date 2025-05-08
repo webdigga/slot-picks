@@ -1,7 +1,8 @@
 ---
-brand: /_includes/static/img/wink-slots.webp
+brand: /_includes/static/img/wink-slots.avif
 imageAlt: wink slots
-imageColour: "#281717"
+imageColour: "#15113e"
+borderColour: "#15113e"
 title: Wink Slots
 score: 90
 rating: 4
