@@ -55,16 +55,25 @@
       <span class="bg-blue-100 text-text-[color:var(--primary-colour)] text-sm font-semibold inline-flex items-center py-1.5 px-2 rounded-sm">{{ site.data.score }}</span><span class="ms-2 font-medium text-gray-900">{{ scoreText }}</span>
     </div>
 
-    <ul>
-      {% for highlight in site.data.highlights %}
-        {{ checkListItemMacro.checkListItem(title=highlight.text, textColour='dark-copy', classes='text-[color:var(--primary-colour)]') }}
-      {% endfor %}
-    </ul>
-
-    <p class="text-sm mb-0">{{ site.data.welcomeOffer }}</p>
+    <div class="sm:col-span-2">
+      <ul class="grid sm:grid-cols-2 gap-2">
+        {% for highlight in site.data.highlights %}
+          {{
+            checkListItemMacro.checkListItem(
+              title=highlight.text,
+              textColour='dark-copy',
+              classes='text-[color:var(--primary-colour)] items-start'
+            )
+          }}
+        {% endfor %}
+      </ul>
+    </div>
+   
 
     <div class="sm:col-span-2 lg:col-span-1">
       {{ button.button(buttonText='Claim Bonus', classes='w-full font-bold') }}
+
+      <p class="text-sm mb-0">{{ site.data.welcomeOffer }}</p>
     </div>
 
     <div class="col-span-full border-t pt-4 text-xs text-[color:var(--dark-gray)]">
