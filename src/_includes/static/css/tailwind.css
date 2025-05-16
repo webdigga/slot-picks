@@ -11,9 +11,8 @@ Neon Green – #32CD32: This colour gives off a fun and lively vibe, often assoc
 */
 
 /*Your Custom CSS Goes here*/
-/* TODO - get rid of old colours when migration complete */
 :root {
-  --primary-colour: #1E90FF;
+  --primary-colour: #0a72da;
   --secondary-colour: #FFD700;
   --tertiary-colour: #32CD32;
   --earthy-beige-light: #ebe2d6;
