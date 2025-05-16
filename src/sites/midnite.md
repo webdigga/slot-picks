@@ -13,13 +13,13 @@ highlights:
   - text: User-Friendly Interface
   - text: Great Payment Options & Security
   - text: Licensed & Regulated
-welcomeOffer: 100% Welcome Bonus Up To £200 + 25 Wager-Free Spins.
+welcomeOffer: Up to 500 Free Spins
 tags:
   - slots
   - topRatedSlots
 type: site
-externalUrl: https://www.google.co.uk/
-termsAndConditions: New customers only. Deposit and wager £20 on Midnite Casino
-  to get 100 Free Spins at 10p per spin, valid for 7 days on selected games.
-  T&Cs apply. 18+ GambleAware.org
+externalUrl: https://www.thesunplay.co.uk/
+termsAndConditions: ew players only, £10+ fund, free spins won via Mega Reel,
+  65x bonus wagering req, max bonus conversion to real funds equal to lifetime
+  deposits (up to £250), T&Cs apply.
 ---
