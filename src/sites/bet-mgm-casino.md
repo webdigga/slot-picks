@@ -7,7 +7,7 @@ title: Bet MGM Casino
 score: 95
 rating: 5
 highlights:
-  - text: Popular New Casino Site
+  - text: Voted Best Casino 2025
   - text: £2M In Prizes Every Month
   - text: Supersized Jackpots
   - text: Great Selection Of Games
