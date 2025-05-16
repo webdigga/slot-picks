@@ -3,23 +3,24 @@ brand: /_includes/static/img/bet365.avif
 imageAlt: bet365
 imageColour: "#005440"
 borderColour: "#005440"
-title: bet365
+title: bet365 Casino
 score: 95
 rating: 5
 highlights:
-  - text: Huge Selection of Slot Games
-  - text: Instant Withdrawals
-  - text: High-quality Live Dealer Games
-  - text: Dedicated Casino App
+  - text: Huge Selection of Games
+  - text: Best App on The Market
+  - text: Fast Deposits & Withdrawals
+  - text: " High-Quality Live Casino"
   - text: Great Reputation & Licensing
   - text: Excellent Customer Support
-welcomeOffer: Get up to 200 Free Spins
+welcomeOffer: 10 Days of Free Spins
 tags:
   - casinos
   - topRatedCasinos
 type: site
-externalUrl: https://www.google.co.uk/1
-termsAndConditions: New customers only. Deposit and wager £20 on Midnite Casino
-  to get 100 Free Spins at 10p per spin, valid for 7 days on selected games.
-  T&Cs apply. 18+ GambleAware.org
+externalUrl: https://casino.bet365.com/home
+termsAndConditions: Min. £10 in lifetime deposits required. Offer must be
+  claimed within 30 days of registering a bet365 account. Select prizes of 5, 10
+  or 20 Free Spins; 10 selections available within 20 days, 24 hours between
+  each selection. Max. prize, game restrictions, time limits and T&Cs apply.
 ---
