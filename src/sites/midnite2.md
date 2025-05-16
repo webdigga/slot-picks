@@ -1,23 +1,24 @@
 ---
 brand: /_includes/static/img/coral.png
-imageAlt: Coral
+imageAlt: Coral Casino
 imageColour: "#0119b3"
 borderColour: "#0119b3"
 title: Coral
 score: 80
 rating: 5
 highlights:
-  - text: PayPal Casino
-  - text: Trusted Brand
+  - text: Seamless Sportsbook Intergration
+  - text: "Strong Brand Reputation "
   - text: Promotions & Loyalty Scheme
-  - text: Top Software Providers
+  - text: Casino Tournaments
   - text: Dedicated Mobile App
   - text: Excellent Banking Options
-welcomeOffer: Play £10 on Any Slot, get 100 Free Spins!
-tags: slots
+welcomeOffer: Deposit £10, Get £50 Bonus
+tags:
+  - casinos
 type: site
-externalUrl: https://www.google.co.uk/
-termsAndConditions: New customers only. Deposit and wager £20 on Midnite Casino
-  to get 100 Free Spins at 10p per spin, valid for 7 days on selected games.
-  T&Cs apply. 18+ GambleAware.org
+externalUrl: https://www.coral.co.uk/en/games
+termsAndConditions: 18+. New Casino players only. Deposit req (certain types
+  excluded). Bet £10+ on qualifying games to get a £50 Bonus (selected games,
+  40x wag req, accept within 14 days, valid for 30 days). T&Cs apply.
 ---
