@@ -1,7 +1,7 @@
 ---
 title: "Choose the Best Online Slot Game: A Guide"
 seoTitle: "Choose the Best Online Slot Game: A Guide | Slot Picks"
-description: how to choose the best online slot game for your playing style with
+description: How to choose the best online slot game for your playing style with
   our comprehensive guide covering RTP, volatility, features and more for UK
   players.
 author: David White
