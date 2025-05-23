@@ -16,6 +16,7 @@ highlights:
 welcomeOffer: £300 Welcome Bonus + 150 Spins
 tags:
   - slots
+  - topRatedSlots
 type: site
 externalUrl: https://www.dreamvegas.com/en-gb/
 termsAndConditions: 18+. New players only. One offer per player. Max bonus bet £5.
