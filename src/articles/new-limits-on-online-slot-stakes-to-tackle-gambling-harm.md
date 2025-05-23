@@ -10,7 +10,7 @@ imageForSeo: /_includes/static/img/online-slots-uk-law-changes.webp
 imageAlt: online slots uk law changes
 type: article
 tags:
-  - article
+  - news
 ---
 **UK Cracks Down on Online Slots: What These New Betting Limits Mean for You**
 
