@@ -16,6 +16,7 @@ highlights:
 welcomeOffer: 500 Free Spins
 tags:
   - slots
+  - topRatedSlots
 type: site
 externalUrl: https://www.dealornodeal.co.uk/
 termsAndConditions: New players only, £10+ fund, free spins won via Mega Reel,
