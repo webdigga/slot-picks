@@ -5,7 +5,7 @@ description: UK government introduces strict online slot betting limits in 2025
   to tackle gambling addiction among young adults.
 author: Jonny
 date: 2025-05-23T13:19:00.000Z
-showDate: false
+showDate: true
 imageForSeo: /_includes/static/img/online-slots-uk-law-changes.avif
 imageAlt: online slots uk law changes
 type: article
