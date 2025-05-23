@@ -18,6 +18,7 @@ tags:
   - casinos
   - topRatedCasinos
   - newCasinos
+  - topRatedSlots
 type: site
 externalUrl: https://www.betmgm.co.uk/casino
 termsAndConditions: New customers only. Opt-in required. Deposit £10 or more &
