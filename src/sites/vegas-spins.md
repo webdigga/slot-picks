@@ -2,7 +2,7 @@
 brand: /_includes/static/img/vegas-spins-logo.webp
 imageAlt: vegas spins
 imageColour: "#fffdfd"
-borderColour: "#f6f4f4"
+borderColour: "#df9bc4"
 title: Vegas Spins
 score: 70
 rating: 3
