@@ -2,7 +2,7 @@
 brand: /_includes/static/img/spin-station.avif
 imageAlt: spin station slots
 imageColour: "#ffffff"
-borderColour: "#c12428"
+borderColour: "#ffffff"
 title: Spin Station
 score: 80
 rating: 4
