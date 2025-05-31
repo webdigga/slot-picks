@@ -2,7 +2,7 @@
 brand: /_includes/static/img/ny-spins.webp
 imageAlt: ny spins
 imageColour: "#ffffff"
-borderColour: "#ffffff"
+borderColour: "#323232"
 title: NY Spins
 score: 90
 rating: 4
