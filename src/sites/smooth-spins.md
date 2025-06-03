@@ -1,7 +1,7 @@
 ---
 brand: /_includes/static/img/smooth-spins.avif
 imageAlt: Smooth Spins
-imageColour: "#ffffff"
+imageColour: "#520880"
 borderColour: "#ffffff"
 title: Smooth Spins
 score: 60
