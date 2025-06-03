@@ -2,7 +2,7 @@
 brand: /_includes/static/img/mr-vegas-slots.avif
 imageAlt: mr vegas slots
 imageColour: "#ffffff"
-borderColour: "#f6f6f6"
+borderColour: "#ffffff"
 title: Mr Vegas
 score: 70
 rating: 4
