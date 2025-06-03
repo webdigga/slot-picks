@@ -1,7 +1,7 @@
 ---
 brand: /_includes/static/img/zebra-wins.avif
 imageAlt: zebra wins
-imageColour: "#ffffff"
+imageColour: "#000000"
 borderColour: "#ffffff"
 title: Zebra Wins
 score: 80
