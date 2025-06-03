@@ -1,7 +1,7 @@
 ---
 brand: /_includes/static/img/slots-temple.avif
 imageAlt: slots temple
-imageColour: "#ffffff"
+imageColour: "#000000"
 borderColour: "#ffffff"
 title: Slots Temple
 score: 80
