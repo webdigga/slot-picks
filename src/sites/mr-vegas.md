@@ -1,7 +1,7 @@
 ---
 brand: /_includes/static/img/mr-vegas-slots.avif
 imageAlt: mr vegas slots
-imageColour: "#f7f3f3"
+imageColour: "#ffffff"
 borderColour: "#f6f6f6"
 title: Mr Vegas
 score: 70
