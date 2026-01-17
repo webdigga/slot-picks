@@ -4,11 +4,7 @@
 {% macro site(site) %}
   <article class="card card-glow group relative overflow-hidden">
 
-    <a
-      href="{{ site.data.externalUrl }}?utm_source=slotpicks&utm_medium=affiliate&utm_campaign={{ site.data.title | slugify }}"
-      target="_blank"
-      rel="noopener"
-      class="block p-5 sm:p-6">
+    <div class="block p-5 sm:p-6">
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 lg:gap-6 items-start">
 
@@ -99,7 +95,17 @@
 
         <!-- CTA Column -->
         <div class="sm:col-span-2 lg:col-span-1 flex flex-col items-center lg:items-stretch">
-          {{ button.button(buttonText='Claim Bonus', classes='w-full font-bold !mb-3') }}
+          <a
+            href="{{ site.data.externalUrl }}?utm_source=slotpicks&utm_medium=affiliate&utm_campaign={{ site.data.title | slugify }}"
+            target="_blank"
+            rel="noopener"
+            class="btn-primary w-full font-bold !mb-2 text-center">
+            Claim Bonus
+          </a>
+
+          <a href="/reviews/{{ site.data.title | slugify }}/" class="text-neon-blue hover:text-neon-green text-sm font-medium text-center transition-colors mb-2">
+            Read Review
+          </a>
 
           <p class="text-neon-gold text-sm font-medium text-center lg:text-left mb-0">
             {{ site.data.welcomeOffer }}
@@ -113,7 +119,7 @@
         {{ site.data.termsAndConditions }}
       </div>
 
-    </a>
+    </div>
 
   </article>
 {% endmacro %}
