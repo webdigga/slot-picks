@@ -88,8 +88,7 @@ module.exports = function (eleventyConfig) {
   // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/_includes/static/img");
 
-  // Copy favicon and robots.txt to root of /_site
-  eleventyConfig.addPassthroughCopy("./src/robots.txt");
+  // Copy favicon to root of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
   eleventyConfig.addPassthroughCopy("./src/apple-touch-icon.png");
   eleventyConfig.addPassthroughCopy("./src/favicon-96x96.png");
