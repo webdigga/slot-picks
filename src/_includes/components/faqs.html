@@ -1,12 +1,53 @@
 {% macro faqs() %}
 
   {% if faqsData.faqs %}
-    <dl>
-      {% for faqsDataItem in faqsData.faqs %}
-        <dt><h2>{{ faqsDataItem.question }}</h2></dt>
-        <dd class="pl-0">{{ faqsDataItem.answer }}</dd>
-      {% endfor %}
-    </dl>
+    <div class="space-y-4">
+      <h2 class="text-text-primary text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+
+      <dl class="space-y-4">
+        {% for faqsDataItem in faqsData.faqs %}
+          <div class="card p-0 overflow-hidden">
+            <dt>
+              <h3 class="text-text-primary font-semibold text-lg p-5 pb-3 flex items-start gap-3">
+                <span class="w-6 h-6 rounded-full bg-neon-purple/20 text-neon-purple flex items-center justify-center flex-shrink-0 text-sm font-bold mt-0.5">
+                  Q
+                </span>
+                {{ faqsDataItem.question }}
+              </h3>
+            </dt>
+            <dd class="px-5 pb-5 pl-14 text-text-secondary">
+              {{ faqsDataItem.answer }}
+            </dd>
+          </div>
+        {% endfor %}
+      </dl>
+    </div>
+  {% endif %}
+
+{% endmacro %}
+
+{% macro faqsNoHeading() %}
+
+  {% if faqsData.faqs %}
+    <div class="space-y-4">
+      <dl class="space-y-4">
+        {% for faqsDataItem in faqsData.faqs %}
+          <div class="card p-0 overflow-hidden">
+            <dt>
+              <h3 class="text-text-primary font-semibold text-lg p-5 pb-3 flex items-start gap-3">
+                <span class="w-6 h-6 rounded-full bg-neon-purple/20 text-neon-purple flex items-center justify-center flex-shrink-0 text-sm font-bold mt-0.5">
+                  Q
+                </span>
+                {{ faqsDataItem.question }}
+              </h3>
+            </dt>
+            <dd class="px-5 pb-5 pl-14 text-text-secondary">
+              {{ faqsDataItem.answer }}
+            </dd>
+          </div>
+        {% endfor %}
+      </dl>
+    </div>
   {% endif %}
 
 {% endmacro %}

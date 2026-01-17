@@ -1,0 +1,105 @@
+---
+layout: default
+title: Strategy Guides
+seoTitle: Slot Strategy Guides 2025 | Expert Tips & Advice
+description: Expert strategy guides for online slot players. Learn bankroll management, understand RTP and volatility, and make smarter gambling decisions.
+permalink: /strategy/
+seoSchemaPageType: ItemList
+listCollection: strategy
+---
+
+{% import "../_includes/partials/navbar.html" as navBar with context %}
+
+<div class="bg-bg-primary min-h-screen">
+
+{{ navBar.nav('bg-bg-primary') }}
+
+<!-- Hero Section -->
+<section class="relative overflow-hidden py-16">
+  <div class="absolute inset-0 bg-gradient-to-br from-bg-primary via-bg-secondary to-bg-tertiary"></div>
+  <div class="absolute top-10 left-20 w-80 h-80 bg-neon-gold/10 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-10 right-20 w-64 h-64 bg-neon-purple/15 rounded-full blur-3xl"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6">
+        Strategy <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-gold to-neon-purple">Guides</span>
+      </h1>
+      <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+        Expert guidance to help you play smarter. Understand the fundamentals of slot gaming and make informed decisions.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Strategy Articles Grid -->
+<section class="py-12 lg:py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for article in collections.strategy %}
+      <a href="{{ article.url }}" class="group block bg-card-bg/60 backdrop-blur-sm rounded-2xl border border-border-subtle overflow-hidden hover:border-neon-gold/50 transition-all duration-300 hover:shadow-neon-gold/10 hover:shadow-lg">
+        <div class="p-6">
+          {% if article.data.category %}
+          <span class="inline-flex items-center px-3 py-1 bg-neon-purple/20 border border-neon-purple/40 text-neon-purple text-xs font-medium rounded-full mb-4">
+            {{ article.data.category }}
+          </span>
+          {% endif %}
+
+          <h2 class="text-xl font-bold text-white group-hover:text-neon-gold transition-colors mb-3">
+            {{ article.data.title }}
+          </h2>
+
+          <p class="text-text-secondary text-sm line-clamp-3 mb-4">
+            {{ article.data.description }}
+          </p>
+
+          <div class="flex items-center gap-4 text-sm text-text-muted">
+            {% if article.data.readTime %}
+            <span class="flex items-center">
+              <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              {{ article.data.readTime }} min
+            </span>
+            {% endif %}
+            {% if article.data.difficulty %}
+            <span class="flex items-center">
+              <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+              {{ article.data.difficulty }}
+            </span>
+            {% endif %}
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+<!-- Essential Reading Section -->
+<section class="py-12 lg:py-16 bg-bg-secondary/50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-2xl lg:text-3xl font-bold text-white text-center mb-8">
+      Essential Reading for Every Player
+    </h2>
+
+    <div class="bg-gradient-to-r from-neon-green/10 to-neon-blue/10 rounded-2xl border border-neon-green/30 p-6 lg:p-8 text-center">
+      <h3 class="text-xl font-bold text-white mb-4">Start with Responsible Gambling</h3>
+      <p class="text-text-secondary mb-6 max-w-2xl mx-auto">
+        Before diving into strategy, ensure you understand how to gamble safely. Our responsible gambling guide covers essential information every player should know.
+      </p>
+      <a href="/strategy/responsible-gambling/" class="btn-primary inline-flex items-center px-6 py-3">
+        Read the Guide
+        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+</div>

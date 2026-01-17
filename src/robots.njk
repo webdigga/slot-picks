@@ -2,6 +2,21 @@
 layout: false
 permalink: robots.txt
 ignore: true
+eleventyExcludeFromCollections: true
 ---
+# Slot Picks - robots.txt
+# https://slotpicks.co.uk
+
 User-agent: *
-Sitemap: {{ env.site }}/sitemap.txt
+Allow: /
+
+# Block admin and system directories
+Disallow: /admin/
+Disallow: /_includes/
+Disallow: /_data/
+
+# Sitemap location
+Sitemap: {{ env.site }}/sitemap.xml
+
+# Crawl-delay for polite crawling (optional)
+Crawl-delay: 1

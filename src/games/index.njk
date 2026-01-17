@@ -1,0 +1,138 @@
+---
+layout: default
+title: Slot Game Guides
+seoTitle: Slot Game Guides 2025 | RTP, Features & Strategy
+description: Comprehensive guides to the most popular online slots. Learn about RTP, volatility, bonus features, and the best strategies for each game.
+permalink: /games/
+seoSchemaPageType: ItemList
+listCollection: games
+---
+
+{% import "../_includes/partials/navbar.html" as navBar with context %}
+
+<div class="bg-bg-primary min-h-screen">
+
+{{ navBar.nav('bg-bg-primary') }}
+
+<!-- Hero Section -->
+<section class="relative overflow-hidden py-16">
+  <div class="absolute inset-0 bg-gradient-to-br from-bg-primary via-bg-secondary to-bg-tertiary"></div>
+  <div class="absolute top-10 right-20 w-80 h-80 bg-neon-purple/15 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-10 left-20 w-64 h-64 bg-neon-blue/10 rounded-full blur-3xl"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6">
+        Slot Game <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-green to-neon-blue">Guides</span>
+      </h1>
+      <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+        In-depth guides to the most popular online slots. Understand RTP, volatility, bonus features, and find out where to play each game.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Game Guides Grid -->
+<section class="py-12 lg:py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for game in collections.games %}
+      <a href="{{ game.url }}" class="group block bg-card-bg/60 backdrop-blur-sm rounded-2xl border border-border-subtle overflow-hidden hover:border-neon-green/50 transition-all duration-300 hover:shadow-neon-green/10 hover:shadow-lg">
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-4">
+            {% if game.data.provider %}
+            <span class="px-3 py-1 bg-neon-purple/20 border border-neon-purple/40 text-neon-purple text-xs font-medium rounded-full">
+              {{ game.data.provider }}
+            </span>
+            {% endif %}
+            {% if game.data.volatility %}
+            <span class="px-3 py-1 bg-neon-blue/20 border border-neon-blue/40 text-neon-blue text-xs font-medium rounded-full">
+              {{ game.data.volatility }}
+            </span>
+            {% endif %}
+          </div>
+
+          <h2 class="text-xl font-bold text-white group-hover:text-neon-green transition-colors mb-3">
+            {{ game.data.title }}
+          </h2>
+
+          <p class="text-text-secondary text-sm line-clamp-2 mb-4">
+            {{ game.data.description }}
+          </p>
+
+          <div class="flex items-center justify-between text-sm">
+            {% if game.data.rtp %}
+            <div>
+              <span class="text-text-muted">RTP:</span>
+              <span class="text-neon-green font-semibold ml-1">{{ game.data.rtp }}</span>
+            </div>
+            {% endif %}
+            {% if game.data.maxWin %}
+            <div>
+              <span class="text-text-muted">Max Win:</span>
+              <span class="text-neon-gold font-semibold ml-1">{{ game.data.maxWin }}</span>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+<!-- What You'll Learn Section -->
+<section class="py-12 lg:py-16 bg-bg-secondary/50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-2xl lg:text-3xl font-bold text-white text-center mb-12">
+      What Our Game Guides Cover
+    </h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-card-bg/60 backdrop-blur-sm rounded-xl border border-border-subtle p-6 text-center">
+        <div class="w-12 h-12 bg-neon-green/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <svg class="w-6 h-6 text-neon-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-white mb-2">RTP Analysis</h3>
+        <p class="text-text-secondary text-sm">Understand return rates and what they mean for your play</p>
+      </div>
+
+      <div class="bg-card-bg/60 backdrop-blur-sm rounded-xl border border-border-subtle p-6 text-center">
+        <div class="w-12 h-12 bg-neon-purple/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <svg class="w-6 h-6 text-neon-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-white mb-2">Volatility Insights</h3>
+        <p class="text-text-secondary text-sm">Know what to expect from win frequency and size</p>
+      </div>
+
+      <div class="bg-card-bg/60 backdrop-blur-sm rounded-xl border border-border-subtle p-6 text-center">
+        <div class="w-12 h-12 bg-neon-blue/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <svg class="w-6 h-6 text-neon-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-white mb-2">Bonus Features</h3>
+        <p class="text-text-secondary text-sm">Deep dive into free spins, multipliers, and special mechanics</p>
+      </div>
+
+      <div class="bg-card-bg/60 backdrop-blur-sm rounded-xl border border-border-subtle p-6 text-center">
+        <div class="w-12 h-12 bg-neon-gold/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <svg class="w-6 h-6 text-neon-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-white mb-2">Where to Play</h3>
+        <p class="text-text-secondary text-sm">Recommended UK casinos for each slot</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>

@@ -1,0 +1,305 @@
+---
+layout: default
+seoSchemaPageType: Review
+eleventyComputed:
+  canonical: "{{ env.site }}/reviews/{{ title | slugify }}/"
+---
+
+{% import "./partials/navbar.html" as navBar with context %}
+{% import "./components/buttons/button.html" as button with context %}
+{% import "./components/checklist-item.html" as checkListItemMacro with context %}
+
+<div class="bg-bg-primary min-h-screen">
+
+  {{ navBar.nav(bgColour='bg-bg-primary') }}
+
+  <!-- Review Header -->
+  <section class="relative py-12 md:py-16 border-b border-border-dark overflow-hidden">
+    <div class="absolute inset-0 bg-mesh opacity-30"></div>
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-neon-green/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-1/4 w-80 h-80 bg-neon-purple/5 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <!-- Breadcrumb -->
+      <nav class="flex items-center gap-2 text-sm text-text-muted mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-neon-green transition-colors">Home</a>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+        <a href="/{% if 'casinos' in tags %}casinos{% else %}slots{% endif %}/" class="hover:text-neon-green transition-colors">
+          {% if 'casinos' in tags %}Casinos{% else %}Slots{% endif %}
+        </a>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+        <span class="text-text-secondary">{{ title }}</span>
+      </nav>
+
+      <div class="grid lg:grid-cols-3 gap-8 items-start">
+
+        <!-- Main Info -->
+        <div class="lg:col-span-2">
+          <div class="flex flex-wrap items-center gap-4 mb-4">
+            {% if 'newCasinos' in tags or 'newSlots' in tags %}
+              <span class="badge badge-neon">New</span>
+            {% endif %}
+            {% if 'topRatedCasinos' in tags or 'topRatedSlots' in tags %}
+              <span class="badge badge-gold">Top Rated</span>
+            {% endif %}
+          </div>
+
+          <h1 class="text-text-primary text-3xl md:text-4xl lg:text-5xl font-bold mb-4">{{ title }} Review</h1>
+
+          <p class="text-text-secondary text-lg mb-6">
+            {% if verdict %}
+              {{ verdict }}
+            {% else %}
+              Our expert team has thoroughly reviewed {{ title }} to bring you an unbiased assessment of this {% if 'casinos' in tags %}online casino{% else %}slot site{% endif %}.
+            {% endif %}
+          </p>
+
+          <!-- Star Rating -->
+          <div class="flex items-center gap-4 mb-6">
+            <div class="flex items-center gap-1">
+              {% set maxIterations = 5 %}
+              {% for i in range(maxIterations) %}
+                {% if i < rating %}
+                  <svg class="w-6 h-6 star-filled" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                  </svg>
+                {% else %}
+                  <svg class="w-6 h-6 star-empty" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                  </svg>
+                {% endif %}
+              {% endfor %}
+            </div>
+            <span class="text-text-secondary">{{ rating }}/5 Stars</span>
+          </div>
+
+          <!-- CTA Button -->
+          <a href="{{ externalUrl }}?utm_source=slotpicks&utm_medium=affiliate&utm_campaign={{ title | slugify }}" target="_blank" rel="noopener" class="btn btn-primary text-lg inline-flex items-center gap-2">
+            Visit {{ title }}
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Quick Facts Card -->
+        <div class="card p-6">
+          <!-- Logo -->
+          <div class="flex justify-center mb-6 py-4 rounded-lg" style="background-color: {{ imageColour }};">
+            <img src="{{ brand }}" alt="{{ imageAlt }}" class="max-w-[180px] max-h-[60px] object-contain" width="180" height="60" loading="lazy">
+          </div>
+
+          <!-- Score -->
+          <div class="text-center mb-6">
+            {% set scoreBadgeClass %}
+              {% if score >= 90 %}
+                bg-neon-green/20 text-neon-green border-neon-green/30
+              {% elif score >= 80 %}
+                bg-neon-blue/20 text-neon-blue border-neon-blue/30
+              {% else %}
+                bg-neon-purple/20 text-neon-purple border-neon-purple/30
+              {% endif %}
+            {% endset %}
+            <span class="inline-flex items-center justify-center w-20 h-20 rounded-xl border text-3xl font-bold {{ scoreBadgeClass }}">
+              {{ score }}
+            </span>
+            <p class="text-text-secondary mt-2">Our Score</p>
+          </div>
+
+          <!-- Welcome Offer -->
+          <div class="bg-bg-secondary/50 rounded-lg p-4 mb-4 border border-border-dark">
+            <p class="text-neon-gold font-semibold text-center">{{ welcomeOffer }}</p>
+          </div>
+
+          <!-- Quick Info -->
+          <ul class="space-y-3 text-sm">
+            {% if minDeposit %}
+            <li class="flex justify-between">
+              <span class="text-text-muted">Min Deposit:</span>
+              <span class="text-text-primary font-medium">{{ minDeposit }}</span>
+            </li>
+            {% endif %}
+            {% if withdrawalTime %}
+            <li class="flex justify-between">
+              <span class="text-text-muted">Withdrawal Time:</span>
+              <span class="text-text-primary font-medium">{{ withdrawalTime }}</span>
+            </li>
+            {% endif %}
+            {% if liveChat %}
+            <li class="flex justify-between">
+              <span class="text-text-muted">Live Chat:</span>
+              <span class="text-neon-green font-medium">Yes</span>
+            </li>
+            {% endif %}
+            {% if mobileApp %}
+            <li class="flex justify-between">
+              <span class="text-text-muted">Mobile App:</span>
+              <span class="text-neon-green font-medium">Yes</span>
+            </li>
+            {% endif %}
+          </ul>
+
+          <!-- T&Cs -->
+          <p class="text-text-muted text-xs mt-4 pt-4 border-t border-border-dark">
+            {{ termsAndConditions }}
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+    <div class="grid lg:grid-cols-3 gap-8">
+
+      <!-- Left Column - Main Content -->
+      <div class="lg:col-span-2 space-y-12">
+
+        <!-- Highlights Section -->
+        <div>
+          <h2 class="text-text-primary text-2xl font-bold mb-6 flex items-center gap-3">
+            <span class="w-10 h-10 rounded-lg bg-neon-green/20 flex items-center justify-center">
+              <svg class="w-5 h-5 text-neon-green" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+            </span>
+            Key Highlights
+          </h2>
+          <div class="card p-6">
+            <ul class="grid md:grid-cols-2 gap-4">
+              {% for highlight in highlights %}
+                {{ checkListItemMacro.checkListItem(title=highlight.text, classes='items-start') }}
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pros & Cons -->
+        {% if pros or cons %}
+        <div class="grid md:grid-cols-2 gap-6">
+          {% if pros %}
+          <div class="card p-6">
+            <h3 class="text-neon-green font-bold text-lg mb-4 flex items-center gap-2">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              Pros
+            </h3>
+            <ul class="space-y-2">
+              {% for pro in pros %}
+                <li class="flex items-start gap-2 text-text-secondary">
+                  <svg class="w-4 h-4 text-neon-green mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  {{ pro }}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+
+          {% if cons %}
+          <div class="card p-6">
+            <h3 class="text-neon-red font-bold text-lg mb-4 flex items-center gap-2">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+              </svg>
+              Cons
+            </h3>
+            <ul class="space-y-2">
+              {% for con in cons %}
+                <li class="flex items-start gap-2 text-text-secondary">
+                  <svg class="w-4 h-4 text-neon-red mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                  </svg>
+                  {{ con }}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+        </div>
+        {% endif %}
+
+        <!-- Review Content -->
+        {% if content %}
+        <div class="prose prose-invert !max-w-none prose-headings:text-text-primary prose-p:text-text-secondary prose-a:text-neon-blue hover:prose-a:text-neon-green prose-strong:text-text-primary prose-li:text-text-secondary">
+          {{ content | safe }}
+        </div>
+        {% endif %}
+
+        <!-- Payment Methods -->
+        {% if paymentMethods %}
+        <div>
+          <h2 class="text-text-primary text-2xl font-bold mb-6 flex items-center gap-3">
+            <span class="w-10 h-10 rounded-lg bg-neon-purple/20 flex items-center justify-center">
+              <svg class="w-5 h-5 text-neon-purple" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"/>
+                <path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd"/>
+              </svg>
+            </span>
+            Payment Methods
+          </h2>
+          <div class="flex flex-wrap gap-3">
+            {% for method in paymentMethods %}
+              <span class="badge badge-purple">{{ method }}</span>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Game Providers -->
+        {% if gameProviders %}
+        <div>
+          <h2 class="text-text-primary text-2xl font-bold mb-6 flex items-center gap-3">
+            <span class="w-10 h-10 rounded-lg bg-neon-blue/20 flex items-center justify-center">
+              <svg class="w-5 h-5 text-neon-blue" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/>
+              </svg>
+            </span>
+            Game Providers
+          </h2>
+          <div class="flex flex-wrap gap-3">
+            {% for provider in gameProviders %}
+              <span class="badge badge-neon">{{ provider }}</span>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+      </div>
+
+      <!-- Right Column - Sidebar -->
+      <div class="space-y-6">
+
+        <!-- CTA Card -->
+        <div class="card p-6 text-center sticky top-24">
+          <h3 class="text-text-primary font-bold text-xl mb-4">Ready to Play?</h3>
+          <p class="text-neon-gold font-semibold mb-4">{{ welcomeOffer }}</p>
+          <a href="{{ externalUrl }}?utm_source=slotpicks&utm_medium=affiliate&utm_campaign={{ title | slugify }}" target="_blank" rel="noopener" class="btn btn-primary w-full mb-4">
+            Claim Bonus Now
+          </a>
+          <p class="text-text-muted text-xs">
+            18+ | T&Cs Apply | Play Responsibly
+          </p>
+        </div>
+
+        <!-- Related Sites -->
+        <div class="card p-6">
+          <h3 class="text-text-primary font-bold text-lg mb-4">You Might Also Like</h3>
+          <p class="text-text-secondary text-sm">
+            Explore more {% if 'casinos' in tags %}online casinos{% else %}slot sites{% endif %} in our <a href="/{% if 'casinos' in tags %}casinos{% else %}slots{% endif %}/" class="text-neon-blue hover:text-neon-green">full listings</a>.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</div>

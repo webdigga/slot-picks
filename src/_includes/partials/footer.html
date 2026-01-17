@@ -1,104 +1,136 @@
 {% import "../components/buttons/anchor.html" as anchor with context %}
 
-<footer class="relative py-20 flex flex-col items-center bg-[color:var(--primary-colour)] overflow-hidden md:py-28">
-  <div class="relative z-[1] container m-auto px-6 md:px-12">
-    <div class="m-auto md:w-10/12 xl:w-8/12">
-      <div class="flex flex-wrap items-center justify-between md:flex-nowrap">
-        <div class="w-full space-x-12 flex justify-center sm:w-7/12 md:justify-start">
+<!-- Main Footer -->
+<footer class="relative bg-bg-secondary overflow-hidden border-t border-border-dark">
 
-          {% for item in navigation.firstLevelItems %}
-            {% if item.text != 'Home' and item.text != 'FAQs' %}
-                        
+  <!-- Decorative Background Elements -->
+  <div class="absolute inset-0 opacity-30">
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-neon-purple/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-neon-green/10 rounded-full blur-3xl"></div>
+  </div>
 
-              {% if item.secondLevelItems %}
-                <ul role="list" class="space-y-8">
-                  {% for subItem in item.secondLevelItems %}
-                    <li>
-                      <a
-                        href="{{ subItem.url }}"
-                        class="flex items-center space-x-3 hover:opacity-70 transition">
-                          <span>{{ subItem.text }}</span>
-                      </a>
-                    </li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-              
-            {% endif %}
-          {% endfor %}                
-            
-        </div>
-        <div class="w-10/12 m-auto  mt-16 text-center sm:text-left sm:w-5/12 sm:mt-0">
-          {% if settings.siteName %}
-            <span class="block font-bold">{{ settings.siteName }}</span>
-          {% endif %}
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
 
-          <span class="block py-3">
-            <a href="/privacy-policy/" class="font-semibold text-white hover:opacity-70">Privacy Policy</a> 
-          </span>
+    <!-- Main Footer Content -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
 
-          <small class="text-white">
-            © {{ helpers.currentYear() }} <a href="{{ settings.poweredByOneUrl }}" target="_blank" rel="noopener" class="underline">{{ settings.poweredByOne }}</a> & <a href="{{ settings.poweredByTwoUrl }}" target="_blank" rel="noopener" class="underline">{{ settings.poweredByTwo }}</a>. All rights reserved.
-          </small>
+      <!-- Brand Column -->
+      <div class="lg:col-span-1">
+        <a href="/" class="inline-block mb-6">
+          <img src="/_includes/static/img/logo-big.avif" alt="Slot Picks logo" class="w-[120px]" width="120px" height="120px">
+        </a>
+        <p class="text-text-secondary text-sm mb-6">
+          Your trusted guide to the best UK slot sites and online casinos. We help you find the perfect place to play.
+        </p>
+        <!-- Social/Trust Badges -->
+        <div class="flex items-center gap-3">
+          <span class="badge badge-neon text-xs">18+</span>
+          <span class="badge badge-purple text-xs">UKGC Licensed</span>
         </div>
       </div>
+
+      <!-- Navigation Columns -->
+      {% for item in navigation.firstLevelItems %}
+        {% if item.text != 'Home' and item.text != 'FAQs' %}
+          {% if item.secondLevelItems %}
+            <div>
+              <h4 class="text-text-primary font-semibold text-sm uppercase tracking-wider mb-4">{{ item.text }}</h4>
+              <ul class="space-y-3">
+                {% for subItem in item.secondLevelItems %}
+                  <li>
+                    <a href="{{ subItem.url }}" class="text-text-secondary hover:text-neon-green text-sm transition-colors duration-200 flex items-center group">
+                      <span class="w-0 group-hover:w-2 h-0.5 bg-neon-green mr-0 group-hover:mr-2 transition-all duration-200"></span>
+                      {{ subItem.text }}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      <!-- Resources Column -->
+      <div>
+        <h4 class="text-text-primary font-semibold text-sm uppercase tracking-wider mb-4">Resources</h4>
+        <ul class="space-y-3">
+          <li>
+            <a href="/faqs/" class="text-text-secondary hover:text-neon-green text-sm transition-colors duration-200 flex items-center group">
+              <span class="w-0 group-hover:w-2 h-0.5 bg-neon-green mr-0 group-hover:mr-2 transition-all duration-200"></span>
+              FAQs
+            </a>
+          </li>
+          <li>
+            <a href="/privacy-policy/" class="text-text-secondary hover:text-neon-green text-sm transition-colors duration-200 flex items-center group">
+              <span class="w-0 group-hover:w-2 h-0.5 bg-neon-green mr-0 group-hover:mr-2 transition-all duration-200"></span>
+              Privacy Policy
+            </a>
+          </li>
+          <li>
+            <a href="/news/" class="text-text-secondary hover:text-neon-green text-sm transition-colors duration-200 flex items-center group">
+              <span class="w-0 group-hover:w-2 h-0.5 bg-neon-green mr-0 group-hover:mr-2 transition-all duration-200"></span>
+              Latest News
+            </a>
+          </li>
+        </ul>
+      </div>
+
     </div>
+
+    <!-- Divider -->
+    <div class="divider-neon my-10"></div>
+
+    <!-- Responsible Gambling Section -->
+    <div class="text-center mb-10">
+      <h4 class="text-text-primary font-semibold text-sm uppercase tracking-wider mb-6">Play Responsibly</h4>
+      <div class="flex flex-wrap justify-center items-center gap-6 md:gap-10">
+        <a href="https://www.gamcare.org.uk/" target="_blank" rel="noopener" class="opacity-70 hover:opacity-100 transition-opacity bg-white rounded-lg p-2">
+          <img src="/_includes/static/img/gamcarelogo.avif" alt="Gamcare logo" class="h-8 w-auto" width="80" height="32">
+        </a>
+        <a href="https://www.begambleaware.org/" target="_blank" rel="noopener" class="opacity-70 hover:opacity-100 transition-opacity bg-white rounded-lg p-2">
+          <img src="/_includes/static/img/begambleaware logo.avif" alt="BeGambleAware logo" class="h-8 w-auto" width="120" height="32">
+        </a>
+        <div class="opacity-70 bg-white rounded-lg p-2">
+          <img src="/_includes/static/img/18logo.avif" alt="18+ logo" class="h-8 w-auto" width="32" height="32">
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-4 mt-4">
+        <a href="https://www.gambleaware.org/" target="_blank" rel="noopener" class="text-neon-blue hover:text-neon-green text-sm transition-colors">
+          GambleAware
+        </a>
+        <span class="text-border-dark">|</span>
+        <a href="https://www.gamstop.co.uk/" target="_blank" rel="noopener" class="text-neon-blue hover:text-neon-green text-sm transition-colors">
+          Gamstop
+        </a>
+      </div>
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="bg-bg-card/50 rounded-xl p-6 border border-border-dark mb-8">
+      <p class="text-text-muted text-xs leading-relaxed mb-3">
+        At Slot Picks our aim is to offer every online casino and slots players a choice of the latest new online slots and casino sites and their latest welcome bonuses for you to try them as well as some of the well-established brands such as Bet365, Coral & Ladbrokes.
+      </p>
+      <p class="text-text-muted text-xs leading-relaxed mb-3">
+        Our review and scoring system is completely unbiased but based on the opinions of seasoned online gamblers as well as other sources and trusted review sites.
+      </p>
+      <p class="text-text-muted text-xs leading-relaxed">
+        We do our best to keep all welcome bonuses and promotional details accurate and up to date. However, online slots and casino offers and terms can change at any time for new and existing players. Always check the casino's official website for the latest promotions and full terms and conditions before signing up or making a deposit. We will only promote highly trusted and secure brands on our website.
+      </p>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-center">
+      <div class="text-text-muted text-xs">
+        © {{ helpers.currentYear() }} {{ settings.siteName }}. All rights reserved.
+      </div>
+      <div class="text-text-muted text-xs">
+        Powered by
+        <a href="{{ settings.poweredByOneUrl }}?utm_source=slotpicks&utm_medium=referral&utm_campaign=footer" target="_blank" rel="noopener" class="text-neon-blue hover:text-neon-green transition-colors">{{ settings.poweredByOne }}</a>
+        &
+        <a href="{{ settings.poweredByTwoUrl }}?utm_source=slotpicks&utm_medium=referral&utm_campaign=footer" target="_blank" rel="noopener" class="text-neon-blue hover:text-neon-green transition-colors">{{ settings.poweredByTwo }}</a>
+      </div>
+    </div>
+
   </div>
 
 </footer>
-
-<div class="container">
-  <div class="flex justify-center bg-white py-4 gap-x-8">
-    <img
-      src="/_includes/static/img/gamcarelogo.avif"
-      alt="Gamcare logo"
-      class="w-full max-w-[90px] self-center"
-      width="180px"
-      height="150px"              
-    />    
-    <img
-      src="/_includes/static/img/begambleaware logo.avif"
-      alt="Gamble Aware logo"
-      class="w-full max-w-[150px] self-center"
-      width="300px"
-      height="150px"
-    />
-    <img
-      src="/_includes/static/img/18logo.avif"
-      alt="18+ logo"
-      class="w-full max-w-[76px] self-center"
-      width="153px"
-      height="150px"
-    />
-  </div>
-
-  <ul class="flex flex-col self-center dark-copy text-center">
-    <li>
-      <a
-        href="https://www.gambleaware.org/"
-        class="underline"
-        target="_blank"
-        rel="noopener">
-        GambleAware
-      </a>
-    </li>
-    <li>
-      <a
-        href="https://www.gamstop.co.uk/"
-        class="underline"
-        target="_blank"
-        rel="noopener">
-        Gamstop
-      </a>
-    </li>
-  </ul>
-
-  <small class="text-center block mt-6 dark-copy text-xs">
-    <p>At Slot Picks our aim is to offer every online casino and slots players a choice of the latest new online slots and casino sites and their latest welcome bonuses for you to try them as well as some of the well-established brands such as Bet365, Coral & Ladbrokes.</p>
-    <p>Our review and scoring system is completely unbiased but based on the opinions of seasoned online gamblers as well as other sources and trusted review sites.</p>
-    <p>We do our best to keep all welcome bonuses and promotional details accurate and up to date. However, online slots and casino offers and terms can change at any time for new and existing players. Always check the casino’s official website for the latest promotions and full terms and conditions before signing up or making a deposit.
-  We will only promote highly trusted and secure brands on our website.</p>
-  </small>
-
-</div>
-

@@ -1,0 +1,9 @@
+{
+    "layout": "game-guide",
+    "ogType": "website",
+    "permalink": "/games/{{ title | slugify }}/",
+    "eleventyComputed": {
+        "seoTitle": "{{ title }} Slot Review 2025 | RTP, Features & Where to Play",
+        "description": "Complete guide to {{ title }} slot. Learn about RTP, volatility, bonus features and find the best UK casinos to play {{ title }}."
+    }
+}

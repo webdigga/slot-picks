@@ -4,45 +4,66 @@ type: website
 title: Latest Online Slot Game News & Gambling Updates
 seoTitle: Latest Slot News & Gambling Updates | Slot Picks
 description: Stay informed with breaking news, exclusive releases, and industry trends in online slots and gambling. Your trusted source for gambling updates.
-introText: Welcome to our comprehensive news section, where we bring you the latest developments in the world of online slots and gambling. Whether you're interested in new game releases, regulatory changes, industry innovations, or casino promotions, our curated selection of articles keeps you ahead of the curve. Bookmark this page to stay informed about the rapidly evolving online gambling landscape and enhance your gaming experience with expert insights and timely updates.
+introText: Welcome to our comprehensive news section, where we bring you the latest developments in the world of online slots and gambling. Whether you're interested in new game releases, regulatory changes, industry innovations, or casino promotions, our curated selection of articles keeps you ahead of the curve.
 subTitle: Stay Informed with the Latest Trends in Online Slots and Gambling
 eleventyComputed:
   canonical: "{{ env.site }}/news/"
 ---
 
-<section class="flex flex-col justify-center mx-auto">
+{% set newsList = collections.news %}
 
-  {% set newsList = collections.news %}
+<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
 
-  <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+  {% for newsItem in newsList | reverse %}
+    <article class="card group overflow-hidden">
+      <a href="{{ newsItem.url | url }}" class="block">
 
-    {% for newsItem in newsList | reverse %}
-      <article class="w-full max-w-full flex flex-col">
-        <a
-          href="{{ newsItem.url | url }}"
-          class="text-xl text-gray-900 mb-3 no-underline hover:underline flex flex-col h-full">
+        <!-- Image -->
+        <div class="relative overflow-hidden">
           <img
             src="{{ newsItem.data.imageForSeo }}"
             alt="{{ newsItem.data.imageAlt }}"
-            class="w-full"
-            width="600px"
-            height="450px"
+            class="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-105"
+            width="600"
+            height="450"
+            loading="lazy"
           />
-          <div class="flex flex-grow">
-            <div class="triangle"></div>
-            <div class="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 text">
-              <div>
-                <span class="inline-block mb-4 text-xs font-bold capitalize border-b-2 border-[color:var(--primary-colour)] hover:text-[color:var(--primary-colour)]">News</span>
-                <span class="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-[color:var(--primary-colour)]">{{ newsItem.data.title }}</span>
-              </div>
-              <div>
-                <span class="inline-block pb-1 mt-2 text-base font-black text-[color:var(--primary-colour)] uppercase border-b border-transparent hover:border-[color:var(--primary-colour)]">Read More -></span>
-              </div>
-            </div>
-          </div>
-        </a>
-      </article>
-    {% endfor %}
+          <div class="absolute inset-0 bg-gradient-to-t from-bg-card to-transparent opacity-60"></div>
 
-  </div>
-</section>
+          <!-- Date Badge -->
+          {% if newsItem.data.date %}
+            <div class="absolute top-4 left-4">
+              <span class="badge badge-gold text-xs">
+                {{ newsItem.data.date | readableDate }}
+              </span>
+            </div>
+          {% endif %}
+        </div>
+
+        <!-- Content -->
+        <div class="p-6">
+          <span class="badge badge-neon text-xs mb-3">News</span>
+
+          <h2 class="text-text-primary font-bold text-xl mb-3 line-clamp-2 group-hover:text-neon-green transition-colors">
+            {{ newsItem.data.title }}
+          </h2>
+
+          {% if newsItem.data.description %}
+            <p class="text-text-secondary text-sm mb-4 line-clamp-3">
+              {{ newsItem.data.description }}
+            </p>
+          {% endif %}
+
+          <span class="inline-flex items-center text-neon-blue text-sm font-medium group-hover:text-neon-green transition-colors">
+            Read Full Article
+            <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </span>
+        </div>
+
+      </a>
+    </article>
+  {% endfor %}
+
+</div>

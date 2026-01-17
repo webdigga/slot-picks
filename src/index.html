@@ -14,66 +14,121 @@ eleventyComputed:
 {% import "./_includes/components/sitesList.html" as sitesList with context %}
 {% import "./_includes/components/seoIntroText.html" as seoIntroText with context %}
 
-<div>
+<div class="bg-bg-primary min-h-screen">
 
-  {{ navBar.nav(bgColour='bg-white') }}
+  {{ navBar.nav(bgColour='bg-bg-primary') }}
 
-  <section class="dark-copy">
-    {{ seoIntroText.seoIntroTextComponent() }}
+  <!-- Hero Section -->
+  {{ seoIntroText.seoIntroTextComponent() }}
+
+  <!-- Featured Slots Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-10">
+      <div>
+        <span class="badge badge-neon mb-3">Top Picks</span>
+        <h2 class="text-text-primary text-2xl md:text-3xl mb-2">Best Slot Sites</h2>
+        <p class="text-text-secondary max-w-2xl">Our experts have reviewed and rated the top UK slot sites for 2025.</p>
+      </div>
+      <a href="/slots/" class="mt-4 md:mt-0 text-neon-green hover:text-neon-green-dim flex items-center gap-2 transition-colors">
+        View All Slots
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+      </a>
+    </div>
+    {{ sitesList.listOfSites(title="", siteType='slots') }}
   </section>
 
-  <section class="dark-copy container">
-    {{ sitesList.listOfSites(title="Slots", siteType='slots') }}
+  <!-- Divider -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="divider-purple"></div>
+  </div>
+
+  <!-- Featured Casinos Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-10">
+      <div>
+        <span class="badge badge-purple mb-3">Premium</span>
+        <h2 class="text-text-primary text-2xl md:text-3xl mb-2">Best Online Casinos</h2>
+        <p class="text-text-secondary max-w-2xl">Discover the most trusted online casinos with the best games and bonuses.</p>
+      </div>
+      <a href="/casinos/" class="mt-4 md:mt-0 text-neon-purple hover:text-neon-purple-dim flex items-center gap-2 transition-colors">
+        View All Casinos
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+      </a>
+    </div>
+    {{ sitesList.listOfSites(title="", siteType='casinos') }}
   </section>
 
-  <section class="dark-copy container">
-    {{ sitesList.listOfSites(title="Casinos", siteType='casinos') }}
-  </section>
-
-  <section class="dark-copy container">
-    <div class="prose !max-w-none prose-h2:mt-4">
-      {{ homepage.content | default("") | toString | markdownify | safe }}
+  <!-- Content Section -->
+  <section class="bg-bg-secondary/30 py-16 md:py-20 border-y border-border-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="prose prose-invert !max-w-none prose-headings:text-text-primary prose-p:text-text-secondary prose-a:text-neon-blue hover:prose-a:text-neon-green prose-strong:text-text-primary prose-li:text-text-secondary">
+        {{ homepage.content | default("") | toString | markdownify | safe }}
+      </div>
     </div>
   </section>
 
-  <section class="dark-copy container flex flex-col justify-center mx-auto">
+  <!-- Latest News Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
 
-    <h2>Latest News</h2>
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-10">
+      <div>
+        <span class="badge badge-gold mb-3">Updates</span>
+        <h2 class="text-text-primary text-2xl md:text-3xl mb-2">Latest News</h2>
+        <p class="text-text-secondary">Stay up to date with the latest from the world of online slots and casinos.</p>
+      </div>
+      <a href="/news/" class="mt-4 md:mt-0 text-neon-gold hover:text-neon-gold-dim flex items-center gap-2 transition-colors">
+        View All News
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+      </a>
+    </div>
 
     {% set newsList = collections.news %}
-  
+
     <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
-  
+
       {% for newsItem in newsList | reverse %}
         {% if loop.index0 < 4 %}
-          <article class="w-full max-w-full flex flex-col">
-            <a
-              href="{{ newsItem.url | url }}"
-              class="text-xl text-gray-900 mb-3 no-underline hover:underline flex flex-col h-full">
-              <img
-                src="{{ newsItem.data.imageForSeo }}"
-                alt="{{ newsItem.data.imageAlt }}"
-                class="w-full"
-                width="600px"
-                height="450px"
-              />
-              <div class="flex flex-grow">
-                <div class="triangle"></div>
-                <div class="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 text">
-                  <div>
-                    <span class="inline-block mb-4 text-xs font-bold capitalize border-b-2 border-[color:var(--primary-colour)] hover:text-[color:var(--primary-colour)]">News</span>
-                    <span class="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-[color:var(--primary-colour)]">{{ newsItem.data.title }}</span>
-                  </div>
-                  <div>
-                    <span class="inline-block pb-1 mt-2 text-base font-black text-[color:var(--primary-colour)] uppercase border-b border-transparent hover:border-[color:var(--primary-colour)]">Read More -></span>
-                  </div>
-                </div>
+          <article class="card group overflow-hidden">
+            <a href="{{ newsItem.url | url }}" class="block">
+
+              <!-- Image -->
+              <div class="relative overflow-hidden">
+                <img
+                  src="{{ newsItem.data.imageForSeo }}"
+                  alt="{{ newsItem.data.imageAlt }}"
+                  class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
+                  width="600"
+                  height="450"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-bg-card/80 to-transparent"></div>
               </div>
+
+              <!-- Content -->
+              <div class="p-5">
+                <span class="badge badge-neon text-xs mb-3">News</span>
+                <h3 class="text-text-primary font-bold text-lg mb-3 line-clamp-2 group-hover:text-neon-green transition-colors">
+                  {{ newsItem.data.title }}
+                </h3>
+                <span class="inline-flex items-center text-neon-blue text-sm font-medium group-hover:text-neon-green transition-colors">
+                  Read More
+                  <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                  </svg>
+                </span>
+              </div>
+
             </a>
           </article>
         {% endif %}
       {% endfor %}
-  
+
     </div>
   </section>
 

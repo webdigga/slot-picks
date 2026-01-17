@@ -1,0 +1,52 @@
+<!-- Related Content Component -->
+{% if relatedSites or relatedGames or relatedStrategy %}
+<section class="py-12 lg:py-16 border-t border-border-subtle">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-2xl lg:text-3xl font-bold text-white mb-8">
+      You Might Also Like
+    </h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% if relatedSites %}
+        {% for site in relatedSites | slice(0, 3) %}
+        <a href="/reviews/{{ site.data.title | slugify }}/" class="group block bg-card-bg/60 backdrop-blur-sm rounded-xl border border-border-subtle p-5 hover:border-neon-green/50 transition-all">
+          <div class="flex items-center gap-3 mb-3">
+            {% if site.data.brand %}
+            <img src="{{ site.data.brand }}" alt="{{ site.data.title }}" class="w-10 h-10 rounded object-contain bg-white p-1">
+            {% endif %}
+            <h3 class="font-semibold text-white group-hover:text-neon-green transition-colors">{{ site.data.title }}</h3>
+          </div>
+          <p class="text-sm text-text-secondary line-clamp-2">{{ site.data.welcomeOffer }}</p>
+        </a>
+        {% endfor %}
+      {% endif %}
+
+      {% if relatedGames %}
+        {% for game in relatedGames | slice(0, 3) %}
+        <a href="{{ game.url }}" class="group block bg-card-bg/60 backdrop-blur-sm rounded-xl border border-border-subtle p-5 hover:border-neon-purple/50 transition-all">
+          <div class="flex items-center gap-2 mb-3">
+            {% if game.data.provider %}
+            <span class="px-2 py-0.5 bg-neon-purple/20 text-neon-purple text-xs rounded">{{ game.data.provider }}</span>
+            {% endif %}
+          </div>
+          <h3 class="font-semibold text-white group-hover:text-neon-purple transition-colors mb-2">{{ game.data.title }}</h3>
+          <p class="text-sm text-text-secondary line-clamp-2">{{ game.data.description }}</p>
+        </a>
+        {% endfor %}
+      {% endif %}
+
+      {% if relatedStrategy %}
+        {% for article in relatedStrategy | slice(0, 3) %}
+        <a href="{{ article.url }}" class="group block bg-card-bg/60 backdrop-blur-sm rounded-xl border border-border-subtle p-5 hover:border-neon-gold/50 transition-all">
+          {% if article.data.category %}
+          <span class="inline-block px-2 py-0.5 bg-neon-gold/20 text-neon-gold text-xs rounded mb-3">{{ article.data.category }}</span>
+          {% endif %}
+          <h3 class="font-semibold text-white group-hover:text-neon-gold transition-colors mb-2">{{ article.data.title }}</h3>
+          <p class="text-sm text-text-secondary line-clamp-2">{{ article.data.description }}</p>
+        </a>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endif %}

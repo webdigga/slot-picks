@@ -1,11 +1,23 @@
 {% macro schema() %}
 
+  {# Organization Schema (always present) #}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "{{ settings.siteName }}",
+    "url": "{{ env.site }}",
+    "logo": "{{ env.site }}/_includes/static/img/logo-big.avif",
+    "description": "Expert reviews and ratings for UK online slot sites and casinos."
+  }
+  </script>
+
+  {# Page-specific Schema #}
   <script type="application/ld+json">
 
     {% if seoSchemaPageType == 'FAQPage' %}
 
       {# FAQPage JSON ld #}
-
       {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -19,29 +31,159 @@
             }
           }{{ "" if loop.last else "," }}{% endfor %}{% endif %}
         ],
-        "url": "{{ env.site }}/frequently-asked-questions-faqs/"
+        "url": "{{ env.site }}/faqs/"
+      }
+
+    {% elseif seoSchemaPageType == 'Review' %}
+
+      {# Review Schema for Casino/Slot Reviews #}
+      {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "name": "{{ title }} Review",
+        "description": "{{ description }}",
+        "author": {
+          "@type": "Organization",
+          "name": "{{ settings.siteName }}"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "{{ settings.siteName }}",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "{{ env.site }}/_includes/static/img/logo-big.avif"
+          }
+        },
+        "datePublished": "2025-01-01",
+        "dateModified": "2025-01-17",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "{{ score }}",
+          "bestRating": "100",
+          "worstRating": "0"
+        },
+        "itemReviewed": {
+          "@type": "Organization",
+          "name": "{{ title }}",
+          "description": "{{ description }}",
+          "image": "{{ env.site }}{{ brand }}"
+        },
+        "reviewBody": "{{ verdict | default(description) }}",
+        {% if pros %}
+        "positiveNotes": {
+          "@type": "ItemList",
+          "itemListElement": [
+            {% for pro in pros %}
+            {
+              "@type": "ListItem",
+              "position": {{ loop.index }},
+              "name": "{{ pro }}"
+            }{{ "" if loop.last else "," }}
+            {% endfor %}
+          ]
+        },
+        {% endif %}
+        {% if cons %}
+        "negativeNotes": {
+          "@type": "ItemList",
+          "itemListElement": [
+            {% for con in cons %}
+            {
+              "@type": "ListItem",
+              "position": {{ loop.index }},
+              "name": "{{ con }}"
+            }{{ "" if loop.last else "," }}
+            {% endfor %}
+          ]
+        },
+        {% endif %}
+        "url": "{{ env.site }}{{ page.url }}",
+        "inLanguage": "en-GB"
+      }
+
+    {% elseif seoSchemaPageType == 'Game' %}
+
+      {# SoftwareApplication Schema for Slot Games #}
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "{{ title }}",
+        "description": "{{ description }}",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Web Browser",
+        "author": {
+          "@type": "Organization",
+          "name": "{{ provider }}"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "ratingCount": "1000",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock"
+        },
+        "url": "{{ env.site }}{{ page.url }}",
+        "inLanguage": "en-GB"
+      }
+
+    {% elseif seoSchemaPageType == 'ItemList' %}
+
+      {# ItemList Schema for Category/Listing Pages #}
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "{{ title }}",
+        "description": "{{ description }}",
+        "numberOfItems": "{{ collections[listCollection] | length if collections[listCollection] else '10' }}",
+        "itemListElement": [
+          {% if collections[listCollection] %}
+          {% for item in collections[listCollection] | head(10) %}
+          {
+            "@type": "ListItem",
+            "position": {{ loop.index }},
+            "name": "{{ item.data.title }}",
+            "url": "{{ env.site }}{{ item.url }}"
+          }{{ "" if loop.last else "," }}
+          {% endfor %}
+          {% endif %}
+        ],
+        "url": "{{ env.site }}{{ page.url }}",
+        "inLanguage": "en-GB"
       }
 
     {% elseif seoSchemaPageType == 'Article' %}
 
-      {# Article JSON ld #}
-
+      {# Article JSON ld with enhanced fields #}
       {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": "{{ seoTitle | safe }}",
         "description": "{{ description }}",
-        "image": "{% if imageForSeo %}{{ env.site }}{{ imageForSeo }}{% else %}{{ env.site }}/android-chrome-512x512.png{% endif %}",
+        "image": {
+          "@type": "ImageObject",
+          "url": "{{ env.site }}/_includes/static/img/social-share.jpg",
+          "width": 1200,
+          "height": 630
+        },
         "author": {
           "@type": "Person",
-          "name": "Slot Expert"
+          "name": "Slot Picks Editorial Team",
+          "url": "{{ env.site }}"
         },
         "publisher": {
           "@type": "Organization",
-          "name": "{{ env.site }}",
+          "name": "{{ settings.siteName }}",
           "logo": {
             "@type": "ImageObject",
-            "url": "{{ env.site }}/android-chrome-512x512.png"
+            "url": "{{ env.site }}/_includes/static/img/logo-big.avif",
+            "width": 250,
+            "height": 60
           }
         },
         "datePublished": "{{ date | iso8601 | safe }}",
@@ -49,23 +191,73 @@
         "mainEntityOfPage": {
           "@type": "WebPage",
           "@id": "{{ env.site }}/{{ title | slugify }}/"
-        }
+        },
+        "inLanguage": "en-GB"
       }
 
-    {% else %}
+    {% elseif seoSchemaPageType == 'Organization' %}
 
-      {# WebSite JSON ld #}
-
+      {# Homepage WebSite + SearchAction #}
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "{{ settings.siteName }}",
         "url": "{{ env.site }}",
-        "description": "{{ description }}"
+        "description": "{{ description }}",
+        "publisher": {
+          "@type": "Organization",
+          "name": "{{ settings.siteName }}",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "{{ env.site }}/_includes/static/img/logo-big.avif"
+          }
+        },
+        "inLanguage": "en-GB"
+      }
+
+    {% else %}
+
+      {# Default WebPage Schema #}
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "{{ seoTitle | safe }}",
+        "url": "{{ canonical }}",
+        "description": "{{ description }}",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "{{ settings.siteName }}",
+          "url": "{{ env.site }}"
+        },
+        "inLanguage": "en-GB"
       }
 
     {% endif %}
 
   </script>
+
+  {# BreadcrumbList Schema (for pages with breadcrumb data) #}
+  {% if page.url and page.url != "/" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "{{ env.site }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{ seoTitle | safe }}",
+        "item": "{{ canonical }}"
+      }
+    ]
+  }
+  </script>
+  {% endif %}
 
 {% endmacro %}

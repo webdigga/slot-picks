@@ -1,0 +1,9 @@
+{
+    "layout": "comparison",
+    "ogType": "website",
+    "permalink": "/compare/{{ title | slugify }}/",
+    "eleventyComputed": {
+        "seoTitle": "{{ title }} | Casino Comparison 2025",
+        "description": "{{ description }}"
+    }
+}

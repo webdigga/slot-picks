@@ -1,14 +1,26 @@
 {% macro button(type, buttonText, classes, dataTest, id) %}
 
-  {# Set primary as the default #}
-  {% set typeClasses = 'bg-[color:var(--primary-colour)] text-[color:var(--white)]' %}
+  {# Set primary (neon green) as the default #}
+  {% set typeClasses = 'bg-neon-green text-bg-primary hover:bg-neon-green-dim' %}
+  {% set glowClass = 'shadow-neon-green hover:shadow-neon-green-lg' %}
 
   {% if type == 'secondary' %}
-    {% set typeClasses = 'bg-[color:var(--secondary-colour)] text-[color:var(--white)]' %}
+    {% set typeClasses = 'bg-neon-purple text-white hover:bg-neon-purple-dim' %}
+    {% set glowClass = 'shadow-neon-purple hover:shadow-neon-purple-lg' %}
+  {% endif %}
+
+  {% if type == 'outline' %}
+    {% set typeClasses = 'bg-transparent border-2 border-neon-green text-neon-green hover:bg-neon-green hover:text-bg-primary' %}
+    {% set glowClass = '' %}
+  {% endif %}
+
+  {% if type == 'gold' %}
+    {% set typeClasses = 'bg-neon-gold text-bg-primary hover:bg-neon-gold-dim' %}
+    {% set glowClass = 'shadow-neon-gold' %}
   {% endif %}
 
   <button
-    class="mb-4 rounded-md cursor-pointer inline-block py-4 px-6 hover:opacity-80 {{ typeClasses | safe }} {{ classes | safe }}"
+    class="mb-4 rounded-lg cursor-pointer inline-flex items-center justify-center py-3 px-6 font-semibold transition-all duration-300 transform hover:-translate-y-0.5 {{ typeClasses | safe }} {{ glowClass | safe }} {{ classes | safe }}"
     {% if dataTest %}data-test="{{ dataTest }}"{% endif %}
     {% if id %}id="{{ id }}"{% endif %}>
     {{ buttonText | safe }}

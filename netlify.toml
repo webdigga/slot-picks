@@ -1,3 +1,135 @@
 [build]
   publish = "_site"
   command = "npm run build"
+
+# 301 Redirects for URL restructuring
+# Old category page URLs to new structure
+[[redirects]]
+  from = "/sites/slots/"
+  to = "/slots/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sites/casinos/"
+  to = "/casinos/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sites/newslots/"
+  to = "/new-slots/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sites/newcasinos/"
+  to = "/new-casinos/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sites/topratedslots/"
+  to = "/top-rated-slots/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sites/topratedcasinos/"
+  to = "/top-rated-casinos/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sites/livecasinos/"
+  to = "/live-casinos/"
+  status = 301
+  force = true
+
+# Old article URLs to new guides structure
+[[redirects]]
+  from = "/best-slot-sites-uk-your-ultimate-guide-to-online-slots-in-2025/"
+  to = "/guides/best-slot-sites-uk/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/choose-the-best-online-slot-game-a-guide/"
+  to = "/guides/choose-best-slot-game/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/new-limits-on-online-slot-stakes-to-tackle-gambling-harm/"
+  to = "/news/slot-stake-limits/"
+  status = 301
+  force = true
+
+# FAQ page URL cleanup
+[[redirects]]
+  from = "/frequently-asked-questions-faqs/"
+  to = "/faqs/"
+  status = 301
+  force = true
+
+# BetMGM name correction
+[[redirects]]
+  from = "/reviews/bet-mgm-casino/"
+  to = "/reviews/betmgm-casino/"
+  status = 301
+  force = true
+
+# Strategy URL cleanup
+[[redirects]]
+  from = "/strategy/bankroll-management-for-slot-players/"
+  to = "/strategy/bankroll-management/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/strategy/understanding-rtp-in-slots/"
+  to = "/strategy/understanding-rtp/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/strategy/slot-volatility-explained/"
+  to = "/strategy/slot-volatility/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/strategy/responsible-gambling-guide/"
+  to = "/strategy/responsible-gambling/"
+  status = 301
+  force = true
+
+# Redirect old sitemap.txt to new XML sitemap
+[[redirects]]
+  from = "/sitemap.txt"
+  to = "/sitemap.xml"
+  status = 301
+  force = true
+
+# Headers for security and caching
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/static/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

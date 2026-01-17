@@ -1,6 +1,9 @@
 {
-    "layout": "default",
+    "layout": "review",
     "ogType": "website",
-    "permalink": "/{{ title | slugify }}/",
-    "ignore": true
+    "permalink": "/reviews/{{ title | slugify }}/",
+    "eleventyComputed": {
+        "seoTitle": "{{ title }} Review 2025 | Expert Rating & Bonus",
+        "description": "Read our expert {{ title }} review. Get the latest welcome bonuses, game selection info, and honest ratings from our team."
+    }
 }

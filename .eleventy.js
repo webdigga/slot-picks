@@ -3,6 +3,7 @@ const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
 const path = require("path");
 const fs = require("fs");
 const tailwind = require('tailwindcss');
@@ -55,10 +56,16 @@ module.exports = function (eleventyConfig) {
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight);
 
-  // Markdown rendering options
-  const md = new markdownIt({
+  // Markdown rendering options with anchor IDs for headings
+  const md = markdownIt({
     html: true,
+  }).use(markdownItAnchor, {
+    permalink: false,
+    slugify: (s) => s.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-').trim()
   });
+
+  // Set as the markdown library for Eleventy
+  eleventyConfig.setLibrary("md", md);
 
   // Add a filter to convert markdown string to HTML
   eleventyConfig.addFilter("markdownify", (markdownString) => {
@@ -81,7 +88,8 @@ module.exports = function (eleventyConfig) {
   // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/_includes/static/img");
 
-  // Copy favicon to route of /_site
+  // Copy favicon and robots.txt to root of /_site
+  eleventyConfig.addPassthroughCopy("./src/robots.txt");
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
   eleventyConfig.addPassthroughCopy("./src/apple-touch-icon.png");
   eleventyConfig.addPassthroughCopy("./src/favicon-96x96.png");
@@ -115,6 +123,25 @@ module.exports = function (eleventyConfig) {
       // Fail gracefully.
       callback(null, code);
     }
+  });
+
+  // Add custom collections for new content types
+  eleventyConfig.addCollection("games", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/games/*.md").filter(item => {
+      return item.inputPath !== "./src/games/index.md";
+    });
+  });
+
+  eleventyConfig.addCollection("strategy", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/strategy/*.md").filter(item => {
+      return item.inputPath !== "./src/strategy/index.md";
+    });
+  });
+
+  eleventyConfig.addCollection("compare", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/compare/*.md").filter(item => {
+      return item.inputPath !== "./src/compare/index.md";
+    });
   });
 
   // Add the tag data as a global data object

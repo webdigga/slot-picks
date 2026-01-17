@@ -1,0 +1,9 @@
+{
+    "layout": "strategy",
+    "ogType": "article",
+    "permalink": "/strategy/{{ title | slugify }}/",
+    "eleventyComputed": {
+        "seoTitle": "{{ title }} | Slot Strategy Guide 2025",
+        "description": "{{ description }}"
+    }
+}

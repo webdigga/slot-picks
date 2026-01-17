@@ -1,11 +1,19 @@
 ---
 layout: false
-permalink: sitemap.txt
+permalink: sitemap.xml
 ignore: true
+eleventyExcludeFromCollections: true
 ---
-
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {%- for item in collections.all %}
-  {% if not item.data.ignore and not r/^\/admin\//i.test(item.url) %}
-    {{ env.site }}{{ item.url | replace('.html', '') }}
-  {% endif %}
+{%- if not item.data.ignore and not r/^\/admin\//i.test(item.url) %}
+  <url>
+    <loc>{{ env.site }}{{ item.url | replace(".html", "") }}</loc>
+    <lastmod>{{ item.date | iso8601 | truncate(10, true, "") }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+{%- endif %}
 {%- endfor %}
+</urlset>

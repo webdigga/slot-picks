@@ -2,83 +2,118 @@
 {% import "./checklist-item.html" as checkListItemMacro with context %}
 
 {% macro site(site) %}
-  <a
-    href="{{ site.data.externalUrl }}"
-    target="_blank"
-    rel="noopener"
-    class="dark-copy text-sm relative group grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 p-4 border border-[color:var(--very-light-gray)] rounded-md hover:shadow-lg transition-all duration-300 ease-in-out"> 
+  <article class="card card-glow group relative overflow-hidden">
 
-    <div class="flex flex-col">      
+    <a
+      href="{{ site.data.externalUrl }}?utm_source=slotpicks&utm_medium=affiliate&utm_campaign={{ site.data.title | slugify }}"
+      target="_blank"
+      rel="noopener"
+      class="block p-5 sm:p-6">
 
-      <div
-        class="flex justify-center mb-4 py-1 rounded-md items-center min-h-[80px] max-h-[80px]"
-        style="background-color: {{ site.data.imageColour }}; border: 1px solid {{ site.data.borderColour }};">        
-        <img
-          src="{{ site.data.brand }}"
-          alt="{{ site.data.imageAlt }}"
-          class="w-full h-auto max-w-[250px] max-h-[65px]"
-          width="250px"
-          height="65px"
-          loading="lazy"
-          decoding="async"
-        />
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 lg:gap-6 items-start">
+
+        <!-- Logo & Rating Column -->
+        <div class="flex flex-col">
+
+          <!-- Brand Logo Container -->
+          <div
+            class="flex justify-center mb-4 py-3 rounded-lg items-center min-h-[90px] max-h-[90px] border border-border-dark/50 overflow-hidden"
+            style="background-color: {{ site.data.imageColour }};">
+            <img
+              src="{{ site.data.brand }}"
+              alt="{{ site.data.imageAlt }}"
+              class="w-full h-auto max-w-[220px] max-h-[60px] object-contain"
+              width="220"
+              height="60"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+
+          <!-- Star Rating -->
+          <div class="flex items-center justify-center sm:justify-start gap-1">
+            {% set maxIterations = 5 %}
+            {% for i in range(maxIterations) %}
+              {% if i < site.data.rating %}
+                <svg class="w-5 h-5 star-filled" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+              {% else %}
+                <svg class="w-5 h-5 star-empty" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+              {% endif %}
+            {% endfor %}
+          </div>
+
+        </div>
+
+        <!-- Score Badge Column -->
+        <div class="flex flex-col items-center sm:items-start">
+          {% set scoreText %}
+            {% if site.data.score >= 90 %}
+              Excellent
+            {% elif site.data.score >= 80 %}
+              Superb
+            {% elif site.data.score < 80 %}
+              Good
+            {% endif %}
+          {% endset %}
+
+          {% set scoreBadgeClass %}
+            {% if site.data.score >= 90 %}
+              bg-neon-green/20 text-neon-green border-neon-green/30
+            {% elif site.data.score >= 80 %}
+              bg-neon-blue/20 text-neon-blue border-neon-blue/30
+            {% else %}
+              bg-neon-purple/20 text-neon-purple border-neon-purple/30
+            {% endif %}
+          {% endset %}
+
+          <div class="flex items-center gap-2">
+            <span class="inline-flex items-center justify-center w-12 h-12 rounded-lg border text-xl font-bold {{ scoreBadgeClass }}">
+              {{ site.data.score }}
+            </span>
+            <span class="text-text-primary font-medium text-sm">{{ scoreText }}</span>
+          </div>
+
+          <!-- Site Name (visible on mobile) -->
+          <h3 class="text-text-primary font-semibold mt-3 text-base sm:hidden">
+            {{ site.data.title }}
+          </h3>
+        </div>
+
+        <!-- Highlights Column -->
+        <div class="sm:col-span-2">
+          <ul class="grid sm:grid-cols-2 gap-x-4 gap-y-1">
+            {% for highlight in site.data.highlights %}
+              {{
+                checkListItemMacro.checkListItem(
+                  title=highlight.text,
+                  classes='items-start'
+                )
+              }}
+            {% endfor %}
+          </ul>
+        </div>
+
+        <!-- CTA Column -->
+        <div class="sm:col-span-2 lg:col-span-1 flex flex-col items-center lg:items-stretch">
+          {{ button.button(buttonText='Claim Bonus', classes='w-full font-bold !mb-3') }}
+
+          <p class="text-neon-gold text-sm font-medium text-center lg:text-left mb-0">
+            {{ site.data.welcomeOffer }}
+          </p>
+        </div>
+
       </div>
 
-      <div class="flex items-center">
-        {% set maxIterations = 5 %}
-        {% for i in range(maxIterations) %}
-          {% if i < site.data.rating %}
-            <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-          {% else %}
-            <svg class="w-4 h-4 ms-1 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-          {% endif %}
-        {% endfor %}
+      <!-- Terms & Conditions -->
+      <div class="mt-5 pt-4 border-t border-border-dark text-text-muted text-xs">
+        {{ site.data.termsAndConditions }}
       </div>
 
-    </div>
+    </a>
 
-    {% set scoreText %}
-      {% if site.data.score >= 90 %}
-        Excellent
-      {% elif site.data.score >= 80 %}
-        Superb
-      {% elif site.data.score < 80 %}
-        Good
-      {% endif %}
-    {% endset %}    
-
-    <div>    
-      <span class="bg-blue-100 text-text-[color:var(--primary-colour)] text-sm font-semibold inline-flex items-center py-1.5 px-2 rounded-sm">{{ site.data.score }}</span><span class="ms-2 font-medium text-gray-900">{{ scoreText }}</span>
-    </div>
-
-    <div class="sm:col-span-2">
-      <ul class="grid sm:grid-cols-2 gap-2">
-        {% for highlight in site.data.highlights %}
-          {{
-            checkListItemMacro.checkListItem(
-              title=highlight.text,
-              textColour='dark-copy',
-              classes='text-[color:var(--primary-colour)] items-start'
-            )
-          }}
-        {% endfor %}
-      </ul>
-    </div>
-   
-
-    <div class="sm:col-span-2 lg:col-span-1">
-      {{ button.button(buttonText='Claim Bonus', classes='w-full font-bold') }}
-
-      <p class="text-sm mb-0">{{ site.data.welcomeOffer }}</p>
-    </div>
-
-    <div class="col-span-full border-t pt-4 text-xs text-[color:var(--dark-gray)]">
-      {{ site.data.termsAndConditions }}
-    </div>
-
-  </a>
+  </article>
 {% endmacro %}

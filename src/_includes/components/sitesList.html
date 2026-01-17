@@ -1,20 +1,23 @@
 {% import "./buttons/button.html" as button with context %}
 {% import "./site.html" as siteMacro with context %}
 
-{% macro listOfSites(title, siteType) %}
+{% macro listOfSites(title, siteType, description) %}
 
-  <div>
+  <section>
     {% if title %}
-      <h2>{{ title }}</h2>
+      <div class="mb-8">
+        <h2 class="text-text-primary mb-3">{{ title }}</h2>
+        {% if description %}
+          <p class="text-text-secondary text-base max-w-3xl">{{ description }}</p>
+        {% endif %}
+      </div>
     {% endif %}
 
-    <div class="grid grid-cols-1 gap-4 gap-y-8">
-
+    <div class="grid grid-cols-1 gap-6">
       {% for site in collections[siteType] %}
         {{ siteMacro.site(site) }}
       {% endfor %}
-
     </div>
-  </div>  
+  </section>
 
 {% endmacro %}

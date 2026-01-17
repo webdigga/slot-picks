@@ -2,54 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 
-Gold – #FFD700: Symbolizing luck, wealth, and excitement, gold works well for a slots game, creating a sense of high stakes and prestige.
-
-Electric Blue – #1E90FF: A bright, eye-catching blue that adds energy and a modern feel to the site, perfect for capturing attention.
-
-Neon Green – #32CD32: This colour gives off a fun and lively vibe, often associated with neon lights and the thrill of a casino environment.
+/*
+  SLOT-PICKS DARK & NEON THEME
+  A premium gaming-inspired dark theme with neon accents
 */
 
-/*Your Custom CSS Goes here*/
+/*=============================================
+  CSS VARIABLES - Dark & Neon Theme
+=============================================*/
 :root {
-  --primary-colour: #0a72da;
-  --secondary-colour: #FFD700;
-  --tertiary-colour: #32CD32;
-  --earthy-beige-light: #ebe2d6;
-  --earthy-beige: #D8C3A5;
-  --royal-purple: #3A6B75;
-  --royal-purple: #694894;
-  --soft-clay: #B26A5A;
+  /* Background colors */
+  --bg-primary: #0D0D0D;
+  --bg-secondary: #1A1A2E;
+  --bg-card: #16213E;
+  --bg-card-hover: #1E2A4A;
+
+  /* Neon accent colors */
+  --neon-green: #00FF88;
+  --neon-green-dim: #00CC6A;
+  --neon-purple: #9D4EDD;
+  --neon-purple-dim: #7B3DB5;
+  --neon-gold: #FFD700;
+  --neon-gold-dim: #D4B000;
+  --neon-blue: #00D4FF;
+  --neon-blue-dim: #00A8CC;
+  --neon-red: #FF4757;
+
+  /* Text colors */
+  --text-primary: #FFFFFF;
+  --text-secondary: #B8B8B8;
+  --text-muted: #6B7280;
+
+  /* Border colors */
+  --border-dark: #2D2D44;
+  --border-glow: #00FF88;
+
+  /* Legacy variable mappings for compatibility */
+  --primary-colour: var(--neon-blue);
+  --secondary-colour: var(--neon-gold);
+  --tertiary-colour: var(--neon-green);
   --white: #FFFFFF;
-  --lightest-gray: #f9fafb;
-  --very-light-gray: #eaeaea;
-  --dark-gray: #5f6571;
-  --dark-copy: #333333;
-  --sold: var(--soft-clay);
+  --dark-copy: var(--text-secondary);
+  --dark-gray: var(--text-muted);
+
+  /* Layout */
   --strapline-height: 40px;
 }
 
+/*=============================================
+  BASE STYLES
+=============================================*/
 body {
-  @apply text-white;
+  @apply text-text-primary;
 
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
+  background: var(--bg-primary);
+  min-height: 100vh;
 }
 
+/* Typography */
 h1, h2, h3, h4 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
+  font-weight: 700;
+  @apply tracking-tighter text-text-primary;
 }
 
 h1 {
-  @apply text-2xl sm:text-3xl tracking-tighter lg:text-4xl mb-5;
-}
-
-h1, h2, h3, h4 {
-  @apply tracking-tighter;
-
-  font-weight: 700;
+  @apply text-2xl sm:text-3xl lg:text-4xl mb-5;
 }
 
 h2 {
@@ -61,17 +83,50 @@ h3, h4 {
 }
 
 p {
-  @apply mb-4;
+  @apply mb-4 text-text-secondary;
 }
 
+/* Links */
+a {
+  @apply text-neon-blue transition-colors duration-200;
+}
+
+a:hover {
+  @apply text-neon-green;
+}
+
+/*=============================================
+  UTILITY CLASSES
+=============================================*/
 .dark-copy {
-  color: var(--dark-copy);
+  color: var(--text-secondary);
 }
 
 .subtle-text-on-light-background {
-  color: var(--dark-gray);
+  color: var(--text-muted);
 }
 
+/* Gradient text effect */
+.gradient-text {
+  @apply bg-gradient-neon bg-clip-text text-transparent;
+}
+
+/* Neon glow effects */
+.neon-glow-green {
+  text-shadow: 0 0 5px var(--neon-green), 0 0 20px rgba(0, 255, 136, 0.5);
+}
+
+.neon-glow-purple {
+  text-shadow: 0 0 5px var(--neon-purple), 0 0 20px rgba(157, 78, 221, 0.5);
+}
+
+.neon-glow-gold {
+  text-shadow: 0 0 5px var(--neon-gold), 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+/*=============================================
+  CONTAINER STYLES
+=============================================*/
 .container {
   @apply p-4 sm:p-5 md:p-6 !max-w-[1100px];
 }
@@ -84,21 +139,141 @@ p {
   @apply py-9 sm:py-10 md:py-28;
 }
 
+/*=============================================
+  BUTTON STYLES
+=============================================*/
+.btn {
+  @apply inline-flex items-center justify-center px-6 py-3 font-semibold rounded-lg transition-all duration-300;
+}
+
+.btn-primary {
+  @apply bg-neon-green text-bg-primary hover:bg-neon-green-dim;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.6), 0 0 60px rgba(0, 255, 136, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  @apply bg-transparent border-2 border-neon-purple text-neon-purple hover:bg-neon-purple hover:text-white;
+}
+
+.btn-outline {
+  @apply bg-transparent border-2 border-neon-green text-neon-green hover:bg-neon-green hover:text-bg-primary;
+}
+
+/*=============================================
+  CARD STYLES
+=============================================*/
+.card {
+  @apply rounded-xl transition-all duration-300;
+  background: linear-gradient(145deg, var(--bg-card) 0%, var(--bg-secondary) 100%);
+  border: 1px solid var(--border-dark);
+}
+
+.card:hover {
+  border-color: rgba(0, 255, 136, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.card-glow {
+  position: relative;
+}
+
+.card-glow::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, var(--neon-purple), var(--neon-green));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card-glow:hover::before {
+  opacity: 0.5;
+}
+
+/*=============================================
+  NAVIGATION LINK STYLES
+=============================================*/
+.nav-link {
+  @apply relative text-text-secondary hover:text-neon-green transition-colors duration-200;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-neon-green transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+/*=============================================
+  STAR RATING STYLES
+=============================================*/
+.star-rating {
+  @apply flex gap-1;
+}
+
+.star-filled {
+  @apply text-neon-gold;
+  filter: drop-shadow(0 0 3px rgba(255, 215, 0, 0.5));
+}
+
+.star-empty {
+  @apply text-text-muted;
+}
+
+/*=============================================
+  BADGE STYLES
+=============================================*/
+.badge {
+  @apply inline-flex items-center px-3 py-1 text-sm font-medium rounded-full;
+}
+
+.badge-neon {
+  @apply bg-neon-green/20 text-neon-green border border-neon-green/30;
+}
+
+.badge-purple {
+  @apply bg-neon-purple/20 text-neon-purple border border-neon-purple/30;
+}
+
+.badge-gold {
+  @apply bg-neon-gold/20 text-neon-gold border border-neon-gold/30;
+}
+
+/*=============================================
+  ANCHOR STYLES
+=============================================*/
 .anchor-highlight {
-  @apply underline-offset-4 decoration-2 underline decoration-[color:var(--primary-colour)];
+  @apply underline-offset-4 decoration-2 underline decoration-neon-blue;
 }
 
 .anchor-white {
-  @apply underline-offset-4 decoration-2 underline decoration-[color:var(--white)];
+  @apply underline-offset-4 decoration-2 underline decoration-white;
 }
 
+/*=============================================
+  FORM ELEMENTS
+=============================================*/
 #sortbox:checked ~ #sortboxmenu {
   opacity: 1;
 }
 
-/*
-  Article image component
-*/
+/*=============================================
+  ARTICLE IMAGE STYLES
+=============================================*/
 img.Centre {
   @apply mx-auto;
 }
@@ -112,7 +287,7 @@ img.Right {
 }
 
 .youtube-embed {
-  @apply flex flex-col items-center mt-7
+  @apply flex flex-col items-center mt-7;
 }
 
 .youtube-embed.Left {
@@ -123,12 +298,79 @@ img.Right {
   @apply m-0 lg:float-right lg:pl-12 lg:pb-8 mt-0;
 }
 
-/* Syntax Highlighting*/
+/*=============================================
+  CODE SYNTAX HIGHLIGHTING
+=============================================*/
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
-  @apply bg-gray-800;
+  @apply bg-bg-secondary border border-border-dark rounded-lg;
 }
 
+/*=============================================
+  BACKGROUND PATTERNS
+=============================================*/
+.bg-mesh {
+  background-image:
+    radial-gradient(circle at 25% 25%, rgba(157, 78, 221, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(0, 255, 136, 0.1) 0%, transparent 50%);
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/*=============================================
+  HERO SECTION
+=============================================*/
+.hero {
+  @apply relative overflow-hidden;
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-card) 100%);
+}
+
+.hero::before {
+  content: '';
+  @apply absolute inset-0 opacity-50;
+  background-image:
+    radial-gradient(circle at 20% 80%, rgba(157, 78, 221, 0.3) 0%, transparent 40%),
+    radial-gradient(circle at 80% 20%, rgba(0, 255, 136, 0.2) 0%, transparent 40%);
+}
+
+/*=============================================
+  DIVIDER STYLES
+=============================================*/
+.divider-neon {
+  @apply h-px w-full;
+  background: linear-gradient(90deg, transparent, var(--neon-green), transparent);
+}
+
+.divider-purple {
+  @apply h-px w-full;
+  background: linear-gradient(90deg, transparent, var(--neon-purple), transparent);
+}
+
+/*=============================================
+  SCROLL & ANIMATION UTILITIES
+=============================================*/
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/*=============================================
+  LAYER COMPONENTS
+=============================================*/
 @layer components {
   .container {
     @apply max-w-none sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl 3xl:max-w-screen-3xl;

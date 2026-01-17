@@ -1,0 +1,191 @@
+---
+layout: default
+seoSchemaPageType: Article
+---
+
+{% import "./partials/navbar.html" as navBar with context %}
+
+<div class="bg-bg-primary min-h-screen">
+
+  {{ navBar.nav('bg-bg-primary') }}
+
+<!-- Comparison Hero -->
+<section class="relative overflow-hidden py-16">
+  <!-- Background Effects -->
+  <div class="absolute inset-0 bg-gradient-to-br from-bg-primary via-bg-secondary to-bg-tertiary"></div>
+  <div class="absolute top-10 left-1/4 w-80 h-80 bg-neon-blue/15 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-10 right-1/4 w-80 h-80 bg-neon-purple/15 rounded-full blur-3xl"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Breadcrumb -->
+    <nav class="mb-8">
+      <ol class="flex items-center space-x-2 text-sm text-text-secondary">
+        <li><a href="/" class="hover:text-neon-green transition-colors">Home</a></li>
+        <li><span class="text-text-muted">/</span></li>
+        <li><a href="/compare/" class="hover:text-neon-green transition-colors">Comparisons</a></li>
+        <li><span class="text-text-muted">/</span></li>
+        <li class="text-neon-green">{{ title }}</li>
+      </ol>
+    </nav>
+
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-6">
+        {{ title }}
+      </h1>
+      <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+        {{ description }}
+      </p>
+    </div>
+
+    <!-- Comparison Cards (if comparing 2 sites) -->
+    {% if site1 and site2 %}
+    <div class="grid md:grid-cols-2 gap-8 mb-12">
+      <!-- Site 1 -->
+      <div class="bg-card-bg/80 backdrop-blur-sm rounded-2xl border border-border-subtle overflow-hidden group hover:border-neon-green/50 transition-all">
+        <div class="p-6 lg:p-8 text-center border-b border-border-subtle bg-gradient-to-b from-neon-green/5 to-transparent">
+          {% if site1.logo %}
+          <img src="{{ site1.logo }}" alt="{{ site1.name }}" class="h-16 mx-auto mb-4">
+          {% endif %}
+          <h2 class="text-2xl font-bold text-white mb-2">{{ site1.name }}</h2>
+          <div class="flex justify-center items-center gap-2 mb-4">
+            <div class="text-3xl font-bold text-neon-green">{{ site1.score }}</div>
+            <div class="text-text-muted">/100</div>
+          </div>
+          <a href="{{ site1.url }}?utm_source=slotpicks&utm_medium=affiliate&utm_campaign={{ title | slugify }}" class="btn-primary inline-flex items-center justify-center px-6 py-3 text-sm font-semibold" target="_blank" rel="noopener">
+            Visit {{ site1.name }}
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="p-6 lg:p-8">
+          <div class="space-y-4">
+            <div class="flex justify-between items-center py-2 border-b border-border-subtle">
+              <span class="text-text-secondary">Welcome Bonus</span>
+              <span class="text-white font-medium">{{ site1.welcomeBonus }}</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-border-subtle">
+              <span class="text-text-secondary">Min Deposit</span>
+              <span class="text-white font-medium">{{ site1.minDeposit }}</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-border-subtle">
+              <span class="text-text-secondary">Wagering</span>
+              <span class="text-white font-medium">{{ site1.wagering }}</span>
+            </div>
+            <div class="flex justify-between items-center py-2">
+              <span class="text-text-secondary">Withdrawal Time</span>
+              <span class="text-white font-medium">{{ site1.withdrawalTime }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VS Badge -->
+      <div class="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+        <div class="w-16 h-16 bg-neon-purple rounded-full flex items-center justify-center text-white font-bold text-xl shadow-neon-purple">
+          VS
+        </div>
+      </div>
+
+      <!-- Site 2 -->
+      <div class="bg-card-bg/80 backdrop-blur-sm rounded-2xl border border-border-subtle overflow-hidden group hover:border-neon-purple/50 transition-all">
+        <div class="p-6 lg:p-8 text-center border-b border-border-subtle bg-gradient-to-b from-neon-purple/5 to-transparent">
+          {% if site2.logo %}
+          <img src="{{ site2.logo }}" alt="{{ site2.name }}" class="h-16 mx-auto mb-4">
+          {% endif %}
+          <h2 class="text-2xl font-bold text-white mb-2">{{ site2.name }}</h2>
+          <div class="flex justify-center items-center gap-2 mb-4">
+            <div class="text-3xl font-bold text-neon-purple">{{ site2.score }}</div>
+            <div class="text-text-muted">/100</div>
+          </div>
+          <a href="{{ site2.url }}?utm_source=slotpicks&utm_medium=affiliate&utm_campaign={{ title | slugify }}" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold bg-neon-purple hover:bg-neon-purple/80 text-white rounded-lg shadow-neon-purple transition-all" target="_blank" rel="noopener">
+            Visit {{ site2.name }}
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="p-6 lg:p-8">
+          <div class="space-y-4">
+            <div class="flex justify-between items-center py-2 border-b border-border-subtle">
+              <span class="text-text-secondary">Welcome Bonus</span>
+              <span class="text-white font-medium">{{ site2.welcomeBonus }}</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-border-subtle">
+              <span class="text-text-secondary">Min Deposit</span>
+              <span class="text-white font-medium">{{ site2.minDeposit }}</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-border-subtle">
+              <span class="text-text-secondary">Wagering</span>
+              <span class="text-white font-medium">{{ site2.wagering }}</span>
+            </div>
+            <div class="flex justify-between items-center py-2">
+              <span class="text-text-secondary">Withdrawal Time</span>
+              <span class="text-white font-medium">{{ site2.withdrawalTime }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<!-- Detailed Comparison Content -->
+<section class="py-12 lg:py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Main Content -->
+    <article class="bg-card-bg/60 backdrop-blur-sm rounded-2xl border border-border-subtle p-6 lg:p-10">
+      <div class="prose prose-invert prose-lg max-w-none
+        prose-headings:text-white prose-headings:font-bold
+        prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:border-b prose-h2:border-border-subtle prose-h2:pb-3
+        prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-h3:text-neon-green
+        prose-p:text-text-secondary prose-p:leading-relaxed prose-p:mb-4
+        prose-strong:text-white
+        prose-a:text-neon-blue prose-a:no-underline hover:prose-a:text-neon-green
+        prose-ul:text-text-secondary prose-ul:my-4 prose-li:marker:text-neon-green prose-li:mb-2
+        prose-ol:text-text-secondary prose-ol:my-4 prose-li:marker:text-neon-green
+        prose-table:border-border-subtle prose-th:bg-bg-secondary prose-th:text-white prose-td:border-border-subtle">
+        {{ content | safe }}
+      </div>
+    </article>
+
+    <!-- Winner Section -->
+    {% if winner %}
+    <div class="mt-8 bg-gradient-to-r from-neon-gold/10 to-neon-green/10 rounded-2xl border border-neon-gold/30 p-6 lg:p-8 text-center">
+      <div class="inline-flex items-center justify-center w-16 h-16 bg-neon-gold/20 rounded-full mb-4">
+        <svg class="w-8 h-8 text-neon-gold" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"></path>
+        </svg>
+      </div>
+      <h3 class="text-2xl font-bold text-white mb-2">Our Recommendation</h3>
+      <p class="text-lg text-neon-gold font-semibold mb-2">{{ winner.name }}</p>
+      <p class="text-text-secondary mb-6">{{ winner.reason }}</p>
+      <a href="{{ winner.url }}?utm_source=slotpicks&utm_medium=affiliate&utm_campaign={{ title | slugify }}" class="btn-primary inline-flex items-center px-8 py-3" target="_blank" rel="noopener">
+        Visit {{ winner.name }}
+        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+        </svg>
+      </a>
+    </div>
+    {% endif %}
+
+    <!-- Related Comparisons -->
+    {% if relatedComparisons %}
+    <div class="mt-12">
+      <h3 class="text-2xl font-bold text-white mb-6">More Comparisons</h3>
+      <div class="grid md:grid-cols-2 gap-4">
+        {% for comparison in relatedComparisons %}
+        <a href="/compare/{{ comparison.slug }}/" class="group block p-5 bg-card-bg/60 backdrop-blur-sm rounded-xl border border-border-subtle hover:border-neon-blue/50 transition-all">
+          <h4 class="font-semibold text-white group-hover:text-neon-blue transition-colors mb-2">{{ comparison.title }}</h4>
+          <p class="text-sm text-text-secondary">{{ comparison.description }}</p>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+</div>

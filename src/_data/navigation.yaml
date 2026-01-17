@@ -4,22 +4,53 @@ firstLevelItems:
   - text: Slots
     url: /slots/
     secondLevelItems:
-      - text: Slots
-        url: /sites/slots/
+      - text: All Slots
+        url: /slots/
       - text: Top Rated Slots
-        url: /sites/topratedslots/
+        url: /top-rated-slots/
       - text: New Slots
-        url: /sites/newslots/
+        url: /new-slots/
   - text: Casinos
     url: /casinos/
     secondLevelItems:
-      - text: Casinos
-        url: /sites/casinos/
+      - text: All Casinos
+        url: /casinos/
       - text: Top Rated Casinos
-        url: /sites/topratedcasinos/
-      - text: New Casino
-        url: /sites/newcasinos/
+        url: /top-rated-casinos/
+      - text: New Casinos
+        url: /new-casinos/
+  - text: Games
+    url: /games/
+    secondLevelItems:
+      - text: Slot Guides
+        url: /games/
+      - text: Starburst
+        url: /games/starburst/
+      - text: Book of Dead
+        url: /games/book-of-dead/
+      - text: Sweet Bonanza
+        url: /games/sweet-bonanza/
+  - text: Strategy
+    url: /strategy/
+    secondLevelItems:
+      - text: All Guides
+        url: /strategy/
+      - text: Bankroll Management
+        url: /strategy/bankroll-management/
+      - text: Understanding RTP
+        url: /strategy/understanding-rtp/
+      - text: Responsible Gambling
+        url: /strategy/responsible-gambling/
+  - text: Compare
+    url: /compare/
+    secondLevelItems:
+      - text: All Comparisons
+        url: /compare/
+      - text: Best Bonuses
+        url: /compare/best-welcome-bonuses/
+      - text: Fastest Withdrawals
+        url: /compare/fastest-withdrawals/
+      - text: Best for Slots
+        url: /compare/best-for-slots/
   - text: News
     url: /news/
-  - text: FAQs
-    url: /frequently-asked-questions-faqs/
