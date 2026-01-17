@@ -143,14 +143,14 @@
         "numberOfItems": "{{ collections[listCollection] | length if collections[listCollection] else '10' }}",
         "itemListElement": [
           {% if collections[listCollection] %}
-          {% for item in collections[listCollection] | head(10) %}
+          {% set itemCount = 0 %}
+          {% for item in collections[listCollection] %}{% if loop.index <= 10 %}{% if itemCount > 0 %},{% endif %}
           {
             "@type": "ListItem",
             "position": {{ loop.index }},
             "name": "{{ item.data.title }}",
             "url": "{{ env.site }}{{ item.url }}"
-          }{{ "" if loop.last else "," }}
-          {% endfor %}
+          }{% set itemCount = itemCount + 1 %}{% endif %}{% endfor %}
           {% endif %}
         ],
         "url": "{{ env.site }}{{ page.url }}",
