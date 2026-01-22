@@ -246,14 +246,20 @@
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "Home",
-        "item": "{{ env.site }}/"
+        "item": {
+          "@type": "WebPage",
+          "@id": "{{ env.site }}/",
+          "name": "Home"
+        }
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "{{ seoTitle | default(title) | safe }}",
-        "item": "{{ env.site }}{{ page.url }}"
+        "item": {
+          "@type": "WebPage",
+          "@id": "{{ env.site }}{{ page.url }}",
+          "name": "{{ seoTitle | default(title) | safe }}"
+        }
       }
     ]
   }
