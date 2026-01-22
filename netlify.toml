@@ -46,16 +46,16 @@
   status = 301
   force = true
 
-# Old article URLs to new guides structure
+# Old article URLs to new /news/ structure
 [[redirects]]
   from = "/best-slot-sites-uk-your-ultimate-guide-to-online-slots-in-2025/"
-  to = "/guides/best-slot-sites-uk/"
+  to = "/news/best-slot-sites-uk/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/choose-the-best-online-slot-game-a-guide/"
-  to = "/guides/choose-best-slot-game/"
+  to = "/news/choose-best-slot-game/"
   status = 301
   force = true
 

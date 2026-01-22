@@ -13,6 +13,7 @@ type: article
 tags:
   - article
   - news
+permalink: /news/best-slot-sites-uk/
 ---
 ## Introduction
 

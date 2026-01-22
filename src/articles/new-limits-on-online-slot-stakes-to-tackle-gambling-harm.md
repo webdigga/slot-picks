@@ -11,6 +11,7 @@ imageAlt: online slots uk law changes
 type: article
 tags:
   - news
+permalink: /news/slot-stake-limits/
 ---
 ## UK Cracks Down on Online Slots: What These New Betting Limits Mean for You
 
