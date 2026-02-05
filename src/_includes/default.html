@@ -89,6 +89,8 @@
 
     {{ content | safe }}
 
+    {% include "./partials/ad-banner.html" %}
+
     {% include "./partials/footer.html" %}
 
     {% if env.isProd %}
