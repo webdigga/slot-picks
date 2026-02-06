@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 460">
+  <defs>
+    <linearGradient id="wamGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4B000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wamGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00FF88;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00CC6A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grayBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6B7280;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4B5563;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glowG" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#FFD700" flood-opacity="0.25"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowGr" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#00FF88" flood-opacity="0.25"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="650" height="460" fill="#1A1A2E" rx="12"/>
+  <rect x="1" y="1" width="648" height="458" fill="none" stroke="#2D2D44" stroke-width="1" rx="12"/>
+
+  <!-- Title -->
+  <text x="325" y="32" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Win A Million vs UK Lotteries</text>
+  <text x="325" y="52" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#B8B8B8">Longer bars = better odds for the player</text>
+
+  <!-- Section 1: Jackpot Odds -->
+  <text x="30" y="82" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#FFD700">JACKPOT ODDS</text>
+  <line x1="30" y1="90" x2="620" y2="90" stroke="#2D2D44" stroke-width="1"/>
+
+  <!-- Win A Million jackpot bar (280px) -->
+  <text x="188" y="118" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#FFD700">Win A Million</text>
+  <rect x="195" y="102" width="280" height="30" fill="url(#wamGold)" rx="4" filter="url(#glowG)"/>
+  <text x="485" y="122" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#FFD700">1 in 33.4M</text>
+  <text x="590" y="122" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6B7280">£1M</text>
+
+  <!-- UK Lotto jackpot bar (207px) -->
+  <text x="188" y="160" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#B8B8B8">UK Lotto</text>
+  <rect x="195" y="144" width="207" height="30" fill="url(#grayBar)" rx="4"/>
+  <text x="412" y="164" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#B8B8B8">1 in 45.1M</text>
+  <text x="530" y="164" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6B7280">~£7.5M avg</text>
+
+  <!-- EuroMillions jackpot bar (67px) -->
+  <text x="188" y="202" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#B8B8B8">EuroMillions</text>
+  <rect x="195" y="186" width="67" height="30" fill="url(#grayBar)" rx="4"/>
+  <text x="272" y="206" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#B8B8B8">1 in 139.8M</text>
+  <text x="400" y="206" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6B7280">~£40M+ avg</text>
+
+  <!-- Divider -->
+  <line x1="30" y1="240" x2="620" y2="240" stroke="#2D2D44" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Section 2: Any Prize Odds -->
+  <text x="30" y="270" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#00FF88">ANY PRIZE ODDS</text>
+  <line x1="30" y1="278" x2="620" y2="278" stroke="#2D2D44" stroke-width="1"/>
+
+  <!-- Win A Million any prize bar (280px) -->
+  <text x="188" y="306" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#00FF88">Win A Million</text>
+  <rect x="195" y="290" width="280" height="30" fill="url(#wamGreen)" rx="4" filter="url(#glowGr)"/>
+  <text x="485" y="310" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#00FF88">1 in 8.5</text>
+  <text x="555" y="310" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6B7280">from £1</text>
+
+  <!-- UK Lotto any prize bar (256px) -->
+  <text x="188" y="348" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#B8B8B8">UK Lotto</text>
+  <rect x="195" y="332" width="256" height="30" fill="url(#grayBar)" rx="4"/>
+  <text x="461" y="352" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#B8B8B8">1 in 9.3</text>
+  <text x="535" y="352" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6B7280">Free Lucky Dip</text>
+
+  <!-- EuroMillions any prize bar (183px) -->
+  <text x="188" y="390" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#B8B8B8">EuroMillions</text>
+  <rect x="195" y="374" width="183" height="30" fill="url(#grayBar)" rx="4"/>
+  <text x="388" y="394" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#B8B8B8">1 in 13</text>
+  <text x="455" y="394" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6B7280">from £2.50</text>
+
+  <!-- Key insight -->
+  <rect x="115" y="418" width="420" height="24" fill="#FFD700" fill-opacity="0.08" rx="12"/>
+  <text x="325" y="435" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#FFD700">Win A Million offers the best jackpot odds of all three draws</text>
+
+  <!-- Source -->
+  <text x="325" y="454" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6B7280">Sources: winamillion.com, national-lottery.co.uk (February 2026)</text>
+</svg>
