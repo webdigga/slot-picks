@@ -254,6 +254,10 @@ a:hover {
   @apply bg-neon-gold/20 text-neon-gold border border-neon-gold/30;
 }
 
+.badge-blue {
+  @apply bg-neon-blue/20 text-neon-blue border border-neon-blue/30;
+}
+
 /*=============================================
   ANCHOR STYLES
 =============================================*/

@@ -19,6 +19,8 @@ firstLevelItems:
         url: /top-rated-casinos/
       - text: New Casinos
         url: /new-casinos/
+  - text: Draws
+    url: /draws/
   - text: Games
     url: /games/
     secondLevelItems:

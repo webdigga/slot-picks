@@ -1,0 +1,141 @@
+{% import "./checklist-item.html" as checkListItemMacro with context %}
+
+{% macro draw(draw) %}
+  <article class="card card-glow group relative overflow-hidden">
+
+    <div class="block p-5 sm:p-6">
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 lg:gap-6 items-start">
+
+        <!-- Logo Column -->
+        <div class="flex flex-col">
+
+          <!-- Brand Logo Container -->
+          <div
+            class="flex justify-center mb-4 py-3 rounded-lg items-center min-h-[90px] max-h-[90px] border border-border-dark/50 overflow-hidden"
+            style="background-color: {{ draw.data.imageColour }};">
+            <img
+              src="{{ draw.data.brand }}"
+              alt="{{ draw.data.imageAlt }}"
+              class="w-full h-auto max-w-[220px] max-h-[60px] object-contain"
+              width="220"
+              height="60"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+
+          <!-- Star Rating -->
+          <div class="flex items-center justify-center sm:justify-start gap-1">
+            {% set maxIterations = 5 %}
+            {% for i in range(maxIterations) %}
+              {% if i < draw.data.rating %}
+                <svg class="w-5 h-5 star-filled" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+              {% else %}
+                <svg class="w-5 h-5 star-empty" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+              {% endif %}
+            {% endfor %}
+          </div>
+
+          <!-- Draw Name (visible on mobile) -->
+          <h3 class="text-text-primary font-semibold text-base sm:hidden text-center">
+            {{ draw.data.title }}
+          </h3>
+
+        </div>
+
+        <!-- Key Stats Column -->
+        <div class="flex flex-col gap-3">
+
+          <!-- Jackpot -->
+          <div>
+            <span class="text-text-muted text-xs uppercase tracking-wider">Jackpot</span>
+            <p class="text-neon-gold font-bold text-xl mb-0">{{ draw.data.jackpot }}</p>
+          </div>
+
+          <!-- Entry Cost -->
+          <div class="flex items-center gap-2">
+            <span class="w-7 h-7 rounded-md bg-neon-green/15 flex items-center justify-center flex-shrink-0">
+              <svg class="w-4 h-4 text-neon-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </span>
+            <div>
+              <span class="text-text-primary text-sm font-semibold">{{ draw.data.entryCost }}</span>
+            </div>
+          </div>
+
+          <!-- Draw Frequency -->
+          <div class="flex items-center gap-2">
+            <span class="w-7 h-7 rounded-md bg-neon-blue/15 flex items-center justify-center flex-shrink-0">
+              <svg class="w-4 h-4 text-neon-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+            </span>
+            <div>
+              <span class="text-text-primary text-sm font-semibold">{{ draw.data.drawFrequency }}</span>
+            </div>
+          </div>
+
+          <!-- Odds -->
+          <div class="flex items-center gap-2">
+            <span class="w-7 h-7 rounded-md bg-neon-purple/15 flex items-center justify-center flex-shrink-0">
+              <svg class="w-4 h-4 text-neon-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </span>
+            <div>
+              <span class="text-text-primary text-sm font-semibold">{{ draw.data.anyPrizeOdds }}</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Highlights Column -->
+        <div class="sm:col-span-2">
+          <ul class="grid sm:grid-cols-2 gap-x-4 gap-y-1">
+            {% for highlight in draw.data.highlights %}
+              {{
+                checkListItemMacro.checkListItem(
+                  title=highlight.text,
+                  classes='items-start'
+                )
+              }}
+            {% endfor %}
+          </ul>
+        </div>
+
+        <!-- CTA Column -->
+        <div class="sm:col-span-2 lg:col-span-1 flex flex-col items-center lg:items-stretch">
+          <a
+            href="{{ draw.data.externalUrl }}?utm_source=slotpicks&utm_medium=affiliate&utm_campaign={{ draw.data.title | slugify }}"
+            target="_blank"
+            rel="noopener"
+            class="mb-2 rounded-lg cursor-pointer inline-flex items-center justify-center py-3 px-6 font-semibold transition-all duration-300 transform hover:-translate-y-0.5 bg-neon-blue text-bg-primary hover:bg-neon-blue-dim shadow-neon-blue hover:shadow-neon-blue w-full font-bold">
+            Play Now
+          </a>
+
+          <a href="{{ draw.data.reviewUrl }}" class="text-neon-blue hover:text-neon-green text-sm font-medium text-center transition-colors mb-2">
+            Read Review
+          </a>
+
+          <p class="text-neon-gold text-sm font-medium text-center lg:text-left mb-0">
+            {{ draw.data.jackpot }} Jackpot
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Operator Info -->
+      <div class="mt-5 pt-4 border-t border-border-dark text-text-muted text-xs">
+        {{ draw.data.operatorInfo }}
+      </div>
+
+    </div>
+
+  </article>
+{% endmacro %}

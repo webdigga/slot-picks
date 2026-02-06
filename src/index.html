@@ -12,6 +12,7 @@ eleventyComputed:
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
 {% import "./_includes/components/sitesList.html" as sitesList with context %}
+{% import "./_includes/components/drawsList.html" as drawsList with context %}
 {% import "./_includes/components/seoIntroText.html" as seoIntroText with context %}
 
 <div class="bg-bg-primary min-h-screen">
@@ -60,6 +61,29 @@ eleventyComputed:
       </a>
     </div>
     {{ sitesList.listOfSites(title="", siteType='casinos') }}
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="divider-purple"></div>
+  </div>
+
+  <!-- Draws & Instant Win Games Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-10">
+      <div>
+        <span class="badge badge-blue mb-3">New</span>
+        <h2 class="text-text-primary text-2xl md:text-3xl mb-2">Draws & Instant Win Games</h2>
+        <p class="text-text-secondary max-w-2xl">UK prize draws and instant win games reviewed for fairness, odds, and value.</p>
+      </div>
+      <a href="/draws/" class="mt-4 md:mt-0 text-neon-blue hover:text-neon-blue-dim flex items-center gap-2 transition-colors">
+        View All Draws
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+      </a>
+    </div>
+    {{ drawsList.listOfDraws(title="", drawType='draws') }}
   </section>
 
   <!-- Content Section -->
