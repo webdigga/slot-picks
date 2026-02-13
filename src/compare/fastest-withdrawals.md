@@ -1,5 +1,5 @@
 ---
-title: Fastest Withdrawal Casinos 2025
+title: Fastest Withdrawal Casinos 2026
 description: Compare withdrawal speeds at UK online casinos. Find out which sites process your winnings fastest and offer the quickest cashout times.
 permalink: /compare/fastest-withdrawals/
 tags:

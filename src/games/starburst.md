@@ -20,9 +20,9 @@ features:
     description: Fast-paced gameplay perfect for quick sessions
 whereToPlay:
   - name: BetMGM Casino
-    bonus: "100% up to £200 + 100 Free Spins"
+    bonus: "200 Free Spins on Big Bass Splash when you play £10"
   - name: All British Casino
-    bonus: "100% up to £100 + 10% Cashback"
+    bonus: "100% up to £100 + 110 Free Spins"
   - name: Dream Vegas
     bonus: "£300 Welcome Bonus + 150 Spins"
 tips:

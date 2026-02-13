@@ -1,5 +1,5 @@
 ---
-title: Best Casinos for Slots 2025
+title: Best Casinos for Slots 2026
 description: Discover the best UK casinos for slot players. We compare game selection, providers, jackpots, and slot-specific bonuses to find the top sites.
 permalink: /compare/best-for-slots/
 tags:
@@ -43,7 +43,7 @@ We've evaluated UK casinos on all these factors to find the best destinations fo
 
 **Jackpots:** MGM Grand Millions regularly reaches seven figures
 
-**Welcome Offer:** 100% up to £200 + 100 Free Spins
+**Welcome Offer:** 200 Free Spins on Big Bass Splash when you play £10
 
 **Slot Rating: 5/5**
 
@@ -107,7 +107,7 @@ We've evaluated UK casinos on all these factors to find the best destinations fo
 
 **Jackpots:** Good selection available
 
-**Welcome Offer:** Deposit £10 Get 200% Bonus + 30 Free Spins
+**Welcome Offer:** 100% Games Bonus up to £100 + 30 Free Spins
 
 **Slot Rating: 4/5**
 

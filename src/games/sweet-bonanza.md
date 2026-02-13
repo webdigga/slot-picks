@@ -20,11 +20,11 @@ features:
     description: Optional 25% stake increase doubles scatter frequency
 whereToPlay:
   - name: BetMGM Casino
-    bonus: "100% up to £200 + 100 Free Spins"
+    bonus: "200 Free Spins on Big Bass Splash when you play £10"
   - name: Amazon Slots
-    bonus: "500 Free Spins"
+    bonus: "Up to 500 Free Spins via Mega Reel"
   - name: All British Casino
-    bonus: "100% up to £100 + 10% Cashback"
+    bonus: "100% up to £100 + 110 Free Spins"
 tips:
   - The Ante Bet significantly increases bonus frequency - worth the extra cost
   - Multiplier bombs are the key to big wins - hope for several in one spin

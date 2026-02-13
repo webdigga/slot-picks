@@ -20,9 +20,9 @@ features:
     description: Lion wild doubles all wins when substituting
 whereToPlay:
   - name: BetMGM Casino
-    bonus: "100% up to £200 + 100 Free Spins"
+    bonus: "200 Free Spins on Big Bass Splash when you play £10"
   - name: All British Casino
-    bonus: "100% up to £100 + 10% Cashback"
+    bonus: "100% up to £100 + 110 Free Spins"
 tips:
   - Higher stakes increase your chances of triggering the jackpot wheel
   - The Mega Jackpot seeds at £1 million - always check the current amount

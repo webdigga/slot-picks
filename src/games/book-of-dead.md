@@ -20,11 +20,11 @@ features:
     description: Free spins can be retriggered for up to 100 total spins
 whereToPlay:
   - name: BetMGM Casino
-    bonus: "100% up to £200 + 100 Free Spins"
+    bonus: "200 Free Spins on Big Bass Splash when you play £10"
   - name: Voodoo Dreams
     bonus: "100% up to £50 + 50 Free Spins on Book of Dead"
   - name: All British Casino
-    bonus: "100% up to £100 + 10% Cashback"
+    bonus: "100% up to £100 + 110 Free Spins"
 tips:
   - Be prepared for dry spells - high volatility means patience is required
   - The free spins are where the big wins happen - keep playing until you trigger them
