@@ -140,12 +140,17 @@ eleventyComputed:
                 <h3 class="text-text-primary font-bold text-lg mb-3 line-clamp-2 group-hover:text-neon-green transition-colors">
                   {{ newsItem.data.title }}
                 </h3>
-                <span class="inline-flex items-center text-neon-blue text-sm font-medium group-hover:text-neon-green transition-colors">
-                  Read More
-                  <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                  </svg>
-                </span>
+                <div class="flex items-center justify-between">
+                  <span class="inline-flex items-center text-neon-blue text-sm font-medium group-hover:text-neon-green transition-colors">
+                    Read More
+                    <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                  </span>
+                  <span class="text-text-muted text-xs">
+                    {{ newsItem.templateContent | readingTime }}
+                  </span>
+                </div>
               </div>
 
             </a>

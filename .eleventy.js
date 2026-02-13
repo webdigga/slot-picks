@@ -72,6 +72,15 @@ module.exports = function (eleventyConfig) {
     return md.render(markdownString);
   });
 
+  // Reading time filter (~230 words per minute)
+  eleventyConfig.addFilter("readingTime", (content) => {
+    if (!content) return "1 min read";
+    const text = content.replace(/<[^>]+>/g, '').replace(/[#*\[\]()_|`>-]/g, '');
+    const words = text.trim().split(/\s+/).length;
+    const minutes = Math.max(1, Math.round(words / 230));
+    return `${minutes} min read`;
+  });
+
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));

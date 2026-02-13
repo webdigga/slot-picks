@@ -167,14 +167,15 @@
         "description": "{{ description }}",
         "image": {
           "@type": "ImageObject",
-          "url": "{{ env.site }}/_includes/static/img/social-share.jpg",
+          "url": "{{ env.site }}{{ imageForSeo if imageForSeo else '/_includes/static/img/social-share.jpg' }}",
           "width": 1200,
           "height": 630
         },
         "author": {
           "@type": "Person",
-          "name": "Slot Picks Editorial Team",
-          "url": "{{ env.site }}"
+          "name": "{{ settings.editor.name }}",
+          "url": "{{ env.site }}",
+          "image": "{{ env.site }}{{ settings.editor.image }}"
         },
         "publisher": {
           "@type": "Organization",
