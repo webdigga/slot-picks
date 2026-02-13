@@ -13,7 +13,7 @@ highlights:
   - text: "Mobile App "
   - text: VIP Loyalty Program
   - text: Fast & Secure Payments
-welcomeOffer: Free Spins + Cash Match Bonus
+welcomeOffer: 100% Bonus up to £50 + 50 Free Spins
 tags:
   - slots
 type: site

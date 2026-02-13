@@ -13,7 +13,7 @@ highlights:
   - text: Licensed & Trusted
   - text: Quality Game Selection
   - text: No Wagering on Cashback
-welcomeOffer: 100% up to £100 + 10% Cashback
+welcomeOffer: 100% up to £100 + 110 Free Spins
 tags:
   - casinos
   - topRatedCasinos

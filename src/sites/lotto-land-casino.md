@@ -13,7 +13,7 @@ highlights:
   - text: Huge Selection of Games
   - text: Dedicated Mobile Apps
   - text: Responsible Gambling Tools
-welcomeOffer: Upto 250 Free Spins
+welcomeOffer: 50 Free Spins on Big Bass Bonanza when you stake £10
 tags:
   - casinos
   - newCasinos

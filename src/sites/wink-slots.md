@@ -13,7 +13,7 @@ highlights:
   - text: Daily Tasks & Challenges
   - text: Cashback Offers
   - text: Interactive Gameplay
-welcomeOffer: Deposit £10 & Get  200% BONUS  +30 FREE SPINS
+welcomeOffer: 100% Games Bonus up to £100 + 30 Free Spins
 tags:
   - slots
 type: site

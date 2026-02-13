@@ -13,7 +13,7 @@ highlights:
   - text: Daily Spins
   - text: Clean Site & Mobile Friendly
   - text: Free Prize Wheel
-welcomeOffer: Deposit £10, Play With £30
+welcomeOffer: 200 Free Spins on Bee Keeper, No Wagering
 tags:
   - newSlots
 type: site

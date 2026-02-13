@@ -13,7 +13,7 @@ highlights:
   - text: For Pure Slot  Enthusiasts
   - text: Detailed Slot Game Reviews
   - text: Fun & Safe
-welcomeOffer: Free Spins & Cash Prizes
+welcomeOffer: Free Slot Tournaments & Cash Prizes
 tags:
   - newSlots
 type: site

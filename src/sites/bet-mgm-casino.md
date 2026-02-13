@@ -13,7 +13,7 @@ highlights:
   - text: Great Selection Of Games
   - text: Fast & Flexible Payments
   - text: Mobile-First Design
-welcomeOffer: 100% Bonus up to £200 + 100 Free Spins
+welcomeOffer: 200 Free Spins on Big Bass Splash when you play £10
 tags:
   - casinos
   - topRatedCasinos

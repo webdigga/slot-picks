@@ -13,7 +13,7 @@ highlights:
   - text: Best Live Casino Games
   - text: 2300+ Games
   - text: No Fees on Deposits & Withdrawals
-welcomeOffer: 100% Welcome Bonus Up To £200 + 25 Wager-Free Spins
+welcomeOffer: 100% Deposit Match up to £100
 tags:
   - slots
   - newSlots

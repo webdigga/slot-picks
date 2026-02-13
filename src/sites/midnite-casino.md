@@ -13,7 +13,7 @@ highlights:
   - text: Slingo & Bingo Games
   - text: Ongoing Promotions & Bonuses
   - text: 24/7 Live Chat Support
-welcomeOffer: Bet £20 Get 100 Fee Spins
+welcomeOffer: Wager £20 Get 100 Free Spins
 tags:
   - casinos
 type: site

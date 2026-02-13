@@ -13,7 +13,7 @@ highlights:
   - text: Over 15+ Games Providers
   - text: Mobile Optimised Site
   - text: Flexible Payment Options
-welcomeOffer: "100% bonus up to £100! "
+welcomeOffer: "50 Cash Spins, No Wagering Requirements"
 tags:
   - casinos
   - newCasinos

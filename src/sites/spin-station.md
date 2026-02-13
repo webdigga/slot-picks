@@ -13,7 +13,7 @@ highlights:
   - text: Extensive Games List
   - text: Ongoing Incentives & Promotions
   - text: Secure & Flexible Payment Options
-welcomeOffer: 20 Bonus Spins + 100% Welcome Bonus up to £250
+welcomeOffer: Up to £1,250 Bonus + 100 Free Spins across 3 Deposits
 tags:
   - newSlots
   - newCasinos

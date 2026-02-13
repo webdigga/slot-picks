@@ -13,7 +13,7 @@ highlights:
   - text: Cash Back Fridays
   - text: New Games Added Weekly
   - text: Unique Bonus Features
-welcomeOffer: 100% Bonus Up tp £50 + Free Spins
+welcomeOffer: Up to 140 Free Spins over 7 Days
 tags:
   - newSlots
 type: site

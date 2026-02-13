@@ -13,7 +13,7 @@ highlights:
   - text: Good Security & Licensing
   - text: Optimised For Mobile
   - text: Popular Slot Games
-welcomeOffer: Deposit £10 For Free Spins & Bonuses
+welcomeOffer: Spin the Wheel for up to 450 Bonus Spins
 tags:
   - newSlots
 type: site

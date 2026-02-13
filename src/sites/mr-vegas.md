@@ -13,7 +13,7 @@ highlights:
   - text: Seamless Mobile Gaming
   - text: Popular Slot Titles
   - text: Free Play Options
-welcomeOffer: " 100% Bonus up to £200"
+welcomeOffer: "100% up to £200 + 11 Free Spins"
 tags:
   - newCasinos
   - newSlots
