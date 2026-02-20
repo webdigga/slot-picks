@@ -4,6 +4,7 @@ imageAlt: All British Casino
 imageColour: "#010e2b"
 borderColour: "#010e2b"
 title: All British Casino
+date: 2025-01-01
 score: 88
 rating: 4
 highlights:

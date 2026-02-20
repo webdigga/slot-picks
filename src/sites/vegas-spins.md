@@ -4,6 +4,7 @@ imageAlt: vegas spins
 imageColour: "#fffdfd"
 borderColour: "#df9bc4"
 title: Vegas Spins
+date: 2025-01-01
 score: 70
 rating: 3
 highlights:

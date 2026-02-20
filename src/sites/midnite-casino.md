@@ -4,6 +4,7 @@ imageAlt: midnite casino
 imageColour: "#73ff00"
 borderColour: "#73ff00"
 title: Midnite Casino
+date: 2025-01-01
 score: 85
 rating: 4
 highlights:

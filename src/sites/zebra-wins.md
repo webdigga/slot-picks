@@ -4,6 +4,7 @@ imageAlt: zebra wins
 imageColour: "#000000"
 borderColour: "#ffffff"
 title: Zebra Wins
+date: 2025-01-01
 score: 80
 rating: 4
 highlights:

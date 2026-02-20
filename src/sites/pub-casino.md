@@ -4,6 +4,7 @@ imageAlt: Pub Casino
 imageColour: "#0c0c0c"
 borderColour: "#0c0c0c"
 title: Pub Casino
+date: 2025-01-01
 score: 75
 rating: 3
 highlights:

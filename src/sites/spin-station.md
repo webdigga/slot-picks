@@ -4,6 +4,7 @@ imageAlt: spin station slots
 imageColour: "#ffffff"
 borderColour: "#ffffff"
 title: Spin Station
+date: 2025-01-01
 score: 80
 rating: 4
 highlights:

@@ -141,6 +141,14 @@ collections:
         default: "site"
       - { label: External URL, name: externalUrl, widget: string }
       - {
+        label: "Date Added",
+        name: "date",
+        widget: "datetime",
+        date_format: "YYYY-MM-DD",
+        time_format: false,
+        hint: "*Controls ordering on listing pages. Newest dates appear first.*"
+      }
+      - {
         label: "T&Cs",
         name: "termsAndConditions",
         widget: "string"

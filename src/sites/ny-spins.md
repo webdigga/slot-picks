@@ -4,6 +4,7 @@ imageAlt: ny spins
 imageColour: "#ffffff"
 borderColour: "#323232"
 title: NY Spins
+date: 2025-01-01
 score: 90
 rating: 4
 highlights:

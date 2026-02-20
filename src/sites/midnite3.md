@@ -4,6 +4,7 @@ imageAlt: bet365
 imageColour: "#005440"
 borderColour: "#005440"
 title: bet365 Casino
+date: 2025-01-01
 score: 95
 rating: 5
 highlights:

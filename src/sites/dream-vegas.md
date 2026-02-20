@@ -4,6 +4,7 @@ imageAlt: dream vegas
 imageColour: "#000000"
 borderColour: "#000000"
 title: Dream Vegas
+date: 2025-01-01
 score: 80
 rating: 4
 highlights:

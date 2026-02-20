@@ -4,6 +4,7 @@ imageAlt: Lottoland Casino
 imageColour: "#ffffff"
 borderColour: "#69a507"
 title: Lottoland Casino
+date: 2025-01-01
 score: 90
 rating: 4
 highlights:

@@ -14,7 +14,7 @@
     {% endif %}
 
     <div class="grid grid-cols-1 gap-6">
-      {% for site in collections[siteType] %}
+      {% for site in collections[siteType] | reverse %}
         {{ siteMacro.site(site) }}
       {% endfor %}
     </div>

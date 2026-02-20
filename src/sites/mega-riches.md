@@ -4,6 +4,7 @@ imageAlt: Mega Riches
 imageColour: "#0c165b"
 borderColour: "#0c165b"
 title: Mega Riches
+date: 2025-01-01
 score: 95
 rating: 5
 highlights:

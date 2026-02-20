@@ -4,6 +4,7 @@ imageAlt: Coral Casino
 imageColour: "#0119b3"
 borderColour: "#0119b3"
 title: Coral
+date: 2025-01-01
 score: 80
 rating: 5
 highlights:

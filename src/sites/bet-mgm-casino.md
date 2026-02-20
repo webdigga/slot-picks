@@ -4,6 +4,7 @@ imageAlt: BetMGM Casino
 imageColour: "#000000"
 borderColour: "#000000"
 title: BetMGM Casino
+date: 2025-01-01
 score: 95
 rating: 5
 highlights:

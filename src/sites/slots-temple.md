@@ -4,6 +4,7 @@ imageAlt: slots temple
 imageColour: "#000000"
 borderColour: "#ffffff"
 title: Slots Temple
+date: 2025-01-01
 score: 80
 rating: 4
 highlights:

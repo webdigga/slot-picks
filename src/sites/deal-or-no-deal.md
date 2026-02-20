@@ -4,6 +4,7 @@ imageAlt: deal or no deal slots
 imageColour: "#111111"
 borderColour: "#111111"
 title: Deal Or No Deal
+date: 2025-01-01
 score: 75
 rating: 4
 highlights:

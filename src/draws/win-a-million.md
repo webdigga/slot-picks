@@ -3,6 +3,7 @@ brand: /_includes/static/img/win-a-million.avif
 imageAlt: Win A Million
 imageColour: "#1A1A2E"
 title: Win A Million
+date: 2025-01-01
 rating: 5
 jackpot: "£1,000,000"
 entryCost: "From 50p"

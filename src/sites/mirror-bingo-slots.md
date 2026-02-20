@@ -4,6 +4,7 @@ imageAlt: Mirror Bingo Slots
 imageColour: "#0e0d0d"
 borderColour: "#0e0d0d"
 title: Mirror Bingo Slots
+date: 2025-01-01
 score: 90
 rating: 4
 highlights:

@@ -4,6 +4,7 @@ imageAlt: voodoo dreams
 imageColour: "#151615"
 borderColour: "#151615"
 title: Voodoo Dreams
+date: 2025-01-01
 score: 90
 rating: 4
 highlights:

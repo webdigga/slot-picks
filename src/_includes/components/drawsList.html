@@ -13,7 +13,7 @@
     {% endif %}
 
     <div class="grid grid-cols-1 gap-6">
-      {% for draw in collections[drawType] %}
+      {% for draw in collections[drawType] | reverse %}
         {{ drawMacro.draw(draw) }}
       {% endfor %}
     </div>

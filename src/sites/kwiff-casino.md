@@ -4,6 +4,7 @@ imageAlt: Kwiff Casino
 imageColour: "#8225fa"
 borderColour: "#8225fa"
 title: Kwiff Casino
+date: 2025-01-01
 score: 90
 rating: 5
 highlights:

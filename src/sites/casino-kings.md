@@ -4,6 +4,7 @@ imageAlt: Casino Kings
 imageColour: "#282b30"
 borderColour: "#282b30"
 title: Casino Kings
+date: 2025-01-01
 score: 85
 rating: 4
 highlights:

@@ -4,6 +4,7 @@ imageAlt: wink slots
 imageColour: "#15113e"
 borderColour: "#15113e"
 title: Wink Slots
+date: 2025-01-01
 score: 90
 rating: 4
 highlights:

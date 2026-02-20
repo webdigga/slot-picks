@@ -4,6 +4,7 @@ imageAlt: Neptune Play
 imageColour: "#121111"
 borderColour: "#121111"
 title: Neptune Play
+date: 2025-01-01
 score: 90
 rating: 4
 highlights:

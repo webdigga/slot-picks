@@ -4,6 +4,7 @@ imageAlt: mr vegas slots
 imageColour: "#ffffff"
 borderColour: "#ffffff"
 title: Mr Vegas
+date: 2025-01-01
 score: 70
 rating: 4
 highlights:

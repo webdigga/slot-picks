@@ -4,6 +4,7 @@ imageAlt: Amazon Slots
 imageColour: "#000000"
 borderColour: "#000000"
 title: Amazon Slots
+date: 2025-01-01
 score: 80
 rating: 4
 highlights:

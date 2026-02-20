@@ -4,6 +4,7 @@ imageAlt: Smooth Spins
 imageColour: "#520880"
 borderColour: "#ffffff"
 title: Smooth Spins
+date: 2025-01-01
 score: 60
 rating: 3
 highlights:
