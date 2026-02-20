@@ -53,6 +53,11 @@ module.exports = function (eleventyConfig) {
     );
   }); 
 
+  // Current month and year at build time (e.g. "February 2026")
+  eleventyConfig.addShortcode("buildDate", () => {
+    return DateTime.now().toFormat("LLLL yyyy");
+  });
+
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight);
 
