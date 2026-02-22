@@ -68,19 +68,19 @@ However, context matters. Land-based slot machines often run at 85-90% RTP, so e
 
 Let's look at some games you'll find at most [UK slot sites](/slots/):
 
-**[Starburst](/games/starburst/)** - 96.09% RTP
+**[Starburst](/guides/slots/starburst/)** - 96.09% RTP
 The NetEnt classic that's been a staple since 2012. Its low-medium volatility means frequent small wins, making that 96.09% feel consistent in most sessions.
 
-**[Book of Dead](/games/book-of-dead/)** - 96.21% RTP
+**[Book of Dead](/guides/slots/book-of-dead/)** - 96.21% RTP
 Play'n GO's Egyptian adventure. High volatility means the 96.21% comes in concentrated bursts - you might wait a while, but the free spins can deliver substantial wins.
 
-**[Gonzo's Quest](/games/gonzos-quest/)** - 95.97% RTP
+**[Gonzo's Quest](/guides/slots/gonzos-quest/)** - 95.97% RTP
 NetEnt's avalanche mechanic pioneer. Medium-high volatility with that iconic tumbling symbols feature.
 
-**[Mega Moolah](/games/mega-moolah/)** - 88.12% RTP
+**[Mega Moolah](/guides/slots/mega-moolah/)** - 88.12% RTP
 Yes, you read that correctly. The famous progressive jackpot slot has a base RTP of just 88.12%. However, when you factor in the average jackpot contribution, the overall RTP rises significantly. The tradeoff is clear: lower base returns for a shot at life-changing money.
 
-**[Sweet Bonanza](/games/sweet-bonanza/)** - 96.48% RTP
+**[Sweet Bonanza](/guides/slots/sweet-bonanza/)** - 96.48% RTP
 Pragmatic Play's tumble mechanic hit. High volatility but solid RTP makes it popular with players chasing big multipliers.
 
 For a detailed comparison of how these classics stack up, check our [Gonzo's Quest vs Book of Dead vs Starburst comparison](/news/classic-slots-comparison/).

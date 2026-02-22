@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 400">
+  <defs>
+    <linearGradient id="omazeGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4B000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="omazeGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00FF88;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00CC6A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="omazeGray" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6B7280;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4B5563;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glowOG" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#FFD700" flood-opacity="0.25"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowOGr" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#00FF88" flood-opacity="0.25"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="650" height="400" fill="#1A1A2E" rx="12"/>
+  <rect x="1" y="1" width="648" height="398" fill="none" stroke="#2D2D44" stroke-width="1" rx="12"/>
+
+  <!-- Title -->
+  <text x="325" y="32" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Omaze vs Other House Prize Draws</text>
+  <text x="325" y="52" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#B8B8B8">Comparing top prize value. Longer bars = higher value prizes.</text>
+
+  <!-- Section: Top Prize Value -->
+  <text x="30" y="82" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#FFD700">TOP PRIZE VALUE</text>
+  <line x1="30" y1="90" x2="620" y2="90" stroke="#2D2D44" stroke-width="1"/>
+
+  <!-- Omaze bar (380px = £4M) -->
+  <text x="168" y="118" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#FFD700">Omaze</text>
+  <rect x="175" y="102" width="380" height="30" fill="url(#omazeGold)" rx="4" filter="url(#glowOG)"/>
+  <text x="565" y="122" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#FFD700">£4M+ house</text>
+
+  <!-- BOTB bar (190px = £2M) -->
+  <text x="168" y="160" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#B8B8B8">BOTB</text>
+  <rect x="175" y="144" width="190" height="30" fill="url(#omazeGray)" rx="4"/>
+  <text x="375" y="164" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#B8B8B8">~£200K cars</text>
+
+  <!-- Postcode Lottery bar (95px = ~£1M) -->
+  <text x="168" y="202" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#B8B8B8">Postcode Lottery</text>
+  <rect x="175" y="186" width="95" height="30" fill="url(#omazeGray)" rx="4"/>
+  <text x="280" y="206" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#B8B8B8">£30K/month</text>
+
+  <!-- Divider -->
+  <line x1="30" y1="238" x2="620" y2="238" stroke="#2D2D44" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Section: Charity Element -->
+  <text x="30" y="268" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#00FF88">CHARITY CONTRIBUTION</text>
+  <line x1="30" y1="276" x2="620" y2="276" stroke="#2D2D44" stroke-width="1"/>
+
+  <!-- Omaze charity bar -->
+  <text x="168" y="304" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#00FF88">Omaze</text>
+  <rect x="175" y="288" width="300" height="30" fill="url(#omazeGreen)" rx="4" filter="url(#glowOGr)"/>
+  <text x="485" y="308" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#00FF88">£30M+ raised</text>
+
+  <!-- Postcode Lottery charity bar -->
+  <text x="168" y="346" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#B8B8B8">Postcode Lottery</text>
+  <rect x="175" y="330" width="380" height="30" fill="url(#omazeGray)" rx="4"/>
+  <text x="565" y="350" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#B8B8B8">£1B+ raised</text>
+
+  <!-- Key insight -->
+  <rect x="100" y="376" width="450" height="24" fill="#FFD700" fill-opacity="0.08" rx="12"/>
+  <text x="325" y="393" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#FFD700">Omaze offers the highest individual prize values of any UK charity draw</text>
+
+  <!-- Source -->
+  <text x="325" y="398" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="0" fill="#6B7280"></text>
+</svg>

@@ -140,8 +140,8 @@ module.exports = function (eleventyConfig) {
 
   // Add custom collections for new content types
   eleventyConfig.addCollection("games", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/games/*.md").filter(item => {
-      return item.inputPath !== "./src/games/index.md";
+    return collectionApi.getFilteredByGlob("src/guides/slots/*.md").filter(item => {
+      return item.inputPath !== "./src/guides/slots/index.md";
     });
   });
 
@@ -155,6 +155,14 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/compare/*.md").filter(item => {
       return item.inputPath !== "./src/compare/index.md";
     });
+  });
+
+  eleventyConfig.addCollection("casinoGuides", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/guides/casinos/*.md");
+  });
+
+  eleventyConfig.addCollection("drawGuides", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/guides/draws/*.md");
   });
 
   // Add the tag data as a global data object

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 420">
+  <defs>
+    <linearGradient id="houseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4B000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="charityGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00FF88;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00CC6A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cashGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00D4FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00A8CC;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="opsGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9D4EDD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7B3DB5;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glowH" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#FFD700" flood-opacity="0.25"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="650" height="420" fill="#1A1A2E" rx="12"/>
+  <rect x="1" y="1" width="648" height="418" fill="none" stroke="#2D2D44" stroke-width="1" rx="12"/>
+
+  <!-- Title -->
+  <text x="325" y="32" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Omaze UK - What You Could Win</text>
+  <text x="325" y="52" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#B8B8B8">Prize values from recent Omaze house draws</text>
+
+  <!-- Bar 1: House Prize -->
+  <text x="168" y="100" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#FFD700">House Prize</text>
+  <rect x="175" y="82" width="380" height="36" fill="url(#houseGrad)" rx="4" filter="url(#glowH)"/>
+  <text x="185" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#1A1A2E">£3M - £4M+</text>
+  <text x="565" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#FFD700">Mortgage-free</text>
+
+  <!-- Bar 2: Cash with House -->
+  <text x="168" y="150" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#00FF88">+ Cash Lump Sum</text>
+  <rect x="175" y="132" width="200" height="36" fill="url(#charityGrad)" rx="4"/>
+  <text x="185" y="155" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#1A1A2E">£50K - £250K</text>
+  <text x="385" y="155" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#00FF88">Stamp duty paid</text>
+
+  <!-- Bar 3: Monthly Millionaire -->
+  <text x="168" y="200" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#00D4FF">Monthly Millionaire</text>
+  <rect x="175" y="182" width="260" height="36" fill="url(#cashGrad)" rx="4"/>
+  <text x="185" y="205" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#1A1A2E">£1,000,000 Cash</text>
+  <text x="445" y="205" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#00D4FF">Every month</text>
+
+  <!-- Bar 4: Charity Impact -->
+  <text x="168" y="250" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#9D4EDD">Charity Raised</text>
+  <rect x="175" y="232" width="310" height="36" fill="url(#opsGrad)" rx="4"/>
+  <text x="185" y="255" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">£30M+ for UK Charities</text>
+  <text x="495" y="255" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#9D4EDD">Since launch</text>
+
+  <!-- Divider -->
+  <line x1="30" y1="290" x2="620" y2="290" stroke="#2D2D44" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Charity partners -->
+  <text x="325" y="315" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">Charity Partners Include</text>
+
+  <rect x="50" y="330" width="130" height="28" fill="#00FF88" fill-opacity="0.1" rx="14"/>
+  <text x="115" y="349" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#00FF88">GOSH</text>
+
+  <rect x="195" y="330" width="130" height="28" fill="#00D4FF" fill-opacity="0.1" rx="14"/>
+  <text x="260" y="349" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#00D4FF">Royal Marsden</text>
+
+  <rect x="340" y="330" width="130" height="28" fill="#9D4EDD" fill-opacity="0.1" rx="14"/>
+  <text x="405" y="349" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#9D4EDD">Cancer Trust</text>
+
+  <rect x="485" y="330" width="130" height="28" fill="#FFD700" fill-opacity="0.1" rx="14"/>
+  <text x="550" y="349" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#FFD700">RSPCA</text>
+
+  <!-- Key insight -->
+  <rect x="115" y="376" width="420" height="24" fill="#00FF88" fill-opacity="0.08" rx="12"/>
+  <text x="325" y="393" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#00FF88">Every entry supports a UK charity, win or lose</text>
+
+  <!-- Source -->
+  <text x="325" y="414" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6B7280">Source: omaze.co.uk (February 2026)</text>
+</svg>

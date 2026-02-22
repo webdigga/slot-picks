@@ -9,12 +9,12 @@ seoSchemaPageType: Game
 
   {{ navBar.nav('bg-bg-primary') }}
 
-<!-- Game Guide Hero -->
+<!-- Casino Guide Hero -->
 <section class="relative overflow-hidden py-16">
   <!-- Background Effects -->
   <div class="absolute inset-0 bg-gradient-to-br from-bg-primary via-bg-secondary to-bg-tertiary"></div>
-  <div class="absolute top-20 left-10 w-64 h-64 bg-neon-purple/20 rounded-full blur-3xl animate-pulse"></div>
-  <div class="absolute bottom-10 right-10 w-80 h-80 bg-neon-blue/15 rounded-full blur-3xl animate-pulse delay-1000"></div>
+  <div class="absolute top-20 left-10 w-64 h-64 bg-neon-blue/20 rounded-full blur-3xl animate-pulse"></div>
+  <div class="absolute bottom-10 right-10 w-80 h-80 bg-neon-purple/15 rounded-full blur-3xl animate-pulse delay-1000"></div>
 
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Breadcrumb -->
@@ -22,9 +22,11 @@ seoSchemaPageType: Game
       <ol class="flex items-center space-x-2 text-sm text-text-secondary">
         <li><a href="/" class="hover:text-neon-green transition-colors">Home</a></li>
         <li><span class="text-text-muted">/</span></li>
-        <li><a href="/guides/slots/" class="hover:text-neon-green transition-colors">Slot Guides</a></li>
+        <li><a href="/guides/" class="hover:text-neon-green transition-colors">Guides</a></li>
         <li><span class="text-text-muted">/</span></li>
-        <li class="text-neon-green">{{ title }}</li>
+        <li><a href="/guides/casinos/" class="hover:text-neon-green transition-colors">Casino Guides</a></li>
+        <li><span class="text-text-muted">/</span></li>
+        <li class="text-neon-blue">{{ title }}</li>
       </ol>
     </nav>
 
@@ -33,29 +35,22 @@ seoSchemaPageType: Game
       <div class="lg:col-span-2 space-y-8">
         <!-- Hero Card -->
         <div class="relative bg-card-bg/80 backdrop-blur-sm rounded-2xl border border-border-subtle overflow-hidden">
-          {% if gameImage %}
-          <div class="aspect-video relative">
-            <img src="{{ gameImage }}" alt="{{ title }}" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-t from-bg-primary/90 to-transparent"></div>
-          </div>
-          {% endif %}
-
-          <div class="p-6 lg:p-8 {% if gameImage %}-mt-20 relative{% endif %}">
+          <div class="p-6 lg:p-8">
             <div class="flex flex-wrap items-center gap-3 mb-4">
-              {% if provider %}
-              <span class="px-3 py-1 bg-neon-purple/20 border border-neon-purple/40 text-neon-purple text-sm font-medium rounded-full">
-                {{ provider }}
+              {% if gameType %}
+              <span class="px-3 py-1 bg-neon-blue/20 border border-neon-blue/40 text-neon-blue text-sm font-medium rounded-full">
+                {{ gameType }}
               </span>
               {% endif %}
-              {% if volatility %}
-              <span class="px-3 py-1 bg-neon-blue/20 border border-neon-blue/40 text-neon-blue text-sm font-medium rounded-full">
-                {{ volatility }} Volatility
+              {% if houseEdge %}
+              <span class="px-3 py-1 bg-neon-green/20 border border-neon-green/40 text-neon-green text-sm font-medium rounded-full">
+                {{ houseEdge }} House Edge
               </span>
               {% endif %}
             </div>
 
             <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4">
-              {{ title }} <span class="text-neon-green">Slot Guide</span>
+              {{ title }} <span class="text-neon-blue">Guide</span>
             </h1>
 
             <p class="text-lg text-text-secondary leading-relaxed">
@@ -66,24 +61,17 @@ seoSchemaPageType: Game
 
         <!-- Game Stats -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {% if rtp %}
+          {% if houseEdge %}
           <div class="bg-card-bg/60 backdrop-blur-sm rounded-xl border border-border-subtle p-4 text-center">
-            <div class="text-2xl font-bold text-neon-green mb-1">{{ rtp }}</div>
-            <div class="text-sm text-text-secondary">RTP</div>
+            <div class="text-2xl font-bold text-neon-green mb-1">{{ houseEdge }}</div>
+            <div class="text-sm text-text-secondary">House Edge</div>
           </div>
           {% endif %}
 
-          {% if volatility %}
+          {% if gameType %}
           <div class="bg-card-bg/60 backdrop-blur-sm rounded-xl border border-border-subtle p-4 text-center">
-            <div class="text-2xl font-bold text-neon-blue mb-1">{{ volatility }}</div>
-            <div class="text-sm text-text-secondary">Volatility</div>
-          </div>
-          {% endif %}
-
-          {% if maxWin %}
-          <div class="bg-card-bg/60 backdrop-blur-sm rounded-xl border border-border-subtle p-4 text-center">
-            <div class="text-2xl font-bold text-neon-purple mb-1">{{ maxWin }}</div>
-            <div class="text-sm text-text-secondary">Max Win</div>
+            <div class="text-2xl font-bold text-neon-blue mb-1">{{ gameType }}</div>
+            <div class="text-sm text-text-secondary">Game Type</div>
           </div>
           {% endif %}
 
@@ -93,6 +81,13 @@ seoSchemaPageType: Game
             <div class="text-sm text-text-secondary">Min Bet</div>
           </div>
           {% endif %}
+
+          {% if variants %}
+          <div class="bg-card-bg/60 backdrop-blur-sm rounded-xl border border-border-subtle p-4 text-center">
+            <div class="text-2xl font-bold text-neon-purple mb-1">{{ variants | length }}</div>
+            <div class="text-sm text-text-secondary">Variants</div>
+          </div>
+          {% endif %}
         </div>
 
         <!-- Main Content -->
@@ -100,36 +95,36 @@ seoSchemaPageType: Game
           <div class="prose prose-invert prose-lg max-w-none
             prose-headings:text-white prose-headings:font-bold
             prose-h2:text-2xl prose-h2:mt-8 prose-h2:mb-4 prose-h2:border-b prose-h2:border-border-subtle prose-h2:pb-2
-            prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-3 prose-h3:text-neon-green
+            prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-3 prose-h3:text-neon-blue
             prose-p:text-text-secondary prose-p:leading-relaxed
             prose-strong:text-white
             prose-a:text-neon-blue prose-a:no-underline hover:prose-a:text-neon-green
-            prose-ul:text-text-secondary prose-li:marker:text-neon-green
-            prose-ol:text-text-secondary prose-li:marker:text-neon-green">
+            prose-ul:text-text-secondary prose-li:marker:text-neon-blue
+            prose-ol:text-text-secondary prose-li:marker:text-neon-blue">
             {{ content | safe }}
           </div>
         </article>
 
-        <!-- Game Features -->
-        {% if features %}
+        <!-- Variants -->
+        {% if variants %}
         <div class="bg-card-bg/60 backdrop-blur-sm rounded-2xl border border-border-subtle p-6 lg:p-8">
           <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
             <svg class="w-6 h-6 mr-3 text-neon-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
             </svg>
-            Key Features
+            Popular Variants
           </h2>
           <div class="grid md:grid-cols-2 gap-4">
-            {% for feature in features %}
+            {% for variant in variants %}
             <div class="flex items-start gap-3 p-4 bg-bg-secondary/50 rounded-xl">
-              <div class="flex-shrink-0 w-8 h-8 bg-neon-green/20 rounded-lg flex items-center justify-center">
-                <svg class="w-4 h-4 text-neon-green" fill="currentColor" viewBox="0 0 20 20">
+              <div class="flex-shrink-0 w-8 h-8 bg-neon-blue/20 rounded-lg flex items-center justify-center">
+                <svg class="w-4 h-4 text-neon-blue" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
               </div>
               <div>
-                <div class="font-semibold text-white">{{ feature.name }}</div>
-                <div class="text-sm text-text-secondary">{{ feature.description }}</div>
+                <div class="font-semibold text-white">{{ variant.name }}</div>
+                <div class="text-sm text-text-secondary">{{ variant.description }}</div>
               </div>
             </div>
             {% endfor %}
@@ -148,7 +143,7 @@ seoSchemaPageType: Game
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
-            Where to Play {{ title }}
+            Where to Play
           </h3>
           <div class="space-y-3">
             {% for casino in whereToPlay %}
@@ -168,37 +163,23 @@ seoSchemaPageType: Game
         </div>
         {% endif %}
 
-        <!-- Quick Tips -->
-        {% if tips %}
+        <!-- Strategy Tips -->
+        {% if strategyTips %}
         <div class="bg-card-bg/60 backdrop-blur-sm rounded-2xl border border-border-subtle p-6 mb-6">
           <h3 class="text-xl font-bold text-white mb-4 flex items-center">
             <svg class="w-5 h-5 mr-2 text-neon-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
             </svg>
-            Quick Tips
+            Strategy Tips
           </h3>
           <ul class="space-y-3">
-            {% for tip in tips %}
+            {% for tip in strategyTips %}
             <li class="flex items-start gap-2 text-text-secondary">
               <span class="text-neon-gold mt-1">•</span>
               {{ tip }}
             </li>
             {% endfor %}
           </ul>
-        </div>
-        {% endif %}
-
-        <!-- Related Games -->
-        {% if relatedGames %}
-        <div class="bg-card-bg/60 backdrop-blur-sm rounded-2xl border border-border-subtle p-6">
-          <h3 class="text-xl font-bold text-white mb-4">Similar Slots</h3>
-          <div class="space-y-3">
-            {% for game in relatedGames %}
-            <a href="/guides/slots/{{ game | slugify }}/" class="block p-3 bg-bg-secondary/50 rounded-lg hover:bg-bg-secondary transition-colors group">
-              <span class="text-white group-hover:text-neon-green transition-colors">{{ game }}</span>
-            </a>
-            {% endfor %}
-          </div>
         </div>
         {% endif %}
       </div>

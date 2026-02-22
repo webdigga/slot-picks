@@ -1,0 +1,12 @@
+{
+    "layout": "draw-guide",
+    "ogType": "website",
+    "permalink": "/guides/draws/{{ title | slugify }}/",
+    "tags": [
+        "drawGuides"
+    ],
+    "eleventyComputed": {
+        "seoTitle": "{{ title }} Guide 2026 | How It Works, Odds & Review",
+        "description": "Complete guide to {{ title }}. Learn how it works, entry costs, odds of winning, and whether it's worth playing."
+    }
+}

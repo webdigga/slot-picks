@@ -173,7 +173,7 @@ The Cheltenham Gold Cup, run on Friday at 16:00, is the most prestigious Nationa
 
 ### Can I bet on Cheltenham at slot sites?
 
-Many online casino and slot sites also offer sports betting. Operators like bet365, Betfred, and BetMGM have both casino and sportsbook products. Check whether your preferred site offers horse racing markets alongside their [slot games](/games/).
+Many online casino and slot sites also offer sports betting. Operators like bet365, Betfred, and BetMGM have both casino and sportsbook products. Check whether your preferred site offers horse racing markets alongside their [slot games](/guides/slots/).
 
 ### What does each-way mean?
 

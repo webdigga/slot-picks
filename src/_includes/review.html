@@ -26,8 +26,8 @@ eleventyComputed:
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
         </svg>
-        <a href="/{% if 'casinos' in tags %}casinos{% else %}slots{% endif %}/" class="hover:text-neon-green transition-colors">
-          {% if 'casinos' in tags %}Casinos{% else %}Slots{% endif %}
+        <a href="/{% if 'drawReviews' in tags %}draws{% elif 'casinos' in tags %}casinos{% else %}slots{% endif %}/" class="hover:text-neon-green transition-colors">
+          {% if 'drawReviews' in tags %}Draws{% elif 'casinos' in tags %}Casinos{% else %}Slots{% endif %}
         </a>
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -40,10 +40,10 @@ eleventyComputed:
         <!-- Main Info -->
         <div class="lg:col-span-2">
           <div class="flex flex-wrap items-center gap-4 mb-4">
-            {% if 'newCasinos' in tags or 'newSlots' in tags %}
+            {% if 'newCasinos' in tags or 'newSlots' in tags or 'newDraws' in tags %}
               <span class="badge badge-neon">New</span>
             {% endif %}
-            {% if 'topRatedCasinos' in tags or 'topRatedSlots' in tags %}
+            {% if 'topRatedCasinos' in tags or 'topRatedSlots' in tags or 'topRatedDraws' in tags %}
               <span class="badge badge-gold">Top Rated</span>
             {% endif %}
           </div>
@@ -54,7 +54,7 @@ eleventyComputed:
             {% if verdict %}
               {{ verdict }}
             {% else %}
-              Our expert team has thoroughly reviewed {{ title }} to bring you an unbiased assessment of this {% if 'casinos' in tags %}online casino{% else %}slot site{% endif %}.
+              Our expert team has thoroughly reviewed {{ title }} to bring you an unbiased assessment of this {% if 'drawReviews' in tags %}prize draw{% elif 'casinos' in tags %}online casino{% else %}slot site{% endif %}.
             {% endif %}
           </p>
 
@@ -293,7 +293,7 @@ eleventyComputed:
         <div class="card p-6">
           <h3 class="text-text-primary font-bold text-lg mb-4">You Might Also Like</h3>
           <p class="text-text-secondary text-sm">
-            Explore more {% if 'casinos' in tags %}online casinos{% else %}slot sites{% endif %} in our <a href="/{% if 'casinos' in tags %}casinos{% else %}slots{% endif %}/" class="text-neon-blue hover:text-neon-green">full listings</a>.
+            Explore more {% if 'drawReviews' in tags %}draws{% elif 'casinos' in tags %}online casinos{% else %}slot sites{% endif %} in our <a href="/{% if 'drawReviews' in tags %}draws{% elif 'casinos' in tags %}casinos{% else %}slots{% endif %}/" class="text-neon-blue hover:text-neon-green">full listings</a>.
           </p>
         </div>
 

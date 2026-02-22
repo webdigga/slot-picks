@@ -1,0 +1,174 @@
+---
+layout: default
+seoSchemaPageType: Game
+---
+
+{% import "./partials/navbar.html" as navBar with context %}
+
+<div class="bg-bg-primary min-h-screen">
+
+  {{ navBar.nav('bg-bg-primary') }}
+
+<!-- Draw Guide Hero -->
+<section class="relative overflow-hidden py-16">
+  <!-- Background Effects -->
+  <div class="absolute inset-0 bg-gradient-to-br from-bg-primary via-bg-secondary to-bg-tertiary"></div>
+  <div class="absolute top-20 left-10 w-64 h-64 bg-neon-purple/20 rounded-full blur-3xl animate-pulse"></div>
+  <div class="absolute bottom-10 right-10 w-80 h-80 bg-neon-blue/15 rounded-full blur-3xl animate-pulse delay-1000"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Breadcrumb -->
+    <nav class="mb-8">
+      <ol class="flex items-center space-x-2 text-sm text-text-secondary">
+        <li><a href="/" class="hover:text-neon-green transition-colors">Home</a></li>
+        <li><span class="text-text-muted">/</span></li>
+        <li><a href="/guides/" class="hover:text-neon-green transition-colors">Guides</a></li>
+        <li><span class="text-text-muted">/</span></li>
+        <li><a href="/guides/draws/" class="hover:text-neon-green transition-colors">Draw Guides</a></li>
+        <li><span class="text-text-muted">/</span></li>
+        <li class="text-neon-purple">{{ title }}</li>
+      </ol>
+    </nav>
+
+    <div class="grid lg:grid-cols-3 gap-8 lg:gap-12 items-start">
+      <!-- Main Content Area -->
+      <div class="lg:col-span-2 space-y-8">
+        <!-- Hero Card -->
+        <div class="relative bg-card-bg/80 backdrop-blur-sm rounded-2xl border border-border-subtle overflow-hidden">
+          <div class="p-6 lg:p-8">
+            <div class="flex flex-wrap items-center gap-3 mb-4">
+              {% if drawType %}
+              <span class="px-3 py-1 bg-neon-purple/20 border border-neon-purple/40 text-neon-purple text-sm font-medium rounded-full">
+                {{ drawType }}
+              </span>
+              {% endif %}
+              {% if entryCost %}
+              <span class="px-3 py-1 bg-neon-green/20 border border-neon-green/40 text-neon-green text-sm font-medium rounded-full">
+                {{ entryCost }}
+              </span>
+              {% endif %}
+            </div>
+
+            <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4">
+              {{ title }} <span class="text-neon-purple">Guide</span>
+            </h1>
+
+            <p class="text-lg text-text-secondary leading-relaxed">
+              {{ description }}
+            </p>
+          </div>
+        </div>
+
+        <!-- Draw Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {% if jackpot %}
+          <div class="bg-card-bg/60 backdrop-blur-sm rounded-xl border border-border-subtle p-4 text-center">
+            <div class="text-2xl font-bold text-neon-gold mb-1">{{ jackpot }}</div>
+            <div class="text-sm text-text-secondary">Jackpot</div>
+          </div>
+          {% endif %}
+
+          {% if entryCost %}
+          <div class="bg-card-bg/60 backdrop-blur-sm rounded-xl border border-border-subtle p-4 text-center">
+            <div class="text-2xl font-bold text-neon-green mb-1">{{ entryCost }}</div>
+            <div class="text-sm text-text-secondary">Entry Cost</div>
+          </div>
+          {% endif %}
+
+          {% if drawFrequency %}
+          <div class="bg-card-bg/60 backdrop-blur-sm rounded-xl border border-border-subtle p-4 text-center">
+            <div class="text-2xl font-bold text-neon-blue mb-1">{{ drawFrequency }}</div>
+            <div class="text-sm text-text-secondary">Draw Frequency</div>
+          </div>
+          {% endif %}
+
+          {% if odds %}
+          <div class="bg-card-bg/60 backdrop-blur-sm rounded-xl border border-border-subtle p-4 text-center">
+            <div class="text-2xl font-bold text-neon-purple mb-1">{{ odds }}</div>
+            <div class="text-sm text-text-secondary">Win Odds</div>
+          </div>
+          {% endif %}
+        </div>
+
+        <!-- Main Content -->
+        <article class="bg-card-bg/60 backdrop-blur-sm rounded-2xl border border-border-subtle p-6 lg:p-8">
+          <div class="prose prose-invert prose-lg max-w-none
+            prose-headings:text-white prose-headings:font-bold
+            prose-h2:text-2xl prose-h2:mt-8 prose-h2:mb-4 prose-h2:border-b prose-h2:border-border-subtle prose-h2:pb-2
+            prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-3 prose-h3:text-neon-purple
+            prose-p:text-text-secondary prose-p:leading-relaxed
+            prose-strong:text-white
+            prose-a:text-neon-blue prose-a:no-underline hover:prose-a:text-neon-green
+            prose-ul:text-text-secondary prose-li:marker:text-neon-purple
+            prose-ol:text-text-secondary prose-li:marker:text-neon-purple">
+            {{ content | safe }}
+          </div>
+        </article>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="lg:col-span-1">
+        <!-- Operator Info -->
+        {% if operatorInfo %}
+        <div class="bg-card-bg/80 backdrop-blur-sm rounded-2xl border border-border-subtle p-6 mb-6">
+          <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+            <svg class="w-5 h-5 mr-2 text-neon-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            Operator Info
+          </h3>
+          <p class="text-text-secondary text-sm">{{ operatorInfo }}</p>
+        </div>
+        {% endif %}
+
+        <!-- Charity Info -->
+        {% if charity %}
+        <div class="bg-card-bg/80 backdrop-blur-sm rounded-2xl border border-border-subtle p-6 mb-6">
+          <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+            <svg class="w-5 h-5 mr-2 text-neon-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+            Charity Partners
+          </h3>
+          <p class="text-text-secondary text-sm">{{ charity }}</p>
+        </div>
+        {% endif %}
+
+        <!-- Quick Tips -->
+        {% if tips %}
+        <div class="bg-card-bg/60 backdrop-blur-sm rounded-2xl border border-border-subtle p-6 mb-6">
+          <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+            <svg class="w-5 h-5 mr-2 text-neon-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+            </svg>
+            Quick Tips
+          </h3>
+          <ul class="space-y-3">
+            {% for tip in tips %}
+            <li class="flex items-start gap-2 text-text-secondary">
+              <span class="text-neon-gold mt-1">•</span>
+              {{ tip }}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        <!-- Play Now CTA -->
+        {% if externalUrl %}
+        <div class="bg-card-bg/60 backdrop-blur-sm rounded-2xl border border-border-subtle p-6">
+          <a
+            href="{{ externalUrl }}"
+            target="_blank"
+            rel="noopener"
+            class="block w-full rounded-lg cursor-pointer py-3 px-6 font-semibold text-center transition-all duration-300 transform hover:-translate-y-0.5 bg-neon-purple text-white hover:bg-neon-purple/80 shadow-lg">
+            Visit {{ title }}
+          </a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>

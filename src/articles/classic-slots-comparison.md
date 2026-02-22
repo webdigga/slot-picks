@@ -15,7 +15,7 @@ permalink: /news/classic-slots-comparison/
 
 ## Three Slots, Three Legends
 
-Ask any experienced slot player to name the most iconic online slots, and three names come up repeatedly: [Gonzo's Quest](/games/gonzos-quest/), [Book of Dead](/games/book-of-dead/), and [Starburst](/games/starburst/).
+Ask any experienced slot player to name the most iconic online slots, and three names come up repeatedly: [Gonzo's Quest](/guides/slots/gonzos-quest/), [Book of Dead](/guides/slots/book-of-dead/), and [Starburst](/guides/slots/starburst/).
 
 These aren't just popular games - they're the slots that defined modern online gambling. Between them, they've entertained millions of players and paid out billions in winnings. But they play very differently from each other.
 
@@ -39,7 +39,7 @@ Already you can see the fundamental differences. Starburst is the gentle introdu
 
 ### What Makes It Special
 
-[Starburst](/games/starburst/) is often the first slot new players try, and there's good reason for that. It's simple, fast, and delivers frequent wins that keep you engaged without destroying your bankroll.
+[Starburst](/guides/slots/starburst/) is often the first slot new players try, and there's good reason for that. It's simple, fast, and delivers frequent wins that keep you engaged without destroying your bankroll.
 
 The Starburst Wild is the only bonus feature, but it's elegant: wild symbols expand to cover entire reels and trigger a respin. Land wilds on multiple reels and the respins continue, potentially filling the screen with wins.
 
@@ -67,7 +67,7 @@ This predictability is either the game's greatest strength or its main weakness,
 
 ### What Makes It Special
 
-[Book of Dead](/games/book-of-dead/) is essentially a homage to the classic Book of Ra, and it's become arguably more popular than its inspiration. The ancient Egyptian theme is beautifully executed, but the real draw is the free spins mechanic.
+[Book of Dead](/guides/slots/book-of-dead/) is essentially a homage to the classic Book of Ra, and it's become arguably more popular than its inspiration. The ancient Egyptian theme is beautifully executed, but the real draw is the free spins mechanic.
 
 When you trigger 10 free spins, a random symbol is chosen as the special expanding symbol. If that symbol is the explorer (Rich Wilde), you're in for potential massive wins - a screen full of the highest-paying symbol with 10x multiplier possibilities.
 
@@ -98,7 +98,7 @@ Understanding [slot volatility](/strategy/slot-volatility/) is essential before 
 
 ### What Makes It Special
 
-[Gonzo's Quest](/games/gonzos-quest/) pioneered the avalanche (tumbling reels) mechanic that's now used in countless slots. Instead of traditional spinning reels, symbols fall from above. Winning combinations explode and new symbols fall in, with multipliers increasing with each consecutive win.
+[Gonzo's Quest](/guides/slots/gonzos-quest/) pioneered the avalanche (tumbling reels) mechanic that's now used in countless slots. Instead of traditional spinning reels, symbols fall from above. Winning combinations explode and new symbols fall in, with multipliers increasing with each consecutive win.
 
 The base game can chain wins with up to 5x multiplier, while free falls (triggered by landing three free fall symbols) push multipliers to 15x.
 
@@ -170,9 +170,9 @@ Whatever you choose, practice [responsible bankroll management](/strategy/bankro
 
 ## Explore Further
 
-- [Full Starburst Review](/games/starburst/)
-- [Full Book of Dead Review](/games/book-of-dead/)
-- [Full Gonzo's Quest Review](/games/gonzos-quest/)
+- [Full Starburst Review](/guides/slots/starburst/)
+- [Full Book of Dead Review](/guides/slots/book-of-dead/)
+- [Full Gonzo's Quest Review](/guides/slots/gonzos-quest/)
 - [Understanding Slot RTP](/news/understanding-slot-rtp/)
 - [Slot Volatility Explained](/strategy/slot-volatility/)
 - [Best Slot Sites UK](/news/best-slot-sites-uk/)

@@ -104,6 +104,13 @@
   status = 301
   force = true
 
+# Games to Guides restructure
+[[redirects]]
+  from = "/games/*"
+  to = "/guides/slots/:splat"
+  status = 301
+  force = true
+
 # Redirect old sitemap.txt to new XML sitemap
 [[redirects]]
   from = "/sitemap.txt"

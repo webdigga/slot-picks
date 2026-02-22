@@ -1,7 +1,7 @@
 ---
 brand: /_includes/static/img/win-a-million.avif
 imageAlt: Win A Million
-imageColour: "#1A1A2E"
+imageColour: "#231D38"
 title: Win A Million
 date: 2025-01-01
 rating: 5
@@ -17,6 +17,8 @@ highlights:
   - text: GLI Certified Random Number Generator
   - text: Free Postal Entry Available
 externalUrl: https://winamillion.com
-reviewUrl: /news/win-a-million-review/
+reviewUrl: /reviews/win-a-million/
 operatorInfo: "Zebra Games Ltd (Company No. 16322786). GLI certified draws by Pims-SCA. 18+ only. Please play responsibly."
+tags:
+  - topRatedDraws
 ---

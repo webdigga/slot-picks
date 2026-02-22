@@ -21,17 +21,24 @@ firstLevelItems:
         url: /new-casinos/
   - text: Draws
     url: /draws/
-  - text: Games
-    url: /games/
     secondLevelItems:
+      - text: All Draws
+        url: /draws/
+      - text: Top Rated Draws
+        url: /top-rated-draws/
+      - text: New Draws
+        url: /new-draws/
+  - text: Guides
+    url: /guides/
+    secondLevelItems:
+      - text: All Guides
+        url: /guides/
       - text: Slot Guides
-        url: /games/
-      - text: Starburst
-        url: /games/starburst/
-      - text: Book of Dead
-        url: /games/book-of-dead/
-      - text: Sweet Bonanza
-        url: /games/sweet-bonanza/
+        url: /guides/slots/
+      - text: Casino Guides
+        url: /guides/casinos/
+      - text: Draw Guides
+        url: /guides/draws/
   - text: Strategy
     url: /strategy/
     secondLevelItems:

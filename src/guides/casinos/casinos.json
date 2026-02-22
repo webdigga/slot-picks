@@ -1,0 +1,12 @@
+{
+    "layout": "casino-guide",
+    "ogType": "website",
+    "permalink": "/guides/casinos/{{ title | slugify }}/",
+    "tags": [
+        "casinoGuides"
+    ],
+    "eleventyComputed": {
+        "seoTitle": "{{ title }} Guide 2026 | Rules, Strategy & Where to Play",
+        "description": "Complete guide to {{ title }}. Learn the rules, house edge, strategy tips and find the best UK online casinos to play {{ title }}."
+    }
+}

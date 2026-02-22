@@ -1,37 +1,17 @@
 ---
-pagination:
-  data: collections
-  size: 1
-  alias: tag
-  filter:
-    - article
-    - faq
-    - privacy
-    - all
-    - news
-    - games
-    - strategy
-    - compare
-    - draws
-    - topRatedDraws
-    - newDraws
-    - casinoGuides
-    - drawGuides
-    - drawReviews
-  addAllPagesToCollections: true
 layout: default
 ogType: website
 seoSchemaPageType: ItemList
+listCollection: topRatedDraws
 eleventyComputed:
-  seoTitle: "{% if tag and tagData[tag] %}{{ tagData[tag].seoTitle }}{% endif %}"
-  description: "{% if tag and tagData[tag] %}{{ tagData[tag].description }}{% endif %}"
-  listCollection: "{{ tag }}"
-  canonical: "{{ env.site }}/{{ tag | slugify | replace('topratedslots', 'top-rated-slots') | replace('topratedcasinos', 'top-rated-casinos') | replace('newslots', 'new-slots') | replace('newcasinos', 'new-casinos') | replace('livecasinos', 'live-casinos') }}/"
-permalink: "/{{ tag | slugify | replace('topratedslots', 'top-rated-slots') | replace('topratedcasinos', 'top-rated-casinos') | replace('newslots', 'new-slots') | replace('newcasinos', 'new-casinos') | replace('livecasinos', 'live-casinos') }}/index.html"
+  seoTitle: "{{ topRatedDraws.seoTitle }}"
+  description: "{{ topRatedDraws.description }}"
+  canonical: "{{ env.site }}/top-rated-draws/"
+permalink: /top-rated-draws/
 ---
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
-{% import "./_includes/components/site.html" as siteMacro with context %}
+{% import "./_includes/components/draw.html" as drawMacro with context %}
 
 <div class="bg-bg-primary min-h-screen">
 
@@ -39,9 +19,8 @@ permalink: "/{{ tag | slugify | replace('topratedslots', 'top-rated-slots') | re
 
   <!-- Page Header -->
   <section class="relative py-12 md:py-16 border-b border-border-dark overflow-hidden">
-    <!-- Background Effects -->
     <div class="absolute inset-0 bg-mesh opacity-30"></div>
-    <div class="absolute top-0 right-0 w-96 h-96 bg-neon-purple/10 rounded-full blur-3xl"></div>
+    <div class="absolute top-0 right-0 w-96 h-96 bg-neon-blue/10 rounded-full blur-3xl"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <nav class="flex items-center gap-2 text-sm text-text-muted mb-4" aria-label="Breadcrumb">
@@ -49,13 +28,17 @@ permalink: "/{{ tag | slugify | replace('topratedslots', 'top-rated-slots') | re
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
         </svg>
-        <span class="text-text-secondary">{{ tagData[tag].title }}</span>
+        <a href="/draws/" class="hover:text-neon-green transition-colors">Draws</a>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+        <span class="text-text-secondary">{{ topRatedDraws.title }}</span>
       </nav>
 
-      <h1 class="text-text-primary text-3xl md:text-4xl lg:text-5xl font-bold mb-4">{{ tagData[tag].title }}</h1>
+      <h1 class="text-text-primary text-3xl md:text-4xl lg:text-5xl font-bold mb-4">{{ topRatedDraws.title }}</h1>
 
-      {% if tagData[tag].description %}
-        <p class="text-text-secondary text-lg max-w-3xl">{{ tagData[tag].description }}</p>
+      {% if topRatedDraws.description %}
+        <p class="text-text-secondary text-lg max-w-3xl">{{ topRatedDraws.description }}</p>
       {% endif %}
 
       <!-- Quick Stats -->
@@ -66,7 +49,7 @@ permalink: "/{{ tag | slugify | replace('topratedslots', 'top-rated-slots') | re
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
             </svg>
           </span>
-          <span class="text-text-secondary text-sm">{{ collections[tag] | length }} Sites Reviewed</span>
+          <span class="text-text-secondary text-sm">{{ collections.topRatedDraws | length }} Draws Reviewed</span>
         </div>
         <div class="flex items-center gap-2">
           <span class="w-8 h-8 rounded-lg bg-neon-purple/20 flex items-center justify-center">
@@ -74,7 +57,7 @@ permalink: "/{{ tag | slugify | replace('topratedslots', 'top-rated-slots') | re
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
             </svg>
           </span>
-          <span class="text-text-secondary text-sm">All UKGC Licensed</span>
+          <span class="text-text-secondary text-sm">All Verified Operators</span>
         </div>
         <div class="flex items-center gap-2">
           <span class="w-8 h-8 rounded-lg bg-neon-gold/20 flex items-center justify-center">
@@ -88,19 +71,19 @@ permalink: "/{{ tag | slugify | replace('topratedslots', 'top-rated-slots') | re
     </div>
   </section>
 
-  <!-- Sites List -->
+  <!-- Draws List -->
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
     <div class="grid grid-cols-1 gap-6">
-      {% for site in collections[tag] | reverse %}
-        {{ siteMacro.site(site) }}
+      {% for draw in collections.topRatedDraws | reverse %}
+        {{ drawMacro.draw(draw) }}
       {% endfor %}
     </div>
 
     <!-- SEO Content -->
-    {% if tagData[tag].content %}
+    {% if topRatedDraws.content %}
       <div class="mt-16 pt-12 border-t border-border-dark">
         <div class="prose prose-invert !max-w-none prose-headings:text-text-primary prose-p:text-text-secondary prose-a:text-neon-blue hover:prose-a:text-neon-green prose-strong:text-text-primary prose-li:text-text-secondary">
-          {{ tagData[tag].content | default("") | toString | markdownify | safe }}
+          {{ topRatedDraws.content | default("") | toString | markdownify | safe }}
         </div>
       </div>
     {% endif %}

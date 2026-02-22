@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 400">
+  <defs>
+    <linearGradient id="tpgGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4B000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tpgGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00FF88;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00CC6A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tpgBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00D4FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00A8CC;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tpgPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9D4EDD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7B3DB5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tpgRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF4757;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#CC3945;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glowTPG" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#FFD700" flood-opacity="0.25"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="650" height="400" fill="#1A1A2E" rx="12"/>
+  <rect x="1" y="1" width="648" height="398" fill="none" stroke="#2D2D44" stroke-width="1" rx="12"/>
+
+  <!-- Title -->
+  <text x="325" y="32" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">That Prize Guy - Prize Categories</text>
+  <text x="325" y="52" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#B8B8B8">Typical prize values across competition types. Cash alternative available.</text>
+
+  <!-- Bar 1: Cash Prizes -->
+  <text x="168" y="100" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#FFD700">Cash Prizes</text>
+  <rect x="175" y="82" width="350" height="36" fill="url(#tpgGold)" rx="4" filter="url(#glowTPG)"/>
+  <text x="185" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#1A1A2E">£100 - £100,000+</text>
+  <text x="535" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#FFD700">Most popular</text>
+
+  <!-- Bar 2: Cars -->
+  <text x="168" y="155" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#00FF88">Cars</text>
+  <rect x="175" y="137" width="280" height="36" fill="url(#tpgGreen)" rx="4"/>
+  <text x="185" y="160" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#1A1A2E">£20,000 - £80,000+</text>
+  <text x="465" y="160" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#00FF88">Or cash alt.</text>
+
+  <!-- Bar 3: Holidays -->
+  <text x="168" y="210" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#00D4FF">Holidays</text>
+  <rect x="175" y="192" width="180" height="36" fill="url(#tpgBlue)" rx="4"/>
+  <text x="185" y="215" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#1A1A2E">£2,000 - £15,000</text>
+  <text x="365" y="215" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#00D4FF">Or cash alt.</text>
+
+  <!-- Bar 4: Tech & Gadgets -->
+  <text x="168" y="265" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#9D4EDD">Tech &amp; Gadgets</text>
+  <rect x="175" y="247" width="120" height="36" fill="url(#tpgPurple)" rx="4"/>
+  <text x="185" y="270" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">£500 - £5,000</text>
+  <text x="305" y="270" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#9D4EDD">Or cash alt.</text>
+
+  <!-- Bar 5: Low Cost Comps -->
+  <text x="168" y="320" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#FF4757">Low Cost Comps</text>
+  <rect x="175" y="302" width="60" height="36" fill="url(#tpgRed)" rx="4"/>
+  <text x="245" y="325" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#FF4757">From 79p</text>
+  <text x="335" y="325" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#B8B8B8">Entry cost</text>
+
+  <!-- Key insight -->
+  <rect x="115" y="356" width="420" height="24" fill="#00FF88" fill-opacity="0.08" rx="12"/>
+  <text x="325" y="373" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#00FF88">£143M+ in prizes awarded since 2020</text>
+
+  <!-- Source -->
+  <text x="325" y="394" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6B7280">Source: thatprizeguy.com (February 2026)</text>
+</svg>

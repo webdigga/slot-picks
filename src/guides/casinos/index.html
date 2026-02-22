@@ -1,0 +1,97 @@
+---
+layout: default
+title: Casino Game Guides
+seoTitle: Online Casino Game Guides 2026 | Blackjack, Roulette & More | Slot Picks
+description: Guides to popular online casino games including blackjack, roulette, and live casino. Learn the rules, house edge, and best strategies.
+permalink: /guides/casinos/
+seoSchemaPageType: ItemList
+listCollection: casinoGuides
+---
+
+{% import "../../_includes/partials/navbar.html" as navBar with context %}
+
+<div class="bg-bg-primary min-h-screen">
+
+{{ navBar.nav('bg-bg-primary') }}
+
+<!-- Hero Section -->
+<section class="relative overflow-hidden py-16">
+  <div class="absolute inset-0 bg-gradient-to-br from-bg-primary via-bg-secondary to-bg-tertiary"></div>
+  <div class="absolute top-10 right-20 w-80 h-80 bg-neon-blue/15 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-10 left-20 w-64 h-64 bg-neon-purple/10 rounded-full blur-3xl"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <nav class="flex items-center justify-center gap-2 text-sm text-text-muted mb-4" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-neon-green transition-colors">Home</a>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+        <a href="/guides/" class="hover:text-neon-green transition-colors">Guides</a>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+        <span class="text-text-secondary">Casino Guides</span>
+      </nav>
+      <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6">
+        Casino Game <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple">Guides</span>
+      </h1>
+      <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+        Learn the rules, house edge, and best strategies for the most popular online casino games. Find where to play at trusted UK casinos.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Casino Guides Grid -->
+<section class="py-12 lg:py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for guide in collections.casinoGuides %}
+      <a href="{{ guide.url }}" class="group block bg-card-bg/60 backdrop-blur-sm rounded-2xl border border-border-subtle overflow-hidden hover:border-neon-blue/50 transition-all duration-300 hover:shadow-neon-blue/10 hover:shadow-lg">
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-4">
+            {% if guide.data.gameType %}
+            <span class="px-3 py-1 bg-neon-blue/20 border border-neon-blue/40 text-neon-blue text-xs font-medium rounded-full">
+              {{ guide.data.gameType }}
+            </span>
+            {% endif %}
+            {% if guide.data.houseEdge %}
+            <span class="px-3 py-1 bg-neon-green/20 border border-neon-green/40 text-neon-green text-xs font-medium rounded-full">
+              {{ guide.data.houseEdge }} House Edge
+            </span>
+            {% endif %}
+          </div>
+
+          <h2 class="text-xl font-bold text-white group-hover:text-neon-blue transition-colors mb-3">
+            {{ guide.data.title }}
+          </h2>
+
+          <p class="text-text-secondary text-sm line-clamp-2 mb-4">
+            {{ guide.data.description }}
+          </p>
+
+          <div class="flex items-center justify-between text-sm">
+            {% if guide.data.houseEdge %}
+            <div>
+              <span class="text-text-muted">House Edge:</span>
+              <span class="text-neon-green font-semibold ml-1">{{ guide.data.houseEdge }}</span>
+            </div>
+            {% endif %}
+            {% if guide.data.minBet %}
+            <div>
+              <span class="text-text-muted">Min Bet:</span>
+              <span class="text-neon-gold font-semibold ml-1">{{ guide.data.minBet }}</span>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+</div>

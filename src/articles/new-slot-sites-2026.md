@@ -73,7 +73,7 @@ Only sites that pass this extended evaluation make it into our recommendations.
 
 ## Games You'll Find at New Sites
 
-Most new UK slot sites in 2026 offer similar core game libraries, as they partner with the same major providers. You'll typically find popular titles like [Starburst](/games/starburst/), [Book of Dead](/games/book-of-dead/), and [Gonzo's Quest](/games/gonzos-quest/) at any reputable new site.
+Most new UK slot sites in 2026 offer similar core game libraries, as they partner with the same major providers. You'll typically find popular titles like [Starburst](/guides/slots/starburst/), [Book of Dead](/guides/slots/book-of-dead/), and [Gonzo's Quest](/guides/slots/gonzos-quest/) at any reputable new site.
 
 Where sites differentiate is in exclusives and early access to new releases. Some operators negotiate exclusive launch windows for anticipated games, giving their players first access.
 

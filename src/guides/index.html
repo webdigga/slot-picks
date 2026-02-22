@@ -1,0 +1,94 @@
+---
+layout: default
+title: Guides
+seoTitle: Online Gambling Guides 2026 | Slots, Casinos & Draws | Slot Picks
+description: Comprehensive guides to online slots, casino games, and prize draws. Learn the rules, strategies, and find the best places to play in the UK.
+permalink: /guides/
+seoSchemaPageType: CollectionPage
+---
+
+{% import "../_includes/partials/navbar.html" as navBar with context %}
+
+<div class="bg-bg-primary min-h-screen">
+
+{{ navBar.nav('bg-bg-primary') }}
+
+<!-- Hero Section -->
+<section class="relative overflow-hidden py-16">
+  <div class="absolute inset-0 bg-gradient-to-br from-bg-primary via-bg-secondary to-bg-tertiary"></div>
+  <div class="absolute top-10 right-20 w-80 h-80 bg-neon-purple/15 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-10 left-20 w-64 h-64 bg-neon-green/10 rounded-full blur-3xl"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <nav class="flex items-center justify-center gap-2 text-sm text-text-muted mb-4" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-neon-green transition-colors">Home</a>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+        <span class="text-text-secondary">Guides</span>
+      </nav>
+      <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6">
+        Game <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-green to-neon-blue">Guides</span>
+      </h1>
+      <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+        In-depth guides to online slots, casino games, and prize draws. Learn the rules, understand the odds, and find the best places to play.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Guide Sections -->
+<section class="py-12 lg:py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Slot Guides -->
+      <a href="/guides/slots/" class="group block bg-card-bg/60 backdrop-blur-sm rounded-2xl border border-border-subtle overflow-hidden hover:border-neon-green/50 transition-all duration-300 hover:shadow-neon-green/10 hover:shadow-lg">
+        <div class="p-8 text-center">
+          <div class="w-16 h-16 bg-neon-green/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-neon-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+            </svg>
+          </div>
+          <h2 class="text-2xl font-bold text-white group-hover:text-neon-green transition-colors mb-3">Slot Guides</h2>
+          <p class="text-text-secondary mb-4">Detailed guides to the most popular online slots. RTP, volatility, bonus features, and where to play.</p>
+          <span class="text-neon-green text-sm font-medium">{{ collections.games | length }} guides available</span>
+        </div>
+      </a>
+
+      <!-- Casino Guides -->
+      <a href="/guides/casinos/" class="group block bg-card-bg/60 backdrop-blur-sm rounded-2xl border border-border-subtle overflow-hidden hover:border-neon-blue/50 transition-all duration-300 hover:shadow-neon-blue/10 hover:shadow-lg">
+        <div class="p-8 text-center">
+          <div class="w-16 h-16 bg-neon-blue/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-neon-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h2 class="text-2xl font-bold text-white group-hover:text-neon-blue transition-colors mb-3">Casino Guides</h2>
+          <p class="text-text-secondary mb-4">Guides to online casino games like blackjack, roulette, and live casino. House edge, strategy, and tips.</p>
+          <span class="text-neon-blue text-sm font-medium">{{ collections.casinoGuides | length }} guides available</span>
+        </div>
+      </a>
+
+      <!-- Draw Guides -->
+      <a href="/guides/draws/" class="group block bg-card-bg/60 backdrop-blur-sm rounded-2xl border border-border-subtle overflow-hidden hover:border-neon-purple/50 transition-all duration-300 hover:shadow-neon-purple/10 hover:shadow-lg">
+        <div class="p-8 text-center">
+          <div class="w-16 h-16 bg-neon-purple/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-neon-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path>
+            </svg>
+          </div>
+          <h2 class="text-2xl font-bold text-white group-hover:text-neon-purple transition-colors mb-3">Draw Guides</h2>
+          <p class="text-text-secondary mb-4">Guides to UK prize draws and competitions. Odds, entry costs, legitimacy checks, and how they work.</p>
+          <span class="text-neon-purple text-sm font-medium">{{ collections.drawGuides | length }} guides available</span>
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+</div>
