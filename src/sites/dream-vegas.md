@@ -15,6 +15,11 @@ highlights:
   - text: Generous Welcome Bonus
   - text: Cash Giveaways
 welcomeOffer: £300 Welcome Bonus + 150 Spins
+bonusPercentage: 100
+bonusMax: 300
+wageringRequirement: 35
+freeSpinsCount: 150
+freeSpinValue: 0.10
 tags:
   - slots
   - topRatedSlots

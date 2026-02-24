@@ -15,6 +15,11 @@ highlights:
   - text: Live Dealer Games
   - text: Ongoing Promotions & Offers
 welcomeOffer: Upto 200 Free Spins
+bonusPercentage: 0
+bonusMax: 0
+wageringRequirement: 0
+freeSpinsCount: 200
+freeSpinValue: 0.10
 tags:
   - casinos
   - topRatedCasinos

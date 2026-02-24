@@ -15,6 +15,11 @@ highlights:
   - text: Great Reputation & Licensing
   - text: Excellent Customer Support
 welcomeOffer: 10 Days of Free Spins
+bonusPercentage: 0
+bonusMax: 0
+wageringRequirement: 0
+freeSpinsCount: 200
+freeSpinValue: 0.10
 tags:
   - casinos
   - topRatedCasinos

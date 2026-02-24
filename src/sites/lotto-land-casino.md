@@ -15,6 +15,11 @@ highlights:
   - text: Dedicated Mobile Apps
   - text: Responsible Gambling Tools
 welcomeOffer: 50 Free Spins on Big Bass Bonanza when you stake £10
+bonusPercentage: 0
+bonusMax: 0
+wageringRequirement: 0
+freeSpinsCount: 50
+freeSpinValue: 0.10
 tags:
   - casinos
   - newCasinos

@@ -15,6 +15,11 @@ highlights:
   - text: Great Payment Options & Security
   - text: Licensed & Regulated
 welcomeOffer: Up to 500 Free Spins
+bonusPercentage: 0
+bonusMax: 0
+wageringRequirement: 65
+freeSpinsCount: 500
+freeSpinValue: 0.10
 tags:
   - slots
   - topRatedSlots

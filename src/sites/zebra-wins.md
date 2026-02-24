@@ -15,6 +15,11 @@ highlights:
   - text: Progressive Jackpot & Slingo Games
   - text: Table Games & Crash Games
 welcomeOffer: 100 Free Spins. First Deposit Only. Min £10.
+bonusPercentage: 0
+bonusMax: 0
+wageringRequirement: 0
+freeSpinsCount: 100
+freeSpinValue: 0.10
 tags:
   - newSlots
 type: site

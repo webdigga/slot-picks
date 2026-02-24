@@ -15,6 +15,11 @@ highlights:
   - text: New Games Added Weekly
   - text: Unique Bonus Features
 welcomeOffer: Up to 140 Free Spins over 7 Days
+bonusPercentage: 0
+bonusMax: 0
+wageringRequirement: 0
+freeSpinsCount: 140
+freeSpinValue: 0.10
 tags:
   - newSlots
 type: site

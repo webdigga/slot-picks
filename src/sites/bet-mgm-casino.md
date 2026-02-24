@@ -15,6 +15,11 @@ highlights:
   - text: Fast & Flexible Payments
   - text: Mobile-First Design
 welcomeOffer: 200 Free Spins on Big Bass Splash when you play £10
+bonusPercentage: 0
+bonusMax: 0
+wageringRequirement: 30
+freeSpinsCount: 200
+freeSpinValue: 0.10
 tags:
   - casinos
   - topRatedCasinos

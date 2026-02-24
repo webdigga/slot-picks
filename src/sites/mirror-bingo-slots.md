@@ -15,6 +15,11 @@ highlights:
   - text: 10+ Bingo Rooms
   - text: Ongoing Promotions
 welcomeOffer: Upto 500 Free Spins
+bonusPercentage: 0
+bonusMax: 0
+wageringRequirement: 65
+freeSpinsCount: 500
+freeSpinValue: 0.10
 tags:
   - slots
 type: site

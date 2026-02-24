@@ -15,6 +15,11 @@ highlights:
   - text: Optimised For Mobile
   - text: Popular Slot Games
 welcomeOffer: Spin the Wheel for up to 450 Bonus Spins
+bonusPercentage: 0
+bonusMax: 0
+wageringRequirement: 35
+freeSpinsCount: 450
+freeSpinValue: 0.25
 tags:
   - newSlots
 type: site

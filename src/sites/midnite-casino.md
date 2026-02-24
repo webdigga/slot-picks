@@ -15,6 +15,11 @@ highlights:
   - text: Ongoing Promotions & Bonuses
   - text: 24/7 Live Chat Support
 welcomeOffer: Wager £20 Get 100 Free Spins
+bonusPercentage: 0
+bonusMax: 0
+wageringRequirement: 0
+freeSpinsCount: 100
+freeSpinValue: 0.10
 tags:
   - casinos
 type: site
