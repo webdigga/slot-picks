@@ -11,7 +11,7 @@ highlights:
   - text: Huge Selection of Games
   - text: Best App on The Market
   - text: Fast Deposits & Withdrawals
-  - text: " High-Quality Live Casino"
+  - text: High-Quality Live Casino
   - text: Great Reputation & Licensing
   - text: Excellent Customer Support
 welcomeOffer: 10 Days of Free Spins

@@ -8,13 +8,18 @@ date: 2025-01-01
 score: 80
 rating: 5
 highlights:
-  - text: Seamless Sportsbook Intergration
-  - text: "Strong Brand Reputation "
+  - text: Seamless Sportsbook Integration
+  - text: Strong Brand Reputation
   - text: Promotions & Loyalty Scheme
   - text: Casino Tournaments
   - text: Dedicated Mobile App
   - text: Excellent Banking Options
 welcomeOffer: Deposit £10, Get £50 Bonus
+bonusPercentage: 500
+bonusMax: 50
+wageringRequirement: 40
+freeSpinsCount: 0
+freeSpinValue: 0
 tags:
   - casinos
 type: site

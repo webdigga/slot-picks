@@ -128,7 +128,7 @@ a:hover {
   CONTAINER STYLES
 =============================================*/
 .container {
-  @apply p-4 sm:p-5 md:p-6 !max-w-[1100px];
+  @apply p-4 sm:p-5 md:p-6;
 }
 
 .container--medium {
@@ -162,6 +162,26 @@ a:hover {
 
 .btn-outline {
   @apply bg-transparent border-2 border-neon-green text-neon-green hover:bg-neon-green hover:text-bg-primary;
+}
+
+.btn-primary-purple {
+  @apply bg-neon-purple text-white hover:bg-neon-purple-dim;
+  box-shadow: 0 0 20px rgba(157, 78, 221, 0.4);
+}
+
+.btn-primary-purple:hover {
+  box-shadow: 0 0 30px rgba(157, 78, 221, 0.6), 0 0 60px rgba(157, 78, 221, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-primary-blue {
+  @apply bg-neon-blue text-bg-primary hover:bg-neon-blue-dim;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+}
+
+.btn-primary-blue:hover {
+  box-shadow: 0 0 30px rgba(0, 212, 255, 0.6), 0 0 60px rgba(0, 212, 255, 0.3);
+  transform: translateY(-2px);
 }
 
 /*=============================================

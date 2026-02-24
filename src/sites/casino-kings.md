@@ -15,6 +15,11 @@ highlights:
   - text: Generous Promotions
   - text: Extensive Game Library
 welcomeOffer: 150% upto £150 Bonus + 75 Free Spins
+bonusPercentage: 150
+bonusMax: 150
+wageringRequirement: 50
+freeSpinsCount: 75
+freeSpinValue: 0.10
 tags:
   - casinos
   - newCasinos

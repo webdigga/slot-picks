@@ -4,6 +4,7 @@ imageAlt: Win A Million
 imageColour: "#231D38"
 title: Win A Million
 date: 2025-01-01
+score: 90
 rating: 5
 jackpot: "£1,000,000"
 entryCost: "From 50p"

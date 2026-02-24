@@ -13,6 +13,10 @@ highlights:
   - text: 1 in 9 Entries Wins Cash
   - text: GLI Certified Random Number Generator
   - text: Free Postal Entry Available
+jackpot: "£1,000,000"
+entryCost: "From 50p"
+drawFrequency: "5 draws per week"
+anyPrizeOdds: "1 in 9 wins"
 tags:
   - drawReviews
 type: site

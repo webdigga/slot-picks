@@ -15,6 +15,11 @@ highlights:
   - text: Mobile Optimised Site
   - text: Flexible Payment Options
 welcomeOffer: "50 Cash Spins, No Wagering Requirements"
+bonusPercentage: 100
+bonusMax: 100
+wageringRequirement: 0
+freeSpinsCount: 50
+freeSpinValue: 0.10
 tags:
   - casinos
   - newCasinos

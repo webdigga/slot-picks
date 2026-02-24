@@ -15,6 +15,11 @@ highlights:
   - text: Ongoing Incentives & Promotions
   - text: Secure & Flexible Payment Options
 welcomeOffer: Up to £1,250 Bonus + 100 Free Spins across 3 Deposits
+bonusPercentage: 100
+bonusMax: 1250
+wageringRequirement: 35
+freeSpinsCount: 100
+freeSpinValue: 0.10
 tags:
   - newSlots
   - newCasinos

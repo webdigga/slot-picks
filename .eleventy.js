@@ -1,7 +1,7 @@
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const htmlmin = require("html-minifier");
+const htmlmin = require("html-minifier-terser");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const path = require("path");
@@ -18,7 +18,7 @@ const postcssFilter = (cssCode, done) => {
   postCss([tailwind(require('./tailwind.config')), autoprefixer(), cssnano({ preset: 'default' })])
     .process(cssCode, {
     // path to our CSS file
-    from: './src/static/css/tailwind.css'
+    from: './src/_includes/static/css/tailwind.css'
   })
   .then(
     (r) => done(null, r.css),
@@ -30,7 +30,7 @@ module.exports = function (eleventyConfig) {
   // Via addWatchTarget we tell Eleventy that changes to this file should trigger a rebuild
   // if we are currently running the application locally with --serve.
   // The asynchronous filter ensures that we can convert our CSS
-  eleventyConfig.addWatchTarget('./src/_includes/styles/tailwind.css');
+  eleventyConfig.addWatchTarget('./src/_includes/static/css/tailwind.css');
   eleventyConfig.addNunjucksAsyncFilter('postcss', postcssFilter);
 
   // Disable automatic use of your .gitignore
@@ -56,6 +56,10 @@ module.exports = function (eleventyConfig) {
   // Current month and year at build time (e.g. "February 2026")
   eleventyConfig.addShortcode("buildDate", () => {
     return DateTime.now().toFormat("LLLL yyyy");
+  });
+
+  eleventyConfig.addShortcode("currentYear", () => {
+    return DateTime.now().toFormat("yyyy");
   });
 
   // Syntax Highlighting for Code blocks
@@ -163,6 +167,91 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("drawGuides", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/guides/draws/*.md");
+  });
+
+  eleventyConfig.addCollection("allSites", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/sites/*.md");
+  });
+
+  eleventyConfig.addCollection("searchIndex", function(collectionApi) {
+    var items = [];
+
+    // Sites (slots, casinos, draws)
+    collectionApi.getFilteredByGlob("src/sites/*.md").forEach(function(item) {
+      items.push({
+        title: item.data.title,
+        type: (item.data.tags || []).some(function(t) { return t.indexOf('draw') !== -1 || t.indexOf('Draw') !== -1; }) ? 'draw' : 'site',
+        url: item.url,
+        score: item.data.score || null,
+        description: item.data.welcomeOffer || item.data.jackpot || '',
+        brand: item.data.brand || null
+      });
+    });
+
+    // Slot guides
+    collectionApi.getFilteredByGlob("src/guides/slots/*.md").forEach(function(item) {
+      if (item.inputPath.indexOf('index.md') !== -1) return;
+      items.push({
+        title: item.data.title,
+        type: 'guide',
+        url: item.url,
+        score: null,
+        description: item.data.description || '',
+        brand: null
+      });
+    });
+
+    // Casino guides
+    collectionApi.getFilteredByGlob("src/guides/casinos/*.md").forEach(function(item) {
+      items.push({
+        title: item.data.title,
+        type: 'guide',
+        url: item.url,
+        score: null,
+        description: item.data.description || '',
+        brand: null
+      });
+    });
+
+    // Draw guides
+    collectionApi.getFilteredByGlob("src/guides/draws/*.md").forEach(function(item) {
+      items.push({
+        title: item.data.title,
+        type: 'guide',
+        url: item.url,
+        score: null,
+        description: item.data.description || '',
+        brand: null
+      });
+    });
+
+    // Strategy articles
+    collectionApi.getFilteredByGlob("src/strategy/*.md").forEach(function(item) {
+      if (item.inputPath.indexOf('index.md') !== -1) return;
+      items.push({
+        title: item.data.title,
+        type: 'strategy',
+        url: item.url,
+        score: null,
+        description: item.data.description || '',
+        brand: null
+      });
+    });
+
+    // Compare articles
+    collectionApi.getFilteredByGlob("src/compare/*.md").forEach(function(item) {
+      if (item.inputPath.indexOf('index.md') !== -1) return;
+      items.push({
+        title: item.data.title,
+        type: 'compare',
+        url: item.url,
+        score: null,
+        description: item.data.description || '',
+        brand: null
+      });
+    });
+
+    return items;
   });
 
   // Add the tag data as a global data object

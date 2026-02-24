@@ -15,6 +15,11 @@ highlights:
   - text: Top Software Providers
   - text: Mobile-Friendly Design
 welcomeOffer: 100% bonus up to £50 Plus 50 Real Money Free Spins on Book of Dead
+bonusPercentage: 100
+bonusMax: 50
+wageringRequirement: 35
+freeSpinsCount: 50
+freeSpinValue: 0.10
 tags:
   - slots
 type: site

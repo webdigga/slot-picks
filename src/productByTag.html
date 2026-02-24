@@ -18,6 +18,8 @@ pagination:
     - casinoGuides
     - drawGuides
     - drawReviews
+    - allSites
+    - searchIndex
   addAllPagesToCollections: true
 layout: default
 ogType: website
@@ -26,12 +28,14 @@ eleventyComputed:
   seoTitle: "{% if tag and tagData[tag] %}{{ tagData[tag].seoTitle }}{% endif %}"
   description: "{% if tag and tagData[tag] %}{{ tagData[tag].description }}{% endif %}"
   listCollection: "{{ tag }}"
-  canonical: "{{ env.site }}/{{ tag | slugify | replace('topratedslots', 'top-rated-slots') | replace('topratedcasinos', 'top-rated-casinos') | replace('newslots', 'new-slots') | replace('newcasinos', 'new-casinos') | replace('livecasinos', 'live-casinos') }}/"
-permalink: "/{{ tag | slugify | replace('topratedslots', 'top-rated-slots') | replace('topratedcasinos', 'top-rated-casinos') | replace('newslots', 'new-slots') | replace('newcasinos', 'new-casinos') | replace('livecasinos', 'live-casinos') }}/index.html"
+  canonical: "{{ env.site }}/{% if tagData[tag] and tagData[tag].slug %}{{ tagData[tag].slug }}{% else %}{{ tag | slugify }}{% endif %}/"
+permalink: "/{% if tagData[tag] and tagData[tag].slug %}{{ tagData[tag].slug }}{% else %}{{ tag | slugify }}{% endif %}/index.html"
 ---
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
 {% import "./_includes/components/site.html" as siteMacro with context %}
+{% import "./_includes/components/filterBar.html" as filterBarMacro with context %}
+{% import "./_includes/components/bonusCalculator.html" as bonusCalcMacro with context %}
 
 <div class="bg-bg-primary min-h-screen">
 
@@ -90,11 +94,15 @@ permalink: "/{{ tag | slugify | replace('topratedslots', 'top-rated-slots') | re
 
   <!-- Sites List -->
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-    <div class="grid grid-cols-1 gap-6">
+    {{ filterBarMacro.filterBar('sites') }}
+    <div class="grid grid-cols-1 gap-6" data-test="cardGrid">
       {% for site in collections[tag] | reverse %}
         {{ siteMacro.site(site) }}
       {% endfor %}
     </div>
+
+    <!-- Bonus Calculator (slots/casinos only) -->
+    {{ bonusCalcMacro.bonusCalculator(collections[tag]) }}
 
     <!-- SEO Content -->
     {% if tagData[tag].content %}

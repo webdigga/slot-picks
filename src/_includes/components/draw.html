@@ -1,7 +1,32 @@
 {% import "./checklist-item.html" as checkListItemMacro with context %}
 
 {% macro draw(draw) %}
-  <article class="card card-glow group relative overflow-hidden">
+  <article class="card card-glow group relative overflow-hidden"
+    data-test="drawCard"
+    data-score="{{ draw.data.score }}"
+    data-rating="{{ draw.data.rating }}"
+    data-date="{{ draw.data.date | iso8601 }}"
+    data-title="{{ draw.data.title }}"
+    data-tags="{{ (draw.data.tags or []) | join(',') }}"
+    data-compare-id="{{ draw.data.title | slugify }}"
+  >
+
+    <!-- Compare Data -->
+    <script type="application/json" data-test="compareData">
+      {
+        "id": "{{ draw.data.title | slugify }}",
+        "title": "{{ draw.data.title }}",
+        "brand": "{{ draw.data.brand }}",
+        "imageColour": "{{ draw.data.imageColour }}",
+        "score": {{ draw.data.score }},
+        "jackpot": "{{ draw.data.jackpot | default('') }}",
+        "entryCost": "{{ draw.data.entryCost | default('') }}",
+        "highlights": {{ (draw.data.highlights or []) | dump | safe }},
+        "externalUrl": "{{ draw.data.externalUrl }}",
+        "reviewUrl": "/reviews/{{ draw.data.title | slugify }}/",
+        "type": "draw"
+      }
+    </script>
 
     <div class="block p-5 sm:p-6">
 
@@ -41,62 +66,90 @@
             {% endfor %}
           </div>
 
-          <!-- Draw Name (visible on mobile) -->
-          <h3 class="text-text-primary font-semibold text-base sm:hidden text-center">
+        </div>
+
+        <!-- Score Badge Column -->
+        <div class="flex flex-col items-center sm:items-start">
+          {% set scoreText %}
+            {% if draw.data.score >= 90 %}
+              Excellent
+            {% elif draw.data.score >= 80 %}
+              Superb
+            {% elif draw.data.score < 80 %}
+              Good
+            {% endif %}
+          {% endset %}
+
+          {% set scoreBadgeClass %}
+            {% if draw.data.score >= 90 %}
+              bg-neon-green/20 text-neon-green border-neon-green/30
+            {% elif draw.data.score >= 80 %}
+              bg-neon-blue/20 text-neon-blue border-neon-blue/30
+            {% else %}
+              bg-neon-purple/20 text-neon-purple border-neon-purple/30
+            {% endif %}
+          {% endset %}
+
+          <div class="flex items-center gap-2">
+            <span class="inline-flex items-center justify-center w-12 h-12 rounded-lg border text-xl font-bold {{ scoreBadgeClass }}">
+              {{ draw.data.score }}
+            </span>
+            <span class="text-text-primary font-medium text-sm">{{ scoreText }}</span>
+          </div>
+
+          <h3 class="text-text-primary font-semibold mt-3 text-base text-center sm:text-left">
             {{ draw.data.title }}
           </h3>
-
         </div>
 
-        <!-- Key Stats Column -->
-        <div class="flex flex-col gap-3">
-
-          <!-- Jackpot -->
-          <div>
-            <span class="text-text-muted text-xs uppercase tracking-wider">Jackpot</span>
-            <p class="text-neon-gold font-bold text-xl mb-0">{{ draw.data.jackpot }}</p>
-          </div>
-
-          <!-- Entry Cost -->
-          <div class="flex items-center gap-2">
-            <span class="w-7 h-7 rounded-md bg-neon-green/15 flex items-center justify-center flex-shrink-0">
-              <svg class="w-4 h-4 text-neon-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-            </span>
-            <div>
-              <span class="text-text-primary text-sm font-semibold">{{ draw.data.entryCost }}</span>
-            </div>
-          </div>
-
-          <!-- Draw Frequency -->
-          <div class="flex items-center gap-2">
-            <span class="w-7 h-7 rounded-md bg-neon-blue/15 flex items-center justify-center flex-shrink-0">
-              <svg class="w-4 h-4 text-neon-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-              </svg>
-            </span>
-            <div>
-              <span class="text-text-primary text-sm font-semibold">{{ draw.data.drawFrequency }}</span>
-            </div>
-          </div>
-
-          <!-- Odds -->
-          <div class="flex items-center gap-2">
-            <span class="w-7 h-7 rounded-md bg-neon-purple/15 flex items-center justify-center flex-shrink-0">
-              <svg class="w-4 h-4 text-neon-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-              </svg>
-            </span>
-            <div>
-              <span class="text-text-primary text-sm font-semibold">{{ draw.data.anyPrizeOdds }}</span>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Highlights Column -->
+        <!-- Key Stats & Highlights Column -->
         <div class="sm:col-span-2">
+          <div class="grid sm:grid-cols-2 gap-4 mb-4">
+            <div class="flex items-center gap-2">
+              <span class="w-7 h-7 rounded-md bg-neon-gold/15 flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4 text-neon-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </span>
+              <div>
+                <span class="text-text-muted text-xs">Jackpot</span>
+                <p class="text-neon-gold font-bold text-sm mb-0">{{ draw.data.jackpot }}</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-7 h-7 rounded-md bg-neon-green/15 flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4 text-neon-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </span>
+              <div>
+                <span class="text-text-muted text-xs">Entry</span>
+                <p class="text-text-primary font-semibold text-sm mb-0">{{ draw.data.entryCost }}</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-7 h-7 rounded-md bg-neon-blue/15 flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4 text-neon-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                </svg>
+              </span>
+              <div>
+                <span class="text-text-muted text-xs">Frequency</span>
+                <p class="text-text-primary font-semibold text-sm mb-0">{{ draw.data.drawFrequency }}</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-7 h-7 rounded-md bg-neon-purple/15 flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4 text-neon-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+              </span>
+              <div>
+                <span class="text-text-muted text-xs">Odds</span>
+                <p class="text-text-primary font-semibold text-sm mb-0">{{ draw.data.anyPrizeOdds }}</p>
+              </div>
+            </div>
+          </div>
           <ul class="grid sm:grid-cols-2 gap-x-4 gap-y-1">
             {% for highlight in draw.data.highlights %}
               {{
@@ -130,9 +183,17 @@
 
       </div>
 
-      <!-- Operator Info -->
-      <div class="mt-5 pt-4 border-t border-border-dark text-text-muted text-xs">
-        {{ draw.data.operatorInfo }}
+      <!-- Operator Info & Compare -->
+      <div class="mt-5 pt-4 border-t border-border-dark flex items-start justify-between gap-4">
+        <div class="text-text-muted text-xs flex-1">
+          {{ draw.data.operatorInfo }}
+        </div>
+        <button data-test="compareToggle" data-compare-target="{{ draw.data.title | slugify }}" class="flex-shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border border-border-dark text-text-secondary hover:border-neon-green hover:text-neon-green hover:bg-neon-green/5 transition-all duration-200" aria-label="Add to compare">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+          </svg>
+          Compare
+        </button>
       </div>
 
     </div>

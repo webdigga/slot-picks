@@ -15,6 +15,11 @@ highlights:
   - text: 6-Tier VIP Club
   - text: 30+ Sports To Bet On
 welcomeOffer: 100% up to £100 + 100 Free Spins on Big Bass Splash
+bonusPercentage: 100
+bonusMax: 100
+wageringRequirement: 40
+freeSpinsCount: 100
+freeSpinValue: 0.10
 tags:
   - casinos
   - newCasinos

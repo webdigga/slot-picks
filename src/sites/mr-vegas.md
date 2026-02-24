@@ -15,6 +15,11 @@ highlights:
   - text: Popular Slot Titles
   - text: Free Play Options
 welcomeOffer: "100% up to £200 + 11 Free Spins"
+bonusPercentage: 100
+bonusMax: 200
+wageringRequirement: 0
+freeSpinsCount: 11
+freeSpinValue: 0.10
 tags:
   - newCasinos
   - newSlots

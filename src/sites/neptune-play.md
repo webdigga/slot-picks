@@ -15,6 +15,11 @@ highlights:
   - text: 2300+ Games
   - text: No Fees on Deposits & Withdrawals
 welcomeOffer: 100% Deposit Match up to £100
+bonusPercentage: 100
+bonusMax: 100
+wageringRequirement: 40
+freeSpinsCount: 25
+freeSpinValue: 0.10
 tags:
   - slots
   - newSlots

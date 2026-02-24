@@ -1,0 +1,87 @@
+{% macro bonusCalculator(sites) %}
+  <div data-test="bonusCalculator" class="mt-12 p-6 rounded-xl relative overflow-hidden border-2 border-border-subtle">
+    <div class="relative flex flex-wrap items-center gap-4 mb-6">
+      <div>
+        <div class="flex items-center gap-2 mb-1">
+          <span class="w-8 h-8 rounded-lg bg-neon-green/15 flex items-center justify-center">
+            <svg class="w-4 h-4 text-neon-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+            </svg>
+          </span>
+          <h3 class="text-text-primary text-lg font-bold mb-0">Bonus Calculator</h3>
+        </div>
+        <p class="text-text-muted text-sm mb-0">Enter your deposit to see what you'll get at each site</p>
+      </div>
+
+      <div class="flex items-center gap-2 ml-auto">
+        <label for="depositInput" class="text-text-secondary text-sm font-medium">Deposit:</label>
+        <div class="relative">
+          <span class="absolute left-3 top-1/2 -translate-y-1/2 text-text-muted text-sm">&pound;</span>
+          <input
+            type="number"
+            id="depositInput"
+            data-test="depositInput"
+            value="20"
+            min="1"
+            max="10000"
+            step="1"
+            class="w-28 bg-bg-secondary border border-border-dark rounded-lg py-2 pl-7 pr-3 text-sm text-text-primary focus:outline-none focus:border-neon-green/50"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="relative overflow-x-auto">
+      <table class="w-full text-sm" data-test="bonusTable">
+        <thead>
+          <tr class="border-b border-border-dark">
+            <th class="text-left py-3 pr-4 text-text-muted font-medium">Site</th>
+            <th class="text-right py-3 px-3 text-text-muted font-medium">Bonus</th>
+            <th class="text-right py-3 px-3 text-text-muted font-medium">Free Spins Value</th>
+            <th class="text-right py-3 px-3 text-text-muted font-medium">Total Play Money</th>
+            <th class="text-right py-3 px-3 text-text-muted font-medium">Wagering Req.</th>
+            <th class="text-center py-3 pl-3 text-text-muted font-medium">Claim</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for site in sites %}
+            {% if site.data.bonusPercentage or site.data.freeSpinsCount %}
+              <tr
+                class="border-b border-border-dark/50 hover:bg-bg-secondary/30 transition-colors"
+                data-test="bonusRow"
+                data-bonus-pct="{{ site.data.bonusPercentage | default(0) }}"
+                data-bonus-max="{{ site.data.bonusMax | default(0) }}"
+                data-wagering="{{ site.data.wageringRequirement | default(0) }}"
+                data-spins-count="{{ site.data.freeSpinsCount | default(0) }}"
+                data-spin-value="{{ site.data.freeSpinValue | default(0) }}"
+              >
+                <td class="py-3 pr-4">
+                  <div class="flex items-center gap-3">
+                    <div class="flex-shrink-0 w-[120px] h-[44px] rounded-md flex items-center justify-center border border-border-dark/50 overflow-hidden" style="background-color: {{ site.data.imageColour }};">
+                      <img src="{{ site.data.brand }}" alt="{{ site.data.imageAlt }}" class="max-w-[100px] max-h-[32px] object-contain" width="100" height="32" loading="lazy"/>
+                    </div>
+                    <span class="text-text-primary font-medium whitespace-nowrap">{{ site.data.title }}</span>
+                  </div>
+                </td>
+                <td class="text-right py-3 px-3 text-neon-green font-semibold" data-test="bonusAmount">-</td>
+                <td class="text-right py-3 px-3 text-neon-gold" data-test="spinsValue">-</td>
+                <td class="text-right py-3 px-3 text-text-primary font-bold" data-test="totalPlay">-</td>
+                <td class="text-right py-3 px-3 text-text-secondary" data-test="wageringAmount">-</td>
+                <td class="text-center py-3 pl-3">
+                  <a
+                    href="{{ site.data.externalUrl }}?utm_source=slotpicks&utm_medium=affiliate&utm_campaign=calculator"
+                    target="_blank"
+                    rel="noopener"
+                    class="inline-flex items-center justify-center py-1.5 px-3 rounded-md text-xs font-semibold bg-neon-green text-bg-primary hover:bg-neon-green-dim transition-colors"
+                  >Claim</a>
+                </td>
+              </tr>
+            {% endif %}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-text-muted text-xs mt-4 mb-0">Values are estimates based on published bonus terms. Actual amounts may vary. Always check the site's T&Cs. 18+ only.</p>
+  </div>
+{% endmacro %}

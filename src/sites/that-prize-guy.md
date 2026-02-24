@@ -13,6 +13,10 @@ highlights:
   - text: £143M+ Given Away to Winners
   - text: Live Draws on Facebook
   - text: Based in Northern Ireland Since 2020
+jackpot: "Cash & prizes"
+entryCost: "From 79p"
+drawFrequency: "Multiple draws weekly"
+anyPrizeOdds: "Varies per competition"
 tags:
   - drawReviews
 type: site

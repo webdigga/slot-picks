@@ -4,6 +4,7 @@ imageAlt: Omaze UK
 imageColour: "#FEFFFE"
 title: Omaze UK
 date: 2026-02-01
+score: 88
 rating: 5
 jackpot: "Houses worth £4M+"
 entryCost: "From £10"

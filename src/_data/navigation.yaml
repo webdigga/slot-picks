@@ -53,6 +53,8 @@ firstLevelItems:
   - text: Compare
     url: /compare/
     secondLevelItems:
+      - text: Comparison Tool
+        url: /compare/comparison-tool/
       - text: All Comparisons
         url: /compare/
       - text: Best Bonuses

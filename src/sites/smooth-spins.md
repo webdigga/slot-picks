@@ -15,6 +15,11 @@ highlights:
   - text: Clean Site & Mobile Friendly
   - text: Free Prize Wheel
 welcomeOffer: 200 Free Spins on Bee Keeper, No Wagering
+bonusPercentage: 0
+bonusMax: 0
+wageringRequirement: 0
+freeSpinsCount: 200
+freeSpinValue: 0.10
 tags:
   - newSlots
 type: site

@@ -15,6 +15,11 @@ highlights:
   - text: Cashback Offers
   - text: Interactive Gameplay
 welcomeOffer: 100% Games Bonus up to £100 + 30 Free Spins
+bonusPercentage: 200
+bonusMax: 100
+wageringRequirement: 30
+freeSpinsCount: 30
+freeSpinValue: 0.10
 tags:
   - slots
 type: site

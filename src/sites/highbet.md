@@ -15,6 +15,11 @@ highlights:
   - text: 20+ Top Game Providers
   - text: Fast & Secure Payouts
 welcomeOffer: 50 Free Spins on Big Bass Splash (No Wagering)
+bonusPercentage: 0
+bonusMax: 0
+wageringRequirement: 0
+freeSpinsCount: 50
+freeSpinValue: 0.10
 tags:
   - casinos
   - newCasinos

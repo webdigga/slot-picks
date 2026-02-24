@@ -4,6 +4,7 @@ imageAlt: That Prize Guy
 imageColour: "#111111"
 title: That Prize Guy
 date: 2026-02-15
+score: 85
 rating: 4
 jackpot: "Cash & prizes"
 entryCost: "From 79p"

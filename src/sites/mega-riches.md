@@ -15,6 +15,11 @@ highlights:
   - text: Attractive Bonuses & Promotions
   - text: Fast & Flexible Payments
 welcomeOffer: 100% up to £25 + 50 Chances To Become A Millionaire
+bonusPercentage: 100
+bonusMax: 25
+wageringRequirement: 0
+freeSpinsCount: 50
+freeSpinValue: 0.10
 tags:
   - newCasinos
   - casinos

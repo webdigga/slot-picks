@@ -96,11 +96,27 @@ collections:
         widget: "string"
       }
       - { label: 'Image Colour', name: 'imageColour', widget: 'color' }
-      - { label: 'Border Colour', name: 'borderColour', widget: 'color' }
+      - { label: 'Border Colour', name: 'borderColour', widget: 'color', required: false }
       - {
         label: "Title",
         name: "title",
         widget: "string"
+      }
+      - {
+        label: "SEO Title",
+        name: "seoTitle",
+        widget: "string",
+        hint: "*Used in the title tag for search engines (50-60 characters)*",
+        pattern: ['^.{50,60}$', "Must be between 50 and 60 characters"],
+        required: false
+      }
+      - {
+        label: "Description",
+        name: "description",
+        widget: "string",
+        hint: "*Used in search engines (70-155 characters)*",
+        pattern: ['^.{70,155}$', "Must be between 70 and 155 characters"],
+        required: false
       }
       - {
         label: "Score",
@@ -125,14 +141,47 @@ collections:
       - {
         label: "Welcome Offer",
         name: "welcomeOffer",
-        widget: "string"
+        widget: "string",
+        required: false,
+        hint: "*For slots/casinos only*"
       }
+      - { label: "Verdict", name: "verdict", widget: "text", required: false }
+      - label: "Pros"
+        name: "pros"
+        widget: "list"
+        required: false
+        field: { label: "Pro", name: "pro", widget: "string" }
+      - label: "Cons"
+        name: "cons"
+        widget: "list"
+        required: false
+        field: { label: "Con", name: "con", widget: "string" }
+      - { label: "Min Deposit", name: "minDeposit", widget: "string", required: false, hint: "*For slots/casinos only*" }
+      - { label: "Withdrawal Time", name: "withdrawalTime", widget: "string", required: false, hint: "*For slots/casinos only*" }
+      - { label: "Live Chat", name: "liveChat", widget: "boolean", default: false, required: false }
+      - { label: "Mobile App", name: "mobileApp", widget: "boolean", default: false, required: false }
+      - label: "Payment Methods"
+        name: "paymentMethods"
+        widget: "list"
+        required: false
+        hint: "*For slots/casinos only*"
+        field: { label: "Method", name: "method", widget: "string" }
+      - label: "Game Providers"
+        name: "gameProviders"
+        widget: "list"
+        required: false
+        hint: "*For slots/casinos only*"
+        field: { label: "Provider", name: "provider", widget: "string" }
+      - { label: "Jackpot", name: "jackpot", widget: "string", required: false, hint: "*For draws only*" }
+      - { label: "Entry Cost", name: "entryCost", widget: "string", required: false, hint: "*For draws only*" }
+      - { label: "Draw Frequency", name: "drawFrequency", widget: "string", required: false, hint: "*For draws only*" }
+      - { label: "Prize Odds", name: "anyPrizeOdds", widget: "string", required: false, hint: "*For draws only*" }
       - widget: select
         label: "tags"
         name: "tags"
         multiple: true
         create: true
-        options: ["slots", "topRatedSlots", "newSlots", "slotGames", "freeSpins", "videoSlots", "casinos", "topRatedCasinos", "newCasinos", "casinoGames", "freeCasinos", "liveCasinos"]
+        options: ["slots", "topRatedSlots", "newSlots", "slotGames", "freeSpins", "videoSlots", "casinos", "topRatedCasinos", "newCasinos", "casinoGames", "freeCasinos", "liveCasinos", "drawReviews"]
       - widget: select
         label: "type"
         name: "type"
@@ -152,6 +201,50 @@ collections:
         label: "T&Cs",
         name: "termsAndConditions",
         widget: "string"
+      }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
+  - label: "Draws"
+    name: "draws"
+    folder: "src/draws"
+    create: true
+    fields:
+      - {
+        label: "Brand",
+        name: "brand",
+        widget: "image",
+        hint: "*Should be 250px x 65px"
+      }
+      - { label: "Image Alt", name: "imageAlt", widget: "string" }
+      - { label: 'Image Colour', name: 'imageColour', widget: 'color' }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Score", name: "score", widget: "number", min: 1, max: 100 }
+      - { label: "Rating", name: "rating", widget: "number", min: 1, max: 5 }
+      - { label: "Jackpot", name: "jackpot", widget: "string" }
+      - { label: "Entry Cost", name: "entryCost", widget: "string" }
+      - { label: "Draw Frequency", name: "drawFrequency", widget: "string" }
+      - { label: "Prize Odds", name: "anyPrizeOdds", widget: "string" }
+      - label: Highlights
+        name: highlights
+        widget: list
+        collapsed: false
+        fields:
+          - { label: Title, name: text, widget: string }
+      - { label: "External URL", name: "externalUrl", widget: "string" }
+      - { label: "Review URL", name: "reviewUrl", widget: "string", hint: "*e.g. /reviews/draw-name/*" }
+      - { label: "Operator Info", name: "operatorInfo", widget: "string" }
+      - widget: select
+        label: "tags"
+        name: "tags"
+        multiple: true
+        create: true
+        options: ["topRatedDraws", "newDraws"]
+      - {
+        label: "Date Added",
+        name: "date",
+        widget: "datetime",
+        date_format: "YYYY-MM-DD",
+        time_format: false,
+        required: false
       }
   - label: "Settings"
     name: "settings"

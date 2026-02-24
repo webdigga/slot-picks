@@ -15,6 +15,11 @@ highlights:
   - text: Top Providers Including Evolution
   - text: Daily Picks & Slot Tournaments
 welcomeOffer: 100% up to £80 + 160 Free Spins on Big Bass Bonanza
+bonusPercentage: 100
+bonusMax: 80
+wageringRequirement: 30
+freeSpinsCount: 160
+freeSpinValue: 0.10
 tags:
   - casinos
   - newCasinos

@@ -15,6 +15,11 @@ highlights:
   - text: VIP Loyalty Program
   - text: Fast & Secure Payments
 welcomeOffer: 100% Bonus up to £50 + 50 Free Spins
+bonusPercentage: 100
+bonusMax: 50
+wageringRequirement: 35
+freeSpinsCount: 50
+freeSpinValue: 0.10
 tags:
   - slots
 type: site

@@ -15,6 +15,11 @@ highlights:
   - text: Quality Game Selection
   - text: No Wagering on Cashback
 welcomeOffer: 100% up to £100 + 110 Free Spins
+bonusPercentage: 100
+bonusMax: 100
+wageringRequirement: 35
+freeSpinsCount: 110
+freeSpinValue: 0.10
 tags:
   - casinos
   - topRatedCasinos

@@ -137,6 +137,6 @@
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
-  for = "/static/img/*"
+  for = "/_includes/static/img/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"

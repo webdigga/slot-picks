@@ -13,6 +13,10 @@ highlights:
   - text: Every Entry Supports UK Charities
   - text: Free Postal Entry Available
   - text: Over £30M Raised for Good Causes
+jackpot: "Houses worth £4M+"
+entryCost: "From £10"
+drawFrequency: "Monthly draws"
+anyPrizeOdds: "Varies per draw"
 tags:
   - drawReviews
 type: site
