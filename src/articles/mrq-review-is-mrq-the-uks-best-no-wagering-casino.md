@@ -131,4 +131,4 @@ MrQ has over 900 games including slots from Pragmatic Play, NetEnt, Big Time Gam
 
 MrQ has earned its place as one of the standout options in the UK online casino market. The zero wagering policy isn't just a marketing gimmick; it fundamentally changes the player experience. Combined with instant withdrawals, a quality game library of 900+ titles, and a low £10 minimum deposit, MrQ offers a genuinely fair and enjoyable platform.
 
-If you're tired of chasing unachievable wagering requirements and waiting days for your money, MrQ is well worth a look. Read our full [MrQ review page](/reviews/mrq/) for the complete breakdown, or visit <a href="https://mrq.com/" target="_blank" rel="noopener">MrQ</a> to see for yourself.
+If you're tired of chasing unachievable wagering requirements and waiting days for your money, MrQ is well worth a look. Read our full [MrQ review page](/reviews/mrq/) for the complete breakdown, or visit <a href="https://mrq.com/?utm_source=slotpicks&utm_medium=affiliate&utm_campaign=mrq-review" target="_blank" rel="noopener">MrQ</a> to see for yourself.
