@@ -11,7 +11,7 @@ highlights:
   - text: Fantastic Bonus Offers
   - text: Over 5000 Games
   - text: Easy Sign Up Process
-  - text: "Mobile App "
+  - text: Mobile App
   - text: VIP Loyalty Program
   - text: Fast & Secure Payments
 welcomeOffer: 100% Bonus up to £50 + 50 Free Spins

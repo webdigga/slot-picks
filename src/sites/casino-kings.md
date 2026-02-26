@@ -8,25 +8,22 @@ date: 2025-01-01
 score: 85
 rating: 4
 highlights:
-  - text: Excellent Sign Up Offer
+  - text: 100 Free Spins Welcome Offer
   - text: Online Scratchcards
   - text: Weekly & Monthly Promotions
   - text: Great Mobile Experience
   - text: Generous Promotions
   - text: Extensive Game Library
-welcomeOffer: 150% upto £150 Bonus + 75 Free Spins
-bonusPercentage: 150
-bonusMax: 150
-wageringRequirement: 50
-freeSpinsCount: 75
+welcomeOffer: 100 Free Spins on Big Bass Bonanza
+bonusPercentage: 0
+bonusMax: 0
+wageringRequirement: 10
+freeSpinsCount: 100
 freeSpinValue: 0.10
 tags:
   - casinos
   - newCasinos
 type: site
 externalUrl: https://lobby.casinokings.com/
-termsAndConditions: "Wager from real balance first. 50X wager the bonus.
-  Contribution varies per game. Selected games only. Wager calculated on bonus
-  bets only. Bonus valid 30 days / Free spins valid 7 days from receipt. Max
-  conversion: 3 times the bonus amount or from free spins: £20."
+termsAndConditions: New players only. Min deposit £20. 10x wagering on free spin winnings. 18+. BeGambleAware.
 ---

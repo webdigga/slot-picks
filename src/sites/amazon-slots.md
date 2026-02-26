@@ -17,7 +17,7 @@ highlights:
 welcomeOffer: 500 Free Spins
 bonusPercentage: 0
 bonusMax: 0
-wageringRequirement: 65
+wageringRequirement: 10
 freeSpinsCount: 500
 freeSpinValue: 0.10
 tags:
@@ -25,19 +25,22 @@ tags:
   - topRatedSlots
 type: site
 externalUrl: https://www.amazonslots.com/
-termsAndConditions: New players only, £10+ fund, free spins won via Mega Reel, 65x bonus wagering req, max bonus conversion to real funds equal to lifetime deposits (up to £250)
+termsAndConditions: New players only, £10+ fund, free spins won via Mega Reel, 10x bonus wagering req, max bonus conversion to real funds equal to lifetime deposits (up to £250)
 
 # Extended Review Data
 minDeposit: "£10"
 withdrawalTime: "3-5 business days"
 liveChat: true
-mobileApp: false
+mobileApp: true
 paymentMethods:
   - Visa
   - Mastercard
   - PayPal
   - Pay By Mobile
   - Paysafecard
+  - Skrill
+  - Neteller
+  - Maestro
 gameProviders:
   - Eyecon
   - Pragmatic Play
@@ -51,9 +54,9 @@ pros:
   - Good selection of themed slots
   - Mega Reel bonus spinner
 cons:
-  - High 65x wagering requirements
+  - 10x wagering requirements on spin winnings
   - Withdrawal times slower than competitors
-  - No dedicated mobile app
+  - Max bonus conversion capped at £250
   - Bonus conversion limits apply
 verdict: Amazon Slots offers an exciting slot-focused experience with its generous 500 free spins welcome offer and unique Mega Reel feature. The pay by mobile option makes depositing convenient, though the higher wagering requirements mean bonus hunters should read the terms carefully.
 ---
@@ -68,7 +71,7 @@ The site features a solid selection of slots from providers like Eyecon, Pragmat
 
 ### Welcome Bonus
 
-New players spin the Mega Reel for up to 500 free spins on selected games. While the maximum prize is generous, note the 65x wagering requirement attached to any winnings.
+New players spin the Mega Reel for up to 500 free spins on selected games. While the maximum prize is generous, note the 10x wagering requirement attached to any winnings.
 
 ### Banking Options
 

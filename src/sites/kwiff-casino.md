@@ -8,10 +8,10 @@ date: 2025-01-01
 score: 90
 rating: 5
 highlights:
-  - text: Excellent Selction of Games
+  - text: Excellent Selection of Games
   - text: Sportsbook Available
   - text: Trending Slot Games
-  - text: Virual Sports
+  - text: Virtual Sports
   - text: Live Dealer Games
   - text: Ongoing Promotions & Offers
 welcomeOffer: Upto 200 Free Spins

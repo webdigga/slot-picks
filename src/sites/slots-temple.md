@@ -11,7 +11,7 @@ highlights:
   - text: Free Slots Tournaments
   - text: No Deposit or Registration Required
   - text: Over 6000 Slot Games
-  - text: For Pure Slot  Enthusiasts
+  - text: For Pure Slot Enthusiasts
   - text: Detailed Slot Game Reviews
   - text: Fun & Safe
 welcomeOffer: Free Slot Tournaments & Cash Prizes

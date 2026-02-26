@@ -16,7 +16,7 @@ highlights:
   - text: No Fees on Deposits & Withdrawals
 welcomeOffer: 100% Deposit Match up to £100
 bonusPercentage: 100
-bonusMax: 100
+bonusMax: 200
 wageringRequirement: 40
 freeSpinsCount: 25
 freeSpinValue: 0.10
@@ -25,7 +25,7 @@ tags:
   - newSlots
 type: site
 externalUrl: https://promo.neptuneplay.com/
-termsAndConditions: "New dcustomers only. Min. deposit: £10. Max. bonus: £200 +
+termsAndConditions: "New customers only. Min. deposit: £10. Max. bonus: £200 +
   25 Bonus Spins on Book of Dead. Offer valid on the first deposit. No wagering
   is required on Bonus Spins. Wagering Required on Bonus Cash: 40x."
 ---

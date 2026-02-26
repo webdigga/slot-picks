@@ -23,7 +23,7 @@ freeSpinValue: 0.10
 tags:
   - casinos
 type: site
-externalUrl: https://welcome.midnite.com/ppc/ppc-uk-casino-100-free-spins-tv-offer
+externalUrl: https://www.midnite.com/casino
 termsAndConditions: New customers only. Opt in and wager £20 or more on selected
   games within 14 days of registration. Get 100 Free Spins for selected games,
   valued at 10p and valid for 7 days. T&Cs apply.

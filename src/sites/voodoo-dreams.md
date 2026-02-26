@@ -9,7 +9,7 @@ score: 90
 rating: 4
 highlights:
   - text: Real Money Free Spins
-  - text: Live Casino & Tabel Games
+  - text: Live Casino & Table Games
   - text: Excellent Loyalty Scheme
   - text: Extensive Game Selection
   - text: Top Software Providers

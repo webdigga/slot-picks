@@ -39,6 +39,8 @@ paymentMethods:
   - Skrill
   - Neteller
   - Trustly
+  - Apple Pay
+  - Paysafecard
 gameProviders:
   - NetEnt
   - Microgaming

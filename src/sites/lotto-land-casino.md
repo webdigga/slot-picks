@@ -14,18 +14,17 @@ highlights:
   - text: Huge Selection of Games
   - text: Dedicated Mobile Apps
   - text: Responsible Gambling Tools
-welcomeOffer: 50 Free Spins on Big Bass Bonanza when you stake £10
+welcomeOffer: 100 Free Spins on Big Bass Bonanza when you stake £20 (No Wagering)
 bonusPercentage: 0
 bonusMax: 0
 wageringRequirement: 0
-freeSpinsCount: 50
+freeSpinsCount: 100
 freeSpinValue: 0.10
 tags:
   - casinos
   - newCasinos
 type: site
 externalUrl: https://www.lottoland.co.uk/casino
-termsAndConditions: 18+. Sign up, deposit and stake on Big Bass Bonanza, and
-  receive Free Spins on Big Bass Bonanza. 30 day bonus expiry. Ends 14/02/26 at
-  23:59 GMT.
+termsAndConditions: 18+. Sign up, deposit and stake £20 on Big Bass Bonanza, and
+  receive 100 Free Spins on Big Bass Bonanza. 30 day bonus expiry.
 ---

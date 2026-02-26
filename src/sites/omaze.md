@@ -12,7 +12,7 @@ highlights:
   - text: Charity Partners Include GOSH & Royal Marsden
   - text: Every Entry Supports UK Charities
   - text: Free Postal Entry Available
-  - text: Over £30M Raised for Good Causes
+  - text: Over £93M Raised for Good Causes
 jackpot: "Houses worth £4M+"
 entryCost: "From £10"
 drawFrequency: "Monthly draws"
@@ -40,7 +40,7 @@ verdict: Omaze offers a unique proposition combining life-changing prizes with g
 
 ## Omaze UK Review
 
-Omaze is a charity prize draw platform offering luxury houses, cash prizes, and more while raising money for UK charities. Since launching in the UK, Omaze has given away dozens of houses, made monthly millionaires, and raised over £30M for charitable causes.
+Omaze is a charity prize draw platform offering luxury houses, cash prizes, and more while raising money for UK charities. Since launching in the UK, Omaze has given away dozens of houses, made monthly millionaires, and raised over £93 million for charitable causes.
 
 ### How It Works
 
@@ -52,7 +52,7 @@ House draws feature stunning UK properties worth £3M-£4M+, offered mortgage-fr
 
 ### Charity Impact
 
-Omaze partners with leading UK charities including Great Ormond Street Hospital, the Royal Marsden, Teenage Cancer Trust, RSPCA, and many more. Over £30M has been raised through Omaze draws, funding research, patient care, and charitable programmes.
+Omaze partners with leading UK charities including Great Ormond Street Hospital, the Royal Marsden, Teenage Cancer Trust, RSPCA, and many more. Over £93 million has been raised through Omaze draws, funding research, patient care, and charitable programmes.
 
 ### Is It Legitimate?
 

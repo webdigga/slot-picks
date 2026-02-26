@@ -8,7 +8,7 @@ date: 2026-02-20
 score: 88
 rating: 4
 highlights:
-  - text: 3,000+ Casino Games
+  - text: 2,500+ Casino Games
   - text: Casino & Sportsbook Combined
   - text: 50 Free Spins No Wagering
   - text: UKGC & MGA Licensed
@@ -25,18 +25,21 @@ tags:
   - newCasinos
 type: site
 externalUrl: https://www.highbet.co.uk/
-termsAndConditions: New players only. Min deposit & wager £20 on slots. 50 free spins credited within 24hrs. No wagering on spin winnings. 18+. BeGambleAware.
+termsAndConditions: New players only. Min deposit & wager £10 on slots. 50 free spins credited within 24hrs. No wagering on spin winnings. 18+. BeGambleAware.
 
 # Extended Review Data
-minDeposit: "£20"
+minDeposit: "£10"
 withdrawalTime: "24-48 hours"
 liveChat: true
-mobileApp: false
+mobileApp: true
 paymentMethods:
   - Visa
   - Mastercard
   - PayPal
   - Bank Transfer
+  - Skrill
+  - Neteller
+  - Apple Pay
 gameProviders:
   - NetEnt
   - Microgaming
@@ -45,27 +48,26 @@ gameProviders:
 pros:
   - No wagering requirements on welcome free spins
   - Dual UKGC and MGA licences for extra trust
-  - Over 3,000 games from 20+ providers
+  - Over 2,500 games from 20+ providers
   - Combined casino and sportsbook platform
   - Strong responsible gambling tools
 cons:
-  - Must wager £20 on slots before spins are credited
-  - No dedicated mobile app
-  - Relatively new brand
-verdict: HighBet is a strong new addition to the UK market with dual licensing and a genuinely no-wagering welcome offer. The combination of 3,000+ casino games and a full sportsbook makes it a versatile platform for players who enjoy both.
+  - Must wager £10 on slots before spins are credited
+  - Relatively new brand with limited track record
+verdict: HighBet is a strong new addition to the UK market with dual licensing and a genuinely no-wagering welcome offer. The combination of 2,500+ casino games and a full sportsbook makes it a versatile platform for players who enjoy both.
 ---
 
 ## HighBet Casino Review
 
-HighBet is a UKGC-licensed casino and sportsbook operating under account number 44662, with an additional Malta Gaming Authority licence. Launched in 2025, it offers over 3,000 games alongside a full sportsbook.
+HighBet is a UKGC-licensed casino and sportsbook operating under account number 44662, with an additional Malta Gaming Authority licence. Launched in 2025, it offers over 2,500 games alongside a full sportsbook.
 
 ### Welcome Bonus
 
-New casino players receive 50 free spins on Big Bass Splash after depositing and wagering £20 on any slots. Spins are credited within 24 hours. The standout feature is zero wagering requirements on any spin winnings.
+New casino players receive 50 free spins on Big Bass Splash after depositing and wagering £10 on any slots. Spins are credited within 24 hours. The standout feature is zero wagering requirements on any spin winnings.
 
 ### Game Selection
 
-The casino features over 3,000 titles from 20+ providers including NetEnt, Microgaming, Evolution Gaming, and Pragmatic Play. The live casino section is powered by Evolution with a full range of table games.
+The casino features over 2,500 titles from 20+ providers including NetEnt, Microgaming, Evolution Gaming, and Pragmatic Play. The live casino section is powered by Evolution with a full range of table games.
 
 ### Sportsbook
 

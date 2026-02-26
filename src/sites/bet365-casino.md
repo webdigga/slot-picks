@@ -18,7 +18,7 @@ welcomeOffer: 10 Days of Free Spins
 bonusPercentage: 0
 bonusMax: 0
 wageringRequirement: 0
-freeSpinsCount: 200
+freeSpinsCount: 500
 freeSpinValue: 0.10
 tags:
   - casinos
@@ -26,7 +26,7 @@ tags:
 type: site
 externalUrl: https://casino.bet365.com/home
 termsAndConditions: Min. £10 in lifetime deposits required. Offer must be
-  claimed within 30 days of registering a bet365 account. Select prizes of 5, 10
-  or 20 Free Spins; 10 selections available within 20 days, 24 hours between
+  claimed within 30 days of registering a bet365 account. Select prizes of 5, 10, 20
+  or 50 Free Spins; 10 selections available within 20 days, 24 hours between
   each selection. Max. prize, game restrictions, time limits and T&Cs apply.
 ---

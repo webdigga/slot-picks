@@ -17,12 +17,12 @@ highlights:
 welcomeOffer: 100 Free Spins. First Deposit Only. Min £10.
 bonusPercentage: 0
 bonusMax: 0
-wageringRequirement: 0
+wageringRequirement: 10
 freeSpinsCount: 100
 freeSpinValue: 0.10
 tags:
   - newSlots
 type: site
 externalUrl: https://www.zebrawins.com/
-termsAndConditions: 18+. New Customers Only. First Deposit Only. See website for more details.
+termsAndConditions: "18+. New Customers Only. First Deposit Only. 10x wagering on free spin winnings within 30 days. Max bet 10% of winnings or £5. See website for more details."
 ---

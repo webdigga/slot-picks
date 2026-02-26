@@ -15,17 +15,17 @@ highlights:
   - text: Cashback Offers
   - text: Interactive Gameplay
 welcomeOffer: 100% Games Bonus up to £100 + 30 Free Spins
-bonusPercentage: 200
+bonusPercentage: 100
 bonusMax: 100
-wageringRequirement: 30
+wageringRequirement: 10
 freeSpinsCount: 30
 freeSpinValue: 0.10
 tags:
   - slots
 type: site
 externalUrl: https://www.winkslots.com/
-termsAndConditions: "New players only. Min dep £10 with code: GOLD200 200% games
+termsAndConditions: "New players only. Min dep £10 with code: WELCOME 100% games
   bonus (max £100). Each free spin value is 10p. Free spins wins paid to games
-  bonus. 30x games bonus wagering required. 5-day expiry. 18+ GambleAware.org.
+  bonus. 10x games bonus wagering required. 5-day expiry. 18+ GambleAware.org.
   T&Cs apply."
 ---

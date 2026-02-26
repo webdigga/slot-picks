@@ -17,7 +17,7 @@ highlights:
 welcomeOffer: 200 Free Spins on Big Bass Splash when you play £10
 bonusPercentage: 0
 bonusMax: 0
-wageringRequirement: 30
+wageringRequirement: 0
 freeSpinsCount: 200
 freeSpinValue: 0.10
 tags:
@@ -27,7 +27,7 @@ tags:
   - topRatedSlots
 type: site
 externalUrl: https://www.betmgm.co.uk/casino
-termsAndConditions: New customers only. Opt-in required. Deposit £10 or more & wager 30x on casino games
+termsAndConditions: New customers only. Opt-in required. Deposit £10 or more & wager 1x on eligible games within 7 days for 200 Free Spins. No wagering on spin winnings.
 
 # Extended Review Data
 minDeposit: "£10"
@@ -39,11 +39,10 @@ paymentMethods:
   - Mastercard
   - PayPal
   - Apple Pay
-  - Paysafecard
   - Bank Transfer
 gameProviders:
   - NetEnt
-  - Microgaming
+  - Games Global
   - Evolution Gaming
   - Pragmatic Play
   - Play'n GO
@@ -56,7 +55,7 @@ pros:
   - Wide variety of payment options
   - 24/7 customer support
 cons:
-  - 30x wagering requirement on bonuses
+  - Must wager deposit 1x before spins are credited
   - Some country restrictions apply
   - Limited live casino hours for some games
 verdict: BetMGM Casino stands out as one of the premier online casinos in the UK market. With its award-winning platform, massive jackpots, and excellent customer service, it offers a premium gambling experience. The generous welcome bonus and ongoing promotions make it an excellent choice for both new and experienced players.

@@ -25,7 +25,7 @@ tags:
   - topRatedSlots
 type: site
 externalUrl: https://www.thesunplay.co.uk/
-termsAndConditions: ew players only, £10+ fund, free spins won via Mega Reel,
+termsAndConditions: New players only, £10+ fund, free spins won via Mega Reel,
   65x bonus wagering req, max bonus conversion to real funds equal to lifetime
   deposits (up to £250), T&Cs apply.
 ---

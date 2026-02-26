@@ -17,7 +17,7 @@ highlights:
 welcomeOffer: 100% up to £25 + 50 Chances To Become A Millionaire
 bonusPercentage: 100
 bonusMax: 25
-wageringRequirement: 0
+wageringRequirement: 10
 freeSpinsCount: 50
 freeSpinValue: 0.10
 tags:
@@ -25,5 +25,5 @@ tags:
   - casinos
 type: site
 externalUrl: https://www.megariches.com/
-termsAndConditions: New players only. Min £10 deposit
+termsAndConditions: "New players only. Min £10 deposit. 10x wagering requirement applies. See website for more details."
 ---

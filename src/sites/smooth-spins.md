@@ -19,10 +19,10 @@ bonusPercentage: 0
 bonusMax: 0
 wageringRequirement: 0
 freeSpinsCount: 200
-freeSpinValue: 0.10
+freeSpinValue: 0.05
 tags:
   - newSlots
 type: site
 externalUrl: https://www.smoothspins.co.uk/
-termsAndConditions: 18+. New Customers Only. See website for more details.
+termsAndConditions: "18+. New Customers Only. Opt-in required. Min £10 deposit. Wager £10 on Bee Keeper within 7 days. 200 free spins at 5p each. Spins expire in 7 days. No wagering on winnings."
 ---

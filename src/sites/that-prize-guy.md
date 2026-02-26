@@ -20,7 +20,7 @@ anyPrizeOdds: "Varies per competition"
 tags:
   - drawReviews
 type: site
-externalUrl: https://thatprizeguy.com
+externalUrl: https://thatprizeguy.co.uk
 termsAndConditions: "That Prize Guy Ltd. Registered in Northern Ireland. Trustpilot rated Excellent. 18+ only. Please play responsibly."
 
 pros:
@@ -33,7 +33,7 @@ pros:
 cons:
   - Low entry costs make overspending easy
   - Popular competitions sell out quickly
-  - No charitable element unlike some competitors
+  - No UKGC regulation (operates as prize competition)
   - Skill questions are a legal formality only
 verdict: That Prize Guy has built a strong reputation with transparent live draws, diverse prizes, and consistently positive Trustpilot reviews. The low entry costs and fixed entry caps providing known odds make it a solid choice for UK competition enthusiasts. Just watch your spending.
 ---

@@ -9,16 +9,16 @@ score: 80
 rating: 4
 highlights:
   - text: Award-winning Live Casino
-  - text: Generous Welcome Bonus
+  - text: 50 Free Spins Welcome Offer
   - text: Mobile Friendly Platform
   - text: Extensive Games List
   - text: Ongoing Incentives & Promotions
   - text: Secure & Flexible Payment Options
-welcomeOffer: Up to £1,250 Bonus + 100 Free Spins across 3 Deposits
-bonusPercentage: 100
-bonusMax: 1250
-wageringRequirement: 35
-freeSpinsCount: 100
+welcomeOffer: 50 Free Spins on Big Bass Bonanza when you bet £10
+bonusPercentage: 0
+bonusMax: 0
+wageringRequirement: 0
+freeSpinsCount: 50
 freeSpinValue: 0.10
 tags:
   - newSlots
@@ -26,7 +26,5 @@ tags:
   - liveCasinos
 type: site
 externalUrl: https://www.spinstation.com/en-gb/
-termsAndConditions: 18+. New Players Only. Min. deposit £20. Max. bonus bet is
-  £5. Bonus spins on selected games only and must be used within 72 hours. See
-  website for more details.
+termsAndConditions: New players only. Min. deposit £20. Wager £10 on slots to receive 50 Free Spins on Big Bass Bonanza. Spins expire in 72 hours. Winnings credited as cash, capped at £100.
 ---

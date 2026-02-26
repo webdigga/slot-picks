@@ -10,14 +10,14 @@ rating: 4
 highlights:
   - text: Over 8000 Games
   - text: Flexible Payment Options
-  - text: No Wagering Requirements
+  - text: No Wagering on Free Spins
   - text: Seamless Mobile Gaming
   - text: Popular Slot Titles
   - text: Free Play Options
 welcomeOffer: "100% up to £200 + 11 Free Spins"
 bonusPercentage: 100
 bonusMax: 200
-wageringRequirement: 0
+wageringRequirement: 35
 freeSpinsCount: 11
 freeSpinValue: 0.10
 tags:
