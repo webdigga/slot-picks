@@ -75,7 +75,7 @@ Licensed and regulated by the UK Gambling Commission, MrQ combines a modern, str
 
 MrQ's welcome offer gives new players 100 Free Spins on Big Bass Splash when they make a first deposit of just £10. Each spin is valued at 10p, giving you £10 worth of free play on one of the most popular slots around.
 
-The standout feature? There are absolutely no wagering requirements attached. Whatever you win from your free spins is yours to keep as withdrawable cash. No playthrough hoops, no hidden conditions — just straightforward free spins with real value.
+The standout feature? There are absolutely no wagering requirements attached. Whatever you win from your free spins is yours to keep as withdrawable cash. No playthrough hoops, no hidden conditions,just straightforward free spins with real value.
 
 ### Game Selection
 
@@ -85,7 +85,7 @@ The slots range from classic fruit machines to feature-packed modern titles with
 
 ### Instant Withdrawals
 
-MrQ's instant withdrawal guarantee is one of its strongest selling points. The casino promises that all withdrawals are processed in under 60 seconds — and they're so confident, they'll pay you £10 if they miss that target.
+MrQ's instant withdrawal guarantee is one of its strongest selling points. The casino promises that all withdrawals are processed in under 60 seconds,and they're so confident, they'll pay you £10 if they miss that target.
 
 This is a genuine game-changer in an industry where waiting 24 to 72 hours for your money is still the norm. Whether you're cashing out via PayPal, Visa, Mastercard, Apple Pay, or bank transfer, your winnings arrive almost immediately.
 
@@ -103,4 +103,4 @@ As a UKGC-regulated operator, MrQ adheres to strict standards for player protect
 
 ### Our Verdict
 
-MrQ delivers exactly what it promises — a no-nonsense casino experience where you keep what you win. The zero wagering policy, instant withdrawals, and quality game selection make it one of the best choices for UK players who want transparency and fairness. The low £10 minimum deposit and generous welcome offer of 100 free spins make it easy to get started, and the overall experience is polished and enjoyable.
+MrQ delivers exactly what it promises,a no-nonsense casino experience where you keep what you win. The zero wagering policy, instant withdrawals, and quality game selection make it one of the best choices for UK players who want transparency and fairness. The low £10 minimum deposit and generous welcome offer of 100 free spins make it easy to get started, and the overall experience is polished and enjoyable.
