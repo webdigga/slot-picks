@@ -21,7 +21,7 @@ Whether you're a seasoned racing fan or someone who only has a flutter once a ye
 
 ## The Aintree Festival: Three Days of Top-Class Racing
 
-The Grand National isn't a standalone race. It's the centrepiece of a three-day meeting at <a href="https://www.thejockeyclub.co.uk/aintree/events-tickets/grand-national/" target="_blank" rel="noopener noreferrer">Aintree Racecourse</a>, with quality racing on every card.
+The Grand National isn't a standalone race. It's the centrepiece of a three-day meeting at [Aintree Racecourse](https://www.thejockeyclub.co.uk/aintree/events-tickets/grand-national/), with quality racing on every card.
 
 | Day | Date | Highlights |
 |---|---|---|
@@ -157,7 +157,7 @@ The Grand National is one of the most exciting sporting events of the year, but 
 
 **The Grand National is unpredictable by nature.** With 40 runners and 30 fences, even experts regularly get it wrong. That unpredictability is what makes the race so thrilling.
 
-**Know when to stop.** If betting stops being fun, it's time to step away. For advice and support, visit <a href="https://www.gambleaware.org/" target="_blank" rel="noopener noreferrer">GambleAware</a> or read our [responsible gambling guide](/strategy/responsible-gambling/). Our [bankroll management strategy](/strategy/bankroll-management/) also has practical tips for keeping your betting under control throughout the year.
+**Know when to stop.** If betting stops being fun, it's time to step away. For advice and support, visit [GambleAware](https://www.gambleaware.org/) or read our [responsible gambling guide](/strategy/responsible-gambling/). Our [bankroll management strategy](/strategy/bankroll-management/) also has practical tips for keeping your betting under control throughout the year.
 
 ## If You're More of a Slots or Casino Player
 
@@ -191,4 +191,4 @@ The Grand National is broadcast live on ITV in the UK, with full coverage of the
 
 ### Is the Grand National safe for horses?
 
-Aintree has made extensive safety improvements in recent years, including modifications to the fences, careful management of the ground conditions, and stricter qualification criteria for runners. You can read more about the ongoing welfare measures at <a href="https://www.grandnational.org.uk/" target="_blank" rel="noopener noreferrer">grandnational.org.uk</a>.
+Aintree has made extensive safety improvements in recent years, including modifications to the fences, careful management of the ground conditions, and stricter qualification criteria for runners. You can read more about the ongoing welfare measures at [grandnational.org.uk](https://www.grandnational.org.uk/).
