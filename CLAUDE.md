@@ -18,7 +18,7 @@
 - **Short paragraphs:** Max 3-4 sentences, scannable with subheadings and bullet points
 - **Primary keyword focus:** Each post should target a specific keyword/phrase
 - **Strong opening:** Hook the reader and summarise the value in the first 2-3 sentences (helps with AI answer extraction for AEO)
-- **Image dimensions:** Article images: 600x450px (4:3 ratio). Brand logos: 250x65px. NOT the same dimensions.
+- **Image dimensions:** Article images: 600x450px (4:3 ratio). Brand logos: 250x65px. NOT the same dimensions. When writing a blog post, always tell the user the required image filename (e.g. `my-article-article.avif`), file format (`.avif`), and dimensions (600x450px) so they can prepare and add the image.
 - **Alt text:** Descriptive alt text on any SVGs/images for accessibility and SEO
 - **Call to action:** Include a relevant call to action where natural
 - **Reading time:** Calculate based on ~230 words per minute
@@ -92,7 +92,7 @@ Cross-link articles with their review pages.
 
 | Type | Count | Location |
 |------|-------|----------|
-| News/blog articles | 14 | `src/articles/` |
+| News/blog articles | 15 | `src/articles/` |
 | Slot/casino/draw reviews | 30 | `src/sites/` |
 | Draw listing cards | 3 | `src/draws/` |
 | Slot guides | 7 | `src/guides/slots/` |
