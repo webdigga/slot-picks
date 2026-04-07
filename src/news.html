@@ -15,59 +15,41 @@ eleventyComputed:
 <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
 
   {% for newsItem in newsList | reverse %}
-    <article class="card group overflow-hidden">
-      <a href="{{ newsItem.url | url }}" class="block">
+    <article class="card group overflow-hidden border-l-4 border-l-neon-green">
+      <a href="{{ newsItem.url | url }}" class="block p-6">
 
-        <!-- Image -->
-        <div class="relative overflow-hidden">
-          <img
-            src="{{ newsItem.data.imageForSeo }}"
-            alt="{{ newsItem.data.imageAlt }}"
-            class="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-105"
-            width="600"
-            height="450"
-            loading="lazy"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-bg-card to-transparent opacity-60"></div>
-
-          <!-- Date Badge -->
+        <div class="flex items-center gap-3 mb-3">
+          <span class="badge badge-neon text-xs">News</span>
           {% if newsItem.data.date %}
-            <div class="absolute top-4 left-4">
-              <span class="badge badge-gold text-xs">
-                {{ newsItem.data.date | readableDate }}
-              </span>
-            </div>
+            <span class="badge badge-gold text-xs">
+              {{ newsItem.data.date | readableDate }}
+            </span>
           {% endif %}
         </div>
 
-        <!-- Content -->
-        <div class="p-6">
-          <span class="badge badge-neon text-xs mb-3">News</span>
+        <h2 class="text-text-primary font-bold text-xl mb-3 line-clamp-2 group-hover:text-neon-green transition-colors">
+          {{ newsItem.data.title }}
+        </h2>
 
-          <h2 class="text-text-primary font-bold text-xl mb-3 line-clamp-2 group-hover:text-neon-green transition-colors">
-            {{ newsItem.data.title }}
-          </h2>
+        {% if newsItem.data.description %}
+          <p class="text-text-secondary text-sm mb-4 line-clamp-3">
+            {{ newsItem.data.description }}
+          </p>
+        {% endif %}
 
-          {% if newsItem.data.description %}
-            <p class="text-text-secondary text-sm mb-4 line-clamp-3">
-              {{ newsItem.data.description }}
-            </p>
-          {% endif %}
-
-          <div class="flex items-center justify-between">
-            <span class="inline-flex items-center text-neon-blue text-sm font-medium group-hover:text-neon-green transition-colors">
-              Read Full Article
-              <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-              </svg>
-            </span>
-            <span class="text-text-muted text-xs flex items-center gap-1">
-              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              {{ newsItem.templateContent | readingTime }}
-            </span>
-          </div>
+        <div class="flex items-center justify-between">
+          <span class="inline-flex items-center text-neon-blue text-sm font-medium group-hover:text-neon-green transition-colors">
+            Read Full Article
+            <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </span>
+          <span class="text-text-muted text-xs flex items-center gap-1">
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            {{ newsItem.templateContent | readingTime }}
+          </span>
         </div>
 
       </a>

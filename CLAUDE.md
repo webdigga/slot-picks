@@ -18,7 +18,7 @@
 - **Short paragraphs:** Max 3-4 sentences, scannable with subheadings and bullet points
 - **Primary keyword focus:** Each post should target a specific keyword/phrase
 - **Strong opening:** Hook the reader and summarise the value in the first 2-3 sentences (helps with AI answer extraction for AEO)
-- **Image dimensions:** Article images: 600x450px (4:3 ratio). Brand logos: 250x65px. NOT the same dimensions. When writing a blog post, always tell the user the required image filename (e.g. `my-article-article.avif`), file format (`.avif`), and dimensions (600x450px) so they can prepare and add the image.
+- **Images:** Article images are NOT required. The news listing uses category colour bands instead of images. Brand logos for review cards remain at 250x65px.
 - **Alt text:** Descriptive alt text on any SVGs/images for accessibility and SEO
 - **Call to action:** Include a relevant call to action where natural
 - **Reading time:** Calculate based on ~230 words per minute
@@ -121,7 +121,7 @@ Cross-link articles with their review pages.
 - **Permalink convention:** `/news/slug-here/`
 - **Tags:** `news`, `article`, `faq`, `privacy`
 - **Reading time:** Auto-calculated (~230 words/minute)
-- **Article image dimensions:** 600x450px (4:3 ratio). NOT the same as brand logos (250x65px)
+- **Article images:** Not required (listing pages use colour bands instead of images)
 - **SVG charts:** Store in `src/_includes/static/img/`, reference inline with `<img>` tags
 - **External links:** The markdown-it renderer in `.eleventy.js` auto-adds `target="_blank"`, `rel="noopener noreferrer"`, and an external link icon SVG to any link starting with `http`. Just use standard markdown link syntax: `[text](https://url)`. No manual HTML needed.
 - **Reference:** Always check an existing article before writing a new one

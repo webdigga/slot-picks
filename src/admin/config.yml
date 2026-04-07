@@ -58,12 +58,14 @@ collections:
         label: "Image for SEO",
         name: "imageForSeo",
         widget: "image",
-        hint: "*This is required, just use any image that you have used in the main body of the article (Use 4:3 ratio, e.g. 600px x 450px)"
+        required: false,
+        hint: "*Optional. No longer displayed on the site but can be used for social sharing (Use 4:3 ratio, e.g. 600px x 450px)"
       }
       - {
         label: "Image Alt",
         name: "imageAlt",
-        widget: "string"
+        widget: "string",
+        required: false
       }
       - { label: "Body", name: "body", widget: "markdown" }
       - widget: select
