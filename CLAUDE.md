@@ -121,6 +121,7 @@ Cross-link articles with their review pages.
 - **CMS:** Decap CMS at `/admin/` for non-technical editing
 - **Frontmatter fields:** `title`, `seoTitle`, `description`, `author`, `date` (ISO 8601), `showDate`, `imageForSeo`, `imageAlt`, `type`, `tags`, `permalink`
 - **Permalink convention:** `/news/slug-here/`
+- **CRITICAL: Internal links:** Permalinks are set explicitly in each article's frontmatter and often DO NOT match the filename. You MUST read the target article's `permalink` field before linking. Never guess the URL from the filename. For example, `best-slot-sites-uk-your-ultimate-guide-to-online-slots-in-2025.md` has permalink `/news/best-slot-sites-uk/`, not `/news/best-slot-sites-uk-your-ultimate-guide-to-online-slots-in-2025/`. The same applies to strategy articles in `src/strategy/` and reviews in `src/sites/`.
 - **Tags:** `news`, `article`, `faq`, `privacy`
 - **Reading time:** Auto-calculated (~230 words/minute)
 - **Article images:** Not required (listing pages use colour bands instead of images)

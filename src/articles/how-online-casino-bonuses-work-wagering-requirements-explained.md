@@ -145,7 +145,7 @@ If you find yourself:
 
 Then the bonus is working against you, not for you. No welcome offer is worth compromising your wellbeing.
 
-The [new UKGC financial risk checks](/news/ukgc-financial-risk-checks-what-uk-players-need-to-know/) and [stake limits on online slots](/news/new-limits-on-online-slot-stakes-to-tackle-gambling-harm/) exist precisely because bonus-driven play can escalate quickly. Always set deposit limits, take breaks, and use tools like [GamStop](https://www.gamstop.co.uk) if you need to step away.
+The [new UKGC financial risk checks](/news/ukgc-financial-risk-checks/) and [stake limits on online slots](/news/slot-stake-limits/) exist precisely because bonus-driven play can escalate quickly. Always set deposit limits, take breaks, and use tools like [GamStop](https://www.gamstop.co.uk) if you need to step away.
 
 For more guidance, visit [GambleAware](https://www.gambleaware.org/) or read our [responsible gambling guide](/strategy/responsible-gambling/).
 
@@ -199,6 +199,6 @@ Wagering requirements are the hidden cost of casino bonuses. They are not inhere
 
 Before claiming any offer, read the full terms, calculate the total wagering needed, and ask yourself whether the bonus genuinely adds value to your playing experience. If the answer is no, play without it.
 
-For help choosing a site with fair bonus terms, explore our guide to the [best slot sites in the UK](/news/best-slot-sites-uk-your-ultimate-guide-to-online-slots-in-2025/) or browse our [casino reviews](/casinos/). If you are new to online slots, our guide on [choosing the best slot game](/news/choose-the-best-online-slot-game-a-guide/) is a good starting point.
+For help choosing a site with fair bonus terms, explore our guide to the [best slot sites in the UK](/news/best-slot-sites-uk/) or browse our [casino reviews](/casinos/). If you are new to online slots, our guide on [choosing the best slot game](/news/choose-best-slot-game/) is a good starting point.
 
 Remember: gambling should be enjoyable, never a source of stress. Set your limits, stick to them, and never gamble more than you can afford to lose.
