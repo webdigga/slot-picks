@@ -3,6 +3,7 @@
 ## Blog Posts
 
 ### Blog quality guidelines
+- **GSC research:** Before writing, check Google Search Console (90-day lookback) for keyword opportunities and content gaps. GSC site URL: `https://slot-picks.com/`
 - **E-E-A-T:** Write with Google's E-E-A-T framework in mind (Experience, Expertise, Authoritativeness, Trustworthiness). Demonstrate first-hand experience where possible, cite credible sources, include author credentials, use accurate and up-to-date information, and avoid vague or unsubstantiated claims
 - **Author:** Always include author where the format supports it
 - **Schema:** Ensure the article has all correct structured data/schema markup
@@ -24,6 +25,7 @@
 - **Reading time:** Calculate based on ~230 words per minute
 - **No en/em dashes:** Never use en dashes (-) or em dashes (--) in blog content. Use commas, colons, semicolons, or rewrite the sentence instead
 - **Repo structure:** Always check an existing post in this repo before writing a new one
+- **Topic overlap:** Before proposing new article topics, list all existing article filenames and scan for overlap. Never propose a topic that already has a published article
 - **Topical content:** Where possible, make blog content topical. If there is a big event or something notable in the calendar in the forthcoming days or weeks, reference it in the blog. This will not always be possible, so only do this when it makes sense. Always confirm the current date before referencing upcoming events — do not assume or guess the date.
 
 ## CSS
