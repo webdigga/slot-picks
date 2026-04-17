@@ -31,7 +31,7 @@ New does not automatically mean better. Before you deposit a penny, run through 
 
 ### UKGC licence
 
-The UK Gambling Commission licence is the single most important check. If a site does not hold one, it is not legally allowed to accept UK players, and you will have no regulatory protection if things go wrong. Every new casino worth considering will list its licence number in the footer and appear on the [UKGC public register](https://www.gamblingcommission.gov.uk/public-register/business).
+The UK Gambling Commission licence is the single most important check. If a site does not hold one, it is not legally allowed to accept UK players, and you will have no regulatory protection if things go wrong. Every new casino worth considering will list its licence number in the footer and appear on the [UKGC public register](https://www.gamblingcommission.gov.uk/public-register).
 
 ### Wagering requirements
 
@@ -77,7 +77,7 @@ The UK Gambling Commission's [financial risk checks](/news/ukgc-financial-risk-c
 
 ### Stake limits on online slots
 
-Recently introduced [limits on online slot stakes](/news/new-limits-on-online-slot-stakes-to-tackle-gambling-harm/) cap the maximum you can spend per spin, with tighter caps for 18 to 24 year olds. Every UK-licensed new casino must comply. This is a net positive for player protection, and it is worth understanding the limits before you play.
+Recently introduced [limits on online slot stakes](/news/slot-stake-limits/) cap the maximum you can spend per spin, with tighter caps for 18 to 24 year olds. Every UK-licensed new casino must comply. This is a net positive for player protection, and it is worth understanding the limits before you play.
 
 ### Prize draws as an alternative
 
