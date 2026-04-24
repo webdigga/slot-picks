@@ -29,6 +29,14 @@
 - **Repo structure:** Always check an existing post in this repo before writing a new one
 - **Topic overlap:** Before proposing new article topics, list all existing article filenames and scan for overlap. Never propose a topic that already has a published article
 - **Topical content:** Where possible, make blog content topical. If there is a big event or something notable in the calendar in the forthcoming days or weeks, reference it in the blog. This will not always be possible, so only do this when it makes sense. Always confirm the current date before referencing upcoming events — do not assume or guess the date.
+- **Vary the form:** Not every post follows intro / "The Problem" / "How X Works" / "Best Practices". Mix forms: opinion piece, field notes, teardown of an incident or product, how-to with code, comparison, FAQ-led, numbers-led.
+- **Vary the opening:** Avoid restating the title or starting with "In recent years / Today's teams / Modern...". Open with a concrete observation, a number, a position, a question or a short anecdote.
+- **Be specific:** Replace generic "teams often..." with a specific number or a named incident. Generic claims read as AI-drafted.
+- **Take a position:** State what works and what does not. Cut hedging like "it is worth noting", "you should consider" and "various approaches".
+- **Cut meta sentences:** Remove "In this article we will...", "As we have seen..." and "In summary...". Let the structure do the work.
+- **Vary length:** Some topics earn 400 words. Others earn 1500. Do not pad to a target length.
+- **First-person is allowed** when the author has first-hand experience. Do not fabricate experience.
+- **Real beats generic:** Real code snippets, real numbers with citations, real incidents. Use them where they help.
 
 ## CSS
 - **Mobile first:** All CSS must be mobile first. Never use `max-width` media queries. Use `min-width` only.
